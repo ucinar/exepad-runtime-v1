@@ -41,7 +41,7 @@ export const Callout: React.FC<CalloutProps> = ({
 
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: calloutRef,
+    elementRef: calloutRef as React.RefObject<HTMLElement>,
     componentName: 'Callout'
   });
 

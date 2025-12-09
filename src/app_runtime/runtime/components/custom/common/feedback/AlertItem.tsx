@@ -45,7 +45,7 @@ export const AlertItem: React.FC<AlertItemProps> = ({
   
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: alertRef,
+    elementRef: alertRef as React.RefObject<HTMLElement>,
     componentName: 'AlertItem'
   });
 

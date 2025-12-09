@@ -21,7 +21,7 @@ export function EditableHeading({ uuid, ...props }: EditableHeadingProps) {
 
   const text = subscribedText ?? props.text;
   const safeLevel = Math.max(1, Math.min(6, props.level));
-  const Tag = `h${safeLevel}` as keyof JSX.IntrinsicElements;
+  const Tag = `h${safeLevel}` as React.ElementType;
 
   const levelStyles = {
     1: 'scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl',

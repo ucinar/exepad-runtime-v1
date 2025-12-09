@@ -58,7 +58,7 @@ export const Badge: React.FC<BadgeProps> = ({
   
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: badgeRef,
+    elementRef: badgeRef as React.RefObject<HTMLElement>,
     componentName: 'Badge'
   });
 

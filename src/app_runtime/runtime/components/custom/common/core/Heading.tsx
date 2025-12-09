@@ -24,7 +24,7 @@ export const Heading: React.FC<HeadingProps> = ({
   const safeLevel = Math.max(1, Math.min(6, level));
   
   // Dynamically create the appropriate heading tag type
-  const Tag = `h${safeLevel}` as keyof JSX.IntrinsicElements;
+  const Tag = `h${safeLevel}` as React.ElementType;
 
   // Define default styles for each heading level based on common design systems.
   const levelStyles = {
@@ -41,7 +41,7 @@ export const Heading: React.FC<HeadingProps> = ({
   // Auto-detect and correct poor color contrast (headings are large text - lower threshold)
   const { correctedTextColor } = useAutoContrast(classes, {
     isLargeText: true,
-    elementRef: headingRef,
+    elementRef: headingRef as React.RefObject<HTMLElement>,
     componentName: 'Heading'
   });
 

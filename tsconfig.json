@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "es6"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es6"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "downlevelIteration": true,
     "plugins": [
@@ -21,23 +25,57 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/app/*": ["./src/app/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/services/*": ["./src/services/*"],
-      "@/stores/*": ["./src/stores/*"],
-      "@/hooks/*": ["./src/hooks/*"],
-      "@/utils/*": ["./src/utils/*"],
-      "@/core/*": ["./src/core/*"],
-      "@/lib/*": ["./src/lib/*"],
-      "@/context/*": ["./src/context/*"],
-      "@/registry/*": ["./src/registry/*"],
-      "@/constants/*": ["./src/constants/*"],
-      "@/app_runtime/*": ["./src/app_runtime/*"],
-      "@/runtime/*": ["./src/app_runtime/runtime/*"],
-      "@/types/*": ["./src/app_runtime/interfaces/*"],
-      "@/interfaces/*": ["./src/app_runtime/interfaces/*"],
-      "@/schemas/*": ["./src/app_runtime/schemas/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@/app/*": [
+        "./src/app/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/services/*": [
+        "./src/services/*"
+      ],
+      "@/stores/*": [
+        "./src/stores/*"
+      ],
+      "@/hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ],
+      "@/core/*": [
+        "./src/core/*"
+      ],
+      "@/lib/*": [
+        "./src/lib/*"
+      ],
+      "@/context/*": [
+        "./src/context/*"
+      ],
+      "@/registry/*": [
+        "./src/registry/*"
+      ],
+      "@/constants/*": [
+        "./src/constants/*"
+      ],
+      "@/app_runtime/*": [
+        "./src/app_runtime/*"
+      ],
+      "@/runtime/*": [
+        "./src/app_runtime/runtime/*"
+      ],
+      "@/types/*": [
+        "./src/app_runtime/interfaces/*"
+      ],
+      "@/interfaces/*": [
+        "./src/app_runtime/interfaces/*"
+      ],
+      "@/schemas/*": [
+        "./src/app_runtime/schemas/*"
+      ]
     }
   },
   "include": [
@@ -45,7 +83,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "lib/**/*.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",

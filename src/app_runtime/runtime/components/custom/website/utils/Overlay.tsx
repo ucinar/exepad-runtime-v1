@@ -45,7 +45,7 @@ export const Overlay: React.FC<OverlayProps> = ({
   target,
   isVisible = false,
   classes
-}): JSX.Element => {
+}): React.ReactElement => {
   // State to store the target element's dimensions and position
   const [targetRect, setTargetRect] = useState<DOMRect | null>(null);
   // Reference to the target element

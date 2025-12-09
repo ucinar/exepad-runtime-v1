@@ -35,7 +35,7 @@ export const Text: React.FC<TextProps> = ({
 
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: textRef,
+    elementRef: textRef as React.RefObject<HTMLElement>,
     componentName: 'Text'
   });
 

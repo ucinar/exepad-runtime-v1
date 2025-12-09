@@ -51,7 +51,7 @@ export const Tag: React.FC<TagProps> = ({
 
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: tagRef,
+    elementRef: tagRef as React.RefObject<HTMLElement>,
     componentName: 'Tag'
   });
 

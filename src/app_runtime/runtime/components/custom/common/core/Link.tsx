@@ -25,7 +25,7 @@ export const Link: React.FC<LinkProps> = ({
   
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: linkRef,
+    elementRef: linkRef as React.RefObject<HTMLElement>,
     componentName: 'Link'
   });
   

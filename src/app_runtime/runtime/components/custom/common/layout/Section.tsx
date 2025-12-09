@@ -139,7 +139,7 @@ export const Section: React.FC<SectionProps> = ({
   // Prefer explicit background prop, then safely inline arbitrary hex in light mode only (to respect dark: variants)
   // Fall back to auto-contrast detected background when available.
   const { correctedTextColor, backgroundColor: detectedBg } = useAutoContrast(classes, {
-    elementRef: sectionRef,
+    elementRef: sectionRef as React.RefObject<HTMLElement>,
     componentName: 'Section'
   });
   const resolvedBackgroundColor =

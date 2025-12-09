@@ -34,7 +34,7 @@ export const NotificationBanner: React.FC<NotificationBannerProps> = ({
 
   // Auto-detect and correct poor color contrast with enhanced detection
   const { correctedTextColor } = useAutoContrast(classes, {
-    elementRef: bannerRef,
+    elementRef: bannerRef as React.RefObject<HTMLElement>,
     componentName: 'NotificationBanner'
   });
 

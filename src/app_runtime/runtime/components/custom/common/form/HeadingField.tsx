@@ -16,7 +16,7 @@ export const HeadingField: React.FC<HeadingFieldProps> = ({
   uuid,
   ...restProps
 }) => {
-  const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
+  const HeadingTag = `h${level}` as React.ElementType;
   
   const headingClasses = cn(
     'font-semibold tracking-tight',

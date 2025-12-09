@@ -44,7 +44,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   // Single hook call processes all style transformations
   const { className, style, dataAttributes, metadata } = useComponentStyles(classes, {
-    elementRef: rootRef,
+    elementRef: rootRef as React.RefObject<HTMLElement>,
     componentName: 'Button',
   });
 
