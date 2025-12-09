@@ -7,6 +7,7 @@ pages_build_output_dir = ".vercel/output/static"
 [vars]
 NEXT_PUBLIC_BACKEND_URL = "https://backend.exepad.com"
 NEXT_PUBLIC_API_URL = "https://backend.exepad.com"
+RUNTIME_SERVICE_API_KEY = "13ff45abca7de8ba1318bdd7e95ebb72f82cfe6dbe484d0c1755e154aa0be0c6"
 
 [env.production]
 compatibility_flags = ["nodejs_compat"]
@@ -14,3 +15,4 @@ compatibility_flags = ["nodejs_compat"]
 [env.production.vars]
 NEXT_PUBLIC_BACKEND_URL = "https://backend.exepad.com"
 NEXT_PUBLIC_API_URL = "https://backend.exepad.com"
+RUNTIME_SERVICE_API_KEY = "13ff45abca7de8ba1318bdd7e95ebb72f82cfe6dbe484d0c1755e154aa0be0c6"

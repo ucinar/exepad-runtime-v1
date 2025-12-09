@@ -124,10 +124,17 @@ export class ConfigService {
     // Note: Django requires trailing slash before query parameters
     const cacheBuster = mode === 'preview' ? `?t=${Date.now()}` : '';
     
+    // Get the runtime API key from server-side environment variable
+    const runtimeApiKey = process.env.RUNTIME_SERVICE_API_KEY;
+    if (!runtimeApiKey) {
+      console.warn('[ConfigService] RUNTIME_SERVICE_API_KEY not configured');
+    }
+    
     const response = await fetch(`${backendUrl}/api/runtime/app-config/${cacheBuster}`, {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
+        ...(runtimeApiKey && { 'X-Runtime-API-Key': runtimeApiKey }),
       },
       body: JSON.stringify({ app_id: appId, mode }),
       cache: cacheOption,
