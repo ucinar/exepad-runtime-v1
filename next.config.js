@@ -1,3 +1,9 @@
+// Set up Cloudflare Pages development platform
+if (process.env.NODE_ENV === 'development') {
+  const { setupDevPlatform } = require('@cloudflare/next-on-pages/next-dev');
+  setupDevPlatform();
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Disable source maps in production to avoid 404 errors
