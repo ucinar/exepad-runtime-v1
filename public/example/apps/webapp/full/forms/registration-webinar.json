@@ -1,0 +1,497 @@
+{
+  "uuid": "app-form-reg-webinar-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Webinar Registration Form",
+  "alias": "webinar-registration-form",
+  "summary": "A streamlined webinar signup form with attendee details, session selection, timezone preferences, and reminder options. Perfect for online events, training sessions, product launches, and educational webinars to capture registrations and send automated confirmations.",
+  "shortSummary": "A webinar signup form with session selection and reminder preferences",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#020617",
+      "primary": "#0e7490",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f0f9ff",
+      "secondary-foreground": "#0c4a6e",
+      "muted": "#f8fafc",
+      "muted-foreground": "#64748b",
+      "accent": "#e0f2fe",
+      "accent-foreground": "#075985",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0ea5e9"
+    },
+    "dark": {
+      "background": "#020617",
+      "foreground": "#f8fafc",
+      "primary": "#22d3ee",
+      "primary-foreground": "#083344",
+      "secondary": "#0f172a",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#164e63",
+      "accent-foreground": "#cffafe",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#22d3ee"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 Digital Learning Hub. Empowering professionals worldwide.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-webinar",
+      "title": "Register for Free Webinar",
+      "slug": "/",
+      "summary": "Join our free expert-led webinar and learn valuable skills from industry leaders.",
+      "shortSummary": "Join our free expert-led webinar",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-main",
+          "spacing": "xl",
+          "classes": "min-h-screen bg-gradient-to-br from-primary/5 via-accent/5 to-background",
+          "content": [
+            {
+              "uuid": "main-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "content-grid",
+                  "componentType": "GridProps",
+                  "columns": 2,
+                  "gap": "10",
+                  "classes": "w-full max-w-6xl",
+                  "content": [
+                    {
+                      "uuid": "info-column",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "6",
+                      "justify": "center",
+                      "content": [
+                        {
+                          "uuid": "info-icon",
+                          "componentType": "IconProps",
+                          "name": "video",
+                          "size": 56,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "info-heading",
+                          "componentType": "HeadingProps",
+                          "level": 1,
+                          "text": "Master Modern JavaScript"
+                        },
+                        {
+                          "uuid": "info-subtitle",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "Free 90-Minute Live Webinar",
+                          "classes": "text-primary font-semibold"
+                        },
+                        {
+                          "uuid": "info-description",
+                          "componentType": "TextProps",
+                          "content": "Learn essential JavaScript patterns and best practices from a senior engineer with 15+ years of experience. Perfect for developers looking to level up their skills.",
+                          "classes": "text-muted-foreground"
+                        },
+                        {
+                          "uuid": "highlights-section",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "mt-4",
+                          "content": [
+                            {
+                              "uuid": "highlights-heading",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "What You'll Learn"
+                            },
+                            {
+                              "uuid": "highlight-1",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "highlight-1-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "highlight-1-text",
+                                  "componentType": "TextProps",
+                                  "content": "Modern ES6+ features and syntax"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "highlight-2",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "highlight-2-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "highlight-2-text",
+                                  "componentType": "TextProps",
+                                  "content": "Async programming and Promises"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "highlight-3",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "highlight-3-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "highlight-3-text",
+                                  "componentType": "TextProps",
+                                  "content": "Common design patterns and anti-patterns"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "highlight-4",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "highlight-4-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "highlight-4-text",
+                                  "componentType": "TextProps",
+                                  "content": "Performance optimization techniques"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "form-column",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "classes": "bg-background border rounded-xl shadow-xl p-8",
+                      "content": [
+                        {
+                          "uuid": "webinar-form",
+                          "componentType": "FormProps",
+                          "title": "Reserve Your Spot",
+                          "description": "Limited seats available. Register now to secure your place!",
+                          "layout": "singleColumn",
+                          "initialValues": {},
+                          "onSubmitAction": {
+                            "actionId": "submit_form",
+                            "successMessage": "You're registered! Check your email for the webinar link and calendar invite.",
+                            "errorMessage": "Registration failed. Please try again or email support@digitallearning.com",
+                            "notificationType": "toast",
+                            "notifyAdmin": "email",
+                            "onSuccessAction": {
+                              "type": "clearForm"
+                            }
+                          },
+                          "content": [
+                            {
+                              "uuid": "field-full-name",
+                              "componentType": "TextFieldProps",
+                              "name": "fullName",
+                              "label": "Full Name",
+                              "placeholder": "John Doe",
+                              "required": true
+                            },
+                            {
+                              "uuid": "field-email",
+                              "componentType": "TextFieldProps",
+                              "name": "email",
+                              "label": "Email Address",
+                              "inputType": "email",
+                              "placeholder": "john@example.com",
+                              "required": true,
+                              "helperText": "We'll send the webinar link here"
+                            },
+                            {
+                              "uuid": "field-job-title",
+                              "componentType": "TextFieldProps",
+                              "name": "jobTitle",
+                              "label": "Job Title",
+                              "placeholder": "Software Developer"
+                            },
+                            {
+                              "uuid": "field-company",
+                              "componentType": "TextFieldProps",
+                              "name": "company",
+                              "label": "Company",
+                              "placeholder": "Tech Corp"
+                            },
+                            {
+                              "uuid": "field-session-choice",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "sessionChoice",
+                              "label": "Select Your Session",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Session 1: Feb 10, 2025 - 10:00 AM EST",
+                                  "value": "session-1-feb10-10am"
+                                },
+                                {
+                                  "label": "Session 2: Feb 10, 2025 - 2:00 PM EST",
+                                  "value": "session-2-feb10-2pm"
+                                },
+                                {
+                                  "label": "Session 3: Feb 11, 2025 - 10:00 AM EST",
+                                  "value": "session-3-feb11-10am"
+                                },
+                                {
+                                  "label": "Session 4: Feb 11, 2025 - 6:00 PM EST",
+                                  "value": "session-4-feb11-6pm"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-timezone",
+                              "componentType": "SelectFieldProps",
+                              "name": "timezone",
+                              "label": "Your Timezone",
+                              "placeholder": "Select your timezone",
+                              "required": true,
+                              "helperText": "We'll adjust reminder times accordingly",
+                              "options": [
+                                {
+                                  "label": "Eastern Time (ET)",
+                                  "value": "america-new-york"
+                                },
+                                {
+                                  "label": "Central Time (CT)",
+                                  "value": "america-chicago"
+                                },
+                                {
+                                  "label": "Mountain Time (MT)",
+                                  "value": "america-denver"
+                                },
+                                {
+                                  "label": "Pacific Time (PT)",
+                                  "value": "america-los-angeles"
+                                },
+                                {
+                                  "label": "UK Time (GMT/BST)",
+                                  "value": "europe-london"
+                                },
+                                {
+                                  "label": "Central European Time (CET)",
+                                  "value": "europe-paris"
+                                },
+                                {
+                                  "label": "India Standard Time (IST)",
+                                  "value": "asia-kolkata"
+                                },
+                                {
+                                  "label": "Singapore Time (SGT)",
+                                  "value": "asia-singapore"
+                                },
+                                {
+                                  "label": "Australian Eastern Time (AET)",
+                                  "value": "australia-sydney"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-experience-level",
+                              "componentType": "SelectFieldProps",
+                              "name": "experienceLevel",
+                              "label": "JavaScript Experience Level",
+                              "placeholder": "Select your level",
+                              "required": true,
+                              "options": [
+                                {
+                                  "label": "Beginner (0-1 years)",
+                                  "value": "beginner"
+                                },
+                                {
+                                  "label": "Intermediate (1-3 years)",
+                                  "value": "intermediate"
+                                },
+                                {
+                                  "label": "Advanced (3-5 years)",
+                                  "value": "advanced"
+                                },
+                                {
+                                  "label": "Expert (5+ years)",
+                                  "value": "expert"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-learning-goals",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "learningGoals",
+                              "label": "What would you like to focus on?",
+                              "helperText": "Select all that apply",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Modern syntax and features",
+                                  "value": "modern-syntax"
+                                },
+                                {
+                                  "label": "Async programming",
+                                  "value": "async"
+                                },
+                                {
+                                  "label": "Design patterns",
+                                  "value": "patterns"
+                                },
+                                {
+                                  "label": "Performance optimization",
+                                  "value": "performance"
+                                },
+                                {
+                                  "label": "Testing strategies",
+                                  "value": "testing"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-reminders",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "reminders",
+                              "label": "Send me reminders",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "1 day before webinar",
+                                  "value": "1-day"
+                                },
+                                {
+                                  "label": "1 hour before webinar",
+                                  "value": "1-hour"
+                                },
+                                {
+                                  "label": "15 minutes before webinar",
+                                  "value": "15-min"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-recording",
+                              "componentType": "CheckboxFieldProps",
+                              "name": "wantRecording",
+                              "label": "Email me the recording if I can't attend live"
+                            },
+                            {
+                              "uuid": "field-newsletter",
+                              "componentType": "CheckboxFieldProps",
+                              "name": "subscribeNewsletter",
+                              "label": "Subscribe to our weekly developer newsletter"
+                            },
+                            {
+                              "uuid": "field-hidden-webinar-id",
+                              "componentType": "HiddenFieldProps",
+                              "name": "webinarId",
+                              "value": "modern-js-feb-2025"
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "actionType": "submit",
+                              "text": "Register for Free",
+                              "variant": "default",
+                              "icon": {
+                                "uuid": "submit-icon",
+                                "componentType": "IconProps",
+                                "name": "calendar-plus",
+                                "size": 16
+                              },
+                              "classes": "w-full",
+                              "uuid": "form-action-submit",
+                              "componentType": "ButtonProps"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

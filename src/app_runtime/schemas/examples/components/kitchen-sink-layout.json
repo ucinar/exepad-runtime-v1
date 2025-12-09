@@ -1,0 +1,854 @@
+{
+  "uuid": "app-layout-kitchen-sink-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Layout Component Kitchen Sink",
+  "alias": "layout-component-kitchen-sink",
+  "summary": "Comprehensive layout component library featuring grids, flexbox containers, sections, spacing utilities, and responsive layout patterns. Showcases structural components for building complex page architectures and content organization.",
+  "shortSummary": "Comprehensive layout component library featuring grids, flexbox containers, sections, spacing utilities, and responsive layout patterns",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-layout-01",
+      "title": "Layout Components",
+      "slug": "/layout",
+      "summary": "This page showcases all available layout components.",
+      "content": [
+        {
+          "uuid": "section-intro-layout",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-intro-layout",
+          "layout": "singleColumnCentered",
+          "contentBleed": false,
+          "spacing": "lg",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-layout-title",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Layout & Structure Components"
+            },
+            {
+              "uuid": "text-layout-intro",
+              "componentType": "TextProps",
+              "variant": "lead",
+              "content": "This page demonstrates the full range of layout components, from basic flex and grid containers to advanced virtualized lists and carousels."
+            }
+          ]
+        },
+        {
+          "uuid": "section-flexbox-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-flexbox-demo",
+          "title": "Flexbox Layout (FlexProps)",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "flex-row-demo",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "justify": "between",
+              "align": "center",
+              "gap": "4",
+              "classes": "p-4 bg-muted rounded-lg",
+              "content": [
+                {
+                  "uuid": "flex-item-1",
+                  "componentType": "TextProps",
+                  "content": "Item 1"
+                },
+                {
+                  "uuid": "flex-item-2",
+                  "componentType": "TextProps",
+                  "content": "Item 2 (Justify: between)"
+                },
+                {
+                  "uuid": "flex-item-3",
+                  "componentType": "TextProps",
+                  "content": "Item 3"
+                }
+              ]
+            },
+            {
+              "uuid": "flex-col-demo",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "start",
+              "gap": "2",
+              "classes": "mt-4 p-4 bg-muted rounded-lg",
+              "content": [
+                {
+                  "uuid": "flex-item-4",
+                  "componentType": "TextProps",
+                  "content": "Column Item A"
+                },
+                {
+                  "uuid": "flex-item-5",
+                  "componentType": "TextProps",
+                  "content": "Column Item B"
+                },
+                {
+                  "uuid": "flex-item-6",
+                  "componentType": "TextProps",
+                  "content": "Column Item C (Align: start)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-grid-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-grid-demo",
+          "title": "Grid Layout (GridProps)",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "grid-3-col-demo",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gapX": "8",
+              "gapY": "4",
+              "content": [
+                {
+                  "uuid": "grid-cell-1",
+                  "componentType": "TextProps",
+                  "content": "Grid Cell 1",
+                  "classes": "p-4 bg-muted rounded"
+                },
+                {
+                  "uuid": "grid-cell-2",
+                  "componentType": "TextProps",
+                  "content": "Grid Cell 2",
+                  "classes": "p-4 bg-muted rounded"
+                },
+                {
+                  "uuid": "grid-cell-3",
+                  "componentType": "TextProps",
+                  "content": "Grid Cell 3",
+                  "classes": "p-4 bg-muted rounded"
+                },
+                {
+                  "uuid": "grid-cell-4",
+                  "componentType": "TextProps",
+                  "content": "Grid Cell 4",
+                  "classes": "p-4 bg-muted rounded"
+                },
+                {
+                  "uuid": "grid-cell-5",
+                  "componentType": "TextProps",
+                  "content": "Grid Cell 5",
+                  "classes": "p-4 bg-muted rounded"
+                },
+                {
+                  "uuid": "grid-cell-6",
+                  "componentType": "TextProps",
+                  "content": "Grid Cell 6",
+                  "classes": "p-4 bg-muted rounded"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-advanced-flex-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-advanced-flex-demo",
+          "title": "Advanced Flexbox Examples",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "flex-wrap-demo",
+              "componentType": "FlexProps",
+              "wrap": "wrap",
+              "gap": "4",
+              "classes": "p-4 bg-muted rounded-lg",
+              "content": [
+                {
+                  "uuid": "flex-wrap-1",
+                  "componentType": "ButtonProps",
+                  "text": "Button A",
+                  "type": "button",
+                  "disabled": false
+                },
+                {
+                  "uuid": "flex-wrap-2",
+                  "componentType": "ButtonProps",
+                  "text": "Button B",
+                  "type": "button",
+                  "disabled": false
+                },
+                {
+                  "uuid": "flex-wrap-3",
+                  "componentType": "ButtonProps",
+                  "text": "Button C",
+                  "type": "button",
+                  "disabled": false
+                },
+                {
+                  "uuid": "flex-wrap-4",
+                  "componentType": "ButtonProps",
+                  "text": "Button D",
+                  "type": "button",
+                  "disabled": false
+                },
+                {
+                  "uuid": "flex-wrap-5",
+                  "componentType": "ButtonProps",
+                  "text": "This Button is Longer",
+                  "type": "button",
+                  "disabled": false
+                },
+                {
+                  "uuid": "flex-wrap-6",
+                  "componentType": "ButtonProps",
+                  "text": "Button F",
+                  "type": "button",
+                  "disabled": false
+                }
+              ]
+            },
+            {
+              "uuid": "flex-center-end-demo",
+              "componentType": "FlexProps",
+              "justify": "center",
+              "align": "end",
+              "gap": "8",
+              "classes": "mt-4 p-4 h-32 bg-muted rounded-lg",
+              "content": [
+                {
+                  "uuid": "flex-adv-1",
+                  "componentType": "TextProps",
+                  "content": "Centered"
+                },
+                {
+                  "uuid": "flex-adv-2",
+                  "componentType": "TextProps",
+                  "content": "and"
+                },
+                {
+                  "uuid": "flex-adv-3",
+                  "componentType": "TextProps",
+                  "content": "Aligned to End"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-advanced-grid-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-advanced-grid-demo",
+          "title": "Advanced Grid Examples",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "grid-4-col-demo",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gapX": "4",
+              "gapY": "4",
+              "content": [
+                {
+                  "uuid": "adv-grid-1",
+                  "componentType": "TextProps",
+                  "content": "1",
+                  "classes": "p-6 bg-primary text-primary-foreground rounded-lg text-center"
+                },
+                {
+                  "uuid": "adv-grid-2",
+                  "componentType": "TextProps",
+                  "content": "2",
+                  "classes": "p-6 bg-primary text-primary-foreground rounded-lg text-center"
+                },
+                {
+                  "uuid": "adv-grid-3",
+                  "componentType": "TextProps",
+                  "content": "3",
+                  "classes": "p-6 bg-primary text-primary-foreground rounded-lg text-center"
+                },
+                {
+                  "uuid": "adv-grid-4",
+                  "componentType": "TextProps",
+                  "content": "4",
+                  "classes": "p-6 bg-primary text-primary-foreground rounded-lg text-center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-masonry-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-masonry-demo",
+          "title": "Masonry Layout (MasonryLayoutProps)",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "masonry-demo",
+              "componentType": "MasonryLayoutProps",
+              "columnCount": 3,
+              "gutter": "1rem",
+              "content": [
+                {
+                  "uuid": "masonry-img-1",
+                  "componentType": "ImageProps",
+                  "src": "https://picsum.photos/400/300",
+                  "alt": "Masonry Image 1",
+                  "asset": {
+                    "uuid": "img-asset-m1",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "random",
+                    "requestedWidth": 400,
+                    "requestedHeight": 300
+                  }
+                },
+                {
+                  "uuid": "masonry-img-2",
+                  "componentType": "ImageProps",
+                  "src": "https://picsum.photos/400/500",
+                  "alt": "Masonry Image 2",
+                  "asset": {
+                    "uuid": "img-asset-m2",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "random",
+                    "requestedWidth": 400,
+                    "requestedHeight": 500
+                  }
+                },
+                {
+                  "uuid": "masonry-img-3",
+                  "componentType": "ImageProps",
+                  "src": "https://picsum.photos/400/350",
+                  "alt": "Masonry Image 3",
+                  "asset": {
+                    "uuid": "img-asset-m3",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "random",
+                    "requestedWidth": 400,
+                    "requestedHeight": 350
+                  }
+                },
+                {
+                  "uuid": "masonry-img-4",
+                  "componentType": "ImageProps",
+                  "src": "https://picsum.photos/400/600",
+                  "alt": "Masonry Image 4",
+                  "asset": {
+                    "uuid": "img-asset-m4",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "random",
+                    "requestedWidth": 400,
+                    "requestedHeight": 600
+                  }
+                },
+                {
+                  "uuid": "masonry-img-5",
+                  "componentType": "ImageProps",
+                  "src": "https://picsum.photos/400/400",
+                  "alt": "Masonry Image 5",
+                  "asset": {
+                    "uuid": "img-asset-m5",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "random",
+                    "requestedWidth": 400,
+                    "requestedHeight": 400
+                  }
+                },
+                {
+                  "uuid": "masonry-img-6",
+                  "componentType": "ImageProps",
+                  "src": "https://picsum.photos/400/450",
+                  "alt": "Masonry Image 6",
+                  "asset": {
+                    "uuid": "img-asset-m6",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "random",
+                    "requestedWidth": 400,
+                    "requestedHeight": 450
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-specialized-layouts",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-specialized-layouts",
+          "title": "Specialized Layouts",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "aspect-ratio-demo",
+              "componentType": "AspectRatioProps",
+              "ratio": "16 / 9",
+              "content": {
+                "uuid": "aspect-image-1",
+                "componentType": "ImageProps",
+                "src": "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80",
+                "alt": "A beautiful landscape.",
+                "asset": {
+                  "uuid": "img-asset-1",
+                  "componentType": "ImageAssetProps",
+                  "isProcessed": true,
+                  "keywords": "landscape",
+                  "requestedWidth": 800,
+                  "requestedHeight": 450
+                }
+              }
+            },
+            {
+              "uuid": "center-demo",
+              "componentType": "CenterProps",
+              "classes": "h-full bg-muted rounded-lg",
+              "content": [
+                {
+                  "uuid": "centered-text",
+                  "componentType": "TextProps",
+                  "content": "This content is perfectly centered."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-overflow-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-overflow-demo",
+          "title": "Overflow Container",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "overflow-container-1",
+              "componentType": "OverflowContainerProps",
+              "overflowY": "scroll",
+              "classes": "h-24 p-4 border rounded-lg",
+              "content": [
+                {
+                  "uuid": "flex-overflow-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "overflow-item-1",
+                      "componentType": "TextProps",
+                      "content": "This is the first item in a scrollable container."
+                    },
+                    {
+                      "uuid": "overflow-item-2",
+                      "componentType": "TextProps",
+                      "content": "When the content is taller than the container, a vertical scrollbar will appear."
+                    },
+                    {
+                      "uuid": "overflow-item-3",
+                      "componentType": "TextProps",
+                      "content": "This is another item."
+                    },
+                    {
+                      "uuid": "overflow-item-4",
+                      "componentType": "TextProps",
+                      "content": "And another one."
+                    },
+                    {
+                      "uuid": "overflow-item-5",
+                      "componentType": "TextProps",
+                      "content": "Just a bit more content."
+                    },
+                    {
+                      "uuid": "overflow-item-6",
+                      "componentType": "TextProps",
+                      "content": "This final item should ensure the container overflows."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-carousel-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-carousel-demo",
+          "title": "Carousel",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "carousel-main",
+              "componentType": "CarouselProps",
+              "slidesPerView": 1,
+              "loop": true,
+              "autoplay": true,
+              "interval": 4000,
+              "content": [
+                {
+                  "uuid": "slide-1",
+                  "componentType": "ImageProps",
+                  "src": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
+                  "alt": "Slide 1",
+                  "asset": {
+                    "uuid": "img-asset-2",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "tech",
+                    "requestedWidth": 800,
+                    "requestedHeight": 600
+                  }
+                },
+                {
+                  "uuid": "slide-2",
+                  "componentType": "ImageProps",
+                  "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+                  "alt": "Slide 2",
+                  "asset": {
+                    "uuid": "img-asset-3",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "code",
+                    "requestedWidth": 800,
+                    "requestedHeight": 600
+                  }
+                },
+                {
+                  "uuid": "slide-3",
+                  "componentType": "TextProps",
+                  "content": "You can have any component in a slide!",
+                  "classes": "text-2xl text-center p-12 bg-primary text-primary-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-accordion-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-accordion-demo",
+          "title": "Accordion",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "accordion-main",
+              "componentType": "AccordionProps",
+              "type": "single",
+              "collapsible": true,
+              "defaultValue": "accordion-item-1",
+              "content": [
+                {
+                  "uuid": "accordion-item-1",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "trigger-text-1",
+                      "componentType": "TextProps",
+                      "content": "Is it accessible?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "content-text-1",
+                      "componentType": "TextProps",
+                      "content": "Yes. It adheres to the WAI-ARIA design pattern."
+                    }
+                  ]
+                },
+                {
+                  "uuid": "accordion-item-2",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "trigger-text-2",
+                      "componentType": "TextProps",
+                      "content": "Can it be styled?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "content-text-2",
+                      "componentType": "TextProps",
+                      "content": "Yes. You can pass custom classes to extend the styles."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-advanced-containers",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-advanced-containers",
+          "title": "Advanced Containers",
+          "layout": "twoColumnEven",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "split-pane-demo",
+              "componentType": "SplitPaneProps",
+              "direction": "horizontal",
+              "initialSizes": [
+                30,
+                70
+              ],
+              "content": [
+                {
+                  "uuid": "pane-1",
+                  "componentType": "TextProps",
+                  "content": "Left Pane (30%)",
+                  "classes": "p-4"
+                },
+                {
+                  "uuid": "pane-2",
+                  "componentType": "TextProps",
+                  "content": "Right Pane (70%)",
+                  "classes": "p-4"
+                }
+              ]
+            },
+            {
+              "uuid": "resizable-box-demo",
+              "componentType": "ResizableBoxProps",
+              "minWidth": "100px",
+              "minHeight": "100px",
+              "classes": "p-4 bg-muted rounded-lg flex items-center justify-center",
+              "content": [
+                {
+                  "uuid": "resizable-content",
+                  "componentType": "TextProps",
+                  "content": "Resizable Box"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-virtual-list-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-virtual-list-demo",
+          "title": "Virtualized List",
+          "spacing": "md",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "virtual-list-1",
+              "componentType": "VirtualListProps",
+              "containerHeight": 400,
+              "itemHeight": 64,
+              "itemTemplate": {
+                "uuid": "template-item",
+                "componentType": "FlexProps",
+                "align": "center",
+                "justify": "between",
+                "classes": "p-2 border-b h-full",
+                "content": [
+                  {
+                    "uuid": "template-user-info-flex",
+                    "componentType": "FlexProps",
+                    "align": "center",
+                    "gap": "4",
+                    "content": [
+                      {
+                        "uuid": "template-avatar",
+                        "componentType": "AvatarProps",
+                        "name": "{{name}}",
+                        "size": 40
+                      },
+                      {
+                        "uuid": "template-name-email-flex",
+                        "componentType": "FlexProps",
+                        "direction": "column",
+                        "align": "start",
+                        "content": [
+                          {
+                            "uuid": "template-name",
+                            "componentType": "TextProps",
+                            "content": "{{name}}",
+                            "classes": "font-semibold"
+                          },
+                          {
+                            "uuid": "template-email",
+                            "componentType": "TextProps",
+                            "content": "{{email}}",
+                            "variant": "muted"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "uuid": "template-badge",
+                    "componentType": "BadgeProps",
+                    "content": "{{status}}",
+                    "variant": "default"
+                  }
+                ]
+              },
+              "content": [
+                {
+                  "uuid": "v-item-1",
+                  "componentType": "VirtualListItemData",
+                  "name": "Alice Johnson",
+                  "email": "alice.j@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=a",
+                  "status": "Active",
+                  "statusVariant": "success"
+                },
+                {
+                  "uuid": "v-item-2",
+                  "componentType": "VirtualListItemData",
+                  "name": "Bob Williams",
+                  "email": "bob.w@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=b",
+                  "status": "Inactive",
+                  "statusVariant": "secondary"
+                },
+                {
+                  "uuid": "v-item-3",
+                  "componentType": "VirtualListItemData",
+                  "name": "Charlie Brown",
+                  "email": "charlie.b@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=c",
+                  "status": "Active",
+                  "statusVariant": "success"
+                },
+                {
+                  "uuid": "v-item-4",
+                  "componentType": "VirtualListItemData",
+                  "name": "Diana Miller",
+                  "email": "diana.m@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=d",
+                  "status": "Active",
+                  "statusVariant": "success"
+                },
+                {
+                  "uuid": "v-item-5",
+                  "componentType": "VirtualListItemData",
+                  "name": "Ethan Davis",
+                  "email": "ethan.d@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=e",
+                  "status": "Inactive",
+                  "statusVariant": "secondary"
+                },
+                {
+                  "uuid": "v-item-6",
+                  "componentType": "VirtualListItemData",
+                  "name": "Fiona Garcia",
+                  "email": "fiona.g@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=f",
+                  "status": "Active",
+                  "statusVariant": "success"
+                },
+                {
+                  "uuid": "v-item-7",
+                  "componentType": "VirtualListItemData",
+                  "name": "George Rodriguez",
+                  "email": "george.r@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=g",
+                  "status": "Active",
+                  "statusVariant": "success"
+                },
+                {
+                  "uuid": "v-item-8",
+                  "componentType": "VirtualListItemData",
+                  "name": "Hannah Martinez",
+                  "email": "hannah.m@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=h",
+                  "status": "Inactive",
+                  "statusVariant": "secondary"
+                },
+                {
+                  "uuid": "v-item-9",
+                  "componentType": "VirtualListItemData",
+                  "name": "Ian Hernandez",
+                  "email": "ian.h@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=i",
+                  "status": "Active",
+                  "statusVariant": "success"
+                },
+                {
+                  "uuid": "v-item-10",
+                  "componentType": "VirtualListItemData",
+                  "name": "Jane Lopez",
+                  "email": "jane.l@example.com",
+                  "avatarUrl": "https://i.pravatar.cc/40?u=j",
+                  "status": "Active",
+                  "statusVariant": "success"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "This page showcases all available layout components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

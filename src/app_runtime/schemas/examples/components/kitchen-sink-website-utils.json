@@ -1,0 +1,404 @@
+{
+  "uuid": "app-utils-kitchen-sink-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Utility Components Kitchen Sink",
+  "alias": "utility-components-kitchen-sink",
+  "summary": "Utility component collection including SEO meta tags, language selectors, share buttons, date displays, lazy loading, and helper components. Features supportive elements that enhance functionality and user experience.",
+  "shortSummary": "Utility component collection including SEO meta tags, language selectors, share buttons, date displays, lazy loading, and helper components",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "EN-US",
+      "nameNative": "EN-US",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-main-002",
+      "componentType": "NavbarProps",
+      "logo": {
+        "uuid": "navlogo-003",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "UtilsSink",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "navlogo-003-href",
+          "href": "/",
+          "text": "UtilsSink"
+        }
+      },
+      "content": [
+        {
+          "uuid": "navlink-home-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "active": true,
+          "href": {
+            "uuid": "link-home-006",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        }
+      ],
+      "sticky": true,
+      "variant": "default"
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home-016",
+      "title": "Utility Components Demo",
+      "slug": "/",
+      "summary": "Demonstration of utility-focused components.",
+      "content": [
+        {
+          "uuid": "seo-meta-main-152",
+          "componentType": "SeoMetaProps",
+          "title": "Ultimate Utility Component Showcase",
+          "pageDescription": "A comprehensive demonstration of utility components like Error Boundaries, Lazy Loading, and more.",
+          "keywords": [
+            "utilities",
+            "error boundary",
+            "lazy load",
+            "seo"
+          ],
+          "ogTitle": "The Ultimate Utility Component Kitchen Sink",
+          "ogDescription": "Explore a live demo of all utility components rendered from a single JSON configuration.",
+          "ogImageUrl": "https://images.unsplash.com/photo-1516116216624-53e697320964?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+          "canonicalUrl": "https://example.com/utils-kitchen-sink"
+        },
+        {
+          "uuid": "back-to-top-main-153",
+          "componentType": "BackToTopProps",
+          "threshold": 200,
+          "smooth": false,
+          "position": "bottomLeft",
+          "icon": {
+            "uuid": "btt-icon-154",
+            "componentType": "IconProps",
+            "name": "circle-arrow-up",
+            "size": 40
+          }
+        },
+        {
+          "uuid": "section-utility-showcase-155",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-utility-showcase-155",
+          "layout": "singleColumnWide",
+          "title": "Utility Components Showcase",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "grid-utilities-156",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gapX": "12",
+              "gapY": "12",
+              "content": [
+                {
+                  "uuid": "flex-datetime-157",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-datetime-158",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "DateTimeDisplay Variations"
+                    },
+                    {
+                      "uuid": "dt-1-159",
+                      "componentType": "DateTimeDisplayProps",
+                      "value": "2025-07-18T22:57:00.000Z",
+                      "format": "MMMM d, yyyy h:mm a"
+                    },
+                    {
+                      "uuid": "dt-2-160",
+                      "componentType": "DateTimeDisplayProps",
+                      "value": "2025-07-18T19:57:00.000Z",
+                      "relative": true
+                    },
+                    {
+                      "uuid": "dt-3-161",
+                      "componentType": "DateTimeDisplayProps",
+                      "value": "2025-07-18T22:50:00.000Z",
+                      "relative": true,
+                      "autoUpdate": true,
+                      "classes": "font-bold text-primary"
+                    },
+                    {
+                      "uuid": "dt-4-162",
+                      "componentType": "DateTimeDisplayProps",
+                      "value": "2025-07-18T22:57:00.000Z",
+                      "format": "LLLL",
+                      "timezone": "America/New_York"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-language-share-163",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-lang-164",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Language Selector"
+                    },
+                    {
+                      "uuid": "lang-selector-165",
+                      "componentType": "LanguageSelectorProps",
+                      "currentLanguageCode": "en-US",
+                      "options": [
+                        {
+                          "code": "en-US",
+                          "name": "English (US)"
+                        },
+                        {
+                          "code": "es-ES",
+                          "name": "Español (España)"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "spacer-6",
+                      "componentType": "SpacerProps",
+                      "size": "8"
+                    },
+                    {
+                      "uuid": "heading-share-166",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Share Buttons"
+                    },
+                    {
+                      "uuid": "share-buttons-flex-167",
+                      "componentType": "FlexProps",
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "share-twitter-168",
+                          "componentType": "ShareButtonProps",
+                          "platform": "twitter",
+                          "url": "https://example.com",
+                          "text": "Check this out!"
+                        },
+                        {
+                          "uuid": "share-facebook-169",
+                          "componentType": "ShareButtonProps",
+                          "platform": "facebook",
+                          "url": "https://example.com"
+                        },
+                        {
+                          "uuid": "share-linkedin-170",
+                          "componentType": "ShareButtonProps",
+                          "platform": "linkedin",
+                          "url": "https://example.com",
+                          "text": "Great resource"
+                        },
+                        {
+                          "uuid": "share-email-171",
+                          "componentType": "ShareButtonProps",
+                          "platform": "email",
+                          "url": "https://example.com",
+                          "text": "Thought you might find this interesting"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "spacer-7",
+              "componentType": "SpacerProps",
+              "size": "12"
+            },
+            {
+              "uuid": "grid-wrappers-172",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gapX": "12",
+              "content": [
+                {
+                  "uuid": "flex-lazy-load-178",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-lazy-load-179",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Lazy Load"
+                    },
+                    {
+                      "uuid": "lazy-load-example-180",
+                      "componentType": "LazyLoadProps",
+                      "placeholder": {
+                        "uuid": "lazy-placeholder-181",
+                        "componentType": "SkeletonProps",
+                        "width": "100%",
+                        "height": "200px"
+                      },
+                      "content": [
+                        {
+                          "uuid": "lazy-image-182",
+                          "componentType": "ImageProps",
+                          "src": "https://images.unsplash.com/photo-1682687220247-9f786e34d472?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                          "alt": "A lazily loaded image of abstract art.",
+                          "asset": {
+                            "uuid": "lazy-asset-183",
+                            "componentType": "ImageAssetProps",
+                            "keywords": "lazy, art",
+                            "isProcessed": true,
+                            "requestedWidth": 1170,
+                            "requestedHeight": 800
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-portal-demo-184",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-portal-demo-184",
+          "layout": "singleColumnCentered",
+          "title": "Portal Demonstration",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "portal-explanation-185",
+              "componentType": "TextProps",
+              "content": "The Portal component renders its content into a different part of the DOM, which is ideal for modals and popups. Below is a button that would trigger a modal, and the Portal component that defines the modal's content. In a real application, the Portal would be hidden until the button is clicked."
+            },
+            {
+              "uuid": "spacer-8",
+              "componentType": "SpacerProps",
+              "size": "8"
+            },
+            {
+              "uuid": "portal-trigger-button-186",
+              "componentType": "ButtonProps",
+              "text": "Open Modal (Conceptual)",
+              "type": "button",
+              "variant": "default",
+              "disabled": false,
+              "onClick": "handleOpenModal"
+            },
+            {
+              "uuid": "portal-component-187",
+              "componentType": "PortalProps",
+              "targetId": "modal-root",
+              "content": [
+                {
+                  "uuid": "modal-content-wrapper-188",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "p-8 bg-white rounded-lg shadow-lg border",
+                  "content": [
+                    {
+                      "uuid": "modal-heading-189",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Portal Content"
+                    },
+                    {
+                      "uuid": "modal-text-190",
+                      "componentType": "TextProps",
+                      "content": "This content is rendered inside the portal target."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Demonstration of utility-focused components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-110",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-110",
+      "speed": 0.5,
+      "background": {
+        "color": "hsl(222.2, 47.4%, 11.2%)"
+      },
+      "content": [
+        {
+          "uuid": "footer-flex-111",
+          "componentType": "FlexProps",
+          "justify": "between",
+          "align": "center",
+          "content": [
+            {
+              "uuid": "footer-text-112",
+              "componentType": "TextProps",
+              "content": "© 2025 Utility Sink. All Rights Reserved.",
+              "classes": "text-white"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

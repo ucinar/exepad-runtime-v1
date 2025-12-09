@@ -1,0 +1,189 @@
+{
+  "uuid": "c424026f-9963-423a-9079-05b392b2953f",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Header Block 39",
+  "alias": "header-block-39",
+  "summary": "COMPLEX left-aligned navigation with EXTENSIVE menu: 2 simple links (Home, Pricing) + 2 multi-item dropdowns (Products with 3 items, Solutions with 2 items) + outline Contact Sales button + primary Start Trial button. Menu items show ANIMATED UNDERLINE on hover. Navbar scrolls normally. Ideal for: enterprise platforms, complex products, B2B SaaS needing comprehensive navigation with dual CTAs.",
+  "shortSummary": "Complex left-logo nav: 2 links + 2 dropdowns + outline + primary buttons. Underline effects. Scrolls normally.",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "97f32465-05d2-43af-b4c3-23a0d34376b8",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "underline",
+      "sticky": false,
+      "logo": {
+        "uuid": "081a87be-e8b6-4dd5-b0c6-9408fef9a61f",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Creative Co",
+        "classes": "text-2xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+      },
+      "content": [
+        {
+          "uuid": "45b3441a-9d9a-49a4-9136-8dab9b886234",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "fe6ce0e5-a1d9-40f8-a02c-5021371470f2",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "18d2ab28-4b51-40f0-9dbd-c0ce60deb951",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Products",
+          "dropdown": {
+            "uuid": "baffd0c4-df52-48c1-b889-0867a9e9c020",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "66214a99-3026-40a9-85a0-0ab8a9f00340",
+                "componentType": "DropdownLink",
+                "title": "Web Apps",
+                "href": "/products/web"
+              },
+              {
+                "uuid": "3d85f43a-3748-4f94-8bb3-3fed8099c4c5",
+                "componentType": "DropdownLink",
+                "title": "Mobile Apps",
+                "href": "/products/mobile"
+              },
+              {
+                "uuid": "42338273-1e15-41f5-b4d0-ad0ecfe578e0",
+                "componentType": "DropdownLink",
+                "title": "Enterprise",
+                "href": "/products/enterprise"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "88f86781-8201-4a36-91df-5bbf9543a939",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Solutions",
+          "dropdown": {
+            "uuid": "174c5aec-c4f8-4d2f-919b-123252122791",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "bd05c016-888e-4e72-934a-fa6cec01be70",
+                "componentType": "DropdownLink",
+                "title": "Analytics",
+                "href": "/solutions/analytics"
+              },
+              {
+                "uuid": "59069e9c-92d0-410f-94c3-2e9a0443e827",
+                "componentType": "DropdownLink",
+                "title": "Automation",
+                "href": "/solutions/automation"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "6597f069-deea-4a9f-a135-513022766c4d",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Pricing",
+          "href": {
+            "uuid": "f79f3f39-d395-4c63-bd73-f7c635f3412d",
+            "componentType": "LinkProps",
+            "href": "/pricing",
+            "text": "Pricing"
+          }
+        },
+        {
+          "uuid": "0cfb989a-bffe-4837-bc37-7ea7e4f88f8b",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "e1fbd00f-9d38-4ee4-acae-e09f060fee77",
+            "componentType": "ButtonProps",
+            "text": "Contact Sales",
+            "variant": "outline",
+            "link": {
+              "uuid": "6023082b-cc49-4536-94b9-2cd78c0d188c",
+              "componentType": "LinkProps",
+              "href": "/contact",
+              "text": "Contact Sales"
+            }
+          }
+        },
+        {
+          "uuid": "0d9ae5bd-7465-4bfd-8eee-744314ea6544",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "dfb8f2a7-5146-44d4-b051-e6c87a3dffdf",
+            "componentType": "ButtonProps",
+            "text": "Start Trial",
+            "variant": "default",
+            "link": {
+              "uuid": "81bc40d6-1647-4bdf-ab8e-2300749dd2bf",
+              "componentType": "LinkProps",
+              "href": "/trial",
+              "text": "Start Trial"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pages": [],
+  "footer": []
+}

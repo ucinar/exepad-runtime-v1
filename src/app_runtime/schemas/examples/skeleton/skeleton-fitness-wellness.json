@@ -1,0 +1,469 @@
+{
+  "uuid": "skeleton-010-fitness-wellness",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Fitness Wellness Skeleton",
+  "alias": "fitness-wellness-skeleton",
+  "summary": "Header: Sticky default navbar with bold gradient logo (APEX FITNESS, orange-to-amber gradient), scale animations (200ms), classes dropdown (Strength Training, Cardio & HIIT, Yoga & Mindfulness, Group Classes), regular links (Schedule, Trainers, Membership), large default Free Trial CTA button. Footer: Three-section energetic layout - top motivational CTA with large heading + description + dual CTAs (outline Start Free Trial + outline Book a Tour), middle 4-column grid (Brand/About, Quick Links, Gym Hours with weekday/weekend times + 24/7 access note, Contact with address/phone/email/socials), enhanced spacing (pb-16, my-12, pt-4), gradient dark background (slate-900 to orange-950), bold orange-amber accents.",
+  "shortSummary": "Fitness skeleton with energetic navbar and motivational footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#020617",
+      "primary": "#c2410c",
+      "primary-foreground": "#ffffff",
+      "secondary": "#fff7ed",
+      "secondary-foreground": "#9a3412",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#fbbf24",
+      "accent-foreground": "#78350f",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#f97316"
+    },
+    "dark": {
+      "background": "#020617",
+      "foreground": "#f8fafc",
+      "primary": "#fb923c",
+      "primary-foreground": "#431407",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#fed7aa",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#fbbf24",
+      "accent-foreground": "#1e293b",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#334155",
+      "input": "#1e293b",
+      "ring": "#fb923c"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-fitness-navbar-010",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-fitness-010",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "APEX FITNESS",
+        "classes": "text-2xl font-black tracking-tighter bg-gradient-to-r from-orange-600 to-amber-500 bg-clip-text text-transparent"
+      },
+      "content": [
+        {
+          "uuid": "menu-dropdown-classes-010",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Classes",
+          "dropdown": {
+            "uuid": "dropdown-classes-010",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-strength-010",
+                "componentType": "DropdownLink",
+                "title": "Strength Training",
+                "href": "/classes/strength"
+              },
+              {
+                "uuid": "dropdown-cardio-010",
+                "componentType": "DropdownLink",
+                "title": "Cardio & HIIT",
+                "href": "/classes/cardio"
+              },
+              {
+                "uuid": "dropdown-yoga-010",
+                "componentType": "DropdownLink",
+                "title": "Yoga & Mindfulness",
+                "href": "/classes/yoga"
+              },
+              {
+                "uuid": "dropdown-group-010",
+                "componentType": "DropdownLink",
+                "title": "Group Classes",
+                "href": "/classes/group"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-item-schedule-010",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Schedule",
+          "href": {
+            "uuid": "link-schedule-010",
+            "componentType": "LinkProps",
+            "href": "/schedule",
+            "text": "Schedule"
+          }
+        },
+        {
+          "uuid": "menu-item-trainers-010",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Trainers",
+          "href": {
+            "uuid": "link-trainers-010",
+            "componentType": "LinkProps",
+            "href": "/trainers",
+            "text": "Trainers"
+          }
+        },
+        {
+          "uuid": "menu-item-membership-010",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Membership",
+          "href": {
+            "uuid": "link-membership-010",
+            "componentType": "LinkProps",
+            "href": "/membership",
+            "text": "Membership"
+          }
+        },
+        {
+          "uuid": "menu-button-trial-010",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-trial-010",
+            "componentType": "ButtonProps",
+            "text": "Free Trial",
+            "variant": "default",
+            "size": "lg",
+            "link": {
+              "uuid": "link-trial-010",
+              "componentType": "LinkProps",
+              "href": "/trial",
+              "text": "Free Trial"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 200
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-fitness-010",
+      "componentType": "SectionProps",
+      "classes": "py-20 px-8 bg-gradient-to-br from-slate-900 via-orange-950 to-slate-900",
+      "layout": "singleColumnCentered",
+      "spacing": "xl",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-cta-section-010",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "6",
+          "classes": "pb-16 text-center",
+          "content": [
+            {
+              "uuid": "footer-cta-heading-010",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "TRANSFORM YOUR LIFE TODAY",
+              "classes": "text-5xl font-black tracking-tight bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent"
+            },
+            {
+              "uuid": "footer-cta-text-010",
+              "componentType": "TextProps",
+              "content": "Join thousands of members who are crushing their fitness goals. Your journey starts now.",
+              "classes": "text-xl text-slate-300 max-w-2xl"
+            },
+            {
+              "uuid": "footer-cta-buttons-010",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "4",
+              "classes": "mt-6",
+              "content": [
+                {
+                  "uuid": "footer-button-join-010",
+                  "componentType": "ButtonProps",
+                  "text": "Start Free Trial",
+                  "variant": "default",
+                  "size": "lg",
+                  "classes": "bg-orange-500 hover:bg-orange-600 text-white"
+                },
+                {
+                  "uuid": "footer-button-tour-010",
+                  "componentType": "ButtonProps",
+                  "text": "Book a Tour",
+                  "variant": "outline",
+                  "size": "lg",
+                  "classes": "border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-slate-900"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-main-content-010",
+          "componentType": "GridProps",
+          "columns": 4,
+          "gap": "8",
+          "classes": "w-full pb-16",
+          "content": [
+            {
+              "uuid": "footer-col-about-010",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-logo-010",
+                  "componentType": "TextProps",
+                  "content": "APEX FITNESS",
+                  "classes": "text-2xl font-black bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent"
+                },
+                {
+                  "uuid": "footer-tagline-010",
+                  "componentType": "TextProps",
+                  "content": "Where champions are made. Premium facilities, expert trainers, and a community that pushes you to be your best.",
+                  "classes": "text-slate-400"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-quick-links-010",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-quick-010",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "QUICK LINKS",
+                  "classes": "text-sm font-bold text-orange-400 tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-classes-010",
+                  "componentType": "LinkProps",
+                  "text": "Browse Classes",
+                  "href": "/classes",
+                  "classes": "text-sm text-slate-400 hover:text-orange-400"
+                },
+                {
+                  "uuid": "footer-link-schedule-010",
+                  "componentType": "LinkProps",
+                  "text": "Class Schedule",
+                  "href": "/schedule",
+                  "classes": "text-sm text-slate-400 hover:text-orange-400"
+                },
+                {
+                  "uuid": "footer-link-trainers-010",
+                  "componentType": "LinkProps",
+                  "text": "Meet Our Trainers",
+                  "href": "/trainers",
+                  "classes": "text-sm text-slate-400 hover:text-orange-400"
+                },
+                {
+                  "uuid": "footer-link-pricing-010",
+                  "componentType": "LinkProps",
+                  "text": "Membership Plans",
+                  "href": "/membership",
+                  "classes": "text-sm text-slate-400 hover:text-orange-400"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-hours-010",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-hours-010",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "GYM HOURS",
+                  "classes": "text-sm font-bold text-orange-400 tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-hours-weekday-010",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "1",
+                  "content": [
+                    {
+                      "uuid": "footer-hours-weekday-label-010",
+                      "componentType": "TextProps",
+                      "content": "Monday - Friday",
+                      "classes": "text-sm font-semibold text-slate-300"
+                    },
+                    {
+                      "uuid": "footer-hours-weekday-time-010",
+                      "componentType": "TextProps",
+                      "content": "5:00 AM - 11:00 PM",
+                      "classes": "text-sm text-slate-400"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-hours-weekend-010",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "1",
+                  "classes": "mt-2",
+                  "content": [
+                    {
+                      "uuid": "footer-hours-weekend-label-010",
+                      "componentType": "TextProps",
+                      "content": "Saturday - Sunday",
+                      "classes": "text-sm font-semibold text-slate-300"
+                    },
+                    {
+                      "uuid": "footer-hours-weekend-time-010",
+                      "componentType": "TextProps",
+                      "content": "7:00 AM - 9:00 PM",
+                      "classes": "text-sm text-slate-400"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-hours-24-010",
+                  "componentType": "TextProps",
+                  "content": "24/7 Access for Premium Members",
+                  "classes": "text-sm text-orange-400 font-semibold mt-2"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-contact-010",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-contact-010",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "CONTACT",
+                  "classes": "text-sm font-bold text-orange-400 tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-address-010",
+                  "componentType": "TextProps",
+                  "content": "456 Fitness Ave\nLos Angeles, CA 90001",
+                  "classes": "text-sm text-slate-400"
+                },
+                {
+                  "uuid": "footer-phone-010",
+                  "componentType": "LinkProps",
+                  "text": "(555) 987-6543",
+                  "href": "tel:+15559876543",
+                  "classes": "text-sm text-slate-400 hover:text-orange-400"
+                },
+                {
+                  "uuid": "footer-email-010",
+                  "componentType": "LinkProps",
+                  "text": "info@apexfitness.com",
+                  "href": "mailto:info@apexfitness.com",
+                  "classes": "text-sm text-slate-400 hover:text-orange-400"
+                },
+                {
+                  "uuid": "footer-social-010",
+                  "componentType": "FlexProps",
+                  "gap": "3",
+                  "classes": "mt-4",
+                  "content": [
+                    {
+                      "uuid": "social-facebook-010",
+                      "componentType": "SocialLinkProps",
+                      "platform": "facebook",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-instagram-010",
+                      "componentType": "SocialLinkProps",
+                      "platform": "instagram",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-youtube-010",
+                      "componentType": "SocialLinkProps",
+                      "platform": "youtube",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-tiktok-010",
+                      "componentType": "SocialLinkProps",
+                      "platform": "tiktok",
+                      "url": "#"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-010",
+          "componentType": "SpacerProps",
+          "classes": "my-12 border-t border-slate-800",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-010",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4 pt-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-010",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 APEX FITNESS. Unleash your potential.",
+              "classes": "text-sm text-slate-500"
+            },
+            {
+              "uuid": "footer-legal-010",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-link-privacy-010",
+                  "componentType": "LinkProps",
+                  "text": "Privacy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-slate-500 hover:text-orange-400"
+                },
+                {
+                  "uuid": "footer-link-terms-010",
+                  "componentType": "LinkProps",
+                  "text": "Terms",
+                  "href": "/terms",
+                  "classes": "text-sm text-slate-500 hover:text-orange-400"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

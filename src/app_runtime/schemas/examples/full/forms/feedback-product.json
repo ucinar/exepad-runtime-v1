@@ -1,0 +1,313 @@
+{
+  "uuid": "app-form-feedback-prod-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Product Feedback Form",
+  "alias": "product-feedback-form",
+  "summary": "A comprehensive product feedback form with feature ratings, bug reporting, and improvement suggestions. Perfect for SaaS companies and product teams to collect structured user feedback and identify product enhancement opportunities.",
+  "shortSummary": "A product feedback form with feature ratings and improvement suggestions",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#1e293b",
+      "primary": "#0e7490",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#cffafe",
+      "accent-foreground": "#164e63",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0891b2"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f1f5f9",
+      "primary": "#22d3ee",
+      "primary-foreground": "#083344",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f1f5f9",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#164e63",
+      "accent-foreground": "#cffafe",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#22d3ee"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-feedback",
+      "title": "Share Your Feedback",
+      "slug": "/",
+      "summary": "Help us improve by sharing your thoughts and experiences with our product.",
+      "shortSummary": "Share your product feedback and suggestions",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-main",
+          "spacing": "xl",
+          "classes": "min-h-screen bg-gradient-to-b from-primary/5 to-background",
+          "content": [
+            {
+              "uuid": "main-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "content-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "header-section",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "align": "center",
+                      "classes": "text-center",
+                      "content": [
+                        {
+                          "uuid": "header-icon",
+                          "componentType": "IconProps",
+                          "name": "message-square",
+                          "size": 56,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "header-heading",
+                          "componentType": "HeadingProps",
+                          "level": 1,
+                          "text": "We'd Love Your Feedback"
+                        },
+                        {
+                          "uuid": "header-description",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "Your input helps us build a better product. Share your experience, report bugs, or suggest new features.",
+                          "classes": "text-muted-foreground max-w-2xl"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "feedback-form",
+                      "componentType": "FormProps",
+                      "title": "Your Feedback",
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "classes": "bg-background border rounded-xl shadow-lg p-8",
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Thank you! Your feedback has been submitted and will help us improve.",
+                        "errorMessage": "Failed to submit feedback. Please try again or email us directly.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email",
+                        "onSuccessAction": {
+                          "type": "clearForm"
+                        }
+                      },
+                      "content": [
+                        {
+                          "uuid": "field-feedback-type",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "feedbackType",
+                          "label": "What type of feedback do you have?",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Feature Request - I have an idea for a new feature",
+                              "value": "feature-request"
+                            },
+                            {
+                              "label": "Bug Report - Something isn't working correctly",
+                              "value": "bug-report"
+                            },
+                            {
+                              "label": "General Feedback - Comments about my experience",
+                              "value": "general-feedback"
+                            },
+                            {
+                              "label": "Improvement Suggestion - How to make existing features better",
+                              "value": "improvement"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-subject",
+                          "componentType": "TextFieldProps",
+                          "name": "subject",
+                          "label": "Subject",
+                          "placeholder": "Brief summary of your feedback",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-description",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "description",
+                          "label": "Detailed Description",
+                          "placeholder": "Please provide as much detail as possible...",
+                          "rows": 6,
+                          "maxLength": 2000,
+                          "required": true,
+                          "helperText": "Include specific examples, steps to reproduce (for bugs), or expected vs actual behavior"
+                        },
+                        {
+                          "uuid": "field-feature-rating",
+                          "componentType": "RatingFieldProps",
+                          "name": "overallSatisfaction",
+                          "label": "Overall Product Satisfaction",
+                          "count": 5,
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-affected-features",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "affectedFeatures",
+                          "label": "Which features does this relate to?",
+                          "helperText": "Select all that apply",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Dashboard",
+                              "value": "dashboard"
+                            },
+                            {
+                              "label": "Reports & Analytics",
+                              "value": "reports"
+                            },
+                            {
+                              "label": "User Management",
+                              "value": "users"
+                            },
+                            {
+                              "label": "Settings & Configuration",
+                              "value": "settings"
+                            },
+                            {
+                              "label": "Integrations",
+                              "value": "integrations"
+                            },
+                            {
+                              "label": "Mobile App",
+                              "value": "mobile"
+                            },
+                            {
+                              "label": "API",
+                              "value": "api"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-priority",
+                          "componentType": "SelectFieldProps",
+                          "name": "priority",
+                          "label": "How important is this to you?",
+                          "placeholder": "Select priority level",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Critical - Blocking my work",
+                              "value": "critical"
+                            },
+                            {
+                              "label": "High - Significantly impacts my workflow",
+                              "value": "high"
+                            },
+                            {
+                              "label": "Medium - Would be nice to have",
+                              "value": "medium"
+                            },
+                            {
+                              "label": "Low - Minor inconvenience",
+                              "value": "low"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-workaround",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "workaround",
+                          "label": "Current Workaround (if any)",
+                          "placeholder": "How are you currently handling this issue?",
+                          "rows": 3,
+                          "helperText": "Optional - helps us understand impact"
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "your@email.com",
+                          "helperText": "We'll use this to follow up on your feedback"
+                        },
+                        {
+                          "uuid": "field-follow-up",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "allowFollowUp",
+                          "label": "It's okay to contact me for more details about this feedback"
+                        },
+                        {
+                          "uuid": "field-hidden-version",
+                          "componentType": "HiddenFieldProps",
+                          "name": "productVersion",
+                          "value": "v2.5.0"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "submit",
+                          "text": "Submit Feedback",
+                          "variant": "default",
+                          "icon": {
+                            "uuid": "submit-icon",
+                            "componentType": "IconProps",
+                            "name": "send",
+                            "size": 16
+                          },
+                          "classes": "w-full",
+                          "uuid": "form-action-submit",
+                          "componentType": "ButtonProps"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

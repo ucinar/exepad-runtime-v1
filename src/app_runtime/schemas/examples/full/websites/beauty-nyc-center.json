@@ -1,0 +1,2675 @@
+{
+  "uuid": "web-app-beauty-center",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "New York Beauty Center",
+  "alias": "new-york-beauty-center",
+  "summary": "An inviting and informative online presence for a beauty center in New York, allowing clients to discover services, view portfolios, book appointments, and contact the center.",
+  "shortSummary": "An inviting and informative online presence for a beauty center in New York, allowing clients to discover services, view portfolios, book appointments",
+  "lastUpdatedEpoch": 1701192800,
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "#F5E6CC",
+      "foreground": "#5D4C6C",
+      "primary": "#7d5a8e",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#CDB4DB",
+      "secondary-foreground": "#5D4C6C",
+      "muted": "#EEE0BD",
+      "muted-foreground": "#5D4C6C",
+      "accent": "#A2D2FF",
+      "accent-foreground": "#5D4C6C",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#E0D0B5",
+      "input": "#E0D0B5",
+      "ring": "#8D6A9F"
+    },
+    "dark": {
+      "background": "#1A1A1A",
+      "foreground": "#F5F5F5",
+      "primary": "#CDB4DB",
+      "primary-foreground": "#1A1A1A",
+      "secondary": "#5D4C6C",
+      "secondary-foreground": "#F5F5F5",
+      "muted": "#333333",
+      "muted-foreground": "#CCCCCC",
+      "accent": "#A2D2FF",
+      "accent-foreground": "#1A1A1A",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#444444",
+      "input": "#444444",
+      "ring": "#CDB4DB"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Playfair Display",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap"
+      },
+      "body": {
+        "family": "Open Sans",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      }
+    },
+    "fontSizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "3.75rem",
+      "7xl": "4.5rem",
+      "8xl": "6rem",
+      "9xl": "8rem"
+    },
+    "radius": "0.5rem",
+    "spacing": {
+      "x": "1rem",
+      "y": "1rem"
+    }
+  },
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-main-beauty-center",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-beauty-center-main",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "New York Beauty Center"
+      },
+      "content": [
+        {
+          "uuid": "link-home",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "href-home",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "link-services",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Services",
+          "href": {
+            "uuid": "href-services",
+            "componentType": "LinkProps",
+            "href": "/services",
+            "text": "Services"
+          }
+        },
+        {
+          "uuid": "link-gallery",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Gallery",
+          "href": {
+            "uuid": "href-gallery",
+            "componentType": "LinkProps",
+            "href": "/gallery",
+            "text": "Gallery"
+          }
+        },
+        {
+          "uuid": "link-about",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About Us",
+          "href": {
+            "uuid": "href-about",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About Us"
+          }
+        },
+        {
+          "uuid": "link-contact",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Contact",
+          "href": {
+            "uuid": "href-contact",
+            "componentType": "LinkProps",
+            "href": "/contact",
+            "text": "Contact"
+          }
+        },
+        {
+          "type": "link",
+          "label": "Pricing",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "385cf908-92fa-4d40-a628-05649afc3048",
+            "href": "/pricing",
+            "text": "Pricing"
+          },
+          "componentType": "MenuLinkItemProps",
+          "uuid": "9d6629ef-0b66-4066-8547-4d573f81ca36"
+        },
+        {
+          "type": "link",
+          "label": "Our Team",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "223ce075-f578-44fd-824f-221c055e4015",
+            "href": "/team",
+            "text": "Our Team"
+          },
+          "componentType": "MenuLinkItemProps",
+          "uuid": "13076de9-2e80-4430-9e1c-5f0904fff2b9"
+        },
+        {
+          "uuid": "nav-cta-book-now",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "btn-book-now",
+            "componentType": "ButtonProps",
+            "text": "Book Now",
+            "variant": "default",
+            "size": "sm",
+            "link": {
+              "uuid": "link-book-now",
+              "componentType": "LinkProps",
+              "href": "/contact",
+              "text": "Book Now"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "homepage-uuid",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page, featuring a prominent hero section with a welcoming image and a tagline, a brief introduction to the beauty center, highlights of popular services, client testimonials, and a clear call to action for booking appointments.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "hero-homepage-uuid",
+          "uuid": "hero-homepage-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-heading-main",
+                  "level": 1,
+                  "text": "Experience Radiant Beauty in the Heart of New York",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-text-main",
+                  "variant": "lead",
+                  "content": "At New York Beauty Center, we offer a sanctuary of serenity and style. Discover personalized treatments designed to enhance your natural glow and elevate your well-being.",
+                  "classes": "mt-4 max-w-3xl mx-auto"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-buttons-flex",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "hero-button-explore-services",
+                      "text": "Explore Services",
+                      "variant": "default",
+                      "size": "lg",
+                      "link": {
+                        "uuid": "link-explore-services",
+                        "componentType": "LinkProps",
+                        "href": "/services",
+                        "text": "Explore Services"
+                      },
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-arrow-right-services",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "hero-button-book-appointment",
+                      "text": "Book an Appointment",
+                      "variant": "outline",
+                      "size": "lg",
+                      "link": {
+                        "uuid": "link-book-appointment",
+                        "componentType": "LinkProps",
+                        "href": "/contact",
+                        "text": "Book an Appointment"
+                      },
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-calendar-book",
+                        "name": "calendar",
+                        "size": 20
+                      },
+                      "iconPosition": "left"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "introduction-homepage-uuid",
+          "uuid": "introduction-homepage-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "lg",
+          "classes": "bg-white py-16",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "intro-heading",
+              "level": 2,
+              "text": "Welcome to Your Haven of Beauty",
+              "classes": "text-4xl font-bold text-center mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "intro-text",
+              "content": "Nestled in the vibrant heart of New York, our beauty center is dedicated to providing an unparalleled experience in luxury and personal care. Our expert team combines innovative techniques with the finest products to deliver exceptional results, leaving you feeling refreshed, rejuvenated, and confident. Step into a world where beauty meets tranquility.",
+              "classes": "max-w-4xl mx-auto text-center text-lg text-gray-700"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "services-highlights-homepage-uuid",
+          "uuid": "services-highlights-homepage-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "bg-gray-50 py-16",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "services-highlights-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "services-highlights-heading",
+                  "level": 1,
+                  "text": "Our Signature Services",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "services-highlights-text",
+                  "variant": "lead",
+                  "content": "Discover a curated selection of our most sought-after treatments, meticulously designed to cater to your unique beauty needs."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "services-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-skincare",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-skincare",
+                        "name": "sparkles",
+                        "size": 32,
+                        "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-skincare-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Skincare Excellence"
+                      },
+                      "text": {
+                        "uuid": "feature-skincare-text",
+                        "componentType": "TextProps",
+                        "content": "Rejuvenate your skin with our advanced facials, peels, and anti-aging treatments. Personalized routines for a healthy, radiant complexion."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-hair-transformations",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-hair",
+                        "name": "scissors",
+                        "size": 32,
+                        "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-hair-transformations-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Hair Transformations"
+                      },
+                      "text": {
+                        "uuid": "feature-hair-transformations-text",
+                        "componentType": "TextProps",
+                        "content": "From stylish cuts and vibrant colors to nourishing treatments, our stylists create looks that perfectly complement your individuality."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-manicures-pedicures",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-manicures",
+                        "name": "hand",
+                        "size": 32,
+                        "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-manicures-pedicures-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Manicures & Pedicures"
+                      },
+                      "text": {
+                        "uuid": "feature-manicures-pedicures-text",
+                        "componentType": "TextProps",
+                        "content": "Indulge in luxurious hand and foot treatments, ensuring beautiful, healthy nails with a touch of elegance."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "testimonials-homepage-uuid",
+          "uuid": "testimonials-homepage-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "testimonials-heading",
+              "level": 2,
+              "text": "What Our Clients Say",
+              "classes": "text-4xl font-extrabold text-center mb-4"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "testimonials-subtitle",
+              "content": "Hear from our cherished clients about their experiences at New York Beauty Center.",
+              "classes": "text-center text-gray-500 mb-12"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "testimonials-grid",
+              "columns": 2,
+              "gap": "8",
+              "classes": "md:grid-cols-2",
+              "content": [
+                {
+                  "componentType": "TestimonialItemProps",
+                  "uuid": "testimonial-emily",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-emily-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "A Gem in the City!"
+                  },
+                  "text": {
+                    "uuid": "testimonial-emily-text",
+                    "componentType": "TextProps",
+                    "content": "My skin has never looked better after visiting New York Beauty Center. The facial was incredibly relaxing and effective. Truly a gem in the city!"
+                  },
+                  "author": {
+                    "uuid": "testimonial-emily-author",
+                    "componentType": "TextProps",
+                    "content": "Emily R."
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-emily-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Loyal Client"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-emily",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/4347368/pexels-photo-4347368.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Photo of Emily R.",
+                    "asset": {
+                      "uuid": "asset-avatar-emily",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "emily, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "componentType": "TestimonialItemProps",
+                  "uuid": "testimonial-sarah",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-sarah-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Hair of My Dreams!"
+                  },
+                  "text": {
+                    "uuid": "testimonial-sarah-text",
+                    "componentType": "TextProps",
+                    "content": "The stylists here are artists! I walked in with an idea and walked out with the hair of my dreams. Professional, friendly, and exceptional talent."
+                  },
+                  "author": {
+                    "uuid": "testimonial-sarah-author",
+                    "componentType": "TextProps",
+                    "content": "Sarah L."
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-sarah-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Happy Customer"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-sarah",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/4347368/pexels-photo-4347368.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Photo of Sarah L.",
+                    "asset": {
+                      "uuid": "asset-avatar-sarah",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "sarah, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "componentType": "TestimonialItemProps",
+                  "uuid": "testimonial-jessica",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-jessica-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "My Mini-Vacation!"
+                  },
+                  "text": {
+                    "uuid": "testimonial-jessica-text",
+                    "componentType": "TextProps",
+                    "content": "Every visit feels like a mini-vacation. The ambiance, the service, the attention to detail – it's all perfect. Highly recommend for anyone needing a pamper day."
+                  },
+                  "author": {
+                    "uuid": "testimonial-jessica-author",
+                    "componentType": "TextProps",
+                    "content": "Jessica W."
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-jessica-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Regular Guest"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-jessica",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/4347368/pexels-photo-4347368.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Photo of Jessica W.",
+                    "asset": {
+                      "uuid": "asset-avatar-jessica",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "jessica, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "componentType": "TestimonialItemProps",
+                  "uuid": "testimonial-olivia",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-olivia-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "My Go-To Spot!"
+                  },
+                  "text": {
+                    "uuid": "testimonial-olivia-text",
+                    "componentType": "TextProps",
+                    "content": "I've tried many places in NYC, but New York Beauty Center stands out. Their manicure lasts forever, and the staff is wonderful. My go-to spot!"
+                  },
+                  "author": {
+                    "uuid": "testimonial-olivia-author",
+                    "componentType": "TextProps",
+                    "content": "Olivia K."
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-olivia-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Nail Enthusiast"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-olivia",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/4347368/pexels-photo-4347368.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Photo of Olivia K.",
+                    "asset": {
+                      "uuid": "asset-avatar-olivia",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "olivia, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "cta-booking-homepage-uuid",
+          "uuid": "cta-booking-homepage-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "bg-purple-700 text-white py-16",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "cta-booking-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-2xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "cta-booking-heading",
+                  "level": 2,
+                  "text": "Ready to Indulge?",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "cta-booking-text",
+                  "variant": "lead",
+                  "content": "Transform your look and elevate your senses. Book your personalized beauty experience today at New York Beauty Center."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "cta-booking-buttons-flex",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "pt-4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-booking-button",
+                      "text": "Book Your Appointment",
+                      "variant": "default",
+                      "size": "lg",
+                      "link": {
+                        "uuid": "cta-link-book-appointment",
+                        "componentType": "LinkProps",
+                        "href": "/contact",
+                        "text": "Book Your Appointment"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page, featuring a prominent hero section with a welcoming image and a tagline, a br",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "services-page-uuid",
+      "title": "Services",
+      "slug": "/services",
+      "summary": "A dedicated page detailing all the beauty services offered, categorized for easy navigation (e.g., Hair Care, Nail Services, Skincare, Massages). Each service will have a short description, pricing information, and potentially before-and-after photos.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "services-intro-section",
+          "uuid": "services-intro-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center py-16 bg-gradient-to-r from-purple-50 to-pink-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "services-intro-heading",
+              "level": 1,
+              "text": "Our Comprehensive Beauty Services",
+              "classes": "text-5xl font-extrabold tracking-tight text-gray-900 mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "services-intro-text",
+              "variant": "lead",
+              "content": "Indulge in a world of beauty and relaxation with our expertly curated services, designed to meet your every need. From revitalizing skincare to stunning hair transformations, discover your perfect treatment below.",
+              "classes": "max-w-3xl mx-auto text-gray-700"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "hair-care-section",
+          "uuid": "hair-care-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "hair-care-heading",
+              "level": 2,
+              "text": "Hair Care & Styling",
+              "classes": "text-4xl font-bold text-center mb-12 text-gray-800"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "hair-care-grid",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hair-service-1",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "hair-photo-1",
+                      "src": "https://images.pexels.com/photos/33402316/pexels-photo-33402316.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after haircut and styling",
+                      "asset": {
+                        "uuid": "hair-asset-1",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "haircut, styling, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "hair-title-1",
+                      "level": 3,
+                      "text": "Women's Haircut & Styling",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hair-desc-1",
+                      "content": "Transform your look with a personalized haircut and professional styling, tailored to your unique features and preferences.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hair-price-1",
+                      "content": "Starting from $75",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hair-service-2",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "hair-photo-2",
+                      "src": "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after hair color and highlights",
+                      "asset": {
+                        "uuid": "hair-asset-2",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "hair color, highlights, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "hair-title-2",
+                      "level": 3,
+                      "text": "Color & Highlights",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hair-desc-2",
+                      "content": "Achieve your dream shade or add dimension with our expert coloring and highlighting services.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hair-price-2",
+                      "content": "Starting from $120",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hair-service-3",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "hair-photo-3",
+                      "src": "https://images.pexels.com/photos/9565882/pexels-photo-9565882.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after deep conditioning treatment",
+                      "asset": {
+                        "uuid": "hair-asset-3",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "deep conditioning, hair treatment, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "hair-title-3",
+                      "level": 3,
+                      "text": "Deep Conditioning Treatment",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hair-desc-3",
+                      "content": "Revitalize dry, damaged hair with our intensive deep conditioning treatments for ultimate softness and shine.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hair-price-3",
+                      "content": "Starting from $50",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "nail-services-section",
+          "uuid": "nail-services-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-gray-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "nail-services-heading",
+              "level": 2,
+              "text": "Nail Care & Artistry",
+              "classes": "text-4xl font-bold text-center mb-12 text-gray-800"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "nail-services-grid",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "nail-service-1",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "nail-photo-1",
+                      "src": "https://images.pexels.com/photos/4959931/pexels-photo-4959931.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after classic manicure",
+                      "asset": {
+                        "uuid": "nail-asset-1",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "manicure, nails, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "nail-title-1",
+                      "level": 3,
+                      "text": "Classic Manicure",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "nail-desc-1",
+                      "content": "Maintain healthy, beautiful hands with our classic manicure, including shaping, cuticle care, and polish application.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "nail-price-1",
+                      "content": "$30",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "nail-service-2",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "nail-photo-2",
+                      "src": "https://images.pexels.com/photos/11842602/pexels-photo-11842602.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after gel pedicure",
+                      "asset": {
+                        "uuid": "nail-asset-2",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "pedicure, gel, nails, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "nail-title-2",
+                      "level": 3,
+                      "text": "Gel Pedicure",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "nail-desc-2",
+                      "content": "Treat your feet to a luxurious pedicure with long-lasting gel polish, ensuring chip-free perfection.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "nail-price-2",
+                      "content": "$60",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "nail-service-3",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "nail-photo-3",
+                      "src": "https://images.pexels.com/photos/977246/pexels-photo-977246.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Example of nail art design",
+                      "asset": {
+                        "uuid": "nail-asset-3",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "nail art, design, creative",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "nail-title-3",
+                      "level": 3,
+                      "text": "Custom Nail Art Design",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "nail-desc-3",
+                      "content": "Express your style with bespoke nail art, designed by our talented technicians.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "nail-price-3",
+                      "content": "Starting from $15",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "skincare-section",
+          "uuid": "skincare-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "skincare-heading",
+              "level": 2,
+              "text": "Rejuvenating Skincare",
+              "classes": "text-4xl font-bold text-center mb-12 text-gray-800"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "skincare-grid",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "skin-service-1",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "skin-photo-1",
+                      "src": "https://images.pexels.com/photos/4959931/pexels-photo-4959931.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after custom facial",
+                      "asset": {
+                        "uuid": "skin-asset-1",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "facial, skincare, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "skin-title-1",
+                      "level": 3,
+                      "text": "Customized Facial",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "skin-desc-1",
+                      "content": "A facial tailored to your skin's unique needs, addressing concerns like hydration, clarity, and tone.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "skin-price-1",
+                      "content": "$100",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "skin-service-2",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "skin-photo-2",
+                      "src": "https://images.pexels.com/photos/7161698/pexels-photo-7161698.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after anti-aging treatment",
+                      "asset": {
+                        "uuid": "skin-asset-2",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "anti-aging, skincare, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "skin-title-2",
+                      "level": 3,
+                      "text": "Anti-Aging Treatment",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "skin-desc-2",
+                      "content": "Diminish the signs of aging with our specialized treatments, promoting firmness and a youthful glow.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "skin-price-2",
+                      "content": "$150",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "skin-service-3",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "skin-photo-3",
+                      "src": "https://images.pexels.com/photos/4959931/pexels-photo-4959931.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Before and after acne clarifying facial",
+                      "asset": {
+                        "uuid": "skin-asset-3",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "acne, facial, skincare, before-after",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "skin-title-3",
+                      "level": 3,
+                      "text": "Acne Clarifying Facial",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "skin-desc-3",
+                      "content": "Effectively treat breakouts and improve skin clarity with our targeted acne facial.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "skin-price-3",
+                      "content": "$110",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "massages-section",
+          "uuid": "massages-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-gray-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "massages-heading",
+              "level": 2,
+              "text": "Relaxing Massages",
+              "classes": "text-4xl font-bold text-center mb-12 text-gray-800"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "massages-grid",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "massage-service-1",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "massage-photo-1",
+                      "src": "https://images.pexels.com/photos/14212836/pexels-photo-14212836.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Person receiving a Swedish massage",
+                      "asset": {
+                        "uuid": "massage-asset-1",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "swedish massage, relaxation",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "massage-title-1",
+                      "level": 3,
+                      "text": "Swedish Massage",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "massage-desc-1",
+                      "content": "A classic full-body massage designed to relax muscles and promote overall well-being.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "massage-price-1",
+                      "content": "60 min / $90",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "massage-service-2",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "massage-photo-2",
+                      "src": "https://images.pexels.com/photos/275768/pexels-photo-275768.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Person receiving a deep tissue massage",
+                      "asset": {
+                        "uuid": "massage-asset-2",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "deep tissue massage, muscle relief",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "massage-title-2",
+                      "level": 3,
+                      "text": "Deep Tissue Massage",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "massage-desc-2",
+                      "content": "Targets chronic muscle tension and knots with deeper pressure and slower strokes.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "massage-price-2",
+                      "content": "60 min / $110",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "massage-service-3",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow",
+                  "content": [
+                    {
+                      "componentType": "ImageProps",
+                      "uuid": "massage-photo-3",
+                      "src": "https://images.pexels.com/photos/6187657/pexels-photo-6187657.jpeg?auto=compress&cs=tinysrgb&h=350",
+                      "alt": "Hot stones on a person's back during therapy",
+                      "asset": {
+                        "uuid": "massage-asset-3",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "hot stone massage, therapy, relaxation",
+                        "isProcessed": true,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300
+                      }
+                    },
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "massage-title-3",
+                      "level": 3,
+                      "text": "Hot Stone Therapy",
+                      "classes": "text-2xl font-semibold text-gray-900"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "massage-desc-3",
+                      "content": "Experience deep relaxation and muscle relief with the therapeutic heat of smooth, warmed stones.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "massage-price-3",
+                      "content": "75 min / $130",
+                      "classes": "font-bold text-purple-700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A dedicated page detailing all the beauty services offered, categorized for easy navigation (e",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "gallery-portfolio-page-uuid",
+      "title": "Gallery/Portfolio",
+      "slug": "/gallery",
+      "summary": "A visual showcase of the beauty center's work, featuring high-quality images of hairstyles, nail art, makeup, and other transformations. This page will be designed to be aesthetically pleasing and easy to browse.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "gallery-intro-section",
+          "uuid": "gallery-intro-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center py-16 bg-gradient-to-r from-pink-50 to-purple-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "gallery-intro-heading",
+              "level": 1,
+              "text": "Our Stunning Transformations Gallery",
+              "classes": "text-5xl font-extrabold tracking-tight text-gray-900 mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "gallery-intro-text",
+              "variant": "lead",
+              "content": "Browse our portfolio of exquisite hairstyles, intricate nail art, flawless makeup, and complete beauty transformations. See the artistry and dedication our team brings to every client.",
+              "classes": "max-w-3xl mx-auto text-gray-700"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "main-gallery-section",
+          "uuid": "main-gallery-section",
+          "layout": "singleColumnWide",
+          "spacing": "lg",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "componentType": "MediaGalleryProps",
+              "uuid": "main-media-gallery",
+              "columns": 3,
+              "gap": "8",
+              "layout": "grid",
+              "lightbox": true,
+              "showThumbnails": false,
+              "content": [
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-hairstyle-1",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-hairstyle-1",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/1084720/pexels-photo-1084720.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Elegant updo hairstyle for a special occasion",
+                    "asset": {
+                      "uuid": "asset-hairstyle-1",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "hairstyle, updo, elegant, salon",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Elegant Updo for Special Occasions"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-hairstyle-2",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-hairstyle-2",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/397219/pexels-photo-397219.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Before and after vibrant red hair color transformation",
+                    "asset": {
+                      "uuid": "asset-hairstyle-2",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "hair color, transformation, vibrant, red",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Vibrant Red Color Transformation"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-nailart-1",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-nailart-1",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/9304507/pexels-photo-9304507.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Close-up of intricate floral nail art design",
+                    "asset": {
+                      "uuid": "asset-nailart-1",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "nail art, floral, intricate, design",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Intricate Floral Nail Art"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-nailart-2",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-nailart-2",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/3736313/pexels-photo-3736313.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Gel manicure with a subtle pink to white ombre effect",
+                    "asset": {
+                      "uuid": "asset-nailart-2",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "gel manicure, ombre, nail care",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Chic Ombre Gel Manicure"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-makeup-1",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-makeup-1",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/33369617/pexels-photo-33369617.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Professional glamorous evening makeup application",
+                    "asset": {
+                      "uuid": "asset-makeup-1",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "makeup, glamorous, evening, beauty",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Glamorous Evening Look"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-makeup-2",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-makeup-2",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/2122361/pexels-photo-2122361.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Soft and natural bridal makeup for a wedding",
+                    "asset": {
+                      "uuid": "asset-makeup-2",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "bridal makeup, natural, wedding",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Natural Bridal Glow"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-transformation-1",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-transformation-1",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/6923437/pexels-photo-6923437.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Before and after full beauty makeover showing hair, makeup, and nails",
+                    "asset": {
+                      "uuid": "asset-transformation-1",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "makeover, transformation, beauty, full",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "Complete Beauty Makeover"
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "gallery-item-spa-moment",
+                  "type": "image",
+                  "image": {
+                    "uuid": "img-spa-moment",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/6663371/pexels-photo-6663371.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Client enjoying a relaxing spa treatment or facial",
+                    "asset": {
+                      "uuid": "asset-spa-moment",
+                      "componentType": "ImageAssetProps",
+                      "isProcessed": true,
+                      "keywords": "spa, relaxation, treatment, facial",
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "caption": "A Moment of Pure Relaxation"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A visual showcase of the beauty center's work, featuring high-quality images of hairstyles, nail art",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "about-us-page-uuid",
+      "title": "About Us",
+      "slug": "/about",
+      "summary": "This page will tell the story of the beauty center, its mission, values, and introduce key staff members. It will help build trust and connection with potential clients.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "about-us-hero-section",
+          "uuid": "about-us-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center py-16 bg-gradient-to-r from-blue-50 to-indigo-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "about-us-hero-heading",
+              "level": 1,
+              "text": "Our Story: Passion for Beauty and Wellness",
+              "classes": "text-5xl font-extrabold tracking-tight text-gray-900 mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "about-us-hero-text",
+              "variant": "lead",
+              "content": "Founded in the heart of New York, our beauty center was born from a deep passion for enhancing natural beauty and fostering well-being. We believe that true beauty radiates from within, and our mission is to provide a sanctuary where you can relax, rejuvenate, and discover your most radiant self. Our values are rooted in excellence, personalized care, and a commitment to using only the finest, most effective products.",
+              "classes": "max-w-3xl mx-auto text-gray-700"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "mission-values-section",
+          "uuid": "mission-values-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "mission-values-heading",
+              "level": 2,
+              "text": "Our Core Values",
+              "classes": "text-4xl font-bold text-center mb-12 text-gray-800"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "values-grid",
+              "columns": 2,
+              "gap": "8",
+              "classes": "max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "value-excellence",
+                  "variant": "standard",
+                  "layout": "iconTopCenter",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-excellence",
+                    "name": "star",
+                    "size": 32,
+                    "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                  },
+                  "title": {
+                    "uuid": "value-excellence-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Excellence"
+                  },
+                  "text": {
+                    "uuid": "value-excellence-text",
+                    "componentType": "TextProps",
+                    "content": "We are committed to delivering exceptional quality in every service, ensuring meticulous attention to detail and outstanding results."
+                  }
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "value-personalized-care",
+                  "variant": "standard",
+                  "layout": "iconTopCenter",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-personalized-care",
+                    "name": "heart",
+                    "size": 32,
+                    "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                  },
+                  "title": {
+                    "uuid": "value-personalized-care-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Personalized Care"
+                  },
+                  "text": {
+                    "uuid": "value-personalized-care-text",
+                    "componentType": "TextProps",
+                    "content": "Every client is unique, and we tailor our treatments to meet your individual needs and preferences, creating a truly bespoke experience."
+                  }
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "value-innovation",
+                  "variant": "standard",
+                  "layout": "iconTopCenter",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-innovation",
+                    "name": "zap",
+                    "size": 32,
+                    "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                  },
+                  "title": {
+                    "uuid": "value-innovation-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Innovation"
+                  },
+                  "text": {
+                    "uuid": "value-innovation-text",
+                    "componentType": "TextProps",
+                    "content": "We stay at the forefront of beauty trends and techniques, continuously evolving our services to bring you the latest and most effective treatments."
+                  }
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "value-integrity",
+                  "variant": "standard",
+                  "layout": "iconTopCenter",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-integrity",
+                    "name": "check-check",
+                    "size": 32,
+                    "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                  },
+                  "title": {
+                    "uuid": "value-integrity-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Integrity"
+                  },
+                  "text": {
+                    "uuid": "value-integrity-text",
+                    "componentType": "TextProps",
+                    "content": "Building trust through honesty, transparency, and ethical practices is at the core of everything we do."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "team-members-section",
+          "uuid": "team-members-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-gray-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "team-members-heading",
+              "level": 2,
+              "text": "Meet Our Talented Team",
+              "classes": "text-4xl font-bold text-center mb-12 text-gray-800"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "team-members-intro-text",
+              "content": "Our dedicated team of professionals brings passion, expertise, and a personalized approach to every treatment. Get to know the faces behind your beautiful transformations.",
+              "classes": "max-w-3xl mx-auto text-center text-lg text-gray-700 mb-12"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "team-grid",
+              "columns": 2,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "componentType": "TeamMemberProps",
+                  "uuid": "team-member-sarah",
+                  "style": "cardHorizontal",
+                  "name": {
+                    "uuid": "team-member-sarah-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Sarah Chen"
+                  },
+                  "position": {
+                    "uuid": "team-member-sarah-position",
+                    "componentType": "TextProps",
+                    "content": "Owner & Lead Aesthetician"
+                  },
+                  "bio": {
+                    "uuid": "team-member-sarah-bio",
+                    "componentType": "TextProps",
+                    "content": "With over 15 years of experience, Sarah is passionate about skin health and creating bespoke facial treatments that leave clients glowing. She believes in holistic beauty and personalized care."
+                  },
+                  "photo": {
+                    "uuid": "photo-sarah",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Sarah Chen photo",
+                    "asset": {
+                      "uuid": "asset-photo-sarah",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "sarah, chen, owner, aesthetician",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  },
+                  "socialLinks": [
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-sarah-fb",
+                      "platform": "facebook",
+                      "url": "#"
+                    },
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-sarah-ig",
+                      "platform": "instagram",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "TeamMemberProps",
+                  "uuid": "team-member-maria",
+                  "style": "cardHorizontal",
+                  "name": {
+                    "uuid": "team-member-maria-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Maria Rodriguez"
+                  },
+                  "position": {
+                    "uuid": "team-member-maria-position",
+                    "componentType": "TextProps",
+                    "content": "Master Stylist"
+                  },
+                  "bio": {
+                    "uuid": "team-member-maria-bio",
+                    "componentType": "TextProps",
+                    "content": "Maria is a creative force in hair design, specializing in modern cuts, vibrant color, and elegant updos. She loves transforming looks and making clients feel confident."
+                  },
+                  "photo": {
+                    "uuid": "photo-maria",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/33377078/pexels-photo-33377078.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Maria Rodriguez photo",
+                    "asset": {
+                      "uuid": "asset-photo-maria",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "maria, rodriguez, stylist",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  },
+                  "socialLinks": [
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-maria-ig",
+                      "platform": "instagram",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "TeamMemberProps",
+                  "uuid": "team-member-david",
+                  "style": "cardHorizontal",
+                  "name": {
+                    "uuid": "team-member-david-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "David Lee"
+                  },
+                  "position": {
+                    "uuid": "team-member-david-position",
+                    "componentType": "TextProps",
+                    "content": "Skincare Specialist"
+                  },
+                  "bio": {
+                    "uuid": "team-member-david-bio",
+                    "componentType": "TextProps",
+                    "content": "David's gentle touch and deep knowledge of skincare science help clients achieve their clearest, healthiest skin. He specializes in anti-aging and acne treatments."
+                  },
+                  "photo": {
+                    "uuid": "photo-david",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/33385571/pexels-photo-33385571.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "David Lee photo",
+                    "asset": {
+                      "uuid": "asset-photo-david",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "david, lee, skincare",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  },
+                  "socialLinks": [
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-david-ig",
+                      "platform": "instagram",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "TeamMemberProps",
+                  "uuid": "team-member-emily",
+                  "style": "cardHorizontal",
+                  "name": {
+                    "uuid": "team-member-emily-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Emily White"
+                  },
+                  "position": {
+                    "uuid": "team-member-emily-position",
+                    "componentType": "TextProps",
+                    "content": "Nail Artist"
+                  },
+                  "bio": {
+                    "uuid": "team-member-emily-bio",
+                    "componentType": "TextProps",
+                    "content": "Emily brings artistic flair to every manicure and pedicure, creating stunning nail art designs that express individual style. Her attention to detail is unmatched."
+                  },
+                  "photo": {
+                    "uuid": "photo-emily",
+                    "componentType": "ImageProps",
+                    "src": "https://images.pexels.com/photos/13792524/pexels-photo-13792524.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "alt": "Emily White photo",
+                    "asset": {
+                      "uuid": "asset-photo-emily",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "emily, white, nail artist",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  },
+                  "socialLinks": [
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-emily-ig",
+                      "platform": "instagram",
+                      "url": "#"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "This page will tell the story of the beauty center, its mission, values, and introduce key staff mem",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "booking-contact-page-uuid",
+      "title": "Booking/Contact",
+      "slug": "/contact",
+      "summary": "A crucial page featuring an online appointment booking form (or integration with a booking system), the center's address, phone number, email, and a map for directions. It will also include business hours and social media links.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "booking-contact-intro-section",
+          "uuid": "booking-contact-intro-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center py-16 bg-gradient-to-r from-purple-50 to-pink-50",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "booking-contact-intro-heading",
+              "level": 1,
+              "text": "Book Your Visit or Contact Us",
+              "classes": "text-5xl font-extrabold tracking-tight text-gray-900 mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "booking-contact-intro-text",
+              "variant": "lead",
+              "content": "Ready to experience the New York Beauty Center difference? Book your appointment easily online or reach out to us with any questions. We look forward to hearing from you!",
+              "classes": "max-w-3xl mx-auto text-gray-700"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "contact-main-content-section",
+          "uuid": "contact-main-content-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-form-column",
+              "direction": "column",
+              "gap": "6",
+              "classes": "p-4",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "send-message-heading",
+                  "level": 2,
+                  "text": "Send Us a Message",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "contact-form-instruction-text",
+                  "content": "For general inquiries, please use the contact form below. For appointment booking, we recommend using our integrated online booking system directly via the 'Book Online Now' link, or call us during business hours for immediate assistance.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "componentType": "ButtonProps",
+                  "uuid": "book-online-now-button",
+                  "text": "Book Online Now",
+                  "variant": "default",
+                  "size": "lg",
+                  "link": {
+                    "uuid": "link-to-external-booking",
+                    "componentType": "LinkProps",
+                    "href": "#",
+                    "text": "Book Online Now",
+                    "target": "_blank"
+                  }
+                },
+                {
+                  "componentType": "FormProps",
+                  "uuid": "contact-form-main",
+                  "title": "Contact Form",
+                  "onSubmitAction": {
+                    "actionId": "submit_contact_form",
+                    "successMessage": "Your message has been sent successfully!",
+                    "errorMessage": "There was an error sending your message. Please try again.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email"
+                  },
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "actions": [
+                    {
+                      "uuid": "contact-form-main-action-submit",
+                      "componentType": "ButtonProps",
+                      "actionType": "submit",
+                      "text": "Send Message",
+                      "variant": "default"
+                    }
+                  ],
+                  "content": []
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-info-column",
+              "direction": "column",
+              "gap": "6",
+              "classes": "p-4",
+              "content": [
+                {
+                  "componentType": "ContactInfoBlockProps",
+                  "uuid": "contact-info-block",
+                  "address": "123 Beauty Ave, New York, NY 10001",
+                  "phone": "+1 (212) 555-1234",
+                  "email": "info@nybeautycenter.com",
+                  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.048744577884!2d-74.0089851!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a270f2f3e8f%3A0x6e7e1f4e1f7e1f7e!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1678901234567!5m2=1en!2sus",
+                  "title": "Contact Details"
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "business-hours-heading",
+                  "level": 3,
+                  "text": "Business Hours",
+                  "classes": "text-2xl font-bold text-gray-800 mt-4"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "business-hours-text-monday-friday",
+                  "content": "Monday - Friday: 9:00 AM - 7:00 PM",
+                  "as": "div",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "business-hours-text-saturday",
+                  "content": "Saturday: 10:00 AM - 5:00 PM",
+                  "as": "div",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "business-hours-text-sunday",
+                  "content": "Sunday: Closed",
+                  "as": "div",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "connect-with-us-heading",
+                  "level": 3,
+                  "text": "Connect With Us",
+                  "classes": "text-2xl font-bold text-gray-800 mt-4"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "social-links-contact-page",
+                  "direction": "row",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-facebook-contact",
+                      "platform": "facebook",
+                      "url": "https://facebook.com/newyorkbeautycenter"
+                    },
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-instagram-contact",
+                      "platform": "instagram",
+                      "url": "https://instagram.com/newyorkbeautycenter"
+                    },
+                    {
+                      "componentType": "SocialLinkProps",
+                      "uuid": "social-twitter-contact",
+                      "platform": "twitter",
+                      "url": "https://twitter.com/nybeautycenter"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A crucial page featuring an online appointment booking form (or integration with a booking system), ",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "c8ba9274-78c8-4b04-b11f-046da1db7623",
+      "title": "Pricing & Packages",
+      "slug": "/pricing",
+      "summary": "Explore our competitive pricing and special packages for all beauty services.",
+      "shortSummary": "Explore our competitive pricing and special packages",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "6a74aac1-5620-43b0-92a6-4789c54340e6",
+          "componentType": "SectionProps",
+          "sectionSlug": "6a74aac1-5620-43b0-92a6-4789c54340e6",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "classes": "min-h-[50vh] flex items-center",
+          "content": [
+            {
+              "uuid": "ad81548e-c3cb-40e1-8e12-5e187c534856",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "align": "center",
+              "classes": "text-center max-w-4xl",
+              "content": [
+                {
+                  "uuid": "fcea2070-7f91-47b6-b9f2-62e1118b564d",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Pricing & Packages",
+                  "classes": "text-5xl font-bold"
+                },
+                {
+                  "uuid": "f555e6fe-726e-4ee7-af36-8775f69a6106",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Discover our range of beauty services with transparent, competitive pricing.",
+                  "classes": "text-muted-foreground mt-4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "44c67d0c-7eeb-4366-bc06-3ab16312d82c",
+          "componentType": "SectionProps",
+          "sectionSlug": "44c67d0c-7eeb-4366-bc06-3ab16312d82c",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "6150ea33-ecad-41a4-9c11-f84bf26d2a17",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl",
+              "content": [
+                {
+                  "uuid": "99a2cb83-575e-481b-8247-486cde26e93a",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-8 hover:shadow-lg transition-shadow",
+                  "content": [
+                    {
+                      "uuid": "3b4dc601-f1cc-4e77-83d9-8e0b12ea5e52",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Basic Package",
+                      "classes": "text-2xl font-bold"
+                    },
+                    {
+                      "uuid": "eac66ad6-3241-46fc-bdbd-7a8948ebe026",
+                      "componentType": "TextProps",
+                      "content": "$99/session",
+                      "classes": "text-3xl font-bold text-primary"
+                    },
+                    {
+                      "uuid": "fe5376e7-2473-4ad9-9bc9-b21ec62f99fb",
+                      "componentType": "TextProps",
+                      "content": "Perfect for first-time clients and quick refreshers",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "72dd9035-aefb-4707-b772-fdb9c19336a8",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border-2 border-primary rounded-lg p-8 shadow-lg relative",
+                  "content": [
+                    {
+                      "uuid": "5be1a58f-5daa-47aa-8dd8-51109bd1ab9e",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Premium Package",
+                      "classes": "text-2xl font-bold"
+                    },
+                    {
+                      "uuid": "003bb0f9-e265-4223-82a4-2c69d39f79d2",
+                      "componentType": "TextProps",
+                      "content": "$199/session",
+                      "classes": "text-3xl font-bold text-primary"
+                    },
+                    {
+                      "uuid": "f5a7fe87-1e91-453c-94ac-6df2be4e49f0",
+                      "componentType": "TextProps",
+                      "content": "Our most popular choice with comprehensive treatments",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "67f8b744-44fe-43dc-94fe-abbae42ae378",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-8 hover:shadow-lg transition-shadow",
+                  "content": [
+                    {
+                      "uuid": "d1738d48-9080-406d-a59e-db611128661c",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Luxury Package",
+                      "classes": "text-2xl font-bold"
+                    },
+                    {
+                      "uuid": "39732173-24aa-487a-8bd1-d85f04204932",
+                      "componentType": "TextProps",
+                      "content": "$349/session",
+                      "classes": "text-3xl font-bold text-primary"
+                    },
+                    {
+                      "uuid": "d9a9fe5b-37d3-4ed0-abf4-f5d54f926738",
+                      "componentType": "TextProps",
+                      "content": "The ultimate spa experience with VIP treatment",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e5b97e71-1098-45d1-b37a-28b85ddfe598",
+      "title": "Our Team",
+      "slug": "/team",
+      "summary": "Meet our experienced team of beauty professionals dedicated to making you look and feel your best.",
+      "shortSummary": "Meet our experienced team of beauty professionals",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "ba247c45-5c09-4e38-82fb-bebdf065561f",
+          "componentType": "SectionProps",
+          "sectionSlug": "ba247c45-5c09-4e38-82fb-bebdf065561f",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "classes": "min-h-[50vh] flex items-center",
+          "content": [
+            {
+              "uuid": "0f38e432-b977-49da-be65-5f811e92f10d",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "align": "center",
+              "classes": "text-center max-w-4xl",
+              "content": [
+                {
+                  "uuid": "3b24f30b-a987-4b41-aa62-09027e48b918",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Meet Our Team",
+                  "classes": "text-5xl font-bold"
+                },
+                {
+                  "uuid": "ad0be207-9b2f-4afa-a15e-e7e01a6878c7",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Our passionate professionals are here to provide you with exceptional beauty services.",
+                  "classes": "text-muted-foreground mt-4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "b4b38abc-1a86-4517-8bd2-4c3a5cc2cbf6",
+          "componentType": "SectionProps",
+          "sectionSlug": "b4b38abc-1a86-4517-8bd2-4c3a5cc2cbf6",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "0c7e85d5-7aec-4388-b131-8eba7918934b",
+              "componentType": "TextProps",
+              "content": "Our experienced team of beauty professionals is dedicated to making you look and feel your best. Each team member brings years of expertise in their specialty.",
+              "classes": "text-lg max-w-4xl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "42aef8d6-ee02-4a0d-b07c-747a50ead6c0",
+      "title": "Client Testimonials",
+      "slug": "/testimonials",
+      "summary": "Read what our satisfied clients have to say about their beauty transformations at New York Beauty Center.",
+      "shortSummary": "Read what our satisfied clients have to say",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "2d3b25c6-be58-48fb-ab99-cc2789612abf",
+          "componentType": "SectionProps",
+          "sectionSlug": "2d3b25c6-be58-48fb-ab99-cc2789612abf",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "classes": "min-h-[50vh] flex items-center",
+          "content": [
+            {
+              "uuid": "1d6a75f7-a462-4f0a-941d-f97e7c166872",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "align": "center",
+              "classes": "text-center max-w-4xl",
+              "content": [
+                {
+                  "uuid": "a037a8ef-daf0-4fe8-bd7a-3058fc7d49bb",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "What Our Clients Say",
+                  "classes": "text-5xl font-bold"
+                },
+                {
+                  "uuid": "1263f30d-be48-481b-b2ff-b73923d741fa",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Hear from our happy clients about their experiences at New York Beauty Center.",
+                  "classes": "text-muted-foreground mt-4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "4c8e5255-1c02-4d35-babc-774fe3f0fa47",
+          "componentType": "SectionProps",
+          "sectionSlug": "4c8e5255-1c02-4d35-babc-774fe3f0fa47",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "e5006f49-c418-4ec3-b2ea-23d01b655793",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "8",
+              "classes": "max-w-6xl",
+              "content": [
+                {
+                  "uuid": "8f032c5e-298a-4bab-a85a-587bbb3e3ac6",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 bg-muted/50",
+                  "content": [
+                    {
+                      "uuid": "32e6a963-e099-47d3-8f68-e02d66c053f6",
+                      "componentType": "TextProps",
+                      "content": "\"The best beauty center in NYC! The staff is professional, the facility is spotless, and the results are amazing. I've been a loyal client for 3 years.\"",
+                      "classes": "text-lg italic"
+                    },
+                    {
+                      "uuid": "6e58e8b5-fe5f-4bd7-a3f4-b75eee154540",
+                      "componentType": "TextProps",
+                      "content": "- Jessica M.",
+                      "classes": "font-semibold text-right"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "950e6c2f-4edb-4d70-9eea-d0e460de9049",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "border rounded-lg p-6 bg-muted/50",
+                  "content": [
+                    {
+                      "uuid": "07c39f0f-fb58-4587-bcf7-747ba3d4c100",
+                      "componentType": "TextProps",
+                      "content": "\"I came in for a simple facial and left feeling like a new person. The staff really knows their craft. Highly recommend!\"",
+                      "classes": "text-lg italic"
+                    },
+                    {
+                      "uuid": "675b9d6b-d853-4d74-a60d-4c6828fa4540",
+                      "componentType": "TextProps",
+                      "content": "- Amanda T.",
+                      "classes": "font-semibold text-right"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a26d2cc8-1baa-45ec-accc-74915cec7a7d",
+      "title": "Book Appointment",
+      "slug": "/booking",
+      "summary": "Schedule your appointment online and experience the New York Beauty Center difference.",
+      "shortSummary": "Schedule your appointment online",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "fa8ec2b5-566b-45b5-b57a-0a3216eeb986",
+          "componentType": "SectionProps",
+          "sectionSlug": "fa8ec2b5-566b-45b5-b57a-0a3216eeb986",
+          "spacing": "xl",
+          "layout": "singleColumnCentered",
+          "classes": "min-h-[50vh] flex items-center",
+          "content": [
+            {
+              "uuid": "4149f28c-6ba1-4cc3-b7f4-268646d9469e",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "align": "center",
+              "classes": "text-center max-w-4xl",
+              "content": [
+                {
+                  "uuid": "6a158cdc-6a24-4de8-8be3-d84f11091275",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Book Your Appointment",
+                  "classes": "text-5xl font-bold"
+                },
+                {
+                  "uuid": "e68dfbec-0255-41f5-b1af-de3c1a833c87",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Choose your preferred service and time. We'll confirm your appointment within 24 hours.",
+                  "classes": "text-muted-foreground mt-4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "4e3dd07f-ac22-42c5-a750-eac3700aafb5",
+          "componentType": "SectionProps",
+          "sectionSlug": "4e3dd07f-ac22-42c5-a750-eac3700aafb5",
+          "spacing": "xl",
+          "classes": "bg-muted/50",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "5695b213-1407-44a9-aac0-9a13bfa2c2c2",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "8",
+              "classes": "max-w-2xl",
+              "content": [
+                {
+                  "uuid": "4464d124-9fb6-48a8-be9b-598d8d8ee834",
+                  "componentType": "FormProps",
+                  "title": "Appointment Request",
+                  "onSubmitAction": {
+                    "actionId": "submit_booking_form",
+                    "successMessage": "Thank you for your booking request! We will confirm your appointment shortly.",
+                    "errorMessage": "There was an error submitting your request. Please try again.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email"
+                  },
+                  "content": [],
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "actions": [
+                    {
+                      "uuid": "ee297638-bde4-460e-9779-8f53bbd955ce",
+                      "componentType": "ButtonProps",
+                      "actionType": "submit",
+                      "text": "Request Appointment",
+                      "variant": "default",
+                      "size": "lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "section-footer-001-beauty",
+      "componentType": "SectionProps",
+      "sectionSlug": "section-footer-001-beauty",
+      "classes": "py-8 px-8",
+      "layout": "singleColumnCentered",
+      "spacing": "sm",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "flex-footer-top-section-beauty",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start pb-4 w-full",
+          "content": [
+            {
+              "uuid": "flex-footer-logo-container-001-beauty",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-logo-text-beauty",
+                  "componentType": "TextProps",
+                  "content": "New York Beauty Center",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "grid-footer-links-beauty",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "sm:grid-cols-3 sm:gap-6 flex-1 max-w-lg",
+              "content": [
+                {
+                  "uuid": "flex-col-links-beauty",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-links-beauty",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "QUICK LINKS",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "link-home-footer",
+                      "componentType": "LinkProps",
+                      "text": "Home",
+                      "href": "/"
+                    },
+                    {
+                      "uuid": "link-services-footer",
+                      "componentType": "LinkProps",
+                      "text": "Services",
+                      "href": "/services"
+                    },
+                    {
+                      "uuid": "link-gallery-footer",
+                      "componentType": "LinkProps",
+                      "text": "Gallery",
+                      "href": "/gallery"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-col-about-beauty",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-about-beauty",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "ABOUT US",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "link-about-footer",
+                      "componentType": "LinkProps",
+                      "text": "About Us",
+                      "href": "/about"
+                    },
+                    {
+                      "uuid": "link-contact-footer",
+                      "componentType": "LinkProps",
+                      "text": "Contact",
+                      "href": "/contact"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-col-legal-beauty",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-legal-beauty",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "LEGAL",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "link-privacy-beauty",
+                      "componentType": "LinkProps",
+                      "text": "Privacy Policy",
+                      "href": "#"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "divider-footer-beauty",
+          "componentType": "SpacerProps",
+          "classes": "my-6 border-gray-200 lg:my-8",
+          "size": "md"
+        },
+        {
+          "uuid": "flex-footer-bottom-section-beauty",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center pt-4 pb-2 w-full",
+          "content": [
+            {
+              "uuid": "footer-copyright-001-beauty",
+              "componentType": "TextProps",
+              "content": "© 2023 New York Beauty Center. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            },
+            {
+              "uuid": "footer-social-links-beauty",
+              "componentType": "FlexProps",
+              "gap": "5",
+              "content": [
+                {
+                  "uuid": "social-facebook-beauty",
+                  "componentType": "SocialLinkProps",
+                  "platform": "facebook",
+                  "url": "https://facebook.com/newyorkbeautycenter"
+                },
+                {
+                  "uuid": "social-instagram-beauty",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "https://instagram.com/newyorkbeautycenter"
+                },
+                {
+                  "uuid": "social-twitter-beauty",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "https://twitter.com/nybeautycenter"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transitions": {
+    "enabled": true,
+    "type": "slideFade",
+    "timing": "normal"
+  }
+}

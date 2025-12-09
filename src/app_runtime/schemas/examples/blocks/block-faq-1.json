@@ -1,0 +1,304 @@
+{
+  "uuid": "app-faq-section-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "FAQ Page",
+  "alias": "faq-page",
+  "summary": "Accordion-style FAQ section with expandable question-answer pairs. Features section header, organized Q&A layout with collapsible content for efficient information access.",
+  "shortSummary": "Accordion-style FAQ section with expandable question-answer pairs",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-faq-456",
+      "title": "Frequently Asked Questions",
+      "slug": "/faq",
+      "summary": "A page displaying a frequently asked questions (FAQ) section.",
+      "content": [
+        {
+          "uuid": "section-faq-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-faq-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "heading-faq-title",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Frequently asked questions",
+              "classes": "text-4xl font-extrabold mb-12"
+            },
+            {
+              "uuid": "grid-faq-container",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "16",
+              "content": [
+                {
+                  "uuid": "faq-col-1",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "content": [
+                    {
+                      "uuid": "faq-item-1",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q1",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-1-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "What do you mean by 'Figma assets'?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-1-text",
+                        "componentType": "TextProps",
+                        "content": "You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens."
+                      }
+                    },
+                    {
+                      "uuid": "faq-item-2",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q2",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-2-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "What does 'lifetime access' exactly mean?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-2-text",
+                        "componentType": "TextProps",
+                        "content": "Once you have purchased either the design, code, or both packages, you will have access to all of the future updates based on the roadmap, free of charge."
+                      }
+                    },
+                    {
+                      "uuid": "faq-item-3",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q3",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-3-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "How does support work?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-3-text",
+                        "componentType": "TextProps",
+                        "content": "We're aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project. Feel free to contact us and we'll help you out as soon as we can."
+                      }
+                    },
+                    {
+                      "uuid": "faq-item-4",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q4",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-4-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "I want to build more than one project. Is that allowed?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-4-text",
+                        "componentType": "TextProps",
+                        "content": "You can use Windster for an unlimited amount of projects, whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a product that will directly compete with Windster either as a UI kit, theme, or template, it's fine. Find out more information by reading the license."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "uuid": "faq-col-2",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "content": [
+                    {
+                      "uuid": "faq-item-5",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q5",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-5-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "What does 'free updates' include?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-5-text",
+                        "componentType": "TextProps",
+                        "content": "The free updates that will be provided is based on the roadmap that we have laid out for this project. It is also possible that we will provide extra updates outside of the roadmap as well."
+                      }
+                    },
+                    {
+                      "uuid": "faq-item-6",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q6",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-6-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "What does the free version include?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-6-text",
+                        "componentType": "TextProps",
+                        "content": "The free version of Windster includes a minimal style guidelines, component variants, and a dashboard page with the mobile version alongside it. You can use this version for any purposes, because it is open-source under the MIT license."
+                      }
+                    },
+                    {
+                      "uuid": "faq-item-7",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q7",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-7-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "What is the difference between Windster and Tailwind UI?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-7-text",
+                        "componentType": "TextProps",
+                        "content": "Although both Windster and Tailwind UI are built for integration with Tailwind CSS, the main difference is in the design, the pages, the extra components and UI elements that Windster includes. Additionally, Windster is a project that is still in development, and later it will include both the application, marketing, and e-commerce UI interfaces."
+                      }
+                    },
+                    {
+                      "uuid": "faq-item-8",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-q8",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-item-8-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Can I use Windster in open-source projects?"
+                      },
+                      "text": {
+                        "uuid": "faq-item-8-text",
+                        "componentType": "TextProps",
+                        "content": "Generally, it is accepted to use Windster in open-source projects, as long as it is not a UI library, a theme, a template, a page-builder that would be considered as an alternative to Windster itself. With that being said, feel free to use this design kit for your open-source projects. Find out more information by reading the license."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying a frequently asked questions (FAQ) section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

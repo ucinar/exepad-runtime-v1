@@ -1,0 +1,1346 @@
+{
+  "apps": [
+    {
+      "appType": "WebAppProps",
+      "description": "Web App schema",
+      "keyProperties": [
+        "alias",
+        "appSecondaryType",
+        "footer",
+        "header",
+        "languages",
+        "lastUpdatedEpoch",
+        "layout",
+        "menuPosition"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "pageType": "WebPageProps",
+      "description": "A standard web page. This interface extends PageProps without additional properties, serving as a distinct type in the PageType discriminated union.",
+      "keyProperties": [
+        "content",
+        "lastUpdatedEpoch",
+        "shortSummary",
+        "slug",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "pageType": "BlogMainPageProps",
+      "description": "A blog main/listing page that displays multiple blog posts. This interface extends PageProps without additional properties, serving as a distinct type in the PageType discriminated union.",
+      "keyProperties": [
+        "content",
+        "lastUpdatedEpoch",
+        "shortSummary",
+        "slug",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "pageType": "BlogPostPageProps",
+      "description": "A single blog post page with article content. This interface extends PageProps without additional properties, serving as a distinct type in the PageType discriminated union.",
+      "keyProperties": [
+        "content",
+        "lastUpdatedEpoch",
+        "shortSummary",
+        "slug",
+        "summary",
+        "title"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "componentType": "AccordionProps",
+      "description": "A generic, data-driven layout component that displays a vertically stacked list of interactive, collapsible panels.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "collapsible",
+        "defaultValue"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "AlertItemProps",
+      "description": "An individual alert, extending the base feedback item.",
+      "keyProperties": [
+        "dismissible",
+        "message",
+        "timestamp",
+        "type",
+        "uuid"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "AspectRatioProps",
+      "description": "Maintains a fixed aspect ratio for its child.",
+      "keyProperties": [
+        "content",
+        "ratio",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "AudioProps",
+      "description": "Audio element supporting on-server files and streaming with standard controls",
+      "keyProperties": [
+        "autoplay",
+        "controls",
+        "loop",
+        "muted",
+        "source",
+        "uuid"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "AvatarProps",
+      "description": "User avatar image with name fallback",
+      "keyProperties": [
+        "name",
+        "size",
+        "uuid",
+        "image"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "BackToTopProps",
+      "description": "Renders a button that appears after scrolling past a certain threshold and smoothly scrolls the user back to the top of the page.",
+      "keyProperties": [
+        "uuid",
+        "icon",
+        "lastUpdatedEpoch",
+        "position"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "BadgeProps",
+      "description": "Small status badge with variant styling",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "BaseFeedbackItemProps",
+      "description": "Base properties common to all individual feedback items like alerts and notifications.",
+      "keyProperties": [
+        "message",
+        "type",
+        "uuid",
+        "action"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "BaseFieldProps",
+      "description": "Defines a set of common properties that are shared by almost every form field component.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "BlogMainPageProps",
+      "description": "The main component for displaying a blog listing page.",
+      "keyProperties": [
+        "content",
+        "lastUpdatedEpoch",
+        "pageType",
+        "shortSummary",
+        "slug",
+        "summary"
+      ],
+      "category": "Website/blog"
+    },
+    {
+      "componentType": "BlogPostPageProps",
+      "description": "Defines the properties for a single blog post component. This interface contains all the data needed to render a complete blog article, from its content and author to its metadata and SEO details.",
+      "keyProperties": [
+        "content",
+        "lastUpdatedEpoch",
+        "pageType",
+        "publishedDate",
+        "shortSummary",
+        "slug"
+      ],
+      "category": "Website/blog"
+    },
+    {
+      "componentType": "ButtonProps",
+      "description": "Clickable button with type, handler, and disabled state, now with support for optional icons.",
+      "keyProperties": [
+        "text",
+        "uuid",
+        "disabled",
+        "icon"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "CalloutProps",
+      "description": "Highlighted message box for info, warning, success, or danger.",
+      "keyProperties": [
+        "message",
+        "uuid",
+        "dismissible",
+        "icon"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "CardProps",
+      "description": "A generic card container component inspired by shadcn/ui. Provides structured sections (header, content, footer) with flexible styling. This is a fundamental building block that can contain any other components.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "backgroundColor",
+        "borderColor"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "CarouselProps",
+      "description": "A generic, data-driven carousel component for displaying a slidable collection of any other components. This is a low-level layout primitive.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "autoplay",
+        "gap"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "CenterProps",
+      "description": "A utility component that centers its content horizontally and vertically.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "CheckboxFieldProps",
+      "description": "Renders a single checkbox, typically used for binary (true/false) choices. This interface extends BaseFieldProps without additional properties, serving as a distinct type in the FormField discriminated union.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "CheckboxGroupFieldProps",
+      "description": "Renders a group of related checkboxes, allowing the user to select multiple options from a list.",
+      "keyProperties": [
+        "label",
+        "name",
+        "options",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "ChecklistFeatureProps",
+      "description": "A feature that displays a checklist of items.",
+      "keyProperties": [
+        "content",
+        "defaultItemIcon",
+        "title",
+        "uuid",
+        "variant"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ChecklistItemProps",
+      "description": "An item within a checklist feature.",
+      "keyProperties": [
+        "text",
+        "uuid",
+        "checked",
+        "defaultItemIcon"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "CircularProgressProps",
+      "description": "Circular progress indicator.",
+      "keyProperties": [
+        "uuid",
+        "value",
+        "lastUpdatedEpoch",
+        "max"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "CodeSnippetProps",
+      "description": "Formatted code block with language syntax highlighting",
+      "keyProperties": [
+        "code",
+        "language",
+        "uuid",
+        "copyable"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ColorPickerFieldProps",
+      "description": "Renders a color picker component, allowing the user to select a color. This interface extends BaseFieldProps without additional properties, serving as a distinct type in the FormField discriminated union.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "ComparisonTableProps",
+      "description": "A data-driven component for creating a tabular comparison of items.",
+      "keyProperties": [
+        "columns",
+        "rows",
+        "uuid",
+        "featuredColumnKey"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ComponentProps",
+      "description": "Every UI component may accept common props like `classes`.",
+      "keyProperties": [
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "ContactInfoBlockProps",
+      "description": "Displays contact information",
+      "keyProperties": [
+        "uuid",
+        "address",
+        "email",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "CookieConsentBannerProps",
+      "description": "Displays cookie consent with accept/decline callbacks.",
+      "keyProperties": [
+        "uuid",
+        "acceptText",
+        "declineText",
+        "dismissible"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "DateTimeDisplayProps",
+      "description": "Displays a formatted date and time, with options for relative time (e.g., \"2 hours ago\") and automatic updates.",
+      "keyProperties": [
+        "uuid",
+        "value",
+        "autoUpdate",
+        "format"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "DateTimeFieldProps",
+      "description": "Renders an input field for selecting dates, times, or both, using the browser's native picker UI.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "DividerProps",
+      "description": "Renders a horizontal line to visually separate sections of the form.",
+      "keyProperties": [
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature",
+        "text"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "DocumentEmbedProps",
+      "description": "Properties for embedding a document.",
+      "keyProperties": [
+        "height",
+        "src",
+        "title",
+        "type",
+        "uuid",
+        "width"
+      ],
+      "category": "Common/media"
+    },
+    {
+      "componentType": "DownloadButtonProps",
+      "description": "A specialized button component for initiating a file download. It combines the functionality of a link with the appearance of a button and can display associated file metadata.",
+      "keyProperties": [
+        "text",
+        "url",
+        "uuid",
+        "fileName"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ErrorBoundaryProps",
+      "description": "Catches JavaScript errors in its child component tree, logs those errors, and displays a fallback UI instead of a crashed component tree.",
+      "keyProperties": [
+        "content",
+        "fallback",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "FieldSetProps",
+      "description": "A structural component that groups a set of related form fields under a common heading.",
+      "keyProperties": [
+        "content",
+        "legend",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "FileUploadFieldProps",
+      "description": "Renders a control that allows users to select one or more files from their device for upload.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "accept"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "FlexProps",
+      "description": "Unified flexbox container with comprehensive layout options. This is the primary tool for arranging items in a single dimension.",
+      "keyProperties": [
+        "uuid",
+        "align",
+        "content",
+        "direction"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "FormAction",
+      "description": "Defines an action button within a form, such as 'Submit' or 'Reset'.",
+      "keyProperties": [
+        "actionType",
+        "text",
+        "uuid",
+        "disabled"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "FormOption",
+      "description": "Represents a single, selectable choice within a component like a dropdown, radio group, or checkbox group.",
+      "keyProperties": [
+        "label",
+        "value",
+        "disabled"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "FormProps",
+      "description": "Represents a complete form, including its configuration, fields, and actions.",
+      "keyProperties": [
+        "actions",
+        "content",
+        "onSubmitAction",
+        "title",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "FormStep",
+      "description": "Defines a single \"page\" or \"step\" in a multi-step form.",
+      "keyProperties": [
+        "title",
+        "content"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "GridProps",
+      "description": "Unified grid layout with responsive options and gap control. The primary tool for creating two-dimensional layouts.",
+      "keyProperties": [
+        "columns",
+        "content",
+        "uuid",
+        "gap"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "HeadingFieldProps",
+      "description": "Renders a heading element (e.g., H1, H2) to add titles or structure within the form.",
+      "keyProperties": [
+        "level",
+        "text",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "HeadingProps",
+      "description": "Semantic heading with level 1–6 and text",
+      "keyProperties": [
+        "level",
+        "text",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "HiddenFieldProps",
+      "description": "Renders a hidden input field to store data that the user does not need to see.",
+      "keyProperties": [
+        "name",
+        "uuid",
+        "value",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "IconProps",
+      "description": "Icon by name and size",
+      "keyProperties": [
+        "name",
+        "size",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "ImageAssetProps",
+      "description": "Stores metadata for an image asset, like its origin and processing state. Set keywords field properly. Fill all required fields, leave the optional fields",
+      "keyProperties": [
+        "isProcessed",
+        "keywords",
+        "requestedHeight",
+        "requestedWidth",
+        "uuid"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "ImageProps",
+      "description": "Defines an image component for display, including source and dimensions.",
+      "keyProperties": [
+        "alt",
+        "asset",
+        "src",
+        "uuid"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "LanguageSelectorOption",
+      "description": "Represents a single language option in the LanguageSelector component.",
+      "keyProperties": [
+        "code",
+        "name",
+        "flag"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "LanguageSelectorProps",
+      "description": "A UI component that allows users to switch the application's language.",
+      "keyProperties": [
+        "currentLanguageCode",
+        "options",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "LazyLoadProps",
+      "description": "A utility wrapper that defers the rendering of its content until they are about to enter the viewport.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "lastUpdatedEpoch",
+        "placeholder"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "LightboxProps",
+      "description": "Properties for a clickable thumbnail that opens a full-size image in an overlay.",
+      "keyProperties": [
+        "fullImage",
+        "thumbnail",
+        "trigger",
+        "uuid"
+      ],
+      "category": "Common/media"
+    },
+    {
+      "componentType": "LinkCardFeatureProps",
+      "description": "A clickable link card with a colored side-bar and eyebrow text.",
+      "keyProperties": [
+        "color",
+        "eyebrowText",
+        "href",
+        "title",
+        "uuid",
+        "variant"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "LinkProps",
+      "description": "Anchor element with href, text, and target",
+      "keyProperties": [
+        "href",
+        "text",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "LoaderProps",
+      "description": "Full-page loader with message.",
+      "keyProperties": [
+        "color",
+        "message",
+        "overlay",
+        "size",
+        "uuid"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "LoadingPlaceholderProps",
+      "description": "Placeholder for content that is loading.",
+      "keyProperties": [
+        "uuid",
+        "animation",
+        "height",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "LogoItemProps",
+      "description": "Represents a single press or partner logo.",
+      "keyProperties": [
+        "logo",
+        "name",
+        "uuid",
+        "grayscale"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "MarkdownBlockProps",
+      "description": "Render raw markdown content into HTML",
+      "keyProperties": [
+        "content",
+        "sanitize",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "MasonryLayoutProps",
+      "description": "A layout that arranges items in a \"Pinterest-style\" masonry grid.",
+      "keyProperties": [
+        "columnCount",
+        "content",
+        "uuid",
+        "gutter"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "MediaGalleryItemProps",
+      "description": "Base properties for any media item that can be displayed in a grid or gallery.",
+      "keyProperties": [
+        "image",
+        "type",
+        "uuid",
+        "caption"
+      ],
+      "category": "Common/media"
+    },
+    {
+      "componentType": "MediaGalleryProps",
+      "description": "Properties for a gallery of mixed media types.",
+      "keyProperties": [
+        "columns",
+        "content",
+        "gap",
+        "layout",
+        "lightbox",
+        "showThumbnails"
+      ],
+      "category": "Common/media"
+    },
+    {
+      "componentType": "MetadataProps",
+      "description": "Defines the SEO and social sharing metadata for a page or the entire site.",
+      "keyProperties": [
+        "description",
+        "favicon",
+        "keywords",
+        "openGraph"
+      ],
+      "category": "Utils"
+    },
+    {
+      "componentType": "MetricFeatureProps",
+      "description": "An individual metric/statistic block for displaying a single KPI.",
+      "keyProperties": [
+        "label",
+        "uuid",
+        "value",
+        "variant"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "NavbarProps",
+      "description": "Main navigation bar component with logo, menu items, and various styling options.",
+      "keyProperties": [
+        "content",
+        "logo",
+        "uuid",
+        "asWrapper"
+      ],
+      "category": "Common/navigation"
+    },
+    {
+      "componentType": "NotificationBannerProps",
+      "description": "Persistent banner for notifications with dismiss option.",
+      "keyProperties": [
+        "dismissible",
+        "message",
+        "type",
+        "uuid"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "OverflowContainerProps",
+      "description": "A container that makes its content scrollable when it overflows.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "lastUpdatedEpoch",
+        "overflowX"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "PDFViewerProps",
+      "description": "Properties for a PDF viewer.",
+      "keyProperties": [
+        "fitMode",
+        "initialPage",
+        "showControls",
+        "src",
+        "uuid",
+        "zoom"
+      ],
+      "category": "Common/media"
+    },
+    {
+      "componentType": "PageProps",
+      "description": "Page interface",
+      "keyProperties": [
+        "uuid",
+        "pageType",
+        "title",
+        "slug",
+        "summary",
+        "shortSummary"
+      ],
+      "category": "Utils"
+    },
+    {
+      "componentType": "PageTransition",
+      "description": "Defines the transition settings for a specific page, allowing for overrides. This allows for customizing or disabling transitions for individual pages.",
+      "keyProperties": [
+        "disabled",
+        "easing",
+        "timing",
+        "type"
+      ],
+      "category": "Utils"
+    },
+    {
+      "componentType": "PanoramaViewerProps",
+      "description": "Properties for an interactive 360° image viewer.",
+      "keyProperties": [
+        "autoRotate",
+        "image",
+        "isFullscreenEnabled",
+        "isZoomable",
+        "rotationSpeed",
+        "uuid"
+      ],
+      "category": "Common/media"
+    },
+    {
+      "componentType": "PortalProps",
+      "description": "Renders content into a different DOM root via a portal. Essential for modals, drawers, and other overlaying UI elements.",
+      "keyProperties": [
+        "content",
+        "targetId",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "PricingPlanProps",
+      "description": "An individual pricing plan with name, price, features, and highlight",
+      "keyProperties": [
+        "button",
+        "features",
+        "highlight",
+        "name",
+        "period",
+        "price"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "PricingTableProps",
+      "description": "Comparison table of PricingPlan blocks with features and highlights",
+      "keyProperties": [
+        "content",
+        "currency",
+        "showToggle",
+        "uuid"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ProcessStepItemProps",
+      "description": "An individual process step with icon, title, and description.",
+      "keyProperties": [
+        "icon",
+        "text",
+        "title",
+        "uuid"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ProcessStepsBlockProps",
+      "description": "A data-driven component for displaying a sequence of steps.",
+      "keyProperties": [
+        "content",
+        "orientation",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ProgressBarProps",
+      "description": "Linear progress indicator.",
+      "keyProperties": [
+        "uuid",
+        "value",
+        "animated",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "QuizFormProps",
+      "description": "Represents a specialized form for a quiz, exam, or survey, with additional scoring and feedback options.",
+      "keyProperties": [
+        "actions",
+        "content",
+        "onSubmitAction",
+        "title",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "QuizOption",
+      "description": "Represents a single answer choice within a quiz question.",
+      "keyProperties": [
+        "text",
+        "isCorrect",
+        "feedback"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "QuizQuestionFieldProps",
+      "description": "Represents a single question in a quiz, exam, or survey.",
+      "keyProperties": [
+        "label",
+        "name",
+        "points",
+        "questionType",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "QuoteBlockProps",
+      "description": "A stylized blockquote with optional author and source.",
+      "keyProperties": [
+        "quote",
+        "uuid",
+        "alignment",
+        "author"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "RadioGroupFieldProps",
+      "description": "Renders a group of radio buttons, from which a user can select only one option.",
+      "keyProperties": [
+        "label",
+        "name",
+        "options",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "RatingFieldProps",
+      "description": "Renders a rating component, commonly used for star ratings.",
+      "keyProperties": [
+        "count",
+        "label",
+        "name",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "ResizableBoxProps",
+      "description": "A box that can be resized by the user.",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "lastUpdatedEpoch",
+        "maxHeight"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "SectionProps",
+      "description": "A section is a container for a group of components.",
+      "keyProperties": [
+        "content",
+        "sectionSlug",
+        "uuid",
+        "background"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "SelectFieldProps",
+      "description": "Renders a dropdown list (select box) that allows users to choose one or more options from a predefined list.",
+      "keyProperties": [
+        "label",
+        "name",
+        "options",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "SeoMetaProps",
+      "description": "A non-visual component that sets crucial SEO meta tags for a page, including title, description, and Open Graph data for social sharing.",
+      "keyProperties": [
+        "pageDescription",
+        "title",
+        "uuid",
+        "canonicalUrl"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "ServiceCallProps",
+      "description": "Defines a SECURE contract for making a backend service call from a component. Instead of an endpoint, it uses a predefined actionId that is validated on the backend.",
+      "keyProperties": [
+        "actionId",
+        "successMessage",
+        "errorMessage",
+        "notificationType",
+        "notifyAdmin"
+      ],
+      "category": "Utils"
+    },
+    {
+      "componentType": "ShareButtonProps",
+      "description": "A button that allows users to share a URL to various social platforms.",
+      "keyProperties": [
+        "platform",
+        "url",
+        "uuid",
+        "icon"
+      ],
+      "category": "Website"
+    },
+    {
+      "componentType": "SidebarProps",
+      "description": "Main sidebar navigation component with logo, menu items, and optional profile.",
+      "keyProperties": [
+        "content",
+        "logo",
+        "uuid",
+        "collapsible"
+      ],
+      "category": "Common/navigation"
+    },
+    {
+      "componentType": "SignatureFieldProps",
+      "description": "Renders a canvas for capturing a digital signature.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "clearButtonText"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "SkeletonProps",
+      "description": "Placeholder skeleton for content loading states",
+      "keyProperties": [
+        "height",
+        "uuid",
+        "width",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "SliderFieldProps",
+      "description": "Renders a slider control for selecting a numeric value from within a defined range.",
+      "keyProperties": [
+        "label",
+        "max",
+        "min",
+        "name",
+        "uuid"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "SocialLinkProps",
+      "description": "An individual social platform icon with link URL",
+      "keyProperties": [
+        "platform",
+        "url",
+        "uuid",
+        "label"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "SpacerProps",
+      "description": "Empty space of defined size",
+      "keyProperties": [
+        "size",
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "SpinnerProps",
+      "description": "Loading indicator with size and color",
+      "keyProperties": [
+        "color",
+        "size",
+        "uuid",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "SplitPaneProps",
+      "description": "A container that provides a user-resizable splitter between its content.",
+      "keyProperties": [
+        "content",
+        "direction",
+        "uuid",
+        "initialSizes"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "StandardFeatureProps",
+      "description": "A standard feature with an icon, title, and text.",
+      "keyProperties": [
+        "text",
+        "title",
+        "uuid",
+        "variant"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "StatsCounterProps",
+      "description": "Animated numeric counter from start to end over duration",
+      "keyProperties": [
+        "duration",
+        "end",
+        "label",
+        "start",
+        "uuid"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "SubComponentProps",
+      "description": "SubComponentProps is a component that is a subcomponent of a parent component. it cannot be used as a standalone component.",
+      "keyProperties": [
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "SwitchFieldProps",
+      "description": "Renders a toggle switch, a modern alternative to a checkbox for binary on/off states.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "TableColumnDef",
+      "description": "Defines a single column for the comparison table, including its header, data mapping, and styling options.",
+      "keyProperties": [
+        "accessorKey",
+        "header",
+        "uuid",
+        "align"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "TableRowData",
+      "description": "Defines the structure for a single row of data in the table. This refined structure separates the row's metadata (like `id`) from its dynamic cell values to prevent TypeScript index signature conflicts.",
+      "keyProperties": [
+        "values"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "TagProps",
+      "description": "Label tag with removable option",
+      "keyProperties": [
+        "label",
+        "removable",
+        "uuid",
+        "color"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "TaxonomyTerm",
+      "description": "Represents a category or tag associated with a blog post.",
+      "keyProperties": [
+        "name",
+        "slug"
+      ],
+      "category": "Website/blog"
+    },
+    {
+      "componentType": "TeamMemberProps",
+      "description": "A profile block for a single team member, with multiple style variants.",
+      "keyProperties": [
+        "name",
+        "photo",
+        "uuid",
+        "bio"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "TestimonialItemProps",
+      "description": "Represents a single testimonial item with author details, text, and an optional rating. This is the atomic unit for all testimonial layouts.",
+      "keyProperties": [
+        "author",
+        "text",
+        "uuid",
+        "authorTitle"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "TextAreaFieldProps",
+      "description": "Renders a multi-line text input field, suitable for longer text content like comments or descriptions.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "TextFieldProps",
+      "description": "Renders a standard single-line text input field for data like names, emails, or passwords.",
+      "keyProperties": [
+        "label",
+        "name",
+        "uuid",
+        "defaultValue"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "TextProps",
+      "description": "Simple text block for arbitrary content",
+      "keyProperties": [
+        "content",
+        "uuid",
+        "as",
+        "lastUpdatedEpoch"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "TimelineBlockProps",
+      "description": "Horizontal or vertical timeline of TimelineEvent blocks",
+      "keyProperties": [
+        "alternating",
+        "content",
+        "orientation",
+        "uuid"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "TimelineEventProps",
+      "description": "An individual timeline event with date, title, description, and optional icon",
+      "keyProperties": [
+        "date",
+        "icon",
+        "media",
+        "text",
+        "title",
+        "uuid"
+      ],
+      "category": "Website/content"
+    },
+    {
+      "componentType": "ToastProps",
+      "description": "Transient message popup with duration.",
+      "keyProperties": [
+        "duration",
+        "message",
+        "position",
+        "type",
+        "uuid"
+      ],
+      "category": "Common/feedback"
+    },
+    {
+      "componentType": "ValidationRule",
+      "description": "Defines a single validation constraint to be applied to a form field's value.",
+      "keyProperties": [
+        "type",
+        "errorMessage",
+        "customValidatorId",
+        "value"
+      ],
+      "category": "Common/forms"
+    },
+    {
+      "componentType": "VideoProps",
+      "description": "Video element supporting on-server files, YouTube, and Vimeo playback",
+      "keyProperties": [
+        "autoplay",
+        "controls",
+        "loop",
+        "muted",
+        "provider",
+        "source"
+      ],
+      "category": "Common"
+    },
+    {
+      "componentType": "VirtualListItemData",
+      "description": "An individual data item for the virtualized list. It holds the specific data for a single item in the list.",
+      "keyProperties": [
+        "uuid",
+        "lastUpdatedEpoch",
+        "signature"
+      ],
+      "category": "Common/layout"
+    },
+    {
+      "componentType": "VirtualListProps",
+      "description": "Renders a large list of items efficiently using virtualization. This version is fully JSON-serializable.",
+      "keyProperties": [
+        "containerHeight",
+        "content",
+        "itemHeight",
+        "itemTemplate",
+        "uuid"
+      ],
+      "category": "Common/layout"
+    }
+  ]
+}

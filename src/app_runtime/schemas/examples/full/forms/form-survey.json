@@ -1,0 +1,844 @@
+{
+  "uuid": "app-survey-form-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Product Survey & Feedback Poll",
+  "alias": "product-survey-and-feedback-poll",
+  "summary": "A comprehensive survey form for gathering customer feedback, market research, and user opinions. Features single-choice questions, multiple-choice selections, rating scales, and dropdown lists for detailed data collection.",
+  "shortSummary": "A comprehensive survey form for gathering customer feedback, market research, and user opinions",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "SurveyHub",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "SurveyHub"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Home"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Surveys",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/surveys",
+                "text": "Surveys"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Results",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/results",
+                "text": "Results"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 SurveyHub. Your feedback matters. All responses are confidential.",
+              "classes": "text-muted-foreground text-center"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-survey",
+      "title": "Product Feedback Survey",
+      "slug": "/",
+      "summary": "Help us improve our products by sharing your valuable feedback.",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-blue-50 to-background dark:from-blue-950/20",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-badge",
+                      "componentType": "BadgeProps",
+                      "content": "Survey",
+                      "variant": "default",
+                      "classes": "mx-auto"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Product Feedback Survey"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "We value your opinion! Take 5 minutes to share your thoughts and help us create better products for you.",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "hero-stats",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "6",
+                      "justify": "center",
+                      "classes": "mt-2",
+                      "content": [
+                        {
+                          "uuid": "stat-1",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "stat-1-icon",
+                              "componentType": "IconProps",
+                              "name": "clock",
+                              "size": 20,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "stat-1-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "~5 minutes"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "stat-2",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "stat-2-icon",
+                              "componentType": "IconProps",
+                              "name": "list",
+                              "size": 20,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "stat-2-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "12 questions"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "stat-3",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "stat-3-icon",
+                              "componentType": "IconProps",
+                              "name": "shield-check",
+                              "size": 20,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "stat-3-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Anonymous"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "form-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "w-full max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "survey-form",
+                      "componentType": "FormProps",
+                      "title": "Survey Questions",
+                      "description": "Please answer all questions honestly. Your responses are completely anonymous and will help us improve our products.",
+                      "layout": "singleColumn",
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Thank you for completing our survey! Your feedback is valuable to us.",
+                        "errorMessage": "Failed to submit survey. Please check your connection and try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "slack",
+                        "onSuccessAction": {
+                          "type": "redirect",
+                          "payload": {
+                            "url": "/thank-you"
+                          }
+                        }
+                      },
+                      "content": [
+                        {
+                          "uuid": "field-age-group",
+                          "componentType": "SelectFieldProps",
+                          "name": "ageGroup",
+                          "label": "Age Group",
+                          "placeholder": "Select your age range",
+                          "required": true,
+                          "helperText": "This helps us understand our user demographics",
+                          "options": [
+                            {
+                              "label": "Under 18",
+                              "value": "under-18"
+                            },
+                            {
+                              "label": "18-24",
+                              "value": "18-24"
+                            },
+                            {
+                              "label": "25-34",
+                              "value": "25-34"
+                            },
+                            {
+                              "label": "35-44",
+                              "value": "35-44"
+                            },
+                            {
+                              "label": "45-54",
+                              "value": "45-54"
+                            },
+                            {
+                              "label": "55-64",
+                              "value": "55-64"
+                            },
+                            {
+                              "label": "65 or older",
+                              "value": "65-plus"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-occupation",
+                          "componentType": "SelectFieldProps",
+                          "name": "occupation",
+                          "label": "Occupation",
+                          "placeholder": "Select your occupation",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Student",
+                              "value": "student"
+                            },
+                            {
+                              "label": "Professional",
+                              "value": "professional"
+                            },
+                            {
+                              "label": "Business Owner",
+                              "value": "business-owner"
+                            },
+                            {
+                              "label": "Freelancer",
+                              "value": "freelancer"
+                            },
+                            {
+                              "label": "Retired",
+                              "value": "retired"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-usage-frequency",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "usageFrequency",
+                          "label": "How often do you use our product?",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Daily",
+                              "value": "daily"
+                            },
+                            {
+                              "label": "Several times a week",
+                              "value": "several-weekly"
+                            },
+                            {
+                              "label": "Once a week",
+                              "value": "weekly"
+                            },
+                            {
+                              "label": "Once a month",
+                              "value": "monthly"
+                            },
+                            {
+                              "label": "Rarely",
+                              "value": "rarely"
+                            },
+                            {
+                              "label": "First time user",
+                              "value": "first-time"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-primary-use",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "primaryUse",
+                          "label": "What is your primary use case?",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Personal use",
+                              "value": "personal"
+                            },
+                            {
+                              "label": "Work/Professional",
+                              "value": "work"
+                            },
+                            {
+                              "label": "Education/Learning",
+                              "value": "education"
+                            },
+                            {
+                              "label": "Business operations",
+                              "value": "business"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-features-used",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "featuresUsed",
+                          "label": "Which features do you use regularly? (Select all that apply)",
+                          "helperText": "Choose all features you use at least once a month",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Dashboard & Analytics",
+                              "value": "dashboard"
+                            },
+                            {
+                              "label": "Reporting Tools",
+                              "value": "reporting"
+                            },
+                            {
+                              "label": "Data Export",
+                              "value": "export"
+                            },
+                            {
+                              "label": "Collaboration Features",
+                              "value": "collaboration"
+                            },
+                            {
+                              "label": "Mobile App",
+                              "value": "mobile"
+                            },
+                            {
+                              "label": "Integration with Other Tools",
+                              "value": "integrations"
+                            },
+                            {
+                              "label": "Custom Templates",
+                              "value": "templates"
+                            },
+                            {
+                              "label": "Automation",
+                              "value": "automation"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-overall-satisfaction",
+                          "componentType": "SliderFieldProps",
+                          "name": "overallSatisfaction",
+                          "label": "Overall Product Satisfaction",
+                          "min": 0,
+                          "max": 10,
+                          "step": 1,
+                          "defaultValue": 5,
+                          "helperText": "0 = Very Dissatisfied, 10 = Very Satisfied"
+                        },
+                        {
+                          "uuid": "field-ease-of-use",
+                          "componentType": "SliderFieldProps",
+                          "name": "easeOfUse",
+                          "label": "Ease of Use",
+                          "min": 0,
+                          "max": 10,
+                          "step": 1,
+                          "defaultValue": 5,
+                          "helperText": "0 = Very Difficult, 10 = Very Easy"
+                        },
+                        {
+                          "uuid": "field-feature-quality",
+                          "componentType": "SliderFieldProps",
+                          "name": "featureQuality",
+                          "label": "Quality of Features",
+                          "min": 0,
+                          "max": 10,
+                          "step": 1,
+                          "defaultValue": 5,
+                          "helperText": "0 = Poor Quality, 10 = Excellent Quality"
+                        },
+                        {
+                          "uuid": "field-customer-support",
+                          "componentType": "SliderFieldProps",
+                          "name": "customerSupport",
+                          "label": "Customer Support",
+                          "min": 0,
+                          "max": 10,
+                          "step": 1,
+                          "defaultValue": 5,
+                          "helperText": "0 = Poor Support, 10 = Excellent Support"
+                        },
+                        {
+                          "uuid": "field-value-for-money",
+                          "componentType": "SliderFieldProps",
+                          "name": "valueForMoney",
+                          "label": "Value for Money",
+                          "min": 0,
+                          "max": 10,
+                          "step": 1,
+                          "defaultValue": 5,
+                          "helperText": "0 = Poor Value, 10 = Excellent Value"
+                        },
+                        {
+                          "uuid": "field-star-rating",
+                          "componentType": "RatingFieldProps",
+                          "name": "starRating",
+                          "label": "Overall Rating",
+                          "count": 5,
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-star-e750e797",
+                            "name": "star",
+                            "size": 20
+                          },
+                          "allowHalf": true,
+                          "helperText": "Rate your overall experience with our product"
+                        },
+                        {
+                          "uuid": "field-improvements",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "improvements",
+                          "label": "What areas need improvement? (Select all that apply)",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "User Interface Design",
+                              "value": "ui-design"
+                            },
+                            {
+                              "label": "Performance & Speed",
+                              "value": "performance"
+                            },
+                            {
+                              "label": "More Features",
+                              "value": "more-features"
+                            },
+                            {
+                              "label": "Better Documentation",
+                              "value": "documentation"
+                            },
+                            {
+                              "label": "Mobile Experience",
+                              "value": "mobile"
+                            },
+                            {
+                              "label": "Customer Support Response Time",
+                              "value": "support-speed"
+                            },
+                            {
+                              "label": "Pricing Options",
+                              "value": "pricing"
+                            },
+                            {
+                              "label": "Bug Fixes",
+                              "value": "bugs"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-recommend",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "recommend",
+                          "label": "How likely are you to recommend our product to others?",
+                          "required": true,
+                          "orientation": "vertical",
+                          "helperText": "Net Promoter Score (NPS)",
+                          "options": [
+                            {
+                              "label": "10 - Extremely Likely",
+                              "value": "10"
+                            },
+                            {
+                              "label": "9 - Very Likely",
+                              "value": "9"
+                            },
+                            {
+                              "label": "8 - Likely",
+                              "value": "8"
+                            },
+                            {
+                              "label": "7 - Somewhat Likely",
+                              "value": "7"
+                            },
+                            {
+                              "label": "6 - Neutral",
+                              "value": "6"
+                            },
+                            {
+                              "label": "5 - Somewhat Unlikely",
+                              "value": "5"
+                            },
+                            {
+                              "label": "4 - Unlikely",
+                              "value": "4"
+                            },
+                            {
+                              "label": "3 - Very Unlikely",
+                              "value": "3"
+                            },
+                            {
+                              "label": "2 - Extremely Unlikely",
+                              "value": "2"
+                            },
+                            {
+                              "label": "1 - Would Never Recommend",
+                              "value": "1"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-additional-comments",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "additionalComments",
+                          "label": "Additional Comments or Suggestions",
+                          "placeholder": "Share any additional thoughts, suggestions, or feedback...",
+                          "rows": 5,
+                          "maxLength": 1000,
+                          "helperText": "Your detailed feedback helps us understand your needs better"
+                        },
+                        {
+                          "uuid": "field-contact-permission",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "contactPermission",
+                          "label": "I agree to be contacted for follow-up questions about my feedback",
+                          "helperText": "Optional - We may reach out to learn more about your experience"
+                        },
+                        {
+                          "uuid": "field-hidden-survey-id",
+                          "componentType": "HiddenFieldProps",
+                          "name": "surveyId",
+                          "value": "product-survey-2025-q1"
+                        },
+                        {
+                          "uuid": "field-hidden-timestamp",
+                          "componentType": "HiddenFieldProps",
+                          "name": "timestamp",
+                          "value": "2025-10-02T19:30:00Z"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "reset",
+                          "text": "Clear All",
+                          "variant": "outline",
+                          "uuid": "survey-form-action-reset-0",
+                          "componentType": "ButtonProps"
+                        },
+                        {
+                          "actionType": "submit",
+                          "text": "Submit Survey",
+                          "variant": "default",
+                          "uuid": "survey-form-action-submit-1",
+                          "componentType": "ButtonProps"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "info-callout",
+                      "componentType": "CalloutProps",
+                      "title": {
+                        "uuid": "info-callout-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Your Privacy Matters"
+                      },
+                      "message": {
+                        "uuid": "info-callout-message",
+                        "componentType": "TextProps",
+                        "content": "All survey responses are anonymous and confidential. We do not collect any personally identifiable information unless you explicitly provide it in the additional comments section."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-benefits",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-benefits",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "benefits-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "benefits-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-5xl",
+                  "content": [
+                    {
+                      "uuid": "benefits-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Why Your Feedback Matters",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "benefits-grid",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "6",
+                      "content": [
+                        {
+                          "uuid": "benefit-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "benefit-1-icon",
+                              "componentType": "IconProps",
+                              "name": "lightbulb",
+                              "size": 32,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "benefit-1-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Shape Our Roadmap"
+                            },
+                            {
+                              "uuid": "benefit-1-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Your input directly influences our product development priorities and new features."
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "benefit-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "benefit-2-icon",
+                              "componentType": "IconProps",
+                              "name": "users",
+                              "size": 32,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "benefit-2-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Community Voice"
+                            },
+                            {
+                              "uuid": "benefit-2-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Join thousands of users helping build a better product for everyone."
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "benefit-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "benefit-3-icon",
+                              "componentType": "IconProps",
+                              "name": "trending-up",
+                              "size": 32,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "benefit-3-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Continuous Improvement"
+                            },
+                            {
+                              "uuid": "benefit-3-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "We regularly review feedback to identify and fix issues quickly."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Help us improve our products by sharing your valuable feedback",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

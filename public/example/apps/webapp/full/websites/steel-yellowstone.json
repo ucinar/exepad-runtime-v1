@@ -1,0 +1,1531 @@
+{
+  "uuid": "8a2e7c9b-1d3f-4e5c-6a7b-8c9d0e1f2a3b",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Yellow Stone Steel",
+  "alias": "yellow-stone-steel",
+  "summary": "A professional, multi-page website for Yellow Stone Steel, a steel manufacturer based in the USA, to showcase their products, services, and company information.",
+  "shortSummary": "A professional, multi-page website for Yellow Stone Steel, a steel manufacturer based in the USA, to showcase their products, services, and company in",
+  "lastUpdatedEpoch": 1701192800,
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "full-width",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "#ECF0F1",
+      "foreground": "#2C3E50",
+      "primary": "#F4D03F",
+      "primary-foreground": "#2C3E50",
+      "secondary": "#ECF0F1",
+      "secondary-foreground": "#7F8C8D",
+      "muted": "#ECF0F1",
+      "muted-foreground": "#7F8C8D",
+      "accent": "#F4D03F",
+      "accent-foreground": "#2C3E50",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#7F8C8D",
+      "input": "#7F8C8D",
+      "ring": "#F4D03F"
+    },
+    "dark": {
+      "background": "#2C3E50",
+      "foreground": "#ECF0F1",
+      "primary": "#F4D03F",
+      "primary-foreground": "#2C3E50",
+      "secondary": "#1a2b3e",
+      "secondary-foreground": "#ECF0F1",
+      "muted": "#1a2b3e",
+      "muted-foreground": "#7F8C8D",
+      "accent": "#F4D03F",
+      "accent-foreground": "#2C3E50",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#ffffff",
+      "border": "#4b5563",
+      "input": "#4b5563",
+      "ring": "#F4D03F"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Montserrat",
+        "variant": "700",
+        "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      },
+      "body": {
+        "family": "Roboto",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      }
+    },
+    "spacing": {
+      "x": "1rem",
+      "y": "1rem"
+    },
+    "radius": "0.5rem"
+  },
+  "transitions": {
+    "enabled": true,
+    "type": "slideFade",
+    "timing": "normal",
+    "easing": "easeInOut",
+    "respectReducedMotion": true
+  },
+  "sidebar": [],
+  "header": [
+    {
+      "componentType": "NavbarProps",
+      "uuid": "f6a7b8c9-d0e1-f2a3-b4c5-d6e7f8a9b0c1",
+      "variant": "default",
+      "sticky": true,
+      "logo": {
+        "componentType": "NavbarLogoProps",
+        "uuid": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+        "type": "text",
+        "text": "Yellow Stone Steel"
+      },
+      "content": [
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+          "label": "Home",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+            "href": "/",
+            "text": "Home"
+          },
+          "active": true
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+          "label": "About Us",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+            "href": "/about-us",
+            "text": "About Us"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+          "label": "Products & Services",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+            "href": "/products-services",
+            "text": "Products & Services"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+          "label": "Projects",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+            "href": "/projects",
+            "text": "Projects"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+          "label": "Contact Us",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+            "href": "/contact-us",
+            "text": "Contact Us"
+          }
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "title": "Home Page",
+      "slug": "/",
+      "summary": "A welcoming page featuring a brief introduction to Yellow Stone Steel, their mission, core values, a highlight of key products/services, and clear calls to action to explore other sections of the site.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "hero-section",
+          "uuid": "hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "contentBleed": true,
+          "background": {
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "hero-bg-image",
+              "src": "https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg",
+              "alt": "Steel Manufacturing Background",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "hero-bg-asset",
+                "isProcessed": true,
+                "keywords": "steel, manufacturing, industry",
+                "requestedWidth": 1920,
+                "requestedHeight": 1080
+              }
+            },
+            "overlayColor": "rgba(0,0,0,0.6)"
+          },
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-content-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-headline",
+                  "level": 1,
+                  "text": "Building the Future of Steel, Together.",
+                  "classes": "text-5xl font-extrabold tracking-tight text-white"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-description",
+                  "variant": "lead",
+                  "content": "Yellow Stone Steel is a leading US manufacturer, providing high-quality steel products and custom fabrication solutions for diverse industrial needs.",
+                  "classes": "mt-4 max-w-3xl mx-auto text-white"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-cta-flex",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "explore-products-btn",
+                      "text": "Explore Products",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "explore-icon",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right",
+                      "disabled": false,
+                      "type": "button",
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "explore-link",
+                        "href": "/products-services",
+                        "text": "Explore Products"
+                      }
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "get-quote-btn",
+                      "text": "Get a Quote",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "quote-icon",
+                        "name": "mail",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "disabled": false,
+                      "type": "button",
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "quote-link",
+                        "href": "/contact-us",
+                        "text": "Get a Quote",
+                        "classes": "text-black"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "componentType": "SectionProps",
+                  "sectionSlug": "mission-values-section",
+                  "uuid": "mission-values-section",
+                  "layout": "singleColumnCentered",
+                  "spacing": "xl",
+                  "classes": "text-center bg-gray-50",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "mission-values-flex",
+                      "direction": "column",
+                      "align": "center",
+                      "gap": "4",
+                      "content": [
+                        {
+                          "componentType": "HeadingProps",
+                          "uuid": "mission-values-headline",
+                          "level": 2,
+                          "text": "Our Foundation: Strength, Integrity, Innovation.",
+                          "classes": "text-4xl font-bold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "mission-values-text",
+                          "content": "At Yellow Stone Steel, we are committed to delivering superior steel products through a relentless focus on quality, ethical practices, and continuous improvement. We believe in building lasting relationships with our clients and contributing to the growth of American industry.",
+                          "classes": "text-lg text-gray-700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentType": "SectionProps",
+                  "sectionSlug": "products-services-section",
+                  "uuid": "products-services-section",
+                  "layout": "singleColumnCentered",
+                  "spacing": "xl",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "products-services-flex",
+                      "direction": "column",
+                      "align": "center",
+                      "gap": "8",
+                      "classes": "h-full text-center max-w-4xl mx-auto",
+                      "content": [
+                        {
+                          "componentType": "HeadingProps",
+                          "uuid": "products-services-headline",
+                          "level": 2,
+                          "text": "Our Core Offerings",
+                          "classes": "text-4xl font-bold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "products-services-description",
+                          "variant": "lead",
+                          "content": "Explore the diverse range of high-quality steel products and specialized services we provide.",
+                          "classes": "text-gray-700"
+                        },
+                        {
+                          "componentType": "GridProps",
+                          "uuid": "products-services-grid",
+                          "columns": 3,
+                          "gap": "8",
+                          "classes": "pt-12 text-left",
+                          "content": [
+                            {
+                              "componentType": "StandardFeatureProps",
+                              "uuid": "feature-structural-steel",
+                              "variant": "standard",
+                              "layout": "iconTopLeft",
+                              "icon": {
+                                "componentType": "IconProps",
+                                "uuid": "icon-structural-steel",
+                                "name": "hard-hat",
+                                "size": 32,
+                                "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                              },
+                              "title": {
+                                "uuid": "feature-structural-steel-title",
+                                "componentType": "HeadingProps",
+                                "level": 3,
+                                "text": "Structural Steel"
+                              },
+                              "text": {
+                                "uuid": "feature-structural-steel-text",
+                                "componentType": "TextProps",
+                                "content": "Robust and reliable structural steel for foundational construction."
+                              }
+                            },
+                            {
+                              "componentType": "StandardFeatureProps",
+                              "uuid": "feature-custom-fabrication",
+                              "variant": "standard",
+                              "layout": "iconTopLeft",
+                              "icon": {
+                                "componentType": "IconProps",
+                                "uuid": "icon-custom-fabrication",
+                                "name": "wrench",
+                                "size": 32,
+                                "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                              },
+                              "title": {
+                                "uuid": "feature-custom-fabrication-title",
+                                "componentType": "HeadingProps",
+                                "level": 3,
+                                "text": "Custom Fabrication"
+                              },
+                              "text": {
+                                "uuid": "feature-custom-fabrication-text",
+                                "componentType": "TextProps",
+                                "content": "Precision-engineered custom steel solutions tailored to your project requirements."
+                              }
+                            },
+                            {
+                              "componentType": "StandardFeatureProps",
+                              "uuid": "feature-rebar",
+                              "variant": "standard",
+                              "layout": "iconTopLeft",
+                              "icon": {
+                                "componentType": "IconProps",
+                                "uuid": "icon-rebar",
+                                "name": "blocks",
+                                "size": 32,
+                                "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                              },
+                              "title": {
+                                "uuid": "feature-rebar-title",
+                                "componentType": "HeadingProps",
+                                "level": 3,
+                                "text": "Rebar"
+                              },
+                              "text": {
+                                "uuid": "feature-rebar-text",
+                                "componentType": "TextProps",
+                                "content": "High-strength reinforcing bar for concrete structures, ensuring durability and safety."
+                              }
+                            },
+                            {
+                              "componentType": "StandardFeatureProps",
+                              "uuid": "feature-sheets-coils",
+                              "variant": "standard",
+                              "layout": "iconTopLeft",
+                              "icon": {
+                                "componentType": "IconProps",
+                                "uuid": "icon-sheets-coils",
+                                "name": "box",
+                                "size": 32,
+                                "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                              },
+                              "title": {
+                                "uuid": "feature-sheets-coils-title",
+                                "componentType": "HeadingProps",
+                                "level": 3,
+                                "text": "Sheets & Coils"
+                              },
+                              "text": {
+                                "uuid": "feature-sheets-coils-text",
+                                "componentType": "TextProps",
+                                "content": "Versatile steel sheets and coils for various manufacturing and industrial applications."
+                              }
+                            },
+                            {
+                              "componentType": "StandardFeatureProps",
+                              "uuid": "feature-cutting-bending",
+                              "variant": "standard",
+                              "layout": "iconTopLeft",
+                              "icon": {
+                                "componentType": "IconProps",
+                                "uuid": "icon-cutting-bending",
+                                "name": "scissors",
+                                "size": 32,
+                                "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                              },
+                              "title": {
+                                "uuid": "feature-cutting-bending-title",
+                                "componentType": "HeadingProps",
+                                "level": 3,
+                                "text": "Cutting & Bending"
+                              },
+                              "text": {
+                                "uuid": "feature-cutting-bending-text",
+                                "componentType": "TextProps",
+                                "content": "Advanced cutting and bending services to meet precise specifications."
+                              }
+                            },
+                            {
+                              "componentType": "StandardFeatureProps",
+                              "uuid": "feature-delivery-solutions",
+                              "variant": "standard",
+                              "layout": "iconTopLeft",
+                              "icon": {
+                                "componentType": "IconProps",
+                                "uuid": "icon-delivery-solutions",
+                                "name": "truck",
+                                "size": 32,
+                                "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                              },
+                              "title": {
+                                "uuid": "feature-delivery-solutions-title",
+                                "componentType": "HeadingProps",
+                                "level": 3,
+                                "text": "Delivery Solutions"
+                              },
+                              "text": {
+                                "uuid": "feature-delivery-solutions-text",
+                                "componentType": "TextProps",
+                                "content": "Efficient and timely delivery of steel products directly to your site."
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "transitions": {
+        "type": "scale",
+        "timing": "slow"
+      },
+      "shortSummary": "A welcoming page featuring a brief introduction to Yellow Stone Steel, their mission, core values, a",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "title": "About Us Page",
+      "slug": "/about-us",
+      "summary": "Detail the company's history, expertise in steel manufacturing, certifications, and a profile of their dedicated team. Emphasize their commitment to quality and service.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "about-history-section",
+          "uuid": "about-history-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "about-history-flex",
+              "direction": "column",
+              "align": "start",
+              "gap": "8",
+              "classes": "h-full mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "about-history-heading",
+                  "level": 2,
+                  "text": "Our Legacy of Steel Excellence",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "about-history-text-1",
+                  "variant": "lead",
+                  "content": "Founded in the heart of the USA, Yellow Stone Steel has been a cornerstone of the steel manufacturing industry for decades. Our journey began with a commitment to quality and a vision to forge the future, one robust steel product at a time. We've grown from humble beginnings into a leading provider, driven by innovation and a dedication to our customers."
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "about-history-text-2",
+                  "content": "Our expertise spans across a wide spectrum of steel manufacturing processes, from traditional methods to cutting-edge technologies. We constantly invest in research and development to ensure our products meet and exceed industry standards. With a focus on precision and durability, Yellow Stone Steel is synonymous with reliability."
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "about-certifications-heading",
+                  "level": 3,
+                  "text": "Certifications & Quality Assurance",
+                  "classes": "text-3xl font-bold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "about-certifications-text",
+                  "content": "Yellow Stone Steel is proud to hold numerous industry certifications, reflecting our unwavering commitment to quality and environmental stewardship. Our rigorous quality control processes ensure every product leaving our facility adheres to the highest standards, providing our clients with peace of mind and superior performance. We emphasize sustainable practices throughout our operations, ensuring a responsible approach to steel production."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "about-team-section",
+          "uuid": "about-team-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "about-team-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "about-team-heading",
+                  "level": 2,
+                  "text": "Meet Our Dedicated Team",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "about-team-description",
+                  "variant": "lead",
+                  "content": "Our strength lies in our people. Yellow Stone Steel is powered by a team of highly skilled professionals, engineers, and support staff, all united by a passion for steel and a dedication to client success. Their expertise and commitment are the bedrock of our operations."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "about-team-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-1",
+                      "name": {
+                        "uuid": "team-member-1-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "John Doe"
+                      },
+                      "position": {
+                        "uuid": "team-member-1-position",
+                        "componentType": "TextProps",
+                        "content": "CEO"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "team-member-1-photo",
+                        "src": "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=350",
+                        "alt": "John Doe",
+                        "asset": {
+                          "componentType": "ImageAssetProps",
+                          "uuid": "team-member-1-asset",
+                          "isProcessed": true,
+                          "keywords": "team, person",
+                          "requestedWidth": 400,
+                          "requestedHeight": 400
+                        }
+                      },
+                      "bio": {
+                        "uuid": "team-member-1-bio",
+                        "componentType": "TextProps",
+                        "content": "John brings over 25 years of leadership in the steel industry, guiding Yellow Stone Steel with a vision for innovation and growth."
+                      }
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-2",
+                      "name": {
+                        "uuid": "team-member-2-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Jane Smith"
+                      },
+                      "position": {
+                        "uuid": "team-member-2-position",
+                        "componentType": "TextProps",
+                        "content": "Head of Operations"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "team-member-2-photo",
+                        "src": "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=350",
+                        "alt": "Jane Smith",
+                        "asset": {
+                          "componentType": "ImageAssetProps",
+                          "uuid": "team-member-2-asset",
+                          "isProcessed": true,
+                          "keywords": "team, person",
+                          "requestedWidth": 400,
+                          "requestedHeight": 400
+                        }
+                      },
+                      "bio": {
+                        "uuid": "team-member-2-bio",
+                        "componentType": "TextProps",
+                        "content": "Jane oversees all manufacturing processes, ensuring efficiency, safety, and the highest quality output."
+                      }
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-3",
+                      "name": {
+                        "uuid": "team-member-3-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "David Lee"
+                      },
+                      "position": {
+                        "uuid": "team-member-3-position",
+                        "componentType": "TextProps",
+                        "content": "Chief Engineer"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "team-member-3-photo",
+                        "src": "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=350",
+                        "alt": "David Lee",
+                        "asset": {
+                          "componentType": "ImageAssetProps",
+                          "uuid": "team-member-3-asset",
+                          "isProcessed": true,
+                          "keywords": "team, person",
+                          "requestedWidth": 400,
+                          "requestedHeight": 400
+                        }
+                      },
+                      "bio": {
+                        "uuid": "team-member-3-bio",
+                        "componentType": "TextProps",
+                        "content": "David is responsible for the design and implementation of our advanced steel solutions and custom projects."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "transitions": {
+        "type": "fade",
+        "timing": "fast"
+      },
+      "shortSummary": "Detail the company's history, expertise in steel manufacturing, certifications, and a profile of the",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "title": "Products & Services Page",
+      "slug": "/products-services",
+      "summary": "A comprehensive catalog of steel products offered (e.g., rebar, structural steel, custom fabrication, sheets, coils) with brief descriptions and specifications. Also, detail any services like cutting, bending, or delivery.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "products-services-hero-section",
+          "uuid": "products-services-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "products-services-hero-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "products-services-title",
+                  "level": 1,
+                  "text": "Our Products & Services",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "products-services-intro-text",
+                  "variant": "lead",
+                  "content": "At Yellow Stone Steel, we offer a comprehensive range of high-quality steel products and specialized services to meet the diverse needs of your projects. From foundational materials to custom solutions, we are your trusted partner.",
+                  "classes": "mt-4 max-w-3xl mx-auto"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "steel-products-section",
+          "uuid": "steel-products-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "steel-products-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "steel-products-heading",
+                  "level": 2,
+                  "text": "High-Quality Steel Products",
+                  "classes": "text-4xl font-bold"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "steel-products-description",
+                  "variant": "lead",
+                  "content": "Discover our extensive catalog of steel products, manufactured to the highest standards for durability and performance.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "products-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "product-rebar",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-rebar",
+                        "name": "blocks",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "product-rebar-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Rebar (Reinforcing Bar)"
+                      },
+                      "text": {
+                        "uuid": "product-rebar-text",
+                        "componentType": "TextProps",
+                        "content": "Essential for concrete reinforcement, our rebar ensures structural integrity and longevity for your construction projects. Available in various sizes and grades."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "product-structural-steel",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-structural-steel",
+                        "name": "building",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "product-structural-steel-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Structural Steel"
+                      },
+                      "text": {
+                        "uuid": "product-structural-steel-text",
+                        "componentType": "TextProps",
+                        "content": "From I-beams to H-beams, channels, and angles, we provide a full range of structural steel for building frameworks and heavy construction applications."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "product-sheets-coils",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-sheets-coils",
+                        "name": "box",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "product-sheets-coils-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Steel Sheets & Coils"
+                      },
+                      "text": {
+                        "uuid": "product-sheets-coils-text",
+                        "componentType": "TextProps",
+                        "content": "Versatile and customizable, our steel sheets and coils are perfect for automotive, appliance, and general manufacturing, available in different gauges and finishes."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "product-pipes-tubes",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-pipes-tubes",
+                        "name": "cylinder",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "product-pipes-tubes-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Pipes & Tubes"
+                      },
+                      "text": {
+                        "uuid": "product-pipes-tubes-text",
+                        "componentType": "TextProps",
+                        "content": "High-strength and corrosion-resistant steel pipes and tubes for plumbing, industrial, and structural applications. Available in various diameters and wall thicknesses."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "product-plates",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-plates",
+                        "name": "square",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "product-plates-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Steel Plates"
+                      },
+                      "text": {
+                        "uuid": "product-plates-text",
+                        "componentType": "TextProps",
+                        "content": "Thick steel plates ideal for heavy machinery, construction equipment, and large-scale fabrication, offering exceptional strength and wear resistance."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "product-wire-rods",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-wire-rods",
+                        "name": "cable",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "product-wire-rods-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Wire Rods"
+                      },
+                      "text": {
+                        "uuid": "product-wire-rods-text",
+                        "componentType": "TextProps",
+                        "content": "High-quality wire rods used in the production of various wire products, mesh, and fasteners, known for their excellent ductility and strength."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentType": "SectionProps",
+              "sectionSlug": "steel-services-section",
+              "uuid": "steel-services-section",
+              "layout": "singleColumnCentered",
+              "spacing": "xl",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "steel-services-flex",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "8",
+                  "classes": "h-full text-center max-w-4xl mx-auto",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "steel-services-heading",
+                      "level": 2,
+                      "text": "Specialized Steel Services",
+                      "classes": "text-4xl font-bold"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "steel-services-description",
+                      "variant": "lead",
+                      "content": "Beyond our product catalog, Yellow Stone Steel provides a suite of services designed to add value and precision to your steel procurement.",
+                      "classes": "text-gray-700"
+                    },
+                    {
+                      "componentType": "GridProps",
+                      "uuid": "services-grid",
+                      "columns": 3,
+                      "gap": "8",
+                      "classes": "pt-12 text-left",
+                      "content": [
+                        {
+                          "componentType": "StandardFeatureProps",
+                          "uuid": "service-cutting",
+                          "variant": "standard",
+                          "layout": "iconTopLeft",
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-cutting",
+                            "name": "scissors",
+                            "size": 32,
+                            "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                          },
+                          "title": {
+                            "uuid": "service-cutting-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Precision Cutting"
+                          },
+                          "text": {
+                            "uuid": "service-cutting-text",
+                            "componentType": "TextProps",
+                            "content": "Utilizing advanced laser and plasma cutting technologies, we provide precise cuts for all steel types, ensuring minimal waste and perfect fit."
+                          }
+                        },
+                        {
+                          "componentType": "StandardFeatureProps",
+                          "uuid": "service-bending",
+                          "variant": "standard",
+                          "layout": "iconTopLeft",
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-bending",
+                            "name": "ruler",
+                            "size": 32,
+                            "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                          },
+                          "title": {
+                            "uuid": "service-bending-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Custom Bending"
+                          },
+                          "text": {
+                            "uuid": "service-bending-text",
+                            "componentType": "TextProps",
+                            "content": "Our state-of-the-art bending equipment allows us to form steel to your exact specifications, offering complex shapes and angles for diverse applications."
+                          }
+                        },
+                        {
+                          "componentType": "StandardFeatureProps",
+                          "uuid": "service-fabrication",
+                          "variant": "standard",
+                          "layout": "iconTopLeft",
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-fabrication",
+                            "name": "wrench",
+                            "size": 32,
+                            "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                          },
+                          "title": {
+                            "uuid": "service-fabrication-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Custom Fabrication"
+                          },
+                          "text": {
+                            "uuid": "service-fabrication-text",
+                            "componentType": "TextProps",
+                            "content": "From small components to large structural assemblies, our expert fabricators bring your designs to life with unparalleled quality and efficiency."
+                          }
+                        },
+                        {
+                          "componentType": "StandardFeatureProps",
+                          "uuid": "service-delivery",
+                          "variant": "standard",
+                          "layout": "iconTopLeft",
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-delivery",
+                            "name": "truck",
+                            "size": 32,
+                            "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                          },
+                          "title": {
+                            "uuid": "service-delivery-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Logistics & Delivery"
+                          },
+                          "text": {
+                            "uuid": "service-delivery-text",
+                            "componentType": "TextProps",
+                            "content": "We offer reliable and timely delivery services, ensuring your steel products arrive safely and efficiently at your job site, on schedule."
+                          }
+                        },
+                        {
+                          "componentType": "StandardFeatureProps",
+                          "uuid": "service-consultation",
+                          "variant": "standard",
+                          "layout": "iconTopLeft",
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-consultation",
+                            "name": "users",
+                            "size": 32,
+                            "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                          },
+                          "title": {
+                            "uuid": "service-consultation-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Expert Consultation"
+                          },
+                          "text": {
+                            "uuid": "service-consultation-text",
+                            "componentType": "TextProps",
+                            "content": "Our experienced team provides technical consultation and support, helping you select the right steel products and services for optimal project outcomes."
+                          }
+                        },
+                        {
+                          "componentType": "StandardFeatureProps",
+                          "uuid": "service-coating",
+                          "variant": "standard",
+                          "layout": "iconTopLeft",
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-coating",
+                            "name": "paint-roller",
+                            "size": 32,
+                            "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                          },
+                          "title": {
+                            "uuid": "service-coating-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Protective Coating"
+                          },
+                          "text": {
+                            "uuid": "service-coating-text",
+                            "componentType": "TextProps",
+                            "content": "Extend the life and enhance the performance of your steel with our various protective coating options, including galvanizing and epoxy finishes."
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A comprehensive catalog of steel products offered (e",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "title": "Projects/Portfolio Page",
+      "slug": "/projects",
+      "summary": "Showcase successful past projects with high-quality images and brief descriptions of the scope and type of steel used. This will demonstrate their capabilities and experience.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "projects-hero-section",
+          "uuid": "projects-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "projects-hero-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "projects-title",
+                  "level": 1,
+                  "text": "Our Portfolio of Excellence",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "projects-intro-text",
+                  "variant": "lead",
+                  "content": "Explore some of our successful past projects, showcasing our expertise in steel manufacturing and custom solutions.",
+                  "classes": "mt-4 max-w-3xl mx-auto"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "project-1-section",
+          "uuid": "project-1-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "project-1-text-flex",
+              "direction": "column",
+              "justify": "center",
+              "gap": "6",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "project-1-heading",
+                  "level": 2,
+                  "text": "Skyscraper Structural Framework",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "project-1-description-1",
+                  "content": "For this landmark skyscraper, Yellow Stone Steel provided the complete structural steel framework, ensuring the building's stability and iconic silhouette. We utilized high-strength structural steel beams and columns, precisely fabricated to meet the demanding architectural specifications."
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "project-1-description-2",
+                  "content": "Our team's meticulous planning and execution allowed for efficient on-site assembly, contributing to the project's timely completion. The scope included over 10,000 tons of ASTM A992 steel, designed to withstand extreme loads and environmental conditions."
+                }
+              ]
+            },
+            {
+              "componentType": "ImageProps",
+              "uuid": "project-1-image",
+              "src": "https://images.pexels.com/photos/33247902/pexels-photo-33247902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "alt": "Skyscraper under construction with steel framework",
+              "classes": "w-full rounded-lg shadow-lg",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "project-1-image-asset",
+                "keywords": "skyscraper, steel, construction",
+                "isProcessed": true,
+                "requestedWidth": 1470,
+                "requestedHeight": 980
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "project-2-section",
+          "uuid": "project-2-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "ImageProps",
+              "uuid": "project-2-image",
+              "src": "https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "alt": "Bridge construction with steel trusses",
+              "classes": "w-full rounded-lg shadow-lg",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "project-2-image-asset",
+                "keywords": "bridge, steel, infrastructure",
+                "isProcessed": true,
+                "requestedWidth": 1470,
+                "requestedHeight": 980
+              }
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "project-2-text-flex",
+              "direction": "column",
+              "justify": "center",
+              "gap": "6",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "project-2-heading",
+                  "level": 2,
+                  "text": "Industrial Bridge Fabrication",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "project-2-description-1",
+                  "content": "Yellow Stone Steel played a crucial role in fabricating and supplying the intricate steel trusses and decking for a major industrial bridge. The project demanded high-tensile steel, specifically ASTM A572 Grade 50, known for its excellent strength-to-weight ratio."
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "project-2-description-2",
+                  "content": "Our in-house fabrication capabilities allowed us to pre-assemble large sections, reducing on-site complexities and accelerating construction timelines. The bridge design required precise bending and welding of heavy steel plates, showcasing our advanced manufacturing expertise."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "project-3-section",
+          "uuid": "project-3-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "project-3-text-flex",
+              "direction": "column",
+              "justify": "center",
+              "gap": "6",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "project-3-heading",
+                  "level": 2,
+                  "text": "Automotive Stamping Dies",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "project-3-description-1",
+                  "content": "We engineered and produced high-precision steel components for automotive stamping dies, critical for forming vehicle body panels. This project required specialized tool steel alloys, such as D2 and H13, to ensure durability and resistance to wear under high-pressure stamping operations."
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "project-3-description-2",
+                  "content": "Our commitment to tight tolerances and superior surface finishes was paramount for this application. The complex geometries and stringent quality requirements highlighted our advanced machining and heat treatment capabilities, delivering components that perform flawlessly in high-volume production."
+                }
+              ]
+            },
+            {
+              "componentType": "ImageProps",
+              "uuid": "project-3-image",
+              "src": "https://images.pexels.com/photos/17430427/pexels-photo-17430427.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "alt": "Automotive manufacturing plant with robots",
+              "classes": "w-full rounded-lg shadow-lg",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "project-3-image-asset",
+                "keywords": "automotive, stamping, dies, steel",
+                "isProcessed": true,
+                "requestedWidth": 1470,
+                "requestedHeight": 980
+              }
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Showcase successful past projects with high-quality images and brief descriptions of the scope and t",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "title": "Contact Us Page",
+      "slug": "/contact-us",
+      "summary": "Provide multiple ways for potential clients to get in touch, including a contact form, phone number, email address, physical address (if applicable), and a map to their location.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "contact-main-section",
+          "uuid": "contact-main-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-form-flex",
+              "direction": "column",
+              "align": "start",
+              "gap": "6",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "contact-form-heading",
+                  "level": 2,
+                  "text": "Send Us a Message",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "FormProps",
+                  "uuid": "main-contact-form",
+                  "title": "Contact Form",
+                  "onSubmitAction": {
+                    "actionId": "submit_contact_form",
+                    "successMessage": "Thank you for your inquiry! We will get back to you shortly.",
+                    "errorMessage": "There was a problem submitting your inquiry. Please try again.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email"
+                  },
+                  "content": [],
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "actions": [
+                    {
+                      "uuid": "main-contact-form-action-submit",
+                      "componentType": "ButtonProps",
+                      "actionType": "submit",
+                      "text": "Submit Inquiry",
+                      "variant": "default"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-info-flex",
+              "direction": "column",
+              "align": "start",
+              "gap": "6",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "contact-info-heading",
+                  "level": 2,
+                  "text": "Get in Touch",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "contact-info-description",
+                  "content": "We're here to help! Reach out to us through any of the following channels.",
+                  "variant": "lead"
+                },
+                {
+                  "componentType": "ContactInfoBlockProps",
+                  "uuid": "contact-details-block",
+                  "title": "Contact Details",
+                  "phone": "+1 (123) 456-7890",
+                  "email": "info@yellowstonesteel.com",
+                  "address": "123 Steel Way, Industrial City, ST 12345, USA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "contact-map-section",
+          "uuid": "contact-map-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-map-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "classes": "h-full w-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "map-heading",
+                  "level": 2,
+                  "text": "Find Our Location",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "map-description",
+                  "content": "Visit us at our main facility. We look forward to meeting you.",
+                  "variant": "lead"
+                },
+                {
+                  "componentType": "ContactInfoBlockProps",
+                  "uuid": "map-embed-block",
+                  "mapEmbed": "https://www.openstreetmap.org/export/embed.html?bbox=-111.1,44.9,-110.9,45.1&layer=mapnik&marker=45,-111",
+                  "classes": "w-full h-96"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Provide multiple ways for potential clients to get in touch, including a contact form, phone number,",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+      "componentType": "SectionProps",
+      "sectionSlug": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+      "classes": "mx-auto max-w-screen-xl lg:py-6 lg:px-6  bg-gray-50 border-t border-gray-200",
+      "layout": "singleColumnWide",
+      "contentBleed": false,
+      "content": [
+        {
+          "uuid": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "6",
+          "content": [
+            {
+              "uuid": "8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6f",
+                  "componentType": "TextProps",
+                  "content": "Yellow Stone Steel",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6f7a",
+              "componentType": "TextProps",
+              "content": "Specializing in high-quality steel manufacturing and custom fabrication.",
+              "classes": "text-center text-gray-500"
+            },
+            {
+              "uuid": "d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6f7a8b",
+              "componentType": "FlexProps",
+              "gap": "6",
+              "classes": "flex-wrap justify-center",
+              "content": [
+                {
+                  "uuid": "e4f5a6b7-c8d9-0e1f-2a3b-4c5d6f7a8b9c",
+                  "componentType": "LinkProps",
+                  "text": "About Us",
+                  "href": "/about-us"
+                },
+                {
+                  "uuid": "f5a6b7c8-d9e0-1f2a-3b4c-5d6f7a8b9c0d",
+                  "componentType": "LinkProps",
+                  "text": "Products & Services",
+                  "href": "/products-services"
+                },
+                {
+                  "uuid": "a6b7c8d9-e0f1-2a3b-4c5d-6f7a8b9c0d1e",
+                  "componentType": "LinkProps",
+                  "text": "Projects",
+                  "href": "/projects"
+                },
+                {
+                  "uuid": "b7c8d9e0-f1a2-3b4c-5d6e-7f8a9b0c1d2f",
+                  "componentType": "LinkProps",
+                  "text": "Contact Us",
+                  "href": "/contact-us"
+                }
+              ]
+            },
+            {
+              "uuid": "c8d9e0f1-a2b3-4c5d-6e7f-8a9b0c1d2f3a",
+              "componentType": "TextProps",
+              "content": "© 2023 Yellow Stone Steel. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

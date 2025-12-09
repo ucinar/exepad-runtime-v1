@@ -1,0 +1,361 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Team Section Page",
+  "alias": "team-section-page",
+  "summary": "Team showcase layout with member profiles, photos, and biographical information. Features section header, team member grid with photos, names, roles, and descriptions. Perfect for about pages and company presentations.",
+  "shortSummary": "Team showcase layout with member profiles, photos, and biographical information",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the team section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f33-4a182745a306",
+          "uuid": "de258327-4654-4881-9f33-4a182745a306",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-cta-text-content",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-7xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-heading-cta",
+                  "level": 2,
+                  "text": "Our Team",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-text-cta",
+                  "variant": "lead",
+                  "content": "Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "c9d0e1f2-a3b4-5678-9012-grid-team",
+                  "columns": 2,
+                  "gap": "8",
+                  "classes": "pt-12 w-full text-left",
+                  "content": [
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-bonnie",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-bonnie-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Bonnie Green"
+                      },
+                      "position": {
+                        "uuid": "team-member-bonnie-position",
+                        "componentType": "TextProps",
+                        "content": "CEO & Web Developer"
+                      },
+                      "bio": {
+                        "uuid": "team-member-bonnie-bio",
+                        "componentType": "TextProps",
+                        "content": "Bonnie drives the technical strategy of the flowbite platform and brand."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-bonnie",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/team/member-1.png",
+                        "alt": "Bonnie Green",
+                        "asset": {
+                          "uuid": "asset-photo-bonnie",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "bonnie, green, team, member",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-bonnie-fb",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-bonnie-tw",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-bonnie-gh",
+                          "platform": "github",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-bonnie-dr",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-jese",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-jese-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Jese Leos"
+                      },
+                      "position": {
+                        "uuid": "team-member-jese-position",
+                        "componentType": "TextProps",
+                        "content": "CTO"
+                      },
+                      "bio": {
+                        "uuid": "team-member-jese-bio",
+                        "componentType": "TextProps",
+                        "content": "Jese drives the technical strategy of the flowbite platform and brand."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-jese",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/team/member-2.png",
+                        "alt": "Jese Leos",
+                        "asset": {
+                          "uuid": "asset-photo-jese",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "jese, leos, team, member",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-jese-fb",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-jese-tw",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-jese-gh",
+                          "platform": "github",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-jese-dr",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-michael",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-michael-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Michael Gough"
+                      },
+                      "position": {
+                        "uuid": "team-member-michael-position",
+                        "componentType": "TextProps",
+                        "content": "Senior Front-end Developer"
+                      },
+                      "bio": {
+                        "uuid": "team-member-michael-bio",
+                        "componentType": "TextProps",
+                        "content": "Michael drives the technical strategy of the flowbite platform and brand."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-michael",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/team/member-3.png",
+                        "alt": "Michael Gough",
+                        "asset": {
+                          "uuid": "asset-photo-michael",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "michael, gough, team, member",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-michael-fb",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-michael-tw",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-michael-gh",
+                          "platform": "github",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-michael-dr",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-lana",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-lana-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Lana Byrd"
+                      },
+                      "position": {
+                        "uuid": "team-member-lana-position",
+                        "componentType": "TextProps",
+                        "content": "Marketing & Sale"
+                      },
+                      "bio": {
+                        "uuid": "team-member-lana-bio",
+                        "componentType": "TextProps",
+                        "content": "Lana drives the technical strategy of the flowbite platform and brand."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-lana",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/team/member-4.png",
+                        "alt": "Lana Byrd",
+                        "asset": {
+                          "uuid": "asset-photo-lana",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "lana, byrd, team, member",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-lana-fb",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-lana-tw",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-lana-gh",
+                          "platform": "github",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-lana-dr",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the team section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

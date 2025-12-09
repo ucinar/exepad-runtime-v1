@@ -1,0 +1,442 @@
+{
+  "uuid": "a9b8c7d6-e5f4-a3b2-c1d0-e9f8a7b6c5d4",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Media Component Kitchen Sink",
+  "alias": "media-component-kitchen-sink",
+  "summary": "Media component library featuring images, videos, galleries, lightboxes, document viewers, and multimedia presentation elements. Showcases visual content integration patterns and media-rich layout options.",
+  "shortSummary": "Media component library featuring images, videos, galleries, lightboxes, document viewers, and multimedia presentation elements",
+  "lastUpdatedEpoch": 1701192800,
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {},
+  "header": [],
+  "sidebar": [],
+  "pages": [
+    {
+      "uuid": "p1a2g3e4-f5b6-c7d8-e9f0-a1b2c3d4e5f6",
+      "title": "Media Components Kitchen Sink",
+      "slug": "/",
+      "summary": "This page showcases the full range of media components defined in the schema.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "sec-mediagallery",
+          "uuid": "sec-mediagallery",
+          "speed": 0,
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "head-3",
+              "level": 2,
+              "text": "MediaGallery (Carousel Layout)"
+            },
+            {
+              "componentType": "MediaGalleryProps",
+              "uuid": "mgal-1",
+              "content": [
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-i1",
+                  "type": "image",
+                  "caption": "Image Item",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-4",
+                    "alt": "Abstract art",
+                    "src": "https://picsum.photos/id/10/600/600",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-4",
+                      "keywords": "art",
+                      "isProcessed": true,
+                      "requestedWidth": 600,
+                      "requestedHeight": 600
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-i2",
+                  "type": "video",
+                  "caption": "Video Item",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-poster-5",
+                    "alt": "Video poster",
+                    "src": "https://picsum.photos/id/23/600/600",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-poster-5",
+                      "keywords": "video, poster",
+                      "isProcessed": true,
+                      "requestedWidth": 600,
+                      "requestedHeight": 600
+                    }
+                  }
+                }
+              ],
+              "layout": "carousel",
+              "columns": 1,
+              "gap": "2",
+              "lightbox": true,
+              "showThumbnails": false
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "sec-gallery-variations",
+          "uuid": "sec-gallery-variations",
+          "speed": 0,
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "head-gallery-variations",
+              "level": 2,
+              "text": "More MediaGallery Variations"
+            },
+            {
+              "componentType": "HeadingProps",
+              "uuid": "head-gallery-grid",
+              "level": 3,
+              "text": "Grid Layout (No Lightbox)"
+            },
+            {
+              "componentType": "MediaGalleryProps",
+              "uuid": "mgal-grid",
+              "content": [
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-grid-i1",
+                  "type": "image",
+                  "caption": "Architecture",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-grid-1",
+                    "alt": "Modern building",
+                    "src": "https://picsum.photos/id/1074/600/400",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-grid-1",
+                      "keywords": "architecture",
+                      "isProcessed": true,
+                      "requestedWidth": 600,
+                      "requestedHeight": 400
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-grid-i2",
+                  "type": "image",
+                  "caption": "Nature",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-grid-2",
+                    "alt": "A green field",
+                    "src": "https://picsum.photos/id/1019/600/400",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-grid-2",
+                      "keywords": "nature, field",
+                      "isProcessed": true,
+                      "requestedWidth": 600,
+                      "requestedHeight": 400
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-grid-i3",
+                  "type": "image",
+                  "caption": "Technology",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-grid-3",
+                    "alt": "A circuit board",
+                    "src": "https://picsum.photos/id/1/600/400",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-grid-3",
+                      "keywords": "technology, circuit",
+                      "isProcessed": true,
+                      "requestedWidth": 600,
+                      "requestedHeight": 400
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-grid-i4",
+                  "type": "image",
+                  "caption": "Desk",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-grid-4",
+                    "alt": "A laptop on a desk",
+                    "src": "https://picsum.photos/id/2/600/400",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-grid-4",
+                      "keywords": "desk, laptop",
+                      "isProcessed": true,
+                      "requestedWidth": 600,
+                      "requestedHeight": 400
+                    }
+                  }
+                }
+              ],
+              "layout": "grid",
+              "columns": 2,
+              "gap": "2",
+              "lightbox": true,
+              "showThumbnails": false
+            },
+            {
+              "componentType": "HeadingProps",
+              "uuid": "head-gallery-masonry",
+              "level": 3,
+              "text": "Masonry Layout with Thumbnails"
+            },
+            {
+              "componentType": "MediaGalleryProps",
+              "uuid": "mgal-masonry",
+              "content": [
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-masonry-i1",
+                  "type": "image",
+                  "caption": "Portrait",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-1",
+                    "alt": "A portrait",
+                    "src": "https://picsum.photos/id/1027/400/600",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-1",
+                      "keywords": "portrait",
+                      "isProcessed": true,
+                      "requestedWidth": 400,
+                      "requestedHeight": 600
+                    }
+                  },
+                  "thumbnail": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-thumb-1",
+                    "alt": "A portrait thumbnail",
+                    "src": "https://picsum.photos/id/1027/200/300",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-thumb-1",
+                      "keywords": "portrait, thumbnail",
+                      "isProcessed": true,
+                      "requestedWidth": 200,
+                      "requestedHeight": 300
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-masonry-i2",
+                  "type": "image",
+                  "caption": "Landscape",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-2",
+                    "alt": "A landscape",
+                    "src": "https://picsum.photos/id/1031/400/300",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-2",
+                      "keywords": "landscape",
+                      "isProcessed": true,
+                      "requestedWidth": 400,
+                      "requestedHeight": 300
+                    }
+                  },
+                  "thumbnail": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-thumb-2",
+                    "alt": "A landscape thumbnail",
+                    "src": "https://picsum.photos/id/1031/200/150",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-thumb-2",
+                      "keywords": "landscape, thumbnail",
+                      "isProcessed": true,
+                      "requestedWidth": 200,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-masonry-i3",
+                  "type": "image",
+                  "caption": "Coffee",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-3",
+                    "alt": "A cup of coffee",
+                    "src": "https://picsum.photos/id/30/400/500",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-3",
+                      "keywords": "coffee",
+                      "isProcessed": true,
+                      "requestedWidth": 400,
+                      "requestedHeight": 500
+                    }
+                  },
+                  "thumbnail": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-thumb-3",
+                    "alt": "A coffee thumbnail",
+                    "src": "https://picsum.photos/id/30/200/250",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-thumb-3",
+                      "keywords": "coffee, thumbnail",
+                      "isProcessed": true,
+                      "requestedWidth": 200,
+                      "requestedHeight": 250
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "mgal-masonry-i4",
+                  "type": "image",
+                  "caption": "Workspace",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-4",
+                    "alt": "A clean workspace",
+                    "src": "https://picsum.photos/id/26/400/400",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-4",
+                      "keywords": "workspace",
+                      "isProcessed": true,
+                      "requestedWidth": 400,
+                      "requestedHeight": 400
+                    }
+                  },
+                  "thumbnail": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-masonry-thumb-4",
+                    "alt": "A workspace thumbnail",
+                    "src": "https://picsum.photos/id/26/200/200",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-masonry-thumb-4",
+                      "keywords": "workspace, thumbnail",
+                      "isProcessed": true,
+                      "requestedWidth": 200,
+                      "requestedHeight": 200
+                    }
+                  }
+                }
+              ],
+              "layout": "masonry",
+              "columns": 2,
+              "gap": "4",
+              "lightbox": true,
+              "showThumbnails": true
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "sec-viewers",
+          "uuid": "sec-viewers",
+          "speed": 0,
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "head-4",
+              "level": 2,
+              "text": "Viewers"
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "flex-viewers",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "PanoramaViewerProps",
+                  "uuid": "pano-1",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "img-pano",
+                    "alt": "360-degree view of a city street.",
+                    "src": "https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "imga-pano",
+                      "keywords": "panorama, 360, beach",
+                      "isProcessed": true,
+                      "requestedWidth": 2048,
+                      "requestedHeight": 1024
+                    }
+                  },
+                  "autoRotate": true,
+                  "rotationSpeed": 0.5,
+                  "isZoomable": true,
+                  "isFullscreenEnabled": true
+                },
+                {
+                  "componentType": "PDFViewerProps",
+                  "uuid": "pdf-1",
+                  "src": "https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf",
+                  "initialPage": 1,
+                  "fitMode": "width",
+                  "zoom": 1,
+                  "showControls": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "sec-embed",
+          "uuid": "sec-embed",
+          "speed": 0,
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "head-5",
+              "level": 2,
+              "text": "Document Embed"
+            },
+            {
+              "componentType": "DocumentEmbedProps",
+              "uuid": "doc-embed-1",
+              "src": "https://calibre-ebook.com/downloads/demos/demo.docx",
+              "type": "docx",
+              "width": "100%",
+              "height": "500px",
+              "title": "Embedded DOCX Document"
+            }
+          ]
+        }
+      ],
+      "shortSummary": "This page showcases the full range of media components defined in the schema",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

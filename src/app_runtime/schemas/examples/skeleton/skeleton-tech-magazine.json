@@ -1,0 +1,434 @@
+{
+  "uuid": "skeleton-006-tech-magazine",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Tech Magazine Skeleton",
+  "alias": "tech-magazine-skeleton",
+  "summary": "Header: Sticky centered navbar with serif magazine logo (TechInsider, elegant tracking), underline menu effects (250ms), category dropdown (News, Reviews, Features, Opinion), regular links (Videos, Podcasts), outline Subscribe button. Footer: Three-section editorial layout - top newsletter with heading/description/email input/subscribe button bordered bottom (pb-16), middle 3-column grid (Popular Articles with placeholder links, Topics with category links, About/Connect with contact info and socials), enhanced spacing (pt-16, my-12), bottom bar with copyright and media-focused social links (Twitter, Facebook, YouTube, RSS), magazine-style typography.",
+  "shortSummary": "Tech magazine skeleton with centered navbar and content-rich footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#09090b",
+      "primary": "#334155",
+      "primary-foreground": "#ffffff",
+      "secondary": "#fafaf9",
+      "secondary-foreground": "#09090b",
+      "muted": "#f5f5f4",
+      "muted-foreground": "#78716c",
+      "accent": "#fed7aa",
+      "accent-foreground": "#7c2d12",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e7e5e4",
+      "input": "#e7e5e4",
+      "ring": "#ea580c"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#fafaf9",
+      "primary": "#fb923c",
+      "primary-foreground": "#431407",
+      "secondary": "#1c1917",
+      "secondary-foreground": "#fafaf9",
+      "muted": "#292524",
+      "muted-foreground": "#a8a29e",
+      "accent": "#7c2d12",
+      "accent-foreground": "#fed7aa",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fafaf9",
+      "border": "#44403c",
+      "input": "#292524",
+      "ring": "#fb923c"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "narrow",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-magazine-navbar-006",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "underline",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-magazine-006",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "TechPulse",
+        "classes": "text-2xl font-bold"
+      },
+      "content": [
+        {
+          "uuid": "menu-dropdown-categories-006",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Categories",
+          "dropdown": {
+            "uuid": "dropdown-categories-006",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-ai-006",
+                "componentType": "DropdownLink",
+                "title": "Artificial Intelligence",
+                "href": "/category/ai"
+              },
+              {
+                "uuid": "dropdown-web-006",
+                "componentType": "DropdownLink",
+                "title": "Web Development",
+                "href": "/category/web-dev"
+              },
+              {
+                "uuid": "dropdown-mobile-006",
+                "componentType": "DropdownLink",
+                "title": "Mobile",
+                "href": "/category/mobile"
+              },
+              {
+                "uuid": "dropdown-devops-006",
+                "componentType": "DropdownLink",
+                "title": "DevOps",
+                "href": "/category/devops"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-item-tutorials-006",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Tutorials",
+          "href": {
+            "uuid": "link-tutorials-006",
+            "componentType": "LinkProps",
+            "href": "/tutorials",
+            "text": "Tutorials"
+          }
+        },
+        {
+          "uuid": "menu-item-news-006",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "News",
+          "href": {
+            "uuid": "link-news-006",
+            "componentType": "LinkProps",
+            "href": "/news",
+            "text": "News"
+          }
+        },
+        {
+          "uuid": "menu-item-about-006",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "link-about-006",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "uuid": "menu-button-subscribe-006",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-subscribe-006",
+            "componentType": "ButtonProps",
+            "text": "Subscribe",
+            "variant": "default",
+            "link": {
+              "uuid": "link-subscribe-006",
+              "componentType": "LinkProps",
+              "href": "/subscribe",
+              "text": "Subscribe"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-magazine-006",
+      "componentType": "SectionProps",
+      "classes": "py-16 px-8 bg-stone-50 dark:bg-stone-950 border-t-4 border-primary",
+      "layout": "singleColumnCentered",
+      "spacing": "lg",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-newsletter-section-006",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "6",
+          "classes": "pb-16 text-center max-w-2xl mx-auto",
+          "content": [
+            {
+              "uuid": "footer-newsletter-icon-006",
+              "componentType": "IconProps",
+              "name": "mail",
+              "size": 48,
+              "classes": "text-primary"
+            },
+            {
+              "uuid": "footer-newsletter-heading-006",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Stay in the Loop",
+              "classes": "text-3xl font-bold"
+            },
+            {
+              "uuid": "footer-newsletter-text-006",
+              "componentType": "TextProps",
+              "content": "Get the latest tech news, tutorials, and insights delivered to your inbox every week.",
+              "classes": "text-muted-foreground text-lg"
+            },
+            {
+              "uuid": "footer-newsletter-button-006",
+              "componentType": "ButtonProps",
+              "text": "Subscribe to Newsletter",
+              "variant": "default",
+              "size": "lg",
+              "classes": "mt-4"
+            }
+          ]
+        },
+        {
+          "uuid": "footer-content-section-006",
+          "componentType": "GridProps",
+          "columns": 4,
+          "gap": "8",
+          "classes": "w-full pb-12",
+          "content": [
+            {
+              "uuid": "footer-col-popular-006",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-popular-006",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Popular",
+                  "classes": "text-sm font-bold uppercase tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-getting-started-006",
+                  "componentType": "LinkProps",
+                  "text": "Getting Started with React",
+                  "href": "/article/react-intro",
+                  "classes": "text-sm text-muted-foreground hover:text-primary line-clamp-2"
+                },
+                {
+                  "uuid": "footer-link-python-guide-006",
+                  "componentType": "LinkProps",
+                  "text": "Complete Python Guide",
+                  "href": "/article/python-guide",
+                  "classes": "text-sm text-muted-foreground hover:text-primary line-clamp-2"
+                },
+                {
+                  "uuid": "footer-link-docker-basics-006",
+                  "componentType": "LinkProps",
+                  "text": "Docker Basics Explained",
+                  "href": "/article/docker-basics",
+                  "classes": "text-sm text-muted-foreground hover:text-primary line-clamp-2"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-categories-006",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-categories-006",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Categories",
+                  "classes": "text-sm font-bold uppercase tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-ai-006",
+                  "componentType": "LinkProps",
+                  "text": "Artificial Intelligence",
+                  "href": "/category/ai",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-webdev-006",
+                  "componentType": "LinkProps",
+                  "text": "Web Development",
+                  "href": "/category/web-dev",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-mobile-006",
+                  "componentType": "LinkProps",
+                  "text": "Mobile",
+                  "href": "/category/mobile",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-devops-006",
+                  "componentType": "LinkProps",
+                  "text": "DevOps",
+                  "href": "/category/devops",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-company-006",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-company-006",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Company",
+                  "classes": "text-sm font-bold uppercase tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-about-006",
+                  "componentType": "LinkProps",
+                  "text": "About Us",
+                  "href": "/about",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-write-006",
+                  "componentType": "LinkProps",
+                  "text": "Write for Us",
+                  "href": "/write",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-advertise-006",
+                  "componentType": "LinkProps",
+                  "text": "Advertise",
+                  "href": "/advertise",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-contact-006",
+                  "componentType": "LinkProps",
+                  "text": "Contact",
+                  "href": "/contact",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-legal-006",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-legal-006",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Legal",
+                  "classes": "text-sm font-bold uppercase tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-privacy-006",
+                  "componentType": "LinkProps",
+                  "text": "Privacy Policy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-terms-006",
+                  "componentType": "LinkProps",
+                  "text": "Terms of Use",
+                  "href": "/terms",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-cookies-006",
+                  "componentType": "LinkProps",
+                  "text": "Cookie Policy",
+                  "href": "/cookies",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-006",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-border",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-006",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-006",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 TechPulse. Empowering developers worldwide.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "uuid": "footer-social-006",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "social-twitter-006",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-github-006",
+                  "componentType": "SocialLinkProps",
+                  "platform": "github",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-youtube-006",
+                  "componentType": "SocialLinkProps",
+                  "platform": "youtube",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-rss-006",
+                  "componentType": "SocialLinkProps",
+                  "platform": "rss",
+                  "url": "/feed.xml"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

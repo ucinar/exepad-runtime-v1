@@ -1,0 +1,513 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Team Section Page",
+  "alias": "team-section-page",
+  "summary": "Compact team display with avatar-focused design and essential member information. Features clean avatar grid with names and roles in minimalist presentation format.",
+  "shortSummary": "Compact team display with avatar-focused design and essential member information",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the team section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f33-4a182745a306",
+          "uuid": "de258327-4654-4881-9f33-4a182745a306",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-cta-text-content",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-7xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-heading-cta",
+                  "level": 2,
+                  "text": "Our Team",
+                  "classes": "text-4xl font-extrabold tracking-tight text-gray-900"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-text-cta",
+                  "variant": "lead",
+                  "content": "Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "c9d0e1f2-a3b4-5678-9012-grid-team",
+                  "columns": 4,
+                  "gap": "8",
+                  "classes": "pt-12 w-full",
+                  "content": [
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-bonnie",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-bonnie-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Bonnie Green"
+                      },
+                      "position": {
+                        "uuid": "team-bonnie-position",
+                        "componentType": "TextProps",
+                        "content": "CEO/Co-founder"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-bonnie",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
+                        "alt": "Bonnie Green",
+                        "asset": {
+                          "uuid": "asset-photo-bonnie-3",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "bonnie, green, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-b-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-b-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-b-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-helene",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-helene-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Helene Engels"
+                      },
+                      "position": {
+                        "uuid": "team-helene-position",
+                        "componentType": "TextProps",
+                        "content": "CTO/Co-founder"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-helene",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png",
+                        "alt": "Helene Engels",
+                        "asset": {
+                          "uuid": "asset-photo-helene",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "helene, engels, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-h-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-h-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-h-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-jese",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-jese-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Jese Leos"
+                      },
+                      "position": {
+                        "uuid": "team-jese-position",
+                        "componentType": "TextProps",
+                        "content": "SEO & Marketing"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-jese",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png",
+                        "alt": "Jese Leos",
+                        "asset": {
+                          "uuid": "asset-photo-jese-3",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "jese, leos, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-j-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-j-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-j-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-joseph",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-joseph-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Joseph McFall"
+                      },
+                      "position": {
+                        "uuid": "team-joseph-position",
+                        "componentType": "TextProps",
+                        "content": "Sales"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-joseph",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png",
+                        "alt": "Joseph McFall",
+                        "asset": {
+                          "uuid": "asset-photo-joseph",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "joseph, mcfall, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-jo-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-jo-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-jo-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-lana",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-lana-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Lana Byrd"
+                      },
+                      "position": {
+                        "uuid": "team-lana-position",
+                        "componentType": "TextProps",
+                        "content": "Web Designer"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-lana",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/lana-byrd.png",
+                        "alt": "Lana Byrd",
+                        "asset": {
+                          "uuid": "asset-photo-lana-3",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "lana, byrd, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-l-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-l-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-l-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-leslie",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-leslie-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Leslie Livingston"
+                      },
+                      "position": {
+                        "uuid": "team-leslie-position",
+                        "componentType": "TextProps",
+                        "content": "Graphic Designer"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-leslie",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/leslie-livingston.png",
+                        "alt": "Leslie Livingston",
+                        "asset": {
+                          "uuid": "asset-photo-leslie",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "leslie, livingston, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-le-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-le-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-le-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-michael",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-michael-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Michael Gough"
+                      },
+                      "position": {
+                        "uuid": "team-michael-position",
+                        "componentType": "TextProps",
+                        "content": "React Developer"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-michael",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png",
+                        "alt": "Michael Gough",
+                        "asset": {
+                          "uuid": "asset-photo-michael-3",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "michael, gough, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-m-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-m-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-m-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-neil",
+                      "style": "avatarVertical",
+                      "name": {
+                        "uuid": "team-neil-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Neil Sims"
+                      },
+                      "position": {
+                        "uuid": "team-neil-position",
+                        "componentType": "TextProps",
+                        "content": "Vue.js Developer"
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-neil",
+                        "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png",
+                        "alt": "Neil Sims",
+                        "asset": {
+                          "uuid": "asset-photo-neil",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "neil, sims, team, avatar",
+                          "isProcessed": true,
+                          "requestedWidth": 150,
+                          "requestedHeight": 150
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-n-1",
+                          "platform": "facebook",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-n-2",
+                          "platform": "twitter",
+                          "url": "#"
+                        },
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "sl-n-3",
+                          "platform": "dribbble",
+                          "url": "#"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the team section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

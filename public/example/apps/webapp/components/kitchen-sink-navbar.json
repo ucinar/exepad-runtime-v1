@@ -1,0 +1,459 @@
+{
+  "uuid": "a9b8c7d6-e5f4-a3b2-c1d0-e9f8a7b6c5d4",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Navbar Component Kitchen Sink",
+  "summary": "Complete navigation component showcase featuring different navbar styles, menu structures, responsive behaviors, and branding options. Demonstrates horizontal navigation patterns for website headers and top-level navigation.",
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {},
+  "header": [
+    {
+      "componentType": "NavbarProps",
+      "uuid": "nav-default",
+      "variant": "default",
+      "layout": "wide",
+      "logo": {
+        "componentType": "NavbarLogoProps",
+        "uuid": "logo-default",
+        "type": "text",
+        "text": "DefaultNav"
+      },
+      "content": [
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-1",
+          "label": "Home",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-1",
+            "href": "/",
+            "text": "Home"
+          },
+          "active": true
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-2",
+          "label": "About",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-2",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "type": "button",
+          "componentType": "MenuButtonItemProps",
+          "uuid": "nav-btn-1",
+          "button": {
+            "componentType": "ButtonProps",
+            "uuid": "btn-1",
+            "text": "Sign Up",
+            "variant": "secondary",
+            "size": "sm"
+          }
+        }
+      ]
+    }
+  ],
+  "sidebar": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "p1a2g3e4-f5b6-c7d8-e9f0-a1b2c3d4e5f6",
+      "title": "Navbar Component Demos",
+      "slug": "/",
+      "summary": "This page showcases the full range of Navbar components and their configurations.",
+      "content": [
+        {
+          "componentType": "SpacerProps",
+          "uuid": "spacer-for-1",
+          "size": "24"
+        },
+        {
+          "componentType": "NavbarProps",
+          "uuid": "nav-default",
+          "variant": "default",
+          "layout": "wide",
+          "logo": {
+            "componentType": "NavbarLogoProps",
+            "uuid": "logo-default",
+            "type": "text",
+            "text": "DefaultNav"
+          },
+          "content": [
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-1",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-1",
+                "href": "/",
+                "text": "Home"
+              },
+              "active": true
+            },
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-2",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-2",
+                "href": "/about",
+                "text": "About"
+              }
+            },
+            {
+              "type": "button",
+              "componentType": "MenuButtonItemProps",
+              "uuid": "nav-btn-1",
+              "button": {
+                "componentType": "ButtonProps",
+                "uuid": "btn-1",
+                "text": "Sign Up",
+                "variant": "secondary",
+                "size": "sm"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SpacerProps",
+          "uuid": "spacer-for-2",
+          "size": "24"
+        },
+        {
+          "componentType": "NavbarProps",
+          "uuid": "nav-split",
+          "variant": "split",
+          "logo": {
+            "componentType": "NavbarLogoProps",
+            "uuid": "logo-split",
+            "type": "image",
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "img-logo-split",
+              "src": "https://placehold.co/120x40/000000/FFFFFF?text=SplitLogo",
+              "alt": "SplitNav Logo",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "asset-logo-split",
+                "isProcessed": true,
+                "keywords": "logo",
+                "requestedWidth": 120,
+                "requestedHeight": 40
+              }
+            }
+          },
+          "content": [
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-3",
+              "label": "Features",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-3",
+                "href": "/features",
+                "text": "Features"
+              }
+            },
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-4",
+              "label": "Pricing",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-4",
+                "href": "/pricing",
+                "text": "Pricing"
+              }
+            },
+            {
+              "type": "button",
+              "componentType": "MenuButtonItemProps",
+              "uuid": "nav-btn-2",
+              "button": {
+                "componentType": "ButtonProps",
+                "uuid": "btn-2",
+                "text": "Get Started",
+                "variant": "default"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SpacerProps",
+          "uuid": "spacer-for-3",
+          "size": "24"
+        },
+        {
+          "componentType": "NavbarProps",
+          "uuid": "nav-center-logo",
+          "variant": "centerLogo",
+          "logo": {
+            "componentType": "NavbarLogoProps",
+            "uuid": "logo-center",
+            "type": "text",
+            "text": "CenterNav"
+          },
+          "content": [
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-5",
+              "label": "Products",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-5",
+                "href": "/products",
+                "text": "Products"
+              }
+            },
+            {
+              "type": "dropdown",
+              "componentType": "MenuDropdownItemProps",
+              "uuid": "nav-dropdown-1",
+              "label": "Resources",
+              "dropdown": {
+                "componentType": "DropdownProps",
+                "uuid": "dropdown-1",
+                "content": [
+                  {
+                    "componentType": "DropdownLink",
+                    "uuid": "d-link-1",
+                    "title": "Blog",
+                    "href": "/blog"
+                  },
+                  {
+                    "componentType": "DropdownLink",
+                    "uuid": "d-link-2",
+                    "title": "Documentation",
+                    "href": "/docs"
+                  },
+                  {
+                    "componentType": "DropdownLink",
+                    "uuid": "d-link-3",
+                    "title": "Case Studies",
+                    "href": "/case-studies"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-6",
+              "label": "Company",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-6",
+                "href": "/company",
+                "text": "Company"
+              }
+            },
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-7",
+              "label": "Contact",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-7",
+                "href": "/contact",
+                "text": "Contact"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SpacerProps",
+          "uuid": "spacer-for-4",
+          "size": "24"
+        },
+        {
+          "componentType": "NavbarProps",
+          "uuid": "nav-mega-menu",
+          "variant": "default",
+          "logo": {
+            "componentType": "NavbarLogoProps",
+            "uuid": "logo-mega",
+            "type": "text",
+            "text": "MegaNav"
+          },
+          "content": [
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-8",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-8",
+                "href": "/",
+                "text": "Home"
+              }
+            },
+            {
+              "type": "mega",
+              "componentType": "MenuMegaItemProps",
+              "uuid": "nav-mega-1",
+              "label": "Solutions",
+              "megaMenu": {
+                "componentType": "MegaMenuProps",
+                "uuid": "mega-menu-1",
+                "columns": 3,
+                "content": [
+                  {
+                    "componentType": "MegaMenuLink",
+                    "uuid": "mega-link-1",
+                    "title": "For Startups",
+                    "href": "/solutions/startups",
+                    "description": "Launch your business with our scalable tools."
+                  },
+                  {
+                    "componentType": "MegaMenuLink",
+                    "uuid": "mega-link-2",
+                    "title": "For Enterprise",
+                    "href": "/solutions/enterprise",
+                    "description": "Robust solutions for large-scale operations."
+                  },
+                  {
+                    "componentType": "MegaMenuLink",
+                    "uuid": "mega-link-3",
+                    "title": "For Developers",
+                    "href": "/solutions/developers",
+                    "description": "Integrate our powerful APIs into your workflow."
+                  },
+                  {
+                    "componentType": "MegaMenuLink",
+                    "uuid": "mega-link-4",
+                    "title": "Analytics",
+                    "href": "/features/analytics",
+                    "description": "Gain deep insights into your data."
+                  },
+                  {
+                    "componentType": "MegaMenuLink",
+                    "uuid": "mega-link-5",
+                    "title": "Automation",
+                    "href": "/features/automation",
+                    "description": "Automate your repetitive tasks."
+                  },
+                  {
+                    "componentType": "MegaMenuLink",
+                    "uuid": "mega-link-6",
+                    "title": "Collaboration",
+                    "href": "/features/collaboration",
+                    "description": "Work together with your team in real-time."
+                  }
+                ],
+                "featuredItem": {
+                  "componentType": "MegaMenuFeaturedItem",
+                  "uuid": "mega-featured-1",
+                  "title": "New: AI Assistant",
+                  "href": "/features/ai",
+                  "description": "Supercharge your productivity with our new AI-powered assistant."
+                }
+              }
+            },
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-9",
+              "label": "Pricing",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-9",
+                "href": "/pricing",
+                "text": "Pricing"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SpacerProps",
+          "uuid": "spacer-for-5",
+          "size": "24"
+        },
+        {
+          "componentType": "NavbarProps",
+          "uuid": "nav-custom-content",
+          "variant": "default",
+          "sticky": true,
+          "logo": {
+            "componentType": "NavbarLogoProps",
+            "uuid": "logo-custom",
+            "type": "text",
+            "text": "StickyNav"
+          },
+          "content": [
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-10",
+              "label": "Dashboard",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-10",
+                "href": "/dashboard",
+                "text": "Dashboard"
+              }
+            },
+            {
+              "type": "link",
+              "componentType": "MenuLinkItemProps",
+              "uuid": "nav-link-11",
+              "label": "Reports",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "link-11",
+                "href": "/reports",
+                "text": "Reports"
+              }
+            },
+            {
+              "type": "custom",
+              "componentType": "MenuCustomContentItemProps",
+              "uuid": "nav-custom-1",
+              "content": {
+                "componentType": "TextProps",
+                "uuid": "custom-text-1",
+                "content": "Welcome, User!",
+                "variant": "small",
+                "classes": "text-muted-foreground"
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SpacerProps",
+          "uuid": "spacer-for-6",
+          "size": "24"
+        }
+      ],
+      "shortSummary": "This page showcases the full range of Navbar components and their configurations.",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "alias": "navbar-component-kitchen-sink",
+  "shortSummary": "Complete navigation component showcase featuring different navbar styles, menu structures, responsive behaviors, and branding options.",
+  "lastUpdatedEpoch": 1701192800
+}

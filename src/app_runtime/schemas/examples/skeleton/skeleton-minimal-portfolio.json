@@ -1,0 +1,163 @@
+{
+  "uuid": "skeleton-002-minimal-portfolio",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Minimal Portfolio Skeleton",
+  "alias": "minimal-portfolio-skeleton",
+  "summary": "Header: Non-sticky default navbar with minimal text logo (JS, light font with wide tracking), centered navigation links (Work, About, Contact), scale hover animations (200ms), monochromatic design. Footer: Single-row minimal layout with left-aligned copyright text, right-aligned social icons (Dribbble, Behance, Instagram), top border only, light weight typography, maximum simplicity. Boxed layout (1200px).",
+  "shortSummary": "Minimal portfolio skeleton with simple navbar and minimal footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#fafafa",
+      "foreground": "#171717",
+      "primary": "#171717",
+      "primary-foreground": "#fafafa",
+      "secondary": "#f5f5f5",
+      "secondary-foreground": "#171717",
+      "muted": "#f5f5f5",
+      "muted-foreground": "#737373",
+      "accent": "#f5f5f5",
+      "accent-foreground": "#171717",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fafafa",
+      "border": "#e5e5e5",
+      "input": "#e5e5e5",
+      "ring": "#171717"
+    },
+    "dark": {
+      "background": "#0a0a0a",
+      "foreground": "#fafafa",
+      "primary": "#fafafa",
+      "primary-foreground": "#0a0a0a",
+      "secondary": "#1a1a1a",
+      "secondary-foreground": "#fafafa",
+      "muted": "#1a1a1a",
+      "muted-foreground": "#a3a3a3",
+      "accent": "#1a1a1a",
+      "accent-foreground": "#fafafa",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fafafa",
+      "border": "#262626",
+      "input": "#262626",
+      "ring": "#fafafa"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-portfolio-navbar-002",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": false,
+      "logo": {
+        "uuid": "logo-portfolio-002",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "JS",
+        "classes": "text-xl font-light tracking-widest"
+      },
+      "content": [
+        {
+          "uuid": "menu-item-work-002",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Work",
+          "href": {
+            "uuid": "link-work-002",
+            "componentType": "LinkProps",
+            "href": "/work",
+            "text": "Work"
+          }
+        },
+        {
+          "uuid": "menu-item-about-002",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "link-about-002",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "uuid": "menu-item-contact-002",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Contact",
+          "href": {
+            "uuid": "link-contact-002",
+            "componentType": "LinkProps",
+            "href": "/contact",
+            "text": "Contact"
+          }
+        }
+      ],
+      "menuAnimationDuration": 200
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-portfolio-002",
+      "componentType": "SectionProps",
+      "classes": "py-8 px-4 border-t border-border",
+      "layout": "singleColumnCentered",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "footer-content-002",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full",
+          "content": [
+            {
+              "uuid": "footer-copyright-002",
+              "componentType": "TextProps",
+              "content": "© 2024 Jane Smith",
+              "classes": "text-sm text-muted-foreground font-light"
+            },
+            {
+              "uuid": "footer-social-002",
+              "componentType": "FlexProps",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "social-dribbble-002",
+                  "componentType": "SocialLinkProps",
+                  "platform": "dribbble",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-behance-002",
+                  "componentType": "SocialLinkProps",
+                  "platform": "behance",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-instagram-002",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

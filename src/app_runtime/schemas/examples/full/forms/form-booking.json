@@ -1,0 +1,1048 @@
+{
+  "uuid": "app-booking-form-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Hotel Booking & Reservation System",
+  "alias": "hotel-booking-and-reservation-system",
+  "summary": "A complete hotel booking and reservation form with date selection, room preferences, guest information, and special requests. Perfect for hotels, vacation rentals, event venues, and appointment scheduling.",
+  "shortSummary": "A complete hotel booking and reservation form with date selection, room preferences, guest information, and special requests",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b bg-background/95 backdrop-blur-sm sticky top-0 z-50",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "GrandStay Hotels",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "GrandStay Hotels"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Home"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Rooms",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/rooms",
+                "text": "Rooms"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Book Now",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/booking",
+                "text": "Book Now"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Contact",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/contact",
+                "text": "Contact"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-grid",
+          "componentType": "GridProps",
+          "columns": 3,
+          "gap": "8",
+          "classes": "max-w-6xl mx-auto",
+          "content": [
+            {
+              "uuid": "footer-col-1",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "footer-heading-1",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "GrandStay Hotels"
+                },
+                {
+                  "uuid": "footer-text-1",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "Luxury accommodations with exceptional service.",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-2",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "footer-heading-2",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Contact"
+                },
+                {
+                  "uuid": "footer-phone",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "Phone: +1 (555) 123-4567",
+                  "classes": "text-muted-foreground"
+                },
+                {
+                  "uuid": "footer-email",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "Email: reservations@grandstay.com",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-3",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "footer-heading-3",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Hours"
+                },
+                {
+                  "uuid": "footer-hours",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "24/7 Reception",
+                  "classes": "text-muted-foreground"
+                },
+                {
+                  "uuid": "footer-checkin",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "Check-in: 3:00 PM | Check-out: 11:00 AM",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-copyright",
+          "componentType": "CenterProps",
+          "classes": "mt-6 pt-6 border-t",
+          "content": [
+            {
+              "uuid": "footer-copyright-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 GrandStay Hotels. All rights reserved.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-booking",
+      "title": "Book Your Stay",
+      "slug": "/",
+      "summary": "Reserve your perfect room at GrandStay Hotels.",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-blue-50 to-background dark:from-blue-950/20",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "calendar-check",
+                      "size": 48,
+                      "classes": "text-primary mx-auto"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Book Your Perfect Stay"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Experience luxury and comfort at GrandStay Hotels. Reserve your room today and enjoy world-class amenities, exceptional service, and unforgettable moments.",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "hero-features",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "6",
+                      "justify": "center",
+                      "wrap": "wrap",
+                      "classes": "mt-4",
+                      "content": [
+                        {
+                          "uuid": "feature-1",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "feature-1-icon",
+                              "componentType": "IconProps",
+                              "name": "circle-check",
+                              "size": 20,
+                              "classes": "text-green-600"
+                            },
+                            {
+                              "uuid": "feature-1-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Free Cancellation"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "feature-2",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "feature-2-icon",
+                              "componentType": "IconProps",
+                              "name": "circle-check",
+                              "size": 20,
+                              "classes": "text-green-600"
+                            },
+                            {
+                              "uuid": "feature-2-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Best Price Guarantee"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "feature-3",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "feature-3-icon",
+                              "componentType": "IconProps",
+                              "name": "circle-check",
+                              "size": 20,
+                              "classes": "text-green-600"
+                            },
+                            {
+                              "uuid": "feature-3-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Instant Confirmation"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "form-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "w-full max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "booking-form",
+                      "componentType": "FormProps",
+                      "title": "Reservation Details",
+                      "description": "Complete the form below to reserve your room. All fields marked with * are required.",
+                      "layout": "singleColumn",
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Reservation confirmed! A confirmation email has been sent to your inbox.",
+                        "errorMessage": "Unable to complete reservation. Please try again or call us at 1-800-HOTEL.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email",
+                        "onSuccessAction": {
+                          "type": "redirect",
+                          "payload": {
+                            "url": "/booking-confirmation"
+                          }
+                        }
+                      },
+                      "content": [
+                        {
+                          "uuid": "field-checkin-date",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "checkinDate",
+                          "label": "Check-in Date",
+                          "pickerType": "date",
+                          "required": true,
+                          "min": "2025-10-03",
+                          "helperText": "Check-in time is 3:00 PM"
+                        },
+                        {
+                          "uuid": "field-checkout-date",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "checkoutDate",
+                          "label": "Check-out Date",
+                          "pickerType": "date",
+                          "required": true,
+                          "min": "2025-10-04",
+                          "helperText": "Check-out time is 11:00 AM"
+                        },
+                        {
+                          "uuid": "field-room-type",
+                          "componentType": "SelectFieldProps",
+                          "name": "roomType",
+                          "label": "Room Type",
+                          "placeholder": "Select your preferred room",
+                          "required": true,
+                          "helperText": "Different room types have different amenities and pricing",
+                          "options": [
+                            {
+                              "label": "Standard Room - $129/night",
+                              "value": "standard"
+                            },
+                            {
+                              "label": "Deluxe Room - $179/night",
+                              "value": "deluxe"
+                            },
+                            {
+                              "label": "Executive Suite - $249/night",
+                              "value": "executive"
+                            },
+                            {
+                              "label": "Presidential Suite - $399/night",
+                              "value": "presidential"
+                            },
+                            {
+                              "label": "Family Suite - $299/night",
+                              "value": "family"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-bed-preference",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "bedPreference",
+                          "label": "Bed Preference",
+                          "required": true,
+                          "orientation": "vertical",
+                          "helperText": "Subject to availability",
+                          "options": [
+                            {
+                              "label": "King Bed",
+                              "value": "king"
+                            },
+                            {
+                              "label": "Two Queen Beds",
+                              "value": "two-queen"
+                            },
+                            {
+                              "label": "Two Double Beds",
+                              "value": "two-double"
+                            },
+                            {
+                              "label": "No Preference",
+                              "value": "no-preference"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-number-of-guests",
+                          "componentType": "SelectFieldProps",
+                          "name": "numberOfGuests",
+                          "label": "Number of Guests",
+                          "placeholder": "Select number of guests",
+                          "required": true,
+                          "helperText": "Maximum occupancy varies by room type",
+                          "options": [
+                            {
+                              "label": "1 Guest",
+                              "value": "1"
+                            },
+                            {
+                              "label": "2 Guests",
+                              "value": "2"
+                            },
+                            {
+                              "label": "3 Guests",
+                              "value": "3"
+                            },
+                            {
+                              "label": "4 Guests",
+                              "value": "4"
+                            },
+                            {
+                              "label": "5 Guests",
+                              "value": "5"
+                            },
+                            {
+                              "label": "6+ Guests",
+                              "value": "6-plus"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-first-name",
+                          "componentType": "TextFieldProps",
+                          "name": "firstName",
+                          "label": "First Name",
+                          "placeholder": "John",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "First name is required"
+                            },
+                            {
+                              "type": "minLength",
+                              "value": 2,
+                              "errorMessage": "First name must be at least 2 characters"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-last-name",
+                          "componentType": "TextFieldProps",
+                          "name": "lastName",
+                          "label": "Last Name",
+                          "placeholder": "Doe",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Last name is required"
+                            },
+                            {
+                              "type": "minLength",
+                              "value": 2,
+                              "errorMessage": "Last name must be at least 2 characters"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john.doe@example.com",
+                          "required": true,
+                          "helperText": "Confirmation will be sent to this email",
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Email is required"
+                            },
+                            {
+                              "type": "email",
+                              "errorMessage": "Please enter a valid email address"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 123-4567",
+                          "required": true,
+                          "helperText": "For urgent booking matters",
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Phone number is required"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-country",
+                          "componentType": "SelectFieldProps",
+                          "name": "country",
+                          "label": "Country",
+                          "placeholder": "Select your country",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "United States",
+                              "value": "US"
+                            },
+                            {
+                              "label": "United Kingdom",
+                              "value": "UK"
+                            },
+                            {
+                              "label": "Canada",
+                              "value": "CA"
+                            },
+                            {
+                              "label": "Australia",
+                              "value": "AU"
+                            },
+                            {
+                              "label": "Germany",
+                              "value": "DE"
+                            },
+                            {
+                              "label": "France",
+                              "value": "FR"
+                            },
+                            {
+                              "label": "Spain",
+                              "value": "ES"
+                            },
+                            {
+                              "label": "Italy",
+                              "value": "IT"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "OTHER"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-arrival-time",
+                          "componentType": "SelectFieldProps",
+                          "name": "arrivalTime",
+                          "label": "Estimated Arrival Time",
+                          "placeholder": "Select approximate time",
+                          "helperText": "Helps us prepare for your arrival",
+                          "options": [
+                            {
+                              "label": "Before 12:00 PM",
+                              "value": "before-noon"
+                            },
+                            {
+                              "label": "12:00 PM - 3:00 PM (Check-in time)",
+                              "value": "checkin-time"
+                            },
+                            {
+                              "label": "3:00 PM - 6:00 PM",
+                              "value": "afternoon"
+                            },
+                            {
+                              "label": "6:00 PM - 9:00 PM",
+                              "value": "evening"
+                            },
+                            {
+                              "label": "After 9:00 PM",
+                              "value": "late-arrival"
+                            },
+                            {
+                              "label": "Uncertain",
+                              "value": "uncertain"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-amenities",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "amenities",
+                          "label": "Additional Amenities (Optional)",
+                          "helperText": "Some amenities may have additional charges",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Airport Shuttle - $35",
+                              "value": "airport-shuttle"
+                            },
+                            {
+                              "label": "Breakfast Package - $25/person/day",
+                              "value": "breakfast"
+                            },
+                            {
+                              "label": "Parking - $20/day",
+                              "value": "parking"
+                            },
+                            {
+                              "label": "Late Check-out (2:00 PM) - $50",
+                              "value": "late-checkout"
+                            },
+                            {
+                              "label": "Room with View - $30/night",
+                              "value": "room-view"
+                            },
+                            {
+                              "label": "Spa Package - $120",
+                              "value": "spa"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-purpose-of-visit",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "purposeOfVisit",
+                          "label": "Purpose of Visit",
+                          "orientation": "horizontal",
+                          "options": [
+                            {
+                              "label": "Leisure",
+                              "value": "leisure"
+                            },
+                            {
+                              "label": "Business",
+                              "value": "business"
+                            },
+                            {
+                              "label": "Event/Wedding",
+                              "value": "event"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-special-requests",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "specialRequests",
+                          "label": "Special Requests or Comments",
+                          "placeholder": "E.g., wheelchair accessibility, early check-in, dietary restrictions, celebration arrangements, etc.",
+                          "rows": 4,
+                          "maxLength": 500,
+                          "helperText": "We'll do our best to accommodate your requests"
+                        },
+                        {
+                          "uuid": "field-cancellation-policy",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "cancellationPolicy",
+                          "label": "I understand and agree to the cancellation policy",
+                          "required": true,
+                          "helperText": "Free cancellation up to 24 hours before check-in"
+                        },
+                        {
+                          "uuid": "field-terms",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "agreeToTerms",
+                          "label": "I agree to the Terms & Conditions and Privacy Policy",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-marketing",
+                          "componentType": "SwitchFieldProps",
+                          "name": "marketingEmails",
+                          "label": "Receive special offers and updates",
+                          "helperText": "Stay informed about exclusive deals and promotions",
+                          "onLabel": "Yes",
+                          "offLabel": "No"
+                        },
+                        {
+                          "uuid": "field-hidden-booking-id",
+                          "componentType": "HiddenFieldProps",
+                          "name": "bookingSource",
+                          "value": "website-direct"
+                        },
+                        {
+                          "uuid": "field-hidden-timestamp",
+                          "componentType": "HiddenFieldProps",
+                          "name": "bookingTimestamp",
+                          "value": "2025-10-02T19:30:00Z"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "reset",
+                          "text": "Clear Form",
+                          "variant": "ghost",
+                          "uuid": "booking-form-action-reset-0",
+                          "componentType": "ButtonProps"
+                        },
+                        {
+                          "actionType": "submit",
+                          "text": "Complete Reservation",
+                          "variant": "default",
+                          "uuid": "booking-form-action-submit-1",
+                          "componentType": "ButtonProps"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "booking-info-card",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "classes": "p-6 border rounded-lg bg-blue-50 dark:bg-blue-950/20",
+                      "content": [
+                        {
+                          "uuid": "info-heading",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "info-icon",
+                              "componentType": "IconProps",
+                              "name": "info",
+                              "size": 20,
+                              "classes": "text-blue-600"
+                            },
+                            {
+                              "uuid": "info-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Important Information"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "info-list",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "2",
+                          "classes": "text-sm",
+                          "content": [
+                            {
+                              "uuid": "info-1",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "• Confirmation email will be sent immediately upon booking"
+                            },
+                            {
+                              "uuid": "info-2",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "• Free cancellation up to 24 hours before check-in"
+                            },
+                            {
+                              "uuid": "info-3",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "• Valid photo ID and credit card required at check-in"
+                            },
+                            {
+                              "uuid": "info-4",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "• Pets are welcome with a $50 cleaning fee"
+                            },
+                            {
+                              "uuid": "info-5",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "• Need help? Call us 24/7 at +1 (555) 123-4567"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-amenities",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-amenities",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "amenities-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "amenities-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-5xl",
+                  "content": [
+                    {
+                      "uuid": "amenities-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Included Amenities",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "amenities-grid",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "amenity-1",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "3",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "amenity-1-icon",
+                              "componentType": "IconProps",
+                              "name": "wifi",
+                              "size": 24,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "amenity-1-text",
+                              "componentType": "TextProps",
+                              "content": "Free Wi-Fi",
+                              "classes": "font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "amenity-2",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "3",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "amenity-2-icon",
+                              "componentType": "IconProps",
+                              "name": "droplet",
+                              "size": 24,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "amenity-2-text",
+                              "componentType": "TextProps",
+                              "content": "Swimming Pool",
+                              "classes": "font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "amenity-3",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "3",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "amenity-3-icon",
+                              "componentType": "IconProps",
+                              "name": "dumbbell",
+                              "size": 24,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "amenity-3-text",
+                              "componentType": "TextProps",
+                              "content": "Fitness Center",
+                              "classes": "font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "amenity-4",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "3",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "amenity-4-icon",
+                              "componentType": "IconProps",
+                              "name": "utensils",
+                              "size": 24,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "amenity-4-text",
+                              "componentType": "TextProps",
+                              "content": "Restaurant & Bar",
+                              "classes": "font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "amenity-5",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "3",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "amenity-5-icon",
+                              "componentType": "IconProps",
+                              "name": "shield-check",
+                              "size": 24,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "amenity-5-text",
+                              "componentType": "TextProps",
+                              "content": "24/7 Security",
+                              "classes": "font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "amenity-6",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "3",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "amenity-6-icon",
+                              "componentType": "IconProps",
+                              "name": "coffee",
+                              "size": 24,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "amenity-6-text",
+                              "componentType": "TextProps",
+                              "content": "Room Service",
+                              "classes": "font-medium"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Reserve your perfect room at GrandStay Hotels",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "card-example": "A simple example demonstrating the Card component with header, content, and footer sections.",
+  "card-link-example": "Demonstration of an interactive, clickable card component with link functionality.",
+  "card-showcase": "Comprehensive showcase of Card component variants including default, outlined, elevated, and interactive styles with various configurations.",
+  "kitchen-sink-core": "Complete showcase of fundamental UI components including buttons, badges, headings, text, icons, and interactive elements. Demonstrates component variations, states, and styling options for comprehensive design system exploration.",
+  "kitchen-sink-feedback": "User feedback and notification component collection including alerts, progress indicators, loading states, toast notifications, and status communication elements. Essential for user experience and interaction feedback patterns.",
+  "kitchen-sink-forms": "Complete showcase of all form components including text inputs, selections, advanced fields, and complete form containers. Demonstrates single-page forms, multi-step wizards, and quiz forms with validation and interactive features.",
+  "kitchen-sink-general": "Ultimate component showcase featuring the complete library of available UI elements, layout patterns, and interactive components. Comprehensive reference for understanding the full capabilities and design system scope.",
+  "kitchen-sink-header-navbar": "A comprehensive example of a header and navbar with various layout variants, menu styles, and animations. Contains Navbar examples in the pages.",
+  "kitchen-sink-layout": "Comprehensive layout component library featuring grids, flexbox containers, sections, spacing utilities, and responsive layout patterns. Showcases structural components for building complex page architectures and content organization.",
+  "kitchen-sink-media": "Media component library featuring images, videos, galleries, lightboxes, document viewers, and multimedia presentation elements. Showcases visual content integration patterns and media-rich layout options.",
+  "kitchen-sink-navbar": "Complete navigation component showcase featuring different navbar styles, menu structures, responsive behaviors, and branding options. Demonstrates horizontal navigation patterns for website headers and top-level navigation.",
+  "kitchen-sink-sidebar": "Dashboard-style layout with comprehensive sidebar navigation and core dashboard components. Features vertical navigation patterns, user interfaces, and application-style layouts for admin panels and web applications.",
+  "kitchen-sink-website-content": "Extensive content component collection including markdown blocks, testimonials, team members, feature items, process steps, and rich content elements. Ideal for understanding content presentation patterns and editorial layouts.",
+  "kitchen-sink-website-services": "Service and form component library featuring contact forms, newsletter signups, waitlist components, and interactive service elements. Showcases user engagement patterns and data collection interfaces for websites.",
+  "kitchen-sink-website-utils": "Utility component collection including SEO meta tags, language selectors, share buttons, date displays, lazy loading, and helper components. Features supportive elements that enhance functionality and user experience."
+}

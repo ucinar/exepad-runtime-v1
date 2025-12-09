@@ -1,0 +1,2417 @@
+{
+  "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "alias": "aaaaa-beauty-center",
+  "name": "AAAAA",
+  "summary": "This website is designed for AAAAA Beauty Center in New York, showcasing a comprehensive range of beauty services. It features a clean, minimalist design with elegant typography and a soft color palette, ensuring an inviting and sophisticated user experience. The site includes essential pages like Home, Services, About Us, and Contact, along with legal pages for transparency and compliance.",
+  "shortSummary": "A website for AAAAA Beauty Center in New York, highlighting services and offering an elegant user experience.",
+  "lastUpdatedEpoch": 1715694240,
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "charts": {
+      "chart-1": "359 50% 65%",
+      "chart-3": "80 30% 60%",
+      "chart-4": "40 60% 70%",
+      "chart-5": "280 30% 65%",
+      "chart-2": "200 40% 60%"
+    },
+    "radius": "0.5rem",
+    "light": {
+      "card": "330 16% 90%",
+      "muted-foreground": "0 0% 40%",
+      "foreground": "0 0% 20%",
+      "destructive-foreground": "0 0% 100%",
+      "ring": "359 32% 70%",
+      "border": "0 15% 70%",
+      "card-foreground": "0 0% 20%",
+      "accent": "359 32% 70%",
+      "muted": "330 16% 90%",
+      "popover": "330 16% 90%",
+      "destructive": "0 84% 60%",
+      "secondary": "0 15% 50%",
+      "background": "345 29% 96%",
+      "input": "0 15% 70%",
+      "popover-foreground": "0 0% 20%",
+      "secondary-foreground": "0 0% 100%",
+      "primary-foreground": "0 0% 100%",
+      "primary": "359 32% 70%",
+      "accent-foreground": "0 0% 100%"
+    },
+    "spacing": {
+      "y": "5rem",
+      "x": "2rem"
+    },
+    "layout": {
+      "contentPadding": "2rem",
+      "containerWidth": "1280px"
+    },
+    "fonts": {
+      "body": {
+        "family": "Inter",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      },
+      "heading": {
+        "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap",
+        "family": "Playfair Display",
+        "variant": "700"
+      }
+    },
+    "fontSizes": {
+      "sm": "0.875rem",
+      "2xl": "1.5rem",
+      "lg": "1.125rem",
+      "5xl": "3rem",
+      "xl": "1.25rem",
+      "base": "1rem",
+      "3xl": "1.875rem",
+      "xs": "0.75rem",
+      "4xl": "2.25rem"
+    },
+    "dark": {
+      "popover": "0 0% 15%",
+      "primary": "359 32% 75%",
+      "background": "0 0% 10%",
+      "secondary-foreground": "345 29% 90%",
+      "accent": "359 32% 75%",
+      "card-foreground": "345 29% 90%",
+      "muted-foreground": "345 29% 70%",
+      "muted": "0 0% 20%",
+      "input": "0 0% 25%",
+      "accent-foreground": "0 0% 10%",
+      "destructive-foreground": "0 0% 10%",
+      "ring": "359 32% 75%",
+      "foreground": "345 29% 90%",
+      "popover-foreground": "345 29% 90%",
+      "border": "0 0% 25%",
+      "card": "0 0% 15%",
+      "destructive": "0 84% 60%",
+      "secondary": "0 15% 40%",
+      "primary-foreground": "0 0% 10%"
+    },
+    "styles": {
+      "shadowLg": "0 10px 20px rgba(0,0,0,0.12)",
+      "transitionDuration": "250ms",
+      "shadow": "0 1px 3px rgba(0,0,0,0.08)",
+      "transitionTimingFunction": "ease-in-out"
+    }
+  },
+  "header": [
+    {
+      "uuid": "0969a2a1-dc47-4287-9cec-489f132fd431",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "default",
+      "sticky": true,
+      "logo": {
+        "uuid": "d20f3881-d0a9-4fc7-b9fb-d392a94205b2",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "AAAAA Beauty"
+      },
+      "content": [
+        {
+          "uuid": "e3b05be6-5e35-43eb-8df2-ad76bb082777",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "74918035-d4e6-4a85-b078-eb964c4041b3",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "ab9eb0be-6898-4416-9072-706ab022e930",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Services",
+          "href": {
+            "uuid": "e9788995-2782-4e89-8e91-7328bc8f5236",
+            "componentType": "LinkProps",
+            "href": "/services",
+            "text": "Services"
+          }
+        },
+        {
+          "uuid": "9f1f988c-6715-4ed9-ba55-204ea3149887",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About Us",
+          "href": {
+            "uuid": "0e752c42-0bf1-441e-9d36-e66942e8020f",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About Us"
+          }
+        },
+        {
+          "uuid": "df9fdb90-1b52-4628-8746-71d72093440b",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Contact Us",
+          "href": {
+            "uuid": "78c4fa2f-cee7-4eca-9d8f-83691ed5d62d",
+            "componentType": "LinkProps",
+            "href": "/contact",
+            "text": "Contact Us"
+          }
+        },
+        {
+          "uuid": "473253a3-3a16-4508-b7b7-f78e37beb6de",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "c24b4a44-7302-42bc-b5f9-0c8e423f8921",
+            "componentType": "ButtonProps",
+            "text": "Book Appointment",
+            "variant": "default",
+            "link": {
+              "uuid": "701d6816-303c-404e-92ba-d4c44de2da22",
+              "componentType": "LinkProps",
+              "href": "/contact",
+              "text": "Book Appointment"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sidebar": [],
+  "footer": [
+    {
+      "uuid": "f6d9ed86-c366-4822-af88-5b21fc8d591c",
+      "componentType": "SectionProps",
+      "classes": "py-8 px-8",
+      "layout": "singleColumnCentered",
+      "spacing": "sm",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "ad1204c0-5322-4f08-9acf-c05f4fc65d69",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start pb-4 w-full",
+          "content": [
+            {
+              "uuid": "f5ac3fbd-34bd-40d0-9553-34465e581139",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "6581fa71-4e96-4fce-b69d-d8871704d397",
+                  "componentType": "ImageProps",
+                  "src": "https://images.pexels.com/photos/7232659/pexels-photo-7232659.jpeg",
+                  "alt": "AAAAA Beauty Logo",
+                  "classes": "h-8 w-8",
+                  "asset": {
+                    "uuid": "1114b906-2e98-49a5-a2a1-d7a3dbd0a7a4",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "logo, beauty center",
+                    "isProcessed": true,
+                    "requestedWidth": 32,
+                    "requestedHeight": 32,
+                    "provider": "Pexels",
+                    "provider_img_id": "7232659",
+                    "provider_img_url": "https://images.pexels.com/photos/7232659/pexels-photo-7232659.jpeg",
+                    "datetime_generated": "2025-10-28T10:16:00.001071",
+                    "is_processed": true,
+                    "signature": "f418091ce8a4660e623574b9d55196a2"
+                  }
+                },
+                {
+                  "uuid": "77f9ac34-ed79-455d-8be9-ceb4648c3c20",
+                  "componentType": "TextProps",
+                  "content": "AAAAA Beauty",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "efcbeeaa-473b-47b4-a96b-cf8f69483c3f",
+              "componentType": "GridProps",
+              "columns": 1,
+              "gap": "8",
+              "classes": "sm:grid-cols-1 sm:gap-6 flex-1 max-w-lg",
+              "content": [
+                {
+                  "uuid": "ddbc4365-4706-4789-9e8c-343063ff9b61",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "a0c2c5a9-c0e4-4e92-8c75-d1320d3f8624",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "LEGAL",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "31cfd0a9-13bb-4023-b2e6-ab1d70e550a6",
+                      "componentType": "LinkProps",
+                      "text": "Privacy Policy",
+                      "href": "/privacy-policy"
+                    },
+                    {
+                      "uuid": "0f164787-f016-4828-ba85-b221ce4bfd10",
+                      "componentType": "LinkProps",
+                      "text": "Terms & Conditions",
+                      "href": "/terms"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "19571b95-22e7-46d4-925b-85015f6f0c4b",
+          "componentType": "SpacerProps",
+          "classes": "my-6 border-gray-200 lg:my-8",
+          "size": "md"
+        },
+        {
+          "uuid": "7e71c8ce-053b-428b-acf8-c4e2d366bdce",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center pt-4 pb-2 w-full",
+          "content": [
+            {
+              "uuid": "ae045d2e-21a7-4f82-b69a-e157ba4c0d9e",
+              "componentType": "TextProps",
+              "content": "\u00a9 2023 AAAAA Beauty. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            },
+            {
+              "uuid": "7a3c9942-378c-4961-901c-c15c2f5eb322",
+              "componentType": "FlexProps",
+              "gap": "5",
+              "content": [
+                {
+                  "uuid": "b8eafe61-6a06-4c74-9e94-aff511833ccb",
+                  "componentType": "SocialLinkProps",
+                  "platform": "facebook",
+                  "url": "#"
+                },
+                {
+                  "uuid": "bc76516b-513a-4eb0-b98f-813364f70ce7",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "#"
+                },
+                {
+                  "uuid": "4cbf88da-961e-4205-9f4e-fa9413f6226e",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "379008df-5a29-46b1-8b94-024d0273374e",
+      "title": "Privacy Policy",
+      "slug": "/privacy-policy",
+      "summary": "This page outlines the beauty center\u2019s privacy policy, detailing how user data is collected, used, stored, and protected. It ensures transparency regarding personal information handling and compliance with relevant data protection regulations.",
+      "shortSummary": "Our privacy policy details how we collect, use, and protect your personal information.",
+      "lastUpdatedEpoch": 1715694240,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "bd7b88b0-3106-4447-a5fc-a789af13b386",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center",
+          "background": {
+            "image": {
+              "uuid": "8430203d-5b70-4e56-bf90-83b6ff07d772",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/5614645/pexels-photo-5614645.jpeg",
+              "alt": "New York City skyline with a modern beauty center",
+              "asset": {
+                "uuid": "1efc03aa-89ab-4956-8737-4fc16ac407dc",
+                "componentType": "ImageAssetProps",
+                "keywords": "new york city, beauty center exterior, modern architecture, urban",
+                "isProcessed": false,
+                "requestedWidth": 1920,
+                "requestedHeight": 1080,
+                "provider": "Pexels",
+                "provider_img_id": "5614645",
+                "provider_img_url": "https://images.pexels.com/photos/5614645/pexels-photo-5614645.jpeg",
+                "datetime_generated": "2025-10-28T10:16:18.517116",
+                "is_processed": true,
+                "signature": "5dddfd932aca6d37098a544cace69d3f"
+              }
+            },
+            "overlayColor": "rgba(0,0,0,0.6)"
+          },
+          "content": [
+            {
+              "uuid": "e0849b03-2478-462a-a9ee-a85fbcde360d",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Contact Us",
+              "classes": "text-5xl font-bold text-white mb-4"
+            },
+            {
+              "uuid": "6783167f-8601-4c05-8a7d-89712235a12b",
+              "componentType": "TextProps",
+              "content": "We're here to help you with any questions, inquiries, or appointment bookings. Reach out to us through the form below or directly using our contact details.",
+              "classes": "text-xl text-white mb-8 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "5ddf4da1-765d-4282-9a83-47e5e08cb6f3",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "classes": "text-white mb-8",
+              "content": [
+                {
+                  "uuid": "eb8654ab-51e7-4f96-b8bd-cf0c4bd9e78b",
+                  "componentType": "TextProps",
+                  "content": "Phone: (212) 555-1234",
+                  "classes": "text-lg"
+                },
+                {
+                  "uuid": "bef87afe-8da6-4287-946a-39d67ffcc498",
+                  "componentType": "TextProps",
+                  "content": "Email: info@aaaaabeauty.com",
+                  "classes": "text-lg"
+                },
+                {
+                  "uuid": "e7a19f77-1bd7-48cd-b869-805c60a0f334",
+                  "componentType": "TextProps",
+                  "content": "Address: 123 Beauty Ave, New York, NY 10001",
+                  "classes": "text-lg"
+                }
+              ]
+            },
+            {
+              "uuid": "9db3ca7d-62bc-4765-8f13-b71290ee72df",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/3345082/pexels-photo-3345082.jpeg",
+              "alt": "Map of AAAAA Beauty Center location in New York",
+              "classes": "w-full max-w-lg mx-auto rounded-lg shadow-lg mb-8",
+              "asset": {
+                "uuid": "931644f5-a3df-449b-9861-9a8420d30313",
+                "componentType": "ImageAssetProps",
+                "keywords": "map, New York, beauty center location, directions",
+                "isProcessed": false,
+                "requestedWidth": 600,
+                "requestedHeight": 300,
+                "provider": "Pexels",
+                "provider_img_id": "3345082",
+                "provider_img_url": "https://images.pexels.com/photos/3345082/pexels-photo-3345082.jpeg",
+                "datetime_generated": "2025-10-28T10:16:19.279500",
+                "is_processed": true,
+                "signature": "57c97befaacc6d495586742238c348c0"
+              }
+            },
+            {
+              "uuid": "69260797-09da-4297-9148-b02cd71be012",
+              "componentType": "ButtonProps",
+              "text": "Book an Appointment",
+              "variant": "default",
+              "size": "lg",
+              "link": {
+                "uuid": "c5d3591c-f115-485d-8807-023a3b180a40",
+                "componentType": "LinkProps",
+                "href": "/contact#form",
+                "text": "Book an Appointment"
+              },
+              "classes": "bg-[#C79A9A] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+            }
+          ]
+        },
+        {
+          "uuid": "1ec9ee47-dbb8-4d1e-b80b-f3b6083091af",
+          "componentType": "SectionProps",
+          "layout": "twoColumnEven",
+          "classes": "py-16 bg-[#F8F0F3]",
+          "content": [
+            {
+              "uuid": "b79be202-0e6e-4aef-aafd-85d370dffe84",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "4ed45678-4c0a-48c9-a0ba-71200d1a9005",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Our Contact Details",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "dd897687-0ba7-4456-b8cc-7ef7792c3859",
+                  "componentType": "TextProps",
+                  "content": "Phone: (212) 555-1234",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "a8592ef9-2911-46a9-96a4-eb28ef2615fa",
+                  "componentType": "TextProps",
+                  "content": "Email: info@aaaaabeauty.com",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "d6762764-d87f-4b5d-bcb0-6e8dfedf8cbe",
+                  "componentType": "TextProps",
+                  "content": "Address: 123 Beauty Avenue, New York, NY 10001",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            },
+            {
+              "uuid": "c72b02fd-218d-4429-8c88-680a418aeb84",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "8bcf0e97-eeeb-413c-aba7-022540c52384",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Business Hours",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "8c54c76e-79f6-4a3b-abcd-c06f420c7799",
+                  "componentType": "TextProps",
+                  "content": "Monday - Friday: 9:00 AM - 7:00 PM",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "4b4ef889-cacd-4174-a894-c59c0b0c3327",
+                  "componentType": "TextProps",
+                  "content": "Saturday: 10:00 AM - 6:00 PM",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "6887d3ad-af12-418c-9269-4ef0c5510abb",
+                  "componentType": "TextProps",
+                  "content": "Sunday: Closed",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "33306191-847b-45f5-ada5-6781671389e3",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "uuid": "dfabd965-f925-4734-ba62-0a9d9ec448f5",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Send Us a Message or Book an Appointment",
+              "classes": "text-4xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "4e1dcdbb-ff28-4a65-95c8-2fef5e5bf873",
+              "componentType": "FormProps",
+              "title": "Contact & Appointment Request",
+              "description": "Fill out the form below and we will get back to you shortly.",
+              "layout": "singleColumn",
+              "content": [
+                {
+                  "uuid": "c9b650c5-032c-45a1-845f-05ff0d03b04c",
+                  "componentType": "TextFieldProps",
+                  "name": "name",
+                  "label": "Full Name",
+                  "placeholder": "Your full name",
+                  "required": true
+                },
+                {
+                  "uuid": "71798bf9-c3d6-48df-8edc-b491cb6eccc8",
+                  "componentType": "TextFieldProps",
+                  "name": "email",
+                  "label": "Email Address",
+                  "placeholder": "your.email@example.com",
+                  "inputType": "email",
+                  "required": true
+                },
+                {
+                  "uuid": "eaa99570-e2ab-438c-bce3-8d6bd5640762",
+                  "componentType": "TextFieldProps",
+                  "name": "phone",
+                  "label": "Phone Number",
+                  "placeholder": "(123) 456-7890",
+                  "inputType": "tel",
+                  "required": false
+                },
+                {
+                  "uuid": "aa3df7ce-9e68-4fcb-9af5-6e004d2714b6",
+                  "componentType": "SelectFieldProps",
+                  "name": "preferredService",
+                  "label": "Preferred Service",
+                  "options": [
+                    {
+                      "label": "Facial Treatments",
+                      "value": "facial"
+                    },
+                    {
+                      "label": "Massage Therapy",
+                      "value": "massage"
+                    },
+                    {
+                      "label": "Manicure & Pedicure",
+                      "value": "nails"
+                    },
+                    {
+                      "label": "Other",
+                      "value": "other"
+                    }
+                  ],
+                  "required": true
+                },
+                {
+                  "uuid": "5d8d54b1-d2f4-4db3-85ab-f20fe3884177",
+                  "componentType": "DateTimeFieldProps",
+                  "name": "dateTimePreference",
+                  "label": "Preferred Date & Time",
+                  "pickerType": "datetimeLocal",
+                  "required": false
+                },
+                {
+                  "uuid": "d29acf1e-525b-4f67-bfea-5185e5c01621",
+                  "componentType": "TextAreaFieldProps",
+                  "name": "message",
+                  "label": "Your Message",
+                  "placeholder": "Tell us about your needs or questions...",
+                  "rows": 5,
+                  "required": true
+                }
+              ],
+              "actions": [
+                {
+                  "uuid": "0f4bef58-056b-451b-8dd3-a882845baccb",
+                  "componentType": "ButtonProps",
+                  "text": "Submit Request",
+                  "actionType": "submit",
+                  "variant": "default",
+                  "classes": "bg-[#C79A9A] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "submit_contact_form",
+                "successMessage": "Your message has been sent successfully! We will get back to you soon.",
+                "errorMessage": "There was an error sending your message. Please try again later.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6776f4d9-3792-4292-a9a2-118e2f2b8244",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-[#EAE0E3]",
+          "content": [
+            {
+              "uuid": "fca35ea4-855e-4e57-9fd5-0b18c0607aba",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "How to Reach Us",
+              "classes": "text-4xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "624c8d00-d5b6-436e-a461-8b097caa38c1",
+              "componentType": "TextProps",
+              "content": "Our beauty center is conveniently located in the heart of New York City, easily accessible by public transport and car.",
+              "classes": "text-xl text-gray-700 mb-6 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "f26e534c-5e4d-4ec6-b015-58c20da9873c",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "max-w-3xl mx-auto text-left",
+              "content": [
+                {
+                  "uuid": "4773c2e8-0dbc-4399-a3e6-fe5d5b4c93e1",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Public Transportation",
+                  "classes": "text-2xl font-semibold text-gray-800"
+                },
+                {
+                  "uuid": "f8a1cbab-3957-4c9d-ab96-6cd65fa0bb2d",
+                  "componentType": "TextProps",
+                  "content": "Take the A, C, E, or 1, 2, 3 subway lines to Times Square-42nd Street. We are just a 5-minute walk from the station.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "uuid": "708a5af1-bad1-4a52-9e8f-fbffb7adda5d",
+                  "componentType": "TextProps",
+                  "content": "Several bus routes stop nearby, including the M42 and M104. Check local schedules for the best route from your location.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "uuid": "3c9b5fa7-d5fe-4404-9eec-70f1ac5d30ca",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Parking Information",
+                  "classes": "text-2xl font-semibold text-gray-800 mt-6"
+                },
+                {
+                  "uuid": "5f1eec00-7d84-414a-b1e1-6c25970deb98",
+                  "componentType": "TextProps",
+                  "content": "Metered street parking is available on surrounding streets. There are also several parking garages within a two-block radius, such as the XYZ Parking Garage on 43rd Street.",
+                  "classes": "text-gray-700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "fcdecfe4-8ce3-4caa-9dd9-8d2eb139c4f2",
+      "title": "About Our Beauty Center",
+      "slug": "/about",
+      "summary": "This page shares the beauty center\u2019s history, mission, and core values. It will introduce the dedicated team of professionals, emphasizing their expertise and commitment to client well-being and satisfaction.",
+      "shortSummary": "Learn about our beauty center\u2019s story, mission, team, and values.",
+      "lastUpdatedEpoch": 1715694240,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "5c6543d1-e8ca-4f23-9a01-4f94f6eb27f6",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center",
+          "background": {
+            "image": {
+              "uuid": "419bac03-81cb-4f73-a4e5-5b51efadb635",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/2684062/pexels-photo-2684062.jpeg",
+              "alt": "Elegant reception area of a beauty center",
+              "asset": {
+                "uuid": "a68d5e43-f1bb-460d-bf2f-ac32ce7bca09",
+                "componentType": "ImageAssetProps",
+                "keywords": "beauty center interior, spa reception, elegant, welcoming, modern",
+                "isProcessed": false,
+                "requestedWidth": 1920,
+                "requestedHeight": 1080,
+                "provider": "Pexels",
+                "provider_img_id": "2684062",
+                "provider_img_url": "https://images.pexels.com/photos/2684062/pexels-photo-2684062.jpeg",
+                "datetime_generated": "2025-10-28T10:16:12.602516",
+                "is_processed": true,
+                "signature": "067b064b58b4d94d2aa2554eb44c8c57"
+              }
+            },
+            "overlayColor": "rgba(0,0,0,0.5)"
+          },
+          "content": [
+            {
+              "uuid": "d9d64b79-308a-4730-ab30-abde95ee7b98",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Our Story: Passion, Expertise, and Unwavering Dedication",
+              "classes": "text-5xl font-bold text-white mb-4"
+            },
+            {
+              "uuid": "49e0e682-0b02-4c28-8ea2-5f5b8bb40be5",
+              "componentType": "TextProps",
+              "content": "At AAAAA Beauty, our mission is to create a haven where beauty and well-being converge. We are dedicated to providing exceptional services, fostering confidence, and delivering a luxurious experience that leaves you feeling refreshed and revitalized.",
+              "classes": "text-xl text-white mb-8 max-w-2xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "df682e4c-01e2-466b-8557-ee7542573f6e",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-white",
+          "title": "Meet Our Expert Team",
+          "content": [
+            {
+              "uuid": "1299d6ab-6ade-483e-9142-3c09e3724404",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Dedicated Professionals Committed to Your Beauty",
+              "classes": "text-4xl font-bold text-center mb-12"
+            },
+            {
+              "uuid": "cb6d31df-41db-4eb7-83fb-17f1fc8dcb82",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "976e297e-2776-441a-9249-5c7c7326ea5b",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "classes": "text-center p-6 bg-[#F8F0F3] rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "2130ea92-bb47-4e1f-857a-cf5a4f53b1b8",
+                      "componentType": "ImageProps",
+                      "src": "https://images.pexels.com/photos/6878690/pexels-photo-6878690.jpeg",
+                      "alt": "Portrait of Jane Doe, Lead Esthetician",
+                      "classes": "w-32 h-32 object-cover rounded-full mb-4",
+                      "asset": {
+                        "uuid": "36f5136b-ba5a-4b50-972a-cd1d9afc267d",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "woman stylist, esthetician, professional, smiling",
+                        "isProcessed": false,
+                        "requestedWidth": 200,
+                        "requestedHeight": 200,
+                        "provider": "Pexels",
+                        "provider_img_id": "6878690",
+                        "provider_img_url": "https://images.pexels.com/photos/6878690/pexels-photo-6878690.jpeg",
+                        "datetime_generated": "2025-10-28T10:16:13.351361",
+                        "is_processed": true,
+                        "signature": "071f192281edfdddd1537ba2ef95d286"
+                      }
+                    },
+                    {
+                      "uuid": "69cc3399-5c02-49cf-ad6e-725eb1c54b52",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Jane Doe",
+                      "classes": "text-2xl font-semibold mb-1"
+                    },
+                    {
+                      "uuid": "1131dee0-a8a5-4b74-963e-e0bc089e1705",
+                      "componentType": "TextProps",
+                      "content": "Lead Esthetician",
+                      "classes": "text-lg text-gray-700 mb-2"
+                    },
+                    {
+                      "uuid": "c3f90abf-c2f8-4a3c-93cf-42e7c6143655",
+                      "componentType": "TextProps",
+                      "content": "With over 10 years of experience, Jane specializes in advanced skincare treatments and personalized facial therapies.",
+                      "classes": "text-gray-600"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "0b16597f-ae55-41a4-a168-dede4d8375eb",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "classes": "text-center p-6 bg-[#F8F0F3] rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "8367a842-8f0a-470e-a83f-ea1a7b51769b",
+                      "componentType": "ImageProps",
+                      "src": "https://images.pexels.com/photos/6188128/pexels-photo-6188128.jpeg",
+                      "alt": "Portrait of John Smith, Massage Therapist",
+                      "classes": "w-32 h-32 object-cover rounded-full mb-4",
+                      "asset": {
+                        "uuid": "84101033-f9ab-40ef-8bba-f41ad17ad2d2",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "man massage therapist, spa specialist, professional, calm",
+                        "isProcessed": false,
+                        "requestedWidth": 200,
+                        "requestedHeight": 200,
+                        "provider": "Pexels",
+                        "provider_img_id": "6188128",
+                        "provider_img_url": "https://images.pexels.com/photos/6188128/pexels-photo-6188128.jpeg",
+                        "datetime_generated": "2025-10-28T10:16:14.200397",
+                        "is_processed": true,
+                        "signature": "31ee4430915438a31b6d2ec4556ca381"
+                      }
+                    },
+                    {
+                      "uuid": "19119e63-3339-47c0-852a-ecbadc338595",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "John Smith",
+                      "classes": "text-2xl font-semibold mb-1"
+                    },
+                    {
+                      "uuid": "52155cc9-8368-41bc-8b47-c4c9ca2f387a",
+                      "componentType": "TextProps",
+                      "content": "Massage Therapist",
+                      "classes": "text-lg text-gray-700 mb-2"
+                    },
+                    {
+                      "uuid": "d39f6512-455a-4725-9970-6e8b0f840693",
+                      "componentType": "TextProps",
+                      "content": "John's healing hands provide unparalleled relaxation and therapeutic relief through various massage techniques.",
+                      "classes": "text-gray-600"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "b60fd3de-19a3-43bd-be9c-d0b0d48be89f",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "classes": "text-center p-6 bg-[#F8F0F3] rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "2bbea1e7-7f60-4420-baf5-111a75652b37",
+                      "componentType": "ImageProps",
+                      "src": "https://images.pexels.com/photos/6045539/pexels-photo-6045539.jpeg",
+                      "alt": "Portrait of Emily White, Nail Artist",
+                      "classes": "w-32 h-32 object-cover rounded-full mb-4",
+                      "asset": {
+                        "uuid": "d0b8178c-8b37-4083-b2bc-80cc8004f368",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "woman nail technician, beauty expert, creative, precise",
+                        "isProcessed": false,
+                        "requestedWidth": 200,
+                        "requestedHeight": 200,
+                        "provider": "Pexels",
+                        "provider_img_id": "6045539",
+                        "provider_img_url": "https://images.pexels.com/photos/6045539/pexels-photo-6045539.jpeg",
+                        "datetime_generated": "2025-10-28T10:16:15.093025",
+                        "is_processed": true,
+                        "signature": "2d124b1f4d57a68b7259a23542df27fb"
+                      }
+                    },
+                    {
+                      "uuid": "7b1ff1e7-0ac3-404e-a316-8f5cb4a9f0cb",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Emily White",
+                      "classes": "text-2xl font-semibold mb-1"
+                    },
+                    {
+                      "uuid": "cf962cd0-ac51-4843-a801-44d595572ce0",
+                      "componentType": "TextProps",
+                      "content": "Nail Artist",
+                      "classes": "text-lg text-gray-700 mb-2"
+                    },
+                    {
+                      "uuid": "475b21f7-6326-42a8-8ab4-71d55a514f68",
+                      "componentType": "TextProps",
+                      "content": "Emily brings creativity and precision to every manicure and pedicure, crafting stunning nail art designs.",
+                      "classes": "text-gray-600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "1a7fddeb-54d0-4734-88ad-e5a903e5b2ca",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-[#EAE0E3]",
+          "title": "Our Guiding Principles",
+          "content": [
+            {
+              "uuid": "b25b804c-b58b-4764-9b4e-cb884348db4f",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Our Core Values: The Foundation of Our Service",
+              "classes": "text-4xl font-bold text-center mb-12"
+            },
+            {
+              "uuid": "7f7b1eb7-6cf8-4e35-be09-34fcb39c3c2b",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "2c969926-e8a3-47de-8bb0-fade0ed8d589",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "classes": "text-center p-6 bg-white rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "4b2a4221-d64a-491c-adf2-b3e1b61d0745",
+                      "componentType": "IconProps",
+                      "name": "Star",
+                      "size": 48,
+                      "classes": "text-[#C79A9A] mb-4"
+                    },
+                    {
+                      "uuid": "db2d3947-c862-4190-bea4-0c5b406f6c6d",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Excellence",
+                      "classes": "text-xl font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "4cce7bcf-ae28-4ff3-9bcb-fd0e7ea1b313",
+                      "componentType": "TextProps",
+                      "content": "We are committed to delivering the highest quality services and products, ensuring every client receives an exceptional experience.",
+                      "classes": "text-gray-700"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "37fdbc39-17b7-4790-82b6-53b544a59b1f",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "classes": "text-center p-6 bg-white rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "39fd53e0-4b47-44dd-9eab-9738fa40a820",
+                      "componentType": "IconProps",
+                      "name": "Heart",
+                      "size": 48,
+                      "classes": "text-[#C79A9A] mb-4"
+                    },
+                    {
+                      "uuid": "56331167-a44a-403e-90cc-f14edc054102",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Client-Centric Care",
+                      "classes": "text-xl font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "7bd195f5-d093-4dc4-b53a-6f7fd0ea19d8",
+                      "componentType": "TextProps",
+                      "content": "Your satisfaction and well-being are at the heart of everything we do. We tailor our services to meet your unique needs.",
+                      "classes": "text-gray-700"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "2f294633-5f06-4758-a073-0da21dc4e112",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "classes": "text-center p-6 bg-white rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "0b2a0c2d-6397-42fb-b4ca-ef35d390cf44",
+                      "componentType": "IconProps",
+                      "name": "Lightbulb",
+                      "size": 48,
+                      "classes": "text-[#C79A9A] mb-4"
+                    },
+                    {
+                      "uuid": "2bf01c6d-2065-4635-b638-3d8edcde8b08",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Innovation",
+                      "classes": "text-xl font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "eed18ae8-59dd-4f3a-8410-a890def1fabf",
+                      "componentType": "TextProps",
+                      "content": "We continuously explore new techniques and products to bring you the latest and most effective beauty solutions.",
+                      "classes": "text-gray-700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "fe7cc04b-e301-4643-9167-2bec6975b493",
+          "componentType": "SectionProps",
+          "layout": "twoColumnEven",
+          "classes": "py-16 bg-[#F8F0F3]",
+          "content": [
+            {
+              "uuid": "0402c40e-c97f-4a6d-92f5-6f37f6a08583",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "fca80949-fecf-4238-898d-26b13d7abdd2",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Our Unique Approach to Beauty",
+                  "classes": "text-4xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "8467972b-0405-405f-82c4-d5489118d75b",
+                  "componentType": "TextProps",
+                  "content": "At AAAAA Beauty, we blend traditional techniques with modern innovations to create a holistic beauty experience. Our personalized consultations ensure that each treatment is perfectly aligned with your individual needs and goals, delivering results that are both visible and lasting. We prioritize natural ingredients and sustainable practices wherever possible, ensuring a responsible approach to luxury.",
+                  "classes": "text-lg text-gray-700 leading-relaxed"
+                },
+                {
+                  "uuid": "49ffade7-687e-4f20-894b-db19efa24fcc",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "6758fc96-cddf-44a1-8f1d-a062c9a87896",
+                      "componentType": "TextProps",
+                      "content": "\u2014 Advanced Skin Analysis Technology",
+                      "classes": "text-gray-800 font-medium"
+                    },
+                    {
+                      "uuid": "c69e6450-9f94-4f66-83c1-ed694feaae47",
+                      "componentType": "TextProps",
+                      "content": "\u2014 Custom-Blended Organic Skincare Products",
+                      "classes": "text-gray-800 font-medium"
+                    },
+                    {
+                      "uuid": "60efabac-df8c-4bf3-b5e2-8b8049e3cd90",
+                      "componentType": "TextProps",
+                      "content": "\u2014 Aromatherapy-Infused Treatment Rooms",
+                      "classes": "text-gray-800 font-medium"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "cf661342-3a82-4a65-837b-881dbbd038ac",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/8450519/pexels-photo-8450519.jpeg",
+              "alt": "Organic beauty products and skincare",
+              "classes": "rounded-lg shadow-xl",
+              "asset": {
+                "uuid": "d4e026ff-64da-4aac-99c2-92ef777107cb",
+                "componentType": "ImageAssetProps",
+                "keywords": "beauty products, organic skincare, natural ingredients, luxurious",
+                "isProcessed": false,
+                "requestedWidth": 600,
+                "requestedHeight": 400,
+                "provider": "Pexels",
+                "provider_img_id": "8450519",
+                "provider_img_url": "https://images.pexels.com/photos/8450519/pexels-photo-8450519.jpeg",
+                "datetime_generated": "2025-10-28T10:16:16.015145",
+                "is_processed": true,
+                "signature": "77507a059c967bdc61b33db14acb08b4"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "67903439-e630-4662-a4f5-1859491621ef",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center bg-[#C79A9A]",
+          "content": [
+            {
+              "uuid": "1f8709ce-34e5-4b19-85c0-68ab9ede00ff",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Visit Us and Experience the AAAAA Difference",
+              "classes": "text-4xl font-bold text-white mb-4"
+            },
+            {
+              "uuid": "14fe627b-ab48-492e-a97f-c054837448a4",
+              "componentType": "TextProps",
+              "content": "We invite you to step into our world of beauty and relaxation. Schedule a consultation or book your next appointment today.",
+              "classes": "text-xl text-white mb-8 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "d6a373b4-e442-4562-bf06-5cac398f3d95",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "4",
+              "justify": "center",
+              "content": [
+                {
+                  "uuid": "f082da23-d9e3-42a0-8f85-4c9943601a34",
+                  "componentType": "ButtonProps",
+                  "text": "Schedule a Visit",
+                  "variant": "default",
+                  "size": "lg",
+                  "link": {
+                    "uuid": "1918ad56-2baf-4611-b099-4957d9b56ed0",
+                    "componentType": "LinkProps",
+                    "href": "/contact",
+                    "text": "Schedule a Visit"
+                  },
+                  "classes": "bg-white hover:bg-gray-100 text-[#C79A9A] font-semibold py-3 px-8 rounded-full shadow-lg"
+                },
+                {
+                  "uuid": "c7c4f045-a5c7-4748-a438-f2e23c58db80",
+                  "componentType": "ButtonProps",
+                  "text": "Explore Our Services",
+                  "variant": "outline",
+                  "size": "lg",
+                  "link": {
+                    "uuid": "eeb40475-c7d3-45c1-8602-b1ff986dc9b5",
+                    "componentType": "LinkProps",
+                    "href": "/services",
+                    "text": "Explore Our Services"
+                  },
+                  "classes": "border-white text-white hover:bg-white hover:text-[#C79A9A] font-semibold py-3 px-8 rounded-full"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "0a98eae0-47c9-40e9-90e7-5f4f91ba530c",
+      "title": "Contact Us",
+      "slug": "/contact",
+      "summary": "This page provides all necessary contact details, including the address, phone number, email, and business hours. It will feature a contact form for easy communication and an interactive map for directions to the New York location.",
+      "shortSummary": "Find our location, business hours, and contact us directly.",
+      "lastUpdatedEpoch": 1715694240,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "d38844e7-145a-43b8-b13c-2ed14e33803a",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center",
+          "background": {
+            "image": {
+              "uuid": "8669bf10-193c-4e79-b6ae-23f4878c7764",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/5614645/pexels-photo-5614645.jpeg",
+              "alt": "New York City skyline with a modern beauty center",
+              "asset": {
+                "uuid": "9b7005fc-0908-4b14-99ef-54fd7bbd16d6",
+                "componentType": "ImageAssetProps",
+                "keywords": "new york city, beauty center exterior, modern architecture, urban",
+                "isProcessed": false,
+                "requestedWidth": 1920,
+                "requestedHeight": 1080,
+                "provider": "Pexels",
+                "provider_img_id": "5614645",
+                "provider_img_url": "https://images.pexels.com/photos/5614645/pexels-photo-5614645.jpeg",
+                "datetime_generated": "2025-10-28T10:16:16.997817",
+                "is_processed": true,
+                "signature": "5dddfd932aca6d37098a544cace69d3f"
+              }
+            },
+            "overlayColor": "rgba(0,0,0,0.6)"
+          },
+          "content": [
+            {
+              "uuid": "080df157-1c07-4d5f-94bf-514f38ec59b7",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Contact Us",
+              "classes": "text-5xl font-bold text-white mb-4"
+            },
+            {
+              "uuid": "d9c4b997-db22-4c2c-9aff-e7921f157cd4",
+              "componentType": "TextProps",
+              "content": "We're here to help you with any questions, inquiries, or appointment bookings. Reach out to us through the form below or directly using our contact details.",
+              "classes": "text-xl text-white mb-8 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "c7d2c090-71a9-4465-8745-9733a83c5315",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "classes": "text-white mb-8",
+              "content": [
+                {
+                  "uuid": "b17425d8-26e1-406e-a2e3-b4341e801d88",
+                  "componentType": "TextProps",
+                  "content": "Phone: (212) 555-1234",
+                  "classes": "text-lg"
+                },
+                {
+                  "uuid": "34317a5f-a96c-438a-8a76-3781301241fb",
+                  "componentType": "TextProps",
+                  "content": "Email: info@aaaaabeauty.com",
+                  "classes": "text-lg"
+                },
+                {
+                  "uuid": "99be05b1-41f9-4abb-b1c4-196a73d060f0",
+                  "componentType": "TextProps",
+                  "content": "Address: 123 Beauty Ave, New York, NY 10001",
+                  "classes": "text-lg"
+                }
+              ]
+            },
+            {
+              "uuid": "64915eb9-5db1-42b3-a558-0f7cc27a0016",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/3345082/pexels-photo-3345082.jpeg",
+              "alt": "Map of AAAAA Beauty Center location in New York",
+              "classes": "w-full max-w-lg mx-auto rounded-lg shadow-lg mb-8",
+              "asset": {
+                "uuid": "8b650227-a770-4ba8-8352-6161c4c75d85",
+                "componentType": "ImageAssetProps",
+                "keywords": "map, New York, beauty center location, directions",
+                "isProcessed": false,
+                "requestedWidth": 600,
+                "requestedHeight": 300,
+                "provider": "Pexels",
+                "provider_img_id": "3345082",
+                "provider_img_url": "https://images.pexels.com/photos/3345082/pexels-photo-3345082.jpeg",
+                "datetime_generated": "2025-10-28T10:16:17.800161",
+                "is_processed": true,
+                "signature": "57c97befaacc6d495586742238c348c0"
+              }
+            },
+            {
+              "uuid": "3e56e10b-99c7-4b73-b8ed-915a04e2e5c4",
+              "componentType": "ButtonProps",
+              "text": "Book an Appointment",
+              "variant": "default",
+              "size": "lg",
+              "link": {
+                "uuid": "66a637d8-09e0-49cd-921b-ae9b3528e9ba",
+                "componentType": "LinkProps",
+                "href": "/contact#form",
+                "text": "Book an Appointment"
+              },
+              "classes": "bg-[#C79A9A] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+            }
+          ]
+        },
+        {
+          "uuid": "eee3ac1b-4fbe-4c09-96d5-73c65aef1698",
+          "componentType": "SectionProps",
+          "layout": "twoColumnEven",
+          "classes": "py-16 bg-[#F8F0F3]",
+          "content": [
+            {
+              "uuid": "4ecd20cb-2866-42f6-af72-f4281a001b52",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "b93413ca-0090-411c-98b5-e17d17ba2274",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Our Contact Details",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "5a66603b-4899-4c20-95e5-508841b212ac",
+                  "componentType": "TextProps",
+                  "content": "Phone: (212) 555-1234",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "32519a77-9f58-4b0a-b3f2-e17d3b9377d1",
+                  "componentType": "TextProps",
+                  "content": "Email: info@aaaaabeauty.com",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "f03ca8a4-c61f-413d-b2bc-df37cee89ab1",
+                  "componentType": "TextProps",
+                  "content": "Address: 123 Beauty Avenue, New York, NY 10001",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            },
+            {
+              "uuid": "bd3a1edb-89d1-442e-8e9c-a81b19d90bb3",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "502dabc5-936f-4419-b23c-1a8dcacce692",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Business Hours",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "b6d01064-754a-41fe-be16-5b0cfa7158fb",
+                  "componentType": "TextProps",
+                  "content": "Monday - Friday: 9:00 AM - 7:00 PM",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "7b12daa7-5a98-4fab-ab73-846f78155085",
+                  "componentType": "TextProps",
+                  "content": "Saturday: 10:00 AM - 6:00 PM",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "d2582b94-ea71-4f37-a709-05226012eb64",
+                  "componentType": "TextProps",
+                  "content": "Sunday: Closed",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "8c85b6ca-57fc-4979-8c16-ae48e6615900",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "uuid": "becd6b10-73db-4a88-99ac-e1010bb1ddca",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Send Us a Message or Book an Appointment",
+              "classes": "text-4xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "9678c418-437c-4db9-8d25-5454ba68ce19",
+              "componentType": "FormProps",
+              "title": "Contact & Appointment Request",
+              "description": "Fill out the form below and we will get back to you shortly.",
+              "layout": "singleColumn",
+              "content": [
+                {
+                  "uuid": "3fe0a607-6ad8-453b-a0b7-fb0705c79144",
+                  "componentType": "TextFieldProps",
+                  "name": "name",
+                  "label": "Full Name",
+                  "placeholder": "Your full name",
+                  "required": true
+                },
+                {
+                  "uuid": "c8903eb7-a012-4e39-a6b4-458c95eb55ce",
+                  "componentType": "TextFieldProps",
+                  "name": "email",
+                  "label": "Email Address",
+                  "placeholder": "your.email@example.com",
+                  "inputType": "email",
+                  "required": true
+                },
+                {
+                  "uuid": "2db6c0fe-7e0c-4448-b508-dc73adf7eb8e",
+                  "componentType": "TextFieldProps",
+                  "name": "phone",
+                  "label": "Phone Number",
+                  "placeholder": "(123) 456-7890",
+                  "inputType": "tel",
+                  "required": false
+                },
+                {
+                  "uuid": "200a028b-e906-40d2-b0bd-588903567ec7",
+                  "componentType": "SelectFieldProps",
+                  "name": "preferredService",
+                  "label": "Preferred Service",
+                  "options": [
+                    {
+                      "label": "Facial Treatments",
+                      "value": "facial"
+                    },
+                    {
+                      "label": "Massage Therapy",
+                      "value": "massage"
+                    },
+                    {
+                      "label": "Manicure & Pedicure",
+                      "value": "nails"
+                    },
+                    {
+                      "label": "Other",
+                      "value": "other"
+                    }
+                  ],
+                  "required": true
+                },
+                {
+                  "uuid": "5470c6c2-b04b-43f7-bf53-367b3be97efb",
+                  "componentType": "DateTimeFieldProps",
+                  "name": "dateTimePreference",
+                  "label": "Preferred Date & Time",
+                  "pickerType": "datetimeLocal",
+                  "required": false
+                },
+                {
+                  "uuid": "1a45cbaa-454f-4b8a-a0de-a80dec8343c9",
+                  "componentType": "TextAreaFieldProps",
+                  "name": "message",
+                  "label": "Your Message",
+                  "placeholder": "Tell us about your needs or questions...",
+                  "rows": 5,
+                  "required": true
+                }
+              ],
+              "actions": [
+                {
+                  "uuid": "9a666f14-51ae-43c8-9a1b-b11ecff80249",
+                  "componentType": "ButtonProps",
+                  "text": "Submit Request",
+                  "actionType": "submit",
+                  "variant": "default",
+                  "classes": "bg-[#C79A9A] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "submit_contact_form",
+                "successMessage": "Your message has been sent successfully! We will get back to you soon.",
+                "errorMessage": "There was an error sending your message. Please try again later.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ffa20a76-0f09-4132-9b52-4e530a26ecd5",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-[#EAE0E3]",
+          "content": [
+            {
+              "uuid": "13f40066-b160-48ad-bf55-08e23c6cb931",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "How to Reach Us",
+              "classes": "text-4xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "97718ee9-b6ea-462e-a6f2-f8872eae9cbc",
+              "componentType": "TextProps",
+              "content": "Our beauty center is conveniently located in the heart of New York City, easily accessible by public transport and car.",
+              "classes": "text-xl text-gray-700 mb-6 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "4053ee75-9a10-49f3-a971-7f5730d2a534",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "max-w-3xl mx-auto text-left",
+              "content": [
+                {
+                  "uuid": "454b1a3c-85f9-4434-8bc2-c2a736055a26",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Public Transportation",
+                  "classes": "text-2xl font-semibold text-gray-800"
+                },
+                {
+                  "uuid": "e13c8e0b-554a-428b-999e-a18a50134e1f",
+                  "componentType": "TextProps",
+                  "content": "Take the A, C, E, or 1, 2, 3 subway lines to Times Square-42nd Street. We are just a 5-minute walk from the station.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "uuid": "0e1f039f-3f1a-4649-87c6-4b8ff081b0ef",
+                  "componentType": "TextProps",
+                  "content": "Several bus routes stop nearby, including the M42 and M104. Check local schedules for the best route from your location.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "uuid": "0df6dc94-fca2-4c38-b12b-00298461b6b4",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Parking Information",
+                  "classes": "text-2xl font-semibold text-gray-800 mt-6"
+                },
+                {
+                  "uuid": "17e5bbcc-6dd9-4a69-810e-e877c7557f5e",
+                  "componentType": "TextProps",
+                  "content": "Metered street parking is available on surrounding streets. There are also several parking garages within a two-block radius, such as the XYZ Parking Garage on 43rd Street.",
+                  "classes": "text-gray-700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "uuid": "913efcfa-6eb1-4c35-9df5-18887f0ccee3",
+      "title": "Terms of Service",
+      "slug": "/terms",
+      "summary": "This page presents the terms of service that govern the use of the beauty center\u2019s website and its services. It covers aspects such as user conduct, service agreements, payment terms, and legal disclaimers to ensure a clear understanding between the center and its clients.",
+      "shortSummary": "Review the terms and conditions governing the use of our website and services.",
+      "lastUpdatedEpoch": 1715694240,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "7ea9d0be-9a91-4029-a6c7-5b542243b257",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center",
+          "background": {
+            "image": {
+              "uuid": "a4c16fc2-3701-44de-b956-6eb7ccbba49a",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/5614645/pexels-photo-5614645.jpeg",
+              "alt": "New York City skyline with a modern beauty center",
+              "asset": {
+                "uuid": "fc19d355-2788-4273-a189-638a621ce976",
+                "componentType": "ImageAssetProps",
+                "keywords": "new york city, beauty center exterior, modern architecture, urban",
+                "isProcessed": false,
+                "requestedWidth": 1920,
+                "requestedHeight": 1080,
+                "provider": "Pexels",
+                "provider_img_id": "5614645",
+                "provider_img_url": "https://images.pexels.com/photos/5614645/pexels-photo-5614645.jpeg",
+                "datetime_generated": "2025-10-28T10:16:20.047294",
+                "is_processed": true,
+                "signature": "5dddfd932aca6d37098a544cace69d3f"
+              }
+            },
+            "overlayColor": "rgba(0,0,0,0.6)"
+          },
+          "content": [
+            {
+              "uuid": "574bcd82-e198-420e-8dbc-3aefa5c46556",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Contact Us",
+              "classes": "text-5xl font-bold text-white mb-4"
+            },
+            {
+              "uuid": "2e774eac-a2fd-4ccb-accc-1e92566521de",
+              "componentType": "TextProps",
+              "content": "We're here to help you with any questions, inquiries, or appointment bookings. Reach out to us through the form below or directly using our contact details.",
+              "classes": "text-xl text-white mb-8 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "c3b0bcc2-d851-45b5-a51a-71c2873a5669",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "classes": "text-white mb-8",
+              "content": [
+                {
+                  "uuid": "02aeabab-a868-4a40-8223-7435feb14a6b",
+                  "componentType": "TextProps",
+                  "content": "Phone: (212) 555-1234",
+                  "classes": "text-lg"
+                },
+                {
+                  "uuid": "8f2c1a2c-5d82-4566-8136-a95eb7f5c6fa",
+                  "componentType": "TextProps",
+                  "content": "Email: info@aaaaabeauty.com",
+                  "classes": "text-lg"
+                },
+                {
+                  "uuid": "cf618b75-00ce-478b-ab12-29bde2c80054",
+                  "componentType": "TextProps",
+                  "content": "Address: 123 Beauty Ave, New York, NY 10001",
+                  "classes": "text-lg"
+                }
+              ]
+            },
+            {
+              "uuid": "9a623e82-08f6-419e-b3da-2e7e29eff65f",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/3345082/pexels-photo-3345082.jpeg",
+              "alt": "Map of AAAAA Beauty Center location in New York",
+              "classes": "w-full max-w-lg mx-auto rounded-lg shadow-lg mb-8",
+              "asset": {
+                "uuid": "93fa8a51-ba8e-4080-ad68-83472f75e20b",
+                "componentType": "ImageAssetProps",
+                "keywords": "map, New York, beauty center location, directions",
+                "isProcessed": false,
+                "requestedWidth": 600,
+                "requestedHeight": 300,
+                "provider": "Pexels",
+                "provider_img_id": "3345082",
+                "provider_img_url": "https://images.pexels.com/photos/3345082/pexels-photo-3345082.jpeg",
+                "datetime_generated": "2025-10-28T10:16:21.603435",
+                "is_processed": true,
+                "signature": "57c97befaacc6d495586742238c348c0"
+              }
+            },
+            {
+              "uuid": "90a8d3f1-da8d-4b44-b0ad-3808cf504c90",
+              "componentType": "ButtonProps",
+              "text": "Book an Appointment",
+              "variant": "default",
+              "size": "lg",
+              "link": {
+                "uuid": "7be316d7-5676-4a3a-9353-6e85415a0351",
+                "componentType": "LinkProps",
+                "href": "/contact#form",
+                "text": "Book an Appointment"
+              },
+              "classes": "bg-[#C79A9A] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+            }
+          ]
+        },
+        {
+          "uuid": "b895e64d-5c49-49df-94a6-e9803ebfb028",
+          "componentType": "SectionProps",
+          "layout": "twoColumnEven",
+          "classes": "py-16 bg-[#F8F0F3]",
+          "content": [
+            {
+              "uuid": "5ff9a85b-3b68-435d-85b2-d22e7c101d07",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "f9ec52f6-ef90-443c-96ce-3a3dba9c751b",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Our Contact Details",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "9265b459-4884-49cf-950c-6769f326495e",
+                  "componentType": "TextProps",
+                  "content": "Phone: (212) 555-1234",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "a9773e5b-171c-40bc-98ce-83941b7a988f",
+                  "componentType": "TextProps",
+                  "content": "Email: info@aaaaabeauty.com",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "0545dcab-d8e5-4d01-bb66-710aa22c32a1",
+                  "componentType": "TextProps",
+                  "content": "Address: 123 Beauty Avenue, New York, NY 10001",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            },
+            {
+              "uuid": "af6e9c93-9045-4969-8a18-13209f5b28c6",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "75678264-cbe2-4d1c-9cd4-e8fb3730f7c6",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Business Hours",
+                  "classes": "text-3xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "b4d3f673-690c-4b1c-881f-34c53f8021a5",
+                  "componentType": "TextProps",
+                  "content": "Monday - Friday: 9:00 AM - 7:00 PM",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "d59b0780-130d-4d53-8cca-45fb17cf9bb6",
+                  "componentType": "TextProps",
+                  "content": "Saturday: 10:00 AM - 6:00 PM",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "uuid": "f8924b6d-3836-4c46-9f06-3e95223de343",
+                  "componentType": "TextProps",
+                  "content": "Sunday: Closed",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "4e7c80c4-848e-4a1f-be3a-b8014bbcb8da",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-white",
+          "content": [
+            {
+              "uuid": "10eac118-1046-4f17-83bd-3fd227c5f488",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Send Us a Message or Book an Appointment",
+              "classes": "text-4xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "998a2c59-4747-4f36-ba7f-7fd3ec69cf9e",
+              "componentType": "FormProps",
+              "title": "Contact & Appointment Request",
+              "description": "Fill out the form below and we will get back to you shortly.",
+              "layout": "singleColumn",
+              "content": [
+                {
+                  "uuid": "157276fd-abb4-4604-af12-1ed08ed1b1c1",
+                  "componentType": "TextFieldProps",
+                  "name": "name",
+                  "label": "Full Name",
+                  "placeholder": "Your full name",
+                  "required": true
+                },
+                {
+                  "uuid": "f670695e-15ac-4e45-b089-4157c7d236b1",
+                  "componentType": "TextFieldProps",
+                  "name": "email",
+                  "label": "Email Address",
+                  "placeholder": "your.email@example.com",
+                  "inputType": "email",
+                  "required": true
+                },
+                {
+                  "uuid": "2f7e4b91-48bd-486f-be22-def417d2692d",
+                  "componentType": "TextFieldProps",
+                  "name": "phone",
+                  "label": "Phone Number",
+                  "placeholder": "(123) 456-7890",
+                  "inputType": "tel",
+                  "required": false
+                },
+                {
+                  "uuid": "3b13228b-1d03-4add-9d54-27c442a6a197",
+                  "componentType": "SelectFieldProps",
+                  "name": "preferredService",
+                  "label": "Preferred Service",
+                  "options": [
+                    {
+                      "label": "Facial Treatments",
+                      "value": "facial"
+                    },
+                    {
+                      "label": "Massage Therapy",
+                      "value": "massage"
+                    },
+                    {
+                      "label": "Manicure & Pedicure",
+                      "value": "nails"
+                    },
+                    {
+                      "label": "Other",
+                      "value": "other"
+                    }
+                  ],
+                  "required": true
+                },
+                {
+                  "uuid": "854d46fc-d884-44a6-ac98-0cc122614b98",
+                  "componentType": "DateTimeFieldProps",
+                  "name": "dateTimePreference",
+                  "label": "Preferred Date & Time",
+                  "pickerType": "datetimeLocal",
+                  "required": false
+                },
+                {
+                  "uuid": "c2b36c62-d93a-4900-94c0-e30f5dc2dc1e",
+                  "componentType": "TextAreaFieldProps",
+                  "name": "message",
+                  "label": "Your Message",
+                  "placeholder": "Tell us about your needs or questions...",
+                  "rows": 5,
+                  "required": true
+                }
+              ],
+              "actions": [
+                {
+                  "uuid": "730ea3c5-f657-4361-9ac2-446dce533ecf",
+                  "componentType": "ButtonProps",
+                  "text": "Submit Request",
+                  "actionType": "submit",
+                  "variant": "default",
+                  "classes": "bg-[#C79A9A] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "submit_contact_form",
+                "successMessage": "Your message has been sent successfully! We will get back to you soon.",
+                "errorMessage": "There was an error sending your message. Please try again later.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "820174b5-b0b1-4e14-ad0a-10045b67aef0",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-[#EAE0E3]",
+          "content": [
+            {
+              "uuid": "12c206d2-f1c7-4105-b593-e47365a75146",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "How to Reach Us",
+              "classes": "text-4xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "4aa9ea6b-6171-41c4-9b1c-c7621bc36787",
+              "componentType": "TextProps",
+              "content": "Our beauty center is conveniently located in the heart of New York City, easily accessible by public transport and car.",
+              "classes": "text-xl text-gray-700 mb-6 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "de0c03fe-5ed1-49e4-954b-600b31338c8a",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "max-w-3xl mx-auto text-left",
+              "content": [
+                {
+                  "uuid": "fa6ca536-37da-43dc-9a8d-b93cb2ede0ac",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Public Transportation",
+                  "classes": "text-2xl font-semibold text-gray-800"
+                },
+                {
+                  "uuid": "875f9923-0772-47cd-97cf-3eac46394317",
+                  "componentType": "TextProps",
+                  "content": "Take the A, C, E, or 1, 2, 3 subway lines to Times Square-42nd Street. We are just a 5-minute walk from the station.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "uuid": "e7fddf52-e3ff-4c8f-b343-41e5b93d89cf",
+                  "componentType": "TextProps",
+                  "content": "Several bus routes stop nearby, including the M42 and M104. Check local schedules for the best route from your location.",
+                  "classes": "text-gray-700"
+                },
+                {
+                  "uuid": "a1e7c04c-3738-41b1-93eb-7ffd17148ff7",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Parking Information",
+                  "classes": "text-2xl font-semibold text-gray-800 mt-6"
+                },
+                {
+                  "uuid": "683b3c66-5222-4a41-af27-7c8e4d9b7a31",
+                  "componentType": "TextProps",
+                  "content": "Metered street parking is available on surrounding streets. There are also several parking garages within a two-block radius, such as the XYZ Parking Garage on 43rd Street.",
+                  "classes": "text-gray-700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e0a5c4d3-b2a1-4f9e-8c7d-6a5b4c3d2e1f",
+      "title": "Welcome to AAAAA",
+      "slug": "/",
+      "summary": "This page serves as the main entry point, welcoming visitors to the beauty center. It will present an overview of services, showcase client testimonials, and provide clear calls to action to explore further or book an appointment.",
+      "shortSummary": "The homepage introduces the beauty center, highlights services, and encourages booking.",
+      "lastUpdatedEpoch": 1715694240,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center",
+          "background": {
+            "image": {
+              "uuid": "ed39b644-ead2-4ff6-9cb8-089373733319",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/6188038/pexels-photo-6188038.jpeg",
+              "alt": "Luxurious beauty salon interior",
+              "asset": {
+                "uuid": "e8308dde-c4eb-4967-b0d6-ede961b88213",
+                "componentType": "ImageAssetProps",
+                "keywords": "beauty salon interior, spa lounge, luxurious, elegant, relaxing",
+                "isProcessed": false,
+                "requestedWidth": 1920,
+                "requestedHeight": 1080,
+                "provider": "Pexels",
+                "provider_img_id": "6188038",
+                "provider_img_url": "https://images.pexels.com/photos/6188038/pexels-photo-6188038.jpeg",
+                "datetime_generated": "2025-10-28T10:16:00.717255",
+                "is_processed": true,
+                "signature": "d7bb293b6a4b409f6e5332be7d3d445c"
+              }
+            },
+            "overlayColor": "rgba(0,0,0,0.4)"
+          },
+          "content": [
+            {
+              "uuid": "f46d3d38-b02b-43a3-833a-793f0c9eedc0",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Welcome to AAAAA Beauty: Your Sanctuary in New York",
+              "classes": "text-5xl font-bold text-white mb-4"
+            },
+            {
+              "uuid": "7604bdea-9c14-4f02-bbc7-37db5fbf5476",
+              "componentType": "TextProps",
+              "content": "Discover unparalleled beauty services designed to rejuvenate your body and soul. Experience luxury, expertise, and personalized care right here in the heart of New York.",
+              "classes": "text-xl text-white mb-8 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "d5349604-2ae9-4499-9054-ee6141a341ea",
+              "componentType": "ButtonProps",
+              "text": "Book Your Appointment Now",
+              "variant": "default",
+              "size": "lg",
+              "link": {
+                "uuid": "36652324-cb5e-4d80-9e9e-9e5a3e7cdee5",
+                "componentType": "LinkProps",
+                "href": "/contact",
+                "text": "Book Your Appointment Now"
+              },
+              "classes": "text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+            }
+          ]
+        },
+        {
+          "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567892",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-[#F8F0F3]",
+          "title": "Our Signature Services",
+          "content": [
+            {
+              "uuid": "49b239f9-4e6d-480b-af1f-8a544864d9d7",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Indulge in a World of Beauty and Wellness",
+              "classes": "text-4xl font-bold text-center mb-12"
+            },
+            {
+              "uuid": "431289c8-3c47-4f7b-b50a-8990cbf3ad5b",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "b6c5efce-cf4c-4380-b0d5-962fe93389b0",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "classes": "shadow-lg rounded-lg overflow-hidden text-center p-6 bg-white",
+                  "content": [
+                    {
+                      "uuid": "fee345a5-2c4e-45ba-abd5-c78c1c44ee31",
+                      "componentType": "ImageProps",
+                      "src": "https://images.pexels.com/photos/6663371/pexels-photo-6663371.jpeg",
+                      "alt": "Woman receiving a facial treatment",
+                      "classes": "w-full h-48 object-cover mb-4 rounded",
+                      "asset": {
+                        "uuid": "1f113bc3-e321-4f64-b624-4f8f98d62f19",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "facial, skincare, beauty treatment, spa",
+                        "isProcessed": false,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300,
+                        "provider": "Pexels",
+                        "provider_img_id": "6663371",
+                        "provider_img_url": "https://images.pexels.com/photos/6663371/pexels-photo-6663371.jpeg",
+                        "datetime_generated": "2025-10-28T10:16:01.421892",
+                        "is_processed": true,
+                        "signature": "9e3bb230629d9084afeefbedaaefb7de"
+                      }
+                    },
+                    {
+                      "uuid": "302541ca-0b63-46d8-b7a3-45922ff1d7d4",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Rejuvenating Facials",
+                      "classes": "text-2xl font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "3e0db82a-917f-4827-8e57-10f17600b762",
+                      "componentType": "TextProps",
+                      "content": "Experience custom-tailored facials designed to nourish, purify, and revitalize your skin, leaving you with a radiant glow.",
+                      "classes": "text-gray-700"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "5f45b55b-4d53-4785-b719-0c00b6ddff5a",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "classes": "shadow-lg rounded-lg overflow-hidden text-center p-6 bg-white",
+                  "content": [
+                    {
+                      "uuid": "239495c5-c41b-4fd7-b8c3-e1e1745e835b",
+                      "componentType": "ImageProps",
+                      "src": "https://images.pexels.com/photos/1242349/pexels-photo-1242349.jpeg",
+                      "alt": "Person receiving a relaxing massage",
+                      "classes": "w-full h-48 object-cover mb-4 rounded",
+                      "asset": {
+                        "uuid": "a335bab4-e179-4150-929c-a69e364eb5f4",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "massage, relaxation, spa, therapy",
+                        "isProcessed": false,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300,
+                        "provider": "Pexels",
+                        "provider_img_id": "1242349",
+                        "provider_img_url": "https://images.pexels.com/photos/1242349/pexels-photo-1242349.jpeg",
+                        "datetime_generated": "2025-10-28T10:16:02.624284",
+                        "is_processed": true,
+                        "signature": "39d9e6ba3e18115280e7d200e5e47499"
+                      }
+                    },
+                    {
+                      "uuid": "cc54316e-e253-45f2-9505-9a5ce427d04e",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Therapeutic Massages",
+                      "classes": "text-2xl font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "12e28bc7-d68c-4275-be9f-d73a8de5ca68",
+                      "componentType": "TextProps",
+                      "content": "Unwind and release tension with our range of therapeutic massages, promoting deep relaxation and well-being.",
+                      "classes": "text-gray-700"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "3edb6f7e-97ae-4038-9b87-4cfe077f12fe",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "classes": "shadow-lg rounded-lg overflow-hidden text-center p-6 bg-white",
+                  "content": [
+                    {
+                      "uuid": "896fa203-c769-42f3-954d-b2184c7b544b",
+                      "componentType": "ImageProps",
+                      "src": "https://images.pexels.com/photos/7755653/pexels-photo-7755653.jpeg",
+                      "alt": "Manicure and pedicure session",
+                      "classes": "w-full h-48 object-cover mb-4 rounded",
+                      "asset": {
+                        "uuid": "e35a4cc0-d255-4b10-a95a-58ab99941c9c",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "manicure, pedicure, nail care, beauty salon",
+                        "isProcessed": false,
+                        "requestedWidth": 400,
+                        "requestedHeight": 300,
+                        "provider": "Pexels",
+                        "provider_img_id": "7755653",
+                        "provider_img_url": "https://images.pexels.com/photos/7755653/pexels-photo-7755653.jpeg",
+                        "datetime_generated": "2025-10-28T10:16:03.457817",
+                        "is_processed": true,
+                        "signature": "1d4fcbf49fbee8b6bb2e59f440aaee32"
+                      }
+                    },
+                    {
+                      "uuid": "5917ba2e-54bd-41fa-91de-3abea58a48af",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Manicures & Pedicures",
+                      "classes": "text-2xl font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "112a34d5-c64b-4e48-b205-23e74836f7af",
+                      "componentType": "TextProps",
+                      "content": "Pamper your hands and feet with our luxurious manicures and pedicures, leaving them perfectly groomed and beautiful.",
+                      "classes": "text-gray-700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "3dcf58cd-1f31-47ac-87ec-4345d63fe6b1",
+              "componentType": "ButtonProps",
+              "text": "View All Services",
+              "variant": "outline",
+              "size": "lg",
+              "link": {
+                "uuid": "a689dd5d-3250-49d0-9039-725969a86afc",
+                "componentType": "LinkProps",
+                "href": "/services",
+                "text": "View All Services"
+              },
+              "classes": "mt-12 border-[#C79A9A] text-[#C79A9A] hover:bg-[#C79A9A] hover:text-white font-semibold py-3 px-8 rounded-full"
+            }
+          ]
+        },
+        {
+          "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567893",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 bg-white",
+          "title": "What Our Clients Say",
+          "content": [
+            {
+              "uuid": "6bfb6ec8-44e2-416f-9b45-2aec855eb5fb",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Hear From Our Happy Clients",
+              "classes": "text-4xl font-bold text-center mb-12"
+            },
+            {
+              "uuid": "97a510b2-ba18-401f-9843-3da4cf61ce86",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "8",
+              "classes": "max-w-4xl mx-auto",
+              "content": [
+                {
+                  "uuid": "5ad3e49d-1d7b-4aad-a336-ffcf6ca92b60",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "classes": "bg-[#EAE0E3] p-8 rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "be18e35c-64b7-4c82-91e2-d322e8552d17",
+                      "componentType": "TextProps",
+                      "content": "AAAAA Beauty is a true gem in New York! The facial I received was beyond amazing, and the staff were incredibly professional and attentive. I left feeling completely refreshed and my skin has never looked better.",
+                      "classes": "text-lg italic text-gray-800 mb-4"
+                    },
+                    {
+                      "uuid": "a21bde69-9b77-4f57-822f-e811dde2777c",
+                      "componentType": "FlexProps",
+                      "align": "center",
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "ffa626d8-0351-4002-9e86-0ab337d67b22",
+                          "componentType": "AvatarProps",
+                          "name": "Sarah L.",
+                          "size": 64,
+                          "image": {
+                            "uuid": "c26b7d73-8ee1-4eee-9db3-29b6001a3660",
+                            "componentType": "ImageProps",
+                            "src": "https://images.pexels.com/photos/12885861/pexels-photo-12885861.jpeg",
+                            "alt": "Portrait of Sarah L.",
+                            "asset": {
+                              "uuid": "ba28af84-fb17-48ab-af95-bb0fc0cac0ff",
+                              "componentType": "ImageAssetProps",
+                              "keywords": "portrait, woman, smiling, happy client",
+                              "isProcessed": false,
+                              "requestedWidth": 100,
+                              "requestedHeight": 100,
+                              "provider": "Pexels",
+                              "provider_img_id": "12885861",
+                              "provider_img_url": "https://images.pexels.com/photos/12885861/pexels-photo-12885861.jpeg",
+                              "datetime_generated": "2025-10-28T10:16:04.965497",
+                              "is_processed": true,
+                              "signature": "9a0d090c952f80244f906aaaa5c37129"
+                            }
+                          }
+                        },
+                        {
+                          "uuid": "809d1704-1b60-426c-8784-708fa11d1be2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "content": [
+                            {
+                              "uuid": "e1e4aa98-2b09-4462-9815-4067fb42c54c",
+                              "componentType": "TextProps",
+                              "content": "Sarah L.",
+                              "classes": "font-bold text-gray-900"
+                            },
+                            {
+                              "uuid": "5086fc65-7fdd-485b-9b26-5819d41f2956",
+                              "componentType": "TextProps",
+                              "content": "Satisfied Client",
+                              "classes": "text-sm text-gray-600"
+                            },
+                            {
+                              "uuid": "1db99231-036d-4462-80ab-8ebe25e9c022",
+                              "componentType": "TextProps",
+                              "content": "\u2605\u2605\u2605\u2605\u2605",
+                              "classes": "text-yellow-500 text-lg"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "45353a50-33fa-4ae0-a2d2-fe0f83dbbd17",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "classes": "bg-[#EAE0E3] p-8 rounded-lg shadow-md",
+                  "content": [
+                    {
+                      "uuid": "5e7bb714-af72-49b5-94e1-6d78436baf4a",
+                      "componentType": "TextProps",
+                      "content": "I've tried many beauty centers, but AAAAA Beauty stands out. Their massage therapy is exceptional, and the ambiance is so calming. It's my go-to place for relaxation and pampering.",
+                      "classes": "text-lg italic text-gray-800 mb-4"
+                    },
+                    {
+                      "uuid": "b86f602a-0332-4ce6-8882-2157ca7ff324",
+                      "componentType": "FlexProps",
+                      "align": "center",
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "35e7269a-f117-47b7-a61f-b68752b3ec14",
+                          "componentType": "AvatarProps",
+                          "name": "Jessica P.",
+                          "size": 64,
+                          "image": {
+                            "uuid": "0b827316-6097-44d2-a353-82391a1ad418",
+                            "componentType": "ImageProps",
+                            "src": "https://images.pexels.com/photos/3801426/pexels-photo-3801426.jpeg",
+                            "alt": "Portrait of Jessica P.",
+                            "asset": {
+                              "uuid": "2d014498-ca01-4f56-b151-3bb0069085df",
+                              "componentType": "ImageAssetProps",
+                              "keywords": "portrait, woman, happy, customer",
+                              "isProcessed": false,
+                              "requestedWidth": 100,
+                              "requestedHeight": 100,
+                              "provider": "Pexels",
+                              "provider_img_id": "3801426",
+                              "provider_img_url": "https://images.pexels.com/photos/3801426/pexels-photo-3801426.jpeg",
+                              "datetime_generated": "2025-10-28T10:16:05.760115",
+                              "is_processed": true,
+                              "signature": "e311cdc28f49f2ccea6a1c2f212e3982"
+                            }
+                          }
+                        },
+                        {
+                          "uuid": "2cc95242-ead9-4ce7-a5df-72cec9222e7a",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "content": [
+                            {
+                              "uuid": "84a9b8c0-0503-43cf-84b1-875d749d2c8c",
+                              "componentType": "TextProps",
+                              "content": "Jessica P.",
+                              "classes": "font-bold text-gray-900"
+                            },
+                            {
+                              "uuid": "167e03e1-8f52-4a7e-be42-762f15274e3c",
+                              "componentType": "TextProps",
+                              "content": "Regular Customer",
+                              "classes": "text-sm text-gray-600"
+                            },
+                            {
+                              "uuid": "5aa46d46-0131-4c73-bd5e-b95902d5b016",
+                              "componentType": "TextProps",
+                              "content": "\u2605\u2605\u2605\u2605\u2605",
+                              "classes": "text-yellow-500 text-lg"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567894",
+          "componentType": "SectionProps",
+          "layout": "twoColumnEven",
+          "classes": "py-16 bg-[#F8F0F3]",
+          "content": [
+            {
+              "uuid": "b47f3b04-7caa-4536-bb88-bdcb503e04b1",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "0c7dfda2-4954-4599-b28d-b8237789f1d5",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Our Philosophy: Beauty, Wellness, and Confidence",
+                  "classes": "text-4xl font-bold text-gray-800"
+                },
+                {
+                  "uuid": "1a83ebf6-f358-4b72-9551-f0412e4cb4a4",
+                  "componentType": "TextProps",
+                  "content": "At AAAAA Beauty, we believe true beauty radiates from within. Our mission is to provide a serene escape where you can rejuvenate your senses, enhance your natural beauty, and boost your confidence. With a team of highly skilled professionals and a commitment to using premium products, we offer an experience that goes beyond skin deep. Discover our passion for perfection and personalized care that sets us apart.",
+                  "classes": "text-lg text-gray-700 leading-relaxed"
+                },
+                {
+                  "uuid": "b131d466-742d-4c42-9376-a1dff9d07623",
+                  "componentType": "ButtonProps",
+                  "text": "Learn More About Us",
+                  "variant": "default",
+                  "size": "lg",
+                  "link": {
+                    "uuid": "9151e007-aad1-4c89-b19e-e93ce9611800",
+                    "componentType": "LinkProps",
+                    "href": "/about",
+                    "text": "Learn More About Us"
+                  },
+                  "classes": "bg-[#000] hover:bg-[#8C6C6C] text-white font-semibold py-3 px-8 rounded-full shadow-lg self-start"
+                }
+              ]
+            },
+            {
+              "uuid": "277b0419-4680-4cff-943d-4d4da6a4ef0d",
+              "componentType": "ImageProps",
+              "src": "https://images.pexels.com/photos/2684062/pexels-photo-2684062.jpeg",
+              "alt": "Elegant entrance of AAAAA Beauty Center",
+              "classes": "rounded-lg shadow-xl",
+              "asset": {
+                "uuid": "55c64a3a-ed41-4bc9-b055-8f57fc13577d",
+                "componentType": "ImageAssetProps",
+                "keywords": "beauty center, spa entrance, elegant, modern, welcoming",
+                "isProcessed": false,
+                "requestedWidth": 600,
+                "requestedHeight": 400,
+                "provider": "Pexels",
+                "provider_img_id": "2684062",
+                "provider_img_url": "https://images.pexels.com/photos/2684062/pexels-photo-2684062.jpeg",
+                "datetime_generated": "2025-10-28T10:16:06.574258",
+                "is_processed": true,
+                "signature": "067b064b58b4d94d2aa2554eb44c8c57"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567895",
+          "componentType": "SectionProps",
+          "layout": "singleColumnCentered",
+          "classes": "py-16 text-center bg-[#EAE0E3]",
+          "content": [
+            {
+              "uuid": "5dc1424c-7406-4173-8482-6d87a3987927",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Ready for Your Transformation?",
+              "classes": "text-4xl font-bold text-gray-800 mb-4"
+            },
+            {
+              "uuid": "06145f0c-c505-47ba-8195-763da64f68f4",
+              "componentType": "TextProps",
+              "content": "Explore our full range of services or get in touch with our friendly team to schedule your personalized beauty experience.",
+              "classes": "text-xl text-gray-700 mb-8 max-w-2xl mx-auto"
+            },
+            {
+              "uuid": "14fc923e-6b9d-400b-aae3-f8900a345b6e",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "4",
+              "justify": "center",
+              "content": [
+                {
+                  "uuid": "5ca0835f-53c7-4a58-9c98-ffb9a36c625b",
+                  "componentType": "ButtonProps",
+                  "text": "Explore Services",
+                  "variant": "default",
+                  "size": "lg",
+                  "link": {
+                    "uuid": "78ed7b1d-7ae9-4881-93cf-609db72b7af1",
+                    "componentType": "LinkProps",
+                    "href": "/services",
+                    "text": "Explore Services"
+                  },
+                  "classes": "text-white font-semibold py-3 px-8 rounded-full shadow-lg"
+                },
+                {
+                  "uuid": "0acfb525-dffa-43da-8783-0afbfc2878b3",
+                  "componentType": "ButtonProps",
+                  "text": "Contact Us",
+                  "variant": "outline",
+                  "size": "lg",
+                  "link": {
+                    "uuid": "ac026d61-4688-4033-984e-39711f42fa1e",
+                    "componentType": "LinkProps",
+                    "href": "/contact",
+                    "text": "Contact Us"
+                  },
+                  "classes": "border-[#C79A9A] text-[#C79A9A] hover:bg-[#C79A9A] hover:text-white font-semibold py-3 px-8 rounded-full"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

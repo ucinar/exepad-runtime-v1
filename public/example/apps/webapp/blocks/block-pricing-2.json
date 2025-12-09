@@ -1,0 +1,313 @@
+{
+  "uuid": "a9d8b1c1-b8e8-4f8a-9a3b-9e4e6d3f2a1b",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "SaaS Pricing Page",
+  "alias": "saas-pricing-page",
+  "summary": "Advanced pricing display with detailed plan features and enhanced visual hierarchy. Features pricing cards, feature comparisons, billing toggle, and prominent upgrade options. Perfect for SaaS and subscription businesses.",
+  "shortSummary": "Advanced pricing display with detailed plan features and enhanced visual hierarchy",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "p1a2b3c4-d5e6-f7g8-h9i0-j1k2l3m4n5o6",
+      "title": "Pricing",
+      "slug": "/pricing",
+      "summary": "Page displaying the product pricing.",
+      "content": [
+        {
+          "uuid": "sec-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "sec-001",
+          "classes": "bg-white p-8 sm:p-12 md:p-16 rounded-xl shadow-sm",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "grid-main-001",
+              "componentType": "GridProps",
+              "columns": 1,
+              "gap": "8",
+              "classes": "md:grid-cols-3",
+              "content": [
+                {
+                  "uuid": "flex-left-col-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "md:col-span-2",
+                  "content": [
+                    {
+                      "uuid": "heading-title-001",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Pricing built for all businesses.",
+                      "classes": "text-3xl font-bold"
+                    },
+                    {
+                      "uuid": "text-subtitle-001",
+                      "componentType": "TextProps",
+                      "content": "Best for large scale uses and extended redistribution rights.",
+                      "classes": "text-lg text-gray-600"
+                    },
+                    {
+                      "uuid": "grid-features-001",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "3",
+                      "classes": "pt-4 justify-items-start",
+                      "content": [
+                        {
+                          "uuid": "feat-01",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-01-text",
+                            "componentType": "TextProps",
+                            "content": "A/B Testing"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-02",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-02-text",
+                            "componentType": "TextProps",
+                            "content": "Customer Builder"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-03",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-03-text",
+                            "componentType": "TextProps",
+                            "content": "Advanced Tools"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-04",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-04-text",
+                            "componentType": "TextProps",
+                            "content": "24/7 Chat Support"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-05",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-05-text",
+                            "componentType": "TextProps",
+                            "content": "Marketing CRM"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-06",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-06-text",
+                            "componentType": "TextProps",
+                            "content": "Multivariate Testing"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-07",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-07-text",
+                            "componentType": "TextProps",
+                            "content": "Custom Branding"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-08",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-08-text",
+                            "componentType": "TextProps",
+                            "content": "Custom Templates"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-09",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-09-text",
+                            "componentType": "TextProps",
+                            "content": "Reporting"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-10",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-10-text",
+                            "componentType": "TextProps",
+                            "content": "Creative Assistant"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-11",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-11-text",
+                            "componentType": "TextProps",
+                            "content": "Creative Assistant"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-12",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-12-text",
+                            "componentType": "TextProps",
+                            "content": "Custom Templates"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-13",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-13-text",
+                            "componentType": "TextProps",
+                            "content": "Website Builder"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-14",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-14-text",
+                            "componentType": "TextProps",
+                            "content": "Multivariate Testing"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "feat-15",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "feat-15-text",
+                            "componentType": "TextProps",
+                            "content": "Dynamic Content"
+                          },
+                          "checked": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-right-col-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "md:col-span-1 p-8",
+                  "content": [
+                    {
+                      "uuid": "heading-price-001",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "$99",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "text-period-001",
+                      "componentType": "TextProps",
+                      "content": "per month",
+                      "classes": "text-md text-gray-500"
+                    },
+                    {
+                      "uuid": "btn-buy-now-001",
+                      "componentType": "ButtonProps",
+                      "text": "Buy now",
+                      "variant": "default",
+                      "size": "lg",
+                      "classes": "w-full bg-blue-600 hover:bg-blue-700 text-white",
+                      "onClick": "handleBuyNow",
+                      "disabled": false,
+                      "type": "button"
+                    },
+                    {
+                      "uuid": "link-team-pricing-001",
+                      "componentType": "LinkProps",
+                      "text": "View team pricing",
+                      "href": "/team-pricing",
+                      "classes": "text-blue-600 font-semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Page displaying the product pricing",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

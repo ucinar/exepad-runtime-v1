@@ -1,0 +1,460 @@
+{
+  "uuid": "skeleton-004-corporate-enterprise",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Corporate Enterprise Skeleton",
+  "alias": "corporate-enterprise-skeleton",
+  "summary": "Header: Sticky default navbar with bold uppercase logo (NEXUS CORP, blue primary), scale hover animations (250ms), dual business dropdowns (Solutions: Enterprise/Cloud/Consulting, Industries: Financial/Healthcare/Manufacturing), regular links (Resources, About), default Contact Sales CTA button. Footer: Dark professional layout (slate-900) with brand section + 5-column mega-grid (Solutions, Industries, Company, Investors with Financial Reports/Governance/Events, Legal including Privacy/Terms/Compliance), horizontal divider with enhanced spacing (my-12), bottom bar with NYSE ticker symbol in copyright and professional social links (LinkedIn, Twitter, YouTube), improved vertical rhythm (pb-12, pt-4).",
+  "shortSummary": "Corporate skeleton with traditional navbar and enterprise footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#1e293b",
+      "primary": "#1e40af",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f8fafc",
+      "secondary-foreground": "#1e293b",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#dbeafe",
+      "accent-foreground": "#1e40af",
+      "destructive": "#b91c1c",
+      "destructive-foreground": "#ffffff",
+      "border": "#cbd5e1",
+      "input": "#e2e8f0",
+      "ring": "#1e40af"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f1f5f9",
+      "primary": "#3b82f6",
+      "primary-foreground": "#ffffff",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f1f5f9",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e3a8a",
+      "accent-foreground": "#dbeafe",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f1f5f9",
+      "border": "#334155",
+      "input": "#1e293b",
+      "ring": "#3b82f6"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-corporate-navbar-004",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-corporate-004",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "NEXUS CORP",
+        "classes": "text-xl font-bold tracking-tight text-primary"
+      },
+      "content": [
+        {
+          "uuid": "menu-dropdown-solutions-004",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Solutions",
+          "dropdown": {
+            "uuid": "dropdown-solutions-004",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-enterprise-004",
+                "componentType": "DropdownLink",
+                "title": "Enterprise Solutions",
+                "href": "/solutions/enterprise"
+              },
+              {
+                "uuid": "dropdown-cloud-004",
+                "componentType": "DropdownLink",
+                "title": "Cloud Services",
+                "href": "/solutions/cloud"
+              },
+              {
+                "uuid": "dropdown-consulting-004",
+                "componentType": "DropdownLink",
+                "title": "Consulting",
+                "href": "/solutions/consulting"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-dropdown-industries-004",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Industries",
+          "dropdown": {
+            "uuid": "dropdown-industries-004",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-financial-004",
+                "componentType": "DropdownLink",
+                "title": "Financial Services",
+                "href": "/industries/financial"
+              },
+              {
+                "uuid": "dropdown-healthcare-004",
+                "componentType": "DropdownLink",
+                "title": "Healthcare",
+                "href": "/industries/healthcare"
+              },
+              {
+                "uuid": "dropdown-manufacturing-004",
+                "componentType": "DropdownLink",
+                "title": "Manufacturing",
+                "href": "/industries/manufacturing"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-item-resources-004",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Resources",
+          "href": {
+            "uuid": "link-resources-004",
+            "componentType": "LinkProps",
+            "href": "/resources",
+            "text": "Resources"
+          }
+        },
+        {
+          "uuid": "menu-item-about-004",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "link-about-004",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "uuid": "menu-button-contact-004",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-contact-004",
+            "componentType": "ButtonProps",
+            "text": "Contact Sales",
+            "variant": "default",
+            "link": {
+              "uuid": "link-contact-sales-004",
+              "componentType": "LinkProps",
+              "href": "/contact-sales",
+              "text": "Contact Sales"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-corporate-004",
+      "componentType": "SectionProps",
+      "classes": "py-16 px-8 bg-slate-900 text-slate-100",
+      "layout": "singleColumnCentered",
+      "spacing": "lg",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-top-section-004",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start w-full flex-wrap gap-8 pb-12",
+          "content": [
+            {
+              "uuid": "footer-brand-004",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "max-w-xs",
+              "content": [
+                {
+                  "uuid": "footer-logo-004",
+                  "componentType": "TextProps",
+                  "content": "NEXUS CORP",
+                  "classes": "text-2xl font-bold tracking-tight"
+                },
+                {
+                  "uuid": "footer-tagline-004",
+                  "componentType": "TextProps",
+                  "content": "Empowering enterprises with innovative technology solutions since 1995.",
+                  "classes": "text-sm text-slate-400"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-links-grid-004",
+              "componentType": "GridProps",
+              "columns": 5,
+              "gap": "8",
+              "classes": "flex-1",
+              "content": [
+                {
+                  "uuid": "footer-col-solutions-004",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-solutions-004",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Solutions",
+                      "classes": "text-sm font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-enterprise-004",
+                      "componentType": "LinkProps",
+                      "text": "Enterprise",
+                      "href": "/solutions/enterprise",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-cloud-004",
+                      "componentType": "LinkProps",
+                      "text": "Cloud Services",
+                      "href": "/solutions/cloud",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-security-004",
+                      "componentType": "LinkProps",
+                      "text": "Security",
+                      "href": "/solutions/security",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-industries-004",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-industries-004",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Industries",
+                      "classes": "text-sm font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-financial-004",
+                      "componentType": "LinkProps",
+                      "text": "Financial",
+                      "href": "/industries/financial",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-healthcare-004",
+                      "componentType": "LinkProps",
+                      "text": "Healthcare",
+                      "href": "/industries/healthcare",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-manufacturing-004",
+                      "componentType": "LinkProps",
+                      "text": "Manufacturing",
+                      "href": "/industries/manufacturing",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-company-004",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-company-004",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Company",
+                      "classes": "text-sm font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-about-004",
+                      "componentType": "LinkProps",
+                      "text": "About Us",
+                      "href": "/about",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-leadership-004",
+                      "componentType": "LinkProps",
+                      "text": "Leadership",
+                      "href": "/leadership",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-careers-004",
+                      "componentType": "LinkProps",
+                      "text": "Careers",
+                      "href": "/careers",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-newsroom-004",
+                      "componentType": "LinkProps",
+                      "text": "Newsroom",
+                      "href": "/news",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-investors-004",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-investors-004",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Investors",
+                      "classes": "text-sm font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-reports-004",
+                      "componentType": "LinkProps",
+                      "text": "Financial Reports",
+                      "href": "/investors/reports",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-governance-004",
+                      "componentType": "LinkProps",
+                      "text": "Governance",
+                      "href": "/investors/governance",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-events-004",
+                      "componentType": "LinkProps",
+                      "text": "Events",
+                      "href": "/investors/events",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-legal-004",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-legal-004",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Legal",
+                      "classes": "text-sm font-semibold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-privacy-004",
+                      "componentType": "LinkProps",
+                      "text": "Privacy Policy",
+                      "href": "/privacy",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-terms-004",
+                      "componentType": "LinkProps",
+                      "text": "Terms of Service",
+                      "href": "/terms",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    },
+                    {
+                      "uuid": "footer-link-compliance-004",
+                      "componentType": "LinkProps",
+                      "text": "Compliance",
+                      "href": "/compliance",
+                      "classes": "text-sm text-slate-400 hover:text-white"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-004",
+          "componentType": "SpacerProps",
+          "classes": "my-12 border-t border-slate-700",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-004",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full pt-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-004",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 Nexus Corporation. All rights reserved. NYSE: NXS",
+              "classes": "text-sm text-slate-400"
+            },
+            {
+              "uuid": "footer-social-004",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "social-linkedin-004",
+                  "componentType": "SocialLinkProps",
+                  "platform": "linkedin",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-twitter-004",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-youtube-004",
+                  "componentType": "SocialLinkProps",
+                  "platform": "youtube",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

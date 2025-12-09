@@ -1,0 +1,1232 @@
+{
+  "uuid": "app-website-restaurant-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "La Maison - Fine Dining Restaurant",
+  "alias": "la-maison-restaurant",
+  "summary": "An elegant fine dining restaurant website featuring menu showcase, online reservations, chef profiles, and ambiance gallery. Demonstrates sophisticated design with rich imagery, seasonal menus, testimonials, and integrated booking system. Perfect for upscale restaurants, bistros, and culinary establishments.",
+  "shortSummary": "An elegant fine dining restaurant website with menu and reservations",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#fafaf9",
+      "foreground": "#1c1917",
+      "primary": "#a16207",
+      "primary-foreground": "#ffffff",
+      "secondary": "#fef3c7",
+      "secondary-foreground": "#78350f",
+      "muted": "#fafaf9",
+      "muted-foreground": "#78716c",
+      "accent": "#fef3c7",
+      "accent-foreground": "#92400e",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e7e5e4",
+      "input": "#e7e5e4",
+      "ring": "#d97706"
+    },
+    "dark": {
+      "background": "#1c1917",
+      "foreground": "#fafaf9",
+      "primary": "#fbbf24",
+      "primary-foreground": "#78350f",
+      "secondary": "#292524",
+      "secondary-foreground": "#fafaf9",
+      "muted": "#292524",
+      "muted-foreground": "#a8a29e",
+      "accent": "#44403c",
+      "accent-foreground": "#fef3c7",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#292524",
+      "input": "#292524",
+      "ring": "#fbbf24"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b sticky top-0 bg-background/95 backdrop-blur-sm z-50",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "La Maison",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "La Maison"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Menu",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/menu",
+                "text": "Menu"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/about",
+                "text": "About"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Reservations",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/reservations",
+                "text": "Reservations"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Contact",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/contact",
+                "text": "Contact"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            },
+            {
+              "type": "button",
+              "componentType": "MenuButtonItemProps",
+              "uuid": "menu-item-cta",
+              "button": {
+                "componentType": "ButtonProps",
+                "uuid": "menu-cta-button",
+                "text": "Book a Table",
+                "variant": "default"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50 mt-20",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-container",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-grid",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "w-full max-w-6xl",
+              "content": [
+                {
+                  "uuid": "footer-about",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-logo",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "La Maison"
+                    },
+                    {
+                      "uuid": "footer-tagline",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "French-inspired cuisine with a modern twist. A culinary journey through the finest flavors.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-hours",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-hours-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Hours"
+                    },
+                    {
+                      "uuid": "footer-hours-text-1",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "Tue-Thu: 5:00 PM - 10:00 PM",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "footer-hours-text-2",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "Fri-Sat: 5:00 PM - 11:00 PM",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "footer-hours-text-3",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "Sun-Mon: Closed",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-contact",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-contact-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Contact"
+                    },
+                    {
+                      "uuid": "footer-phone",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "(555) 123-4567",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "footer-address",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "123 Culinary Lane, San Francisco, CA 94105",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-bottom",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-copyright",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 La Maison. All rights reserved.",
+              "classes": "text-muted-foreground text-center mt-8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "La Maison - Fine Dining in San Francisco",
+      "slug": "/",
+      "summary": "Experience exquisite French-inspired cuisine in an elegant setting. Award-winning chef, seasonal ingredients, unforgettable dining.",
+      "shortSummary": "Exquisite French-inspired fine dining",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "layout": "twoColumnSidebarRight",
+          "spacing": "xl",
+          "classes": "min-h-[85vh] flex items-center bg-gradient-to-br from-primary/10 via-accent/10 to-background",
+          "content": [
+            {
+              "uuid": "hero-content-left",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "justify": "center",
+              "gap": "6",
+              "classes": "h-full pr-8",
+              "content": [
+                {
+                  "uuid": "hero-heading",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "A Culinary Journey",
+                  "classes": "text-6xl font-bold tracking-tight"
+                },
+                {
+                  "uuid": "hero-description",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Experience the artistry of French-inspired cuisine in an intimate setting. Seasonal ingredients, impeccable service, unforgettable moments.",
+                  "classes": "text-muted-foreground text-xl max-w-2xl"
+                },
+                {
+                  "uuid": "hero-cta",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "4",
+                  "classes": "mt-2",
+                  "content": [
+                    {
+                      "uuid": "hero-cta-reserve",
+                      "componentType": "ButtonProps",
+                      "text": "Reserve Your Table",
+                      "variant": "default",
+                      "size": "lg",
+                      "classes": "px-8"
+                    },
+                    {
+                      "uuid": "hero-cta-menu",
+                      "componentType": "ButtonProps",
+                      "text": "View Menu",
+                      "variant": "outline",
+                      "size": "lg",
+                      "classes": "px-8"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "hero-image-right",
+              "componentType": "FlexProps",
+              "justify": "center",
+              "align": "center",
+              "classes": "h-full",
+              "content": [
+                {
+                  "uuid": "hero-image",
+                  "componentType": "ImageProps",
+                  "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1000&auto=format&fit=crop",
+                  "alt": "Elegant fine dining restaurant interior with beautifully plated dishes",
+                  "classes": "rounded-lg shadow-2xl object-cover w-full h-[600px]",
+                  "asset": {
+                    "componentType": "ImageAssetProps",
+                    "uuid": "hero-image-asset",
+                    "keywords": "restaurant, fine dining, elegant, interior, plated dishes",
+                    "isProcessed": true,
+                    "requestedWidth": 800,
+                    "requestedHeight": 600
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-intro",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "intro-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "intro-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "intro-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Where Tradition Meets Innovation"
+                    },
+                    {
+                      "uuid": "intro-text",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Chef Jean-Pierre Laurent brings over 20 years of Michelin-starred experience to create a menu that honors classic French techniques while celebrating California's finest seasonal ingredients.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-menu-preview",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-menu-preview",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "menu-preview-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "menu-preview-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "12",
+                  "classes": "w-full max-w-6xl",
+                  "content": [
+                    {
+                      "uuid": "menu-preview-header",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "align": "center",
+                      "classes": "text-center",
+                      "content": [
+                        {
+                          "uuid": "menu-preview-heading",
+                          "componentType": "HeadingProps",
+                          "level": 2,
+                          "text": "Seasonal Tasting Menu"
+                        },
+                        {
+                          "uuid": "menu-preview-description",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "Six courses celebrating winter's finest ingredients",
+                          "classes": "text-muted-foreground"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "menu-preview-items",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "6",
+                      "classes": "max-w-3xl mx-auto w-full",
+                      "content": [
+                        {
+                          "uuid": "menu-item-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "2",
+                          "classes": "border-b pb-6",
+                          "content": [
+                            {
+                              "uuid": "menu-item-1-header",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "baseline",
+                              "content": [
+                                {
+                                  "uuid": "menu-item-1-name",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "Amuse-Bouche"
+                                },
+                                {
+                                  "uuid": "menu-item-1-course",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "First Course",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "menu-item-1-description",
+                              "componentType": "TextProps",
+                              "content": "Butternut squash velouté with truffle oil and crispy sage",
+                              "classes": "text-muted-foreground italic"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "menu-item-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "2",
+                          "classes": "border-b pb-6",
+                          "content": [
+                            {
+                              "uuid": "menu-item-2-header",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "baseline",
+                              "content": [
+                                {
+                                  "uuid": "menu-item-2-name",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "Hokkaido Scallops"
+                                },
+                                {
+                                  "uuid": "menu-item-2-course",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Seafood",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "menu-item-2-description",
+                              "componentType": "TextProps",
+                              "content": "Pan-seared scallops with cauliflower purée, caviar, and citrus beurre blanc",
+                              "classes": "text-muted-foreground italic"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "menu-item-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "2",
+                          "classes": "border-b pb-6",
+                          "content": [
+                            {
+                              "uuid": "menu-item-3-header",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "baseline",
+                              "content": [
+                                {
+                                  "uuid": "menu-item-3-name",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "Duck Breast"
+                                },
+                                {
+                                  "uuid": "menu-item-3-course",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Main Course",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "menu-item-3-description",
+                              "componentType": "TextProps",
+                              "content": "Roasted duck breast with cherry gastrique, fondant potato, and seasonal vegetables",
+                              "classes": "text-muted-foreground italic"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "menu-item-4",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "menu-item-4-header",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "baseline",
+                              "content": [
+                                {
+                                  "uuid": "menu-item-4-name",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "Chocolate Soufflé"
+                                },
+                                {
+                                  "uuid": "menu-item-4-course",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Dessert",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "menu-item-4-description",
+                              "componentType": "TextProps",
+                              "content": "Dark chocolate soufflé with vanilla bean ice cream and raspberry coulis",
+                              "classes": "text-muted-foreground italic"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "menu-preview-footer",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "3",
+                      "align": "center",
+                      "classes": "text-center mt-6",
+                      "content": [
+                        {
+                          "uuid": "menu-preview-price",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "$125 per person",
+                          "classes": "font-semibold"
+                        },
+                        {
+                          "uuid": "menu-preview-cta",
+                          "componentType": "LinkProps",
+                          "href": "/menu",
+                          "text": "View Full Menu →",
+                          "classes": "text-primary font-medium"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-experience",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-experience",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "experience-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "experience-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "12",
+                  "classes": "w-full max-w-6xl",
+                  "content": [
+                    {
+                      "uuid": "experience-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "The La Maison Experience",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "experience-grid",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "8",
+                      "content": [
+                        {
+                          "uuid": "experience-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "align": "center",
+                          "classes": "text-center",
+                          "content": [
+                            {
+                              "uuid": "experience-1-icon",
+                              "componentType": "IconProps",
+                              "name": "chef-hat",
+                              "size": 48,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "experience-1-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Michelin-Star Chef"
+                            },
+                            {
+                              "uuid": "experience-1-description",
+                              "componentType": "TextProps",
+                              "content": "Chef Jean-Pierre Laurent's 20+ years of culinary excellence from Paris to San Francisco.",
+                              "classes": "text-muted-foreground"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "experience-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "align": "center",
+                          "classes": "text-center",
+                          "content": [
+                            {
+                              "uuid": "experience-2-icon",
+                              "componentType": "IconProps",
+                              "name": "leaf",
+                              "size": 48,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "experience-2-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Seasonal Ingredients"
+                            },
+                            {
+                              "uuid": "experience-2-description",
+                              "componentType": "TextProps",
+                              "content": "Farm-to-table freshness with ingredients sourced from local California farms.",
+                              "classes": "text-muted-foreground"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "experience-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "align": "center",
+                          "classes": "text-center",
+                          "content": [
+                            {
+                              "uuid": "experience-3-icon",
+                              "componentType": "IconProps",
+                              "name": "wine",
+                              "size": 48,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "experience-3-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Wine Pairings"
+                            },
+                            {
+                              "uuid": "experience-3-description",
+                              "componentType": "TextProps",
+                              "content": "Curated wine list featuring rare vintages and perfect pairings for every dish.",
+                              "classes": "text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-cta",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-cta",
+          "spacing": "xl",
+          "classes": "bg-primary text-primary-foreground",
+          "content": [
+            {
+              "uuid": "cta-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "cta-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "cta-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Ready for an Unforgettable Evening?",
+                      "classes": "text-4xl font-bold text-primary-foreground"
+                    },
+                    {
+                      "uuid": "cta-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Reserve your table today and experience the finest French-inspired cuisine in San Francisco.",
+                      "classes": "text-primary-foreground"
+                    },
+                    {
+                      "uuid": "cta-reserve-button",
+                      "componentType": "ButtonProps",
+                      "text": "Make a Reservation",
+                      "variant": "secondary",
+                      "classes": "text-lg px-8 py-6"
+                    },
+                    {
+                      "uuid": "cta-note",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "Reservations recommended • Dress code: Smart casual",
+                      "classes": "text-primary-foreground/80"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "66ff2055-ff16-4a57-8e5f-73c4949b970c",
+      "title": "Our Menu",
+      "slug": "/menu",
+      "summary": "Explore our exquisite French-inspired cuisine featuring seasonal ingredients and artful presentation.",
+      "shortSummary": "Explore our exquisite French-inspired cuisine featuring seasonal ingredients and artful presentation",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "6decd7c1-aed1-44d4-8dde-fc467812bc5a",
+          "componentType": "SectionProps",
+          "sectionSlug": "6decd7c1-aed1-44d4-8dde-fc467812bc5a",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "5cb01d19-ac5a-446a-ac96-d73d0e94d8b8",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "b956d0f0-8541-4df0-acda-68716757ca92",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "28ad2b4d-c08f-4631-8f91-1b827d3612de",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Our Menu",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "fedfe0b3-2570-4921-8e16-232fb79fc39a",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Explore our exquisite French-inspired cuisine featuring seasonal ingredients and artful presentation.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "d9ba72c3-4a98-4927-be38-a5483d627550",
+          "componentType": "SectionProps",
+          "sectionSlug": "d9ba72c3-4a98-4927-be38-a5483d627550",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "5d78bb2e-3094-4978-985c-afbf58b8e062",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "a00e8f8e-a26d-4e49-b8d3-576562624e65",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "2fa7d9bd-01e6-45de-a7d4-4849e8464372",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "f35b6187-9dbf-4492-8159-d76f93295470",
+      "title": "About La Maison",
+      "slug": "/about",
+      "summary": "Discover the story behind La Maison and our commitment to culinary excellence and exceptional service.",
+      "shortSummary": "Discover the story behind La Maison and our commitment to culinary excellence and exceptional servic",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "752332e0-8121-46e3-8cd5-c33f9f496208",
+          "componentType": "SectionProps",
+          "sectionSlug": "752332e0-8121-46e3-8cd5-c33f9f496208",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "8733fac3-94c1-41c6-ba51-ca4f30181201",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "015c9b19-d5c8-43d9-aa23-4e84cc28d2ab",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "98cb13f2-ee1c-47cf-8f13-fa237498beb5",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "About La Maison",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "d4774ea2-76dc-4931-bd7c-52b58564fc39",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Discover the story behind La Maison and our commitment to culinary excellence and exceptional service.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "cf24781e-68a4-494b-8cd9-866ed1e9013b",
+          "componentType": "SectionProps",
+          "sectionSlug": "cf24781e-68a4-494b-8cd9-866ed1e9013b",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "7baf6f7f-db5d-40c2-9201-3ecfb5d42d57",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "4da7a717-c6c9-4fc1-a541-78d66c2e393c",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "7f4a57ec-b709-4882-86b7-964bdd2509d8",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "4cba87a3-ed9a-4c4f-bff2-db4600aa4b4b",
+      "title": "Reservations",
+      "slug": "/reservations",
+      "summary": "Reserve your table at La Maison for an unforgettable dining experience.",
+      "shortSummary": "Reserve your table at La Maison for an unforgettable dining experience.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "2af1f565-84cd-4820-9d87-978dd2900998",
+          "componentType": "SectionProps",
+          "sectionSlug": "2af1f565-84cd-4820-9d87-978dd2900998",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "09ed000b-394b-4b6f-8378-caae9b42c02b",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "3fa2690e-143a-417e-a859-a18972e0a390",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "b6ffc8c9-d3f9-4a1b-bcee-fc9a7e1ac22d",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Reservations",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "daa8c3ec-80be-457f-8432-9df7aec4b486",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Reserve your table at La Maison for an unforgettable dining experience.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "898f9925-a27e-4251-97e8-6a17268ab118",
+          "componentType": "SectionProps",
+          "sectionSlug": "898f9925-a27e-4251-97e8-6a17268ab118",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "97d327e3-35bd-465c-bc5f-3911199d406f",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "5981e6f6-cde8-44a3-9f9f-1443dbd1cc10",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "a2b1e354-2e4c-4ba4-aac0-dc4a39c7fa68",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "04bcb4f7-f797-44c4-a86f-a1da8aa84003",
+          "componentType": "SectionProps",
+          "sectionSlug": "04bcb4f7-f797-44c4-a86f-a1da8aa84003",
+          "spacing": "xl",
+          "classes": "bg-muted/50",
+          "content": [
+            {
+              "uuid": "dbfff989-13aa-406b-9a3b-5cc56d32e3b7",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "a8588c6d-99c7-4455-9c24-25136586f621",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "140b8984-aa50-4f94-84ba-f71dfed46a07",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Get in Touch",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "683a1fe5-f961-4e6f-84d2-dcfdeed284eb",
+                      "componentType": "FormProps",
+                      "title": "Contact Form",
+                      "onSubmitAction": {
+                        "actionId": "submit_contact_form",
+                        "successMessage": "Thank you for your message! We will get back to you soon.",
+                        "errorMessage": "There was an error sending your message. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email"
+                      },
+                      "content": [],
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "actions": [
+                        {
+                          "uuid": "04bd1683-fab4-43f0-9d82-af2ac6c808dd",
+                          "componentType": "ButtonProps",
+                          "actionType": "submit",
+                          "text": "Send Message",
+                          "variant": "default"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "73bf7a51-2309-41c4-bcab-33820d04178f",
+      "title": "Contact",
+      "slug": "/contact",
+      "summary": "Get in touch with us for inquiries, special events, or private dining reservations.",
+      "shortSummary": "Get in touch with us for inquiries, special events, or private dining reservations.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "9b0ddd1c-b95b-42ce-87e0-1a15094c4a64",
+          "componentType": "SectionProps",
+          "sectionSlug": "9b0ddd1c-b95b-42ce-87e0-1a15094c4a64",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "9701568b-15e5-46f2-9042-b7f6906f354d",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "05714ccf-b478-4016-9935-90739b4ff4fe",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "91770aa0-e720-42e2-93e8-17e1476daec5",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Contact",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "5bc08062-17b4-457f-aba9-f2155bbb3d5e",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Get in touch with us for inquiries, special events, or private dining reservations.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "6771d4ce-a6dc-499b-ad27-838375c08297",
+          "componentType": "SectionProps",
+          "sectionSlug": "6771d4ce-a6dc-499b-ad27-838375c08297",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "9322553a-3347-436f-a0ae-e8daf14b66b3",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "814f7557-9dd5-465c-8674-3ec0622a1027",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "fe06b393-f156-49a0-abf7-fa3f49840706",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "3526a2c2-ab24-4cb6-a4f9-6ffe808cdb44",
+          "componentType": "SectionProps",
+          "sectionSlug": "3526a2c2-ab24-4cb6-a4f9-6ffe808cdb44",
+          "spacing": "xl",
+          "classes": "bg-muted/50",
+          "content": [
+            {
+              "uuid": "19326580-83c3-4290-9d0c-028b69e545b3",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "dc285e2b-8e9d-4730-97aa-825d71da9b4b",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "c82ac19b-ae2f-446f-85c9-412d00baa3be",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Get in Touch",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "cbc2a6ef-de53-4067-8ef1-3b8bce517037",
+                      "componentType": "FormProps",
+                      "title": "Contact Form",
+                      "onSubmitAction": {
+                        "actionId": "submit_contact_form",
+                        "successMessage": "Thank you for your message! We will get back to you soon.",
+                        "errorMessage": "There was an error sending your message. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email"
+                      },
+                      "content": [],
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "actions": [
+                        {
+                          "uuid": "203fc5fe-88e3-4b2a-8ba3-d0a8e80d22b0",
+                          "componentType": "ButtonProps",
+                          "actionType": "submit",
+                          "text": "Send Message",
+                          "variant": "default"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

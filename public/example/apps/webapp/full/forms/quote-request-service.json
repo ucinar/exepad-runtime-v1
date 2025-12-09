@@ -1,0 +1,713 @@
+{
+  "uuid": "app-form-quote-req-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Service Quote Request Form",
+  "alias": "service-quote-request-form",
+  "summary": "A detailed service quote request form with project scope, budget range, timeline, and service type selection. Perfect for service providers, consultants, and agencies to gather comprehensive project information from potential clients.",
+  "shortSummary": "A detailed service quote request form with project scope and budget information",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#020817",
+      "primary": "#0369a1",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#e0f2fe",
+      "accent-foreground": "#075985",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0ea5e9"
+    },
+    "dark": {
+      "background": "#020817",
+      "foreground": "#f8fafc",
+      "primary": "#38bdf8",
+      "primary-foreground": "#082f49",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f1f5f9",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#0c4a6e",
+      "accent-foreground": "#e0f2fe",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#38bdf8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "ServicePro",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "ServicePro"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Home"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Services",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/services",
+                "text": "Services"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Get Quote",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/quote",
+                "text": "Get Quote"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 ServicePro. All rights reserved.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-quote",
+      "title": "Request a Quote",
+      "slug": "/",
+      "summary": "Tell us about your project and get a customized quote from our team.",
+      "shortSummary": "Request a customized quote for your project",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-br from-primary/10 via-background to-accent/10",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "file-text",
+                      "size": 48,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Get Your Custom Quote"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Share your project details and receive a personalized quote within 24 hours. No obligation, completely free.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "quote-form",
+                  "componentType": "FormProps",
+                  "title": "Project Information",
+                  "description": "Please provide as much detail as possible to help us prepare an accurate quote.",
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "classes": "max-w-3xl",
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Quote request received! We'll send you a detailed proposal within 24 hours.",
+                    "errorMessage": "Failed to submit your request. Please try again or contact us directly.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email",
+                    "onSuccessAction": {
+                      "type": "clearForm"
+                    }
+                  },
+                  "content": [
+                    {
+                      "uuid": "fieldset-contact",
+                      "componentType": "FieldSetProps",
+                      "legend": "Contact Information",
+                      "content": [
+                        {
+                          "uuid": "field-name",
+                          "componentType": "TextFieldProps",
+                          "name": "fullName",
+                          "label": "Full Name",
+                          "placeholder": "John Doe",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Name is required"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john@company.com",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Email is required"
+                            },
+                            {
+                              "type": "email",
+                              "errorMessage": "Please enter a valid email"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 123-4567",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-company",
+                          "componentType": "TextFieldProps",
+                          "name": "company",
+                          "label": "Company Name",
+                          "placeholder": "ABC Corporation"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-project",
+                      "componentType": "FieldSetProps",
+                      "legend": "Project Details",
+                      "content": [
+                        {
+                          "uuid": "field-service-type",
+                          "componentType": "SelectFieldProps",
+                          "name": "serviceType",
+                          "label": "Service Type",
+                          "placeholder": "Select the service you need",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Web Development",
+                              "value": "web-dev"
+                            },
+                            {
+                              "label": "Mobile App Development",
+                              "value": "mobile-dev"
+                            },
+                            {
+                              "label": "UI/UX Design",
+                              "value": "design"
+                            },
+                            {
+                              "label": "Digital Marketing",
+                              "value": "marketing"
+                            },
+                            {
+                              "label": "SEO Services",
+                              "value": "seo"
+                            },
+                            {
+                              "label": "Consulting",
+                              "value": "consulting"
+                            },
+                            {
+                              "label": "Custom Solution",
+                              "value": "custom"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-project-name",
+                          "componentType": "TextFieldProps",
+                          "name": "projectName",
+                          "label": "Project Name",
+                          "placeholder": "E-commerce Website Redesign",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-project-description",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "projectDescription",
+                          "label": "Project Description",
+                          "placeholder": "Describe your project goals, target audience, key features, and any specific requirements...",
+                          "rows": 6,
+                          "maxLength": 2000,
+                          "required": true,
+                          "helperText": "Be as detailed as possible to help us understand your needs",
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Please describe your project"
+                            },
+                            {
+                              "type": "minLength",
+                              "value": 50,
+                              "errorMessage": "Please provide at least 50 characters"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-budget",
+                          "componentType": "SelectFieldProps",
+                          "name": "budget",
+                          "label": "Estimated Budget",
+                          "placeholder": "Select your budget range",
+                          "required": true,
+                          "helperText": "This helps us tailor our proposal to your budget",
+                          "options": [
+                            {
+                              "label": "Less than $5,000",
+                              "value": "under-5k"
+                            },
+                            {
+                              "label": "$5,000 - $10,000",
+                              "value": "5k-10k"
+                            },
+                            {
+                              "label": "$10,000 - $25,000",
+                              "value": "10k-25k"
+                            },
+                            {
+                              "label": "$25,000 - $50,000",
+                              "value": "25k-50k"
+                            },
+                            {
+                              "label": "$50,000 - $100,000",
+                              "value": "50k-100k"
+                            },
+                            {
+                              "label": "More than $100,000",
+                              "value": "over-100k"
+                            },
+                            {
+                              "label": "Not Sure / Flexible",
+                              "value": "flexible"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-timeline",
+                          "componentType": "SelectFieldProps",
+                          "name": "timeline",
+                          "label": "Project Timeline",
+                          "placeholder": "When do you need this completed?",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "ASAP (Within 1 month)",
+                              "value": "urgent"
+                            },
+                            {
+                              "label": "1-3 months",
+                              "value": "1-3-months"
+                            },
+                            {
+                              "label": "3-6 months",
+                              "value": "3-6-months"
+                            },
+                            {
+                              "label": "6-12 months",
+                              "value": "6-12-months"
+                            },
+                            {
+                              "label": "More than 12 months",
+                              "value": "long-term"
+                            },
+                            {
+                              "label": "Flexible",
+                              "value": "flexible"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-start-date",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "preferredStartDate",
+                          "label": "Preferred Start Date",
+                          "pickerType": "date",
+                          "helperText": "When would you like to begin the project?"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-additional",
+                      "componentType": "FieldSetProps",
+                      "legend": "Additional Information",
+                      "content": [
+                        {
+                          "uuid": "field-features",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "requiredFeatures",
+                          "label": "Required Features (Select all that apply)",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Responsive Design",
+                              "value": "responsive"
+                            },
+                            {
+                              "label": "Content Management System",
+                              "value": "cms"
+                            },
+                            {
+                              "label": "E-commerce Functionality",
+                              "value": "ecommerce"
+                            },
+                            {
+                              "label": "User Authentication",
+                              "value": "auth"
+                            },
+                            {
+                              "label": "Payment Integration",
+                              "value": "payments"
+                            },
+                            {
+                              "label": "API Integration",
+                              "value": "api"
+                            },
+                            {
+                              "label": "Analytics & Reporting",
+                              "value": "analytics"
+                            },
+                            {
+                              "label": "Multi-language Support",
+                              "value": "i18n"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-existing-website",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "hasExistingWebsite",
+                          "label": "Do you have an existing website?",
+                          "orientation": "horizontal",
+                          "options": [
+                            {
+                              "label": "Yes",
+                              "value": "yes"
+                            },
+                            {
+                              "label": "No",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-website-url",
+                          "componentType": "TextFieldProps",
+                          "name": "websiteUrl",
+                          "label": "Current Website URL",
+                          "inputType": "url",
+                          "placeholder": "https://www.example.com",
+                          "helperText": "If applicable"
+                        },
+                        {
+                          "uuid": "field-competitors",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "competitorExamples",
+                          "label": "Competitor or Inspiration Examples",
+                          "placeholder": "List any websites or apps that inspire you or compete with your project...",
+                          "rows": 3,
+                          "helperText": "This helps us understand your vision and industry standards"
+                        },
+                        {
+                          "uuid": "field-additional-notes",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "additionalNotes",
+                          "label": "Additional Notes",
+                          "placeholder": "Any other information that might be helpful...",
+                          "rows": 4
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-hidden-source",
+                      "componentType": "HiddenFieldProps",
+                      "name": "formSource",
+                      "value": "quote-request"
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "actionType": "reset",
+                      "text": "Clear Form",
+                      "variant": "ghost",
+                      "uuid": "form-action-reset",
+                      "componentType": "ButtonProps"
+                    },
+                    {
+                      "actionType": "submit",
+                      "text": "Request Quote",
+                      "variant": "default",
+                      "icon": {
+                        "uuid": "submit-icon",
+                        "componentType": "IconProps",
+                        "name": "send",
+                        "size": 16
+                      },
+                      "uuid": "form-action-submit",
+                      "componentType": "ButtonProps"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-process",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-process",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "process-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "process-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "process-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "What Happens Next?",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "process-grid",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "6",
+                      "content": [
+                        {
+                          "uuid": "step-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "text-center",
+                          "content": [
+                            {
+                              "uuid": "step-1-number",
+                              "componentType": "FlexProps",
+                              "justify": "center",
+                              "content": [
+                                {
+                                  "uuid": "step-1-badge",
+                                  "componentType": "TextProps",
+                                  "content": "1",
+                                  "classes": "w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "step-1-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "We Review Your Request"
+                            },
+                            {
+                              "uuid": "step-1-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Our team carefully analyzes your requirements and project scope.",
+                              "classes": "text-muted-foreground"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "step-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "text-center",
+                          "content": [
+                            {
+                              "uuid": "step-2-number",
+                              "componentType": "FlexProps",
+                              "justify": "center",
+                              "content": [
+                                {
+                                  "uuid": "step-2-badge",
+                                  "componentType": "TextProps",
+                                  "content": "2",
+                                  "classes": "w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "step-2-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Receive Your Quote"
+                            },
+                            {
+                              "uuid": "step-2-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Get a detailed proposal with pricing, timeline, and deliverables within 24 hours.",
+                              "classes": "text-muted-foreground"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "step-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "text-center",
+                          "content": [
+                            {
+                              "uuid": "step-3-number",
+                              "componentType": "FlexProps",
+                              "justify": "center",
+                              "content": [
+                                {
+                                  "uuid": "step-3-badge",
+                                  "componentType": "TextProps",
+                                  "content": "3",
+                                  "classes": "w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "step-3-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Start Your Project"
+                            },
+                            {
+                              "uuid": "step-3-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Once approved, we'll kick off your project with our expert team.",
+                              "classes": "text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

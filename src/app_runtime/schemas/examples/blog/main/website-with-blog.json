@@ -1,0 +1,489 @@
+{
+  "uuid": "7239e320-296f-4a86-91a5-04fd6b204f6b",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Website with Blog",
+  "alias": "website-with-blog",
+  "summary": "A complete website example featuring a home page with hero section, features, and call-to-action, plus a dedicated blog listing page showcasing the BlogMainPage component with grid layout and pagination.",
+  "shortSummary": "A complete website example featuring a home page with hero section, features, and call-to-action, plus a dedicated blog listing page showcasing the Bl",
+  "lastUpdatedEpoch": 1701192800,
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#09090b",
+      "primary": "#2563eb",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#2563eb"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#f8fafc",
+      "primary": "#3b82f6",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#60a5fa"
+    },
+    "fonts": {
+      "body": {
+        "family": "Inter",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      },
+      "heading": {
+        "family": "Inter",
+        "variant": "700",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      }
+    },
+    "radius": "0.5rem",
+    "metadata": {
+      "title": "Website with Blog - Professional Content Platform",
+      "description": "A modern website showcasing our services and featuring a comprehensive blog with the latest articles and insights.",
+      "keywords": "blog, articles, content, website, professional services"
+    }
+  },
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-main-002",
+      "componentType": "NavbarProps",
+      "sticky": true,
+      "variant": "default",
+      "logo": {
+        "uuid": "navlogo-003",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "MyWebsite",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "navlogo-003-href",
+          "href": "/",
+          "text": "MyWebsite"
+        }
+      },
+      "content": [
+        {
+          "uuid": "navlink-home-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "navlink-home-href-006",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "navlink-blog-007",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Blog",
+          "href": {
+            "uuid": "navlink-blog-href-008",
+            "componentType": "LinkProps",
+            "href": "/blog",
+            "text": "Blog"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-200",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-200",
+      "classes": "border-t bg-muted/50",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-flex-201",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "gap": "8",
+          "content": [
+            {
+              "uuid": "footer-grid-202",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "footer-col1-203",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-brand-204",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "MyWebsite"
+                    },
+                    {
+                      "uuid": "footer-desc-205",
+                      "componentType": "TextProps",
+                      "content": "Your trusted source for quality content and professional services.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col2-206",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-links-heading-207",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Quick Links"
+                    },
+                    {
+                      "uuid": "footer-link-home-208",
+                      "componentType": "LinkProps",
+                      "href": "/",
+                      "text": "Home",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-blog-209",
+                      "componentType": "LinkProps",
+                      "href": "/blog",
+                      "text": "Blog",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col3-210",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-contact-heading-211",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Contact"
+                    },
+                    {
+                      "uuid": "footer-email-212",
+                      "componentType": "TextProps",
+                      "content": "info@mywebsite.com",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "footer-divider-213",
+              "componentType": "SpacerProps",
+              "size": "md"
+            },
+            {
+              "uuid": "footer-copyright-214",
+              "componentType": "TextProps",
+              "content": "© 2025 MyWebsite. All rights reserved.",
+              "classes": "text-center text-muted-foreground text-sm"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home-100",
+      "title": "Home - Welcome to MyWebsite",
+      "slug": "/",
+      "summary": "The main landing page featuring a hero section, key features showcase, and call-to-action.",
+      "content": [
+        {
+          "uuid": "section-hero-101",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero-101",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-muted/50 to-background",
+          "content": [
+            {
+              "uuid": "hero-center-102",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-flex-103",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "align": "center",
+                  "classes": "max-w-4xl text-center mt-12",
+                  "content": [
+                    {
+                      "uuid": "hero-heading-104",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Welcome to Our Website",
+                      "classes": "text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
+                    },
+                    {
+                      "uuid": "hero-text-105",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Discover amazing content, insights, and resources. Your journey to excellence starts here.",
+                      "classes": "text-xl text-muted-foreground max-w-2xl"
+                    },
+                    {
+                      "uuid": "hero-buttons-106",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "4",
+                      "justify": "center",
+                      "content": [
+                        {
+                          "uuid": "hero-cta-primary-107",
+                          "componentType": "ButtonProps",
+                          "text": "Explore Blog",
+                          "variant": "default",
+                          "size": "lg",
+                          "link": {
+                            "uuid": "hero-cta-link-108",
+                            "componentType": "LinkProps",
+                            "href": "/blog",
+                            "text": "Explore Blog"
+                          }
+                        },
+                        {
+                          "uuid": "hero-cta-secondary-109",
+                          "componentType": "ButtonProps",
+                          "text": "Learn More",
+                          "variant": "outline",
+                          "size": "lg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-features-110",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-features-110",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "features-container-111",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "12",
+              "content": [
+                {
+                  "uuid": "features-header-112",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center",
+                  "content": [
+                    {
+                      "uuid": "features-heading-113",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Why Choose Us"
+                    },
+                    {
+                      "uuid": "features-description-114",
+                      "componentType": "TextProps",
+                      "content": "Discover what makes us different and why thousands trust us.",
+                      "classes": "text-muted-foreground text-lg max-w-2xl"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "features-grid-115",
+                  "componentType": "GridProps",
+                  "columns": 3,
+                  "gap": "8",
+                  "content": [
+                    {
+                      "uuid": "feature-1-116",
+                      "componentType": "StandardFeatureProps",
+                      "icon": {
+                        "uuid": "feature-icon-1-117",
+                        "componentType": "IconProps",
+                        "name": "zap",
+                        "size": 32
+                      },
+                      "title": {
+                        "uuid": "feature-1-116-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Fast & Reliable"
+                      },
+                      "variant": "standard",
+                      "text": {
+                        "uuid": "feature-1-116-text",
+                        "componentType": "TextProps",
+                        "content": "Lightning-fast performance with 99.9% uptime guarantee."
+                      }
+                    },
+                    {
+                      "uuid": "feature-2-118",
+                      "componentType": "StandardFeatureProps",
+                      "icon": {
+                        "uuid": "feature-icon-2-119",
+                        "componentType": "IconProps",
+                        "name": "shield",
+                        "size": 32
+                      },
+                      "title": {
+                        "uuid": "feature-2-118-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Secure & Safe"
+                      },
+                      "variant": "standard",
+                      "text": {
+                        "uuid": "feature-2-118-text",
+                        "componentType": "TextProps",
+                        "content": "Enterprise-grade security to protect your data and privacy."
+                      }
+                    },
+                    {
+                      "uuid": "feature-3-120",
+                      "componentType": "StandardFeatureProps",
+                      "icon": {
+                        "uuid": "feature-icon-3-121",
+                        "componentType": "IconProps",
+                        "name": "heart",
+                        "size": 32
+                      },
+                      "title": {
+                        "uuid": "feature-3-120-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Made with Care"
+                      },
+                      "variant": "standard",
+                      "text": {
+                        "uuid": "feature-3-120-text",
+                        "componentType": "TextProps",
+                        "content": "Crafted with attention to detail and user experience in mind."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-cta-130",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-cta-130",
+          "spacing": "xl",
+          "classes": "bg-primary text-primary-foreground",
+          "content": [
+            {
+              "uuid": "cta-center-131",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "cta-flex-132",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "cta-heading-133",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Ready to Get Started?"
+                    },
+                    {
+                      "uuid": "cta-text-134",
+                      "componentType": "TextProps",
+                      "content": "Join thousands of satisfied users and start your journey today. Check out our blog for insights, tips, and the latest updates.",
+                      "classes": "text-lg opacity-90"
+                    },
+                    {
+                      "uuid": "cta-button-135",
+                      "componentType": "ButtonProps",
+                      "text": "Visit Our Blog",
+                      "variant": "secondary",
+                      "size": "lg",
+                      "link": {
+                        "uuid": "cta-link-136",
+                        "componentType": "LinkProps",
+                        "href": "/blog",
+                        "text": "Visit Our Blog"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "title": "Home - MyWebsite",
+        "description": "Welcome to MyWebsite - your trusted source for quality content and professional services."
+      },
+      "shortSummary": "The main landing page featuring a hero section, key features showcase, and call-to-action",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "1fc90a47-8cf4-4eba-a395-171238f18e49",
+      "pageType": "BlogMainPageProps",
+      "title": "Blog - Latest Articles",
+      "slug": "/blog",
+      "summary": "Blog listing page displaying all published articles with grid layout and pagination.",
+      "content": [],
+      "metadata": {
+        "title": "Blog - MyWebsite",
+        "description": "Read our latest articles, insights, and updates. Stay informed with expert content and industry news.",
+        "keywords": "blog, articles, insights, news, updates, content"
+      },
+      "shortSummary": "Blog listing page displaying all published articles with grid layout and pagination",
+      "lastUpdatedEpoch": 1701192800
+    }
+  ]
+}

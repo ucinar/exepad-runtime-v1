@@ -1,0 +1,250 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "BMW Hero Section",
+  "alias": "bmw-hero-section",
+  "summary": "Grid-based hero layout with structured content organization and visual hierarchy. Features multiple content blocks arranged in a clean grid system for enhanced readability and visual impact.",
+  "shortSummary": "Grid-based hero layout with structured content organization and visual hierarchy",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the hero section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "main-hero-section-container",
+          "uuid": "main-hero-section-container",
+          "layout": "singleColumnWide",
+          "spacing": "lg",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "main-flex-container",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "componentType": "SectionProps",
+                  "sectionSlug": "top-hero-section",
+                  "uuid": "top-hero-section",
+                  "layout": "singleColumnWide",
+                  "classes": "h-96",
+                  "background": {
+                    "image": {
+                      "componentType": "ImageProps",
+                      "uuid": "bg-image-top",
+                      "src": "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg",
+                      "alt": "Black BMW car",
+                      "hoverEffect": "darken",
+                      "asset": {
+                        "uuid": "asset-bg-image-top",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "bmw, car, black",
+                        "isProcessed": true,
+                        "requestedWidth": 1200,
+                        "requestedHeight": 800
+                      }
+                    },
+                    "overlayColor": "rgba(0, 0, 0, 0.4)"
+                  },
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "flex-content-top",
+                      "direction": "column",
+                      "justify": "end",
+                      "align": "start",
+                      "classes": "h-full p-8 text-white",
+                      "content": [
+                        {
+                          "componentType": "HeadingProps",
+                          "uuid": "heading-top",
+                          "level": 2,
+                          "text": "Enjoy nature sustainable travel in the BMW iX",
+                          "classes": "text-4xl font-bold"
+                        },
+                        {
+                          "componentType": "ButtonProps",
+                          "uuid": "button-top",
+                          "text": "Show more",
+                          "variant": "default",
+                          "classes": "mt-4"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "bottom-grid-container",
+                  "columns": 2,
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "SectionProps",
+                      "sectionSlug": "bottom-left-hero",
+                      "uuid": "bottom-left-hero",
+                      "layout": "singleColumnWide",
+                      "classes": "h-80",
+                      "background": {
+                        "image": {
+                          "componentType": "ImageProps",
+                          "uuid": "bg-image-bottom-left",
+                          "src": "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg",
+                          "alt": "Close up of a black sports car",
+                          "hoverEffect": "darken",
+                          "asset": {
+                            "uuid": "asset-bg-image-bottom-left",
+                            "componentType": "ImageAssetProps",
+                            "keywords": "sports car, black, close up",
+                            "isProcessed": true,
+                            "requestedWidth": 800,
+                            "requestedHeight": 600
+                          }
+                        },
+                        "overlayColor": "rgba(0, 0, 0, 0.4)"
+                      },
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "flex-content-bottom-left",
+                          "direction": "column",
+                          "justify": "end",
+                          "align": "start",
+                          "classes": "h-full p-8 text-white",
+                          "content": [
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "heading-bottom-left",
+                              "level": 2,
+                              "text": "Enjoy nature sustainable travel in the BMW iX",
+                              "classes": "text-3xl font-bold"
+                            },
+                            {
+                              "componentType": "ButtonProps",
+                              "uuid": "button-bottom-left",
+                              "text": "Show more",
+                              "variant": "default",
+                              "classes": "mt-4"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "SectionProps",
+                      "sectionSlug": "bottom-right-hero",
+                      "uuid": "bottom-right-hero",
+                      "layout": "singleColumnWide",
+                      "classes": "h-80",
+                      "background": {
+                        "image": {
+                          "componentType": "ImageProps",
+                          "uuid": "bg-image-bottom-right",
+                          "src": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg",
+                          "alt": "Blue BMW car on the road",
+                          "hoverEffect": "darken",
+                          "asset": {
+                            "uuid": "asset-bg-image-bottom-right",
+                            "componentType": "ImageAssetProps",
+                            "keywords": "bmw, car, blue, road",
+                            "isProcessed": true,
+                            "requestedWidth": 800,
+                            "requestedHeight": 600
+                          }
+                        },
+                        "overlayColor": "rgba(0, 0, 0, 0.4)"
+                      },
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "flex-content-bottom-right",
+                          "direction": "column",
+                          "justify": "end",
+                          "align": "start",
+                          "classes": "h-full p-8 text-white",
+                          "content": [
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "heading-bottom-right",
+                              "level": 2,
+                              "text": "Enjoy nature sustainable travel in the BMW iX",
+                              "classes": "text-3xl font-bold"
+                            },
+                            {
+                              "componentType": "ButtonProps",
+                              "uuid": "button-bottom-right",
+                              "text": "Show more",
+                              "variant": "default",
+                              "classes": "mt-4"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the hero section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

@@ -1,0 +1,2755 @@
+{
+  "uuid": "app-cloudsync-saas-landing",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "CloudSync - File Sync SaaS",
+  "alias": "cloudsync-saas",
+  "summary": "Professional SaaS landing page for CloudSync, a file synchronization platform. Features hero with announcement badge, social proof logos, stats showcase, detailed feature grid, customer testimonials with avatars, pricing table with multiple tiers, FAQ section, and conversion-optimized CTAs. Demonstrates modern landing page best practices with specialized components.",
+  "shortSummary": "Professional SaaS landing page with hero, features, pricing, testimonials, and FAQ",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "fonts": {
+      "heading": {
+        "family": "Plus Jakarta Sans",
+        "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+        "variant": "700"
+      },
+      "body": {
+        "family": "Inter",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+        "variant": "regular"
+      }
+    },
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#5b5fc7",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f5f3ff",
+      "secondary-foreground": "#1e1b4b",
+      "muted": "#fafaf9",
+      "muted-foreground": "#52525b",
+      "accent": "#8b5cf6",
+      "accent-foreground": "#ffffff",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#5b5fc7"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "primary": "#818cf8",
+      "primary-foreground": "#0c0a1d",
+      "secondary": "#1e1b4b",
+      "secondary-foreground": "#e0e7ff",
+      "muted": "#18181b",
+      "muted-foreground": "#a1a1aa",
+      "accent": "#a78bfa",
+      "accent-foreground": "#0c0a1d",
+      "destructive": "#b91c1c",
+      "destructive-foreground": "#fef2f2",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#818cf8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b sticky top-0 bg-white/80 backdrop-blur-lg backdrop-saturate-150 z-50 shadow-sm",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "CloudSync",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "CloudSync"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Features",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "#features",
+                "text": "Features"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Pricing",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "#pricing",
+                "text": "Pricing"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Customers",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "#customers",
+                "text": "Customers"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Resources",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/resources",
+                "text": "Resources"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            },
+            {
+              "type": "link",
+              "label": "Sign In",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-4-href",
+                "href": "/signin",
+                "text": "Sign In"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-4"
+            },
+            {
+              "type": "button",
+              "componentType": "MenuButtonItemProps",
+              "uuid": "menu-item-cta",
+              "button": {
+                "componentType": "ButtonProps",
+                "uuid": "menu-cta-button",
+                "text": "Start Free Trial",
+                "variant": "default"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "py-8 px-8 bg-gray-50",
+      "layout": "singleColumnCentered",
+      "spacing": "sm",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-top-section",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start pb-8 w-full",
+          "content": [
+            {
+              "uuid": "footer-brand-section",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "classes": "max-w-sm",
+              "content": [
+                {
+                  "uuid": "footer-logo",
+                  "componentType": "TextProps",
+                  "content": "CloudSync",
+                  "classes": "text-2xl font-semibold"
+                },
+                {
+                  "uuid": "footer-tagline",
+                  "componentType": "TextProps",
+                  "content": "The file synchronization platform trusted by teams worldwide.",
+                  "classes": "text-sm text-gray-500"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-links-grid",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "classes": "sm:grid-cols-4 sm:gap-6 flex-1 max-w-2xl",
+              "content": [
+                {
+                  "uuid": "footer-product-col",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-product-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "PRODUCT",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "footer-product-link-1",
+                      "componentType": "LinkProps",
+                      "href": "/features",
+                      "text": "Features"
+                    },
+                    {
+                      "uuid": "footer-product-link-2",
+                      "componentType": "LinkProps",
+                      "href": "/integrations",
+                      "text": "Integrations"
+                    },
+                    {
+                      "uuid": "footer-product-link-3",
+                      "componentType": "LinkProps",
+                      "href": "/pricing",
+                      "text": "Pricing"
+                    },
+                    {
+                      "uuid": "footer-product-link-4",
+                      "componentType": "LinkProps",
+                      "href": "/security",
+                      "text": "Security"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-solutions-col",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-solutions-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "SOLUTIONS",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "footer-solutions-link-1",
+                      "componentType": "LinkProps",
+                      "href": "/teams",
+                      "text": "For Teams"
+                    },
+                    {
+                      "uuid": "footer-solutions-link-2",
+                      "componentType": "LinkProps",
+                      "href": "/enterprise",
+                      "text": "For Enterprise"
+                    },
+                    {
+                      "uuid": "footer-solutions-link-3",
+                      "componentType": "LinkProps",
+                      "href": "/developers",
+                      "text": "For Developers"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-company-col",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-company-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "COMPANY",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "footer-company-link-1",
+                      "componentType": "LinkProps",
+                      "href": "/about",
+                      "text": "About"
+                    },
+                    {
+                      "uuid": "footer-company-link-2",
+                      "componentType": "LinkProps",
+                      "href": "/blog",
+                      "text": "Blog"
+                    },
+                    {
+                      "uuid": "footer-company-link-3",
+                      "componentType": "LinkProps",
+                      "href": "/careers",
+                      "text": "Careers"
+                    },
+                    {
+                      "uuid": "footer-company-link-4",
+                      "componentType": "LinkProps",
+                      "href": "/contact",
+                      "text": "Contact"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-resources-col",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-resources-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "RESOURCES",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "footer-resources-link-1",
+                      "componentType": "LinkProps",
+                      "href": "/docs",
+                      "text": "Documentation"
+                    },
+                    {
+                      "uuid": "footer-resources-link-2",
+                      "componentType": "LinkProps",
+                      "href": "/api",
+                      "text": "API Reference"
+                    },
+                    {
+                      "uuid": "footer-resources-link-3",
+                      "componentType": "LinkProps",
+                      "href": "/support",
+                      "text": "Support"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider",
+          "componentType": "SpacerProps",
+          "classes": "my-6 border-gray-200",
+          "size": "md"
+        },
+        {
+          "uuid": "footer-bottom-section",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center pt-4 pb-2 w-full",
+          "content": [
+            {
+              "uuid": "footer-copyright",
+              "componentType": "TextProps",
+              "content": "© 2025 CloudSync Inc. All rights reserved.",
+              "classes": "text-sm text-gray-500"
+            },
+            {
+              "uuid": "footer-social-links",
+              "componentType": "FlexProps",
+              "gap": "5",
+              "content": [
+                {
+                  "uuid": "social-twitter",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "https://twitter.com/cloudsync"
+                },
+                {
+                  "uuid": "social-linkedin",
+                  "componentType": "SocialLinkProps",
+                  "platform": "linkedin",
+                  "url": "https://linkedin.com/company/cloudsync"
+                },
+                {
+                  "uuid": "social-github",
+                  "componentType": "SocialLinkProps",
+                  "platform": "github",
+                  "url": "https://github.com/cloudsync"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "CloudSync - Seamless File Synchronization for Modern Teams",
+      "slug": "/",
+      "summary": "CloudSync provides seamless file synchronization across all your devices with enterprise-grade security, real-time collaboration, and powerful integrations.",
+      "shortSummary": "Seamless file sync for modern teams",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center py-20",
+          "content": [
+            {
+              "uuid": "hero-content",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "classes": "max-w-4xl mx-auto",
+              "content": [
+                {
+                  "uuid": "hero-announcement",
+                  "componentType": "FlexProps",
+                  "justify": "center",
+                  "align": "center",
+                  "gap": "2",
+                  "classes": "mb-4 inline-flex items-center p-1 pr-3 bg-gray-100 rounded-full",
+                  "content": [
+                    {
+                      "uuid": "badge-new",
+                      "componentType": "BadgeProps",
+                      "content": "New",
+                      "variant": "default",
+                      "classes": "rounded-full"
+                    },
+                    {
+                      "uuid": "announcement-button",
+                      "componentType": "ButtonProps",
+                      "text": "Real-time sync is now 10x faster",
+                      "variant": "link",
+                      "size": "sm",
+                      "icon": {
+                        "uuid": "announcement-icon",
+                        "componentType": "IconProps",
+                        "name": "arrow-right",
+                        "size": 16
+                      },
+                      "iconPosition": "right",
+                      "type": "button",
+                      "onClick": "handleAnnouncementClick"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "hero-heading",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Work Faster. Sync Smarter. Collaborate Better.",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "uuid": "hero-description",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "CloudSync keeps your team's files perfectly synchronized across every device, anywhere in the world. Real-time updates, rock-solid security, and seamless collaboration—all in one platform.",
+                  "classes": "mt-4 max-w-3xl"
+                },
+                {
+                  "uuid": "hero-cta-buttons",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "uuid": "cta-primary",
+                      "componentType": "ButtonProps",
+                      "text": "Start Free Trial",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "uuid": "cta-primary-icon",
+                        "componentType": "IconProps",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right",
+                      "type": "button",
+                      "onClick": "handleStartTrial"
+                    },
+                    {
+                      "uuid": "cta-secondary",
+                      "componentType": "ButtonProps",
+                      "text": "Watch demo",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "uuid": "cta-secondary-icon",
+                        "componentType": "IconProps",
+                        "name": "video",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "type": "button",
+                      "onClick": "handleWatchDemo"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "hero-trust-text",
+                  "componentType": "TextProps",
+                  "content": "No credit card required • 14-day free trial • Cancel anytime",
+                  "variant": "muted",
+                  "classes": "mt-4 text-sm"
+                },
+                {
+                  "uuid": "hero-featured-text",
+                  "componentType": "TextProps",
+                  "content": "TRUSTED BY LEADING TEAMS",
+                  "variant": "muted",
+                  "classes": "mt-16 tracking-widest text-sm"
+                },
+                {
+                  "uuid": "hero-logos",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "justify": "center",
+                  "align": "center",
+                  "gap": "8",
+                  "classes": "mt-4",
+                  "content": [
+                    {
+                      "uuid": "logo-company-1",
+                      "componentType": "LogoItemProps",
+                      "name": "TechCorp",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "logo-img-1",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png",
+                        "alt": "TechCorp",
+                        "width": 120,
+                        "asset": {
+                          "uuid": "logo-asset-1",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "logo, company, tech",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 40
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-company-2",
+                      "componentType": "LogoItemProps",
+                      "name": "InnovateCo",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "logo-img-2",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/640px-Amazon_logo.svg.png",
+                        "alt": "InnovateCo",
+                        "width": 120,
+                        "asset": {
+                          "uuid": "logo-asset-2",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "logo, company",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 40
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-company-3",
+                      "componentType": "LogoItemProps",
+                      "name": "DataFlow",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "logo-img-3",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/640px-Microsoft_logo.svg.png",
+                        "alt": "DataFlow",
+                        "width": 120,
+                        "asset": {
+                          "uuid": "logo-asset-3",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "logo, company",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 40
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-stats",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-stats",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16",
+          "content": [
+            {
+              "uuid": "stats-heading",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Trusted by 50,000+ teams worldwide",
+              "classes": "text-4xl font-extrabold text-center mb-12"
+            },
+            {
+              "uuid": "stats-grid",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "classes": "text-center max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "stat-1-card",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-6",
+                  "content": [
+                    {
+                      "uuid": "stat-1-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "50,000+",
+                      "classes": "text-4xl font-extrabold text-indigo-600"
+                    },
+                    {
+                      "uuid": "stat-1-label",
+                      "componentType": "TextProps",
+                      "content": "Teams worldwide",
+                      "classes": "text-gray-500 font-semibold"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "stat-2-card",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-6",
+                  "content": [
+                    {
+                      "uuid": "stat-2-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "99.99%",
+                      "classes": "text-4xl font-extrabold text-indigo-600"
+                    },
+                    {
+                      "uuid": "stat-2-label",
+                      "componentType": "TextProps",
+                      "content": "Uptime guarantee",
+                      "classes": "text-gray-500 font-semibold"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "stat-3-card",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-6",
+                  "content": [
+                    {
+                      "uuid": "stat-3-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "5B+",
+                      "classes": "text-4xl font-extrabold text-indigo-600"
+                    },
+                    {
+                      "uuid": "stat-3-label",
+                      "componentType": "TextProps",
+                      "content": "Files synced daily",
+                      "classes": "text-gray-500 font-semibold"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "stat-4-card",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-6",
+                  "content": [
+                    {
+                      "uuid": "stat-4-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "<100ms",
+                      "classes": "text-4xl font-extrabold text-indigo-600"
+                    },
+                    {
+                      "uuid": "stat-4-label",
+                      "componentType": "TextProps",
+                      "content": "Average sync time",
+                      "classes": "text-gray-500 font-semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-features",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-features",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16 bg-gradient-to-b from-gray-50 to-white",
+          "content": [
+            {
+              "uuid": "features-content",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "center",
+              "gap": "12",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "features-heading",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Everything your team needs to collaborate",
+                  "classes": "text-4xl font-extrabold text-center"
+                },
+                {
+                  "uuid": "features-description",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "From lightning-fast sync to enterprise-grade security, CloudSync has all the tools modern teams need to work together efficiently.",
+                  "classes": "text-center max-w-3xl"
+                },
+                {
+                  "uuid": "features-grid",
+                  "componentType": "GridProps",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-8",
+                  "content": [
+                    {
+                      "uuid": "feature-sync",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "uuid": "feature-sync-icon",
+                        "componentType": "IconProps",
+                        "name": "zap",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-sync-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Lightning-Fast Sync"
+                      },
+                      "text": {
+                        "uuid": "feature-sync-text",
+                        "componentType": "TextProps",
+                        "content": "Files sync across all your devices in milliseconds. Our proprietary delta-sync technology means only changed portions of files are transferred."
+                      }
+                    },
+                    {
+                      "uuid": "feature-security",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "uuid": "feature-security-icon",
+                        "componentType": "IconProps",
+                        "name": "shield",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-security-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Bank-Grade Security"
+                      },
+                      "text": {
+                        "uuid": "feature-security-text",
+                        "componentType": "TextProps",
+                        "content": "Your data is protected with 256-bit AES encryption at rest and in transit. Zero-knowledge architecture means not even we can access your files."
+                      }
+                    },
+                    {
+                      "uuid": "feature-collaboration",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "uuid": "feature-collaboration-icon",
+                        "componentType": "IconProps",
+                        "name": "users",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-collaboration-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Real-Time Collaboration"
+                      },
+                      "text": {
+                        "uuid": "feature-collaboration-text",
+                        "componentType": "TextProps",
+                        "content": "Share folders instantly, set granular permissions, and see live updates as your team works. Built-in comments keep everyone in sync."
+                      }
+                    },
+                    {
+                      "uuid": "feature-history",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "uuid": "feature-history-icon",
+                        "componentType": "IconProps",
+                        "name": "history",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-history-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Unlimited Version History"
+                      },
+                      "text": {
+                        "uuid": "feature-history-text",
+                        "componentType": "TextProps",
+                        "content": "Every change is saved forever. Roll back to any previous version with one click. Perfect for compliance and audits."
+                      }
+                    },
+                    {
+                      "uuid": "feature-platforms",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "uuid": "feature-platforms-icon",
+                        "componentType": "IconProps",
+                        "name": "smartphone",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-platforms-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Works Everywhere"
+                      },
+                      "text": {
+                        "uuid": "feature-platforms-text",
+                        "componentType": "TextProps",
+                        "content": "Native apps for Windows, macOS, Linux, iOS, and Android. Plus web access from any browser. Your files follow you everywhere."
+                      }
+                    },
+                    {
+                      "uuid": "feature-integrations",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "uuid": "feature-integrations-icon",
+                        "componentType": "IconProps",
+                        "name": "plug",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-integrations-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Powerful Integrations"
+                      },
+                      "text": {
+                        "uuid": "feature-integrations-text",
+                        "componentType": "TextProps",
+                        "content": "Connect seamlessly with Slack, Microsoft Teams, Google Workspace, Salesforce, and 100+ other tools your team uses."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-testimonials",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-testimonials",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-16",
+          "content": [
+            {
+              "uuid": "testimonials-header",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Loved by teams around the world",
+              "classes": "text-4xl font-extrabold text-center mb-12"
+            },
+            {
+              "uuid": "testimonials-grid",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "testimonial-1",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-1-text",
+                    "componentType": "TextProps",
+                    "content": "CloudSync transformed how our distributed team collaborates. File sync is instant, and we haven't had a single sync conflict since switching. The version history saved us multiple times."
+                  },
+                  "author": {
+                    "uuid": "testimonial-1-author",
+                    "componentType": "TextProps",
+                    "content": "Sarah Chen"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-1-title",
+                    "componentType": "TextProps",
+                    "content": "CTO at TechCorp"
+                  },
+                  "avatar": {
+                    "uuid": "testimonial-1-avatar",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=sarah_chen",
+                    "alt": "Sarah Chen",
+                    "asset": {
+                      "uuid": "testimonial-1-avatar-asset",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "avatar, testimonial, sarah chen",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-2",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-2-text",
+                    "componentType": "TextProps",
+                    "content": "We evaluated 5 different solutions and CloudSync was the clear winner. The security features are enterprise-grade, and the performance is unmatched. Migration was seamless."
+                  },
+                  "author": {
+                    "uuid": "testimonial-2-author",
+                    "componentType": "TextProps",
+                    "content": "Michael Rodriguez"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-2-title",
+                    "componentType": "TextProps",
+                    "content": "Head of IT, DataFlow Inc"
+                  },
+                  "avatar": {
+                    "uuid": "testimonial-2-avatar",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=michael_rodriguez",
+                    "alt": "Michael Rodriguez",
+                    "asset": {
+                      "uuid": "testimonial-2-avatar-asset",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "avatar, testimonial, michael rodriguez",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-3",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-3-text",
+                    "componentType": "TextProps",
+                    "content": "The Slack integration is a game-changer. Our team can share files directly in conversations, and everything stays perfectly synced. Customer support is phenomenal too."
+                  },
+                  "author": {
+                    "uuid": "testimonial-3-author",
+                    "componentType": "TextProps",
+                    "content": "Emily Watson"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-3-title",
+                    "componentType": "TextProps",
+                    "content": "Product Manager, InnovateCo"
+                  },
+                  "avatar": {
+                    "uuid": "testimonial-3-avatar",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=emily_watson",
+                    "alt": "Emily Watson",
+                    "asset": {
+                      "uuid": "testimonial-3-avatar-asset",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "avatar, testimonial, emily watson",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-pricing",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-pricing",
+          "layout": "singleColumnWide",
+          "spacing": "xl",
+          "classes": "py-16 bg-gradient-to-b from-white to-gray-50",
+          "content": [
+            {
+              "uuid": "pricing-content",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "center",
+              "gap": "12",
+              "classes": "max-w-6xl mx-auto",
+              "content": [
+                {
+                  "uuid": "pricing-header",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Plans that scale with your team",
+                  "classes": "text-4xl font-extrabold text-center"
+                },
+                {
+                  "uuid": "pricing-description",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Start free, upgrade when you need more. All plans include a 14-day trial with full features.",
+                  "classes": "text-center"
+                },
+                {
+                  "uuid": "pricing-table",
+                  "componentType": "PricingTableProps",
+                  "currency": "$",
+                  "showToggle": false,
+                  "classes": "w-full",
+                  "content": [
+                    {
+                      "uuid": "plan-starter",
+                      "componentType": "PricingPlanProps",
+                      "name": {
+                        "uuid": "plan-starter-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Starter"
+                      },
+                      "description": {
+                        "uuid": "plan-starter-desc",
+                        "componentType": "TextProps",
+                        "content": "Perfect for individuals and small teams"
+                      },
+                      "price": "9",
+                      "period": "user/month",
+                      "highlight": false,
+                      "features": [
+                        "100 GB storage per user",
+                        "Unlimited devices",
+                        "30-day version history",
+                        "Basic file sharing",
+                        "Email support"
+                      ],
+                      "button": {
+                        "uuid": "btn-starter",
+                        "componentType": "ButtonProps",
+                        "text": "Start Free Trial",
+                        "variant": "outline",
+                        "size": "lg"
+                      }
+                    },
+                    {
+                      "uuid": "plan-professional",
+                      "componentType": "PricingPlanProps",
+                      "name": {
+                        "uuid": "plan-professional-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Professional"
+                      },
+                      "description": {
+                        "uuid": "plan-professional-desc",
+                        "componentType": "TextProps",
+                        "content": "For growing teams and businesses"
+                      },
+                      "price": "19",
+                      "period": "user/month",
+                      "highlight": true,
+                      "features": [
+                        "1 TB storage per user",
+                        "Unlimited version history",
+                        "Advanced permissions & sharing",
+                        "All integrations included",
+                        "Priority support"
+                      ],
+                      "button": {
+                        "uuid": "btn-professional",
+                        "componentType": "ButtonProps",
+                        "text": "Start Free Trial",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    },
+                    {
+                      "uuid": "plan-enterprise",
+                      "componentType": "PricingPlanProps",
+                      "name": {
+                        "uuid": "plan-enterprise-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Enterprise"
+                      },
+                      "description": {
+                        "uuid": "plan-enterprise-desc",
+                        "componentType": "TextProps",
+                        "content": "For large organizations with advanced needs"
+                      },
+                      "price": "Custom",
+                      "period": "pricing",
+                      "highlight": false,
+                      "features": [
+                        "Unlimited storage",
+                        "SSO & SAML authentication",
+                        "Advanced audit logs",
+                        "Dedicated account manager",
+                        "99.99% uptime SLA"
+                      ],
+                      "button": {
+                        "uuid": "btn-enterprise",
+                        "componentType": "ButtonProps",
+                        "text": "Contact Sales",
+                        "variant": "outline",
+                        "size": "lg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-faq",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-faq",
+          "layout": "singleColumnWide",
+          "spacing": "xl",
+          "classes": "py-16",
+          "content": [
+            {
+              "uuid": "faq-header",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Frequently asked questions",
+              "classes": "text-4xl font-extrabold mb-12 text-center"
+            },
+            {
+              "uuid": "faq-grid",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "12",
+              "classes": "max-w-5xl mx-auto",
+              "content": [
+                {
+                  "uuid": "faq-col-1",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "content": [
+                    {
+                      "uuid": "faq-1",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "faq-1-icon",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-1-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "How does the 14-day free trial work?"
+                      },
+                      "text": {
+                        "uuid": "faq-1-text",
+                        "componentType": "TextProps",
+                        "content": "You get full access to all features of your chosen plan for 14 days, no credit card required. You can cancel anytime during the trial without being charged."
+                      }
+                    },
+                    {
+                      "uuid": "faq-2",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "faq-2-icon",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-2-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Can I upgrade or downgrade my plan later?"
+                      },
+                      "text": {
+                        "uuid": "faq-2-text",
+                        "componentType": "TextProps",
+                        "content": "Absolutely! You can change your plan at any time from your account settings. When upgrading, you'll get immediate access to new features."
+                      }
+                    },
+                    {
+                      "uuid": "faq-3",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "faq-3-icon",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-3-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Is my data secure with CloudSync?"
+                      },
+                      "text": {
+                        "uuid": "faq-3-text",
+                        "componentType": "TextProps",
+                        "content": "Security is our top priority. All files are encrypted with 256-bit AES encryption both at rest and in transit. We're SOC 2 Type II certified and GDPR compliant."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "uuid": "faq-col-2",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "content": [
+                    {
+                      "uuid": "faq-4",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "faq-4-icon",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-4-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "What happens if I exceed my storage limit?"
+                      },
+                      "text": {
+                        "uuid": "faq-4-text",
+                        "componentType": "TextProps",
+                        "content": "We'll notify you when you reach 80% of your storage limit. If you hit 100%, you can still access and download your files, but you won't be able to upload new ones."
+                      }
+                    },
+                    {
+                      "uuid": "faq-5",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "faq-5-icon",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-5-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Do you offer discounts for annual billing?"
+                      },
+                      "text": {
+                        "uuid": "faq-5-text",
+                        "componentType": "TextProps",
+                        "content": "Yes! When you switch to annual billing, you save 20% compared to monthly billing. The Professional plan is $15.20/user/month when billed annually."
+                      }
+                    },
+                    {
+                      "uuid": "faq-6",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "faq-6-icon",
+                        "componentType": "IconProps",
+                        "name": "circle-help",
+                        "size": 24,
+                        "classes": "text-gray-500"
+                      },
+                      "title": {
+                        "uuid": "faq-6-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "How easy is it to migrate from another service?"
+                      },
+                      "text": {
+                        "uuid": "faq-6-text",
+                        "componentType": "TextProps",
+                        "content": "Very easy! We have migration tools that work with Dropbox, Google Drive, OneDrive, and other popular services. Most teams complete migration in less than a day."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-final-cta",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-final-cta",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center",
+          "content": [
+            {
+              "uuid": "final-cta-content",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "max-w-4xl mx-auto",
+              "content": [
+                {
+                  "uuid": "final-cta-heading",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Ready to transform how your team works?",
+                  "classes": "text-5xl font-extrabold text-white"
+                },
+                {
+                  "uuid": "final-cta-description",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Join 50,000+ teams who sync faster, collaborate better, and work smarter with CloudSync. Start your free 14-day trial today—no credit card required.",
+                  "classes": "text-white text-xl"
+                },
+                {
+                  "uuid": "final-cta-buttons",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-4",
+                  "content": [
+                    {
+                      "uuid": "final-cta-primary",
+                      "componentType": "ButtonProps",
+                      "text": "Start Free Trial",
+                      "variant": "secondary",
+                      "size": "lg",
+                      "type": "button",
+                      "onClick": "handleFinalCTA"
+                    },
+                    {
+                      "uuid": "final-cta-secondary",
+                      "componentType": "ButtonProps",
+                      "text": "Talk to Sales",
+                      "variant": "outline",
+                      "size": "lg",
+                      "classes": "border-2 border-white text-white hover:bg-white hover:text-indigo-600 bg-white/10 transition-all",
+                      "type": "button",
+                      "onClick": "handleTalkToSales"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a26e8de4-8fad-4407-a0a9-b2d8136610da",
+      "title": "Features",
+      "slug": "/features",
+      "summary": "Discover all the powerful features that make CloudSync the best file synchronization platform for teams worldwide.",
+      "shortSummary": "Discover all the powerful features that make CloudSync the best file synchronization platform for te",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "37089f81-59c7-4ebd-a7de-605c20cbd824",
+          "componentType": "SectionProps",
+          "sectionSlug": "37089f81-59c7-4ebd-a7de-605c20cbd824",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "c2fb4e07-dd01-4d63-af9a-18f2885b883b",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "8d515336-d2ac-4395-a7bf-ff8f0a283165",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "fc4e954c-c433-4c68-8380-7f96938674df",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Features",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "df6db921-4b02-4a87-8a74-162053785f7b",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Discover all the powerful features that make CloudSync the best file synchronization platform for teams worldwide.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "0ced575c-e53e-4ed9-a162-30ea37535939",
+          "componentType": "SectionProps",
+          "sectionSlug": "0ced575c-e53e-4ed9-a162-30ea37535939",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "657ca4a8-2bee-4e87-bc5a-03baec1219c4",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "0690400b-e449-498d-9bf4-fe91f8dee42a",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "b95a5c50-a2b9-4595-9837-33187a8b754c",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "d54ba00b-5c55-49ef-becc-4ffdfd9632d5",
+      "title": "Pricing",
+      "slug": "/pricing",
+      "summary": "Choose the perfect plan for your team. From individuals to enterprises, we have a plan that fits your needs.",
+      "shortSummary": "Choose the perfect plan for your team. From individuals to enterprises, we have a plan that fits you",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "5d1804cb-ebbd-4b15-ade8-316fff778680",
+          "componentType": "SectionProps",
+          "sectionSlug": "5d1804cb-ebbd-4b15-ade8-316fff778680",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "f346fe34-1ecf-46d6-900f-374231c98fb9",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "d9d488fb-393a-4867-851d-e98ee4a43192",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "4656cf68-9e58-4d08-888d-4d46af2c75c4",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Pricing",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "c12574e9-aa78-4ecd-984c-50a322380224",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Choose the perfect plan for your team. From individuals to enterprises, we have a plan that fits your needs.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "ac466d5b-7fa3-49d2-8311-2e3b575a7695",
+          "componentType": "SectionProps",
+          "sectionSlug": "ac466d5b-7fa3-49d2-8311-2e3b575a7695",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "1d39395f-7a25-4954-ba63-d75bcbb47631",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "22183296-cd06-4b22-8514-ac9c1deb0371",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "bb55176b-42a4-4698-ac57-f8db8f090fa0",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "1226e4f0-7216-4a36-8937-7f5ef661a4a0",
+      "title": "About Us",
+      "slug": "/about",
+      "summary": "Learn about CloudSync and our mission to provide the best file synchronization experience for teams around the world.",
+      "shortSummary": "Learn about CloudSync and our mission to provide the best file synchronization experience for teams ",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "b008bd04-e0d2-4959-bf25-4994c921b07b",
+          "componentType": "SectionProps",
+          "sectionSlug": "b008bd04-e0d2-4959-bf25-4994c921b07b",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "f6121996-e438-44f2-bf98-eabe23f5a834",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "f36ed85a-6e2e-4064-8ed2-50c8530582d5",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "18bd1b53-e5d3-40d3-af5d-0e6802ca6795",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "About Us",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "89053833-96c6-4c75-9331-b11f446dd5f3",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Learn about CloudSync and our mission to provide the best file synchronization experience for teams around the world.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "5c74b1e3-0cf0-4363-b980-c72a73832853",
+          "componentType": "SectionProps",
+          "sectionSlug": "5c74b1e3-0cf0-4363-b980-c72a73832853",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "fec35750-e2e4-409c-b3fc-c1aa1127bfc3",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "e6c521dd-ae8c-4264-8414-b98e6b7eb6de",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "235bdb47-7405-4225-96af-a9331ba4ff44",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "07c7637f-9ea7-48d3-91fa-41e896c79c3c",
+      "title": "Contact",
+      "slug": "/contact",
+      "summary": "Get in touch with our team. We're here to help you get the most out of CloudSync.",
+      "shortSummary": "Get in touch with our team. We're here to help you get the most out of CloudSync.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "9b9e09c5-a369-4cfb-ac27-42778a64b8c6",
+          "componentType": "SectionProps",
+          "sectionSlug": "9b9e09c5-a369-4cfb-ac27-42778a64b8c6",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "3e6eb8de-2382-483b-9b48-8e257367c4b4",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "173b5d20-2487-466b-990a-c685f7c3f934",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "a7379a64-ef8e-4603-b367-4cc91e33cffd",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Contact",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "561a8ca1-c6c9-470c-8c2e-202581ec9a6d",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Get in touch with our team. We're here to help you get the most out of CloudSync.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "36aaccbb-f5ff-4a2a-ac76-20f1010fbb63",
+          "componentType": "SectionProps",
+          "sectionSlug": "36aaccbb-f5ff-4a2a-ac76-20f1010fbb63",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "22432e1b-44f1-4f05-81db-9c03af6c55f1",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "f7fd96d1-b7ef-4669-b1dc-6c33516ae211",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "97d38427-e0b1-42ac-8df2-cdd62996a251",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "51935727-3f5d-4629-82dd-40a0ceee6b2d",
+          "componentType": "SectionProps",
+          "sectionSlug": "51935727-3f5d-4629-82dd-40a0ceee6b2d",
+          "spacing": "xl",
+          "classes": "bg-muted/50",
+          "content": [
+            {
+              "uuid": "d39ce04a-56a9-4c87-baa0-948d1e9267d1",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "e469b866-c47a-419f-a73e-02a0f15ab816",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "591e6f7f-2402-4f83-832e-27c28855ea5f",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Get in Touch",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "e75d4fd4-2402-4373-a9b2-d4b4c2e99c59",
+                      "componentType": "FormProps",
+                      "title": "Contact Form",
+                      "onSubmitAction": {
+                        "actionId": "submit_contact_form",
+                        "successMessage": "Thank you for your message! We will get back to you soon.",
+                        "errorMessage": "There was an error sending your message. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email"
+                      },
+                      "content": [],
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "actions": [
+                        {
+                          "uuid": "a45c6387-cdca-4fe5-aeea-9a19a58303fc",
+                          "componentType": "ButtonProps",
+                          "actionType": "submit",
+                          "text": "Send Message",
+                          "variant": "default"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "fb0b8df6-5533-4714-9cd5-79e9981502f2",
+      "title": "Sign In",
+      "slug": "/signin",
+      "summary": "Sign in to your CloudSync account to access your files and start syncing.",
+      "shortSummary": "Sign in to your CloudSync account to access your files and start syncing.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "dad2abee-1d70-42ff-9541-03277c588c4f",
+          "componentType": "SectionProps",
+          "sectionSlug": "dad2abee-1d70-42ff-9541-03277c588c4f",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "ab471b54-7d28-4a7e-96d3-1d15e4e855f7",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "ea2a9572-89b3-4871-a8bf-96eff66e905e",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "56232aee-6bd1-40dc-8e9a-68565dda9a4e",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Sign In",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "fe8a05bb-47b1-4d26-a885-815fdc8b615b",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Sign in to your CloudSync account to access your files and start syncing.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "df301008-f184-4ef3-998c-d03afe581414",
+          "componentType": "SectionProps",
+          "sectionSlug": "df301008-f184-4ef3-998c-d03afe581414",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "b0386903-4934-490f-8054-d9411d36c27e",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "ff65e61e-fd95-459e-a589-aaffa949eaf7",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "0d86d17b-caab-483a-820f-8666e9c501b2",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "bbafc17a-beb0-4ce4-9a4d-b976622f8208",
+      "title": "Documentation",
+      "slug": "/docs",
+      "summary": "Comprehensive documentation and guides to help you get started with CloudSync and make the most of its features.",
+      "shortSummary": "Comprehensive documentation and guides to help you get started with CloudSync and make the most of i",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "e921989f-85e8-4bd7-9130-f3ca9ea5a345",
+          "componentType": "SectionProps",
+          "sectionSlug": "e921989f-85e8-4bd7-9130-f3ca9ea5a345",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "7319aa64-773a-47ee-ad27-71406ed83d0c",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "250891c0-6fbe-45a0-a455-d379924d01fa",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "7c6b9019-b012-468f-b168-c20143caa469",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Documentation",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "1df0c6b5-cbb2-42e0-84b0-66db307516e7",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Comprehensive documentation and guides to help you get started with CloudSync and make the most of its features.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "a7e1a4a1-0fdd-4350-aa24-d7be82fbc671",
+          "componentType": "SectionProps",
+          "sectionSlug": "a7e1a4a1-0fdd-4350-aa24-d7be82fbc671",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "0a927315-d646-4e10-bc4a-15ec3ac16fac",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "bd1f8d45-6133-4baf-987f-b364d979d770",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "7c540535-e8b7-49e1-bc71-e905b1080884",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "426323e3-e0a3-4846-8214-9f7fede47e8d",
+      "title": "API Reference",
+      "slug": "/api",
+      "summary": "Complete API documentation for developers who want to integrate CloudSync into their applications.",
+      "shortSummary": "Complete API documentation for developers who want to integrate CloudSync into their applications.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "17de5e07-f502-4aa4-b589-ff4e19c97603",
+          "componentType": "SectionProps",
+          "sectionSlug": "17de5e07-f502-4aa4-b589-ff4e19c97603",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "88a1684b-48da-4772-8cbc-ae4540f16cf1",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "11cd3aca-6169-4caa-aa88-57bf971dbb00",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "0632b03a-2760-475a-95e7-405b6fe29c1b",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "API Reference",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "8e38515f-a589-4405-8a6d-c6eb954e948c",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Complete API documentation for developers who want to integrate CloudSync into their applications.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "49073362-ae0b-41d6-91fb-17d794659467",
+          "componentType": "SectionProps",
+          "sectionSlug": "49073362-ae0b-41d6-91fb-17d794659467",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "b699c390-a02d-4fa4-a032-30b238c3d67b",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "4cdd2625-a31f-4b6b-b846-70b4115b0be0",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "0e7402fe-edee-4570-bcf0-3547df24ee36",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "5e81d2e6-9a5d-436e-88f7-0291ce655654",
+      "title": "Support",
+      "slug": "/support",
+      "summary": "Get help with CloudSync. Browse our knowledge base, contact support, or join our community.",
+      "shortSummary": "Get help with CloudSync. Browse our knowledge base, contact support, or join our community.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "666ea42c-a172-4a91-af6a-842592895076",
+          "componentType": "SectionProps",
+          "sectionSlug": "666ea42c-a172-4a91-af6a-842592895076",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "c1f478a4-8456-4747-bf0d-1903584a3910",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "d9d07696-6810-4893-ac52-5263ad7853dd",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "4c1dd986-9ee9-4460-9a5c-3ac016a637c3",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Support",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "4b04bae2-4c04-45dc-80af-a830b5dae5d2",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Get help with CloudSync. Browse our knowledge base, contact support, or join our community.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "bae336d7-b48c-4bea-8ed2-a42605f7228c",
+          "componentType": "SectionProps",
+          "sectionSlug": "bae336d7-b48c-4bea-8ed2-a42605f7228c",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "2e59f9e3-0bb7-495c-ae7b-9e6ed53a512f",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "1962fb4e-7b79-4aaf-b3bf-03da8b9e39f0",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "b5cbdbf9-27f9-465a-b5fc-a0b10344a975",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "df7d10ca-d523-401e-9515-cb58933bcdeb",
+      "title": "Blog",
+      "slug": "/blog",
+      "summary": "Read the latest news, updates, and insights from the CloudSync team.",
+      "shortSummary": "Read the latest news, updates, and insights from the CloudSync team.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "a5a920b5-bc6b-4b13-9b2d-d6f5268ee543",
+          "componentType": "SectionProps",
+          "sectionSlug": "a5a920b5-bc6b-4b13-9b2d-d6f5268ee543",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "ed87d164-5ba2-4cd1-8c8d-a48c33e4fffe",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "6e514fac-8a77-4d5d-b8f8-9f6fac1cf34f",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "3430bc7b-c986-4ac4-b8f6-d46084cdabf0",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Blog",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "f888bb13-8566-4afa-8cb2-2eb69f635a20",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Read the latest news, updates, and insights from the CloudSync team.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "c707f9e8-a2a1-42d8-b16e-26467f620b44",
+          "componentType": "SectionProps",
+          "sectionSlug": "c707f9e8-a2a1-42d8-b16e-26467f620b44",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "785f7a02-c54f-4d3b-afcf-73f6c7b3123e",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "7918e43f-53aa-462c-8532-493fe7cf124a",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "e88d0004-99ab-4849-ae48-df27a8efbcc9",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "2e7de0bd-75ac-4724-a4d3-bf1738da5577",
+      "title": "Careers",
+      "slug": "/careers",
+      "summary": "Join our team and help us build the future of file synchronization. View open positions and apply today.",
+      "shortSummary": "Join our team and help us build the future of file synchronization. View open positions and apply to",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "84fe8a6c-7ab6-42a8-8450-6522641e77d4",
+          "componentType": "SectionProps",
+          "sectionSlug": "84fe8a6c-7ab6-42a8-8450-6522641e77d4",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "7daf698d-4750-4ac6-b9d0-39b96a90f272",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "463cb379-705d-4469-8f9d-0e5e1fb12a78",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "5a938903-4264-4999-8521-0edc11990fbc",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Careers",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "98f179b9-0556-42d2-b1a8-4bb2102924ec",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Join our team and help us build the future of file synchronization. View open positions and apply today.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "fcbb4baf-8e6a-4c4e-a5f5-bf29167d21cd",
+          "componentType": "SectionProps",
+          "sectionSlug": "fcbb4baf-8e6a-4c4e-a5f5-bf29167d21cd",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "92fb7613-c906-41e1-bdc7-5fb640fa6cca",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "a264e990-e6a5-49f3-aa88-6307f31029c6",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "b2101018-7f1d-4edf-b28e-fe48a72af775",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e47e33ff-7a7e-43d0-9042-c84d4d4627a7",
+      "title": "Security",
+      "slug": "/security",
+      "summary": "Learn about our security practices and how we protect your data with bank-grade encryption.",
+      "shortSummary": "Learn about our security practices and how we protect your data with bank-grade encryption.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "0bddb7d8-517b-4471-95ae-341eb1e44641",
+          "componentType": "SectionProps",
+          "sectionSlug": "0bddb7d8-517b-4471-95ae-341eb1e44641",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "a8a395c8-7307-4aae-a5b9-6650f802384e",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "148ceb08-0df6-4fd9-93ff-4de4290e88df",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "b9312c0e-be80-4976-8d8d-055f2b5f1499",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Security",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "efcb22fd-35cb-4cfd-ad9c-224efc5baea9",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Learn about our security practices and how we protect your data with bank-grade encryption.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "d289727d-0441-4bc9-b4ff-d23289050198",
+          "componentType": "SectionProps",
+          "sectionSlug": "d289727d-0441-4bc9-b4ff-d23289050198",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "cf309f88-8637-4142-83f7-a23efc63dbb0",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "d2f4787b-2469-40c1-9d82-d842f0806d84",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "672f53d4-1298-47b1-b946-61240237e658",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "0091cb8c-ea61-4b0d-93c0-8f5b63356e28",
+      "title": "Integrations",
+      "slug": "/integrations",
+      "summary": "Connect CloudSync with your favorite tools and services. Browse our extensive integration library.",
+      "shortSummary": "Connect CloudSync with your favorite tools and services. Browse our extensive integration library.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "a7096809-68a0-4e8e-98ff-494f259daf3d",
+          "componentType": "SectionProps",
+          "sectionSlug": "a7096809-68a0-4e8e-98ff-494f259daf3d",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "73495bb4-6f56-4842-ad22-02173c092a09",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "8035a165-8911-4e68-a7d9-7a56a13e85dc",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "c32012d4-19e9-4714-8073-517bdcabb24c",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Integrations",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "1c6a1a00-03d4-44e4-81f5-c55bfaa0a4b6",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Connect CloudSync with your favorite tools and services. Browse our extensive integration library.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "608d6b72-e374-457a-9bf9-8c9bbea44e69",
+          "componentType": "SectionProps",
+          "sectionSlug": "608d6b72-e374-457a-9bf9-8c9bbea44e69",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "a9bd25ea-ff75-41f9-8dc4-04854f7d6631",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "25a9cbd4-b245-4a6a-92cc-f5ef3629558a",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "251d54ad-3507-44cf-85f7-b475b6e098b6",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "1a733635-0caf-4064-830d-f7d7cb29170c",
+      "title": "For Teams",
+      "slug": "/teams",
+      "summary": "Powerful collaboration features designed for modern teams. Sync, share, and work together seamlessly.",
+      "shortSummary": "Powerful collaboration features designed for modern teams. Sync, share, and work together seamlessly",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "2b335751-fca1-4136-b60a-f46213106177",
+          "componentType": "SectionProps",
+          "sectionSlug": "2b335751-fca1-4136-b60a-f46213106177",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "0e8933de-0e86-4f7c-8dd6-74da7494ab36",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "08c7bf19-8af3-4abf-b5f9-ab17a59b9f88",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "e59072b1-a7d7-4c8d-abc2-51e3bb17de40",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "For Teams",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "93526b66-b4cd-459c-bb0c-5eaafe962483",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Powerful collaboration features designed for modern teams. Sync, share, and work together seamlessly.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "5205d62d-48de-45c3-bbfc-c6e88502b7e0",
+          "componentType": "SectionProps",
+          "sectionSlug": "5205d62d-48de-45c3-bbfc-c6e88502b7e0",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "0fd39cae-b329-4c4a-b695-77d9e04779e5",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "9ede56e5-6556-48e4-94a0-02a0b66bb640",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "623b3238-04e0-4ff7-bea0-60e1c9f6ff65",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "d0637152-abd3-48f8-af5c-f7d950a8c6ef",
+      "title": "Enterprise",
+      "slug": "/enterprise",
+      "summary": "Enterprise-grade file synchronization with advanced security, compliance, and support options.",
+      "shortSummary": "Enterprise-grade file synchronization with advanced security, compliance, and support options.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "fa4e9bf0-bc8d-4fe6-ae7d-f57c16b2d902",
+          "componentType": "SectionProps",
+          "sectionSlug": "fa4e9bf0-bc8d-4fe6-ae7d-f57c16b2d902",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "d4955a3e-4b7d-481d-ab12-1b4c6a7a81d1",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "928f132c-d173-4fc1-a936-fb3df01777e5",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "d97a6655-6aa5-4a5b-9b56-3d85066c5166",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Enterprise",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "d20a6f4d-fcb7-405d-8195-d2be75507274",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Enterprise-grade file synchronization with advanced security, compliance, and support options.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "63089d6b-d41f-4e00-954b-77f470f5798e",
+          "componentType": "SectionProps",
+          "sectionSlug": "63089d6b-d41f-4e00-954b-77f470f5798e",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "f4815f8f-fb9a-42d1-ad64-ed8e57750767",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "26399a5c-e87d-43c3-8586-a32f17f55e40",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "9cdd7eca-77e5-42de-a74e-e469b176bcd0",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "bead9202-f7e1-47b1-a880-248f5f76d16d",
+      "title": "For Developers",
+      "slug": "/developers",
+      "summary": "Build powerful integrations with CloudSync's developer-friendly API and extensive documentation.",
+      "shortSummary": "Build powerful integrations with CloudSync's developer-friendly API and extensive documentation.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "0659eb59-7860-4613-98e5-20ea87461640",
+          "componentType": "SectionProps",
+          "sectionSlug": "0659eb59-7860-4613-98e5-20ea87461640",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "cfbf3b19-bee7-47d3-a3e3-9c0197605dc1",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "43403d1c-c18e-44b3-8a70-bdcce7cbfd6f",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "745edb0b-278b-4426-8d7d-21c0a19633eb",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "For Developers",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "5ac01c43-4076-4849-a4fa-7addd4bd38db",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Build powerful integrations with CloudSync's developer-friendly API and extensive documentation.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "5c64bff5-d231-4c9f-a23d-d3b4ae0256e6",
+          "componentType": "SectionProps",
+          "sectionSlug": "5c64bff5-d231-4c9f-a23d-d3b4ae0256e6",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "556e1c9f-bd20-44fe-a35f-26eaab222366",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "84579b8a-2e4a-427e-b733-ea5d940137f8",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "89b7dc17-669f-4f4f-8c48-83c1a86ecb3b",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "997f5c25-50c5-459f-b583-652d2151924e",
+      "title": "Resources",
+      "slug": "/resources",
+      "summary": "Guides, tutorials, case studies, and more resources to help you get the most out of CloudSync.",
+      "shortSummary": "Guides, tutorials, case studies, and more resources to help you get the most out of CloudSync.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "bb9a4a3d-5edc-496b-95e6-1e052d88aa86",
+          "componentType": "SectionProps",
+          "sectionSlug": "bb9a4a3d-5edc-496b-95e6-1e052d88aa86",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "cb7341fc-916b-4288-be4d-444037e3b1c0",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "dc57f39a-ce47-432e-b6da-fcd90714daa2",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "d15865e4-efa0-4b17-8dd2-a64e17c0de36",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Resources",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "99ff6182-e3a3-4557-affa-bb99511700f5",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Guides, tutorials, case studies, and more resources to help you get the most out of CloudSync.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "ecbfcfc2-af51-4732-ad8e-0a4a097090ab",
+          "componentType": "SectionProps",
+          "sectionSlug": "ecbfcfc2-af51-4732-ad8e-0a4a097090ab",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "fd49f6ba-1a05-43e3-9674-9a59121a2043",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "6868dac4-9927-4e32-837f-29f52e91f200",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "0d9851d2-015f-4776-95a2-130d136ef66e",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

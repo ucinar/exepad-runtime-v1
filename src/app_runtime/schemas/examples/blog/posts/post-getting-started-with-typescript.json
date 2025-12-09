@@ -1,0 +1,780 @@
+{
+  "uuid": "blog-post-app-typescript-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "TypeScript Tutorial Blog Post",
+  "alias": "typescript-tutorial-post",
+  "summary": "A complete blog post page about getting started with TypeScript, featuring a comprehensive guide with code examples, best practices, and related articles. Demonstrates a full-featured blog post layout with hero section, rich content, and engagement elements.",
+  "shortSummary": "A complete blog post page about getting started with TypeScript with code examples and best practices",
+  "lastUpdatedEpoch": 1704585600,
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#1e3a8a",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f9fafb",
+      "muted-foreground": "#64748b",
+      "accent": "#3b82f6",
+      "accent-foreground": "#ffffff",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#ffffff",
+      "border": "#e5e7eb",
+      "input": "#e5e7eb",
+      "ring": "#2563eb"
+    },
+    "dark": {
+      "background": "#0a0a0a",
+      "foreground": "#f9fafb",
+      "primary": "#3b82f6",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#111827",
+      "muted-foreground": "#9ca3af",
+      "accent": "#60a5fa",
+      "accent-foreground": "#0f172a",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#f9fafb",
+      "border": "#374151",
+      "input": "#374151",
+      "ring": "#3b82f6"
+    },
+    "fonts": {
+      "body": {
+        "family": "Inter",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      },
+      "heading": {
+        "family": "Inter",
+        "variant": "700",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      }
+    },
+    "radius": "0.5rem",
+    "metadata": {
+      "title": "Getting Started with TypeScript - Tech Blog",
+      "description": "Learn TypeScript from scratch with this comprehensive guide covering type safety, interfaces, best practices, and practical examples.",
+      "keywords": "typescript, javascript, web development, programming, tutorial, blog"
+    }
+  },
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-blog-post-001",
+      "componentType": "NavbarProps",
+      "sticky": true,
+      "variant": "default",
+      "menuVariant": "default",
+      "classes": "border-b",
+      "logo": {
+        "uuid": "logo-blog-001",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Tech Blog",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "logo-blog-href-001",
+          "href": "/",
+          "text": "Tech Blog"
+        }
+      },
+      "content": [
+        {
+          "uuid": "nav-home-001",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "nav-home-link-001",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "nav-blog-002",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Blog",
+          "href": {
+            "uuid": "nav-blog-link-002",
+            "componentType": "LinkProps",
+            "href": "/blog",
+            "text": "Blog"
+          }
+        },
+        {
+          "uuid": "nav-about-003",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "nav-about-link-003",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-001",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-001",
+      "classes": "border-t bg-muted/50",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-flex-002",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "gap": "8",
+          "content": [
+            {
+              "uuid": "footer-grid-003",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "footer-col1-004",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-brand-005",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Tech Blog"
+                    },
+                    {
+                      "uuid": "footer-desc-006",
+                      "componentType": "TextProps",
+                      "content": "Your trusted source for web development tutorials, programming tips, and technology insights.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col2-007",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-links-heading-008",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Content"
+                    },
+                    {
+                      "uuid": "footer-link-blog-009",
+                      "componentType": "LinkProps",
+                      "href": "/blog",
+                      "text": "Blog",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-tutorials-010",
+                      "componentType": "LinkProps",
+                      "href": "/tutorials",
+                      "text": "Tutorials",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-guides-011",
+                      "componentType": "LinkProps",
+                      "href": "/guides",
+                      "text": "Guides",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col3-012",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-company-heading-013",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Company"
+                    },
+                    {
+                      "uuid": "footer-link-about-014",
+                      "componentType": "LinkProps",
+                      "href": "/about",
+                      "text": "About",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-contact-015",
+                      "componentType": "LinkProps",
+                      "href": "/contact",
+                      "text": "Contact",
+                      "classes": "text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col4-016",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-social-heading-017",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Follow Us"
+                    },
+                    {
+                      "uuid": "footer-social-018",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "3",
+                      "content": [
+                        {
+                          "uuid": "footer-twitter-019",
+                          "componentType": "LinkProps",
+                          "href": "https://twitter.com",
+                          "text": "𝕏",
+                          "classes": "text-muted-foreground hover:text-foreground"
+                        },
+                        {
+                          "uuid": "footer-github-020",
+                          "componentType": "LinkProps",
+                          "href": "https://github.com",
+                          "text": "GitHub",
+                          "classes": "text-muted-foreground hover:text-foreground"
+                        },
+                        {
+                          "uuid": "footer-linkedin-021",
+                          "componentType": "LinkProps",
+                          "href": "https://linkedin.com",
+                          "text": "LinkedIn",
+                          "classes": "text-muted-foreground hover:text-foreground"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "footer-divider-022",
+              "componentType": "SpacerProps",
+              "size": "md"
+            },
+            {
+              "uuid": "footer-copyright-023",
+              "componentType": "TextProps",
+              "content": "© 2024 Tech Blog. All rights reserved.",
+              "classes": "text-center text-muted-foreground text-sm"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "blogpost-001-typescript",
+      "pageType": "BlogPostPageProps",
+      "title": "Getting Started with TypeScript: A Comprehensive Guide",
+      "slug": "getting-started-with-typescript",
+      "summary": "A comprehensive guide to getting started with TypeScript for modern web development. Learn about type safety, interfaces, best practices, and how TypeScript can improve your code quality and development experience. Perfect for JavaScript developers looking to level up their skills.",
+      "shortSummary": "A comprehensive guide to getting started with TypeScript for modern web development",
+      "lastUpdatedEpoch": 1704585600,
+      "metadata": {
+        "title": "Getting Started with TypeScript: A Comprehensive Guide",
+        "description": "Learn TypeScript from scratch with this comprehensive guide. Discover type safety, interfaces, best practices, and practical examples to enhance your web development skills.",
+        "keywords": "typescript, javascript, web development, programming, type safety, interfaces, tutorial, guide",
+        "openGraph": {
+          "type": "article"
+        }
+      },
+      "content": [
+        {
+          "uuid": "hero-section-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "hero-section-001",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-primary/5 to-background border-b",
+          "content": [
+            {
+              "uuid": "hero-container-002",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-flex-003",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "py-12 text-center",
+                  "content": [
+                    {
+                      "uuid": "breadcrumb-004",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "2",
+                      "justify": "center",
+                      "align": "center",
+                      "classes": "text-sm text-muted-foreground",
+                      "content": [
+                        {
+                          "uuid": "breadcrumb-home-005",
+                          "componentType": "LinkProps",
+                          "href": "/",
+                          "text": "Home",
+                          "classes": "hover:text-foreground"
+                        },
+                        {
+                          "uuid": "breadcrumb-sep-006",
+                          "componentType": "TextProps",
+                          "content": "/"
+                        },
+                        {
+                          "uuid": "breadcrumb-blog-007",
+                          "componentType": "LinkProps",
+                          "href": "/blog",
+                          "text": "Blog",
+                          "classes": "hover:text-foreground"
+                        },
+                        {
+                          "uuid": "breadcrumb-sep-008",
+                          "componentType": "TextProps",
+                          "content": "/"
+                        },
+                        {
+                          "uuid": "breadcrumb-current-009",
+                          "componentType": "TextProps",
+                          "content": "Web Development"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "post-title-010",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Getting Started with TypeScript: A Comprehensive Guide",
+                      "classes": "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
+                    },
+                    {
+                      "uuid": "post-meta-011",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "4",
+                      "justify": "center",
+                      "align": "center",
+                      "classes": "text-muted-foreground flex-wrap",
+                      "content": [
+                        {
+                          "uuid": "author-meta-012",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "align": "center",
+                          "content": [
+                            {
+                              "uuid": "author-icon-013",
+                              "componentType": "IconProps",
+                              "name": "user",
+                              "size": 16
+                            },
+                            {
+                              "uuid": "author-name-014",
+                              "componentType": "TextProps",
+                              "content": "Sarah Johnson"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "date-meta-015",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "align": "center",
+                          "content": [
+                            {
+                              "uuid": "date-icon-016",
+                              "componentType": "IconProps",
+                              "name": "calendar",
+                              "size": 16
+                            },
+                            {
+                              "uuid": "date-text-017",
+                              "componentType": "TextProps",
+                              "content": "January 7, 2024"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "readtime-meta-018",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "2",
+                          "align": "center",
+                          "content": [
+                            {
+                              "uuid": "clock-icon-019",
+                              "componentType": "IconProps",
+                              "name": "clock",
+                              "size": 16
+                            },
+                            {
+                              "uuid": "readtime-text-020",
+                              "componentType": "TextProps",
+                              "content": "8 min read"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "tags-021",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "2",
+                      "justify": "center",
+                      "classes": "flex-wrap",
+                      "content": [
+                        {
+                          "uuid": "tag-ts-022",
+                          "componentType": "BadgeProps",
+                          "variant": "default",
+                          "content": "TypeScript"
+                        },
+                        {
+                          "uuid": "tag-js-023",
+                          "componentType": "BadgeProps",
+                          "variant": "secondary",
+                          "content": "JavaScript"
+                        },
+                        {
+                          "uuid": "tag-webdev-024",
+                          "componentType": "BadgeProps",
+                          "variant": "outline",
+                          "content": "Web Development"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "featured-image-025",
+          "componentType": "SectionProps",
+          "sectionSlug": "featured-image-025",
+          "spacing": "sm",
+          "content": [
+            {
+              "uuid": "image-container-026",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "featured-img-027",
+                  "componentType": "ImageProps",
+                  "src": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&h=600&fit=crop",
+                  "alt": "TypeScript code on a computer screen",
+                  "classes": "w-full h-[400px] object-cover rounded-lg shadow-lg",
+                  "asset": {
+                    "uuid": "featured-img-027-asset",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": false,
+                    "keywords": "blog, technology, web development, programming",
+                    "requestedWidth": 1200,
+                    "requestedHeight": 600
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "article-content-028",
+          "componentType": "SectionProps",
+          "sectionSlug": "article-content-028",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "content-container-029",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "content-flex-030",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "prose prose-lg dark:prose-invert max-w-none",
+                  "content": [
+                    {
+                      "uuid": "intro-031",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "TypeScript has revolutionized the way we write JavaScript applications. As a superset of JavaScript, it adds static type definitions, making your code more predictable and easier to debug. In this comprehensive guide, we'll explore everything you need to know to get started with TypeScript.",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "what-is-ts-032",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "What is TypeScript?"
+                    },
+                    {
+                      "uuid": "what-is-content-033",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "TypeScript is a strongly typed programming language that builds on JavaScript. Developed and maintained by Microsoft, it adds optional static typing to the language, which can help you catch errors early through type checking and provide rich IDE support.\n\nThe key benefits include:\n\n- **Type Safety**: Catch errors at compile time rather than runtime\n- **Better IDE Support**: Enhanced autocomplete and IntelliSense\n- **Code Documentation**: Types serve as inline documentation\n- **Refactoring Confidence**: Safely refactor your codebase with compiler assistance",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "getting-started-034",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Getting Started"
+                    },
+                    {
+                      "uuid": "install-heading-035",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Installation"
+                    },
+                    {
+                      "uuid": "install-content-036",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "Getting TypeScript installed is straightforward. You can install it globally using npm:",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "code-install-037",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "```bash\nnpm install -g typescript\n\n# Verify installation\ntsc --version\n```",
+                      "sanitize": false
+                    },
+                    {
+                      "uuid": "first-program-038",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Your First TypeScript Program"
+                    },
+                    {
+                      "uuid": "first-program-content-039",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "Let's create a simple TypeScript file to see how it works. Create a file called `hello.ts`:",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "code-hello-040",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "```typescript\nfunction greet(name: string): string {\n  return `Hello, ${name}!`;\n}\n\nconst message = greet(\"World\");\nconsole.log(message);\n```",
+                      "sanitize": false
+                    },
+                    {
+                      "uuid": "compile-content-041",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "Compile it using the TypeScript compiler:",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "code-compile-042",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "```bash\ntsc hello.ts\nnode hello.js\n```",
+                      "sanitize": false
+                    },
+                    {
+                      "uuid": "types-heading-043",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Understanding Types"
+                    },
+                    {
+                      "uuid": "types-content-044",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "TypeScript provides several basic types that you'll use frequently:",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "code-types-045",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "```typescript\n// Basic types\nlet isDone: boolean = false;\nlet count: number = 42;\nlet username: string = \"Alice\";\n\n// Arrays\nlet numbers: number[] = [1, 2, 3];\nlet names: Array<string> = [\"Alice\", \"Bob\"];\n\n// Tuple\nlet person: [string, number] = [\"Alice\", 30];\n\n// Enum\nenum Color { Red, Green, Blue }\nlet c: Color = Color.Green;\n\n// Any (avoid when possible)\nlet anything: any = 42;\n```",
+                      "sanitize": false
+                    },
+                    {
+                      "uuid": "interfaces-heading-046",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Interfaces and Type Aliases"
+                    },
+                    {
+                      "uuid": "interfaces-content-047",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "Interfaces and type aliases allow you to define custom types for your objects:",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "code-interfaces-048",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "```typescript\n// Interface\ninterface User {\n  id: number;\n  name: string;\n  email: string;\n  age?: number; // Optional property\n}\n\n// Type alias\ntype Point = {\n  x: number;\n  y: number;\n};\n\n// Using the interface\nconst user: User = {\n  id: 1,\n  name: \"Alice\",\n  email: \"alice@example.com\"\n};\n```",
+                      "sanitize": false
+                    },
+                    {
+                      "uuid": "best-practices-049",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Best Practices"
+                    },
+                    {
+                      "uuid": "alert-best-practices-050",
+                      "componentType": "FlexProps",
+                      "classes": "border-primary/20 bg-primary/5",
+                      "content": [
+                        {
+                          "uuid": "alert-title-051",
+                          "componentType": "HeadingProps",
+                          "level": 4,
+                          "text": "💡 Pro Tip"
+                        },
+                        {
+                          "uuid": "alert-desc-052",
+                          "componentType": "TextProps",
+                          "content": "Always enable strict mode in your tsconfig.json for maximum type safety. This catches more potential issues at compile time."
+                        }
+                      ],
+                      "direction": "column",
+                      "gap": "4"
+                    },
+                    {
+                      "uuid": "best-practices-content-053",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "Here are some best practices when working with TypeScript:\n\n1. **Enable Strict Mode**: Always use `\"strict\": true` in your `tsconfig.json`\n2. **Avoid Any**: Use specific types instead of `any` whenever possible\n3. **Use Interfaces**: Define interfaces for object shapes\n4. **Leverage Type Inference**: Let TypeScript infer types when obvious\n5. **Use Union Types**: Combine types when a value can be one of several types\n6. **Document with JSDoc**: Add comments for better IDE support",
+                      "sanitize": true
+                    },
+                    {
+                      "uuid": "tsconfig-heading-054",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Example tsconfig.json"
+                    },
+                    {
+                      "uuid": "code-tsconfig-055",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "```json\n{\n  \"compilerOptions\": {\n    \"target\": \"ES2020\",\n    \"module\": \"commonjs\",\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"outDir\": \"./dist\",\n    \"rootDir\": \"./src\"\n  },\n  \"include\": [\"src/**/*\"],\n  \"exclude\": [\"node_modules\"]\n}\n```",
+                      "sanitize": false
+                    },
+                    {
+                      "uuid": "conclusion-056",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Conclusion"
+                    },
+                    {
+                      "uuid": "conclusion-content-057",
+                      "componentType": "MarkdownBlockProps",
+                      "content": "TypeScript is a powerful tool that can significantly improve your development experience and code quality. By adding static types to JavaScript, it helps you catch errors early, write more maintainable code, and provides excellent IDE support.\n\nWhile there's a learning curve, the benefits far outweigh the initial investment. Start small by adding TypeScript to a single file or component, and gradually expand its usage as you become more comfortable with the syntax and concepts.\n\nHappy coding! 🚀",
+                      "sanitize": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "cta-section-058",
+          "componentType": "SectionProps",
+          "sectionSlug": "cta-section-058",
+          "spacing": "xl",
+          "classes": "bg-muted/50 border-y",
+          "content": [
+            {
+              "uuid": "cta-container-059",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "cta-card-060",
+                  "componentType": "FlexProps",
+                  "classes": "bg-gradient-to-r from-primary/10 to-accent/10",
+                  "content": [
+                    {
+                      "uuid": "cta-flex-061",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "6",
+                      "align": "center",
+                      "classes": "text-center p-8",
+                      "content": [
+                        {
+                          "uuid": "cta-heading-062",
+                          "componentType": "HeadingProps",
+                          "level": 3,
+                          "text": "Want to Learn More?"
+                        },
+                        {
+                          "uuid": "cta-text-063",
+                          "componentType": "TextProps",
+                          "content": "Subscribe to our newsletter for more web development tutorials, tips, and best practices delivered straight to your inbox.",
+                          "classes": "text-muted-foreground max-w-2xl"
+                        },
+                        {
+                          "uuid": "cta-buttons-064",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "4",
+                          "content": [
+                            {
+                              "uuid": "cta-subscribe-065",
+                              "componentType": "ButtonProps",
+                              "text": "Subscribe Now",
+                              "variant": "default",
+                              "size": "lg"
+                            },
+                            {
+                              "uuid": "cta-more-066",
+                              "componentType": "ButtonProps",
+                              "text": "Read More Articles",
+                              "variant": "outline",
+                              "size": "lg",
+                              "link": {
+                                "uuid": "cta-link-067",
+                                "componentType": "LinkProps",
+                                "href": "/blog",
+                                "text": "Read More Articles"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "direction": "column",
+                  "gap": "4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

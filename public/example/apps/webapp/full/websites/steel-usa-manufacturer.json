@@ -1,0 +1,1471 @@
+{
+  "uuid": "web-app-usa-steel",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "USA Steel Manufacturers",
+  "alias": "usa-steel-manufacturers",
+  "summary": "A professional, multi-page website for a steel manufacturer based in the USA to showcase their products, services, and company information, emphasizing product quality and manufacturing capabilities.",
+  "shortSummary": "A professional, multi-page website for a steel manufacturer based in the USA to showcase their products, services, and company information, emphasizin",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#fefefe",
+      "foreground": "#1a1a1a",
+      "primary": "#c4430b",
+      "primary-foreground": "#ffffff",
+      "secondary": "#fff7ed",
+      "secondary-foreground": "#9a3412",
+      "muted": "#fafaf9",
+      "muted-foreground": "#78716c",
+      "accent": "#f97316",
+      "accent-foreground": "#ffffff",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e7e5e4",
+      "input": "#e7e5e4",
+      "ring": "#ff6b35"
+    },
+    "dark": {
+      "background": "#0c0a09",
+      "foreground": "#fafaf9",
+      "primary": "#fb923c",
+      "primary-foreground": "#0c0a09",
+      "secondary": "#292524",
+      "secondary-foreground": "#e7e5e4",
+      "muted": "#1c1917",
+      "muted-foreground": "#a8a29e",
+      "accent": "#fdba74",
+      "accent-foreground": "#0c0a09",
+      "destructive": "#f87171",
+      "destructive-foreground": "#0c0a09",
+      "border": "#44403c",
+      "input": "#44403c",
+      "ring": "#fb923c"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Playfair Display",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      },
+      "body": {
+        "family": "Libertinus Sans",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      }
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "header": [
+    {
+      "componentType": "NavbarProps",
+      "uuid": "nav-usa-steel",
+      "variant": "default",
+      "layout": "wide",
+      "logo": {
+        "componentType": "NavbarLogoProps",
+        "uuid": "nav-logo-usa-steel",
+        "type": "text",
+        "text": "USA Steel Manufacturers"
+      },
+      "content": [
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-home",
+          "label": "Home",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-home-nav",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-about",
+          "label": "About Us",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-about-nav",
+            "href": "/about",
+            "text": "About Us"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-products",
+          "label": "Products & Services",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-products-nav",
+            "href": "/products",
+            "text": "Products & Services"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-gallery",
+          "label": "Gallery",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-gallery-nav",
+            "href": "/gallery",
+            "text": "Gallery"
+          }
+        },
+        {
+          "type": "link",
+          "componentType": "MenuLinkItemProps",
+          "uuid": "nav-link-contact",
+          "label": "Contact Us",
+          "href": {
+            "componentType": "LinkProps",
+            "uuid": "link-contact-nav",
+            "href": "/contact",
+            "text": "Contact Us"
+          }
+        },
+        {
+          "type": "button",
+          "componentType": "MenuButtonItemProps",
+          "uuid": "btn-get-quote",
+          "button": {
+            "componentType": "ButtonProps",
+            "uuid": "btn-get-quote-button",
+            "text": "Get a Quote",
+            "variant": "default",
+            "size": "sm"
+          }
+        }
+      ]
+    }
+  ],
+  "sidebar": [],
+  "footer": [
+    {
+      "uuid": "footer-usa-steel",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-usa-steel",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-flex-container",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "6",
+          "content": [
+            {
+              "uuid": "footer-logo-container",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-logo-image",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/32x32/000000/FFFFFF?text=Logo",
+                  "alt": "Company Logo",
+                  "asset": {
+                    "componentType": "ImageAssetProps",
+                    "uuid": "asset-footer-logo",
+                    "isProcessed": true,
+                    "keywords": "logo",
+                    "requestedWidth": 32,
+                    "requestedHeight": 32
+                  }
+                },
+                {
+                  "uuid": "footer-company-name-text",
+                  "componentType": "TextProps",
+                  "content": "USA Steel Manufacturers",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-description-text",
+              "componentType": "TextProps",
+              "content": "Your trusted partner in steel manufacturing.",
+              "classes": "text-center text-gray-500"
+            },
+            {
+              "uuid": "footer-links-container",
+              "componentType": "FlexProps",
+              "gap": "6",
+              "classes": "flex-wrap justify-center",
+              "content": [
+                {
+                  "uuid": "footer-link-home",
+                  "componentType": "LinkProps",
+                  "text": "Home",
+                  "href": "/"
+                },
+                {
+                  "uuid": "footer-link-about",
+                  "componentType": "LinkProps",
+                  "text": "About Us",
+                  "href": "/about"
+                },
+                {
+                  "uuid": "footer-link-products",
+                  "componentType": "LinkProps",
+                  "text": "Products & Services",
+                  "href": "/products"
+                },
+                {
+                  "uuid": "footer-link-gallery",
+                  "componentType": "LinkProps",
+                  "text": "Gallery",
+                  "href": "/gallery"
+                },
+                {
+                  "uuid": "footer-link-contact",
+                  "componentType": "LinkProps",
+                  "text": "Contact Us",
+                  "href": "/contact"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-copyright-text",
+              "componentType": "TextProps",
+              "content": "© 2024 USA Steel Manufacturers. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "Home",
+      "slug": "/",
+      "summary": "Homepage for USA Steel Manufacturers, featuring a hero section, company introduction, key products/services, and calls to action.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "hero-section",
+          "uuid": "hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "background": {
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "hero-bg-image",
+              "src": "https://images.unsplash.com/photo-1579547621430-8d54d926b484?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "alt": "Steel manufacturing plant",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "asset-hero-bg",
+                "isProcessed": true,
+                "keywords": "steel, manufacturing, industry",
+                "requestedWidth": 2940,
+                "requestedHeight": 1960
+              }
+            },
+            "overlayColor": "rgba(0, 0, 0, 0.5)"
+          },
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-heading",
+                  "level": 1,
+                  "text": "Forging the Future of American Steel",
+                  "classes": "text-5xl font-extrabold tracking-tight text-white"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-description",
+                  "variant": "lead",
+                  "content": "USA Steel Manufacturers stands as a pillar of strength and innovation, delivering high-quality steel products for industries nationwide.",
+                  "classes": "mt-4 max-w-3xl mx-auto text-white"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-buttons",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-view-products",
+                      "text": "View Products",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-arrow-right",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right",
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-view-products",
+                        "href": "/products",
+                        "text": "View Products"
+                      }
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-get-quote-hero",
+                      "text": "Get a Quote",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-message-circle",
+                        "name": "message-circle",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-get-quote",
+                        "href": "/contact",
+                        "text": "Get a Quote"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "company-intro-section",
+          "uuid": "company-intro-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "intro-heading",
+              "level": 2,
+              "text": "Our Commitment to Excellence in Steel Manufacturing",
+              "classes": "text-4xl font-bold text-center"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "intro-text-1",
+              "content": "At USA Steel Manufacturers, we pride ourselves on a legacy of precision, durability, and innovation. With decades of experience, we utilize cutting-edge technology and a highly skilled workforce to produce steel that meets the most demanding industry standards.",
+              "classes": "mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "intro-text-2",
+              "content": "Our commitment extends beyond manufacturing; we are dedicated to sustainable practices, responsible sourcing, and fostering strong relationships with our clients. We believe in building not just structures, but trust and lasting partnerships.",
+              "classes": "mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "products-services-section",
+          "uuid": "products-services-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "products-heading",
+              "level": 2,
+              "text": "Our Core Products & Services",
+              "classes": "text-4xl font-bold text-center mb-10"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "products-grid",
+              "columns": 3,
+              "gap": "8",
+              "content": [
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "feature-structural-steel",
+                  "title": {
+                    "uuid": "feature-structural-steel-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Structural Steel"
+                  },
+                  "text": {
+                    "uuid": "feature-structural-steel-text",
+                    "componentType": "TextProps",
+                    "content": "High-strength steel beams, columns, and other structural components for robust construction projects."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-building",
+                    "name": "building",
+                    "size": 48
+                  },
+                  "layout": "iconTopCenter",
+                  "variant": "standard",
+                  "style": "card"
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "feature-rebar",
+                  "title": {
+                    "uuid": "feature-rebar-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Reinforcing Bar (Rebar)"
+                  },
+                  "text": {
+                    "uuid": "feature-rebar-text",
+                    "componentType": "TextProps",
+                    "content": "Deformed and plain reinforcing bars for concrete reinforcement, ensuring structural integrity."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-construction",
+                    "name": "construction",
+                    "size": 48
+                  },
+                  "layout": "iconTopCenter",
+                  "variant": "standard",
+                  "style": "card"
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "feature-plates-coils",
+                  "title": {
+                    "uuid": "feature-plates-coils-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Steel Plates & Coils"
+                  },
+                  "text": {
+                    "uuid": "feature-plates-coils-text",
+                    "componentType": "TextProps",
+                    "content": "Versatile steel plates and coils in various grades and dimensions for diverse industrial applications."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-layers",
+                    "name": "layers",
+                    "size": 48
+                  },
+                  "layout": "iconTopCenter",
+                  "variant": "standard",
+                  "style": "card"
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "feature-fabrication",
+                  "title": {
+                    "uuid": "feature-fabrication-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Custom Fabrication"
+                  },
+                  "text": {
+                    "uuid": "feature-fabrication-text",
+                    "componentType": "TextProps",
+                    "content": "Precision cutting, bending, welding, and assembly services to meet your specific project requirements."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-wrench",
+                    "name": "wrench",
+                    "size": 48
+                  },
+                  "layout": "iconTopCenter",
+                  "variant": "standard",
+                  "style": "card"
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "feature-quality-control",
+                  "title": {
+                    "uuid": "feature-quality-control-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Rigorous Quality Control"
+                  },
+                  "text": {
+                    "uuid": "feature-quality-control-text",
+                    "componentType": "TextProps",
+                    "content": "Adherence to the highest quality standards, ensuring every product meets and exceeds expectations."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-check-circle",
+                    "name": "circle-check",
+                    "size": 48
+                  },
+                  "layout": "iconTopCenter",
+                  "variant": "standard",
+                  "style": "card"
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "feature-delivery",
+                  "title": {
+                    "uuid": "feature-delivery-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Timely Delivery"
+                  },
+                  "text": {
+                    "uuid": "feature-delivery-text",
+                    "componentType": "TextProps",
+                    "content": "Efficient logistics and reliable delivery to ensure your steel arrives when and where you need it."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-truck",
+                    "name": "truck",
+                    "size": 48
+                  },
+                  "layout": "iconTopCenter",
+                  "variant": "standard",
+                  "style": "card"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Homepage for USA Steel Manufacturers, featuring a hero section, company introduction, key products/s",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-about",
+      "title": "About Us",
+      "slug": "/about",
+      "summary": "Detailed information about USA Steel Manufacturers, including company history, mission, values, expertise, and commitment to quality.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "about-hero-section",
+          "uuid": "about-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "background": {
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "about-bg-image",
+              "src": "https://images.unsplash.com/photo-1579547621430-8d54d926b484?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "alt": "Steel manufacturing facility interior",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "asset-about-hero-bg",
+                "isProcessed": true,
+                "keywords": "steel, factory, interior",
+                "requestedWidth": 2940,
+                "requestedHeight": 1960
+              }
+            },
+            "overlayColor": "rgba(0, 0, 0, 0.6)"
+          },
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "about-hero-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "about-hero-heading",
+                  "level": 1,
+                  "text": "About USA Steel Manufacturers",
+                  "classes": "text-5xl font-extrabold tracking-tight text-white"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "about-hero-description",
+                  "variant": "lead",
+                  "content": "Pioneering American Steel Excellence for Generations.",
+                  "classes": "mt-4 max-w-3xl mx-auto text-white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "history-section",
+          "uuid": "history-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "history-heading",
+              "level": 2,
+              "text": "Our History and Evolution",
+              "classes": "text-4xl font-bold text-center mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "history-paragraph-1",
+              "content": "Established in [Year of Establishment], USA Steel Manufacturers began as a humble operation with a clear vision: to deliver superior steel products that would lay the foundation for America's growth. Over the decades, we have continuously evolved, embracing technological advancements and expanding our capabilities to meet the dynamic needs of industries from construction to automotive.",
+              "classes": "mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "history-paragraph-2",
+              "content": "Our journey has been marked by a relentless pursuit of excellence, strategic investments in state-of-the-art machinery, and a unwavering commitment to our workforce, who are the backbone of our success. Today, we stand as a leading steel manufacturer, a testament to our enduring legacy and forward-thinking approach.",
+              "classes": "mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "mission-values-section",
+          "uuid": "mission-values-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "mission-heading",
+              "level": 2,
+              "text": "Mission Statement & Core Values",
+              "classes": "text-4xl font-bold text-center mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "mission-statement",
+              "content": "**Our Mission:** To be the premier provider of high-quality steel products and innovative solutions, empowering our partners to build a stronger, more sustainable future through American manufacturing excellence.",
+              "classes": "mt-4 text-xl font-semibold text-gray-800 max-w-3xl mx-auto text-center"
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "values-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "4",
+              "classes": "mt-8",
+              "content": [
+                {
+                  "componentType": "TextProps",
+                  "uuid": "value-integrity",
+                  "content": "**Integrity:** Upholding the highest ethical standards in all our operations and interactions.",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "value-quality",
+                  "content": "**Quality:** Committing to superior product quality through rigorous processes and continuous improvement.",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "value-innovation",
+                  "content": "**Innovation:** Embracing new technologies and methods to drive progress and deliver cutting-edge solutions.",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "value-sustainability",
+                  "content": "**Sustainability:** Operating with environmental responsibility and contributing to a greener future.",
+                  "classes": "text-lg text-gray-700"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "value-customer-focus",
+                  "content": "**Customer Focus:** Prioritizing client needs and building lasting relationships through exceptional service.",
+                  "classes": "text-lg text-gray-700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "expertise-quality-section",
+          "uuid": "expertise-quality-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "expertise-heading",
+              "level": 2,
+              "text": "Expertise & Commitment to Quality",
+              "classes": "text-4xl font-bold text-center mb-6"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "expertise-paragraph-1",
+              "content": "Our expertise spans the entire steel manufacturing process, from raw material sourcing and metallurgical analysis to advanced rolling techniques and precision fabrication. Our team of engineers, metallurgists, and skilled technicians possesses deep industry knowledge and is dedicated to pushing the boundaries of what's possible in steel production.",
+              "classes": "mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "quality-paragraph-1",
+              "content": "Quality is not just a buzzword at USA Steel Manufacturers; it's ingrained in every step of our operation. We adhere to stringent national and international quality standards, including [mention relevant certifications like ISO, ASTM, etc.]. Our integrated quality management system ensures that every product undergoes comprehensive testing and inspection, guaranteeing unparalleled strength, durability, and performance.",
+              "classes": "mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Detailed information about USA Steel Manufacturers, including company history, mission, values, expe",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-products",
+      "title": "Products & Services",
+      "slug": "/products",
+      "summary": "Comprehensive catalog of steel products (structural steel, rebar, plates, coils, pipes) with detailed descriptions and specifications, along with fabrication services offered by USA Steel Manufacturers.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "products-hero-section",
+          "uuid": "products-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "background": {
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "products-bg-image",
+              "src": "https://images.unsplash.com/photo-1579547621430-8d54d926b484?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "alt": "Steel products warehouse",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "asset-products-hero-bg",
+                "isProcessed": true,
+                "keywords": "steel products, warehouse, industrial",
+                "requestedWidth": 2940,
+                "requestedHeight": 1960
+              }
+            },
+            "overlayColor": "rgba(0, 0, 0, 0.6)"
+          },
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "products-hero-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "products-hero-heading",
+                  "level": 1,
+                  "text": "Our Steel Products & Services",
+                  "classes": "text-5xl font-extrabold tracking-tight text-white"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "products-hero-description",
+                  "variant": "lead",
+                  "content": "Delivering the highest quality steel products and comprehensive fabrication services to meet the demands of any project.",
+                  "classes": "mt-4 max-w-3xl mx-auto text-white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "steel-products-overview",
+          "uuid": "steel-products-overview",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "products-overview-heading",
+              "level": 2,
+              "text": "Categorized Steel Products",
+              "classes": "text-4xl font-bold text-center mb-10"
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "products-categories-flex",
+              "direction": "column",
+              "gap": "12",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "structural-steel-category",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "structural-steel-heading",
+                      "level": 3,
+                      "text": "Structural Steel",
+                      "classes": "text-3xl font-bold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "structural-steel-desc",
+                      "content": "Our structural steel products are engineered for strength, durability, and reliability, forming the backbone of major construction projects. We provide a wide range of shapes including I-beams, H-beams, channels, angles, and wide-flange sections. All products adhere to ASTM standards, ensuring suitability for high-stress applications.",
+                      "classes": "text-lg text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "structural-steel-specs",
+                      "content": "**Typical Specifications:** ASTM A36, ASTM A572 Grade 50, ASTM A992. Available in various lengths and custom cuts.",
+                      "classes": "text-md text-gray-600 italic"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "rebar-category",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "rebar-heading",
+                      "level": 3,
+                      "text": "Reinforcing Bar (Rebar)",
+                      "classes": "text-3xl font-bold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "rebar-desc",
+                      "content": "Essential for concrete reinforcement, our rebar ensures the structural integrity and longevity of foundations, walls, and slabs. We offer deformed and plain rebar in standard and customized sizes to meet diverse construction requirements. Our rebar is known for its superior tensile strength and bendability.",
+                      "classes": "text-lg text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "rebar-specs",
+                      "content": "**Typical Specifications:** ASTM A615, ASTM A706. Sizes from #3 to #18, cut and bent to order.",
+                      "classes": "text-md text-gray-600 italic"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "plates-coils-category",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "plates-coils-heading",
+                      "level": 3,
+                      "text": "Steel Plates & Coils",
+                      "classes": "text-3xl font-bold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "plates-coils-desc",
+                      "content": "Our extensive selection of steel plates and coils serves a multitude of industrial applications, from shipbuilding and bridge construction to machinery fabrication. We offer hot-rolled, cold-rolled, and galvanized options, available in various thicknesses, widths, and grades to suit specific project needs.",
+                      "classes": "text-lg text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "plates-coils-specs",
+                      "content": "**Typical Specifications:** ASTM A36, ASTM A516, ASTM A572, ASTM A588. Thicknesses from 1/8\" to 6\", widths up to 120\".",
+                      "classes": "text-md text-gray-600 italic"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "pipes-tubing-category",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "pipes-tubing-heading",
+                      "level": 3,
+                      "text": "Steel Pipes & Tubing",
+                      "classes": "text-3xl font-bold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "pipes-tubing-desc",
+                      "content": "We supply a comprehensive range of steel pipes and tubing for fluid conveyance, structural applications, and mechanical components. Our inventory includes seamless and welded pipes, available in carbon steel, stainless steel, and alloy steel, manufactured to precise dimensions and finishes.",
+                      "classes": "text-lg text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "pipes-tubing-specs",
+                      "content": "**Typical Specifications:** ASTM A53, ASTM A106, ASTM A312. Various schedules, diameters, and lengths available.",
+                      "classes": "text-md text-gray-600 italic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "fabrication-services-section",
+          "uuid": "fabrication-services-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "fabrication-services-heading",
+              "level": 2,
+              "text": "Comprehensive Fabrication Services",
+              "classes": "text-4xl font-bold text-center mb-10"
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "fabrication-intro-text",
+              "content": "Beyond providing premium steel products, USA Steel Manufacturers offers a full suite of precision fabrication services to transform raw materials into ready-to-use components. Our state-of-the-art facilities and experienced technicians ensure accurate, high-quality results for every project.",
+              "classes": "text-lg text-gray-700 max-w-3xl mx-auto text-center"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "fabrication-services-grid",
+              "columns": 2,
+              "gap": "8",
+              "classes": "mt-8",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "cutting-service",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "cutting-heading",
+                      "level": 4,
+                      "text": "Precision Cutting",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "cutting-desc",
+                      "content": "Advanced cutting technologies including plasma, laser, and saw cutting for precise dimensions and clean edges."
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "bending-service",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "bending-heading",
+                      "level": 4,
+                      "text": "Expert Bending & Forming",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "bending-desc",
+                      "content": "Cold and hot bending services for various steel profiles, ensuring accurate angles and curves for your designs."
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "welding-service",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "welding-heading",
+                      "level": 4,
+                      "text": "Certified Welding",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "welding-desc",
+                      "content": "AWS certified welders provide robust and aesthetically pleasing welds using MIG, TIG, and Stick methods."
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "drilling-punching-service",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "drilling-punching-heading",
+                      "level": 4,
+                      "text": "Drilling & Punching",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "drilling-punching-desc",
+                      "content": "Accurate drilling and punching for bolt holes, pipe connections, and other specified openings."
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "finishing-service",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "finishing-heading",
+                      "level": 4,
+                      "text": "Surface Finishing",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "finishing-desc",
+                      "content": "Grinding, polishing, and protective coatings to enhance the appearance and corrosion resistance of fabricated components."
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "assembly-service",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "assembly-heading",
+                      "level": 4,
+                      "text": "Assembly & Kitting",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "assembly-desc",
+                      "content": "Pre-assembly of components and kitting services to streamline your project timelines and reduce on-site labor."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Comprehensive catalog of steel products (structural steel, rebar, plates, coils, pipes) with detaile",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-gallery",
+      "title": "Gallery",
+      "slug": "/gallery",
+      "summary": "Showcase of completed projects and manufacturing processes with high-quality images and brief descriptions by USA Steel Manufacturers.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "gallery-hero-section",
+          "uuid": "gallery-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "background": {
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "gallery-hero-bg-image",
+              "src": "https://images.unsplash.com/photo-1579547621430-8d54d926b484?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "alt": "Industrial manufacturing process",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "asset-gallery-hero-bg",
+                "isProcessed": true,
+                "keywords": "manufacturing, industrial, process",
+                "requestedWidth": 2940,
+                "requestedHeight": 1960
+              }
+            },
+            "overlayColor": "rgba(0, 0, 0, 0.6)"
+          },
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "gallery-hero-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "gallery-hero-heading",
+                  "level": 1,
+                  "text": "Our Projects & Manufacturing Processes",
+                  "classes": "text-5xl font-extrabold tracking-tight text-white"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "gallery-hero-description",
+                  "variant": "lead",
+                  "content": "A visual journey through our completed works and the meticulous processes behind them.",
+                  "classes": "mt-4 max-w-3xl mx-auto text-white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "projects-showcase-section",
+          "uuid": "projects-showcase-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "uuid": "projects-showcase-heading",
+              "level": 2,
+              "text": "Completed Projects Showcase",
+              "classes": "text-4xl font-bold text-center mb-10"
+            },
+            {
+              "componentType": "MediaGalleryProps",
+              "uuid": "project-gallery-grid",
+              "columns": 3,
+              "gap": "6",
+              "layout": "grid",
+              "lightbox": true,
+              "showThumbnails": false,
+              "content": [
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "project-1",
+                  "type": "image",
+                  "caption": "Fabrication of Large Structural Beams for a Commercial Skyscraper.",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "project-1-image",
+                    "src": "https://picsum.photos/id/1070/800/600",
+                    "alt": "Large structural beams being fabricated",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "asset-project-1-image",
+                      "isProcessed": true,
+                      "keywords": "structural steel, fabrication, skyscraper",
+                      "requestedWidth": 800,
+                      "requestedHeight": 600
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "project-2",
+                  "type": "image",
+                  "caption": "Precision Roll Forming of Custom Steel Pipes for Infrastructure.",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "project-2-image",
+                    "src": "https://picsum.photos/id/1076/800/600",
+                    "alt": "Steel pipes being roll formed",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "asset-project-2-image",
+                      "isProcessed": true,
+                      "keywords": "steel pipes, roll forming, infrastructure",
+                      "requestedWidth": 800,
+                      "requestedHeight": 600
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "project-3",
+                  "type": "image",
+                  "caption": "High-Strength Rebar Production for Bridge Construction.",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "project-3-image",
+                    "src": "https://picsum.photos/id/1071/800/600",
+                    "alt": "Rebar production line",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "asset-project-3-image",
+                      "isProcessed": true,
+                      "keywords": "rebar, bridge construction, production",
+                      "requestedWidth": 800,
+                      "requestedHeight": 600
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "project-4",
+                  "type": "image",
+                  "caption": "Automated Welding of Steel Components for Industrial Machinery.",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "project-4-image",
+                    "src": "https://picsum.photos/id/1077/800/600",
+                    "alt": "Automated welding robot",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "asset-project-4-image",
+                      "isProcessed": true,
+                      "keywords": "welding, industrial machinery, automation",
+                      "requestedWidth": 800,
+                      "requestedHeight": 600
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "project-5",
+                  "type": "image",
+                  "caption": "Quality Control Inspection of Finished Steel Plates.",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "project-5-image",
+                    "src": "https://picsum.photos/id/1079/800/600",
+                    "alt": "Quality inspection of steel plates",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "asset-project-5-image",
+                      "isProcessed": true,
+                      "keywords": "quality control, steel plates, inspection",
+                      "requestedWidth": 800,
+                      "requestedHeight": 600
+                    }
+                  }
+                },
+                {
+                  "componentType": "MediaGalleryItemProps",
+                  "uuid": "project-6",
+                  "type": "image",
+                  "caption": "Raw Material Handling in a State-of-the-Art Steel Mill.",
+                  "image": {
+                    "componentType": "ImageProps",
+                    "uuid": "project-6-image",
+                    "src": "https://picsum.photos/id/1080/800/600",
+                    "alt": "Raw materials in steel mill",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "asset-project-6-image",
+                      "isProcessed": true,
+                      "keywords": "raw materials, steel mill, industrial",
+                      "requestedWidth": 800,
+                      "requestedHeight": 600
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "componentType": "TextProps",
+              "uuid": "gallery-outro-text",
+              "content": "Each image represents our dedication to precision, quality, and robust American manufacturing. For more details on specific projects or capabilities, please contact us.",
+              "classes": "mt-10 text-lg text-gray-700 max-w-3xl mx-auto text-center"
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Showcase of completed projects and manufacturing processes with high-quality images and brief descri",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-contact",
+      "title": "Contact Us",
+      "slug": "/contact",
+      "summary": "Contact information and an inquiry form for USA Steel Manufacturers, including address, phone, email, and an embedded map.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "contact-hero-section",
+          "uuid": "contact-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "background": {
+            "image": {
+              "componentType": "ImageProps",
+              "uuid": "contact-bg-image",
+              "src": "https://images.unsplash.com/photo-1579547621430-8d54d926b484?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "alt": "Steel pipes in storage",
+              "asset": {
+                "componentType": "ImageAssetProps",
+                "uuid": "asset-contact-hero-bg",
+                "isProcessed": true,
+                "keywords": "steel, industrial, contact",
+                "requestedWidth": 2940,
+                "requestedHeight": 1960
+              }
+            },
+            "overlayColor": "rgba(0, 0, 0, 0.6)"
+          },
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-hero-flex-container",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "contact-hero-heading",
+                  "level": 1,
+                  "text": "Get in Touch with USA Steel Manufacturers",
+                  "classes": "text-5xl font-extrabold tracking-tight text-white"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "contact-hero-description",
+                  "variant": "lead",
+                  "content": "We are ready to assist you with all your steel product and service needs.",
+                  "classes": "mt-4 max-w-3xl mx-auto text-white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "contact-info-form-section",
+          "uuid": "contact-info-form-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-details-flex",
+              "direction": "column",
+              "gap": "8",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "contact-details-heading",
+                  "level": 2,
+                  "text": "Contact Details",
+                  "classes": "text-4xl font-bold text-gray-800"
+                },
+                {
+                  "componentType": "ContactInfoBlockProps",
+                  "uuid": "company-contact-info",
+                  "title": "Office & Sales",
+                  "address": "123 Industrial Way, Steel City, USA 12345",
+                  "phone": "+1 (555) 123-4567",
+                  "email": "info@usasteel.com"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "business-hours-flex",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "componentType": "HeadingProps",
+                      "uuid": "hours-heading",
+                      "level": 4,
+                      "text": "Business Hours",
+                      "classes": "text-2xl font-semibold text-gray-800"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hours-weekday",
+                      "content": "Monday - Friday: 8:00 AM - 5:00 PM (EST)",
+                      "classes": "text-lg text-gray-700"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "hours-weekend",
+                      "content": "Saturday - Sunday: Closed",
+                      "classes": "text-lg text-gray-700"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "map-heading",
+                  "level": 2,
+                  "text": "Our Location",
+                  "classes": "text-4xl font-bold text-gray-800"
+                },
+                {
+                  "componentType": "ContactInfoBlockProps",
+                  "uuid": "company-location-map",
+                  "mapEmbed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0000000000000!2d-74.005972!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ5JzUyLjkiTiA3NMKwMDAnMzUuMyJX!5e0!3m2!1sen!2sus!4v1678912345678!5m2!1sen!2sus\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "contact-form-flex",
+              "direction": "column",
+              "gap": "8",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "inquiry-form-heading",
+                  "level": 2,
+                  "text": "Send Us an Inquiry",
+                  "classes": "text-4xl font-bold text-gray-800"
+                },
+                {
+                  "componentType": "FormProps",
+                  "uuid": "main-contact-form",
+                  "title": "General Inquiry Form",
+                  "onSubmitAction": {
+                    "actionId": "submit_contact_form",
+                    "successMessage": "Your message has been sent successfully! We will get back to you shortly.",
+                    "errorMessage": "There was an error sending your message. Please try again.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email"
+                  },
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "actions": [
+                    {
+                      "uuid": "main-contact-form-action-submit",
+                      "componentType": "ButtonProps",
+                      "actionType": "submit",
+                      "text": "Send Message",
+                      "variant": "default"
+                    }
+                  ],
+                  "content": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Contact information and an inquiry form for USA Steel Manufacturers, including address, phone, email",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

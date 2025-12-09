@@ -1,0 +1,206 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Crypto Features Page",
+  "alias": "crypto-features-page",
+  "summary": "Organized feature display with clear categorization and visual hierarchy. Features section title, feature grid layout with icons, and detailed explanations. Ideal for complex products requiring clear feature communication.",
+  "shortSummary": "Organized feature display with clear categorization and visual hierarchy",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the feature section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-heading-hero",
+                  "level": 2,
+                  "text": "The most trusted cryptocurrency platform",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-text-hero",
+                  "variant": "lead",
+                  "content": "Here are a few reasons why you should choose Flowbite"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "c9d0e1f2-a3b4-5678-9012-grid-features",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 w-full",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-secure-storage",
+                      "variant": "standard",
+                      "layout": "iconTopCenter",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-secure-storage",
+                        "name": "shield-check",
+                        "size": 48,
+                        "classes": "text-blue-500"
+                      },
+                      "title": {
+                        "uuid": "feature-secure-storage-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Secure storage"
+                      },
+                      "text": {
+                        "uuid": "feature-secure-storage-text",
+                        "componentType": "TextProps",
+                        "content": "We store the vast majority of the digital assets in secure offline storage."
+                      },
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-secure-storage",
+                        "text": "Learn how to keep your funds safe >",
+                        "href": "#",
+                        "classes": "font-semibold text-blue-600"
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-insurance",
+                      "variant": "standard",
+                      "layout": "iconTopCenter",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-insurance",
+                        "name": "file-text",
+                        "size": 48,
+                        "classes": "text-blue-500"
+                      },
+                      "title": {
+                        "uuid": "feature-insurance-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Insurance"
+                      },
+                      "text": {
+                        "uuid": "feature-insurance-text",
+                        "componentType": "TextProps",
+                        "content": "Flowbite maintains crypto insurance and all USD cash balances are covered."
+                      },
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-insurance",
+                        "text": "Learn how your crypto is covered >",
+                        "href": "#",
+                        "classes": "font-semibold text-blue-600"
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-best-practices",
+                      "variant": "standard",
+                      "layout": "iconTopCenter",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-best-practices",
+                        "name": "circle-check",
+                        "size": 48,
+                        "classes": "text-blue-500"
+                      },
+                      "title": {
+                        "uuid": "feature-best-practices-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Best practices"
+                      },
+                      "text": {
+                        "uuid": "feature-best-practices-text",
+                        "componentType": "TextProps",
+                        "content": "Flowbite marketplace supports a variety of the most popular digital currencies."
+                      },
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-best-practices",
+                        "text": "How to implement best practices >",
+                        "href": "#",
+                        "classes": "font-semibold text-blue-600"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the feature section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

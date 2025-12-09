@@ -1,0 +1,342 @@
+{
+  "uuid": "b1b0e0d0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "OptiRank SEO",
+  "alias": "optirank-seo",
+  "summary": "A high-converting, professional landing page for an SEO consultancy firm to attract new clients and showcase their expertise.",
+  "shortSummary": "High-converting landing page for an SEO consultancy firm.",
+  "lastUpdatedEpoch": 1701192800,
+  "languages": [
+    {
+      "code": "en",
+      "name_english": "English",
+      "name_native": "English",
+      "is_default": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "#FFFFFF",
+      "foreground": "#2C3E50",
+      "primary": "#3498DB",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#ECF0F1",
+      "secondary-foreground": "#2C3E50",
+      "muted": "#ECF0F1",
+      "muted-foreground": "#607D8B",
+      "accent": "#3498DB",
+      "accent-foreground": "#FFFFFF",
+      "destructive": "#E74C3C",
+      "destructive-foreground": "#FFFFFF",
+      "border": "#BDC3C7",
+      "input": "#ECF0F1",
+      "ring": "#3498DB"
+    },
+    "dark": {
+      "background": "#2C3E50",
+      "foreground": "#ECF0F1",
+      "primary": "#3498DB",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#3B5B77",
+      "secondary-foreground": "#ECF0F1",
+      "muted": "#3B5B77",
+      "muted-foreground": "#95A5A6",
+      "accent": "#3498DB",
+      "accent-foreground": "#FFFFFF",
+      "destructive": "#C0392B",
+      "destructive-foreground": "#FFFFFF",
+      "border": "#5D6D7E",
+      "input": "#3B5B77",
+      "ring": "#3498DB"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Montserrat",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      },
+      "body": {
+        "family": "Lato",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      }
+    }
+  },
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "e3b05be6-5e35-43eb-8df2-ad76bb082777",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "default",
+      "sticky": true,
+      "logo": {
+        "uuid": "d20f3881-d0a9-4fc7-b9fb-d392a94205b2",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "OptiRank SEO"
+      },
+      "content": [
+        {
+          "uuid": "f1a2b3c4-d5e6-7a8b-9c0d-1e2f3a4b5c6d",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "74918035-d4e6-4a85-b078-eb964c4041b3",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Services",
+          "href": {
+            "uuid": "e9788995-2782-4e89-8e91-7328bc8f5236",
+            "componentType": "LinkProps",
+            "href": "/services",
+            "text": "Services"
+          }
+        },
+        {
+          "uuid": "c3d4e5f6-a7b8-c9d0-e1f2-3a4b5c6d7e8f",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About Us",
+          "href": {
+            "uuid": "0e752c42-0bf1-441e-9d36-e66942e8020f",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About Us"
+          }
+        },
+        {
+          "uuid": "d4e5f6a7-b8c9-d0e1-f2a3-4b5c6d7e8f0a",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Contact",
+          "href": {
+            "uuid": "c24b4a44-7302-42bc-b5f9-0c8e423f8921",
+            "componentType": "LinkProps",
+            "href": "/contact",
+            "text": "Contact"
+          }
+        },
+        {
+          "uuid": "e5f6a7b8-c9d0-e1f2-3a4b-5c6d7e8f0a1b",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "701d6816-303c-404e-92ba-d4c44de2da22",
+            "componentType": "ButtonProps",
+            "text": "Get a Free SEO Audit",
+            "variant": "default",
+            "link": {
+              "uuid": "f6a7b8c9-d0e1-f2a3-4b5c-6d7e8f0a1b2c",
+              "componentType": "LinkProps",
+              "href": "/free-audit",
+              "text": "Get a Free SEO Audit"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "314704a9-e37d-4f0d-8226-f0180cd3b972",
+      "componentType": "SectionProps",
+      "classes": "py-8 px-8",
+      "layout": "single-column-centered",
+      "spacing": "sm",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "f1b0124c-6607-439a-91c7-1fd0d2d1f888",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start pb-4 w-full",
+          "content": [
+            {
+              "uuid": "1255e994-887f-46a5-b8ac-de52644aa936",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "69e33edd-5b81-44fd-9fbd-ffa5e26c656f",
+                  "componentType": "ImageProps",
+                  "src": "https://images.pexels.com/photos/34231693/pexels-photo-34231693.jpeg?auto=compress&cs=tinysrgb&h=350",
+                  "alt": "OptiRank SEO Logo",
+                  "classes": "h-8 w-8",
+                  "asset": {
+                    "uuid": "7fa3a6e0-384c-463c-b1ca-04487027ee21",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "OptiRank SEO logo",
+                    "is_processed": true,
+                    "requested_width": 32,
+                    "requested_height": 32,
+                    "provider": "Pexels",
+                    "provider_img_id": "34231693",
+                    "provider_img_url": "https://images.pexels.com/photos/34231693/pexels-photo-34231693.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    "datetime_generated": "2025-10-11T18:43:42.076985",
+                    "processed_at": "2025-10-11T18:43:42.077335",
+                    "signature": "92203f6238bcad12c7cfc102b8887384"
+                  }
+                },
+                {
+                  "uuid": "ae398ec0-8e3a-4b8f-97da-c45d52a59ea0",
+                  "componentType": "TextProps",
+                  "content": "OptiRank SEO",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "508ace92-a063-4933-b46b-483b676c6ce6",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "sm:grid-cols-3 sm:gap-6 flex-1 max-w-lg",
+              "content": [
+                {
+                  "uuid": "c43d46cd-651c-4b05-82b0-fb32bead2017",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "17eb5dfb-6deb-43fe-88f1-0d9a77623297",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "LEGAL",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "a90e83e3-01b6-4c9e-a06f-3fff3760be17",
+                      "componentType": "LinkProps",
+                      "text": "Privacy Policy",
+                      "href": "/privacy-policy"
+                    },
+                    {
+                      "uuid": "c93d7b44-763c-4b95-86b5-2e767c0d8ef7",
+                      "componentType": "LinkProps",
+                      "text": "Terms & Conditions",
+                      "href": "/terms-and-conditions"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "6471b4b1-a793-4475-afda-eb258e92369d",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "115c7e43-4d49-4040-a3d2-f758c4ddaab0",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "CONTACT",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "6a44c2f4-1d3b-4389-b24f-d506d3cd8fa6",
+                      "componentType": "LinkProps",
+                      "text": "info@optirankseo.com",
+                      "href": "mailto:info@optirankseo.com"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "93bead49-f84c-40fe-8941-8bb4e7cfe243",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "02f4d1a1-ad42-4ba7-8a4a-061609506bc5",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "FOLLOW US",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "94b787e2-5f29-46c5-9b02-525bddff8789",
+                      "componentType": "SocialLinkProps",
+                      "platform": "twitter",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "03f61769-9e14-4415-b28a-49017d7f6962",
+                      "componentType": "SocialLinkProps",
+                      "platform": "linkedin",
+                      "url": "#"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "a21de98d-e504-46da-9484-39725303e471",
+          "componentType": "SpacerProps",
+          "classes": "my-6 border-gray-200 lg:my-8",
+          "size": "md"
+        },
+        {
+          "uuid": "2094aa49-3e3e-4857-b32a-25ded45c509f",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center pt-4 pb-2 w-full",
+          "content": [
+            {
+              "uuid": "1728b489-8dea-48a5-afe9-39e651206740",
+              "componentType": "TextProps",
+              "content": "© 2023 OptiRank SEO. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            },
+            {
+              "uuid": "6063dd57-748f-4e96-adc5-1c1e6153789f",
+              "componentType": "FlexProps",
+              "gap": "5",
+              "content": [
+                {
+                  "uuid": "0ffca6f7-6827-4e2b-ac11-34c5894f1860",
+                  "componentType": "SocialLinkProps",
+                  "platform": "facebook",
+                  "url": "#"
+                },
+                {
+                  "uuid": "f2d83ff3-e7e5-4a96-9da4-87dee5de6c2c",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "#"
+                },
+                {
+                  "uuid": "42bcc76d-83cc-4cfa-a988-fcb2f1a28f64",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "369fc958-a8d4-450e-af6d-54cf790becd4",
+                  "componentType": "SocialLinkProps",
+                  "platform": "linkedin",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

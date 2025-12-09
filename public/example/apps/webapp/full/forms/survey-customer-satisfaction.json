@@ -1,0 +1,414 @@
+{
+  "uuid": "app-form-survey-sat-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Customer Satisfaction Survey",
+  "alias": "customer-satisfaction-survey",
+  "summary": "A comprehensive customer satisfaction survey with rating scales, multiple choice questions, and open-ended feedback. Perfect for gathering customer insights, measuring service quality, and identifying areas for improvement.",
+  "shortSummary": "A comprehensive customer satisfaction survey with ratings and feedback",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#171717",
+      "primary": "#15803d",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f5f5f5",
+      "secondary-foreground": "#171717",
+      "muted": "#f5f5f5",
+      "muted-foreground": "#737373",
+      "accent": "#dcfce7",
+      "accent-foreground": "#15803d",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e5e5e5",
+      "input": "#e5e5e5",
+      "ring": "#16a34a"
+    },
+    "dark": {
+      "background": "#0a0a0a",
+      "foreground": "#fafafa",
+      "primary": "#22c55e",
+      "primary-foreground": "#052e16",
+      "secondary": "#262626",
+      "secondary-foreground": "#fafafa",
+      "muted": "#262626",
+      "muted-foreground": "#a3a3a3",
+      "accent": "#14532d",
+      "accent-foreground": "#dcfce7",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fef2f2",
+      "border": "#262626",
+      "input": "#262626",
+      "ring": "#22c55e"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "spacing": "sm",
+      "classes": "border-t",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "Your feedback helps us improve. Thank you for your time!",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-survey",
+      "title": "Customer Satisfaction Survey",
+      "slug": "/",
+      "summary": "Help us improve by sharing your experience and feedback.",
+      "shortSummary": "Share your experience and feedback",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-primary/10 to-background",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "star",
+                      "size": 48,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "We Value Your Feedback"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Take 3 minutes to share your experience. Your insights help us serve you better.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-survey",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-survey",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "survey-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "survey-form",
+                  "componentType": "FormProps",
+                  "title": "Your Experience",
+                  "description": "Please rate your experience and provide any additional feedback.",
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "classes": "max-w-3xl",
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Thank you for your feedback! Your responses have been recorded.",
+                    "errorMessage": "Unable to submit survey. Please try again.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email",
+                    "onSuccessAction": {
+                      "type": "clearForm"
+                    }
+                  },
+                  "content": [
+                    {
+                      "uuid": "fieldset-experience",
+                      "componentType": "FieldSetProps",
+                      "legend": "Overall Experience",
+                      "content": [
+                        {
+                          "uuid": "field-overall-rating",
+                          "componentType": "RatingFieldProps",
+                          "name": "overallRating",
+                          "label": "How would you rate your overall experience?",
+                          "count": 5,
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-recommend",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "likelyToRecommend",
+                          "label": "How likely are you to recommend us to a friend or colleague?",
+                          "required": true,
+                          "orientation": "horizontal",
+                          "options": [
+                            {
+                              "label": "Very Unlikely",
+                              "value": "1"
+                            },
+                            {
+                              "label": "Unlikely",
+                              "value": "2"
+                            },
+                            {
+                              "label": "Neutral",
+                              "value": "3"
+                            },
+                            {
+                              "label": "Likely",
+                              "value": "4"
+                            },
+                            {
+                              "label": "Very Likely",
+                              "value": "5"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-details",
+                      "componentType": "FieldSetProps",
+                      "legend": "Specific Areas",
+                      "content": [
+                        {
+                          "uuid": "field-product-quality",
+                          "componentType": "RatingFieldProps",
+                          "name": "productQuality",
+                          "label": "Product/Service Quality",
+                          "count": 5,
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-customer-service",
+                          "componentType": "RatingFieldProps",
+                          "name": "customerService",
+                          "label": "Customer Service",
+                          "count": 5,
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-value-money",
+                          "componentType": "RatingFieldProps",
+                          "name": "valueForMoney",
+                          "label": "Value for Money",
+                          "count": 5,
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-ease-of-use",
+                          "componentType": "RatingFieldProps",
+                          "name": "easeOfUse",
+                          "label": "Ease of Use",
+                          "count": 5,
+                          "required": true
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-improvements",
+                      "componentType": "FieldSetProps",
+                      "legend": "What Can We Improve?",
+                      "content": [
+                        {
+                          "uuid": "field-improvement-areas",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "improvementAreas",
+                          "label": "Which areas need improvement? (Select all that apply)",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Product Features",
+                              "value": "features"
+                            },
+                            {
+                              "label": "Customer Support",
+                              "value": "support"
+                            },
+                            {
+                              "label": "Pricing",
+                              "value": "pricing"
+                            },
+                            {
+                              "label": "Documentation",
+                              "value": "documentation"
+                            },
+                            {
+                              "label": "User Interface",
+                              "value": "ui"
+                            },
+                            {
+                              "label": "Performance/Speed",
+                              "value": "performance"
+                            },
+                            {
+                              "label": "Nothing - Everything is great!",
+                              "value": "none"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-what-liked",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "whatYouLiked",
+                          "label": "What did you like most?",
+                          "placeholder": "Tell us what we're doing well...",
+                          "rows": 4
+                        },
+                        {
+                          "uuid": "field-improvements",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "suggestions",
+                          "label": "How can we improve?",
+                          "placeholder": "Share your suggestions for improvement...",
+                          "rows": 4
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-about",
+                      "componentType": "FieldSetProps",
+                      "legend": "About You (Optional)",
+                      "content": [
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "your@email.com",
+                          "helperText": "We'll only use this to follow up if needed"
+                        },
+                        {
+                          "uuid": "field-customer-type",
+                          "componentType": "SelectFieldProps",
+                          "name": "customerType",
+                          "label": "I am a...",
+                          "placeholder": "Select your customer type",
+                          "options": [
+                            {
+                              "label": "New Customer (less than 3 months)",
+                              "value": "new"
+                            },
+                            {
+                              "label": "Regular Customer (3-12 months)",
+                              "value": "regular"
+                            },
+                            {
+                              "label": "Long-term Customer (1+ years)",
+                              "value": "longterm"
+                            },
+                            {
+                              "label": "First-time Visitor",
+                              "value": "first-time"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-heard-about",
+                          "componentType": "SelectFieldProps",
+                          "name": "heardAboutUs",
+                          "label": "How did you hear about us?",
+                          "placeholder": "Select an option",
+                          "options": [
+                            {
+                              "label": "Search Engine",
+                              "value": "search"
+                            },
+                            {
+                              "label": "Social Media",
+                              "value": "social"
+                            },
+                            {
+                              "label": "Friend/Colleague Referral",
+                              "value": "referral"
+                            },
+                            {
+                              "label": "Online Advertisement",
+                              "value": "ad"
+                            },
+                            {
+                              "label": "Blog/Article",
+                              "value": "blog"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-hidden-survey-id",
+                      "componentType": "HiddenFieldProps",
+                      "name": "surveyId",
+                      "value": "customer-satisfaction-2025"
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "actionType": "submit",
+                      "text": "Submit Survey",
+                      "variant": "default",
+                      "icon": {
+                        "uuid": "submit-icon",
+                        "componentType": "IconProps",
+                        "name": "send",
+                        "size": 16
+                      },
+                      "uuid": "form-action-submit",
+                      "componentType": "ButtonProps"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

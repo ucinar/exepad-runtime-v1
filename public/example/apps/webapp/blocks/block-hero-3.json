@@ -1,0 +1,273 @@
+{
+  "uuid": "webapp-1",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Flowbite Landing Page",
+  "alias": "flowbite-landing-page",
+  "summary": "Two-column balanced hero layout with content area containing headline, description, CTA buttons, and features list. Paired with visual showcase area. Great for detailed product presentations.",
+  "shortSummary": "Two-column balanced hero layout with content area containing headline, description, CTA buttons, and features list",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page for the application.",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "flex-hero-left",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "heading-hero",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "We invest in the world's potential"
+                },
+                {
+                  "uuid": "text-hero-desc",
+                  "componentType": "TextProps",
+                  "content": "Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+                },
+                {
+                  "uuid": "newsletter-signup-hero",
+                  "componentType": "ContactInfoBlockProps"
+                },
+                {
+                  "uuid": "flex-hero-reviews",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "align": "center",
+                  "gap": "6",
+                  "content": [
+                    {
+                      "uuid": "flex-reviews-item",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "uuid": "icon-star-reviews",
+                          "componentType": "IconProps",
+                          "name": "star",
+                          "size": 16
+                        },
+                        {
+                          "uuid": "text-reviews",
+                          "componentType": "TextProps",
+                          "content": "1,456+ Reviews"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "divider-hero-reviews",
+                      "componentType": "SpacerProps",
+                      "classes": "h-5",
+                      "size": "md"
+                    },
+                    {
+                      "uuid": "flex-credit-card-item",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "uuid": "icon-check-credit-card",
+                          "componentType": "IconProps",
+                          "name": "check",
+                          "size": 16
+                        },
+                        {
+                          "uuid": "text-no-credit-card",
+                          "componentType": "TextProps",
+                          "content": "No Credit Card Required"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "video-hero",
+              "componentType": "VideoProps",
+              "provider": "youtube",
+              "source": "TSi0iJYSQ24",
+              "height": 400,
+              "autoplay": false,
+              "controls": true,
+              "loop": false,
+              "muted": false
+            }
+          ]
+        },
+        {
+          "uuid": "section-logos",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-logos",
+          "layout": "singleColumnWide",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "flex-logos",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "justify": "evenly",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "logo-airbnb",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/100x40?text=airbnb",
+                  "alt": "Airbnb Logo",
+                  "asset": {
+                    "uuid": "asset-logo-airbnb",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "airbnb, logo",
+                    "isProcessed": true,
+                    "requestedWidth": 100,
+                    "requestedHeight": 40
+                  }
+                },
+                {
+                  "uuid": "logo-google",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/100x40?text=Google",
+                  "alt": "Google Logo",
+                  "asset": {
+                    "uuid": "asset-logo-google",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "google, logo",
+                    "isProcessed": true,
+                    "requestedWidth": 100,
+                    "requestedHeight": 40
+                  }
+                },
+                {
+                  "uuid": "logo-nike",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/100x40?text=Nike",
+                  "alt": "Nike Logo",
+                  "asset": {
+                    "uuid": "asset-logo-nike",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "nike, logo",
+                    "isProcessed": true,
+                    "requestedWidth": 100,
+                    "requestedHeight": 40
+                  }
+                },
+                {
+                  "uuid": "logo-uber",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/100x40?text=Uber",
+                  "alt": "Uber Logo",
+                  "asset": {
+                    "uuid": "asset-logo-uber",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "uber, logo",
+                    "isProcessed": true,
+                    "requestedWidth": 100,
+                    "requestedHeight": 40
+                  }
+                },
+                {
+                  "uuid": "logo-stripe",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/100x40?text=Stripe",
+                  "alt": "Stripe Logo",
+                  "asset": {
+                    "uuid": "asset-logo-stripe",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "stripe, logo",
+                    "isProcessed": true,
+                    "requestedWidth": 100,
+                    "requestedHeight": 40
+                  }
+                },
+                {
+                  "uuid": "logo-mashable",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/100x40?text=Mashable",
+                  "alt": "Mashable Logo",
+                  "asset": {
+                    "uuid": "asset-logo-mashable",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "mashable, logo",
+                    "isProcessed": true,
+                    "requestedWidth": 100,
+                    "requestedHeight": 40
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page for the application",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

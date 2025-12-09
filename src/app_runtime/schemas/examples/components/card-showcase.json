@@ -1,0 +1,363 @@
+{
+  "uuid": "app-card-showcase",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Card Component Showcase",
+  "alias": "card-showcase",
+  "summary": "Comprehensive showcase of Card component variants including default, outlined, elevated, and interactive styles with various configurations.",
+  "shortSummary": "Complete card component showcase",
+  "lastUpdatedEpoch": 1731326400,
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-card-showcase",
+      "title": "Card Component Showcase",
+      "slug": "/",
+      "summary": "Comprehensive demonstration of all Card component variants and use cases",
+      "shortSummary": "Card showcase",
+      "lastUpdatedEpoch": 1731326400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "card-showcase-section",
+          "sectionSlug": "card-showcase",
+          "layout": "singleColumnWide",
+          "spacing": "lg",
+          "content": [
+            {
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Card Component Examples",
+              "uuid": "showcase-title",
+              "classes": "text-center mb-8"
+            },
+            {
+              "componentType": "GridProps",
+              "uuid": "card-grid",
+              "columns": 3,
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "CardProps",
+                  "uuid": "card-default",
+                  "variant": "default",
+                  "size": "md",
+                  "header": {
+                    "componentType": "CardHeaderProps",
+                    "uuid": "default-header",
+                    "title": {
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Default Card",
+                      "uuid": "default-title"
+                    },
+                    "description": {
+                      "componentType": "TextProps",
+                      "content": "Standard card with border",
+                      "uuid": "default-desc"
+                    }
+                  },
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "This is the default card variant with standard styling.",
+                      "uuid": "default-content"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "CardProps",
+                  "uuid": "card-outlined",
+                  "variant": "outlined",
+                  "size": "md",
+                  "borderColor": "border-blue-500",
+                  "header": {
+                    "componentType": "CardHeaderProps",
+                    "uuid": "outlined-header",
+                    "title": {
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Outlined Card",
+                      "uuid": "outlined-title"
+                    },
+                    "description": {
+                      "componentType": "TextProps",
+                      "content": "Card with custom border",
+                      "uuid": "outlined-desc"
+                    }
+                  },
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "This card has a thicker outlined border with custom color.",
+                      "uuid": "outlined-content"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "CardProps",
+                  "uuid": "card-elevated",
+                  "variant": "elevated",
+                  "size": "md",
+                  "elevation": 3,
+                  "header": {
+                    "componentType": "CardHeaderProps",
+                    "uuid": "elevated-header",
+                    "title": {
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "Elevated Card",
+                      "uuid": "elevated-title"
+                    },
+                    "description": {
+                      "componentType": "TextProps",
+                      "content": "Card with shadow elevation",
+                      "uuid": "elevated-desc"
+                    }
+                  },
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "This card uses elevation for a floating effect.",
+                      "uuid": "elevated-content"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "CardProps",
+                  "uuid": "card-small",
+                  "variant": "default",
+                  "size": "sm",
+                  "radius": "sm",
+                  "header": {
+                    "componentType": "CardHeaderProps",
+                    "uuid": "small-header",
+                    "title": {
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Small Card",
+                      "uuid": "small-title"
+                    }
+                  },
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "Compact card with small padding.",
+                      "uuid": "small-content"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "CardProps",
+                  "uuid": "card-large",
+                  "variant": "filled",
+                  "size": "lg",
+                  "radius": "lg",
+                  "backgroundColor": "bg-slate-100",
+                  "header": {
+                    "componentType": "CardHeaderProps",
+                    "uuid": "large-header",
+                    "title": {
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Large Card",
+                      "uuid": "large-title"
+                    },
+                    "description": {
+                      "componentType": "TextProps",
+                      "content": "With custom background",
+                      "uuid": "large-desc"
+                    }
+                  },
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "This card has larger padding and custom background color.",
+                      "uuid": "large-content"
+                    }
+                  ],
+                  "footer": [
+                    {
+                      "componentType": "ButtonProps",
+                      "text": "Learn More",
+                      "variant": "default",
+                      "uuid": "large-footer-btn"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "CardProps",
+                  "uuid": "card-interactive",
+                  "variant": "outlined",
+                  "size": "md",
+                  "radius": "lg",
+                  "interactive": true,
+                  "link": {
+                    "componentType": "LinkProps",
+                    "href": "#",
+                    "text": "View Interactive Card",
+                    "uuid": "interactive-link"
+                  },
+                  "header": {
+                    "componentType": "CardHeaderProps",
+                    "uuid": "interactive-header",
+                    "title": {
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Interactive Card",
+                      "uuid": "interactive-title"
+                    },
+                    "description": {
+                      "componentType": "TextProps",
+                      "content": "Hover to see the effect",
+                      "uuid": "interactive-desc"
+                    }
+                  },
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "This card is clickable and has hover effects.",
+                      "uuid": "interactive-content"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Card with Complex Content",
+              "uuid": "complex-heading",
+              "classes": "mt-12 mb-6 text-center"
+            },
+            {
+              "componentType": "CardProps",
+              "uuid": "card-complex",
+              "variant": "default",
+              "size": "lg",
+              "elevation": 2,
+              "classes": "max-w-4xl mx-auto",
+              "header": {
+                "componentType": "CardHeaderProps",
+                "uuid": "complex-header",
+                "title": {
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Product Card Example",
+                  "uuid": "complex-title"
+                },
+                "description": {
+                  "componentType": "TextProps",
+                  "content": "A complete product card with multiple sections",
+                  "uuid": "complex-desc"
+                },
+                "actions": [
+                  {
+                    "componentType": "IconProps",
+                    "name": "Heart",
+                    "size": 20,
+                    "uuid": "complex-icon"
+                  }
+                ]
+              },
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "justify": "between",
+                  "align": "center",
+                  "uuid": "complex-meta",
+                  "classes": "mt-4",
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "content": "$99.99",
+                      "classes": "text-2xl font-bold",
+                      "uuid": "complex-price"
+                    },
+                    {
+                      "componentType": "BadgeProps",
+                      "content": "In Stock",
+                      "variant": "default",
+                      "uuid": "complex-badge"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "TextProps",
+                  "content": "High-quality product with amazing features. Perfect for your needs.",
+                  "uuid": "complex-description",
+                  "classes": "mt-4"
+                }
+              ],
+              "footer": [
+                {
+                  "componentType": "ButtonProps",
+                  "text": "Add to Cart",
+                  "variant": "default",
+                  "uuid": "complex-add-btn",
+                  "classes": "flex-1"
+                },
+                {
+                  "componentType": "ButtonProps",
+                  "text": "Details",
+                  "variant": "outline",
+                  "uuid": "complex-details-btn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

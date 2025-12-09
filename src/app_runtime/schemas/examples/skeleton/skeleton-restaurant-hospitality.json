@@ -1,0 +1,435 @@
+{
+  "uuid": "skeleton-009-restaurant-hospitality",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Restaurant Hospitality Skeleton",
+  "alias": "restaurant-hospitality-skeleton",
+  "summary": "Header: Non-sticky default navbar with elegant text logo (LA BELLE CUISINE, refined tracking), underline animations (250ms), menu dropdown (Lunch Menu, Dinner Menu, Wine List, Seasonal Specials), regular links (About, Private Events), default Reserve a Table CTA button. Footer: Three-section hospitality layout - top contact section with large heading + phone/email/address, middle 3-column grid (Visit Us with Hours/Location/Parking, Quick Links, Follow Us with socials), enhanced spacing (pb-16, pt-16, my-12), bottom bar with copyright, elegant amber-brown color scheme.",
+  "shortSummary": "Restaurant skeleton with elegant navbar and contact footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#fefce8",
+      "foreground": "#422006",
+      "primary": "#b45309",
+      "primary-foreground": "#fefce8",
+      "secondary": "#fef3c7",
+      "secondary-foreground": "#78350f",
+      "muted": "#fef9c3",
+      "muted-foreground": "#a16207",
+      "accent": "#fbbf24",
+      "accent-foreground": "#78350f",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fefce8",
+      "border": "#fde68a",
+      "input": "#fde68a",
+      "ring": "#ca8a04"
+    },
+    "dark": {
+      "background": "#1c1917",
+      "foreground": "#fef3c7",
+      "primary": "#eab308",
+      "primary-foreground": "#1c1917",
+      "secondary": "#292524",
+      "secondary-foreground": "#fef3c7",
+      "muted": "#44403c",
+      "muted-foreground": "#d6d3d1",
+      "accent": "#ca8a04",
+      "accent-foreground": "#fef3c7",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fef3c7",
+      "border": "#57534e",
+      "input": "#44403c",
+      "ring": "#eab308"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-restaurant-navbar-009",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "underline",
+      "sticky": false,
+      "logo": {
+        "uuid": "logo-restaurant-009",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "La Maison",
+        "classes": "text-3xl font-serif italic text-primary"
+      },
+      "content": [
+        {
+          "uuid": "menu-item-home-009",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "link-home-009",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "menu-item-menu-009",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Menu",
+          "href": {
+            "uuid": "link-menu-009",
+            "componentType": "LinkProps",
+            "href": "/menu",
+            "text": "Menu"
+          }
+        },
+        {
+          "uuid": "menu-item-about-009",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Our Story",
+          "href": {
+            "uuid": "link-about-009",
+            "componentType": "LinkProps",
+            "href": "/story",
+            "text": "Our Story"
+          }
+        },
+        {
+          "uuid": "menu-item-events-009",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Events",
+          "href": {
+            "uuid": "link-events-009",
+            "componentType": "LinkProps",
+            "href": "/events",
+            "text": "Events"
+          }
+        },
+        {
+          "uuid": "menu-button-reserve-009",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-reserve-009",
+            "componentType": "ButtonProps",
+            "text": "Reserve Table",
+            "variant": "default",
+            "link": {
+              "uuid": "link-reserve-009",
+              "componentType": "LinkProps",
+              "href": "/reservations",
+              "text": "Reserve Table"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-restaurant-009",
+      "componentType": "SectionProps",
+      "classes": "py-16 px-8 bg-stone-800 text-amber-50",
+      "layout": "singleColumnCentered",
+      "spacing": "lg",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-main-content-009",
+          "componentType": "GridProps",
+          "columns": 3,
+          "gap": "12",
+          "classes": "w-full pb-12",
+          "content": [
+            {
+              "uuid": "footer-col-location-009",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-location-009",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Visit Us",
+                  "classes": "text-2xl font-serif italic text-amber-400 mb-4"
+                },
+                {
+                  "uuid": "footer-address-icon-009",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "3",
+                  "align": "start",
+                  "content": [
+                    {
+                      "uuid": "icon-location-009",
+                      "componentType": "IconProps",
+                      "name": "map-pin",
+                      "size": 20,
+                      "classes": "text-amber-400 mt-1"
+                    },
+                    {
+                      "uuid": "footer-address-009",
+                      "componentType": "TextProps",
+                      "content": "123 Gourmet Street\nDowntown District\nNew York, NY 10001",
+                      "classes": "text-amber-100"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-phone-icon-009",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "3",
+                  "align": "center",
+                  "content": [
+                    {
+                      "uuid": "icon-phone-009",
+                      "componentType": "IconProps",
+                      "name": "phone",
+                      "size": 20,
+                      "classes": "text-amber-400"
+                    },
+                    {
+                      "uuid": "footer-phone-009",
+                      "componentType": "LinkProps",
+                      "text": "(555) 123-4567",
+                      "href": "tel:+15551234567",
+                      "classes": "text-amber-100 hover:text-amber-400"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-email-icon-009",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "3",
+                  "align": "center",
+                  "content": [
+                    {
+                      "uuid": "icon-email-009",
+                      "componentType": "IconProps",
+                      "name": "mail",
+                      "size": 20,
+                      "classes": "text-amber-400"
+                    },
+                    {
+                      "uuid": "footer-email-009",
+                      "componentType": "LinkProps",
+                      "text": "reservations@lamaison.com",
+                      "href": "mailto:reservations@lamaison.com",
+                      "classes": "text-amber-100 hover:text-amber-400"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-hours-009",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-hours-009",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Hours",
+                  "classes": "text-2xl font-serif italic text-amber-400 mb-4"
+                },
+                {
+                  "uuid": "hours-lunch-009",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "1",
+                  "content": [
+                    {
+                      "uuid": "hours-lunch-heading-009",
+                      "componentType": "TextProps",
+                      "content": "Lunch",
+                      "classes": "text-amber-400 font-semibold"
+                    },
+                    {
+                      "uuid": "hours-lunch-days-009",
+                      "componentType": "TextProps",
+                      "content": "Tuesday - Sunday",
+                      "classes": "text-amber-100"
+                    },
+                    {
+                      "uuid": "hours-lunch-time-009",
+                      "componentType": "TextProps",
+                      "content": "12:00 PM - 3:00 PM",
+                      "classes": "text-amber-100"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "hours-dinner-009",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "1",
+                  "classes": "mt-4",
+                  "content": [
+                    {
+                      "uuid": "hours-dinner-heading-009",
+                      "componentType": "TextProps",
+                      "content": "Dinner",
+                      "classes": "text-amber-400 font-semibold"
+                    },
+                    {
+                      "uuid": "hours-dinner-days-009",
+                      "componentType": "TextProps",
+                      "content": "Tuesday - Sunday",
+                      "classes": "text-amber-100"
+                    },
+                    {
+                      "uuid": "hours-dinner-time-009",
+                      "componentType": "TextProps",
+                      "content": "5:30 PM - 11:00 PM",
+                      "classes": "text-amber-100"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "hours-closed-009",
+                  "componentType": "TextProps",
+                  "content": "Closed Mondays",
+                  "classes": "text-amber-300 italic mt-4"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-connect-009",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-heading-connect-009",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Connect",
+                  "classes": "text-2xl font-serif italic text-amber-400 mb-4"
+                },
+                {
+                  "uuid": "footer-social-text-009",
+                  "componentType": "TextProps",
+                  "content": "Follow us for daily specials, events, and culinary inspiration.",
+                  "classes": "text-amber-100 mb-4"
+                },
+                {
+                  "uuid": "footer-social-009",
+                  "componentType": "FlexProps",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "social-facebook-009",
+                      "componentType": "SocialLinkProps",
+                      "platform": "facebook",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-instagram-009",
+                      "componentType": "SocialLinkProps",
+                      "platform": "instagram",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-tripadvisor-009",
+                      "componentType": "SocialLinkProps",
+                      "platform": "tripadvisor",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-yelp-009",
+                      "componentType": "SocialLinkProps",
+                      "platform": "yelp",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-newsletter-009",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "classes": "mt-6",
+                  "content": [
+                    {
+                      "uuid": "footer-newsletter-heading-009",
+                      "componentType": "TextProps",
+                      "content": "Join our mailing list",
+                      "classes": "text-amber-400 font-semibold"
+                    },
+                    {
+                      "uuid": "footer-newsletter-button-009",
+                      "componentType": "ButtonProps",
+                      "text": "Subscribe",
+                      "variant": "outline",
+                      "classes": "border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-stone-800"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-009",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-stone-700",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-009",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-009",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 La Maison. Crafted with passion since 1987.",
+              "classes": "text-sm text-amber-200"
+            },
+            {
+              "uuid": "footer-legal-009",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "footer-link-privacy-009",
+                  "componentType": "LinkProps",
+                  "text": "Privacy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-amber-200 hover:text-amber-400"
+                },
+                {
+                  "uuid": "footer-link-terms-009",
+                  "componentType": "LinkProps",
+                  "text": "Terms",
+                  "href": "/terms",
+                  "classes": "text-sm text-amber-200 hover:text-amber-400"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

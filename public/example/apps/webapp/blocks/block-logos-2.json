@@ -1,0 +1,249 @@
+{
+  "uuid": "app-customer-logos-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Customer Logos Page",
+  "alias": "customer-logos-page",
+  "summary": "Enhanced logo section with contextual messaging and organized brand presentation. Features section header, customer logos grid, and supporting text for trust building and social proof.",
+  "shortSummary": "Enhanced logo section with contextual messaging and organized brand presentation",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-customer-logos-456",
+      "title": "Customer Logos",
+      "slug": "/customers",
+      "summary": "A page displaying logos of companies we work with.",
+      "content": [
+        {
+          "uuid": "section-logos-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-logos-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "heading-grow-with-flowbite",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Grow with Flowbite",
+              "classes": "text-3xl font-bold text-center mb-12"
+            },
+            {
+              "uuid": "grid-company-cards",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "classes": "grid-cols-1 md:grid-cols-2 lg:grid-cols-4",
+              "content": [
+                {
+                  "uuid": "card-amazon",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "4",
+                  "classes": "p-8 bg-gray-50 rounded-lg text-center",
+                  "content": [
+                    {
+                      "uuid": "logo-amazon",
+                      "componentType": "ImageProps",
+                      "src": "https://logo.clearbit.com/amazon.com",
+                      "alt": "Amazon logo",
+                      "classes": "h-12",
+                      "asset": {
+                        "uuid": "asset-logo-amazon",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "amazon, logo, company",
+                        "isProcessed": true,
+                        "requestedWidth": 120,
+                        "requestedHeight": 48
+                      }
+                    },
+                    {
+                      "uuid": "text-amazon-since",
+                      "componentType": "TextProps",
+                      "content": "customers since 2016",
+                      "classes": "text-gray-500"
+                    },
+                    {
+                      "uuid": "link-amazon",
+                      "componentType": "LinkProps",
+                      "text": "Visit website >",
+                      "href": "#",
+                      "classes": "text-blue-600 font-semibold"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "card-apple",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "4",
+                  "classes": "p-8 bg-gray-50 rounded-lg text-center",
+                  "content": [
+                    {
+                      "uuid": "logo-apple",
+                      "componentType": "ImageProps",
+                      "src": "https://logo.clearbit.com/apple.com",
+                      "alt": "Apple logo",
+                      "classes": "h-12",
+                      "asset": {
+                        "uuid": "asset-logo-apple",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "apple, logo, company",
+                        "isProcessed": true,
+                        "requestedWidth": 120,
+                        "requestedHeight": 48
+                      }
+                    },
+                    {
+                      "uuid": "text-apple-since",
+                      "componentType": "TextProps",
+                      "content": "customers since 2005",
+                      "classes": "text-gray-500"
+                    },
+                    {
+                      "uuid": "link-apple",
+                      "componentType": "LinkProps",
+                      "text": "Visit website >",
+                      "href": "#",
+                      "classes": "text-blue-600 font-semibold"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "card-google",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "4",
+                  "classes": "p-8 bg-gray-50 rounded-lg text-center",
+                  "content": [
+                    {
+                      "uuid": "logo-google",
+                      "componentType": "ImageProps",
+                      "src": "https://logo.clearbit.com/google.com",
+                      "alt": "Google logo",
+                      "classes": "h-12",
+                      "asset": {
+                        "uuid": "asset-logo-google",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "google, logo, company",
+                        "isProcessed": true,
+                        "requestedWidth": 120,
+                        "requestedHeight": 48
+                      }
+                    },
+                    {
+                      "uuid": "text-google-since",
+                      "componentType": "TextProps",
+                      "content": "customers since 2019",
+                      "classes": "text-gray-500"
+                    },
+                    {
+                      "uuid": "link-google",
+                      "componentType": "LinkProps",
+                      "text": "Visit website >",
+                      "href": "#",
+                      "classes": "text-blue-600 font-semibold"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "card-microsoft",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "4",
+                  "classes": "p-8 bg-gray-50 rounded-lg text-center",
+                  "content": [
+                    {
+                      "uuid": "logo-microsoft",
+                      "componentType": "ImageProps",
+                      "src": "https://logo.clearbit.com/microsoft.com",
+                      "alt": "Microsoft logo",
+                      "classes": "h-12",
+                      "asset": {
+                        "uuid": "asset-logo-microsoft",
+                        "componentType": "ImageAssetProps",
+                        "keywords": "microsoft, logo, company",
+                        "isProcessed": true,
+                        "requestedWidth": 120,
+                        "requestedHeight": 48
+                      }
+                    },
+                    {
+                      "uuid": "text-microsoft-since",
+                      "componentType": "TextProps",
+                      "content": "customers since 1995",
+                      "classes": "text-gray-500"
+                    },
+                    {
+                      "uuid": "link-microsoft",
+                      "componentType": "LinkProps",
+                      "text": "Visit website >",
+                      "href": "#",
+                      "classes": "text-blue-600 font-semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying logos of companies we work with",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

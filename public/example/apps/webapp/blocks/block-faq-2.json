@@ -1,0 +1,170 @@
+{
+  "uuid": "app-faq-section-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "FAQ Page",
+  "alias": "faq-page",
+  "summary": "Enhanced FAQ layout with categorized questions and improved navigation. Features organized FAQ groups, search functionality, and user-friendly question organization.",
+  "shortSummary": "Enhanced FAQ layout with categorized questions and improved navigation",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-faq-456",
+      "title": "Frequently Asked Questions",
+      "slug": "/faq",
+      "summary": "A page displaying a frequently asked questions (FAQ) section.",
+      "content": [
+        {
+          "uuid": "section-faq-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-faq-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "heading-faq-title",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Frequently asked questions",
+              "classes": "text-4xl font-extrabold text-center mb-12"
+            },
+            {
+              "uuid": "faq-accordion",
+              "componentType": "AccordionProps",
+              "type": "single",
+              "collapsible": true,
+              "style": "flush",
+              "classes": "w-full max-w-3xl mx-auto",
+              "content": [
+                {
+                  "uuid": "faq-item-1",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "faq-trigger-1",
+                      "componentType": "TextProps",
+                      "content": "Can I use Flowbite in open-source projects?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "faq-content-1",
+                      "componentType": "TextProps",
+                      "content": "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.\n\nCheck out this guide to learn how to [get started](https://flowbite.com/docs/getting-started/introduction/) and start developing websites even faster with components on top of Tailwind CSS."
+                    }
+                  ]
+                },
+                {
+                  "uuid": "faq-item-2",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "faq-trigger-2",
+                      "componentType": "TextProps",
+                      "content": "Is there a Figma file available?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "faq-content-2",
+                      "componentType": "TextProps",
+                      "content": "Yes, the Figma file is available with the purchase of any of the pro plans. It includes all the components, pages, and illustrations that you see in the demo."
+                    }
+                  ]
+                },
+                {
+                  "uuid": "faq-item-3",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "faq-trigger-3",
+                      "componentType": "TextProps",
+                      "content": "What are the differences between Flowbite and Tailwind UI?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "faq-content-3",
+                      "componentType": "TextProps",
+                      "content": "The main difference is that Flowbite is a completely open-source project, whereas Tailwind UI is a paid product. Flowbite also offers a pro version with more components and features."
+                    }
+                  ]
+                },
+                {
+                  "uuid": "faq-item-4",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "faq-trigger-4",
+                      "componentType": "TextProps",
+                      "content": "What about browser support?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "faq-content-4",
+                      "componentType": "TextProps",
+                      "content": "The components from Flowbite are compatible with all modern browsers, including Chrome, Firefox, Safari, and Edge."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying a frequently asked questions (FAQ) section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

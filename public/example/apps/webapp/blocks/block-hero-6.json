@@ -1,0 +1,362 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "InvestCo",
+  "alias": "investco",
+  "summary": "Two-column hero layout with primary content area containing headline, description text, structured information grid, and prominent download CTA. Features secondary visual area and company logo showcase section below. Ideal for product launches and software applications.",
+  "shortSummary": "Two-column hero layout with primary content area containing headline, description text, structured information grid, and prominent download CTA",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the hero section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "twoColumnSidebarRight",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "MarkdownBlockProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                  "content": "<h1 class='text-5xl font-extrabold tracking-tight'>A hackable <span class='text-blue-600'>text editor</span> for the 21st Century</h1>",
+                  "sanitize": false
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-67890abcdef1",
+                  "variant": "lead",
+                  "content": "Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value.",
+                  "classes": "mt-4 max-w-2xl"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "c3d4e5f6-a7b8-9012-3456-7890abcdef12",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "between",
+                  "gap": "8",
+                  "classes": "mt-8 p-4 bg-gray-50 rounded-lg",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "new-flex-group-for-text",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "8",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "d4e5f6a7-b8c9-0123-4567-890abcdef123",
+                          "direction": "column",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "e5f6a7b8-c9d0-1234-5678-90abcdef1234",
+                              "content": "1.60.0",
+                              "classes": "font-bold text-lg"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "f6a7b8c9-d0e1-2345-6789-0abcdef12345",
+                              "content": "Release notes",
+                              "classes": "text-sm text-gray-500"
+                            }
+                          ]
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "a7b8c9d0-e1f2-3456-7890-bcdef1234567",
+                          "direction": "column",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "b8c9d0e1-f2a3-4567-8901-cdef12345678",
+                              "content": "macOS",
+                              "classes": "font-bold text-lg"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "c9d0e1f2-a3b4-5678-9012-def123456789",
+                              "content": "For macOS 10.10 or later",
+                              "classes": "text-sm text-gray-500"
+                            }
+                          ]
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "d0e1f2a3-b4c5-6789-0123-ef1234567890",
+                          "direction": "column",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "e1f2a3b4-c5d6-7890-1234-f12345678901",
+                              "content": "Windows",
+                              "classes": "font-bold text-lg"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "f2a3b4c5-d6e7-8901-2345-123456789012",
+                              "content": "For windows 7 or later",
+                              "classes": "text-sm text-gray-500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "DownloadButtonProps",
+                      "uuid": "a3b4c5d6-e7f8-9012-3456-234567890123",
+                      "text": "Download",
+                      "url": "/download/latest",
+                      "variant": "default",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "b4c5d6e7-f8a9-0123-4567-345678901234",
+                        "name": "download",
+                        "size": 20
+                      }
+                    }
+                  ]
+                },
+                {
+                  "componentType": "MarkdownBlockProps",
+                  "uuid": "c5d6e7f8-a9b0-1234-5678-456789012345",
+                  "content": "By using Flowbite, you agree to its [license and privacy statement](/legal).",
+                  "sanitize": true,
+                  "classes": "text-sm text-gray-500"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "1d2e3f4a-5b6c-7d8e-9f0a-b1c2d3e4f5a6",
+              "justify": "center",
+              "align": "center",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b",
+                  "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/text-editor-light.svg",
+                  "alt": "A user interface of a modern text editor.",
+                  "asset": {
+                    "componentType": "ImageAssetProps",
+                    "uuid": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+                    "keywords": "text editor, ui, software",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 400
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+          "uuid": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+          "layout": "singleColumnWide",
+          "spacing": "sm",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d",
+              "justify": "between",
+              "align": "center",
+              "classes": "w-full",
+              "content": [
+                {
+                  "componentType": "LogoItemProps",
+                  "uuid": "5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e",
+                  "name": "Airbnb",
+                  "grayscale": true,
+                  "logo": {
+                    "componentType": "ImageProps",
+                    "uuid": "6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f",
+                    "src": "https://placehold.co/120x40?text=Airbnb",
+                    "alt": "Airbnb Logo",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a",
+                      "keywords": "airbnb, logo, travel",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 40
+                    }
+                  }
+                },
+                {
+                  "componentType": "LogoItemProps",
+                  "uuid": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+                  "name": "Google",
+                  "grayscale": true,
+                  "logo": {
+                    "componentType": "ImageProps",
+                    "uuid": "9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+                    "src": "https://placehold.co/120x40?text=Google",
+                    "alt": "Google Logo",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+                      "keywords": "google, logo, search",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 40
+                    }
+                  }
+                },
+                {
+                  "componentType": "LogoItemProps",
+                  "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+                  "name": "Nike",
+                  "grayscale": true,
+                  "logo": {
+                    "componentType": "ImageProps",
+                    "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+                    "src": "https://placehold.co/120x40?text=Nike",
+                    "alt": "Nike Logo",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+                      "keywords": "nike, logo, sportswear",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 40
+                    }
+                  }
+                },
+                {
+                  "componentType": "LogoItemProps",
+                  "uuid": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+                  "name": "Uber",
+                  "grayscale": true,
+                  "logo": {
+                    "componentType": "ImageProps",
+                    "uuid": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+                    "src": "https://placehold.co/120x40?text=Uber",
+                    "alt": "Uber Logo",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+                      "keywords": "uber, logo, rideshare",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 40
+                    }
+                  }
+                },
+                {
+                  "componentType": "LogoItemProps",
+                  "uuid": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+                  "name": "Stripe",
+                  "grayscale": true,
+                  "logo": {
+                    "componentType": "ImageProps",
+                    "uuid": "8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+                    "src": "https://placehold.co/120x40?text=Stripe",
+                    "alt": "Stripe Logo",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
+                      "keywords": "stripe, logo, payments",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 40
+                    }
+                  }
+                },
+                {
+                  "componentType": "LogoItemProps",
+                  "uuid": "0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
+                  "name": "Mashable",
+                  "grayscale": true,
+                  "logo": {
+                    "componentType": "ImageProps",
+                    "uuid": "1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+                    "src": "https://placehold.co/120x40?text=Mashable",
+                    "alt": "Mashable Logo",
+                    "asset": {
+                      "componentType": "ImageAssetProps",
+                      "uuid": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
+                      "keywords": "mashable, logo, tech",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 40
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the hero section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

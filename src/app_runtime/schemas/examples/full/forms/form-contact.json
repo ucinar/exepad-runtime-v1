@@ -1,0 +1,677 @@
+{
+  "uuid": "app-contact-form-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Contact & Feedback Form",
+  "alias": "contact-and-feedback-form",
+  "summary": "A professional contact form with customer satisfaction rating. Perfect for gathering customer inquiries, feedback, and testimonials with built-in validation and user-friendly design.",
+  "shortSummary": "A professional contact form with customer satisfaction rating",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "YourCompany",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "YourCompany"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Home"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/about",
+                "text": "About"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Contact",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/contact",
+                "text": "Contact"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 YourCompany. All rights reserved.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-contact",
+      "title": "Contact Us",
+      "slug": "/",
+      "summary": "Get in touch with our team. We'd love to hear from you!",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-primary/5 to-background",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "mail",
+                      "size": 48,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Get in Touch"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Have a question or feedback? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "form-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "contact-form",
+                      "componentType": "FormProps",
+                      "title": "Contact Form",
+                      "description": "Please fill out all required fields marked with an asterisk (*).",
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Thank you for your message! We'll get back to you within 24 hours.",
+                        "errorMessage": "Something went wrong. Please try again or email us directly.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email",
+                        "onSuccessAction": {
+                          "type": "clearForm"
+                        }
+                      },
+                      "content": [
+                        {
+                          "uuid": "field-full-name",
+                          "componentType": "TextFieldProps",
+                          "name": "fullName",
+                          "label": "Full Name",
+                          "placeholder": "John Doe",
+                          "helperText": "Enter your first and last name",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Please enter your full name"
+                            },
+                            {
+                              "type": "minLength",
+                              "value": 2,
+                              "errorMessage": "Name must be at least 2 characters long"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john@example.com",
+                          "helperText": "We'll never share your email with anyone",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Please enter your email address"
+                            },
+                            {
+                              "type": "email",
+                              "errorMessage": "Please enter a valid email address"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 123-4567",
+                          "helperText": "Optional - only if you'd like us to call you back"
+                        },
+                        {
+                          "uuid": "field-subject",
+                          "componentType": "SelectFieldProps",
+                          "name": "subject",
+                          "label": "Subject",
+                          "placeholder": "What is your inquiry about?",
+                          "required": true,
+                          "helperText": "Select the topic that best matches your inquiry",
+                          "options": [
+                            {
+                              "label": "General Inquiry",
+                              "value": "general"
+                            },
+                            {
+                              "label": "Customer Support",
+                              "value": "support"
+                            },
+                            {
+                              "label": "Sales & Pricing",
+                              "value": "sales"
+                            },
+                            {
+                              "label": "Partnership Opportunity",
+                              "value": "partnership"
+                            },
+                            {
+                              "label": "Feedback & Suggestions",
+                              "value": "feedback"
+                            },
+                            {
+                              "label": "Report a Bug",
+                              "value": "bug"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-message",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "message",
+                          "label": "Your Message",
+                          "placeholder": "Tell us more about your inquiry...",
+                          "rows": 6,
+                          "maxLength": 1000,
+                          "required": true,
+                          "helperText": "Please provide as much detail as possible to help us assist you better",
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Please enter your message"
+                            },
+                            {
+                              "type": "minLength",
+                              "value": 10,
+                              "errorMessage": "Message must be at least 10 characters long"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-satisfaction",
+                          "componentType": "RatingFieldProps",
+                          "name": "satisfaction",
+                          "label": "How satisfied are you with our service?",
+                          "count": 5,
+                          "icon": {
+                            "componentType": "IconProps",
+                            "uuid": "icon-star-d8721a44",
+                            "name": "star",
+                            "size": 20
+                          },
+                          "allowHalf": false,
+                          "helperText": "Your feedback helps us improve our services"
+                        },
+                        {
+                          "uuid": "field-newsletter",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "subscribeNewsletter",
+                          "label": "Yes, I'd like to receive updates and news via email",
+                          "helperText": "You can unsubscribe at any time"
+                        },
+                        {
+                          "uuid": "field-hidden-source",
+                          "componentType": "HiddenFieldProps",
+                          "name": "formSource",
+                          "value": "contact-page"
+                        },
+                        {
+                          "uuid": "field-hidden-timestamp",
+                          "componentType": "HiddenFieldProps",
+                          "name": "submittedAt",
+                          "value": "2025-10-02T18:00:00Z"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "reset",
+                          "text": "Clear Form",
+                          "variant": "ghost",
+                          "uuid": "contact-form-action-reset-0",
+                          "componentType": "ButtonProps"
+                        },
+                        {
+                          "actionType": "submit",
+                          "text": "Send Message",
+                          "variant": "default",
+                          "icon": {
+                            "uuid": "submit-icon",
+                            "componentType": "IconProps",
+                            "name": "send",
+                            "size": 16
+                          },
+                          "uuid": "contact-form-action-submit-1",
+                          "componentType": "ButtonProps"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "info-card",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "6",
+                      "classes": "p-6 border rounded-lg bg-muted/50",
+                      "content": [
+                        {
+                          "uuid": "info-heading",
+                          "componentType": "HeadingProps",
+                          "level": 3,
+                          "text": "Other Ways to Reach Us"
+                        },
+                        {
+                          "uuid": "contact-methods",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "4",
+                          "content": [
+                            {
+                              "uuid": "email-contact",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "email-icon",
+                                  "componentType": "IconProps",
+                                  "name": "mail",
+                                  "size": 20,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "email-info",
+                                  "componentType": "FlexProps",
+                                  "direction": "column",
+                                  "gap": "1",
+                                  "content": [
+                                    {
+                                      "uuid": "email-label",
+                                      "componentType": "TextProps",
+                                      "variant": "small",
+                                      "content": "Email",
+                                      "classes": "font-semibold"
+                                    },
+                                    {
+                                      "uuid": "email-value",
+                                      "componentType": "LinkProps",
+                                      "href": "mailto:support@yourcompany.com",
+                                      "text": "support@yourcompany.com",
+                                      "classes": "text-sm"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "phone-contact",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "phone-icon",
+                                  "componentType": "IconProps",
+                                  "name": "phone",
+                                  "size": 20,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "phone-info",
+                                  "componentType": "FlexProps",
+                                  "direction": "column",
+                                  "gap": "1",
+                                  "content": [
+                                    {
+                                      "uuid": "phone-label",
+                                      "componentType": "TextProps",
+                                      "variant": "small",
+                                      "content": "Phone",
+                                      "classes": "font-semibold"
+                                    },
+                                    {
+                                      "uuid": "phone-value",
+                                      "componentType": "LinkProps",
+                                      "href": "tel:+15551234567",
+                                      "text": "+1 (555) 123-4567",
+                                      "classes": "text-sm"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "hours-contact",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "hours-icon",
+                                  "componentType": "IconProps",
+                                  "name": "clock",
+                                  "size": 20,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "hours-info",
+                                  "componentType": "FlexProps",
+                                  "direction": "column",
+                                  "gap": "1",
+                                  "content": [
+                                    {
+                                      "uuid": "hours-label",
+                                      "componentType": "TextProps",
+                                      "variant": "small",
+                                      "content": "Business Hours",
+                                      "classes": "font-semibold"
+                                    },
+                                    {
+                                      "uuid": "hours-value",
+                                      "componentType": "TextProps",
+                                      "variant": "small",
+                                      "content": "Monday - Friday, 9:00 AM - 5:00 PM EST"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "response-time",
+                          "componentType": "CalloutProps",
+                          "title": {
+                            "uuid": "response-time-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "Response Time"
+                          },
+                          "message": {
+                            "uuid": "response-time-message",
+                            "componentType": "TextProps",
+                            "content": "We typically respond to all inquiries within 24 hours during business days."
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-faq-preview",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-faq-preview",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "faq-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "faq-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "w-full max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "faq-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Frequently Asked Questions",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "faq-accordion",
+                      "componentType": "AccordionProps",
+                      "collapsible": true,
+                      "content": [
+                        {
+                          "uuid": "faq-item-1",
+                          "trigger": [
+                            {
+                              "uuid": "faq-1-trigger",
+                              "componentType": "TextProps",
+                              "content": "How long does it take to get a response?",
+                              "classes": "font-semibold"
+                            }
+                          ],
+                          "content": [
+                            {
+                              "uuid": "faq-1-text",
+                              "componentType": "TextProps",
+                              "content": "We aim to respond to all inquiries within 24 hours during business days (Monday-Friday). For urgent matters, please call us directly."
+                            }
+                          ],
+                          "componentType": "AccordionItemProps"
+                        },
+                        {
+                          "uuid": "faq-item-2",
+                          "trigger": [
+                            {
+                              "uuid": "faq-2-trigger",
+                              "componentType": "TextProps",
+                              "content": "What information should I include in my message?",
+                              "classes": "font-semibold"
+                            }
+                          ],
+                          "content": [
+                            {
+                              "uuid": "faq-2-text",
+                              "componentType": "TextProps",
+                              "content": "Please provide as much detail as possible about your inquiry. Include any relevant order numbers, account information, or specific questions you have. The more information you provide, the better we can assist you."
+                            }
+                          ],
+                          "componentType": "AccordionItemProps"
+                        },
+                        {
+                          "uuid": "faq-item-3",
+                          "trigger": [
+                            {
+                              "uuid": "faq-3-trigger",
+                              "componentType": "TextProps",
+                              "content": "Can I attach files to my inquiry?",
+                              "classes": "font-semibold"
+                            }
+                          ],
+                          "content": [
+                            {
+                              "uuid": "faq-3-text",
+                              "componentType": "TextProps",
+                              "content": "Currently, the contact form doesn't support file attachments. If you need to share files, please email them directly to support@yourcompany.com, and reference your inquiry in the email subject."
+                            }
+                          ],
+                          "componentType": "AccordionItemProps"
+                        },
+                        {
+                          "uuid": "faq-item-4",
+                          "trigger": [
+                            {
+                              "uuid": "faq-4-trigger",
+                              "componentType": "TextProps",
+                              "content": "Is my information secure?",
+                              "classes": "font-semibold"
+                            }
+                          ],
+                          "content": [
+                            {
+                              "uuid": "faq-4-text",
+                              "componentType": "TextProps",
+                              "content": "Yes, absolutely. All information submitted through this form is encrypted and handled in accordance with our privacy policy. We never share your personal information with third parties."
+                            }
+                          ],
+                          "componentType": "AccordionItemProps"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Get in touch with our team",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

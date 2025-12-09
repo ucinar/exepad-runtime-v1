@@ -1,0 +1,205 @@
+{
+  "uuid": "app-testimonial-section-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Testimonial Page",
+  "alias": "testimonial-page",
+  "summary": "Featured testimonial section with prominent customer showcase and detailed social proof elements. Includes large testimonial display with customer details and trust-building visual components.",
+  "shortSummary": "Featured testimonial section with prominent customer showcase and detailed social proof elements",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-testimonial-456",
+      "title": "Testimonial",
+      "slug": "/testimonial",
+      "summary": "A page displaying customer testimonials.",
+      "content": [
+        {
+          "uuid": "section-testimonial-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-testimonial-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "heading-testimonials",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Testimonials",
+              "classes": "text-4xl font-extrabold text-center mb-4"
+            },
+            {
+              "uuid": "text-testimonial-subtitle",
+              "componentType": "TextProps",
+              "content": "Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind",
+              "classes": "text-center text-gray-500 mb-12"
+            },
+            {
+              "uuid": "carousel-testimonials",
+              "componentType": "CarouselProps",
+              "showControls": true,
+              "showIndicators": false,
+              "loop": true,
+              "content": [
+                {
+                  "uuid": "testimonial-neil",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-neil-text",
+                    "componentType": "TextProps",
+                    "content": "Flowbite has code in one place and I'm not joking when I say it took me a matter of minutes to copy the code, customise it and integrate within a Laravel + Vue application."
+                  },
+                  "author": {
+                    "uuid": "testimonial-neil-author",
+                    "componentType": "TextProps",
+                    "content": "Neil Sims"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-neil-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "CTO at Microsoft"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-neil-sims",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=neil_sims",
+                    "alt": "Photo of Neil Sims",
+                    "asset": {
+                      "uuid": "asset-avatar-neil-sims",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "neil, sims, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-jese",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-jese-text",
+                    "componentType": "TextProps",
+                    "content": "Mind-blowing workflow and variants. Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."
+                  },
+                  "author": {
+                    "uuid": "testimonial-jese-author",
+                    "componentType": "TextProps",
+                    "content": "Jese Leos"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-jese-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Software Engineer at Facebook"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-jese-leos",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=jese_leos",
+                    "alt": "Photo of Jese Leos",
+                    "asset": {
+                      "uuid": "asset-avatar-jese-leos-3",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "jese, leos, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-roberta",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-roberta-text",
+                    "componentType": "TextProps",
+                    "content": "FlowBite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI kit provides a solid foundation for any project."
+                  },
+                  "author": {
+                    "uuid": "testimonial-roberta-author",
+                    "componentType": "TextProps",
+                    "content": "Roberta Casas"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-roberta-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Lead designer at Dropbox"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-roberta-casas",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=roberta_casas",
+                    "alt": "Photo of Roberta Casas",
+                    "asset": {
+                      "uuid": "asset-avatar-roberta-casas-3",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "roberta, casas, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying customer testimonials",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

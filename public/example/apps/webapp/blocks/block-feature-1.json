@@ -1,0 +1,257 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Business Features Page",
+  "alias": "business-features-page",
+  "summary": "Grid-based feature showcase with icon-text combinations and structured layout. Features section header, multiple feature items with icons, headlines, and descriptions. Perfect for highlighting product capabilities and service benefits.",
+  "shortSummary": "Grid-based feature showcase with icon-text combinations and structured layout",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the feature section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-heading-hero",
+                  "level": 1,
+                  "text": "Designed for business teams like yours",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-text-hero",
+                  "variant": "lead",
+                  "content": "Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "c9d0e1f2-a3b4-5678-9012-grid-features",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-marketing",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-marketing",
+                        "name": "briefcase",
+                        "size": 32,
+                        "classes": "text-blue-500 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-marketing-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Marketing"
+                      },
+                      "text": {
+                        "uuid": "feature-marketing-text",
+                        "componentType": "TextProps",
+                        "content": "Plan it, create it, launch it. Collaborate seamlessly with all the organization and hit your marketing goals every month with our marketing plan."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-legal",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-legal",
+                        "name": "shield",
+                        "size": 32,
+                        "classes": "text-blue-500 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-legal-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Legal"
+                      },
+                      "text": {
+                        "uuid": "feature-legal-text",
+                        "componentType": "TextProps",
+                        "content": "Protect your organization, devices and stay compliant with our structured workflows and custom permissions made for you."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-automation",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-automation",
+                        "name": "zap",
+                        "size": 32,
+                        "classes": "text-blue-500 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-automation-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Business Automation"
+                      },
+                      "text": {
+                        "uuid": "feature-automation-text",
+                        "componentType": "TextProps",
+                        "content": "Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-finance",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-finance",
+                        "name": "dollar-sign",
+                        "size": 32,
+                        "classes": "text-blue-500 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-finance-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Finance"
+                      },
+                      "text": {
+                        "uuid": "feature-finance-text",
+                        "componentType": "TextProps",
+                        "content": "Audit-proof software built for critical financial operations like month-end close and quarterly budgeting."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-design",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-design",
+                        "name": "figma",
+                        "size": 32,
+                        "classes": "text-blue-500 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-design-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Enterprise Design"
+                      },
+                      "text": {
+                        "uuid": "feature-design-text",
+                        "componentType": "TextProps",
+                        "content": "Craft beautiful, delightful experiences for both marketing and product with real cross-company collaboration."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-operations",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-operations",
+                        "name": "settings",
+                        "size": 32,
+                        "classes": "text-blue-500 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-operations-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Operations"
+                      },
+                      "text": {
+                        "uuid": "feature-operations-text",
+                        "componentType": "TextProps",
+                        "content": "Keep your company’s lights on with customizable, iterative, and structured workflows built for all efficient teams and individual."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the feature section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

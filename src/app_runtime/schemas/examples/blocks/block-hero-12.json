@@ -1,0 +1,207 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "InvestCo",
+  "alias": "investco",
+  "summary": "Streamlined hero layout with clean typography and focused content presentation. Features headline, description, and clear call-to-action in a minimalist design approach.",
+  "shortSummary": "Streamlined hero layout with clean typography and focused content presentation",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "full-width",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the hero section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "align": "center",
+              "gap": "10",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-heading-hero",
+                  "level": 1,
+                  "text": "Decentralized for a better tomorrow",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-text-hero",
+                  "variant": "lead",
+                  "content": "Buy, trade, and hold 600+ cryptocurrencies on Flowbite"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "c9d0e1f2-a3b4-5678-9012-grid-metrics",
+                  "columns": 5,
+                  "gap": "4",
+                  "classes": "w-full",
+                  "content": [
+                    {
+                      "componentType": "MetricFeatureProps",
+                      "uuid": "metric-trading-volume",
+                      "variant": "metric",
+                      "value": "$76 billion",
+                      "label": {
+                        "uuid": "metric-trading-volume-label",
+                        "componentType": "TextProps",
+                        "content": "24h trading volume"
+                      },
+                      "classes": "bg-blue-100 p-4 rounded-lg"
+                    },
+                    {
+                      "componentType": "MetricFeatureProps",
+                      "uuid": "metric-crypto-listed",
+                      "variant": "metric",
+                      "value": "600+",
+                      "label": {
+                        "uuid": "metric-crypto-listed-label",
+                        "componentType": "TextProps",
+                        "content": "Cryptocurrencies listed"
+                      },
+                      "classes": "bg-cyan-100 p-4 rounded-lg"
+                    },
+                    {
+                      "componentType": "MetricFeatureProps",
+                      "uuid": "metric-market-cap",
+                      "variant": "metric",
+                      "value": "34 million",
+                      "label": {
+                        "uuid": "metric-market-cap-label",
+                        "componentType": "TextProps",
+                        "content": "Diluted market cap"
+                      },
+                      "classes": "bg-purple-100 p-4 rounded-lg"
+                    },
+                    {
+                      "componentType": "MetricFeatureProps",
+                      "uuid": "metric-registered-users",
+                      "variant": "metric",
+                      "value": "90 million",
+                      "label": {
+                        "uuid": "metric-registered-users-label",
+                        "componentType": "TextProps",
+                        "content": "Registered users"
+                      },
+                      "classes": "bg-pink-100 p-4 rounded-lg"
+                    },
+                    {
+                      "componentType": "MetricFeatureProps",
+                      "uuid": "metric-transaction-fees",
+                      "variant": "metric",
+                      "value": "0.10%",
+                      "label": {
+                        "uuid": "metric-transaction-fees-label",
+                        "componentType": "TextProps",
+                        "content": "Low transaction fees"
+                      },
+                      "classes": "bg-green-100 p-4 rounded-lg"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FormProps",
+                  "uuid": "waitlist-hero-123",
+                  "classes": "mt-8 w-full max-w-md",
+                  "content": [
+                    {
+                      "uuid": "waitlist-hero-123-field-email",
+                      "componentType": "TextFieldProps",
+                      "name": "email",
+                      "label": "Email",
+                      "inputType": "email",
+                      "required": true
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "uuid": "waitlist-hero-123-action-submit",
+                      "componentType": "ButtonProps",
+                      "actionType": "submit",
+                      "text": "Subscribe",
+                      "variant": "default"
+                    }
+                  ],
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Thank you! Your submission has been received.",
+                    "errorMessage": "Something went wrong. Please try again.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email"
+                  },
+                  "title": "Form"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the hero section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

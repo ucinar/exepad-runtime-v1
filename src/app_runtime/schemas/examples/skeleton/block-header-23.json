@@ -1,0 +1,135 @@
+{
+  "uuid": "839addfe-7c9d-47e0-b108-eab462667b07",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Header Block 23",
+  "alias": "header-block-23",
+  "summary": "Minimalist SPLIT-LAYOUT navigation: logo on left, authentication on right. Contains 2 simple links (Features, Pricing) + ghost Login button + primary Sign Up button. Absolutely NO styling or hover effects for pure simplicity. Navbar remains STICKY at top when scrolling. Ideal for: minimal SaaS, clean auth interfaces, distraction-free login/signup experiences.",
+  "shortSummary": "Split nav: 2 links + ghost Login + primary Sign Up buttons. Zero styling. Sticky scroll.",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "bbcdf638-5ec2-446f-9fee-dbe000cd51d8",
+      "componentType": "NavbarProps",
+      "variant": "split",
+      "menuVariant": "none",
+      "sticky": true,
+      "logo": {
+        "uuid": "d35c7efb-1e03-4752-884a-dc71b861bdeb",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "TechCorp",
+        "classes": "text-xl font-bold text-blue-600"
+      },
+      "content": [
+        {
+          "uuid": "353636c5-e293-4fef-8463-53bc4f4a0e6b",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Features",
+          "href": {
+            "uuid": "4874d4cd-3884-4b62-a076-c28ba617f18f",
+            "componentType": "LinkProps",
+            "href": "/features",
+            "text": "Features"
+          }
+        },
+        {
+          "uuid": "ab482266-2d28-4e72-8184-4e013082c95f",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Pricing",
+          "href": {
+            "uuid": "02debdde-778c-4e10-9ae9-69c7f3830707",
+            "componentType": "LinkProps",
+            "href": "/pricing",
+            "text": "Pricing"
+          }
+        },
+        {
+          "uuid": "e39fdc38-76d6-49e6-a1d8-d17c5d2e6045",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "a8f6ae93-36f5-416b-ac2f-43980463b851",
+            "componentType": "ButtonProps",
+            "text": "Log In",
+            "variant": "ghost",
+            "link": {
+              "uuid": "a6679dad-a3f8-4329-9b33-94ccea404e56",
+              "componentType": "LinkProps",
+              "href": "/login",
+              "text": "Log In"
+            }
+          }
+        },
+        {
+          "uuid": "801f64ce-3bb4-419e-b644-999766af2ede",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "e478006c-0a3e-4449-98b1-a1e713007092",
+            "componentType": "ButtonProps",
+            "text": "Sign Up",
+            "variant": "default",
+            "link": {
+              "uuid": "7b4d6351-1e31-49a1-8d1c-a708a6a92f6c",
+              "componentType": "LinkProps",
+              "href": "/signup",
+              "text": "Sign Up"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pages": [],
+  "footer": []
+}

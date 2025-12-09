@@ -1,0 +1,230 @@
+{
+  "uuid": "app-social-proof-890",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Social Proof Page",
+  "alias": "social-proof-page",
+  "summary": "Visual social proof section combining statistics with illustrative design elements. Features numerical metrics, visual representations, and compelling social validation for maximum impact.",
+  "shortSummary": "Visual social proof section combining statistics with illustrative design elements",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-social-proof-102",
+      "title": "Social Proof",
+      "slug": "/social-proof",
+      "summary": "A page displaying a social proof section.",
+      "content": [
+        {
+          "uuid": "section-stats-that-matter",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-stats-that-matter",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "grid-main-container",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "16",
+              "classes": "items-center",
+              "content": [
+                {
+                  "uuid": "flex-left-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "content": [
+                    {
+                      "uuid": "heading-stats-title",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Stats that matter",
+                      "classes": "text-4xl font-extrabold"
+                    },
+                    {
+                      "uuid": "text-stats-description",
+                      "componentType": "TextProps",
+                      "content": "Our rigorous security and compliance standards are at the heart of all we do. We work tirelessly to protect you and your customers.",
+                      "classes": "text-gray-500"
+                    },
+                    {
+                      "uuid": "flex-stats-list",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "5",
+                      "content": [
+                        {
+                          "uuid": "stat-trading-volume",
+                          "componentType": "StandardFeatureProps",
+                          "variant": "standard",
+                          "layout": "iconLeft",
+                          "icon": {
+                            "uuid": "icon-dollar",
+                            "componentType": "IconProps",
+                            "name": "landmark",
+                            "size": 32,
+                            "classes": "text-blue-500"
+                          },
+                          "title": {
+                            "uuid": "stat-trading-volume-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "$76 billion"
+                          },
+                          "text": {
+                            "uuid": "stat-trading-volume-text",
+                            "componentType": "TextProps",
+                            "content": "24h trading volume on Flowbite exchange"
+                          }
+                        },
+                        {
+                          "uuid": "stat-adults-bought",
+                          "componentType": "StandardFeatureProps",
+                          "variant": "standard",
+                          "layout": "iconLeft",
+                          "icon": {
+                            "uuid": "icon-check-circle",
+                            "componentType": "IconProps",
+                            "name": "check",
+                            "size": 32,
+                            "classes": "text-blue-500"
+                          },
+                          "title": {
+                            "uuid": "stat-adults-bought-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "90%"
+                          },
+                          "text": {
+                            "uuid": "stat-adults-bought-text",
+                            "componentType": "TextProps",
+                            "content": "of U.S adults have bought from businesses using Flowbite"
+                          }
+                        },
+                        {
+                          "uuid": "stat-currencies-supported",
+                          "componentType": "StandardFeatureProps",
+                          "variant": "standard",
+                          "layout": "iconLeft",
+                          "icon": {
+                            "uuid": "icon-credit-card",
+                            "componentType": "IconProps",
+                            "name": "credit-card",
+                            "size": 32,
+                            "classes": "text-blue-500"
+                          },
+                          "title": {
+                            "uuid": "stat-currencies-supported-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "135+"
+                          },
+                          "text": {
+                            "uuid": "stat-currencies-supported-text",
+                            "componentType": "TextProps",
+                            "content": "currencies and payment methods supported"
+                          }
+                        },
+                        {
+                          "uuid": "stat-countries-acquiring",
+                          "componentType": "StandardFeatureProps",
+                          "variant": "standard",
+                          "layout": "iconLeft",
+                          "icon": {
+                            "uuid": "icon-globe",
+                            "componentType": "IconProps",
+                            "name": "globe",
+                            "size": 32,
+                            "classes": "text-blue-500"
+                          },
+                          "title": {
+                            "uuid": "stat-countries-acquiring-title",
+                            "componentType": "HeadingProps",
+                            "level": 3,
+                            "text": "40%"
+                          },
+                          "text": {
+                            "uuid": "stat-countries-acquiring-text",
+                            "componentType": "TextProps",
+                            "content": "countries with local acquiring optimizing acceptance rates"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "image-whiteboard",
+                  "componentType": "ImageProps",
+                  "src": "https://placehold.co/600x600/FFFFFF/333333?text=Illustration",
+                  "alt": "Illustration of a person pointing at a whiteboard",
+                  "classes": "rounded-lg",
+                  "asset": {
+                    "uuid": "asset-image-whiteboard",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "whiteboard, illustration, presentation",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 600
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying a social proof section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

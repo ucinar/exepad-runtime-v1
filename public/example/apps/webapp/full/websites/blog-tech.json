@@ -1,0 +1,1061 @@
+{
+  "uuid": "app-website-blog-tech-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "TechInsights Blog",
+  "alias": "techinsights-blog",
+  "summary": "A modern technology blog website with articles on web development, AI, cloud computing, and software engineering. Features a clean reading experience, author profiles, category filtering, and responsive design. Perfect for tech bloggers, developer advocates, and technical content creators.",
+  "shortSummary": "A modern tech blog with articles and clean reading experience",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#18181b",
+      "primary-foreground": "#fafafa",
+      "secondary": "#f4f4f5",
+      "secondary-foreground": "#18181b",
+      "muted": "#f4f4f5",
+      "muted-foreground": "#71717a",
+      "accent": "#f4f4f5",
+      "accent-foreground": "#18181b",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#18181b"
+    },
+    "dark": {
+      "background": "#0a0a0a",
+      "foreground": "#fafafa",
+      "primary": "#fafafa",
+      "primary-foreground": "#18181b",
+      "secondary": "#27272a",
+      "secondary-foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted-foreground": "#a1a1aa",
+      "accent": "#27272a",
+      "accent-foreground": "#fafafa",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fef2f2",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#d4d4d8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b sticky top-0 bg-background/95 backdrop-blur-sm z-50",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "TechInsights",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "TechInsights"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Home"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Articles",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/articles",
+                "text": "Articles"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/about",
+                "text": "About"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Contact",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/contact",
+                "text": "Contact"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50 mt-20",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-container",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-grid",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "w-full max-w-6xl",
+              "content": [
+                {
+                  "uuid": "footer-about",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-logo",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "TechInsights"
+                    },
+                    {
+                      "uuid": "footer-tagline",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "In-depth articles on web development, AI, cloud computing, and modern software engineering practices.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-links",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-links-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Quick Links"
+                    },
+                    {
+                      "uuid": "footer-link-1",
+                      "componentType": "LinkProps",
+                      "href": "/articles",
+                      "text": "All Articles",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-2",
+                      "componentType": "LinkProps",
+                      "href": "/about",
+                      "text": "About",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-3",
+                      "componentType": "LinkProps",
+                      "href": "/contact",
+                      "text": "Contact",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-social",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-social-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Follow"
+                    },
+                    {
+                      "uuid": "footer-social-link-1",
+                      "componentType": "LinkProps",
+                      "href": "https://twitter.com/techinsights",
+                      "text": "Twitter",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-social-link-2",
+                      "componentType": "LinkProps",
+                      "href": "https://github.com/techinsights",
+                      "text": "GitHub",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-bottom",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-copyright",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 TechInsights. All rights reserved.",
+              "classes": "text-muted-foreground text-center mt-8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "TechInsights - Modern Software Engineering Blog",
+      "slug": "/",
+      "summary": "Explore in-depth articles on web development, AI, cloud computing, and modern software engineering practices from industry experts.",
+      "shortSummary": "In-depth tech articles from industry experts",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-muted/50 to-background",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Welcome to TechInsights",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "In-depth technical articles, tutorials, and insights on modern software development. Learn from experienced engineers and stay ahead of the curve.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-featured",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-featured",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "featured-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "featured-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-6xl",
+                  "content": [
+                    {
+                      "uuid": "featured-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Featured Articles"
+                    },
+                    {
+                      "uuid": "featured-grid",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "6",
+                      "content": [
+                        {
+                          "uuid": "article-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "4",
+                          "classes": "border rounded-lg p-6 hover:shadow-lg transition-shadow",
+                          "content": [
+                            {
+                              "uuid": "article-1-badge",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Web Development",
+                              "classes": "text-primary font-medium"
+                            },
+                            {
+                              "uuid": "article-1-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Building Scalable React Applications"
+                            },
+                            {
+                              "uuid": "article-1-excerpt",
+                              "componentType": "TextProps",
+                              "content": "Learn best practices for structuring large React applications with proper state management, code splitting, and performance optimization.",
+                              "classes": "text-muted-foreground"
+                            },
+                            {
+                              "uuid": "article-1-meta",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "4",
+                              "align": "center",
+                              "classes": "text-sm text-muted-foreground",
+                              "content": [
+                                {
+                                  "uuid": "article-1-author",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "By Sarah Chen"
+                                },
+                                {
+                                  "uuid": "article-1-date",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Jan 15, 2025"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "article-1-link",
+                              "componentType": "LinkProps",
+                              "href": "/articles/scalable-react",
+                              "text": "Read More →",
+                              "classes": "text-primary font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "article-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "4",
+                          "classes": "border rounded-lg p-6 hover:shadow-lg transition-shadow",
+                          "content": [
+                            {
+                              "uuid": "article-2-badge",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "AI & Machine Learning",
+                              "classes": "text-primary font-medium"
+                            },
+                            {
+                              "uuid": "article-2-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Getting Started with LLMs in Production"
+                            },
+                            {
+                              "uuid": "article-2-excerpt",
+                              "componentType": "TextProps",
+                              "content": "A practical guide to integrating large language models into production applications, covering API selection, prompt engineering, and cost optimization.",
+                              "classes": "text-muted-foreground"
+                            },
+                            {
+                              "uuid": "article-2-meta",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "4",
+                              "align": "center",
+                              "classes": "text-sm text-muted-foreground",
+                              "content": [
+                                {
+                                  "uuid": "article-2-author",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "By Marcus Johnson"
+                                },
+                                {
+                                  "uuid": "article-2-date",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Jan 12, 2025"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "article-2-link",
+                              "componentType": "LinkProps",
+                              "href": "/articles/llms-production",
+                              "text": "Read More →",
+                              "classes": "text-primary font-medium"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "article-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "4",
+                          "classes": "border rounded-lg p-6 hover:shadow-lg transition-shadow",
+                          "content": [
+                            {
+                              "uuid": "article-3-badge",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Cloud & DevOps",
+                              "classes": "text-primary font-medium"
+                            },
+                            {
+                              "uuid": "article-3-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Kubernetes Best Practices for 2025"
+                            },
+                            {
+                              "uuid": "article-3-excerpt",
+                              "componentType": "TextProps",
+                              "content": "Updated strategies for running Kubernetes in production, including security hardening, cost optimization, and observability patterns.",
+                              "classes": "text-muted-foreground"
+                            },
+                            {
+                              "uuid": "article-3-meta",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "4",
+                              "align": "center",
+                              "classes": "text-sm text-muted-foreground",
+                              "content": [
+                                {
+                                  "uuid": "article-3-author",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "By Alex Rodriguez"
+                                },
+                                {
+                                  "uuid": "article-3-date",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Jan 10, 2025"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "article-3-link",
+                              "componentType": "LinkProps",
+                              "href": "/articles/kubernetes-2025",
+                              "text": "Read More →",
+                              "classes": "text-primary font-medium"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-cta",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-cta",
+          "spacing": "xl",
+          "classes": "bg-muted/50",
+          "content": [
+            {
+              "uuid": "cta-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "cta-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "cta-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Never Miss an Article"
+                    },
+                    {
+                      "uuid": "cta-description",
+                      "componentType": "TextProps",
+                      "content": "Subscribe to our newsletter and get weekly insights delivered to your inbox.",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "cta-subscribe-button",
+                      "componentType": "ButtonProps",
+                      "text": "Subscribe Now",
+                      "variant": "default"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "page-about",
+      "title": "About TechInsights",
+      "slug": "/about",
+      "summary": "Learn about TechInsights and our mission to provide high-quality technical content for developers.",
+      "shortSummary": "About our mission and team",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-about-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-about-hero",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "about-hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "about-hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "about-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "About TechInsights"
+                    },
+                    {
+                      "uuid": "about-mission",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "TechInsights was founded in 2020 with a simple mission: provide developers with in-depth, practical knowledge that they can apply immediately in their work."
+                    },
+                    {
+                      "uuid": "about-description",
+                      "componentType": "TextProps",
+                      "content": "We believe that great technical content should be accessible, accurate, and actionable. Our team of experienced software engineers and technical writers curate and create articles that go beyond surface-level tutorials to explore the 'why' and 'how' of modern software development."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "bc27d996-21e8-414b-b9f5-ef21e21bfe05",
+      "title": "All Articles",
+      "slug": "/articles",
+      "summary": "Browse our collection of technical articles, tutorials, and insights on modern software development.",
+      "shortSummary": "Browse our collection of technical articles, tutorials, and insights on modern software development.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "3d8909af-8217-4b0e-868f-8b9757dc6116",
+          "componentType": "SectionProps",
+          "sectionSlug": "3d8909af-8217-4b0e-868f-8b9757dc6116",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "fc0f7b92-83be-4070-9172-08e89253667e",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "f7775492-7c03-4990-8560-a77f2ea42f31",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "d1dfc382-b982-4ddf-b7fe-cdf6799b52ce",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "All Articles",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "a5ee476d-d956-422c-8854-425ac14a9892",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Browse our collection of technical articles, tutorials, and insights on modern software development.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "2b6baaf9-e5d9-4a59-a43f-86a5133f6cb6",
+          "componentType": "SectionProps",
+          "sectionSlug": "2b6baaf9-e5d9-4a59-a43f-86a5133f6cb6",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "20451e3e-20b1-49ff-ad14-df16bdcfc83a",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "fd8ed4b2-e937-465b-a712-17e7de148224",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "71e40403-e7e1-491d-a421-4317ee8fe446",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "847968d7-b7f4-4e43-ab5f-ad356d6cc760",
+      "title": "Building Scalable React Applications",
+      "slug": "/articles/scalable-react",
+      "summary": "Learn best practices for structuring large React applications with proper state management, code splitting, and performance optimization.",
+      "shortSummary": "Learn best practices for structuring large React applications with proper state management, code spl",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "5f8098e9-89d4-4060-8410-e9010b0a62e4",
+          "componentType": "SectionProps",
+          "sectionSlug": "5f8098e9-89d4-4060-8410-e9010b0a62e4",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "4acae033-da69-476b-acff-a3199c9da7da",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "12d308a4-0dcc-48aa-acac-515f934f290d",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "0cf9a4d0-e630-4cb1-935a-72518aa1840b",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Building Scalable React Applications",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "fb58cb08-89cc-44a1-b6a7-27933285dc53",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Learn best practices for structuring large React applications with proper state management, code splitting, and performance optimization.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "127008b1-da1a-4bdf-9ee1-f7a4383a1c85",
+          "componentType": "SectionProps",
+          "sectionSlug": "127008b1-da1a-4bdf-9ee1-f7a4383a1c85",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "8efd7952-e701-4b60-865d-0d28cdd2dfbb",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "9e71adb0-3f0a-4cbe-b3d7-e714dcd98339",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "7ff559f2-6968-452a-b7cd-04fc60446cf1",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "cb57d767-90e3-460d-a178-a0c0e0287226",
+      "title": "Getting Started with LLMs in Production",
+      "slug": "/articles/llms-production",
+      "summary": "A practical guide to integrating large language models into production applications, covering API selection, prompt engineering, and cost optimization.",
+      "shortSummary": "A practical guide to integrating large language models into production applications, covering API se",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "17ff835a-de63-4272-a0bd-52cd583a6988",
+          "componentType": "SectionProps",
+          "sectionSlug": "17ff835a-de63-4272-a0bd-52cd583a6988",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "c89ed6bc-cb57-48f3-a8b8-c7ae8c19dd1c",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "b0084f67-b8b2-4edf-b24d-28bfd27e8b15",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "f6ae53c3-822c-4c76-98d0-51b660729d2a",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Getting Started with LLMs in Production",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "bb5d6703-3edb-4dbc-afdb-89bcc0c2a000",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "A practical guide to integrating large language models into production applications, covering API selection, prompt engineering, and cost optimization.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "fc479265-8959-461e-8777-5f7688aefc6f",
+          "componentType": "SectionProps",
+          "sectionSlug": "fc479265-8959-461e-8777-5f7688aefc6f",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "3edc7b00-afd0-4634-90f2-51c81b0b3146",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "84f90a8a-b761-4b8f-8e6e-ccaca86dcf24",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "9084a2b8-01cd-4dc0-af05-cf4d4645e4ae",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "0421f34b-8b54-4e13-aac3-850d978eac99",
+      "title": "Kubernetes Best Practices for 2025",
+      "slug": "/articles/kubernetes-2025",
+      "summary": "Updated strategies for running Kubernetes in production, including security hardening, cost optimization, and observability patterns.",
+      "shortSummary": "Updated strategies for running Kubernetes in production, including security hardening, cost optimiza",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "c36efee9-b58e-4420-8e82-36b3914aba21",
+          "componentType": "SectionProps",
+          "sectionSlug": "c36efee9-b58e-4420-8e82-36b3914aba21",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "56505b9b-56ab-4f83-9a19-c763f2bf50ba",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "9a66370f-4760-4d5a-a6fe-c6f1cb32ebf3",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "76b41855-5965-4e3d-bff9-d490be39a9c5",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Kubernetes Best Practices for 2025",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "05ce34e8-0cbc-4d95-937d-793913f63c7a",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Updated strategies for running Kubernetes in production, including security hardening, cost optimization, and observability patterns.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "a8c1b4d8-0c1e-457d-90dc-1f10d9798e56",
+          "componentType": "SectionProps",
+          "sectionSlug": "a8c1b4d8-0c1e-457d-90dc-1f10d9798e56",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "be7fb8cd-3460-4710-b600-a8c2840ade8b",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "2a2ed5ff-462f-4954-876c-e42cfa07324b",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "68b8bb62-be98-4620-9fe7-16db57f5479d",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "009d1ca1-c7fa-4896-9d22-053e8f355b97",
+      "title": "Contact Us",
+      "slug": "/contact",
+      "summary": "Get in touch with our team. We'd love to hear from you.",
+      "shortSummary": "Get in touch with our team. We'd love to hear from you.",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "9cbf9c4f-c09d-44c9-8725-3dea8849f8c7",
+          "componentType": "SectionProps",
+          "sectionSlug": "9cbf9c4f-c09d-44c9-8725-3dea8849f8c7",
+          "spacing": "xl",
+          "classes": "min-h-[60vh] flex items-center",
+          "content": [
+            {
+              "uuid": "1629fe32-ca0d-4290-a7d1-65bffe5f8885",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "56afc22e-4292-40ed-87d8-529f6d3d8042",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "b73bf904-4980-4a49-8340-fe4b5399f5ff",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Contact Us",
+                      "classes": "text-5xl font-bold"
+                    },
+                    {
+                      "uuid": "5c82abd0-1ad9-484d-9cfc-e6ee0b8f2626",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Get in touch with our team. We'd love to hear from you.",
+                      "classes": "text-muted-foreground mt-4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "a6a79854-98ac-4fc4-a86b-13c852616e1b",
+          "componentType": "SectionProps",
+          "sectionSlug": "a6a79854-98ac-4fc4-a86b-13c852616e1b",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "1166877c-855a-4772-8cf8-25c503329c61",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "0fd36950-aef9-4068-a76c-199d79371dad",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "0ec52385-7da6-4947-b40b-0d7353438aa6",
+                      "componentType": "TextProps",
+                      "content": "This page is currently under construction. More content will be added soon.",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "457a56a6-0bf5-452b-ac5e-b9681e4f1863",
+          "componentType": "SectionProps",
+          "sectionSlug": "457a56a6-0bf5-452b-ac5e-b9681e4f1863",
+          "spacing": "xl",
+          "classes": "bg-muted/50",
+          "content": [
+            {
+              "uuid": "55c3febd-e585-4647-a09b-2c4b27883a0f",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "c1817365-4e52-4f92-b961-b2574e29ba7d",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "b9737688-bb3a-4299-b03e-3958dc9d5e56",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Get in Touch",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "40f53fcf-e0b4-47ae-9fe2-9f52b9f2c05c",
+                      "componentType": "FormProps",
+                      "title": "Contact Form",
+                      "onSubmitAction": {
+                        "actionId": "submit_contact_form",
+                        "successMessage": "Thank you for your message! We will get back to you soon.",
+                        "errorMessage": "There was an error sending your message. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email"
+                      },
+                      "content": [],
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "actions": [
+                        {
+                          "uuid": "5ae2cc6e-bcb1-487c-8276-27c998cbd5be",
+                          "componentType": "ButtonProps",
+                          "actionType": "submit",
+                          "text": "Send Message",
+                          "variant": "default"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

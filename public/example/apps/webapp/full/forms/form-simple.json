@@ -1,0 +1,189 @@
+{
+  "uuid": "app-simple-form",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Simple Form Example",
+  "alias": "simple-form-example",
+  "summary": "A minimal form example with one input field and two action buttons - perfect for learning the basics.",
+  "shortSummary": "A minimal form example with one input field and two action buttons - perfect for learning the basics",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "Simple Form Demo",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "Simple Form Demo"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": []
+        }
+      ]
+    }
+  ],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-simple-form",
+      "title": "Simple Form Example",
+      "slug": "/",
+      "summary": "A basic form with one input and two buttons.",
+      "content": [
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "form-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "w-full max-w-md",
+                  "content": [
+                    {
+                      "uuid": "form-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Simple Form",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "form-description",
+                      "componentType": "TextProps",
+                      "content": "Enter your email address below and click submit.",
+                      "classes": "text-center text-muted-foreground"
+                    },
+                    {
+                      "uuid": "1b8bbd71-d6bb-44fa-aeb5-a3180a80a861",
+                      "componentType": "FormProps",
+                      "title": "Get Started",
+                      "description": "Just one simple field to fill out.",
+                      "layout": "singleColumn",
+                      "content": [
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "you@example.com",
+                          "required": true,
+                          "helperText": "We'll never share your email with anyone else.",
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Email is required"
+                            },
+                            {
+                              "type": "email",
+                              "errorMessage": "Please enter a valid email address"
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "reset",
+                          "text": "Clear",
+                          "variant": "outline",
+                          "uuid": "1b8bbd71-d6bb-44fa-aeb5-a3180a80a861-action-reset-0",
+                          "componentType": "ButtonProps"
+                        },
+                        {
+                          "actionType": "submit",
+                          "text": "Submit",
+                          "variant": "default",
+                          "uuid": "1b8bbd71-d6bb-44fa-aeb5-a3180a80a861-action-submit-1",
+                          "componentType": "ButtonProps"
+                        }
+                      ],
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Thank you! Your form has been submitted successfully.",
+                        "errorMessage": "Something went wrong. Please try again.",
+                        "notificationType": "minimal",
+                        "notifyAdmin": "none",
+                        "onSuccessAction": {
+                          "type": "clearForm"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A basic form with one input and two buttons",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

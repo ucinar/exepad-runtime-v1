@@ -1,0 +1,187 @@
+{
+  "uuid": "app-social-proof-789",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Social Proof Page",
+  "alias": "social-proof-page",
+  "summary": "Enhanced social proof layout with multiple validation elements and visual testimonials. Features customer stories, review highlights, and comprehensive credibility showcase.",
+  "shortSummary": "Enhanced social proof layout with multiple validation elements and visual testimonials",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-social-proof-101",
+      "title": "Social Proof",
+      "slug": "/social-proof",
+      "summary": "A page displaying a social proof section.",
+      "content": [
+        {
+          "uuid": "section-social-proof-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-social-proof-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "heading-transformation",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Transformation by the numbers",
+              "classes": "text-4xl font-bold text-center mb-12"
+            },
+            {
+              "uuid": "grid-stats-cards",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "text-center",
+              "content": [
+                {
+                  "uuid": "card-reduction",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-8 bg-gray-50 rounded-lg",
+                  "content": [
+                    {
+                      "uuid": "stat-reduction-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "40%",
+                      "classes": "text-5xl font-extrabold"
+                    },
+                    {
+                      "uuid": "stat-reduction-label",
+                      "componentType": "TextProps",
+                      "content": "Reduction",
+                      "classes": "text-xl font-semibold"
+                    },
+                    {
+                      "uuid": "stat-reduction-desc",
+                      "componentType": "TextProps",
+                      "content": "in developer onboarding time *",
+                      "classes": "text-gray-500"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "card-roi",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-8 bg-gray-50 rounded-lg",
+                  "content": [
+                    {
+                      "uuid": "stat-roi-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "469%",
+                      "classes": "text-5xl font-extrabold"
+                    },
+                    {
+                      "uuid": "stat-roi-label",
+                      "componentType": "TextProps",
+                      "content": "Return on investment",
+                      "classes": "text-xl font-semibold"
+                    },
+                    {
+                      "uuid": "stat-roi-desc",
+                      "componentType": "TextProps",
+                      "content": "over 3 years *",
+                      "classes": "text-gray-500"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "card-saved",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "p-8 bg-gray-50 rounded-lg",
+                  "content": [
+                    {
+                      "uuid": "stat-saved-value",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "60+",
+                      "classes": "text-5xl font-extrabold"
+                    },
+                    {
+                      "uuid": "stat-saved-label",
+                      "componentType": "TextProps",
+                      "content": "Minutes saved",
+                      "classes": "text-xl font-semibold"
+                    },
+                    {
+                      "uuid": "stat-saved-desc",
+                      "componentType": "TextProps",
+                      "content": "per developer, per day *",
+                      "classes": "text-gray-500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "text-footnote",
+              "componentType": "TextProps",
+              "content": "* Results based on a composite organization of 1,800 developers using GitHub over three years.",
+              "classes": "text-center text-gray-500 mt-8"
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying a social proof section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

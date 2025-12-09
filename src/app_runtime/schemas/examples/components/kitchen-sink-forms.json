@@ -1,0 +1,933 @@
+{
+  "uuid": "app-kitchen-sink-forms-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Forms Kitchen Sink",
+  "alias": "forms-kitchen-sink",
+  "summary": "Complete showcase of all form components including text inputs, selections, advanced fields, and complete form containers. Demonstrates single-page forms, multi-step wizards, and quiz forms with validation and interactive features.",
+  "shortSummary": "Complete showcase of all form components including text inputs, selections, advanced fields, and complete form containers",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-forms-main",
+      "title": "Forms Kitchen Sink",
+      "slug": "/",
+      "summary": "Comprehensive showcase of all form components and features.",
+      "content": [
+        {
+          "uuid": "section-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-intro",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-main-title",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Forms Kitchen Sink"
+            },
+            {
+              "uuid": "text-intro",
+              "componentType": "TextProps",
+              "variant": "lead",
+              "content": "This page demonstrates all available form components, including basic inputs, advanced fields, and complete form containers with validation."
+            },
+            {
+              "uuid": "divider-intro",
+              "componentType": "SpacerProps",
+              "size": "md"
+            }
+          ]
+        },
+        {
+          "uuid": "section-single-column-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-single-column-form",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-single-form",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "1. Single-Column Contact Form"
+            },
+            {
+              "uuid": "text-single-form-desc",
+              "componentType": "TextProps",
+              "content": "A traditional single-column form with various input types and validation."
+            },
+            {
+              "uuid": "form-contact",
+              "componentType": "FormProps",
+              "title": "Contact Us",
+              "description": "Fill out the form below and we'll get back to you soon.",
+              "layout": "singleColumn",
+              "initialValues": {},
+              "content": [
+                {
+                  "uuid": "field-name",
+                  "componentType": "TextFieldProps",
+                  "name": "fullName",
+                  "label": "Full Name",
+                  "placeholder": "John Doe",
+                  "helperText": "Enter your first and last name",
+                  "required": true,
+                  "validationRules": [
+                    {
+                      "type": "required",
+                      "errorMessage": "Please enter your name"
+                    },
+                    {
+                      "type": "minLength",
+                      "value": 3,
+                      "errorMessage": "Name must be at least 3 characters"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "field-email",
+                  "componentType": "TextFieldProps",
+                  "name": "email",
+                  "label": "Email Address",
+                  "inputType": "email",
+                  "placeholder": "john@example.com",
+                  "helperText": "We'll never share your email",
+                  "required": true,
+                  "validationRules": [
+                    {
+                      "type": "required",
+                      "errorMessage": "Please enter your email"
+                    },
+                    {
+                      "type": "email",
+                      "errorMessage": "Please enter a valid email address"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "field-phone",
+                  "componentType": "TextFieldProps",
+                  "name": "phone",
+                  "label": "Phone Number",
+                  "inputType": "tel",
+                  "placeholder": "+1 (555) 123-4567",
+                  "helperText": "Optional - for urgent matters"
+                },
+                {
+                  "uuid": "field-subject",
+                  "componentType": "SelectFieldProps",
+                  "name": "subject",
+                  "label": "Subject",
+                  "placeholder": "Select a topic",
+                  "required": true,
+                  "options": [
+                    {
+                      "label": "General Inquiry",
+                      "value": "general"
+                    },
+                    {
+                      "label": "Technical Support",
+                      "value": "support"
+                    },
+                    {
+                      "label": "Sales Question",
+                      "value": "sales"
+                    },
+                    {
+                      "label": "Feedback",
+                      "value": "feedback"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "field-message",
+                  "componentType": "TextAreaFieldProps",
+                  "name": "message",
+                  "label": "Message",
+                  "placeholder": "Tell us more about your inquiry...",
+                  "rows": 5,
+                  "maxLength": 500,
+                  "required": true,
+                  "helperText": "Describe your inquiry in detail"
+                },
+                {
+                  "uuid": "field-newsletter",
+                  "componentType": "CheckboxFieldProps",
+                  "name": "newsletter",
+                  "label": "Subscribe to our newsletter",
+                  "helperText": "Get updates about new features and products"
+                }
+              ],
+              "actions": [
+                {
+                  "actionType": "submit",
+                  "text": "Send Message",
+                  "variant": "default",
+                  "uuid": "form-contact-action-submit-0",
+                  "componentType": "ButtonProps"
+                },
+                {
+                  "actionType": "reset",
+                  "text": "Clear Form",
+                  "variant": "outline",
+                  "uuid": "form-contact-action-reset-1",
+                  "componentType": "ButtonProps"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "handleContactSubmit",
+                "successMessage": "Thank you! Your submission has been received.",
+                "errorMessage": "Something went wrong. Please try again.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "section-two-column-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-two-column-form",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-two-column",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "2. Two-Column Registration Form"
+            },
+            {
+              "uuid": "text-two-column-desc",
+              "componentType": "TextProps",
+              "content": "A responsive two-column layout for more complex forms with grouped fields."
+            },
+            {
+              "uuid": "form-registration",
+              "componentType": "FormProps",
+              "title": "Create Account",
+              "description": "Sign up for a new account with us.",
+              "layout": "twoColumns",
+              "content": [
+                {
+                  "uuid": "field-first-name",
+                  "componentType": "TextFieldProps",
+                  "name": "firstName",
+                  "label": "First Name",
+                  "placeholder": "John",
+                  "required": true
+                },
+                {
+                  "uuid": "field-last-name",
+                  "componentType": "TextFieldProps",
+                  "name": "lastName",
+                  "label": "Last Name",
+                  "placeholder": "Doe",
+                  "required": true
+                },
+                {
+                  "uuid": "field-reg-email",
+                  "componentType": "TextFieldProps",
+                  "name": "email",
+                  "label": "Email",
+                  "inputType": "email",
+                  "placeholder": "john@example.com",
+                  "required": true
+                },
+                {
+                  "uuid": "field-username",
+                  "componentType": "TextFieldProps",
+                  "name": "username",
+                  "label": "Username",
+                  "placeholder": "johndoe",
+                  "minLength": 3,
+                  "maxLength": 20,
+                  "required": true
+                },
+                {
+                  "uuid": "field-password",
+                  "componentType": "TextFieldProps",
+                  "name": "password",
+                  "label": "Password",
+                  "inputType": "password",
+                  "placeholder": "••••••••",
+                  "minLength": 8,
+                  "required": true,
+                  "helperText": "Must be at least 8 characters"
+                },
+                {
+                  "uuid": "field-confirm-password",
+                  "componentType": "TextFieldProps",
+                  "name": "confirmPassword",
+                  "label": "Confirm Password",
+                  "inputType": "password",
+                  "placeholder": "••••••••",
+                  "required": true
+                },
+                {
+                  "uuid": "field-birthdate",
+                  "componentType": "DateTimeFieldProps",
+                  "name": "birthdate",
+                  "label": "Date of Birth",
+                  "pickerType": "date",
+                  "max": "2010-01-01",
+                  "required": true
+                },
+                {
+                  "uuid": "field-country",
+                  "componentType": "SelectFieldProps",
+                  "name": "country",
+                  "label": "Country",
+                  "placeholder": "Select your country",
+                  "required": true,
+                  "options": [
+                    {
+                      "label": "United States",
+                      "value": "US"
+                    },
+                    {
+                      "label": "United Kingdom",
+                      "value": "UK"
+                    },
+                    {
+                      "label": "Canada",
+                      "value": "CA"
+                    },
+                    {
+                      "label": "Australia",
+                      "value": "AU"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "field-terms",
+                  "componentType": "CheckboxFieldProps",
+                  "name": "terms",
+                  "label": "I agree to the Terms and Conditions",
+                  "required": true
+                },
+                {
+                  "uuid": "field-marketing",
+                  "componentType": "SwitchFieldProps",
+                  "name": "marketing",
+                  "label": "Receive marketing emails",
+                  "onLabel": "Yes",
+                  "offLabel": "No",
+                  "helperText": "You can change this later in settings"
+                }
+              ],
+              "actions": [
+                {
+                  "actionType": "submit",
+                  "text": "Create Account",
+                  "variant": "default",
+                  "uuid": "form-registration-action-submit-0",
+                  "componentType": "ButtonProps"
+                },
+                {
+                  "actionType": "cancel",
+                  "text": "Cancel",
+                  "variant": "ghost",
+                  "uuid": "form-registration-action-cancel-1",
+                  "componentType": "ButtonProps"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "handleRegistration",
+                "successMessage": "Thank you! Your submission has been received.",
+                "errorMessage": "Something went wrong. Please try again.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "section-multi-step-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-multi-step-form",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-multi-step",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "3. Multi-Step Wizard Form"
+            },
+            {
+              "uuid": "text-multi-step-desc",
+              "componentType": "TextProps",
+              "content": "A stepped form that guides users through multiple pages with a progress indicator."
+            },
+            {
+              "uuid": "form-wizard",
+              "componentType": "FormProps",
+              "title": "Project Setup Wizard",
+              "description": "Let's set up your new project in a few easy steps.",
+              "layout": "stepped",
+              "content": [],
+              "actions": [
+                {
+                  "actionType": "prevStep",
+                  "text": "Previous",
+                  "variant": "outline",
+                  "uuid": "form-wizard-action-prev-step-0",
+                  "componentType": "ButtonProps"
+                },
+                {
+                  "actionType": "nextStep",
+                  "text": "Next",
+                  "variant": "default",
+                  "uuid": "form-wizard-action-next-step-1",
+                  "componentType": "ButtonProps"
+                },
+                {
+                  "actionType": "submit",
+                  "text": "Complete Setup",
+                  "variant": "default",
+                  "uuid": "form-wizard-action-submit-2",
+                  "componentType": "ButtonProps"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "handleProjectSetup",
+                "successMessage": "Thank you! Your submission has been received.",
+                "errorMessage": "Something went wrong. Please try again.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              },
+              "steps": [
+                {
+                  "title": "Basic Information",
+                  "content": [
+                    {
+                      "uuid": "field-project-name",
+                      "componentType": "TextFieldProps",
+                      "name": "projectName",
+                      "label": "Project Name",
+                      "placeholder": "My Awesome Project",
+                      "required": true
+                    },
+                    {
+                      "uuid": "field-project-type",
+                      "componentType": "RadioGroupFieldProps",
+                      "name": "projectType",
+                      "label": "Project Type",
+                      "required": true,
+                      "orientation": "vertical",
+                      "options": [
+                        {
+                          "label": "Web Application",
+                          "value": "web"
+                        },
+                        {
+                          "label": "Mobile App",
+                          "value": "mobile"
+                        },
+                        {
+                          "label": "Desktop Software",
+                          "value": "desktop"
+                        },
+                        {
+                          "label": "API Service",
+                          "value": "api"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-description",
+                      "componentType": "TextAreaFieldProps",
+                      "name": "description",
+                      "label": "Description",
+                      "placeholder": "Describe your project...",
+                      "rows": 4,
+                      "maxLength": 300
+                    }
+                  ]
+                },
+                {
+                  "title": "Features & Requirements",
+                  "content": [
+                    {
+                      "uuid": "field-features",
+                      "componentType": "CheckboxGroupFieldProps",
+                      "name": "features",
+                      "label": "Select Features",
+                      "helperText": "Choose all that apply",
+                      "orientation": "vertical",
+                      "options": [
+                        {
+                          "label": "User Authentication",
+                          "value": "auth"
+                        },
+                        {
+                          "label": "Payment Processing",
+                          "value": "payments"
+                        },
+                        {
+                          "label": "Real-time Updates",
+                          "value": "realtime"
+                        },
+                        {
+                          "label": "File Storage",
+                          "value": "storage"
+                        },
+                        {
+                          "label": "Analytics",
+                          "value": "analytics"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-budget",
+                      "componentType": "SliderFieldProps",
+                      "name": "budget",
+                      "label": "Budget Range (in thousands)",
+                      "min": 0,
+                      "max": 100,
+                      "step": 5,
+                      "defaultValue": 25,
+                      "helperText": "Select your approximate budget"
+                    },
+                    {
+                      "uuid": "field-deadline",
+                      "componentType": "DateTimeFieldProps",
+                      "name": "deadline",
+                      "label": "Preferred Launch Date",
+                      "pickerType": "date",
+                      "min": "2025-01-01",
+                      "helperText": "When would you like to launch?"
+                    }
+                  ]
+                },
+                {
+                  "title": "Additional Details",
+                  "content": [
+                    {
+                      "uuid": "field-priority",
+                      "componentType": "RatingFieldProps",
+                      "name": "priority",
+                      "label": "Project Priority",
+                      "count": 5,
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-star-f030ca6a",
+                        "name": "star",
+                        "size": 20
+                      },
+                      "allowHalf": true,
+                      "helperText": "How urgent is this project?"
+                    },
+                    {
+                      "uuid": "field-brand-color",
+                      "componentType": "ColorPickerFieldProps",
+                      "name": "brandColor",
+                      "label": "Brand Color",
+                      "helperText": "Choose your primary brand color",
+                      "defaultValue": "#3b82f6"
+                    },
+                    {
+                      "uuid": "field-documents",
+                      "componentType": "FileUploadFieldProps",
+                      "name": "documents",
+                      "label": "Project Documents",
+                      "accept": ".pdf,.doc,.docx",
+                      "isMulti": true,
+                      "maxFileSizeMB": 5,
+                      "helperText": "Upload any relevant documents"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-advanced-fields",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-advanced-fields",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-advanced",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "4. Advanced Form Fields Showcase"
+            },
+            {
+              "uuid": "text-advanced-desc",
+              "componentType": "TextProps",
+              "content": "Demonstration of specialized form fields including signatures, ratings, and file uploads."
+            },
+            {
+              "uuid": "form-advanced",
+              "componentType": "FormProps",
+              "title": "Service Request Form",
+              "description": "Complete this form to request our services.",
+              "layout": "singleColumn",
+              "content": [
+                {
+                  "uuid": "fieldset-personal",
+                  "componentType": "FieldSetProps",
+                  "legend": "Personal Information",
+                  "content": [
+                    {
+                      "uuid": "field-adv-name",
+                      "componentType": "TextFieldProps",
+                      "name": "fullName",
+                      "label": "Full Name",
+                      "required": true
+                    },
+                    {
+                      "uuid": "field-adv-email",
+                      "componentType": "TextFieldProps",
+                      "name": "email",
+                      "label": "Email",
+                      "inputType": "email",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "uuid": "field-service-rating",
+                  "componentType": "RatingFieldProps",
+                  "name": "serviceImportance",
+                  "label": "How important is this service to you?",
+                  "count": 5,
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-star-9d958fdd",
+                    "name": "star",
+                    "size": 20
+                  },
+                  "allowHalf": false,
+                  "required": true
+                },
+                {
+                  "uuid": "field-preferred-contact",
+                  "componentType": "RadioGroupFieldProps",
+                  "name": "contactMethod",
+                  "label": "Preferred Contact Method",
+                  "orientation": "horizontal",
+                  "required": true,
+                  "options": [
+                    {
+                      "label": "Email",
+                      "value": "email"
+                    },
+                    {
+                      "label": "Phone",
+                      "value": "phone"
+                    },
+                    {
+                      "label": "Text",
+                      "value": "sms"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "field-terms-agree",
+                  "componentType": "CheckboxFieldProps",
+                  "name": "agreeToTerms",
+                  "label": "I agree to the terms and conditions",
+                  "required": true
+                },
+                {
+                  "uuid": "field-signature",
+                  "componentType": "SignatureFieldProps",
+                  "name": "signature",
+                  "label": "Signature",
+                  "clearButtonText": "Clear Signature",
+                  "promptText": "Please sign here",
+                  "required": true,
+                  "helperText": "Draw your signature in the box above"
+                },
+                {
+                  "uuid": "field-hidden-source",
+                  "componentType": "HiddenFieldProps",
+                  "name": "source",
+                  "value": "web-form"
+                }
+              ],
+              "actions": [
+                {
+                  "actionType": "submit",
+                  "text": "Submit Request",
+                  "variant": "default",
+                  "uuid": "form-advanced-action-submit-0",
+                  "componentType": "ButtonProps"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "handleServiceRequest",
+                "successMessage": "Thank you! Your submission has been received.",
+                "errorMessage": "Something went wrong. Please try again.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "section-quiz-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-quiz-form",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-quiz",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "5. Quiz Form with Scoring"
+            },
+            {
+              "uuid": "text-quiz-desc",
+              "componentType": "TextProps",
+              "content": "An interactive quiz with timer, scoring, and immediate feedback."
+            },
+            {
+              "uuid": "quiz-form",
+              "componentType": "QuizFormProps",
+              "title": "Web Development Quiz",
+              "description": "Test your knowledge of web development fundamentals.",
+              "layout": "stepped",
+              "passingScore": 70,
+              "showImmediateFeedback": true,
+              "timeLimitSeconds": 300,
+              "content": [],
+              "actions": [
+                {
+                  "actionType": "prevStep",
+                  "text": "Previous",
+                  "variant": "outline",
+                  "uuid": "quiz-form-action-prev-step-0",
+                  "componentType": "ButtonProps"
+                },
+                {
+                  "actionType": "nextStep",
+                  "text": "Next Question",
+                  "variant": "default",
+                  "uuid": "quiz-form-action-next-step-1",
+                  "componentType": "ButtonProps"
+                },
+                {
+                  "actionType": "submit",
+                  "text": "Submit Quiz",
+                  "variant": "default",
+                  "uuid": "quiz-form-action-submit-2",
+                  "componentType": "ButtonProps"
+                }
+              ],
+              "onSubmitAction": {
+                "actionId": "handleQuizSubmit",
+                "successMessage": "Thank you! Your submission has been received.",
+                "errorMessage": "Something went wrong. Please try again.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              },
+              "steps": [
+                {
+                  "title": "HTML Basics",
+                  "content": [
+                    {
+                      "uuid": "quiz-q1",
+                      "componentType": "QuizQuestionFieldProps",
+                      "name": "question1",
+                      "label": "What does HTML stand for?",
+                      "questionType": "multipleChoice",
+                      "points": 10,
+                      "required": true,
+                      "options": [
+                        {
+                          "text": "Hyper Text Markup Language",
+                          "isCorrect": true,
+                          "feedback": "Correct! HTML stands for Hyper Text Markup Language."
+                        },
+                        {
+                          "text": "High Tech Modern Language",
+                          "isCorrect": false,
+                          "feedback": "Incorrect. Try again."
+                        },
+                        {
+                          "text": "Home Tool Markup Language",
+                          "isCorrect": false,
+                          "feedback": "Incorrect. HTML is Hyper Text Markup Language."
+                        }
+                      ],
+                      "explanation": "HTML (Hyper Text Markup Language) is the standard markup language for creating web pages."
+                    },
+                    {
+                      "uuid": "quiz-q2",
+                      "componentType": "QuizQuestionFieldProps",
+                      "name": "question2",
+                      "label": "Which HTML tag is used for the largest heading?",
+                      "questionType": "multipleChoice",
+                      "points": 10,
+                      "required": true,
+                      "options": [
+                        {
+                          "text": "<h1>",
+                          "isCorrect": true,
+                          "feedback": "Correct! <h1> is the largest heading tag."
+                        },
+                        {
+                          "text": "<h6>",
+                          "isCorrect": false,
+                          "feedback": "Incorrect. <h6> is the smallest heading."
+                        },
+                        {
+                          "text": "<heading>",
+                          "isCorrect": false,
+                          "feedback": "Incorrect. There is no <heading> tag in HTML."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "CSS Fundamentals",
+                  "content": [
+                    {
+                      "uuid": "quiz-q3",
+                      "componentType": "QuizQuestionFieldProps",
+                      "name": "question3",
+                      "label": "CSS stands for Cascading Style Sheets.",
+                      "questionType": "trueFalse",
+                      "points": 10,
+                      "required": true,
+                      "options": [
+                        {
+                          "text": "True",
+                          "isCorrect": true
+                        },
+                        {
+                          "text": "False",
+                          "isCorrect": false
+                        }
+                      ],
+                      "explanation": "CSS indeed stands for Cascading Style Sheets, used for styling web pages."
+                    },
+                    {
+                      "uuid": "quiz-q4",
+                      "componentType": "QuizQuestionFieldProps",
+                      "name": "question4",
+                      "label": "Which of the following are valid CSS units? (Select all that apply)",
+                      "questionType": "checkboxes",
+                      "points": 15,
+                      "required": true,
+                      "options": [
+                        {
+                          "text": "px (pixels)",
+                          "isCorrect": true
+                        },
+                        {
+                          "text": "em",
+                          "isCorrect": true
+                        },
+                        {
+                          "text": "rem",
+                          "isCorrect": true
+                        },
+                        {
+                          "text": "kg (kilograms)",
+                          "isCorrect": false,
+                          "feedback": "kg is not a CSS unit!"
+                        }
+                      ],
+                      "explanation": "px, em, and rem are all valid CSS units for measurements. kg is not a CSS unit."
+                    }
+                  ]
+                },
+                {
+                  "title": "JavaScript Concepts",
+                  "content": [
+                    {
+                      "uuid": "quiz-q5",
+                      "componentType": "QuizQuestionFieldProps",
+                      "name": "question5",
+                      "label": "What keyword is used to declare a variable in modern JavaScript?",
+                      "questionType": "shortAnswer",
+                      "points": 15,
+                      "required": true,
+                      "explanation": "The keywords are 'let', 'const', or 'var', with 'let' and 'const' being preferred in modern JavaScript."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-field-showcase",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-field-showcase",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "heading-field-showcase",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "6. Individual Field Components Showcase"
+            },
+            {
+              "uuid": "text-field-showcase-desc",
+              "componentType": "TextProps",
+              "content": "All form field types displayed individually for reference."
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Comprehensive showcase of all form components and features",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

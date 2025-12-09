@@ -1,0 +1,2244 @@
+{
+  "uuid": "kitchen-sink-header-navbar-app",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Kitchen Sink: Header & Navbar Examples",
+  "alias": "kitchen-sink:-header-and-navbar-examples",
+  "summary": "A comprehensive example of a header and navbar with various layout variants, menu styles, and animations. Contains Navbar examples in the pages.",
+  "shortSummary": "A comprehensive example of a header and navbar with various layout variants, menu styles, and animations",
+  "lastUpdatedEpoch": 1701192800,
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "full-width",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#020617",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#020617"
+    },
+    "dark": {
+      "background": "#020617",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#020617",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#d1d5db"
+    },
+    "fonts": {
+      "body": {
+        "family": "Inter",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      },
+      "heading": {
+        "family": "Inter",
+        "variant": "600",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      }
+    },
+    "fontSizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "3.75rem",
+      "7xl": "4.5rem",
+      "8xl": "6rem",
+      "9xl": "8rem"
+    },
+    "radius": "0.5rem",
+    "spacing": {
+      "x": "1rem",
+      "y": "1rem"
+    },
+    "styles": {
+      "shadowSm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "shadow": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "shadowMd": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "shadowLg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "shadowXl": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      "shadow2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+      "shadowInner": "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
+      "transitionDuration": "150ms",
+      "transitionTimingFunction": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "layout": {
+      "containerWidth": "1200px",
+      "contentPadding": "1rem"
+    },
+    "metadata": {
+      "title": "Kitchen Sink: Header & Navbar Examples",
+      "description": "A comprehensive example of a header and navbar with various layout variants, menu styles, and animations.",
+      "favicon": {
+        "componentType": "IconProps",
+        "uuid": "favicon-b68b99a9",
+        "name": "app-window",
+        "size": 32
+      },
+      "keywords": "navbar, header, menu, navigation, UI components, examples",
+      "openGraph": {
+        "title": "Kitchen Sink: Header & Navbar Examples",
+        "description": "A comprehensive example of a header and navbar with various layout variants, menu styles, and animations.",
+        "type": "website",
+        "image": "/images/navbar-kitchen-sink-og.png"
+      }
+    }
+  },
+  "header": [
+    {
+      "uuid": "navbar-main-kitchen-sink",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-kitchen-sink-main",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Navbar Kitchen Sink"
+      },
+      "content": [
+        {
+          "uuid": "link-navbar-basics",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Navbar Basics",
+          "href": {
+            "uuid": "href-navbar-basics",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Navbar Basics"
+          }
+        },
+        {
+          "uuid": "link-menu-styles",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Menu Styles",
+          "href": {
+            "uuid": "href-menu-styles",
+            "componentType": "LinkProps",
+            "href": "/menu-styles",
+            "text": "Menu Styles"
+          }
+        },
+        {
+          "uuid": "link-cta-single",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Single CTA",
+          "href": {
+            "uuid": "href-cta-single",
+            "componentType": "LinkProps",
+            "href": "/single-cta",
+            "text": "Single CTA"
+          }
+        },
+        {
+          "uuid": "link-cta-multiple",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Multiple CTAs",
+          "href": {
+            "uuid": "href-cta-multiple",
+            "componentType": "LinkProps",
+            "href": "/multiple-cta",
+            "text": "Multiple CTAs"
+          }
+        },
+        {
+          "uuid": "link-cta-variants",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "CTA Variants",
+          "href": {
+            "uuid": "href-cta-variants",
+            "componentType": "LinkProps",
+            "href": "/cta-variants",
+            "text": "CTA Variants"
+          }
+        },
+        {
+          "uuid": "link-cta-with-icons",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "CTA with Icons",
+          "href": {
+            "uuid": "href-cta-with-icons",
+            "componentType": "LinkProps",
+            "href": "/cta-with-icons",
+            "text": "CTA with Icons"
+          }
+        },
+        {
+          "uuid": "nav-cta-demo-main",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "btn-nav-demo-main",
+            "componentType": "ButtonProps",
+            "text": "Get Started",
+            "variant": "default",
+            "size": "sm",
+            "link": {
+              "uuid": "link-nav-demo-main",
+              "componentType": "LinkProps",
+              "href": "#demo",
+              "text": "Get Started"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sidebar": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-navbar-basics",
+      "title": "Navbar Basics & Layout Variants",
+      "slug": "/",
+      "summary": "Comprehensive guide to navbar basics, including default, split, and center-logo layout variants with styling examples.",
+      "content": [
+        {
+          "uuid": "section-navbar-basics-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-navbar-basics-intro",
+          "layout": "singleColumnWide",
+          "classes": "bg-gradient-to-br from-blue-50 to-indigo-100",
+          "content": [
+            {
+              "uuid": "heading-navbar-basics",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Navbar Basics & Layout Variants",
+              "classes": "mb-8 text-4xl font-bold text-center text-gray-900"
+            },
+            {
+              "uuid": "text-intro-navbar-basics",
+              "componentType": "TextProps",
+              "content": "Explore fundamental navbar layouts including default, split, and center-logo variants with various animations and styling options.",
+              "classes": "mb-12 text-xl text-center text-gray-600 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "section-default-navbar",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-default-navbar",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-default-navbar",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Default Navbar Layout",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-default-navbar",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-default-navbar",
+                  "componentType": "TextProps",
+                  "content": "Traditional default layout with logo on the left and navigation on the right - perfect for most web applications.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-default-basics",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "logo": {
+                    "uuid": "logo-demo-default-basics",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Default Demo",
+                    "classes": "text-xl font-bold text-blue-600"
+                  },
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "content": [
+                    {
+                      "uuid": "demo-link-lift-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Lift Animation",
+                      "href": {
+                        "uuid": "href-demo-lift-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Lift"
+                      }
+                    },
+                    {
+                      "uuid": "demo-link-scale-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Scale Animation",
+                      "href": {
+                        "uuid": "href-demo-scale-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Scale"
+                      }
+                    },
+                    {
+                      "uuid": "demo-link-underline-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Underline Animation",
+                      "href": {
+                        "uuid": "href-demo-underline-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Underline"
+                      }
+                    },
+                    {
+                      "uuid": "demo-button-contact-basics",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-demo-contact-basics",
+                        "componentType": "ButtonProps",
+                        "text": "Contact",
+                        "variant": "outline",
+                        "link": {
+                          "uuid": "link-demo-contact-basics",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Contact"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-split-navbar",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-split-navbar",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-split-navbar",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Split Navbar Layout",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-split-navbar",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-split-navbar",
+                  "componentType": "TextProps",
+                  "content": "Split layout where navigation links are on one side and action buttons are visually separated on the other side.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-split-basics",
+                  "componentType": "NavbarProps",
+                  "variant": "split",
+                  "asWrapper": false,
+                  "logo": {
+                    "uuid": "logo-demo-split-basics",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Split Demo",
+                    "classes": "text-xl font-bold text-green-600"
+                  },
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "content": [
+                    {
+                      "uuid": "demo-link-home-split-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-demo-home-split-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Home"
+                      }
+                    },
+                    {
+                      "uuid": "demo-dropdown-split-basics",
+                      "componentType": "MenuDropdownItemProps",
+                      "type": "dropdown",
+                      "label": "Services",
+                      "dropdown": {
+                        "uuid": "dropdown-content-split-basics",
+                        "componentType": "DropdownProps",
+                        "content": [
+                          {
+                            "uuid": "dd-link-1-basics",
+                            "componentType": "DropdownLink",
+                            "title": "Web Development",
+                            "href": "#"
+                          },
+                          {
+                            "uuid": "dd-link-2-basics",
+                            "componentType": "DropdownLink",
+                            "title": "Mobile Development",
+                            "href": "#"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "uuid": "demo-button-signup-split-basics",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-demo-signup-basics",
+                        "componentType": "ButtonProps",
+                        "text": "Sign Up",
+                        "variant": "default",
+                        "link": {
+                          "uuid": "link-demo-signup-basics",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Sign Up"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-center-logo-navbar",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-center-logo-navbar",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-center-logo-navbar",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Center Logo Layout",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-center-logo-navbar",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-center-logo-navbar",
+                  "componentType": "TextProps",
+                  "content": "Centered logo layout with balanced navigation links distributed on either side for a symmetrical design.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-center-logo-basics",
+                  "componentType": "NavbarProps",
+                  "variant": "centerLogo",
+                  "asWrapper": false,
+                  "logo": {
+                    "uuid": "logo-demo-center-basics",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "CenterBrand",
+                    "classes": "text-xl font-bold text-purple-600"
+                  },
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "content": [
+                    {
+                      "uuid": "cl-link-1-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Shop",
+                      "href": {
+                        "uuid": "href-shop-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Shop"
+                      }
+                    },
+                    {
+                      "uuid": "cl-link-2-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "About",
+                      "href": {
+                        "uuid": "href-about-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "About"
+                      }
+                    },
+                    {
+                      "uuid": "cl-link-3-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Blog",
+                      "href": {
+                        "uuid": "href-blog-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Blog"
+                      }
+                    },
+                    {
+                      "uuid": "cl-link-4-basics",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Contact",
+                      "href": {
+                        "uuid": "href-contact-basics",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Contact"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Comprehensive guide to navbar basics, including default, split, and center-logo layout variants with",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-menu-styles",
+      "title": "Menu Styles & Animations",
+      "slug": "/menu-styles",
+      "summary": "Interactive showcase of different menu variants including pill, underline, lift, and scale animations with customizable timing.",
+      "content": [
+        {
+          "uuid": "section-menu-styles-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-menu-styles-intro",
+          "layout": "singleColumnWide",
+          "classes": "bg-gradient-to-br from-green-50 to-emerald-100",
+          "content": [
+            {
+              "uuid": "heading-menu-styles-main",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Menu Styles & Animations",
+              "classes": "mb-8 text-4xl font-bold text-center text-gray-900"
+            },
+            {
+              "uuid": "text-intro-menu-styles-main",
+              "componentType": "TextProps",
+              "content": "Explore different menu styles, hover animations, and custom styling options to create engaging navigation experiences.",
+              "classes": "mb-12 text-xl text-center text-gray-600 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "section-pill-style",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-pill-style",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-pill-style",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Pill Style Menu",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-pill-style",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-pill-style-desc",
+                  "componentType": "TextProps",
+                  "content": "Rounded pill-style menu items with smooth hover transitions for a modern, friendly appearance.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-pill-style-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "pill",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-demo-pill-style-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Pill Style Demo",
+                    "classes": "text-xl font-bold text-blue-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "pill-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-pill-1-main",
+                        "componentType": "LinkProps",
+                        "href": "/menu-styles",
+                        "text": "Home"
+                      },
+                      "active": true
+                    },
+                    {
+                      "uuid": "pill-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "About",
+                      "href": {
+                        "uuid": "href-pill-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#about",
+                        "text": "About"
+                      }
+                    },
+                    {
+                      "uuid": "pill-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Services",
+                      "href": {
+                        "uuid": "href-pill-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#services",
+                        "text": "Services"
+                      }
+                    },
+                    {
+                      "uuid": "pill-link-4-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Contact",
+                      "href": {
+                        "uuid": "href-pill-4-main",
+                        "componentType": "LinkProps",
+                        "href": "#contact",
+                        "text": "Contact"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-underline-style",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-underline-style",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-underline-style",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Underline Animation",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-underline-style",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-underline-style-desc",
+                  "componentType": "TextProps",
+                  "content": "Elegant underline animation that appears on hover, perfect for clean and professional designs.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-underline-style-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "underline",
+                  "menuAnimationDuration": 300,
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-demo-underline-style-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Underline Demo",
+                    "classes": "text-xl font-bold text-green-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "underline-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-underline-1-main",
+                        "componentType": "LinkProps",
+                        "href": "/menu-styles",
+                        "text": "Home"
+                      },
+                      "active": true
+                    },
+                    {
+                      "uuid": "underline-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Features",
+                      "href": {
+                        "uuid": "href-underline-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#features",
+                        "text": "Features"
+                      }
+                    },
+                    {
+                      "uuid": "underline-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Pricing",
+                      "href": {
+                        "uuid": "href-underline-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#pricing",
+                        "text": "Pricing"
+                      }
+                    },
+                    {
+                      "uuid": "underline-link-4-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Blog",
+                      "href": {
+                        "uuid": "href-underline-4-main",
+                        "componentType": "LinkProps",
+                        "href": "#blog",
+                        "text": "Blog"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-lift-style",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-lift-style",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-lift-style",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Lift Animation",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-lift-style",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-lift-style-desc",
+                  "componentType": "TextProps",
+                  "content": "Menu items that lift up on hover with smooth transitions, creating a tactile and engaging user experience.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-lift-style-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "lift",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-demo-lift-style-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Lift Effect Demo",
+                    "classes": "text-xl font-bold text-purple-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "lift-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Products",
+                      "href": {
+                        "uuid": "href-lift-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#products",
+                        "text": "Products"
+                      }
+                    },
+                    {
+                      "uuid": "lift-dropdown-main",
+                      "componentType": "MenuDropdownItemProps",
+                      "type": "dropdown",
+                      "label": "Solutions",
+                      "dropdown": {
+                        "uuid": "lift-dropdown-content-main",
+                        "componentType": "DropdownProps",
+                        "content": [
+                          {
+                            "uuid": "lift-dd-1-main",
+                            "componentType": "DropdownLink",
+                            "title": "Analytics",
+                            "href": "#analytics"
+                          },
+                          {
+                            "uuid": "lift-dd-2-main",
+                            "componentType": "DropdownLink",
+                            "title": "Automation",
+                            "href": "#automation"
+                          },
+                          {
+                            "uuid": "lift-dd-3-main",
+                            "componentType": "DropdownLink",
+                            "title": "Security",
+                            "href": "#security"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "uuid": "lift-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Resources",
+                      "href": {
+                        "uuid": "href-lift-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#resources",
+                        "text": "Resources"
+                      }
+                    },
+                    {
+                      "uuid": "lift-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Company",
+                      "href": {
+                        "uuid": "href-lift-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#company",
+                        "text": "Company"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-scale-style",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-scale-style",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-scale-style",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Scale Animation",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-scale-style",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-scale-style-desc",
+                  "componentType": "TextProps",
+                  "content": "Menu items that scale up on hover for emphasis, providing clear visual feedback to users.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-demo-scale-style-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "scale",
+                  "menuAnimationDuration": 200,
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-demo-scale-style-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Scale Effect Demo",
+                    "classes": "text-xl font-bold text-orange-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "scale-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Dashboard",
+                      "href": {
+                        "uuid": "href-scale-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#dashboard",
+                        "text": "Dashboard"
+                      }
+                    },
+                    {
+                      "uuid": "scale-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Analytics",
+                      "href": {
+                        "uuid": "href-scale-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#analytics",
+                        "text": "Analytics"
+                      }
+                    },
+                    {
+                      "uuid": "scale-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Reports",
+                      "href": {
+                        "uuid": "href-scale-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#reports",
+                        "text": "Reports"
+                      }
+                    },
+                    {
+                      "uuid": "scale-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-scale-main",
+                        "componentType": "ButtonProps",
+                        "text": "Get Started",
+                        "variant": "default",
+                        "size": "sm",
+                        "link": {
+                          "uuid": "link-scale-main",
+                          "componentType": "LinkProps",
+                          "href": "#start",
+                          "text": "Get Started"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Interactive showcase of different menu variants including pill, underline, lift, and scale animation",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-single-cta",
+      "title": "Single CTA Examples",
+      "slug": "/single-cta",
+      "summary": "Examples of navbar configurations with a single call-to-action button in various styles and positions.",
+      "content": [
+        {
+          "uuid": "section-single-cta-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-single-cta-intro",
+          "layout": "singleColumnWide",
+          "classes": "bg-gradient-to-br from-blue-50 to-indigo-100",
+          "content": [
+            {
+              "uuid": "heading-single-cta-main",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Single CTA Button Examples",
+              "classes": "mb-8 text-4xl font-bold text-center text-gray-900"
+            },
+            {
+              "uuid": "text-intro-single-main",
+              "componentType": "TextProps",
+              "content": "Discover how to effectively implement single Call-to-Action buttons in your navbar to drive user engagement and conversions.",
+              "classes": "mb-12 text-xl text-center text-gray-600 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "section-basic-single-cta-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-basic-single-cta-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-basic-single-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Primary CTA Button",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-basic-single-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-basic-single-main",
+                  "componentType": "TextProps",
+                  "content": "A clean navbar with a prominent primary CTA button - perfect for SaaS platforms and landing pages.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-basic-single-cta-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "default",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-basic-single-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "SaaS Platform",
+                    "classes": "text-xl font-bold text-indigo-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "basic-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-basic-1-main",
+                        "componentType": "LinkProps",
+                        "href": "/",
+                        "text": "Home"
+                      },
+                      "active": true
+                    },
+                    {
+                      "uuid": "basic-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Features",
+                      "href": {
+                        "uuid": "href-basic-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#features",
+                        "text": "Features"
+                      }
+                    },
+                    {
+                      "uuid": "basic-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Pricing",
+                      "href": {
+                        "uuid": "href-basic-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#pricing",
+                        "text": "Pricing"
+                      }
+                    },
+                    {
+                      "uuid": "basic-link-4-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "About",
+                      "href": {
+                        "uuid": "href-basic-4-main",
+                        "componentType": "LinkProps",
+                        "href": "#about",
+                        "text": "About"
+                      }
+                    },
+                    {
+                      "uuid": "basic-cta-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-basic-cta-main",
+                        "componentType": "ButtonProps",
+                        "text": "Start Free Trial",
+                        "variant": "default",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-basic-cta-main",
+                          "componentType": "LinkProps",
+                          "href": "#signup",
+                          "text": "Start Free Trial"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-outline-cta-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-outline-cta-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-outline-cta-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Outline CTA Button",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-outline-cta-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-outline-cta-main",
+                  "componentType": "TextProps",
+                  "content": "Subtle outline CTA that doesn't overwhelm the design - ideal for secondary actions or minimalist designs.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-outline-cta-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "default",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-outline-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Portfolio",
+                    "classes": "text-xl font-bold text-gray-800"
+                  },
+                  "content": [
+                    {
+                      "uuid": "outline-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Work",
+                      "href": {
+                        "uuid": "href-outline-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#work",
+                        "text": "Work"
+                      }
+                    },
+                    {
+                      "uuid": "outline-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "About",
+                      "href": {
+                        "uuid": "href-outline-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#about",
+                        "text": "About"
+                      }
+                    },
+                    {
+                      "uuid": "outline-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Blog",
+                      "href": {
+                        "uuid": "href-outline-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#blog",
+                        "text": "Blog"
+                      }
+                    },
+                    {
+                      "uuid": "outline-cta-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-outline-cta-main",
+                        "componentType": "ButtonProps",
+                        "text": "Contact Me",
+                        "variant": "outline",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-outline-cta-main",
+                          "componentType": "LinkProps",
+                          "href": "#contact",
+                          "text": "Contact Me"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Examples of navbar configurations with a single call-to-action button in various styles and position",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-multiple-cta-main",
+      "title": "Multiple CTA Examples",
+      "slug": "/multiple-cta",
+      "summary": "Demonstrations of navbar layouts with multiple call-to-action buttons and various button combinations.",
+      "content": [
+        {
+          "uuid": "section-multiple-intro-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-multiple-intro-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-gradient-to-br from-green-50 to-emerald-100",
+          "content": [
+            {
+              "uuid": "heading-multiple-main",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Multiple CTA Button Examples",
+              "classes": "mb-8 text-4xl font-bold text-center text-gray-900"
+            },
+            {
+              "uuid": "text-intro-multiple-main",
+              "componentType": "TextProps",
+              "content": "Learn how to effectively balance multiple Call-to-Action buttons in your navbar without overwhelming users or diluting your message.",
+              "classes": "mb-12 text-xl text-center text-gray-600 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "section-dual-cta-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-dual-cta-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-dual-cta-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Primary + Secondary CTA",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-dual-cta-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-dual-cta-main",
+                  "componentType": "TextProps",
+                  "content": "Perfect balance with a primary action (solid) and secondary action (outline) - commonly used for Login/Signup combinations.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-dual-cta-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "default",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-dual-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "TechStart",
+                    "classes": "text-xl font-bold text-blue-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "dual-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Product",
+                      "href": {
+                        "uuid": "href-dual-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#product",
+                        "text": "Product"
+                      }
+                    },
+                    {
+                      "uuid": "dual-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Solutions",
+                      "href": {
+                        "uuid": "href-dual-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#solutions",
+                        "text": "Solutions"
+                      }
+                    },
+                    {
+                      "uuid": "dual-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Resources",
+                      "href": {
+                        "uuid": "href-dual-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#resources",
+                        "text": "Resources"
+                      }
+                    },
+                    {
+                      "uuid": "dual-secondary-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-dual-secondary-main",
+                        "componentType": "ButtonProps",
+                        "text": "Log In",
+                        "variant": "outline",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-dual-secondary-main",
+                          "componentType": "LinkProps",
+                          "href": "#login",
+                          "text": "Log In"
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "dual-primary-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-dual-primary-main",
+                        "componentType": "ButtonProps",
+                        "text": "Sign Up",
+                        "variant": "default",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-dual-primary-main",
+                          "componentType": "LinkProps",
+                          "href": "#signup",
+                          "text": "Sign Up"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-triple-cta-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-triple-cta-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-triple-cta-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Three Action Hierarchy",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-triple-cta-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-triple-cta-main",
+                  "componentType": "TextProps",
+                  "content": "Three buttons with clear hierarchy: Ghost for low priority, Outline for medium, and Primary for high priority actions.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-triple-cta-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "default",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-triple-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Enterprise",
+                    "classes": "text-xl font-bold text-gray-800"
+                  },
+                  "content": [
+                    {
+                      "uuid": "triple-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Features",
+                      "href": {
+                        "uuid": "href-triple-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#features",
+                        "text": "Features"
+                      }
+                    },
+                    {
+                      "uuid": "triple-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Enterprise",
+                      "href": {
+                        "uuid": "href-triple-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#enterprise",
+                        "text": "Enterprise"
+                      }
+                    },
+                    {
+                      "uuid": "triple-ghost-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-triple-ghost-main",
+                        "componentType": "ButtonProps",
+                        "text": "Learn More",
+                        "variant": "ghost",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-triple-ghost-main",
+                          "componentType": "LinkProps",
+                          "href": "#learn",
+                          "text": "Learn More"
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "triple-outline-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-triple-outline-main",
+                        "componentType": "ButtonProps",
+                        "text": "Request Demo",
+                        "variant": "outline",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-triple-outline-main",
+                          "componentType": "LinkProps",
+                          "href": "#demo",
+                          "text": "Request Demo"
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "triple-primary-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-triple-primary-main",
+                        "componentType": "ButtonProps",
+                        "text": "Start Trial",
+                        "variant": "default",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-triple-primary-main",
+                          "componentType": "LinkProps",
+                          "href": "#trial",
+                          "text": "Start Trial"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-split-multiple-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-split-multiple-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-split-multiple-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Split Layout with Multiple CTAs",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-split-multiple-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-split-multiple-main",
+                  "componentType": "TextProps",
+                  "content": "Using split variant to separate navigation links from CTA buttons for better visual organization and user flow.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-split-multiple-main",
+                  "componentType": "NavbarProps",
+                  "variant": "split",
+                  "asWrapper": false,
+                  "menuVariant": "default",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-split-multiple-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "SplitCorp",
+                    "classes": "text-xl font-bold text-indigo-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "split-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-split-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#home",
+                        "text": "Home"
+                      }
+                    },
+                    {
+                      "uuid": "split-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "About",
+                      "href": {
+                        "uuid": "href-split-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#about",
+                        "text": "About"
+                      }
+                    },
+                    {
+                      "uuid": "split-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Services",
+                      "href": {
+                        "uuid": "href-split-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#services",
+                        "text": "Services"
+                      }
+                    },
+                    {
+                      "uuid": "split-secondary-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-split-secondary-main",
+                        "componentType": "ButtonProps",
+                        "text": "Support",
+                        "variant": "ghost",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-split-secondary-main",
+                          "componentType": "LinkProps",
+                          "href": "#support",
+                          "text": "Support"
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "split-primary-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-split-primary-main",
+                        "componentType": "ButtonProps",
+                        "text": "Get Started",
+                        "variant": "default",
+                        "size": "default",
+                        "link": {
+                          "uuid": "link-split-primary-main",
+                          "componentType": "LinkProps",
+                          "href": "#start",
+                          "text": "Get Started"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Demonstrations of navbar layouts with multiple call-to-action buttons and various button combination",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-cta-variants-main",
+      "title": "CTA Variants & Styling",
+      "slug": "/cta-variants",
+      "summary": "Comprehensive examples of different CTA button variants including default, outline, secondary, and ghost styles.",
+      "content": [
+        {
+          "uuid": "section-cta-variants-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-cta-variants-intro",
+          "layout": "singleColumnWide",
+          "classes": "bg-gradient-to-br from-purple-50 to-pink-100",
+          "content": [
+            {
+              "uuid": "heading-cta-variants-main",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "CTA Variants & Custom Styling",
+              "classes": "mb-8 text-4xl font-bold text-center text-gray-900"
+            },
+            {
+              "uuid": "text-intro-cta-variants-main",
+              "componentType": "TextProps",
+              "content": "Explore advanced CTA button styling techniques including gradients, shadows, animations, and custom designs that match your brand.",
+              "classes": "mb-12 text-xl text-center text-gray-600 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "section-rounded-cta-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-rounded-cta-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-rounded-cta-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Rounded CTA Buttons",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-rounded-cta-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-rounded-cta-main",
+                  "componentType": "TextProps",
+                  "content": "Fully rounded pill-style buttons for a modern, friendly appearance that encourages user interaction.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-rounded-cta-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "pill",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-rounded-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "RoundedUI",
+                    "classes": "text-xl font-bold text-green-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "rounded-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-rounded-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#home",
+                        "text": "Home"
+                      }
+                    },
+                    {
+                      "uuid": "rounded-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Products",
+                      "href": {
+                        "uuid": "href-rounded-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#products",
+                        "text": "Products"
+                      }
+                    },
+                    {
+                      "uuid": "rounded-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "About",
+                      "href": {
+                        "uuid": "href-rounded-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#about",
+                        "text": "About"
+                      }
+                    },
+                    {
+                      "uuid": "rounded-outline-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-rounded-outline-main",
+                        "componentType": "ButtonProps",
+                        "text": "Log In",
+                        "variant": "outline",
+                        "size": "default",
+                        "classes": "rounded-full border-2 border-green-500 text-green-600 hover:bg-green-50",
+                        "link": {
+                          "uuid": "link-rounded-outline-main",
+                          "componentType": "LinkProps",
+                          "href": "#login",
+                          "text": "Log In"
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "rounded-cta-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-rounded-cta-main",
+                        "componentType": "ButtonProps",
+                        "text": "Sign Up",
+                        "variant": "default",
+                        "size": "default",
+                        "classes": "rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold px-8",
+                        "link": {
+                          "uuid": "link-rounded-cta-main",
+                          "componentType": "LinkProps",
+                          "href": "#signup",
+                          "text": "Sign Up Free"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-shadow-cta-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-shadow-cta-main",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-shadow-cta-main",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Shadow & Animation Effects",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-shadow-cta-main",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "text-shadow-cta-main",
+                  "componentType": "TextProps",
+                  "content": "Enhanced buttons with shadow effects and hover animations that provide tactile feedback and visual hierarchy.",
+                  "classes": "mb-4 text-gray-600 font-medium"
+                },
+                {
+                  "uuid": "navbar-shadow-cta-main",
+                  "componentType": "NavbarProps",
+                  "variant": "default",
+                  "asWrapper": false,
+                  "menuVariant": "lift",
+                  "classes": "bg-white border border-gray-200 rounded-lg p-4 w-full mb-4 shadow-sm",
+                  "logo": {
+                    "uuid": "logo-shadow-main",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "AnimateUI",
+                    "classes": "text-xl font-bold text-indigo-600"
+                  },
+                  "content": [
+                    {
+                      "uuid": "shadow-link-1-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Gallery",
+                      "href": {
+                        "uuid": "href-shadow-1-main",
+                        "componentType": "LinkProps",
+                        "href": "#gallery",
+                        "text": "Gallery"
+                      }
+                    },
+                    {
+                      "uuid": "shadow-link-2-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Showcase",
+                      "href": {
+                        "uuid": "href-shadow-2-main",
+                        "componentType": "LinkProps",
+                        "href": "#showcase",
+                        "text": "Showcase"
+                      }
+                    },
+                    {
+                      "uuid": "shadow-link-3-main",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Blog",
+                      "href": {
+                        "uuid": "href-shadow-3-main",
+                        "componentType": "LinkProps",
+                        "href": "#blog",
+                        "text": "Blog"
+                      }
+                    },
+                    {
+                      "uuid": "shadow-cta-button-main",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-shadow-cta-main",
+                        "componentType": "ButtonProps",
+                        "text": "Try Premium",
+                        "variant": "default",
+                        "size": "default",
+                        "classes": "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
+                        "link": {
+                          "uuid": "link-shadow-cta-main",
+                          "componentType": "LinkProps",
+                          "href": "#premium",
+                          "text": "Try Premium"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Comprehensive examples of different CTA button variants including default, outline, secondary, and g",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-cta-with-icons",
+      "title": "CTA with Icons",
+      "slug": "/cta-with-icons",
+      "summary": "Call-to-action buttons enhanced with icons in left and right positions, showcasing improved visual hierarchy.",
+      "content": [
+        {
+          "uuid": "section-cta-icons-intro",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-cta-icons-intro",
+          "layout": "singleColumnWide",
+          "classes": "bg-gradient-to-br from-yellow-50 to-orange-100",
+          "content": [
+            {
+              "uuid": "heading-cta-icons-intro",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "CTA Buttons with Icons",
+              "classes": "mb-8 text-4xl font-bold text-center text-gray-900"
+            },
+            {
+              "uuid": "text-cta-icons-intro",
+              "componentType": "TextProps",
+              "content": "Enhance user experience by adding icons to your Call-to-Action buttons. This page demonstrates different styles and icon placements.",
+              "classes": "mb-12 text-xl text-center text-gray-600 max-w-3xl mx-auto"
+            }
+          ]
+        },
+        {
+          "uuid": "section-primary-cta-with-icon",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-primary-cta-with-icon",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-primary-cta-with-icon",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Primary CTA with Left Icon",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-primary-cta-with-icon",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "navbar-primary-cta-with-icon",
+                  "componentType": "NavbarProps",
+                  "asWrapper": false,
+                  "logo": {
+                    "uuid": "logo-primary-cta-icon",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Iconic Actions"
+                  },
+                  "content": [
+                    {
+                      "uuid": "cta-icon-link-1",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Home",
+                      "href": {
+                        "uuid": "href-icon-link-1",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Home"
+                      }
+                    },
+                    {
+                      "uuid": "cta-icon-button-1",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-primary-cta-icon",
+                        "componentType": "ButtonProps",
+                        "text": "Get Started",
+                        "variant": "default",
+                        "link": {
+                          "uuid": "link-primary-cta-icon",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Get Started"
+                        },
+                        "icon": {
+                          "uuid": "icon-rocket",
+                          "componentType": "IconProps",
+                          "name": "rocket",
+                          "size": 16
+                        },
+                        "iconPosition": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-outline-cta-with-icon",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-outline-cta-with-icon",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-outline-cta-with-icon",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Outline CTA with Right Icon",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-outline-cta-with-icon",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "navbar-outline-cta-with-icon",
+                  "componentType": "NavbarProps",
+                  "asWrapper": false,
+                  "logo": {
+                    "uuid": "logo-outline-cta-icon",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Subtle Prompts"
+                  },
+                  "content": [
+                    {
+                      "uuid": "cta-icon-link-2",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Features",
+                      "href": {
+                        "uuid": "href-icon-link-2",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Features"
+                      }
+                    },
+                    {
+                      "uuid": "cta-icon-button-2",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-outline-cta-icon",
+                        "componentType": "ButtonProps",
+                        "text": "Learn More",
+                        "variant": "outline",
+                        "link": {
+                          "uuid": "link-outline-cta-icon",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Learn More"
+                        },
+                        "icon": {
+                          "uuid": "icon-arrow-right",
+                          "componentType": "IconProps",
+                          "name": "arrow-right",
+                          "size": 16
+                        },
+                        "iconPosition": "right"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-split-cta-with-icons",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-split-cta-with-icons",
+          "layout": "singleColumnWide",
+          "classes": "bg-white",
+          "content": [
+            {
+              "uuid": "heading-split-cta-with-icons",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Split Layout with Multiple Icon CTAs",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-split-cta-with-icons",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-gray-50 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "navbar-split-cta-with-icons",
+                  "componentType": "NavbarProps",
+                  "asWrapper": false,
+                  "variant": "split",
+                  "logo": {
+                    "uuid": "logo-split-cta-icon",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "MultiAction"
+                  },
+                  "content": [
+                    {
+                      "uuid": "cta-icon-link-3",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Product",
+                      "href": {
+                        "uuid": "href-icon-link-3",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Product"
+                      }
+                    },
+                    {
+                      "uuid": "cta-icon-button-3",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-secondary-cta-icon",
+                        "componentType": "ButtonProps",
+                        "text": "Login",
+                        "variant": "secondary",
+                        "link": {
+                          "uuid": "link-secondary-cta-icon",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Login"
+                        },
+                        "icon": {
+                          "uuid": "icon-log-in",
+                          "componentType": "IconProps",
+                          "name": "log-in",
+                          "size": 16
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "cta-icon-button-4",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-primary-cta-icon-2",
+                        "componentType": "ButtonProps",
+                        "text": "Sign Up",
+                        "variant": "default",
+                        "link": {
+                          "uuid": "link-primary-cta-icon-2",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Sign Up"
+                        },
+                        "icon": {
+                          "uuid": "icon-user-plus",
+                          "componentType": "IconProps",
+                          "name": "user-plus",
+                          "size": 16
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-destructive-cta-with-icon",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-destructive-cta-with-icon",
+          "layout": "singleColumnWide",
+          "classes": "bg-gray-50",
+          "content": [
+            {
+              "uuid": "heading-destructive-cta-with-icon",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Destructive Action with Icon",
+              "classes": "mb-8 text-3xl font-bold text-center"
+            },
+            {
+              "uuid": "container-destructive-cta-with-icon",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "classes": "bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow w-full",
+              "content": [
+                {
+                  "uuid": "navbar-destructive-cta-with-icon",
+                  "componentType": "NavbarProps",
+                  "asWrapper": false,
+                  "logo": {
+                    "uuid": "logo-destructive-cta-icon",
+                    "componentType": "NavbarLogoProps",
+                    "type": "text",
+                    "text": "Danger Zone"
+                  },
+                  "content": [
+                    {
+                      "uuid": "cta-icon-link-4",
+                      "componentType": "MenuLinkItemProps",
+                      "type": "link",
+                      "label": "Settings",
+                      "href": {
+                        "uuid": "href-icon-link-4",
+                        "componentType": "LinkProps",
+                        "href": "#",
+                        "text": "Settings"
+                      }
+                    },
+                    {
+                      "uuid": "cta-icon-button-5",
+                      "componentType": "MenuButtonItemProps",
+                      "type": "button",
+                      "button": {
+                        "uuid": "btn-destructive-cta-icon",
+                        "componentType": "ButtonProps",
+                        "text": "Delete Account",
+                        "variant": "destructive",
+                        "link": {
+                          "uuid": "link-destructive-cta-icon",
+                          "componentType": "LinkProps",
+                          "href": "#",
+                          "text": "Delete Account"
+                        },
+                        "icon": {
+                          "uuid": "icon-trash-2",
+                          "componentType": "IconProps",
+                          "name": "trash2",
+                          "size": 16
+                        },
+                        "iconPosition": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Call-to-action buttons enhanced with icons in left and right positions, showcasing improved visual h",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

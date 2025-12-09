@@ -1,0 +1,242 @@
+.
+├── CLAUDE.md
+├── components.json
+├── lib
+│   └── utils.ts
+├── next.config.js
+├── next-env.d.ts
+├── out.txt
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   ├── _assets
+│   │   └── manifest.json
+│   ├── example
+│   │   ├── kitchen-sink-content-showcase.json
+│   │   ├── kitchen-sink-core-content.json
+│   │   ├── kitchen-sink-data-visualization.json
+│   │   ├── kitchen-sink-forms-inputs.json
+│   │   ├── kitchen-sink-media-feedback.json
+│   │   ├── kitchen-sink-utilities.json
+│   │   ├── sample2 copy.json
+│   │   ├── sample2.json
+│   │   └── sample3.json
+│   ├── favicon.svg
+│   └── images
+│       ├── avatar.png
+│       ├── banner.png
+│       ├── hero-bg.jpg
+│       ├── logo.png
+│       └── logo.svg
+├── README.md
+├── scripts
+│   └── generate-component-schemas.js
+├── src
+│   ├── app
+│   │   ├── a
+│   │   │   └── [app_id]
+│   │   │       └── [[...slug]]
+│   │   │           ├── error.tsx
+│   │   │           └── page.tsx
+│   │   ├── example
+│   │   │   └── [app_id]
+│   │   │       └── [[...slug]]
+│   │   │           ├── error.tsx
+│   │   │           └── page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── AppRenderer.tsx
+│   │   ├── DynamicFontLoader.tsx
+│   │   ├── DynamicRenderer.tsx
+│   │   ├── DynamicTheme.tsx
+│   │   ├── ErrorFallback.tsx
+│   │   └── LayoutRenderer.tsx
+│   ├── context
+│   │   └── AppContext.tsx
+│   ├── hooks
+│   │   └── use-mobile.tsx
+│   ├── index.ts
+│   ├── interfaces
+│   │   ├── apps
+│   │   │   ├── core.ts
+│   │   │   ├── index.ts
+│   │   │   └── webapp.ts
+│   │   ├── components
+│   │   │   ├── content.ts
+│   │   │   ├── core.ts
+│   │   │   ├── feedback.ts
+│   │   │   ├── index.ts
+│   │   │   ├── layout.ts
+│   │   │   ├── media.ts
+│   │   │   ├── navigation.ts
+│   │   │   ├── utils.ts
+│   │   │   └── website_core_with_services.ts
+│   │   ├── index.ts
+│   │   └── services
+│   │       └── service_call.ts
+│   ├── lib
+│   │   └── utils.ts
+│   ├── registry
+│   │   └── index.ts
+│   ├── runtime
+│   │   ├── apps
+│   │   ├── components
+│   │   │   ├── AnchorLink.tsx
+│   │   │   ├── AnchorNav.tsx
+│   │   │   ├── Audio.tsx
+│   │   │   ├── Avatar.tsx
+│   │   │   ├── BackToTop.tsx
+│   │   │   ├── Badge.tsx
+│   │   │   ├── Banner.tsx
+│   │   │   ├── BoxChild.tsx
+│   │   │   ├── Breadcrumb.tsx
+│   │   │   ├── Button.tsx
+│   │   │   ├── Callout.tsx
+│   │   │   ├── Carousel.tsx
+│   │   │   ├── CodeSnippet.tsx
+│   │   │   ├── ComparisonTable.tsx
+│   │   │   ├── ConfirmDialog.tsx
+│   │   │   ├── ContactSection.tsx
+│   │   │   ├── Container.tsx
+│   │   │   ├── CookieConsentBanner.tsx
+│   │   │   ├── CtaButton.tsx
+│   │   │   ├── CTA.tsx
+│   │   │   ├── DateTimeDisplay.tsx
+│   │   │   ├── Divider.tsx
+│   │   │   ├── DocumentEmbed.tsx
+│   │   │   ├── DownloadBlock.tsx
+│   │   │   ├── Drawer.tsx
+│   │   │   ├── ErrorBoundary.tsx
+│   │   │   ├── FAQAccordion.tsx
+│   │   │   ├── FeatureFlag.tsx
+│   │   │   ├── FeatureItem.tsx
+│   │   │   ├── FeatureList.tsx
+│   │   │   ├── Flex.tsx
+│   │   │   ├── Gallery.tsx
+│   │   │   ├── Grid.tsx
+│   │   │   ├── Heading.tsx
+│   │   │   ├── Hero.tsx
+│   │   │   ├── Icon.tsx
+│   │   │   ├── ImageAsset.tsx
+│   │   │   ├── ImageTextBlock.tsx
+│   │   │   ├── Image.tsx
+│   │   │   ├── LazyLoad.tsx
+│   │   │   ├── Lightbox.tsx
+│   │   │   ├── Link.tsx
+│   │   │   ├── Loader.tsx
+│   │   │   ├── LoadingPlaceholder.tsx
+│   │   │   ├── LogoMarquee.tsx
+│   │   │   ├── MarkdownBlock.tsx
+│   │   │   ├── MasonryLayout.tsx
+│   │   │   ├── MediaGallery.tsx
+│   │   │   ├── MediaGrid.tsx
+│   │   │   ├── MegaMenuColumn.tsx
+│   │   │   ├── MegaMenuItem.tsx
+│   │   │   ├── MegaMenuLink.tsx
+│   │   │   ├── MegaMenu.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── NavbarLink.tsx
+│   │   │   ├── NavbarLogo.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── NotificationBanner.tsx
+│   │   │   ├── NotificationCenter.tsx
+│   │   │   ├── NotificationItem.tsx
+│   │   │   ├── OverflowContainer.tsx
+│   │   │   ├── Overlay.tsx
+│   │   │   ├── Pagination.tsx
+│   │   │   ├── PanoramaViewer.tsx
+│   │   │   ├── Paragraph.tsx
+│   │   │   ├── ParallaxSection.tsx
+│   │   │   ├── PDFViewer.tsx
+│   │   │   ├── Popover.tsx
+│   │   │   ├── Portal.tsx
+│   │   │   ├── PressMentions.tsx
+│   │   │   ├── PricingTable.tsx
+│   │   │   ├── ProcessSteps.tsx
+│   │   │   ├── ProgressBar.tsx
+│   │   │   ├── QuoteBlock.tsx
+│   │   │   ├── ResizableBox.tsx
+│   │   │   ├── ScrollContainer.tsx
+│   │   │   ├── Section.tsx
+│   │   │   ├── SeoMeta.tsx
+│   │   │   ├── ServicesList.tsx
+│   │   │   ├── SidebarMenuItem.tsx
+│   │   │   ├── SidebarMenu.tsx
+│   │   │   ├── Skeleton.tsx
+│   │   │   ├── SocialLinks.tsx
+│   │   │   ├── Spacer.tsx
+│   │   │   ├── Spinner.tsx
+│   │   │   ├── SplitPane.tsx
+│   │   │   ├── Stack.tsx
+│   │   │   ├── StatisticsGrid.tsx
+│   │   │   ├── Stepper.tsx
+│   │   │   ├── StepsFlow.tsx
+│   │   │   ├── StickyContainer.tsx
+│   │   │   ├── TabPane.tsx
+│   │   │   ├── Tabs.tsx
+│   │   │   ├── Tag.tsx
+│   │   │   ├── TeamCarousel.tsx
+│   │   │   ├── TeamMember.tsx
+│   │   │   ├── TeamSection.tsx
+│   │   │   ├── TestimonialCarousel.tsx
+│   │   │   ├── TestimonialGrid.tsx
+│   │   │   ├── TestimonialItem.tsx
+│   │   │   ├── Text.tsx
+│   │   │   ├── Toast.tsx
+│   │   │   ├── Tooltip.tsx
+│   │   │   ├── ui
+│   │   │   │   ├── accordion.tsx
+│   │   │   │   ├── alert-dialog.tsx
+│   │   │   │   ├── alert.tsx
+│   │   │   │   ├── aspect-ratio.tsx
+│   │   │   │   ├── avatar.tsx
+│   │   │   │   ├── badge.tsx
+│   │   │   │   ├── button.tsx
+│   │   │   │   ├── calendar.tsx
+│   │   │   │   ├── card.tsx
+│   │   │   │   ├── carousel.tsx
+│   │   │   │   ├── checkbox.tsx
+│   │   │   │   ├── dialog.tsx
+│   │   │   │   ├── drawer.tsx
+│   │   │   │   ├── dropdown-menu.tsx
+│   │   │   │   ├── form.tsx
+│   │   │   │   ├── input.tsx
+│   │   │   │   ├── label.tsx
+│   │   │   │   ├── navigation-menu.tsx
+│   │   │   │   ├── pagination.tsx
+│   │   │   │   ├── popover.tsx
+│   │   │   │   ├── progress.tsx
+│   │   │   │   ├── radio-group.tsx
+│   │   │   │   ├── scroll-area.tsx
+│   │   │   │   ├── select.tsx
+│   │   │   │   ├── separator.tsx
+│   │   │   │   ├── sheet.tsx
+│   │   │   │   ├── skeleton.tsx
+│   │   │   │   ├── slider.tsx
+│   │   │   │   ├── switch.tsx
+│   │   │   │   ├── table.tsx
+│   │   │   │   ├── tabs.tsx
+│   │   │   │   ├── textarea.tsx
+│   │   │   │   ├── toggle.tsx
+│   │   │   │   └── tooltip.tsx
+│   │   │   ├── VideoBackground.tsx
+│   │   │   ├── Video.tsx
+│   │   │   ├── VimeoEmbed.tsx
+│   │   │   ├── VirtualList.tsx
+│   │   │   └── YouTubeEmbed.tsx
+│   │   └── types.ts
+│   └── schemas
+│       ├── apps
+│       │   └── apps.json
+│       ├── components
+│       │   ├── catalog.json
+│       │   └── components.json
+│       └── manifest.json
+├── tailwind.config.js
+├── tsconfig.json
+└── tsconfig.tsbuildinfo
+
+31 directories, 209 files

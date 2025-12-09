@@ -1,0 +1,2704 @@
+{
+    "alias": "happydoods",
+    "appSecondaryType": "website",
+    "appType": "WebAppProps",
+    "footer": [
+        {
+            "classes": "mx-auto max-w-screen-xl lg:py-6 lg:px-6 bg-gray-50 border-t border-gray-200",
+            "componentType": "SectionProps",
+            "content": [
+                {
+                    "align": "center",
+                    "componentType": "FlexProps",
+                    "content": [
+                        {
+                            "align": "center",
+                            "componentType": "FlexProps",
+                            "content": [
+                                {
+                                    "classes": "text-2xl font-semibold",
+                                    "componentType": "TextProps",
+                                    "content": "HappyDoods",
+                                    "uuid": "2a9e52c8-8a8b-4b13-9d0a-9d3c7a8f1b6e"
+                                }
+                            ],
+                            "gap": "3",
+                            "uuid": "1b0f7d54-2c6e-4f91-8d2a-7e3f9c0d5a12"
+                        },
+                        {
+                            "classes": "text-center text-gray-500",
+                            "componentType": "TextProps",
+                            "content": "Providing farm-fresh eggs and poultry with care and quality.",
+                            "uuid": "4c3d2e1a-8b6f-4a7c-9e5d-1f0e3b2c4a90"
+                        },
+                        {
+                            "classes": "flex-wrap justify-center",
+                            "componentType": "FlexProps",
+                            "content": [
+                                {
+                                    "componentType": "LinkProps",
+                                    "href": "/about-us",
+                                    "text": "About Us",
+                                    "uuid": "7e6f5d4c-3a2b-4e1f-8c9d-0b1a2c3d4e5f"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "href": "/our-products",
+                                    "text": "Our Products",
+                                    "uuid": "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "href": "/our-process",
+                                    "text": "Our Process",
+                                    "uuid": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "href": "/contact-us",
+                                    "text": "Contact Us",
+                                    "uuid": "d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6e7f8a"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "href": "/privacy-policy",
+                                    "text": "Privacy Policy",
+                                    "uuid": "f5a6b7c8-d9e0-1f2a-3b4c-5d6e7f8a9b0c"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "href": "/terms-of-service",
+                                    "text": "Terms of Service",
+                                    "uuid": "1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a"
+                                }
+                            ],
+                            "gap": "6",
+                            "uuid": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f"
+                        },
+                        {
+                            "classes": "text-sm text-gray-500",
+                            "componentType": "TextProps",
+                            "content": "© 2023 HappyDoods. All Rights Reserved.",
+                            "uuid": "5f6e7d8c-9b0a-1c2d-3e4f-5a6b7c8d9e0f"
+                        }
+                    ],
+                    "direction": "column",
+                    "gap": "6",
+                    "uuid": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d"
+                }
+            ],
+            "contentBleed": true,
+            "layout": "singleColumnWide",
+            "lastUpdatedEpoch": 1701200000,
+            "uuid": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e"
+        }
+    ],
+    "header": [
+        {
+            "componentType": "NavbarProps",
+            "content": [
+                {
+                    "componentType": "MenuLinkItemProps",
+                    "href": {
+                        "componentType": "LinkProps",
+                        "href": "/",
+                        "text": "Home",
+                        "uuid": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f"
+                    },
+                    "label": "Home",
+                    "type": "link",
+                    "uuid": "a0b1c2d3-e4f5-6a7b-8c9d-0e1f2a3b4c5d"
+                },
+                {
+                    "componentType": "MenuLinkItemProps",
+                    "href": {
+                        "componentType": "LinkProps",
+                        "href": "/about-us",
+                        "text": "About Us",
+                        "uuid": "22a2e215-cb08-420a-bab6-741ee0a779d8"
+                    },
+                    "label": "About Us",
+                    "type": "link",
+                    "uuid": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f"
+                },
+                {
+                    "componentType": "MenuLinkItemProps",
+                    "href": {
+                        "componentType": "LinkProps",
+                        "href": "/our-products",
+                        "text": "Our Products",
+                        "uuid": "e4f5a6b7-c8d9-e0f1-a2b3-c4d5e6f7a8b9"
+                    },
+                    "label": "Our Products",
+                    "type": "link",
+                    "uuid": "f6a7b8c9-d0e1-f2a3-b4c5-d6e7f8a9b0c1"
+                },
+                {
+                    "componentType": "MenuLinkItemProps",
+                    "href": {
+                        "componentType": "LinkProps",
+                        "href": "/our-process",
+                        "text": "Our Process",
+                        "uuid": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"
+                    },
+                    "label": "Our Process",
+                    "type": "link",
+                    "uuid": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b"
+                },
+                {
+                    "componentType": "MenuLinkItemProps",
+                    "href": {
+                        "componentType": "LinkProps",
+                        "href": "/contact-us",
+                        "text": "Contact Us",
+                        "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"
+                    },
+                    "label": "Contact Us",
+                    "type": "link",
+                    "uuid": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"
+                }
+            ],
+            "logo": {
+                "componentType": "NavbarLogoProps",
+                "text": "HappyDoods",
+                "type": "text",
+                "uuid": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"
+            },
+            "menuVariant": "default",
+            "sticky": true,
+            "lastUpdatedEpoch": 1701200000,
+            "uuid": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+            "variant": "default"
+        }
+    ],
+    "languages": [
+        {
+            "code": "en",
+            "isDefault": true,
+            "nameEnglish": "English",
+            "nameNative": "English"
+        }
+    ],
+    "lastUpdatedEpoch": 1701200000,
+    "layout": "wide",
+    "menuPosition": "HeaderMenuTop",
+    "name": "HappyDoods",
+    "pages": [
+        {
+            "uuid": "5bc4bcbe-5bed-42f8-afd2-dd3195fe1623",
+            "title": "HappyDoods - Home",
+            "slug": "/",
+            "summary": "Welcome visitors to the HappyDoods chicken farm. This page provides an overview of the farm, highlights its unique selling points, and directs users to key sections of the website. It aims to create a positive first impression and convey the farm's dedication to quality and happy chickens.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f93-4a182745a306",
+                    "layout": "twoColumnSidebarRight",
+                    "spacing": "xl",
+                    "classes": "bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                            "direction": "column",
+                            "justify": "center",
+                            "gap": "6",
+                            "classes": "h-full",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "f2a3b4c5-d6e7-8f90-1a2b-3c4d5e6f7a8b",
+                                    "level": 1,
+                                    "text": "Farm Fresh Goodness from Our Happy Chickens",
+                                    "classes": "text-5xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "5a2c5b30-1a7b-484d-8ede-eac6c3c61d2a",
+                                    "variant": "lead",
+                                    "content": "At HappyDoods, we believe happy chickens lay the best eggs. Discover our commitment to quality, ethical farming, and delicious farm-fresh products.",
+                                    "classes": "mt-4 max-w-2xl text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "FlexProps",
+                                    "uuid": "e5f6a7b8-c9d0-1234-5678-90abcdef1234",
+                                    "direction": "row",
+                                    "align": "center",
+                                    "gap": "4",
+                                    "classes": "mt-8",
+                                    "content": [
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "f6a7b8c9-d0e1-2345-6789-0abcdef12345",
+                                            "text": "Explore Products",
+                                            "variant": "default",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "1a6d4cb1-bdec-4eaa-a694-7681d222da85",
+                                                "name": "egg",
+                                                "size": 20
+                                            },
+                                            "iconPosition": "right",
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
+                                                "href": "/our-products",
+                                                "text": "Explore Products"
+                                            }
+                                        },
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "447742c7-87e6-4ffc-ad21-64eb6f4df9ba",
+                                            "text": "Contact Us",
+                                            "variant": "outline",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "395e902f-afd2-4454-81c1-4de9dca95de0",
+                                                "name": "mail",
+                                                "size": 20
+                                            },
+                                            "iconPosition": "left",
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "b1d297d6-98b1-40be-bf0c-827016bad04e",
+                                                "href": "/contact-us",
+                                                "text": "Contact Us"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "1d2e3f4a-5b6c-7d8e-9f0a-b1c2d3e4f5a6",
+                            "justify": "center",
+                            "align": "center",
+                            "classes": "h-full",
+                            "content": [
+                                {
+                                    "componentType": "ImageProps",
+                                    "uuid": "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b",
+                                    "src": "https://images.pexels.com/photos/31083788/pexels-photo-31083788.jpeg",
+                                    "alt": "Happy chickens roaming freely on a green pasture.",
+                                    "classes": "rounded-lg shadow-lg",
+                                    "asset": {
+                                        "componentType": "ImageAssetProps",
+                                        "uuid": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+                                        "keywords": "happy, chickens, farm, free range, pasture",
+                                        "isProcessed": true,
+                                        "requestedWidth": 600,
+                                        "requestedHeight": 600,
+                                        "provider": "Pexels",
+                                        "provider_img_id": "31083788",
+                                        "provider_img_url": "https://images.pexels.com/photos/31083788/pexels-photo-31083788.jpeg",
+                                        "datetime_generated": "2025-11-10T21:30:54.535240",
+                                        "is_processed": true,
+                                        "signature": "7f5e80cb20d8c208a89a76f37fba3d9a"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "d4e5f6a7-b8c9-0123-4567-890abcdef123",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "bg-card text-card-foreground py-16",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "5bd0f22a-2ad3-48d4-a68d-05afa4067324",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "b2177212-c853-433d-b41e-803a7a0d2afe",
+                                    "level": 2,
+                                    "text": "Our Mission: Quality, Care, and Community",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "c16d3bd8-bae4-4640-ad9e-6a8e8bb032a1",
+                                    "variant": "lead",
+                                    "content": "HappyDoods is more than just a chicken farm; it's a commitment to a better way of living. We prioritize the well-being of our animals, the health of our land, and the satisfaction of our community. Every egg and every bird we produce reflects our dedication to sustainable and humane practices.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "uuid": "72c50454-191a-4210-a5d6-4ceeebaf67d6",
+                                    "text": "Learn More About Our Story >",
+                                    "href": "/about-us",
+                                    "classes": "font-semibold text-accent hover:underline"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "c3d4e5f6-a7b8-9012-3456-7890abcdef12",
+                    "layout": "twoColumnEven",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "ImageProps",
+                            "uuid": "c7c27593-2ec7-4bc9-9178-e7e88b8f7750",
+                            "src": "https://images.pexels.com/photos/1625385/pexels-photo-1625385.jpeg",
+                            "alt": "Freshly gathered farm eggs in a basket.",
+                            "classes": "rounded-lg shadow-lg",
+                            "asset": {
+                                "componentType": "ImageAssetProps",
+                                "uuid": "4948f3a2-6458-4ea0-a25c-34304c2c113a",
+                                "keywords": "eggs, farm, fresh, basket, organic",
+                                "isProcessed": true,
+                                "requestedWidth": 600,
+                                "requestedHeight": 400,
+                                "provider": "Pexels",
+                                "provider_img_id": "1625385",
+                                "provider_img_url": "https://images.pexels.com/photos/1625385/pexels-photo-1625385.jpeg",
+                                "datetime_generated": "2025-11-10T21:30:55.236213",
+                                "is_processed": true,
+                                "signature": "16d402bef5abd485054f4712dd0a0162"
+                            }
+                        },
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "ba306035-7757-43a9-bdb1-030c75dc79bb",
+                            "direction": "column",
+                            "justify": "center",
+                            "gap": "8",
+                            "classes": "h-full",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "38f13342-bf6f-4dd0-a759-f18fafa98ecf",
+                                    "level": 2,
+                                    "text": "Our Unique Farm-Fresh Offerings",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "81e1f28b-28e5-4bff-87d6-6094853309b0",
+                                    "variant": "lead",
+                                    "content": "From nutritious free-range eggs to humanely raised poultry, HappyDoods provides products you can trust. Our chickens enjoy spacious pastures, natural diets, and a stress-free environment.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "FlexProps",
+                                    "uuid": "d8dbe3b8-8731-443c-8aea-9e281aa27663",
+                                    "direction": "column",
+                                    "gap": "6",
+                                    "classes": "pt-6",
+                                    "content": [
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "c5adf202-27d0-4bfd-88b7-9a286a7e086d",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "700388a8-9662-40f7-b9d2-b6864cbd6cec",
+                                                "name": "sun",
+                                                "size": 24,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "uuid": "57ff0a05-f4af-4e59-834d-0748f7c68991",
+                                                "componentType": "HeadingProps",
+                                                "level": 3,
+                                                "text": "Free-Range Living"
+                                            },
+                                            "text": {
+                                                "uuid": "d827d692-8c0e-464a-aafa-767cfea73de2",
+                                                "componentType": "TextProps",
+                                                "content": "Our chickens roam freely outdoors, enjoying fresh air and sunshine, which contributes to their health and the quality of their eggs."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "afe04828-a26e-420a-beea-32abd421a6cb",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "bea18618-3325-4a1c-9375-80a80d77df69",
+                                                "name": "leaf",
+                                                "size": 24,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "uuid": "ecef80fa-9f25-4720-853e-8f546ee55b01",
+                                                "componentType": "HeadingProps",
+                                                "level": 3,
+                                                "text": "All-Natural Diet"
+                                            },
+                                            "text": {
+                                                "uuid": "b7395999-e02f-4f0f-af7b-e2a6940fbb45",
+                                                "componentType": "TextProps",
+                                                "content": "Fed a wholesome diet free from antibiotics, hormones, and artificial additives, ensuring pure and natural products."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "cb903fcc-92ca-4687-98a9-96a1e144024c",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "305c8f49-3bb3-494d-bd29-56a9ace7bb6b",
+                                                "name": "hand-heart",
+                                                "size": 24,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "uuid": "ae566851-43bf-4620-b4f7-fcc484915c50",
+                                                "componentType": "HeadingProps",
+                                                "level": 3,
+                                                "text": "Ethical & Sustainable"
+                                            },
+                                            "text": {
+                                                "uuid": "56dbd047-dc32-4b4b-808a-a71dd360e11d",
+                                                "componentType": "TextProps",
+                                                "content": "We are dedicated to farming practices that are environmentally responsible and ensure the humane treatment of our animals."
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "0023541d-5800-4ba0-9b5c-cd4a3be52af6",
+                    "classes": "py-16 px-4 mx-auto max-w-screen-xl lg:py-24 lg:px-6 bg-background text-foreground",
+                    "layout": "singleColumnCentered",
+                    "content": [
+                        {
+                            "componentType": "HeadingProps",
+                            "uuid": "349d844f-8096-44a9-a001-1e51b356bfd4",
+                            "level": 2,
+                            "text": "What Our Customers Say",
+                            "classes": "text-4xl font-extrabold tracking-tight text-center text-primary mb-12"
+                        },
+                        {
+                            "uuid": "700c033b-9f33-4459-8588-ff686fa4d673",
+                            "componentType": "TestimonialItemProps",
+                            "style": "quote",
+                            "text": {
+                                "uuid": "81b9af4d-5cb6-4627-bca4-0cdcc4a44e9b",
+                                "componentType": "TextProps",
+                                "content": "HappyDoods eggs are simply the best! You can taste the difference that comes from happy, healthy chickens. We won't buy eggs from anywhere else now.",
+                                "classes": "italic text-lg text-muted-foreground"
+                            },
+                            "author": {
+                                "uuid": "44eaa315-82ea-441a-b466-d5a77f5da7aa",
+                                "componentType": "TextProps",
+                                "content": "Sarah L."
+                            },
+                            "authorTitle": {
+                                "uuid": "74bac322-b4f1-47c6-b85c-ce485c3df050",
+                                "componentType": "TextProps",
+                                "content": "Local Chef & Happy Customer"
+                            },
+                            "avatar": {
+                                "uuid": "23cd58ad-168e-4f46-9c78-5ac57390722b",
+                                "componentType": "ImageProps",
+                                "src": "https://images.pexels.com/photos/4473398/pexels-photo-4473398.jpeg",
+                                "alt": "Photo of Sarah L.",
+                                "asset": {
+                                    "uuid": "da740fd7-5bf2-4a52-ab77-815eb9d2d265",
+                                    "componentType": "ImageAssetProps",
+                                    "keywords": "sarah, customer, avatar, testimonial",
+                                    "isProcessed": true,
+                                    "requestedWidth": 150,
+                                    "requestedHeight": 150,
+                                    "provider": "Pexels",
+                                    "provider_img_id": "4473398",
+                                    "provider_img_url": "https://images.pexels.com/photos/4473398/pexels-photo-4473398.jpeg",
+                                    "datetime_generated": "2025-11-10T21:30:55.898507",
+                                    "is_processed": true,
+                                    "signature": "5e31124dd74c700119cf1a4b7659c8f6"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "272cf13a-077b-4ecf-8292-5f41e6ae4fe5",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "bg-primary text-primary-foreground py-20",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "00646534-561b-48cc-842b-b3e37c7c5e7c",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full text-center max-w-2xl mx-auto",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "bf50f271-0b3d-40f3-87b9-6308f40052fd",
+                                    "level": 2,
+                                    "text": "Ready to Taste the HappyDoods Difference?",
+                                    "classes": "text-4xl font-extrabold tracking-tight"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "5cbecb77-6f0f-4908-a02c-2a05d2345fcc",
+                                    "variant": "lead",
+                                    "content": "Whether you're looking for fresh eggs, premium poultry, or just want to learn more about our farming practices, we're here to help. Reach out to us today!",
+                                    "classes": "text-primary-foreground/90"
+                                },
+                                {
+                                    "componentType": "FlexProps",
+                                    "uuid": "17d91f76-8da8-4522-8503-27e0dd52153c",
+                                    "direction": "row",
+                                    "align": "center",
+                                    "justify": "center",
+                                    "gap": "4",
+                                    "classes": "pt-4",
+                                    "content": [
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "cc16f114-bf2b-42c2-bca9-3dd9babfac02",
+                                            "text": "View Our Products",
+                                            "variant": "secondary",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "fcb9a4b8-90f1-42b8-9bd4-155891a47087",
+                                                "name": "package",
+                                                "size": 20
+                                            },
+                                            "iconPosition": "right",
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "b72bf4ae-254e-4348-b221-50b69ecb4b00",
+                                                "href": "/our-products",
+                                                "text": "View Our Products"
+                                            }
+                                        },
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "59feb632-7213-46c8-88aa-8ffe6bc4271f",
+                                            "text": "Contact Us Directly",
+                                            "variant": "ghost",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "912c9acf-2114-41c0-8e8d-0486f6f3e01b",
+                                                "name": "phone",
+                                                "size": 20
+                                            },
+                                            "iconPosition": "left",
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "9b7d4bc1-6973-4820-a2e3-954f7aee3c90",
+                                                "href": "/contact-us",
+                                                "text": "Contact Us Directly"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "Welcome to HappyDoods, your source for quality farm-fresh products.",
+            "lastUpdatedEpoch": 1701200000,
+            "pageType": "WebPageProps"
+        },
+        {
+            "uuid": "741e3936-8ee2-4239-9048-1c1a9438d44e",
+            "title": "About HappyDoods",
+            "slug": "/about-us",
+            "summary": "Share the story behind HappyDoods chicken farm. This page details the farm's history, its founders, and the core values that drive its operations. It aims to build trust and connection with customers by showcasing the passion and dedication involved in raising happy, healthy chickens.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f33-4a182745a307",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "a03f9f3e-2179-4efc-b18e-6bf9998cc041",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "1aa2db30-6074-4b09-b8d9-64991fc3c2a6",
+                                    "level": 2,
+                                    "text": "Our Story: From Humble Beginnings to HappyDoods",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "06583104-35e0-46da-8e6d-66032e49eddb",
+                                    "variant": "lead",
+                                    "content": "HappyDoods began with a simple dream: to raise chickens in a way that respects their natural instincts and provides the freshest, most delicious products to our community. Founded by [Founder's Name] in [Year], our farm has grown from a small backyard coop into a thriving sanctuary where chickens flourish.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "635c1f8b-ff1c-49f2-8a3e-76b9bf803b77",
+                                    "content": "Our journey has been one of dedication, learning, and an unwavering commitment to animal welfare and sustainable farming. We believe that healthy, happy chickens produce superior eggs and poultry, and that philosophy guides every decision we make on the farm. Come along with us as we continue to grow and nurture our HappyDoods family.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f33-4a182745a308",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "bg-card text-card-foreground py-16",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "86767b02-7642-49f8-80c9-18dc3c1734b2",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full text-center max-w-7xl mx-auto",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "57f35bbb-d9a5-43c5-8054-5793ba2a3f85",
+                                    "level": 2,
+                                    "text": "Meet the HappyDoods Family",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "166246f5-baee-498f-9b06-bd1da327149f",
+                                    "variant": "lead",
+                                    "content": "Behind every happy chicken and delicious product is a dedicated team committed to our values.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "GridProps",
+                                    "uuid": "dba290ec-f2cc-47cd-8d4b-909a452ef484",
+                                    "columns": 2,
+                                    "gap": "8",
+                                    "classes": "pt-12 w-full text-left md:grid-cols-2 lg:grid-cols-3",
+                                    "content": [
+                                        {
+                                            "componentType": "TeamMemberProps",
+                                            "uuid": "9fda7b9c-cb1a-496a-836b-5ee478a7362a",
+                                            "style": "cardHorizontal",
+                                            "name": {
+                                                "uuid": "a2be5d24-39c5-413e-a4e9-33f72158af8c",
+                                                "componentType": "HeadingProps",
+                                                "level": 3,
+                                                "text": "John Doe"
+                                            },
+                                            "position": {
+                                                "uuid": "1a287b6c-d3f1-4b9a-a755-3f3516b0ce35",
+                                                "componentType": "TextProps",
+                                                "content": "Founder & Head Farmer"
+                                            },
+                                            "bio": {
+                                                "uuid": "aa591be5-940b-4f8c-b515-897c8ae3a67e",
+                                                "componentType": "TextProps",
+                                                "content": "John's passion for sustainable agriculture and animal welfare led to the creation of HappyDoods."
+                                            },
+                                            "photo": {
+                                                "componentType": "ImageProps",
+                                                "uuid": "5bc1309d-ed3d-491f-8b92-3a37bc0c714a",
+                                                "src": "https://images.pexels.com/photos/2889440/pexels-photo-2889440.jpeg",
+                                                "alt": "John Doe",
+                                                "asset": {
+                                                    "uuid": "5648ebea-c022-4bd7-8bbd-836b1daf0c94",
+                                                    "componentType": "ImageAssetProps",
+                                                    "keywords": "john, founder, farmer",
+                                                    "isProcessed": true,
+                                                    "requestedWidth": 150,
+                                                    "requestedHeight": 150,
+                                                    "provider": "Pexels",
+                                                    "provider_img_id": "2889440",
+                                                    "provider_img_url": "https://images.pexels.com/photos/2889440/pexels-photo-2889440.jpeg",
+                                                    "datetime_generated": "2025-11-10T21:30:56.767195",
+                                                    "is_processed": true,
+                                                    "signature": "2d2803d87eb6ba79ad31c1dafa78a167"
+                                                }
+                                            },
+                                            "socialLinks": [],
+                                            "classes": "bg-card shadow-md p-4 rounded-lg"
+                                        },
+                                        {
+                                            "componentType": "TeamMemberProps",
+                                            "uuid": "1a3670f2-8d51-4a51-9422-c6f936ceea7b",
+                                            "style": "cardHorizontal",
+                                            "name": {
+                                                "uuid": "b28d90d3-44ad-4f5a-a213-44d14002cbf9",
+                                                "componentType": "HeadingProps",
+                                                "level": 3,
+                                                "text": "Jane Smith"
+                                            },
+                                            "position": {
+                                                "uuid": "29ad7643-f9bc-4dd4-9c78-09462c248afa",
+                                                "componentType": "TextProps",
+                                                "content": "Operations Manager"
+                                            },
+                                            "bio": {
+                                                "uuid": "10159ea3-a8b7-49a2-927c-32fe21a23c44",
+                                                "componentType": "TextProps",
+                                                "content": "Jane ensures the smooth daily operations of the farm, upholding our high standards of care."
+                                            },
+                                            "photo": {
+                                                "componentType": "ImageProps",
+                                                "uuid": "0259540b-0754-4256-b309-0b3d9a77ab7a",
+                                                "src": "https://images.pexels.com/photos/19317897/pexels-photo-19317897.jpeg",
+                                                "alt": "Jane Smith",
+                                                "asset": {
+                                                    "uuid": "2d612ff8-eb9c-487c-b1cf-058886d4cc30",
+                                                    "componentType": "ImageAssetProps",
+                                                    "keywords": "jane, manager, operations",
+                                                    "isProcessed": true,
+                                                    "requestedWidth": 150,
+                                                    "requestedHeight": 150,
+                                                    "provider": "Pexels",
+                                                    "provider_img_id": "19317897",
+                                                    "provider_img_url": "https://images.pexels.com/photos/19317897/pexels-photo-19317897.jpeg",
+                                                    "datetime_generated": "2025-11-10T21:30:57.449999",
+                                                    "is_processed": true,
+                                                    "signature": "e88e99c7056c5e70524b52539f731626"
+                                                }
+                                            },
+                                            "socialLinks": [],
+                                            "classes": "bg-card shadow-md p-4 rounded-lg"
+                                        },
+                                        {
+                                            "componentType": "TeamMemberProps",
+                                            "uuid": "c0afd62e-aba9-4dd8-a873-09d61e783ea3",
+                                            "style": "cardHorizontal",
+                                            "name": {
+                                                "uuid": "a809de9b-bdcf-45e9-8f73-98fd0c4a750a",
+                                                "componentType": "HeadingProps",
+                                                "level": 3,
+                                                "text": "Mike Johnson"
+                                            },
+                                            "position": {
+                                                "uuid": "e6fb7f8d-bc6d-4da5-b149-83ef47f540e2",
+                                                "componentType": "TextProps",
+                                                "content": "Animal Care Specialist"
+                                            },
+                                            "bio": {
+                                                "uuid": "99b35cdb-18d5-401c-889b-31da70022bda",
+                                                "componentType": "TextProps",
+                                                "content": "Mike is our resident expert on poultry health, ensuring every chicken receives the best care."
+                                            },
+                                            "photo": {
+                                                "componentType": "ImageProps",
+                                                "uuid": "ef70dc9a-021d-42e7-bdb5-4ad98c7bca1f",
+                                                "src": "https://images.pexels.com/photos/7469274/pexels-photo-7469274.jpeg",
+                                                "alt": "Mike Johnson",
+                                                "asset": {
+                                                    "uuid": "5cb78bf3-27f9-49e1-82df-0588255e6699",
+                                                    "componentType": "ImageAssetProps",
+                                                    "keywords": "mike, animal care, specialist",
+                                                    "isProcessed": true,
+                                                    "requestedWidth": 150,
+                                                    "requestedHeight": 150,
+                                                    "provider": "Pexels",
+                                                    "provider_img_id": "7469274",
+                                                    "provider_img_url": "https://images.pexels.com/photos/7469274/pexels-photo-7469274.jpeg",
+                                                    "datetime_generated": "2025-11-10T21:30:58.170045",
+                                                    "is_processed": true,
+                                                    "signature": "74d7761d79b668306f124aa22ba27f76"
+                                                }
+                                            },
+                                            "socialLinks": [],
+                                            "classes": "bg-card shadow-md p-4 rounded-lg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f33-4a182745a309",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "82ad932b-b4ec-4c19-8be9-a93c2965362b",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "d71af90a-e7d3-4ed7-a103-ee80663e0ce2",
+                                    "level": 2,
+                                    "text": "Our Mission & Values",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "GridProps",
+                                    "uuid": "35081f02-daf5-419f-8b4c-eb26c9a0f875",
+                                    "columns": 1,
+                                    "gap": "8",
+                                    "classes": "w-full md:grid-cols-2 lg:grid-cols-3 pt-8",
+                                    "content": [
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "594d43de-cac6-47cc-b954-575b5c7c800c",
+                                            "variant": "standard",
+                                            "layout": "iconTopCenter",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "7b8a06f8-bec0-4d98-b27b-13ad2aab315f",
+                                                "name": "heart",
+                                                "size": 32,
+                                                "classes": "text-secondary mb-4"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "6de6ae9e-1799-43d0-9a33-373047492d5f",
+                                                "level": 3,
+                                                "text": "Animal Welfare First"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "886a2107-53ae-4999-8bca-316ce41fb121",
+                                                "content": "We prioritize the health, comfort, and natural behavior of our animals, ensuring they live stress-free lives."
+                                            },
+                                            "classes": "text-center"
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "fe8b0792-b14f-43a8-ad45-a36d7ee1fa08",
+                                            "variant": "standard",
+                                            "layout": "iconTopCenter",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "9b61730a-5dea-4719-9d85-a295c27d19be",
+                                                "name": "award",
+                                                "size": 32,
+                                                "classes": "text-secondary mb-4"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "a6766d49-940c-4f5b-8856-d0fbbd61de95",
+                                                "level": 3,
+                                                "text": "Uncompromising Quality"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "d8f2f5eb-9a03-4760-a8be-57cd473f22ee",
+                                                "content": "From feed to final product, we maintain the highest standards to deliver superior taste and nutrition."
+                                            },
+                                            "classes": "text-center"
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "31255f57-b832-4d12-b827-aa933131c3a3",
+                                            "variant": "standard",
+                                            "layout": "iconTopCenter",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "e181755d-b36a-4d31-bbc4-23716456cee8",
+                                                "name": "tree-palm",
+                                                "size": 32,
+                                                "classes": "text-secondary mb-4"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "c2c0dbdb-4897-4f82-9c9b-6d90f65ca1c1",
+                                                "level": 3,
+                                                "text": "Environmental Stewardship"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "504bdcbb-c1cb-48fb-b39b-69dc65759cf5",
+                                                "content": "We employ sustainable practices to protect our land and resources for future generations."
+                                            },
+                                            "classes": "text-center"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f33-4a182745a310",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "bg-card text-card-foreground py-16",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "4c227db2-221b-42cf-a1d9-de88b9fd1d01",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-7xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "66272eef-4218-4d2a-9d35-e8326986bd5c",
+                                    "level": 2,
+                                    "text": "Life on HappyDoods Farm: A Photo Gallery",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "9048696e-cc0c-41c4-bd19-9809d330f369",
+                                    "variant": "lead",
+                                    "content": "See for yourself the beauty and tranquility of our farm, and the happy lives of our chickens.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "GridProps",
+                                    "uuid": "ba0cce9f-4c3c-4f12-bb52-4c258985c7fa",
+                                    "columns": 2,
+                                    "gapX": "6",
+                                    "gapY": "6",
+                                    "classes": "mt-8 w-full md:grid-cols-2 lg:grid-cols-3",
+                                    "content": [
+                                        {
+                                            "componentType": "ImageProps",
+                                            "uuid": "46fcb685-fa25-48fe-8b51-6d9fd45fdd91",
+                                            "src": "https://images.pexels.com/photos/2134246/pexels-photo-2134246.jpeg",
+                                            "alt": "A group of happy chickens foraging on a sunny day.",
+                                            "classes": "w-full rounded-lg shadow-md",
+                                            "asset": {
+                                                "uuid": "98f096c3-9aa4-4411-8166-a64b6b431368",
+                                                "componentType": "ImageAssetProps",
+                                                "keywords": "chickens, farm, foraging, nature",
+                                                "isProcessed": true,
+                                                "requestedWidth": 600,
+                                                "requestedHeight": 400,
+                                                "provider": "Pexels",
+                                                "provider_img_id": "2134246",
+                                                "provider_img_url": "https://images.pexels.com/photos/2134246/pexels-photo-2134246.jpeg",
+                                                "datetime_generated": "2025-11-10T21:30:58.745015",
+                                                "is_processed": true,
+                                                "signature": "76eafa08bcdd534b77f524eefe141da1"
+                                            }
+                                        },
+                                        {
+                                            "componentType": "ImageProps",
+                                            "uuid": "b11110ec-0e70-42de-a73a-453b34232697",
+                                            "src": "https://images.pexels.com/photos/286580/pexels-photo-286580.jpeg",
+                                            "alt": "Close up of a chicken looking at the camera.",
+                                            "classes": "w-full rounded-lg shadow-md",
+                                            "asset": {
+                                                "uuid": "4a8450ea-7c2c-4942-a6df-b05546445d94",
+                                                "componentType": "ImageAssetProps",
+                                                "keywords": "chicken, farm, close up, poultry",
+                                                "isProcessed": true,
+                                                "requestedWidth": 600,
+                                                "requestedHeight": 400,
+                                                "provider": "Pexels",
+                                                "provider_img_id": "286580",
+                                                "provider_img_url": "https://images.pexels.com/photos/286580/pexels-photo-286580.jpeg",
+                                                "datetime_generated": "2025-11-10T21:30:59.458042",
+                                                "is_processed": true,
+                                                "signature": "44d0bf88a2a5bf122411b6459704321c"
+                                            }
+                                        },
+                                        {
+                                            "componentType": "ImageProps",
+                                            "uuid": "631a643d-08b3-4001-aacb-edc2e171f01c",
+                                            "src": "https://images.pexels.com/photos/6980106/pexels-photo-6980106.jpeg",
+                                            "alt": "Freshly collected eggs in a wooden tray.",
+                                            "classes": "w-full rounded-lg shadow-md",
+                                            "asset": {
+                                                "uuid": "3932cf1b-3d8e-44e6-ab06-22855c28e887",
+                                                "componentType": "ImageAssetProps",
+                                                "keywords": "eggs, fresh, wooden tray, farm",
+                                                "isProcessed": true,
+                                                "requestedWidth": 600,
+                                                "requestedHeight": 400,
+                                                "provider": "Pexels",
+                                                "provider_img_id": "6980106",
+                                                "provider_img_url": "https://images.pexels.com/photos/6980106/pexels-photo-6980106.jpeg",
+                                                "datetime_generated": "2025-11-10T21:31:00.200191",
+                                                "is_processed": true,
+                                                "signature": "bd0bc6601fac71e60b17339013f98f8a"
+                                            }
+                                        },
+                                        {
+                                            "componentType": "ImageProps",
+                                            "uuid": "9420a6f0-7cf4-42b8-80e5-b8d58558bbc2",
+                                            "src": "https://images.pexels.com/photos/4911723/pexels-photo-4911723.jpeg",
+                                            "alt": "Barn interior with chickens.",
+                                            "classes": "w-full rounded-lg shadow-md",
+                                            "asset": {
+                                                "uuid": "cc5035c4-95f6-4b31-a4f1-04706bdb278b",
+                                                "componentType": "ImageAssetProps",
+                                                "keywords": "barn, chickens, farm, interior",
+                                                "isProcessed": true,
+                                                "requestedWidth": 600,
+                                                "requestedHeight": 400,
+                                                "provider": "Pexels",
+                                                "provider_img_id": "4911723",
+                                                "provider_img_url": "https://images.pexels.com/photos/4911723/pexels-photo-4911723.jpeg",
+                                                "datetime_generated": "2025-11-10T21:31:00.693729",
+                                                "is_processed": true,
+                                                "signature": "45a95081d2585b5074eba808c76e460a"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f33-4a182745a311",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "bg-primary text-primary-foreground py-20",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "9743df99-1e48-4ef8-8bc1-4a1a92f9ad39",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full text-center max-w-2xl mx-auto",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "57594d2f-7125-4cc6-9c5d-b35cca35d492",
+                                    "level": 2,
+                                    "text": "Explore Our Products",
+                                    "classes": "text-4xl font-extrabold tracking-tight"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "6e7fc4b2-819b-4a53-aab3-f94390b04098",
+                                    "variant": "lead",
+                                    "content": "Discover our range of farm-fresh eggs and poultry, raised with love and care.",
+                                    "classes": "text-primary-foreground/90"
+                                },
+                                {
+                                    "componentType": "FlexProps",
+                                    "uuid": "eaee5c79-891b-4666-a4e3-62b53db65b00",
+                                    "direction": "row",
+                                    "align": "center",
+                                    "justify": "center",
+                                    "gap": "4",
+                                    "classes": "pt-4",
+                                    "content": [
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "8df9f08a-7a16-4c76-a1a1-920e31b4f538",
+                                            "text": "View Products",
+                                            "variant": "secondary",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "29639901-15a8-4960-a3bb-35ab81d96380",
+                                                "name": "shopping-bag",
+                                                "size": 20
+                                            },
+                                            "iconPosition": "right",
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "2cf1b8d5-777e-409b-b14d-97c4b5de8597",
+                                                "href": "/our-products",
+                                                "text": "View Products"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "Learn about the story, mission, and values of HappyDoods farm.",
+            "lastUpdatedEpoch": 1701200001,
+            "pageType": "WebPageProps"
+        },
+        {
+            "uuid": "5a165147-3526-40ea-ac75-1137be050aa1",
+            "title": "Our Products",
+            "slug": "/our-products",
+            "summary": "Showcase the range of products offered by HappyDoods chicken farm. This page will detail the different types of eggs, poultry, or other farm-fresh goods available. Each product should have a clear description, emphasizing quality, freshness, and ethical sourcing.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de258327-4654-4881-9f33-4a182745a306",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "5ba3183c-c439-48c5-b3e7-ab8aabfe6ad5",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "4fb83981-7903-4e88-926c-4ff02f723092",
+                                    "level": 2,
+                                    "text": "Farm Fresh Delights from HappyDoods",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "7a1b896a-b390-4f56-9857-178a374b6b68",
+                                    "variant": "lead",
+                                    "content": "Explore our selection of premium farm products, all raised with our commitment to quality, ethical practices, and the well-being of our animals.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "cc49cb0a-8b60-4412-8dcd-977003001efb",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "baa16e94-da0c-4504-bf3d-2271baf67b88",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "12",
+                            "classes": "max-w-7xl mx-auto",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "3cdbcfe2-63d0-48ea-8f90-87cc16de3305",
+                                    "level": 2,
+                                    "text": "Our Selection",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary text-center"
+                                },
+                                {
+                                    "componentType": "GridProps",
+                                    "uuid": "02508e51-91e1-4a9a-94df-954b3858690d",
+                                    "columns": 1,
+                                    "gap": "8",
+                                    "classes": "w-full md:grid-cols-2 lg:grid-cols-3",
+                                    "content": [
+                                        {
+                                            "componentType": "FlexProps",
+                                            "uuid": "4cd123c9-c629-482e-b0d1-0b7ca1d85b41",
+                                            "direction": "column",
+                                            "align": "center",
+                                            "gap": "4",
+                                            "classes": "p-6 bg-background rounded-lg shadow-md",
+                                            "content": [
+                                                {
+                                                    "componentType": "ImageProps",
+                                                    "uuid": "536ac7cd-c45b-4d4d-be09-f6d1ee93b772",
+                                                    "src": "https://images.pexels.com/photos/1625385/pexels-photo-1625385.jpeg",
+                                                    "alt": "Basket of fresh farm eggs",
+                                                    "classes": "w-full h-48 object-cover rounded-lg mb-4",
+                                                    "asset": {
+                                                        "componentType": "ImageAssetProps",
+                                                        "uuid": "2649db8c-b63a-4581-a87d-de7df0ab2329",
+                                                        "keywords": "eggs, farm, fresh, basket",
+                                                        "isProcessed": true,
+                                                        "requestedWidth": 600,
+                                                        "requestedHeight": 400,
+                                                        "provider": "Pexels",
+                                                        "provider_img_id": "1625385",
+                                                        "provider_img_url": "https://images.pexels.com/photos/1625385/pexels-photo-1625385.jpeg",
+                                                        "datetime_generated": "2025-11-10T21:31:01.388420",
+                                                        "is_processed": true,
+                                                        "signature": "16d402bef5abd485054f4712dd0a0162"
+                                                    }
+                                                },
+                                                {
+                                                    "componentType": "HeadingProps",
+                                                    "uuid": "08d011b8-fde0-4ba4-a9b1-c6487b5943b0",
+                                                    "level": 3,
+                                                    "text": "HappyDoods Farm Eggs",
+                                                    "classes": "text-2xl font-bold text-foreground"
+                                                },
+                                                {
+                                                    "componentType": "TextProps",
+                                                    "uuid": "3778561a-20f8-4ab3-997c-17d3611ae8eb",
+                                                    "content": "Our signature free-range eggs, laid by happy chickens foraging on lush pastures. Rich in flavor and nutrients, perfect for any meal.",
+                                                    "classes": "text-muted-foreground text-center"
+                                                },
+                                                {
+                                                    "componentType": "LinkProps",
+                                                    "uuid": "fb2557dd-68fc-45c9-8c49-b1a5ca835db5",
+                                                    "text": "Learn More",
+                                                    "href": "#",
+                                                    "classes": "text-accent hover:underline font-semibold"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "componentType": "FlexProps",
+                                            "uuid": "8d3b219f-3b5a-4df2-85c2-80d767f84f2d",
+                                            "direction": "column",
+                                            "align": "center",
+                                            "gap": "4",
+                                            "classes": "p-6 bg-background rounded-lg shadow-md",
+                                            "content": [
+                                                {
+                                                    "componentType": "ImageProps",
+                                                    "uuid": "70bdf942-acef-4062-a06b-42a8563b8582",
+                                                    "src": "https://images.pexels.com/photos/5769374/pexels-photo-5769374.jpeg",
+                                                    "alt": "Fresh whole chicken",
+                                                    "classes": "w-full h-48 object-cover rounded-lg mb-4",
+                                                    "asset": {
+                                                        "componentType": "ImageAssetProps",
+                                                        "uuid": "2ed8d81e-59d8-4a60-82b1-7827dab45bcb",
+                                                        "keywords": "chicken, meat, poultry, fresh",
+                                                        "isProcessed": true,
+                                                        "requestedWidth": 600,
+                                                        "requestedHeight": 400,
+                                                        "provider": "Pexels",
+                                                        "provider_img_id": "5769374",
+                                                        "provider_img_url": "https://images.pexels.com/photos/5769374/pexels-photo-5769374.jpeg",
+                                                        "datetime_generated": "2025-11-10T21:31:01.860621",
+                                                        "is_processed": true,
+                                                        "signature": "be9838ab31e5b72a2307335360c8f875"
+                                                    }
+                                                },
+                                                {
+                                                    "componentType": "HeadingProps",
+                                                    "uuid": "c8ef38db-f99a-492b-bf53-d198586ad52f",
+                                                    "level": 3,
+                                                    "text": "Pasture-Raised Chicken Meat",
+                                                    "classes": "text-2xl font-bold text-foreground"
+                                                },
+                                                {
+                                                    "componentType": "TextProps",
+                                                    "uuid": "5e27592e-ea30-4b86-8564-700dafc785e1",
+                                                    "content": "Tender and flavorful chicken, raised humanely on spacious pastures with natural feed. Perfect for your family's table.",
+                                                    "classes": "text-muted-foreground text-center"
+                                                },
+                                                {
+                                                    "componentType": "LinkProps",
+                                                    "uuid": "4833a5a7-d9a6-4c41-9044-1273ea09a221",
+                                                    "text": "Learn More",
+                                                    "href": "#",
+                                                    "classes": "text-accent hover:underline font-semibold"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "componentType": "FlexProps",
+                                            "uuid": "dae516e2-89c7-4fea-b3f0-2ceb69dbf4bc",
+                                            "direction": "column",
+                                            "align": "center",
+                                            "gap": "4",
+                                            "classes": "p-6 bg-background rounded-lg shadow-md",
+                                            "content": [
+                                                {
+                                                    "componentType": "ImageProps",
+                                                    "uuid": "7833dbbe-11fc-450b-affe-6f98b0a9c2e7",
+                                                    "src": "https://images.pexels.com/photos/34660184/pexels-photo-34660184.jpeg",
+                                                    "alt": "Assorted farm produce",
+                                                    "classes": "w-full h-48 object-cover rounded-lg mb-4",
+                                                    "asset": {
+                                                        "componentType": "ImageAssetProps",
+                                                        "uuid": "ee96d2ef-33a8-4318-b9cf-de85261d9822",
+                                                        "keywords": "produce, farm, vegetables, seasonal",
+                                                        "isProcessed": true,
+                                                        "requestedWidth": 600,
+                                                        "requestedHeight": 400,
+                                                        "provider": "Pexels",
+                                                        "provider_img_id": "34660184",
+                                                        "provider_img_url": "https://images.pexels.com/photos/34660184/pexels-photo-34660184.jpeg",
+                                                        "datetime_generated": "2025-11-10T21:31:02.605461",
+                                                        "is_processed": true,
+                                                        "signature": "f9f3a37e5a4cfd2db50309187154f992"
+                                                    }
+                                                },
+                                                {
+                                                    "componentType": "HeadingProps",
+                                                    "uuid": "4e7d2a97-1ca8-4eee-92b8-1ee33522d2f9",
+                                                    "level": 3,
+                                                    "text": "Seasonal Farm Produce",
+                                                    "classes": "text-2xl font-bold text-foreground"
+                                                },
+                                                {
+                                                    "componentType": "TextProps",
+                                                    "uuid": "3b3432cc-5bfe-455e-b1c4-65c17e5a002d",
+                                                    "content": "In addition to poultry, we offer a selection of seasonal fruits and vegetables, harvested at peak freshness from our farm.",
+                                                    "classes": "text-muted-foreground text-center"
+                                                },
+                                                {
+                                                    "componentType": "LinkProps",
+                                                    "uuid": "2805c477-4914-4d94-ac6b-a069b73cb103",
+                                                    "text": "Discover Seasonal Items",
+                                                    "href": "#",
+                                                    "classes": "text-accent hover:underline font-semibold"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "fdd7b82e-fb37-45ca-a964-b8538787ccdf",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "921f2ad4-4bf8-467e-a8d9-f8749877c3e2",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "3ae4df0c-fb5a-4944-b6d3-369f1108dc89",
+                                    "level": 2,
+                                    "text": "Our Commitment to Quality & Sourcing",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "02f7553e-b747-40b1-9f6e-804c5953e1bd",
+                                    "variant": "lead",
+                                    "content": "At HappyDoods, every product tells a story of care, sustainability, and transparency. We adhere to the highest standards to bring you food you can trust.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "GridProps",
+                                    "uuid": "0b49880b-e711-451e-8126-d06de9e3e4bf",
+                                    "columns": 1,
+                                    "gap": "8",
+                                    "classes": "w-full md:grid-cols-2 pt-8",
+                                    "content": [
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "ef6da3dc-41a9-4f8e-a084-ad757e3d269c",
+                                            "variant": "standard",
+                                            "layout": "iconTopCenter",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "dc13dee7-8934-4844-aed0-dbd97c2be95e",
+                                                "name": "check-circle",
+                                                "size": 32,
+                                                "classes": "text-secondary mb-4"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "4febd0de-7fc1-420e-a039-b3ab40c41b17",
+                                                "level": 3,
+                                                "text": "Rigorous Quality Control"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "72405f93-dcfd-40dc-bdbe-88e066719ecb",
+                                                "content": "From daily health checks for our flock to careful handling of produce, quality is our top priority."
+                                            },
+                                            "classes": "text-center"
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "3041878d-54b4-4ee5-b1b5-36e25539a369",
+                                            "variant": "standard",
+                                            "layout": "iconTopCenter",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "25fd7b0f-6eaf-4ad6-aa1c-f1a309caee3e",
+                                                "name": "tractor",
+                                                "size": 32,
+                                                "classes": "text-secondary mb-4"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "c2ac7466-751a-4383-aa50-5d3f1e009210",
+                                                "level": 3,
+                                                "text": "Ethical & Sustainable Sourcing"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "26e9852c-18cd-4c78-954c-e43d373e25cd",
+                                                "content": "All our products are sourced directly from our farm, ensuring humane practices and minimal environmental impact."
+                                            },
+                                            "classes": "text-center"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "4811ce7c-5c8e-459f-8b03-46ab0a2ff4c3",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "47a04405-8d2c-4684-bc57-bc14e4248431",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "3fe98b58-2490-4d74-937e-da31f790ed74",
+                                    "level": 2,
+                                    "text": "Pricing & How to Order",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "d3f7259e-e282-44e9-9d11-c4b21e405303",
+                                    "variant": "lead",
+                                    "content": "For current pricing, bulk orders, or any special requests, please get in touch with us directly. We believe in personalized service and are happy to assist you.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "234f2541-cd30-49a6-abae-177c25aa9584",
+                                    "content": "You can reach us via phone, email, or by filling out the contact form on our 'Contact Us' page. We look forward to hearing from you!",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "85a1d656-1ca3-462b-b1e7-ba25c7c0d956",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "bg-primary text-primary-foreground py-20",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "0186c346-afb6-42c8-991d-aa5c424afb0d",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full text-center max-w-2xl mx-auto",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "7728c2e6-a433-42a4-b811-95af6f052069",
+                                    "level": 2,
+                                    "text": "Ready to Make an Inquiry?",
+                                    "classes": "text-4xl font-extrabold tracking-tight"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "9a9737b0-c6e6-4383-8ac0-884c6482d3bc",
+                                    "variant": "lead",
+                                    "content": "We're here to answer your questions and fulfill your farm-fresh product needs.",
+                                    "classes": "text-primary-foreground/90"
+                                },
+                                {
+                                    "componentType": "FlexProps",
+                                    "uuid": "8abef0f9-5661-4b44-a5c6-9310bef0d562",
+                                    "direction": "row",
+                                    "align": "center",
+                                    "justify": "center",
+                                    "gap": "4",
+                                    "classes": "pt-4",
+                                    "content": [
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "42917bfc-b276-4689-a82c-e787cfded726",
+                                            "text": "Contact Us",
+                                            "variant": "secondary",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "72873ec2-70f8-4982-bd83-5ce395163622",
+                                                "name": "mail",
+                                                "size": 20
+                                            },
+                                            "iconPosition": "right",
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "53dd90d6-17ea-4b42-b5ac-259ccc03c7e8",
+                                                "href": "/contact-us",
+                                                "text": "Contact Us"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "Discover the fresh, high-quality products from HappyDoods chicken farm.",
+            "lastUpdatedEpoch": 1701200002,
+            "pageType": "WebPageProps"
+        },
+        {
+            "uuid": "76fe55cf-625e-4c32-ad0a-ea4bbba522a3",
+            "title": "Our Process",
+            "slug": "/our-process",
+            "summary": "Explain the farming practices and process at HappyDoods. This page will detail how the chickens are raised, the feed used, and the commitment to sustainable and ethical farming methods. Transparency in our process helps build consumer confidence.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "ff552824-ade3-4e14-aacc-a0d0f465c81a",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "9041fce1-60fb-4caa-a8db-00667c494c41",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "27d34fb4-da5c-4d9c-a7b7-150e4915771f",
+                                    "level": 2,
+                                    "text": "Our Transparent Farming Process",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "27829679-e909-4d10-a011-9ebd6b5a3386",
+                                    "variant": "lead",
+                                    "content": "At HappyDoods, we believe in complete transparency. Discover the journey of our chickens, from chick to product, and how we ensure their well-being and the quality of our offerings.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "c89b1740-21fc-4365-8c79-22f413436489",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "77979900-09c8-4e3f-9628-1b3c78833bb3",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "12",
+                            "classes": "max-w-7xl mx-auto",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "e5b7040e-0076-4ea5-a215-d8eae3bb8593",
+                                    "level": 2,
+                                    "text": "Step-by-Step: Raising Happy Chickens",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary text-center"
+                                },
+                                {
+                                    "componentType": "GridProps",
+                                    "uuid": "5b1ed022-e82f-4a17-aa05-66644762be72",
+                                    "columns": 1,
+                                    "gap": "8",
+                                    "classes": "w-full lg:grid-cols-2",
+                                    "content": [
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "927db0f6-b32c-461b-9d80-534d7849f3d8",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "39e7f506-a146-47b3-a7b4-3a1e8ca20c34",
+                                                "name": "egg",
+                                                "size": 32,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "3eb5ade8-5363-46ce-8d32-d370bba81493",
+                                                "level": 3,
+                                                "text": "1. Careful Chick Rearing"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "cce9908b-6512-4153-b5d6-44047727f8c4",
+                                                "content": "Our chicks arrive from trusted hatcheries and are raised in warm, safe brooders, receiving constant care and attention during their most vulnerable stage."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "2aada3dc-17c3-45b5-8b21-544e346d4de7",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "7e9132cd-81af-432b-b2b6-62a7f8eeac59",
+                                                "name": "sun",
+                                                "size": 32,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "003011c1-5025-4f1a-aeb9-048534f9ff93",
+                                                "level": 3,
+                                                "text": "2. Free-Range Pasture Access"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "5ffca457-aa40-49f9-8161-c76b2e519103",
+                                                "content": "As they grow, our chickens gain access to lush, open pastures, where they forage naturally, dust bathe, and enjoy plenty of sunshine and fresh air."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "6ac7099e-7ae5-44a7-9cb6-6b5264e2c3c6",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "df09fcf5-f533-4c9b-b6b5-c116025052f9",
+                                                "name": "wheat",
+                                                "size": 32,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "a89400fe-0483-4d69-8775-9d7eb12b3e86",
+                                                "level": 3,
+                                                "text": "3. All-Natural, Wholesome Feed"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "d7467657-2f9b-43fc-8112-8cb9848c4071",
+                                                "content": "Supplementing their foraging, our chickens receive a carefully formulated, non-GMO, antibiotic-free diet, rich in essential nutrients for optimal health."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "88967606-46d9-4613-afb6-96d99def6b2f",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "61a779a1-cc42-4eed-b6f3-594ea3aad15b",
+                                                "name": "stethoscope",
+                                                "size": 32,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "24c0f59c-d839-484a-aed7-58dfba0e4115",
+                                                "level": 3,
+                                                "text": "4. Proactive Health & Welfare"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "74369bee-e8b2-439c-af03-5c6fce454334",
+                                                "content": "Our team conducts daily health checks, ensuring clean coops, fresh water, and prompt attention to any needs, preventing stress and disease naturally."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "c4c1dcec-6d91-4c35-95bb-937778df3a45",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "f470a946-231b-440a-8c4b-79f23442e8ec",
+                                                "name": "box",
+                                                "size": 32,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "564aa731-37f7-4119-8b6b-61b9b5a28210",
+                                                "level": 3,
+                                                "text": "5. Ethical & Respectful Processing"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "b513c594-effc-45a2-add9-d52e155847aa",
+                                                "content": "When it's time for harvest, we ensure a humane and respectful process, minimizing stress and upholding our commitment to animal dignity."
+                                            }
+                                        },
+                                        {
+                                            "componentType": "StandardFeatureProps",
+                                            "uuid": "afd9bc0f-e444-4abe-b877-c5d182b7c48b",
+                                            "variant": "standard",
+                                            "layout": "iconLeft",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "73c2d8e2-d006-4256-becc-0ad55210e1c0",
+                                                "name": "package",
+                                                "size": 32,
+                                                "classes": "text-secondary"
+                                            },
+                                            "title": {
+                                                "componentType": "HeadingProps",
+                                                "uuid": "61ed01e7-cecc-4b37-b45c-538a8ec21e11",
+                                                "level": 3,
+                                                "text": "6. Freshness Delivered"
+                                            },
+                                            "text": {
+                                                "componentType": "TextProps",
+                                                "uuid": "9a05d480-6eab-4380-b6cf-57de9a65e5dd",
+                                                "content": "Our products are carefully prepared and delivered fresh, straight from our farm to your table, preserving taste and quality."
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "fb233d11-db48-449e-b961-8774248aa2ff",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "4ee6fa25-2549-4595-9845-b1c879a0ae64",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "2537d0b7-1488-4305-8314-fb77fb2aa176",
+                                    "level": 2,
+                                    "text": "Our Commitment to Sustainability",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "ff3c7d9f-6505-432a-8203-9156ce78c06f",
+                                    "variant": "lead",
+                                    "content": "We are dedicated to farming practices that not only produce exceptional food but also nurture our planet. Our initiatives ensure a healthy ecosystem for generations to come.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "ImageProps",
+                                    "uuid": "d8bd64aa-6e3d-4452-8c40-5f5e9d0574a2",
+                                    "src": "https://images.pexels.com/photos/34660184/pexels-photo-34660184.jpeg",
+                                    "alt": "Infographic showing sustainable farming practices",
+                                    "classes": "w-full rounded-lg shadow-md",
+                                    "asset": {
+                                        "componentType": "ImageAssetProps",
+                                        "uuid": "527b6c37-5163-4777-b63a-4497a89378fc",
+                                        "keywords": "sustainable farming, infographic, eco-friendly, agriculture",
+                                        "isProcessed": true,
+                                        "requestedWidth": 800,
+                                        "requestedHeight": 450,
+                                        "provider": "Pexels",
+                                        "provider_img_id": "34660184",
+                                        "provider_img_url": "https://images.pexels.com/photos/34660184/pexels-photo-34660184.jpeg",
+                                        "datetime_generated": "2025-11-10T21:31:03.324773",
+                                        "is_processed": true,
+                                        "signature": "f9f3a37e5a4cfd2db50309187154f992"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "See how we raise happy, healthy chickens with our sustainable practices.",
+            "lastUpdatedEpoch": 1701200003,
+            "pageType": "WebPageProps"
+        },
+        {
+            "uuid": "8eb316fe-4a53-4f26-95a5-fdf927dace2b",
+            "title": "Contact HappyDoods",
+            "slug": "/contact-us",
+            "summary": "Provide visitors with easy ways to get in touch with HappyDoods chicken farm. This page will include a contact form, phone number, email address, and farm location. It serves as the primary point of contact for inquiries, feedback, and orders.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "4394527a-96af-4214-9d88-242fc8280df7",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "09fdf39c-23d7-48ee-8a08-d4201fb38ed2",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "fba0c0c3-6746-4f35-9b96-5d55ece983d0",
+                                    "level": 2,
+                                    "text": "Get in Touch with HappyDoods",
+                                    "classes": "text-4xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "d6745dd3-8cbb-4aa7-8c15-7a71193c357d",
+                                    "variant": "lead",
+                                    "content": "We'd love to hear from you! Whether you have questions about our products, farming practices, or just want to say hello, feel free to reach out.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "f7161b40-f385-466b-8cf8-0cdae7f3fabf",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "512d519c-4a9c-4ebd-b61b-89bfa0c9d328",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-2xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "1f07c5ca-1807-4040-a017-2f63573f53fe",
+                                    "level": 3,
+                                    "text": "Send Us a Message",
+                                    "classes": "text-3xl font-bold text-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "7208a7dc-f62e-43eb-bca8-9b7bb3945943",
+                                    "content": "Please use the form below for general inquiries. We aim to respond within 24-48 hours.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "67931ac6-6f8e-44b3-9cf9-c09ee67d0dcf",
+                                    "content": "[Placeholder for a Contact Form component]",
+                                    "classes": "text-lg italic p-8 border border-dashed rounded-lg w-full text-center text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "2cce2e33-41e1-4fac-937d-a11114b27109",
+                    "layout": "twoColumnEven",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "8a2f9410-d509-4ac1-8251-4f4ef554d8fd",
+                            "direction": "column",
+                            "justify": "center",
+                            "gap": "6",
+                            "classes": "h-full p-4",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "460cb8cb-0f3c-4861-b6b7-8150a5d2ff84",
+                                    "level": 3,
+                                    "text": "Visit Our Farm",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "f6559b68-1f31-45fa-b51b-5daa80f4e1be",
+                                    "content": "HappyDoods Farm<br>123 Farmstead Lane<br>Rural Town, ST 54321<br>USA",
+                                    "classes": "text-lg text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "LinkProps",
+                                    "uuid": "7584cb96-a2df-4862-ba52-65967d2ecbb0",
+                                    "text": "Get Directions",
+                                    "href": "https://maps.google.com/?q=123+Farmstead+Lane",
+                                    "classes": "text-accent hover:underline font-semibold",
+                                    "target": "_blank"
+                                }
+                            ]
+                        },
+                        {
+                            "componentType": "ImageProps",
+                            "uuid": "6cec7911-7e35-4c1a-b150-52c806a9385a",
+                            "src": "https://images.pexels.com/photos/34640078/pexels-photo-34640078.jpeg",
+                            "alt": "Map of HappyDoods Farm location",
+                            "classes": "rounded-lg shadow-lg w-full h-auto",
+                            "asset": {
+                                "componentType": "ImageAssetProps",
+                                "uuid": "e138f3ad-0242-402a-b6f1-728fba885168",
+                                "keywords": "farm, map, location, agriculture",
+                                "isProcessed": true,
+                                "requestedWidth": 600,
+                                "requestedHeight": 400,
+                                "provider": "Pexels",
+                                "provider_img_id": "34640078",
+                                "provider_img_url": "https://images.pexels.com/photos/34640078/pexels-photo-34640078.jpeg",
+                                "datetime_generated": "2025-11-10T21:31:04.010161",
+                                "is_processed": true,
+                                "signature": "bd62c17ad9cdc49dd6447d5c6647a690"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "edc9f719-500e-4a36-9395-415391abe9a3",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "6a12f34a-9254-46be-8d49-5a39ede7055e",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "6",
+                            "classes": "h-full mx-auto max-w-xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "b294660c-c0ab-4ff8-8002-72e1bee4200b",
+                                    "level": 3,
+                                    "text": "Direct Contact & Hours",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "2c76bcf4-f5a0-4a85-bd4a-a5dcc0bce013",
+                                    "content": "<strong>Phone:</strong> (123) 456-7890",
+                                    "classes": "text-lg text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "d34b7300-b8c0-4232-87b6-f59743a79c1f",
+                                    "content": "<strong>Email:</strong> info@happydoods.com",
+                                    "classes": "text-lg text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "17c9ddb1-7c26-4f6a-973a-b9028d521482",
+                                    "content": "<strong>Operating Hours:</strong><br>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed",
+                                    "classes": "text-lg text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "f5b2e971-4478-47fa-bee6-a39b106a1787",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "9cb39c07-8d17-46cc-9e48-cffa09c26894",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "6",
+                            "classes": "h-full mx-auto max-w-xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "bb7f97fa-96df-4c99-b004-3e24b47f4add",
+                                    "level": 3,
+                                    "text": "Connect With Us",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "FlexProps",
+                                    "uuid": "d5353ecc-f23d-4b17-a005-f420160a62f5",
+                                    "direction": "row",
+                                    "align": "center",
+                                    "justify": "center",
+                                    "gap": "6",
+                                    "classes": "pt-4",
+                                    "content": [
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "03dfea19-c420-4dd2-8b92-82f15b77fb7e",
+                                            "text": "Facebook Profile",
+                                            "variant": "ghost",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "bac306e2-ca09-44bc-ab06-dfc6d973ece8",
+                                                "name": "facebook",
+                                                "size": 36
+                                            },
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "f1bced65-e334-4a62-ba08-a4677c76d722",
+                                                "href": "#",
+                                                "text": "Facebook"
+                                            },
+                                            "classes": "p-0 h-auto w-auto text-muted-foreground hover:text-accent"
+                                        },
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "0dff4191-fc74-4b58-8185-5997c808d7cf",
+                                            "text": "Instagram Profile",
+                                            "variant": "ghost",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "00207199-dd4f-4213-ba75-c00153991172",
+                                                "name": "instagram",
+                                                "size": 36
+                                            },
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "eaca66fc-dd73-4ba1-af7b-e252e77a60fa",
+                                                "href": "#",
+                                                "text": "Instagram"
+                                            },
+                                            "classes": "p-0 h-auto w-auto text-muted-foreground hover:text-accent"
+                                        },
+                                        {
+                                            "componentType": "ButtonProps",
+                                            "uuid": "83c7e71d-dcdb-456b-8d0c-3b3fa569ec9d",
+                                            "text": "Twitter Profile",
+                                            "variant": "ghost",
+                                            "size": "lg",
+                                            "icon": {
+                                                "componentType": "IconProps",
+                                                "uuid": "a8556659-0eca-49dd-a23e-63504de913b2",
+                                                "name": "twitter",
+                                                "size": 36
+                                            },
+                                            "link": {
+                                                "componentType": "LinkProps",
+                                                "uuid": "f21280e8-42fc-4be0-b03b-93a55abfd09c",
+                                                "href": "#",
+                                                "text": "Twitter"
+                                            },
+                                            "classes": "p-0 h-auto w-auto text-muted-foreground hover:text-accent"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "Get in touch with HappyDoods farm for inquiries or orders.",
+            "lastUpdatedEpoch": 1701200004,
+            "pageType": "WebPageProps"
+        },
+        {
+            "uuid": "0c3d1db9-b56e-4edd-8ed9-f894aca60f70",
+            "title": "Privacy Policy",
+            "slug": "/privacy-policy",
+            "summary": "Inform users about how their data is collected, used, and protected by HappyDoods. This page ensures transparency and compliance with privacy regulations, building trust with website visitors.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "8588d9c1-cdba-4b3a-a34b-23ab06ce612f",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "6a49f0c1-6aa2-47ac-a9c1-f90096a047b8",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "307657ed-2cae-4779-93f2-239baf27c0fe",
+                                    "level": 1,
+                                    "text": "Privacy Policy for HappyDoods",
+                                    "classes": "text-5xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "aff14173-4cb6-465c-8771-33c0ebe234b1",
+                                    "variant": "lead",
+                                    "content": "Your privacy is important to us. This policy explains how HappyDoods collects, uses, and protects your personal information.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "5c9a3208-59bf-4cc7-ad30-f9995048b09b",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "009e4c70-cc90-4031-bd25-7b81d251a49d",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "a87f925d-639d-4b17-927e-4a8602e3f698",
+                                    "level": 2,
+                                    "text": "1. Data Collection and Usage",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "ef748b6d-b779-4df2-ac09-19bda092a364",
+                                    "content": "We collect personal information such as your name, email address, and contact number when you voluntarily provide it to us through our contact forms or when you subscribe to our newsletter.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "f28d0fdc-c1ec-430e-a557-9f713746719e",
+                                    "content": "This data is used solely for the purpose of responding to your inquiries, processing your orders, and sending you relevant updates about HappyDoods. We do not share, sell, or rent your personal information to third parties.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "e82cd1d7-9552-4410-bae7-4198e38ff115",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "65b76de5-b287-4345-b8ae-86b0e8889361",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "4c4d00bd-f158-40de-87ed-ee42dcb07c82",
+                                    "level": 2,
+                                    "text": "2. Information on Data Security Measures",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "bfde6bcb-27bc-4815-acc4-39d4e9f67c75",
+                                    "content": "HappyDoods implements a variety of security measures to maintain the safety of your personal information. Your personal data is stored on secure networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "c77ac95c-4138-4ac5-8aeb-0fa09f5fcb83",
+                                    "content": "All sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "b1e67751-255a-417d-b7f5-5db50446addd",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "e08c900c-ab75-4df5-965b-af4c46b54852",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "2ceeeaa2-d1cd-487b-bd84-7961f465ded4",
+                                    "level": 2,
+                                    "text": "3. Your Data Protection Rights",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "c890e569-d636-49f1-860f-66dfb376b880",
+                                    "content": "You have the right to access, update, or request deletion of your personal data at any time. You also have the right to restrict or object to the processing of your data, and the right to data portability.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "aaf211f2-5572-4872-bafd-6a5e1a52c70c",
+                                    "content": "To exercise any of these rights, please contact us using the information provided at the end of this policy.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "c519320c-1e75-4c39-b8e8-ab985d89d1a5",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "7daca20f-00cf-4335-b59a-de50547b6a79",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "8999f3c6-2634-47dd-b281-70aaba83feaa",
+                                    "level": 2,
+                                    "text": "4. Cookie Policy Details",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "da5fedc3-845d-46f3-bb4b-8ee74a175887",
+                                    "content": "Our website uses cookies to enhance your browsing experience and for analytics purposes. Cookies are small files placed on your device that help us understand how you use our site, allowing us to improve our services.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "837abb9b-ae3f-42f0-a3f3-dcc0156e1c36",
+                                    "content": "You can choose to disable cookies through your browser settings, but please note that some features of our website may not function properly without them.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "19b4e30d-d516-49a5-9f7f-222fe3a43382",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "2727d9c2-9864-41a5-8b11-f54c2b7fc28f",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "6e3847c5-a4ef-4da7-8c21-da8e32792a39",
+                                    "level": 2,
+                                    "text": "5. Contact for Privacy Questions",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "ef666926-1103-4558-a00e-20b4ecdc2654",
+                                    "content": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "e10202fe-e451-4e8c-8a55-3d8aba253dff",
+                                    "content": "Email: privacy@happydoods.com",
+                                    "classes": "text-lg font-semibold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "b9f5bdf2-bd2f-4465-8620-b9ca8ef9dabe",
+                                    "content": "Address: HappyDoods Farm, 123 Farmstead Lane, Rural Town, ST 54321, USA",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "Our commitment to protecting your privacy.",
+            "lastUpdatedEpoch": 1701200005,
+            "pageType": "WebPageProps"
+        },
+        {
+            "uuid": "6942d971-c62e-4020-867c-449799b94e8d",
+            "title": "Terms of Service",
+            "slug": "/terms-of-service",
+            "summary": "Outline the terms and conditions for using the HappyDoods website and its services. This page clarifies the rules of engagement for users and protects the farm legally.",
+            "content": [
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "de904d28-d24b-4486-bf94-a441389391c0",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "16b501c2-4015-4261-a639-efad593b001c",
+                            "direction": "column",
+                            "align": "center",
+                            "gap": "8",
+                            "classes": "h-full mx-auto max-w-4xl text-center",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "541a613b-13dd-4ccf-bf6c-53f1ec9cdc68",
+                                    "level": 1,
+                                    "text": "Terms of Service for HappyDoods",
+                                    "classes": "text-5xl font-extrabold tracking-tight text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "2785e89b-cdd8-4892-a418-5e240edc5f23",
+                                    "variant": "lead",
+                                    "content": "Welcome to HappyDoods! Please read these Terms of Service carefully before using our website and services.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "0bc63eef-1cc1-47ce-9fe2-d3c4694d1c00",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "1e547d52-fd00-49e2-8e36-a881a058cf8e",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "79a426fc-68f4-4aa5-bdec-662d43fe8399",
+                                    "level": 2,
+                                    "text": "1. Agreement to Terms of Service",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "7f0a06c8-5ead-4f83-968b-cc826cf6c3ea",
+                                    "content": "By accessing and using the HappyDoods website and its services, you agree to be bound by these Terms of Service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "2c3e5c88-2975-4b51-a302-5a20e6fe685b",
+                                    "content": "If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "7ae87f26-c913-4a18-ae2c-a974a4b72d71",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "e13b664a-3901-4821-87de-5b03108d44d8",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "00a9d1a3-26c6-4508-a96d-cce5173b49d0",
+                                    "level": 2,
+                                    "text": "2. User Responsibilities and Conduct",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "dd4ccf9e-3017-4720-b7c3-f0fd5f3790f5",
+                                    "content": "Users are expected to interact with our website and other users respectfully. Any abusive, unlawful, or harmful conduct is strictly prohibited.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "7b7d3e6e-9c53-4373-9695-7ec940fc9861",
+                                    "content": "You agree not to use the website for any purpose that is illegal or prohibited by these Terms. You may not use the website in any manner which could damage, disable, overburden, or impair the website or interfere with any other party's use and enjoyment of the website.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "28e7e64f-d86a-4919-9720-6f53e4949cb9",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "4ccacedc-886f-4d81-84ea-c1d54253dfd5",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "1a8801fc-11d2-4ef7-9dd7-b302fe00d21b",
+                                    "level": 2,
+                                    "text": "3. Intellectual Property Rights",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "859e49e8-81b9-4c91-b64a-cdcf44b7885c",
+                                    "content": "All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of HappyDoods or its content suppliers and protected by international copyright laws.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "54621da0-b0b4-4f3b-9524-3e906cada0cb",
+                                    "content": "You may not modify, publish, transmit, reverse engineer, participate in the transfer or sale, create derivative works, or in any way exploit any of the content, in whole or in part, found on the website.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "762012f4-e4f1-4c0c-8bb2-58b95647d792",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-background text-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "c1560889-b6a8-4881-a453-3fef1b462f9e",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "7f06d7c8-9ca8-4f56-8ddb-adc6c6ae6a8c",
+                                    "level": 2,
+                                    "text": "4. Disclaimers and Limitation of Liability",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "397af2b8-d165-471f-a985-2bc0cf69a89a",
+                                    "content": "The information on this website is provided \"as is.\" HappyDoods makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.",
+                                    "classes": "text-muted-foreground"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "ae5fe2d5-1727-4d74-86f4-77bbd1bab332",
+                                    "content": "In no event shall HappyDoods or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on HappyDoods's website.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "componentType": "SectionProps",
+                    "uuid": "339eac4d-0b34-4f03-813d-fb47330375f3",
+                    "layout": "singleColumnCentered",
+                    "spacing": "xl",
+                    "classes": "py-16 bg-card text-card-foreground",
+                    "content": [
+                        {
+                            "componentType": "FlexProps",
+                            "uuid": "23d47304-9157-421c-a89c-d0f948687cf4",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": "4",
+                            "classes": "mx-auto max-w-4xl",
+                            "content": [
+                                {
+                                    "componentType": "HeadingProps",
+                                    "uuid": "e5d631aa-60c7-4566-9acc-90c6dc6839ed",
+                                    "level": 2,
+                                    "text": "5. Governing Law",
+                                    "classes": "text-3xl font-bold text-primary"
+                                },
+                                {
+                                    "componentType": "TextProps",
+                                    "uuid": "2d6ac333-876b-479a-95a3-0bf93edeb197",
+                                    "content": "These terms and conditions are governed by and construed in accordance with the laws of [Your State/Country] and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.",
+                                    "classes": "text-muted-foreground"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "shortSummary": "Understand the terms and conditions for using our website.",
+            "lastUpdatedEpoch": 1701200006,
+            "pageType": "WebPageProps"
+        }
+    ],
+    "shortSummary": "Welcome to HappyDoods, your source for quality farm-fresh products.",
+    "sidebar": [],
+    "signature": "happy-doods-website",
+    "summary": "Develop a professional website for the HappyDoods chicken farm. The primary goal is to showcase the farm's products, story, and commitment to quality.",
+    "theme": {
+        "light": {
+            "background": "60 48% 95%",
+            "foreground": "25 70% 15%",
+            "card": "60 48% 98%",
+            "card-foreground": "25 70% 15%",
+            "popover": "60 48% 98%",
+            "popover-foreground": "25 70% 15%",
+            "primary": "24 50% 41%",
+            "primary-foreground": "0 0% 98%",
+            "secondary": "81 57% 45%",
+            "secondary-foreground": "0 0% 98%",
+            "muted": "60 48% 90%",
+            "muted-foreground": "25 20% 40%",
+            "accent": "24 50% 50%",
+            "accent-foreground": "25 70% 15%",
+            "destructive": "0 84% 60%",
+            "destructive-foreground": "0 0% 98%",
+            "border": "60 10% 85%",
+            "input": "60 10% 90%",
+            "ring": "24 50% 41%"
+        },
+        "dark": {
+            "background": "25 70% 8%",
+            "foreground": "60 48% 90%",
+            "card": "25 70% 12%",
+            "card-foreground": "60 48% 90%",
+            "popover": "25 70% 12%",
+            "popover-foreground": "60 48% 90%",
+            "primary": "24 50% 65%",
+            "primary-foreground": "25 70% 15%",
+            "secondary": "81 57% 55%",
+            "secondary-foreground": "25 70% 15%",
+            "muted": "25 70% 18%",
+            "muted-foreground": "60 20% 70%",
+            "accent": "24 50% 70%",
+            "accent-foreground": "25 70% 15%",
+            "destructive": "0 62% 35%",
+            "destructive-foreground": "0 0% 98%",
+            "border": "25 70% 25%",
+            "input": "25 70% 20%",
+            "ring": "24 50% 65%"
+        },
+        "fonts": {
+            "heading": {
+                "family": "Lora",
+                "variant": "700",
+                "url": "https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
+            },
+            "body": {
+                "family": "Lato",
+                "variant": "regular",
+                "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+            }
+        },
+        "fontSizes": {
+            "xs": "0.75rem",
+            "sm": "0.875rem",
+            "base": "1rem",
+            "lg": "1.125rem",
+            "xl": "1.25rem",
+            "2xl": "1.5rem",
+            "3xl": "1.875rem",
+            "4xl": "2.25rem",
+            "5xl": "3rem"
+        },
+        "radius": "0.75rem",
+        "spacing": {
+            "x": "2rem",
+            "y": "4rem"
+        },
+        "styles": {
+            "shadow": "0 1px 3px 0 rgb(0 0 0 / 0.1)",
+            "shadowLg": "0 10px 15px -3px rgb(0 0 0 / 0.1)"
+        },
+        "layout": {
+            "containerWidth": "75rem",
+            "contentPadding": "1rem 2rem"
+        },
+        "charts": {
+            "chart-1": "24 50% 41%",
+            "chart-2": "81 57% 35%",
+            "chart-3": "60 60% 70%",
+            "chart-4": "15 70% 30%",
+            "chart-5": "200 20% 50%"
+        }
+    },
+    "transitions": {
+        "enabled": true,
+        "easing": "easeInOut",
+        "respectReducedMotion": true,
+        "timing": "normal",
+        "type": "slideFade"
+    },
+    "uuid": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"
+}

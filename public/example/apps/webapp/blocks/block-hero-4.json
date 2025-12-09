@@ -1,0 +1,126 @@
+{
+  "uuid": "webapp-1",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Flowbite Landing Page",
+  "alias": "flowbite-landing-page",
+  "summary": "Clean two-column hero layout with left content area featuring headline, description, and CTA button paired with right visual area. Simple and effective for agencies and portfolios.",
+  "shortSummary": "Clean two-column hero layout with left content area featuring headline, description, and CTA button paired with right visual area",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "full-width",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page for the application.",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "flex-hero-left",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "heading-hero",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Building digital products & brands."
+                },
+                {
+                  "uuid": "text-hero-desc",
+                  "componentType": "TextProps",
+                  "content": "Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+                },
+                {
+                  "uuid": "newsletter-signup-hero",
+                  "componentType": "ContactInfoBlockProps"
+                },
+                {
+                  "uuid": "markdown-terms-policy",
+                  "componentType": "MarkdownBlockProps",
+                  "content": "Instant signup. No credit card required. [Terms of Service](/) and [Privacy Policy](/).",
+                  "sanitize": true
+                }
+              ]
+            },
+            {
+              "uuid": "image-hero",
+              "componentType": "ImageProps",
+              "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg",
+              "alt": "Hero image showing a person with VR goggles surrounded by app icons.",
+              "height": 400,
+              "asset": {
+                "uuid": "asset-image-hero",
+                "componentType": "ImageAssetProps",
+                "keywords": "hero, mobile, app, vr, icons",
+                "isProcessed": true,
+                "requestedWidth": 600,
+                "requestedHeight": 400
+              }
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page for the application",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

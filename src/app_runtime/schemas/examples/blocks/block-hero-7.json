@@ -1,0 +1,242 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "InvestCo",
+  "alias": "investco",
+  "summary": "Comprehensive hero layout with structured content sections, feature highlights, and multiple content blocks. Includes headline, description, and organized feature presentation. Ideal for software products and detailed service offerings.",
+  "shortSummary": "Comprehensive hero layout with structured content sections, feature highlights, and multiple content blocks",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the hero section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "twoColumnEven",
+          "spacing": "md",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "b6a713e8-5a21-4f81-b5e0-534d58850616",
+                  "justify": "start",
+                  "align": "center",
+                  "gap": "2",
+                  "classes": "mb-4 inline-flex items-center p-1 pr-3 bg-gray-100 rounded-full",
+                  "content": [
+                    {
+                      "componentType": "BadgeProps",
+                      "uuid": "4c1110a1-7922-441f-824f-96a9415c1021",
+                      "content": "New",
+                      "variant": "default",
+                      "classes": "rounded-full"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "9c1a5d62-3c1c-4b3b-8e2b-2a783701a233",
+                      "text": "Flowbite is out! See what's new",
+                      "variant": "link",
+                      "size": "sm",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "c3e74a62-4f1e-4b47-92e1-807e3d8f764a",
+                        "name": "arrow-right",
+                        "size": 16
+                      },
+                      "iconPosition": "right"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                  "level": 1,
+                  "text": "We invest in the world's potential",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-67890abcdef1",
+                  "variant": "lead",
+                  "content": "Here at Flowbite we focus on markets where innovation can unlock long-term value and drive economic growth.",
+                  "classes": "mt-4 max-w-2xl"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "1d2e3f4a-5b6c-7d8e-9f0a-b1c2d3e4f5a6",
+              "justify": "center",
+              "align": "center",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b",
+                  "src": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/search-mockup.png",
+                  "alt": "A collection of dashboard UI components.",
+                  "asset": {
+                    "componentType": "ImageAssetProps",
+                    "uuid": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+                    "keywords": "dashboard, ui, charts, analytics",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 450
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+          "uuid": "3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8",
+          "layout": "singleColumnWide",
+          "spacing": "sm",
+          "content": [
+            {
+              "componentType": "GridProps",
+              "uuid": "4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d",
+              "columns": 3,
+              "gap": "8",
+              "content": [
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e",
+                  "variant": "standard",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f",
+                    "name": "grid3x3",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Customizable Categories"
+                  },
+                  "text": {
+                    "uuid": "5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e-text",
+                    "componentType": "TextProps",
+                    "content": "Host code that you don't want to share with the world in private."
+                  }
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+                  "variant": "standard",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+                    "name": "lock",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Private repos"
+                  },
+                  "text": {
+                    "uuid": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b-text",
+                    "componentType": "TextProps",
+                    "content": "Host code that you don't want to share with the world in private."
+                  }
+                },
+                {
+                  "componentType": "StandardFeatureProps",
+                  "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+                  "variant": "standard",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+                    "name": "chart-bar",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Tracking Saving Rate"
+                  },
+                  "text": {
+                    "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e-text",
+                    "componentType": "TextProps",
+                    "content": "Host code that you don't want to share with the world in private."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the hero section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

@@ -1,0 +1,381 @@
+{
+  "uuid": "app-upgrade-section-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Flowbite Pro Upgrade",
+  "alias": "flowbite-pro-upgrade",
+  "summary": "Upgrade-focused pricing section designed to drive plan conversions. Features benefit highlights, comparison elements, and compelling upgrade messaging. Ideal for freemium models and plan upgrade campaigns.",
+  "shortSummary": "Upgrade-focused pricing section designed to drive plan conversions",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-upgrade-promo-456",
+      "title": "Upgrade to Pro",
+      "slug": "/upgrade",
+      "summary": "Upgrade promotion page for Flowbite Pro.",
+      "content": [
+        {
+          "uuid": "section-main-789",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-main-789",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "grid-container-101",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "8",
+              "classes": "gap-8 lg:grid-cols-2 items-center",
+              "content": [
+                {
+                  "uuid": "flex-left-column-112",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "content": [
+                    {
+                      "uuid": "heading-main-title-123",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Why you should upgrade to Flowbite Pro",
+                      "classes": "text-4xl font-extrabold"
+                    },
+                    {
+                      "uuid": "text-main-subtitle-134",
+                      "componentType": "TextProps",
+                      "content": "Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value.",
+                      "classes": "text-gray-500"
+                    },
+                    {
+                      "uuid": "feature-industry-analysis-145",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-industry",
+                        "componentType": "IconProps",
+                        "name": "chart-area",
+                        "size": 24
+                      },
+                      "title": {
+                        "uuid": "feature-industry-analysis-145-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Industry analysis"
+                      },
+                      "text": {
+                        "uuid": "feature-industry-analysis-145-text",
+                        "componentType": "TextProps",
+                        "content": "Benchmark your company against the industry to inform your growth strategy and analyze market trends."
+                      }
+                    },
+                    {
+                      "uuid": "feature-company-analysis-156",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-company",
+                        "componentType": "IconProps",
+                        "name": "building",
+                        "size": 24
+                      },
+                      "title": {
+                        "uuid": "feature-company-analysis-156-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Company analysis"
+                      },
+                      "text": {
+                        "uuid": "feature-company-analysis-156-text",
+                        "componentType": "TextProps",
+                        "content": "Uncover competitor digital strategies and deep dive into any company's digital footprint."
+                      }
+                    },
+                    {
+                      "uuid": "feature-app-analysis-167",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-app",
+                        "componentType": "IconProps",
+                        "name": "smartphone",
+                        "size": 24
+                      },
+                      "title": {
+                        "uuid": "feature-app-analysis-167-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "App analysis"
+                      },
+                      "text": {
+                        "uuid": "feature-app-analysis-167-text",
+                        "componentType": "TextProps",
+                        "content": "Analyze app industry trends and discover audience interests to learn which apps are gaining traction in the app ecosystem."
+                      }
+                    },
+                    {
+                      "uuid": "feature-audience-analysis-178",
+                      "componentType": "StandardFeatureProps",
+                      "variant": "standard",
+                      "layout": "iconLeft",
+                      "icon": {
+                        "uuid": "icon-audience",
+                        "componentType": "IconProps",
+                        "name": "users",
+                        "size": 24
+                      },
+                      "title": {
+                        "uuid": "feature-audience-analysis-178-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Audience analysis"
+                      },
+                      "text": {
+                        "uuid": "feature-audience-analysis-178-text",
+                        "componentType": "TextProps",
+                        "content": "Benchmark your company against the industry to inform your growth strategy and analyze market trends."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-right-card-container-189",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "5",
+                  "classes": "p-6 bg-gray-50 rounded-lg border border-gray-200",
+                  "content": [
+                    {
+                      "uuid": "grid-card-header-200",
+                      "componentType": "GridProps",
+                      "columns": 2,
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "flex-card-title-201",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "content": [
+                            {
+                              "uuid": "heading-pro-plan-202",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Pro Plan",
+                              "classes": "font-semibold"
+                            },
+                            {
+                              "uuid": "text-pro-plan-desc-203",
+                              "componentType": "TextProps",
+                              "content": "Best for large scale uses and extended redistribution rights.",
+                              "classes": "text-sm text-gray-500"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "flex-card-price-204",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "align": "end",
+                          "content": [
+                            {
+                              "uuid": "heading-price-205",
+                              "componentType": "HeadingProps",
+                              "level": 2,
+                              "text": "$599",
+                              "classes": "text-4xl font-bold"
+                            },
+                            {
+                              "uuid": "text-price-period-206",
+                              "componentType": "TextProps",
+                              "content": "per month",
+                              "classes": "text-gray-500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "btn-upgrade-now-190",
+                      "componentType": "ButtonProps",
+                      "text": "Upgrade now",
+                      "variant": "default",
+                      "size": "lg",
+                      "classes": "w-full bg-blue-600 hover:bg-blue-700 text-white",
+                      "onClick": "handleUpgrade",
+                      "disabled": false,
+                      "type": "button"
+                    },
+                    {
+                      "uuid": "grid-pro-features-201",
+                      "componentType": "GridProps",
+                      "columns": 2,
+                      "gap": "4",
+                      "classes": "pt-4",
+                      "content": [
+                        {
+                          "uuid": "pro-feat-01",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-01-text",
+                            "componentType": "TextProps",
+                            "content": "A/B Testing"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-03",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-03-text",
+                            "componentType": "TextProps",
+                            "content": "24/7 Email & Chat Support"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-05",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-05-text",
+                            "componentType": "TextProps",
+                            "content": "Custom Branding"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-07",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-07-text",
+                            "componentType": "TextProps",
+                            "content": "Creative Assistant"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-09",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-09-text",
+                            "componentType": "TextProps",
+                            "content": "Website Builder"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-02",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-02-text",
+                            "componentType": "TextProps",
+                            "content": "Advanced Segmentation"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-04",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-04-text",
+                            "componentType": "TextProps",
+                            "content": "Multivariate Testing"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-06",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-06-text",
+                            "componentType": "TextProps",
+                            "content": "Comparative Reporting"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-08",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-08-text",
+                            "componentType": "TextProps",
+                            "content": "Custom Templates"
+                          },
+                          "checked": true
+                        },
+                        {
+                          "uuid": "pro-feat-10",
+                          "componentType": "ChecklistItemProps",
+                          "text": {
+                            "uuid": "pro-feat-10-text",
+                            "componentType": "TextProps",
+                            "content": "Dynamic Content"
+                          },
+                          "checked": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Upgrade promotion page for Flowbite Pro",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

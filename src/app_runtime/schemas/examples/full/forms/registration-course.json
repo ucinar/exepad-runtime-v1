@@ -1,0 +1,716 @@
+{
+  "uuid": "app-form-reg-course-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Course Registration Form",
+  "alias": "course-registration-form",
+  "summary": "A comprehensive course registration form with student information, course selection, experience level, learning objectives, and payment details. Perfect for educational institutions, training providers, and online learning platforms to streamline student enrollment.",
+  "shortSummary": "A course registration form with student details and enrollment preferences",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#1e293b",
+      "primary": "#4338ca",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f8fafc",
+      "muted-foreground": "#64748b",
+      "accent": "#e0e7ff",
+      "accent-foreground": "#3730a3",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#6366f1"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f1f5f9",
+      "primary": "#818cf8",
+      "primary-foreground": "#1e1b4b",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f1f5f9",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#312e81",
+      "accent-foreground": "#e0e7ff",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#334155",
+      "input": "#334155",
+      "ring": "#818cf8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b sticky top-0 bg-background/95 backdrop-blur-sm z-50",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "LearnHub Academy",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "LearnHub Academy"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Courses",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/courses",
+                "text": "Courses"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Instructors",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/instructors",
+                "text": "Instructors"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Register",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/register",
+                "text": "Register"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/about",
+                "text": "About"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-container",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-grid",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "w-full max-w-6xl",
+              "content": [
+                {
+                  "uuid": "footer-about",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-logo",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "LearnHub Academy"
+                    },
+                    {
+                      "uuid": "footer-tagline",
+                      "componentType": "TextProps",
+                      "variant": "small",
+                      "content": "Empowering learners worldwide with quality education.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-links",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-links-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Quick Links"
+                    },
+                    {
+                      "uuid": "footer-link-1",
+                      "componentType": "LinkProps",
+                      "href": "/courses",
+                      "text": "Browse Courses",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-2",
+                      "componentType": "LinkProps",
+                      "href": "/faq",
+                      "text": "FAQ",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-contact",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "footer-contact-heading",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Contact"
+                    },
+                    {
+                      "uuid": "footer-email",
+                      "componentType": "LinkProps",
+                      "href": "mailto:info@learnhub.com",
+                      "text": "info@learnhub.com",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-registration",
+      "title": "Course Registration",
+      "slug": "/",
+      "summary": "Register for our professional courses and start your learning journey today.",
+      "shortSummary": "Register for courses and begin learning",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "lg",
+          "classes": "bg-gradient-to-br from-primary/10 via-accent/10 to-background",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "graduation-cap",
+                      "size": 56,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Start Your Learning Journey"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Join thousands of students advancing their careers with our expert-led courses. Register now and get instant access to world-class learning materials.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "registration-form",
+                  "componentType": "FormProps",
+                  "title": "Course Enrollment",
+                  "description": "Complete the form below to register for your selected course.",
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "classes": "max-w-4xl",
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Registration successful! Check your email for course access details and payment instructions.",
+                    "errorMessage": "Registration failed. Please review your information or contact support@learnhub.com",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email",
+                    "onSuccessAction": {
+                      "type": "clearForm"
+                    }
+                  },
+                  "content": [
+                    {
+                      "uuid": "fieldset-personal",
+                      "componentType": "FieldSetProps",
+                      "legend": "Personal Information",
+                      "content": [
+                        {
+                          "uuid": "field-first-name",
+                          "componentType": "TextFieldProps",
+                          "name": "firstName",
+                          "label": "First Name",
+                          "placeholder": "John",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-last-name",
+                          "componentType": "TextFieldProps",
+                          "name": "lastName",
+                          "label": "Last Name",
+                          "placeholder": "Doe",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john.doe@example.com",
+                          "required": true,
+                          "helperText": "Course materials and login credentials will be sent here"
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 123-4567",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-date-of-birth",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "dateOfBirth",
+                          "label": "Date of Birth",
+                          "pickerType": "date",
+                          "helperText": "Required for certification"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-course",
+                      "componentType": "FieldSetProps",
+                      "legend": "Course Selection",
+                      "content": [
+                        {
+                          "uuid": "field-course",
+                          "componentType": "SelectFieldProps",
+                          "name": "courseSelection",
+                          "label": "Select Course",
+                          "placeholder": "Choose your course",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Web Development Fundamentals - $299",
+                              "value": "web-dev-fundamentals"
+                            },
+                            {
+                              "label": "Advanced JavaScript & React - $399",
+                              "value": "advanced-js-react"
+                            },
+                            {
+                              "label": "Python for Data Science - $449",
+                              "value": "python-data-science"
+                            },
+                            {
+                              "label": "Machine Learning Bootcamp - $599",
+                              "value": "ml-bootcamp"
+                            },
+                            {
+                              "label": "Digital Marketing Mastery - $349",
+                              "value": "digital-marketing"
+                            },
+                            {
+                              "label": "UX/UI Design Professional - $379",
+                              "value": "ux-ui-design"
+                            },
+                            {
+                              "label": "Cloud Architecture (AWS) - $499",
+                              "value": "cloud-aws"
+                            },
+                            {
+                              "label": "Cybersecurity Essentials - $429",
+                              "value": "cybersecurity"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-start-date",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "preferredStartDate",
+                          "label": "Preferred Start Date",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Next Available Session (Jan 15, 2025)",
+                              "value": "2025-01-15"
+                            },
+                            {
+                              "label": "February Session (Feb 12, 2025)",
+                              "value": "2025-02-12"
+                            },
+                            {
+                              "label": "March Session (Mar 10, 2025)",
+                              "value": "2025-03-10"
+                            },
+                            {
+                              "label": "Self-Paced (Start Anytime)",
+                              "value": "self-paced"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-learning-mode",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "learningMode",
+                          "label": "Learning Format",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Online Live Classes",
+                              "value": "online-live"
+                            },
+                            {
+                              "label": "Self-Paced Online",
+                              "value": "self-paced-online"
+                            },
+                            {
+                              "label": "Hybrid (Online + In-Person)",
+                              "value": "hybrid"
+                            },
+                            {
+                              "label": "In-Person (If available)",
+                              "value": "in-person"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-experience",
+                      "componentType": "FieldSetProps",
+                      "legend": "Background & Experience",
+                      "content": [
+                        {
+                          "uuid": "field-experience-level",
+                          "componentType": "SelectFieldProps",
+                          "name": "experienceLevel",
+                          "label": "Current Experience Level",
+                          "placeholder": "Select your level",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Complete Beginner",
+                              "value": "beginner"
+                            },
+                            {
+                              "label": "Some Knowledge/Experience",
+                              "value": "intermediate"
+                            },
+                            {
+                              "label": "Professional/Advanced",
+                              "value": "advanced"
+                            },
+                            {
+                              "label": "Expert (Seeking Specialization)",
+                              "value": "expert"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-education",
+                          "componentType": "SelectFieldProps",
+                          "name": "educationLevel",
+                          "label": "Highest Education Level",
+                          "placeholder": "Select education level",
+                          "options": [
+                            {
+                              "label": "High School",
+                              "value": "high-school"
+                            },
+                            {
+                              "label": "Some College",
+                              "value": "some-college"
+                            },
+                            {
+                              "label": "Associate Degree",
+                              "value": "associate"
+                            },
+                            {
+                              "label": "Bachelor's Degree",
+                              "value": "bachelor"
+                            },
+                            {
+                              "label": "Master's Degree",
+                              "value": "master"
+                            },
+                            {
+                              "label": "Doctorate",
+                              "value": "doctorate"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-current-occupation",
+                          "componentType": "TextFieldProps",
+                          "name": "occupation",
+                          "label": "Current Occupation/Role",
+                          "placeholder": "e.g., Software Developer, Student, Career Changer"
+                        },
+                        {
+                          "uuid": "field-learning-goals",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "learningGoals",
+                          "label": "What are your learning goals?",
+                          "helperText": "Select all that apply",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Career Change",
+                              "value": "career-change"
+                            },
+                            {
+                              "label": "Skill Enhancement",
+                              "value": "skill-enhancement"
+                            },
+                            {
+                              "label": "Career Advancement",
+                              "value": "career-advancement"
+                            },
+                            {
+                              "label": "Professional Certification",
+                              "value": "certification"
+                            },
+                            {
+                              "label": "Start a Business",
+                              "value": "entrepreneurship"
+                            },
+                            {
+                              "label": "Personal Development",
+                              "value": "personal-development"
+                            },
+                            {
+                              "label": "Academic Requirements",
+                              "value": "academic"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-additional-info",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "additionalInfo",
+                          "label": "Tell us more about your goals",
+                          "placeholder": "What do you hope to achieve from this course? Any specific projects or career goals?",
+                          "rows": 4,
+                          "helperText": "This helps us tailor the learning experience to your needs"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-payment",
+                      "componentType": "FieldSetProps",
+                      "legend": "Payment Information",
+                      "content": [
+                        {
+                          "uuid": "field-payment-method",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "paymentMethod",
+                          "label": "Payment Method",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Full Payment (Save 10%)",
+                              "value": "full"
+                            },
+                            {
+                              "label": "Installment Plan (3 months)",
+                              "value": "installment-3"
+                            },
+                            {
+                              "label": "Installment Plan (6 months)",
+                              "value": "installment-6"
+                            },
+                            {
+                              "label": "Company/Employer Sponsored",
+                              "value": "employer-sponsored"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-company-name",
+                          "componentType": "TextFieldProps",
+                          "name": "companyName",
+                          "label": "Company Name (if employer sponsored)",
+                          "placeholder": "ABC Corporation"
+                        },
+                        {
+                          "uuid": "field-discount-code",
+                          "componentType": "TextFieldProps",
+                          "name": "discountCode",
+                          "label": "Discount or Referral Code",
+                          "placeholder": "Enter code if you have one",
+                          "helperText": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-emergency",
+                      "componentType": "FieldSetProps",
+                      "legend": "Emergency Contact (Optional)",
+                      "content": [
+                        {
+                          "uuid": "field-emergency-name",
+                          "componentType": "TextFieldProps",
+                          "name": "emergencyContactName",
+                          "label": "Emergency Contact Name",
+                          "placeholder": "Jane Doe"
+                        },
+                        {
+                          "uuid": "field-emergency-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "emergencyContactPhone",
+                          "label": "Emergency Contact Phone",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 987-6543"
+                        },
+                        {
+                          "uuid": "field-emergency-relation",
+                          "componentType": "TextFieldProps",
+                          "name": "emergencyContactRelation",
+                          "label": "Relationship",
+                          "placeholder": "e.g., Spouse, Parent, Sibling"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-terms",
+                      "componentType": "CheckboxFieldProps",
+                      "name": "agreeTerms",
+                      "label": "I agree to the Terms of Service and Privacy Policy",
+                      "required": true
+                    },
+                    {
+                      "uuid": "field-newsletter",
+                      "componentType": "CheckboxFieldProps",
+                      "name": "subscribeNewsletter",
+                      "label": "Send me course updates, study tips, and exclusive learning resources"
+                    },
+                    {
+                      "uuid": "field-hidden-source",
+                      "componentType": "HiddenFieldProps",
+                      "name": "registrationSource",
+                      "value": "course-registration-form"
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "actionType": "reset",
+                      "text": "Clear Form",
+                      "variant": "ghost",
+                      "uuid": "form-action-reset",
+                      "componentType": "ButtonProps"
+                    },
+                    {
+                      "actionType": "submit",
+                      "text": "Complete Registration",
+                      "variant": "default",
+                      "icon": {
+                        "uuid": "submit-icon",
+                        "componentType": "IconProps",
+                        "name": "check-circle",
+                        "size": 16
+                      },
+                      "classes": "min-w-[200px]",
+                      "uuid": "form-action-submit",
+                      "componentType": "ButtonProps"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

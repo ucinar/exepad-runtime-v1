@@ -1,0 +1,118 @@
+{
+  "uuid": "app-card-link-example",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Clickable Card Example",
+  "alias": "card-link-example",
+  "summary": "Demonstration of an interactive, clickable card component with link functionality.",
+  "shortSummary": "Interactive clickable card example",
+  "lastUpdatedEpoch": 1731326400,
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-card-link",
+      "title": "Clickable Card Example",
+      "slug": "/",
+      "summary": "Demonstration of an interactive card with hover effects and navigation",
+      "shortSummary": "Clickable card demo",
+      "lastUpdatedEpoch": 1731326400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-clickable-card",
+          "componentType": "SectionProps",
+          "sectionSlug": "clickable-card",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "card-link-example",
+              "componentType": "CardProps",
+              "variant": "outlined",
+              "size": "md",
+              "elevation": 1,
+              "radius": "lg",
+              "interactive": true,
+              "classes": "max-w-2xl mx-auto",
+              "link": {
+                "componentType": "LinkProps",
+                "href": "/learn-more",
+                "text": "Learn More",
+                "uuid": "card-link"
+              },
+              "header": {
+                "componentType": "CardHeaderProps",
+                "uuid": "link-card-header",
+                "title": {
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Clickable Card",
+                  "uuid": "link-card-title"
+                },
+                "description": {
+                  "componentType": "TextProps",
+                  "content": "Click anywhere on this card to navigate",
+                  "uuid": "link-card-desc"
+                }
+              },
+              "content": [
+                {
+                  "componentType": "TextProps",
+                  "content": "This entire card is a clickable link. It has interactive hover effects and works great for navigation cards, product cards, or blog post previews.",
+                  "uuid": "link-card-content"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

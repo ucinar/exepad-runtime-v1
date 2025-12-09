@@ -1,0 +1,154 @@
+{
+  "uuid": "6f477bb8-8511-450e-bd55-1c18139a2706",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Header Block 9",
+  "alias": "header-block-9",
+  "summary": "Dynamic left-aligned logo navigation with 3 links (Home, Products, About), 1 Resources dropdown, and 1 primary CTA button (Get Started). Menu items SCALE UP slightly on hover for playful interaction. Navbar remains STICKY at top when scrolling. Ideal for: gaming sites, creative portfolios, playful brands, youth-oriented products.",
+  "shortSummary": "Left-logo nav: 3 links + 1 dropdown + 1 CTA. Scale-up hover effects. Sticky scroll.",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "fbe5190e-9a15-4601-a5a2-1bd914940469",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": true,
+      "logo": {
+        "uuid": "d20f3881-d0a9-4fc7-b9fb-d392a94205b2",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Brand"
+      },
+      "content": [
+        {
+          "uuid": "e3b05be6-5e35-43eb-8df2-ad76bb082777",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "74918035-d4e6-4a85-b078-eb964c4041b3",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "ab9eb0be-6898-4416-9072-706ab022e930",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Products",
+          "href": {
+            "uuid": "e9788995-2782-4e89-8e91-7328bc8f5236",
+            "componentType": "LinkProps",
+            "href": "/products",
+            "text": "Products"
+          }
+        },
+        {
+          "uuid": "9f1f988c-6715-4ed9-ba55-204ea3149887",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "0e752c42-0bf1-441e-9d36-e66942e8020f",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "uuid": "df9fdb90-1b52-4628-8746-71d72093440b",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Resources",
+          "dropdown": {
+            "uuid": "d76f8a86-465e-4cdf-b696-db7e26339812",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "78c4fa2f-cee7-4eca-9d8f-83691ed5d62d",
+                "componentType": "DropdownLink",
+                "title": "Documentation",
+                "href": "/docs"
+              },
+              {
+                "uuid": "b1d790fc-96d0-4c07-ab1e-e872e1bd48cc",
+                "componentType": "DropdownLink",
+                "title": "Support",
+                "href": "/support"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "473253a3-3a16-4508-b7b7-f78e37beb6de",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "c24b4a44-7302-42bc-b5f9-0c8e423f8921",
+            "componentType": "ButtonProps",
+            "text": "Get Started",
+            "variant": "default",
+            "link": {
+              "uuid": "701d6816-303c-404e-92ba-d4c44de2da22",
+              "componentType": "LinkProps",
+              "href": "/signup",
+              "text": "Get Started"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": []
+}

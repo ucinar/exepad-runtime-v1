@@ -1,0 +1,901 @@
+{
+  "uuid": "app-quiz-form-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Interactive Learning Quiz & Exam System",
+  "alias": "interactive-learning-quiz-and-exam-system",
+  "summary": "A comprehensive educational quiz and exam platform with timed assessments, multiple question types, instant feedback, and scoring. Perfect for online courses, certification exams, and interactive learning experiences.",
+  "shortSummary": "A comprehensive educational quiz and exam platform with timed assessments, multiple question types, instant feedback, and scoring",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "LearnHub Academy",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "LearnHub Academy"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Dashboard",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Dashboard"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Courses",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/courses",
+                "text": "Courses"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "My Progress",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/progress",
+                "text": "My Progress"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Certificates",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/certificates",
+                "text": "Certificates"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 LearnHub Academy. Empowering learners worldwide.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-quiz",
+      "title": "JavaScript Fundamentals Quiz",
+      "slug": "/",
+      "summary": "Test your knowledge of JavaScript basics with this timed assessment.",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "lg",
+          "classes": "bg-gradient-to-b from-purple-50 to-background dark:from-purple-950/20",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-badge",
+                      "componentType": "BadgeProps",
+                      "content": "Intermediate Level",
+                      "variant": "default"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "JavaScript Fundamentals Quiz"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Test your understanding of JavaScript core concepts including variables, functions, arrays, and objects. You have 15 minutes to complete 10 questions.",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "hero-stats",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "4",
+                      "classes": "mt-4 max-w-2xl mx-auto",
+                      "content": [
+                        {
+                          "uuid": "stat-questions",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "1",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "stat-questions-icon",
+                              "componentType": "IconProps",
+                              "name": "list-checks",
+                              "size": 24,
+                              "classes": "text-primary mx-auto"
+                            },
+                            {
+                              "uuid": "stat-questions-value",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "10",
+                              "classes": "text-center"
+                            },
+                            {
+                              "uuid": "stat-questions-label",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Questions",
+                              "classes": "text-muted-foreground text-center"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "stat-time",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "1",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "stat-time-icon",
+                              "componentType": "IconProps",
+                              "name": "clock",
+                              "size": 24,
+                              "classes": "text-primary mx-auto"
+                            },
+                            {
+                              "uuid": "stat-time-value",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "15",
+                              "classes": "text-center"
+                            },
+                            {
+                              "uuid": "stat-time-label",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Minutes",
+                              "classes": "text-muted-foreground text-center"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "stat-points",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "1",
+                          "classes": "p-4 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "stat-points-icon",
+                              "componentType": "IconProps",
+                              "name": "award",
+                              "size": 24,
+                              "classes": "text-primary mx-auto"
+                            },
+                            {
+                              "uuid": "stat-points-value",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "100",
+                              "classes": "text-center"
+                            },
+                            {
+                              "uuid": "stat-points-label",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Total Points",
+                              "classes": "text-muted-foreground text-center"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-instructions",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-instructions",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "instructions-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "instructions-card",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "w-full max-w-3xl p-6 border rounded-lg bg-blue-50 dark:bg-blue-950/20",
+                  "content": [
+                    {
+                      "uuid": "instructions-heading",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "uuid": "instructions-icon",
+                          "componentType": "IconProps",
+                          "name": "info",
+                          "size": 20,
+                          "classes": "text-blue-600"
+                        },
+                        {
+                          "uuid": "instructions-title",
+                          "componentType": "HeadingProps",
+                          "level": 3,
+                          "text": "Quiz Instructions"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "instructions-list",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "uuid": "instruction-1",
+                          "componentType": "TextProps",
+                          "variant": "small",
+                          "content": "• Read each question carefully before answering"
+                        },
+                        {
+                          "uuid": "instruction-2",
+                          "componentType": "TextProps",
+                          "variant": "small",
+                          "content": "• You must score 70% or higher to pass"
+                        },
+                        {
+                          "uuid": "instruction-3",
+                          "componentType": "TextProps",
+                          "variant": "small",
+                          "content": "• The quiz will auto-submit when time runs out"
+                        },
+                        {
+                          "uuid": "instruction-4",
+                          "componentType": "TextProps",
+                          "variant": "small",
+                          "content": "• You'll receive immediate feedback on your answers"
+                        },
+                        {
+                          "uuid": "instruction-5",
+                          "componentType": "TextProps",
+                          "variant": "small",
+                          "content": "• Navigate between questions using Next/Previous buttons"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-quiz",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-quiz",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "quiz-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "quiz-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "classes": "w-full max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "javascript-quiz",
+                      "componentType": "QuizFormProps",
+                      "title": "JavaScript Fundamentals Assessment",
+                      "description": "Answer all questions to the best of your ability. Good luck!",
+                      "layout": "stepped",
+                      "passingScore": 70,
+                      "showImmediateFeedback": true,
+                      "timeLimitSeconds": 900,
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Quiz completed! Check your results above.",
+                        "errorMessage": "Failed to submit quiz results. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email"
+                      },
+                      "content": [],
+                      "actions": [
+                        {
+                          "actionType": "prevStep",
+                          "text": "Previous",
+                          "variant": "outline",
+                          "uuid": "javascript-quiz-action-prev-step-0",
+                          "componentType": "ButtonProps"
+                        },
+                        {
+                          "actionType": "nextStep",
+                          "text": "Next Question",
+                          "variant": "default",
+                          "uuid": "javascript-quiz-action-next-step-1",
+                          "componentType": "ButtonProps"
+                        },
+                        {
+                          "actionType": "submit",
+                          "text": "Submit Quiz",
+                          "variant": "default",
+                          "uuid": "javascript-quiz-action-submit-2",
+                          "componentType": "ButtonProps"
+                        }
+                      ],
+                      "steps": [
+                        {
+                          "title": "Question 1: Variable Declaration",
+                          "content": [
+                            {
+                              "uuid": "quiz-q1",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question1",
+                              "label": "Which keyword is used to declare a block-scoped variable in JavaScript?",
+                              "questionType": "multipleChoice",
+                              "points": 10,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "let",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! 'let' declares block-scoped variables that can be reassigned."
+                                },
+                                {
+                                  "text": "var",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. 'var' is function-scoped, not block-scoped."
+                                },
+                                {
+                                  "text": "const",
+                                  "isCorrect": false,
+                                  "feedback": "Close! 'const' is block-scoped but cannot be reassigned."
+                                },
+                                {
+                                  "text": "function",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. 'function' is used to declare functions, not variables."
+                                }
+                              ],
+                              "explanation": "The 'let' keyword declares block-scoped variables that can be reassigned. It was introduced in ES6 as an improvement over 'var'."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 2: Data Types",
+                          "content": [
+                            {
+                              "uuid": "quiz-q2",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question2",
+                              "label": "JavaScript is a dynamically-typed language.",
+                              "questionType": "trueFalse",
+                              "points": 5,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "True",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! JavaScript determines variable types at runtime."
+                                },
+                                {
+                                  "text": "False",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. JavaScript is indeed dynamically-typed."
+                                }
+                              ],
+                              "explanation": "JavaScript is dynamically-typed, meaning variables can hold values of any type and types are determined at runtime."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 3: Array Methods",
+                          "content": [
+                            {
+                              "uuid": "quiz-q3",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question3",
+                              "label": "Which of the following are valid JavaScript array methods? (Select all that apply)",
+                              "questionType": "checkboxes",
+                              "points": 15,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "map()",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! map() creates a new array with the results of calling a function."
+                                },
+                                {
+                                  "text": "filter()",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! filter() creates a new array with elements that pass a test."
+                                },
+                                {
+                                  "text": "reduce()",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! reduce() executes a reducer function on each element."
+                                },
+                                {
+                                  "text": "transform()",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. transform() is not a standard JavaScript array method."
+                                }
+                              ],
+                              "explanation": "map(), filter(), and reduce() are fundamental array methods in JavaScript for functional programming."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 4: Functions",
+                          "content": [
+                            {
+                              "uuid": "quiz-q4",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question4",
+                              "label": "What is the output of: console.log(typeof function(){})?",
+                              "questionType": "multipleChoice",
+                              "points": 10,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "\"function\"",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! Functions have their own type in JavaScript."
+                                },
+                                {
+                                  "text": "\"object\"",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. While functions are objects, typeof returns 'function'."
+                                },
+                                {
+                                  "text": "\"undefined\"",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. The function itself is defined."
+                                },
+                                {
+                                  "text": "\"method\"",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. There is no 'method' type in JavaScript."
+                                }
+                              ],
+                              "explanation": "The typeof operator returns 'function' for functions, even though functions are technically objects in JavaScript."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 5: Scope",
+                          "content": [
+                            {
+                              "uuid": "quiz-q5",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question5",
+                              "label": "Variables declared with 'var' are hoisted to the top of their scope.",
+                              "questionType": "trueFalse",
+                              "points": 5,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "True",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! 'var' declarations are hoisted to the top of their function scope."
+                                },
+                                {
+                                  "text": "False",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. 'var' declarations are indeed hoisted."
+                                }
+                              ],
+                              "explanation": "Hoisting moves variable declarations to the top of their scope during the compilation phase, though the assignment stays in place."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 6: Objects",
+                          "content": [
+                            {
+                              "uuid": "quiz-q6",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question6",
+                              "label": "Which of the following can be used to access object properties? (Select all that apply)",
+                              "questionType": "checkboxes",
+                              "points": 10,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "Dot notation (obj.property)",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! Dot notation is the most common way."
+                                },
+                                {
+                                  "text": "Bracket notation (obj['property'])",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! Bracket notation allows dynamic property access."
+                                },
+                                {
+                                  "text": "Arrow notation (obj->property)",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. Arrow notation is not valid in JavaScript."
+                                },
+                                {
+                                  "text": "Object.get(obj, 'property')",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. This is not a standard JavaScript method."
+                                }
+                              ],
+                              "explanation": "JavaScript objects can be accessed using both dot notation and bracket notation, each with its own use cases."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 7: Comparison",
+                          "content": [
+                            {
+                              "uuid": "quiz-q7",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question7",
+                              "label": "What is the difference between == and === in JavaScript?",
+                              "questionType": "multipleChoice",
+                              "points": 10,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "=== checks for both value and type equality",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! === is the strict equality operator."
+                                },
+                                {
+                                  "text": "They are exactly the same",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. They behave differently."
+                                },
+                                {
+                                  "text": "== is faster than ===",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. === is actually faster as it doesn't need type coercion."
+                                },
+                                {
+                                  "text": "=== only works with numbers",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. === works with all data types."
+                                }
+                              ],
+                              "explanation": "The === operator checks for strict equality (both value and type), while == performs type coercion before comparison."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 8: Asynchronous Code",
+                          "content": [
+                            {
+                              "uuid": "quiz-q8",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question8",
+                              "label": "Promises in JavaScript can be in one of three states. Which are they? (Select all that apply)",
+                              "questionType": "checkboxes",
+                              "points": 15,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "Pending",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! Initial state, neither fulfilled nor rejected."
+                                },
+                                {
+                                  "text": "Fulfilled",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! Operation completed successfully."
+                                },
+                                {
+                                  "text": "Rejected",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! Operation failed."
+                                },
+                                {
+                                  "text": "Cancelled",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. Promises don't have a 'cancelled' state."
+                                }
+                              ],
+                              "explanation": "Promises have three states: pending (initial), fulfilled (successful), and rejected (failed)."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 9: ES6 Features",
+                          "content": [
+                            {
+                              "uuid": "quiz-q9",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question9",
+                              "label": "The spread operator (...) can only be used with arrays.",
+                              "questionType": "trueFalse",
+                              "points": 10,
+                              "required": true,
+                              "options": [
+                                {
+                                  "text": "True",
+                                  "isCorrect": false,
+                                  "feedback": "Incorrect. The spread operator works with objects too."
+                                },
+                                {
+                                  "text": "False",
+                                  "isCorrect": true,
+                                  "feedback": "Correct! The spread operator works with both arrays and objects."
+                                }
+                              ],
+                              "explanation": "The spread operator (...) can be used with both arrays and objects to spread their elements/properties."
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Question 10: Coding Challenge",
+                          "content": [
+                            {
+                              "uuid": "quiz-q10",
+                              "componentType": "QuizQuestionFieldProps",
+                              "name": "question10",
+                              "label": "Write a function name that would reverse a string in JavaScript. (One word answer)",
+                              "questionType": "shortAnswer",
+                              "points": 10,
+                              "required": true,
+                              "explanation": "Common function names include 'reverseString', 'reverse', 'stringReverse', etc. The important concept is understanding string manipulation methods like split(), reverse(), and join()."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-tips",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-tips",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "tips-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "tips-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-5xl",
+                  "content": [
+                    {
+                      "uuid": "tips-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Study Tips",
+                      "classes": "text-center"
+                    },
+                    {
+                      "uuid": "tips-grid",
+                      "componentType": "GridProps",
+                      "columns": 3,
+                      "gap": "6",
+                      "content": [
+                        {
+                          "uuid": "tip-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "tip-1-icon",
+                              "componentType": "IconProps",
+                              "name": "book-open",
+                              "size": 32,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "tip-1-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Practice Regularly"
+                            },
+                            {
+                              "uuid": "tip-1-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Code every day to reinforce concepts and build muscle memory."
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "tip-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "tip-2-icon",
+                              "componentType": "IconProps",
+                              "name": "code",
+                              "size": 32,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "tip-2-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Build Projects"
+                            },
+                            {
+                              "uuid": "tip-2-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Apply what you learn by building real-world applications."
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "tip-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6 bg-background rounded-lg border",
+                          "content": [
+                            {
+                              "uuid": "tip-3-icon",
+                              "componentType": "IconProps",
+                              "name": "users",
+                              "size": 32,
+                              "classes": "text-primary"
+                            },
+                            {
+                              "uuid": "tip-3-title",
+                              "componentType": "HeadingProps",
+                              "level": 4,
+                              "text": "Join Community"
+                            },
+                            {
+                              "uuid": "tip-3-desc",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Learn from others and share your knowledge with peers."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Test your knowledge of JavaScript basics with this timed assessment",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

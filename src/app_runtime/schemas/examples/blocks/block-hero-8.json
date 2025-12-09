@@ -1,0 +1,225 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "InvestCo",
+  "alias": "investco",
+  "summary": "Immersive hero layout designed for experiential businesses. Features compelling visual storytelling with headline, description, and engaging CTA elements. Perfect for travel, hospitality, and experience-based services.",
+  "shortSummary": "Immersive hero layout designed for experiential businesses",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the hero section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "singleColumnCentered",
+          "spacing": "md",
+          "classes": "text-center",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                  "level": 1,
+                  "text": "Your Dream Vacation",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-67890abcdef1",
+                  "variant": "lead",
+                  "content": "Here at Flowbite we compare a wide range of destinations, flights and hotels to conjure up cheap holidays for you to enjoy, time and time again.",
+                  "classes": "mt-4 max-w-3xl mx-auto"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "c3d4e5f6-a7b8-9012-3456-7890abcdef12",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "d4e5f6a7-b8c9-0123-4567-890abcdef123",
+                      "text": "Discover locations",
+                      "variant": "default",
+                      "size": "lg"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "f6a7b8c9-d0e1-2345-6789-0abcdef12345",
+                      "text": "Start a trip request",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "a7b8c9d0-e1f2-3456-7890-bcdef1234567",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "b8c9d0e1-f2a3-4567-8901-cdef12345678",
+                  "direction": "row",
+                  "align": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "c9d0e1f2-a3b4-5678-9012-def123456789",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "componentType": "AvatarProps",
+                          "uuid": "d0e1f2a3-b4c5-6789-0123-ef1234567890",
+                          "name": "User 1",
+                          "size": 32
+                        },
+                        {
+                          "componentType": "AvatarProps",
+                          "uuid": "e1f2a3b4-c5d6-7890-1234-f12345678901",
+                          "name": "User 2",
+                          "size": 32,
+                          "classes": "-ml-4"
+                        },
+                        {
+                          "componentType": "AvatarProps",
+                          "uuid": "f2a3b4c5-d6e7-8901-2345-123456789012",
+                          "name": "User 3",
+                          "size": 32,
+                          "classes": "-ml-4"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "a3b4c5d6-e7f8-9012-3456-234567890123",
+                      "direction": "column",
+                      "align": "start",
+                      "gap": "0",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "b4c5d6e7-f8a9-0123-4567-345678901234",
+                          "direction": "row",
+                          "align": "center",
+                          "gap": "1",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "c5d6e7f8-a9b0-1234-5678-456789012345",
+                              "name": "star",
+                              "size": 20,
+                              "classes": "text-green-500"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "d6e7f8a9-b0c1-2345-6789-567890123456",
+                              "content": "Trustpilot",
+                              "classes": "font-bold text-lg"
+                            }
+                          ]
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "e7f8a9b0-c1d2-3456-7890-678901234567",
+                          "content": "Rated Best Over 15.7k Reviews",
+                          "classes": "text-sm text-gray-500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentType": "VideoProps",
+                  "uuid": "f8a9b0c1-d2e3-4567-8901-789012345678",
+                  "provider": "youtube",
+                  "source": "dQw4w9WgXcQ",
+                  "autoplay": false,
+                  "controls": true,
+                  "loop": false,
+                  "muted": false,
+                  "width": 768,
+                  "height": 432,
+                  "classes": "mt-8 rounded-lg shadow-lg"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the hero section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

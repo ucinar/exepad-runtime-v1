@@ -1,0 +1,203 @@
+{
+  "uuid": "app-footer-only-456",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Flowbite Footer Page",
+  "alias": "flowbite-footer-page",
+  "summary": "Advanced footer design with newsletter signup and rich content organization. Features subscription forms, detailed link categories, and enhanced brand presentation elements.",
+  "shortSummary": "Advanced footer design with newsletter signup and rich content organization",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [
+    {
+      "uuid": "section-footer-main",
+      "componentType": "SectionProps",
+      "sectionSlug": "section-footer-main",
+      "classes": "py-8 bg-gray-50",
+      "layout": "singleColumnWide",
+      "spacing": "sm",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "grid-contact-info",
+          "componentType": "GridProps",
+          "columns": 3,
+          "gap": "8",
+          "classes": "mb-8",
+          "content": [
+            {
+              "uuid": "contact-ny",
+              "componentType": "ContactInfoBlockProps",
+              "title": "NEW YORK",
+              "address": "Huntersville, 957 Hill Hills Suite 491, United States",
+              "phone": "+12(3) 456 7890 1234",
+              "email": "support: company@name.com"
+            },
+            {
+              "uuid": "contact-rome",
+              "componentType": "ContactInfoBlockProps",
+              "title": "ROME",
+              "address": "Piazza di Spagna, 00187 Roma RM, Italy",
+              "phone": "+12(3) 456 7890 1234",
+              "email": "support: company@name.it"
+            },
+            {
+              "uuid": "contact-london",
+              "componentType": "ContactInfoBlockProps",
+              "title": "LONDON",
+              "address": "Fulham Rd, London SW6 1HS, United Kingdom",
+              "phone": "+12(3) 456 7890 1234",
+              "email": "support: company@name.co.uk"
+            }
+          ]
+        },
+        {
+          "uuid": "flex-newsletter-signup",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center py-8 max-w-4xl mx-auto",
+          "content": [
+            {
+              "uuid": "newsletter-text",
+              "componentType": "TextProps",
+              "content": "Sign up to our newsletter",
+              "classes": "text-gray-500"
+            },
+            {
+              "uuid": "newsletter-form",
+              "componentType": "ContactInfoBlockProps",
+              "classes": "max-w-xs"
+            }
+          ]
+        },
+        {
+          "uuid": "divider-bottom",
+          "componentType": "SpacerProps",
+          "classes": "border-gray-200",
+          "size": "md"
+        },
+        {
+          "uuid": "flex-footer-bottom",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "pt-8 pb-4 mt-6 justify-between mx-auto",
+          "content": [
+            {
+              "uuid": "flex-footer-logo-container-001",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "logo-image-footer",
+                  "componentType": "ImageProps",
+                  "src": "https://www.google.com/s2/favicons?domain=flowbite.com&sz=256",
+                  "alt": "Flowbite Logo",
+                  "classes": "h-8 w-8",
+                  "asset": {
+                    "uuid": "asset-logo-image-footer",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "logo, flowbite",
+                    "isProcessed": true,
+                    "requestedWidth": 32,
+                    "requestedHeight": 32
+                  }
+                },
+                {
+                  "uuid": "footer-logo-text",
+                  "componentType": "TextProps",
+                  "content": "Flowbite",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-copyright-001",
+              "componentType": "TextProps",
+              "content": "© 2021-2022 Flowbite™. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            },
+            {
+              "uuid": "language-selector",
+              "componentType": "LanguageSelectorProps",
+              "currentLanguageCode": "en",
+              "options": [
+                {
+                  "code": "en",
+                  "name": "English (US)"
+                },
+                {
+                  "code": "es",
+                  "name": "Español"
+                },
+                {
+                  "code": "de",
+                  "name": "Deutsch"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-blank-789",
+      "title": "Blank Page",
+      "slug": "/",
+      "summary": "A blank page that only displays the site footer.",
+      "content": [],
+      "shortSummary": "A blank page that only displays the site footer",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

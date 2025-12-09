@@ -1,0 +1,291 @@
+{
+  "uuid": "a8d7b3c1-0e9f-4a2d-8b6e-5f4c3d2a1b0c",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "CharityPlus",
+  "alias": "charityplus",
+  "summary": "Purpose-driven hero layout with emotional impact design. Features compelling headline, mission-focused content, and strong call-to-action elements. Ideal for non-profits, causes, and community organizations.",
+  "shortSummary": "Purpose-driven hero layout with emotional impact design",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "pages": [
+    {
+      "uuid": "b9e8c4d2-1f0a-5b3e-9c7f-6g5d4e3b2c1d",
+      "title": "Home",
+      "slug": "/",
+      "summary": "The main landing page with the hero section.",
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "sectionSlug": "de258327-4654-4881-9f93-4a182745a306",
+          "uuid": "de258327-4654-4881-9f93-4a182745a306",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "a1b2c3d4-e5f6-7890-1234-heading-hero",
+                  "level": 1,
+                  "text": "Making earth cooler for people, nature, climate",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "b2c3d4e5-f6a7-8901-2345-text-hero",
+                  "variant": "lead",
+                  "content": "Protecting the planet and its natural resources for future generations, by reducing pollution, promoting sustainability, and conserving energy and resources."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "c3d4e5f6-a7b8-9012-3456-flex-buttons",
+                  "direction": "row",
+                  "align": "center",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "d4e5f6a7-b8c9-0123-4567-button-donate",
+                      "text": "Donate now",
+                      "variant": "default",
+                      "size": "lg"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "e5f6a7b8-c9d0-1234-5678-button-learn",
+                      "text": "Learn more",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "f6a7b8c9-d0e1-2345-6789-icon-play",
+                        "name": "play",
+                        "size": 16
+                      },
+                      "iconPosition": "left"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "a7b8c9d0-e1f2-3456-7890-flex-partners",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "pt-8",
+                  "content": [
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "b8c9d0e1-f2a3-4567-8901-text-partners",
+                      "content": "Partners and backers:",
+                      "classes": "text-sm font-semibold text-gray-500"
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "c9d0e1f2-a3b4-5678-9012-flex-logos",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "8",
+                      "content": [
+                        {
+                          "componentType": "LogoItemProps",
+                          "uuid": "logo-greenpeace",
+                          "name": "Greenpeace",
+                          "grayscale": true,
+                          "logo": {
+                            "componentType": "ImageProps",
+                            "uuid": "img-greenpeace",
+                            "src": "https://placehold.co/100x40?text=Greenpeace",
+                            "alt": "Greenpeace Logo",
+                            "asset": {
+                              "uuid": "asset-img-greenpeace",
+                              "componentType": "ImageAssetProps",
+                              "keywords": "greenpeace, logo, charity",
+                              "isProcessed": true,
+                              "requestedWidth": 100,
+                              "requestedHeight": 40
+                            }
+                          }
+                        },
+                        {
+                          "componentType": "LogoItemProps",
+                          "uuid": "logo-un",
+                          "name": "United Nations",
+                          "grayscale": true,
+                          "logo": {
+                            "componentType": "ImageProps",
+                            "uuid": "img-un",
+                            "src": "https://placehold.co/100x40?text=UN",
+                            "alt": "United Nations Logo",
+                            "asset": {
+                              "uuid": "asset-img-un",
+                              "componentType": "ImageAssetProps",
+                              "keywords": "un, united nations, logo",
+                              "isProcessed": true,
+                              "requestedWidth": 100,
+                              "requestedHeight": 40
+                            }
+                          }
+                        },
+                        {
+                          "componentType": "LogoItemProps",
+                          "uuid": "logo-wwf",
+                          "name": "WWF",
+                          "grayscale": true,
+                          "logo": {
+                            "componentType": "ImageProps",
+                            "uuid": "img-wwf",
+                            "src": "https://placehold.co/100x40?text=WWF",
+                            "alt": "WWF Logo",
+                            "asset": {
+                              "uuid": "asset-img-wwf",
+                              "componentType": "ImageAssetProps",
+                              "keywords": "wwf, wildlife, logo",
+                              "isProcessed": true,
+                              "requestedWidth": 100,
+                              "requestedHeight": 40
+                            }
+                          }
+                        },
+                        {
+                          "componentType": "LogoItemProps",
+                          "uuid": "logo-oxfam",
+                          "name": "Oxfam",
+                          "grayscale": true,
+                          "logo": {
+                            "componentType": "ImageProps",
+                            "uuid": "img-oxfam",
+                            "src": "https://placehold.co/100x40?text=Oxfam",
+                            "alt": "Oxfam Logo",
+                            "asset": {
+                              "uuid": "asset-img-oxfam",
+                              "componentType": "ImageAssetProps",
+                              "keywords": "oxfam, charity, logo",
+                              "isProcessed": true,
+                              "requestedWidth": 100,
+                              "requestedHeight": 40
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentType": "CarouselProps",
+              "uuid": "d0e1f2a3-b4c5-6789-0123-carousel-hero",
+              "loop": true,
+              "autoplay": true,
+              "content": [
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "e1f2a3b4-c5d6-7890-1234-carousel-img-1",
+                  "src": "https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg",
+                  "alt": "Volunteers sorting donations.",
+                  "height": 400,
+                  "asset": {
+                    "uuid": "asset-e1f2a3b4-c5d6-7890-1234",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "volunteers, donations, charity",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 400
+                  }
+                },
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "f2a3b4c5-d6e7-8901-2345-carousel-img-2",
+                  "src": "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg",
+                  "alt": "A group of happy volunteers.",
+                  "height": 400,
+                  "asset": {
+                    "uuid": "asset-f2a3b4c5-d6e7-8901-2345",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "volunteers, happy, group",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 400
+                  }
+                },
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "a3b4c5d6-e7f8-9012-3456-carousel-img-3",
+                  "src": "https://images.pexels.com/photos/6646909/pexels-photo-6646909.jpeg",
+                  "alt": "A volunteer handing out supplies.",
+                  "height": 400,
+                  "asset": {
+                    "uuid": "asset-a3b4c5d6-e7f8-9012-3456",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "volunteer, supplies, charity",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 400
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page with the hero section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": []
+}

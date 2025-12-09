@@ -1,0 +1,503 @@
+{
+  "uuid": "app-form-booking-appt-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Medical Appointment Booking",
+  "alias": "medical-appointment-booking",
+  "summary": "A medical appointment scheduling form with patient information, appointment type selection, preferred dates/times, and insurance details. Ideal for healthcare providers, clinics, and medical practices to streamline patient appointment bookings.",
+  "shortSummary": "A medical appointment booking form with patient info and scheduling",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#1e1b4b",
+      "primary": "#0f766e",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f0fdfa",
+      "secondary-foreground": "#134e4a",
+      "muted": "#f0fdfa",
+      "muted-foreground": "#6b7280",
+      "accent": "#ccfbf1",
+      "accent-foreground": "#115e59",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e5e7eb",
+      "input": "#e5e7eb",
+      "ring": "#0d9488"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f1f5f9",
+      "primary": "#2dd4bf",
+      "primary-foreground": "#042f2e",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f1f5f9",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#134e4a",
+      "accent-foreground": "#ccfbf1",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#2dd4bf"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "HealthCare Clinic",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "HealthCare Clinic"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Home",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/",
+                "text": "Home"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Services",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/services",
+                "text": "Services"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Book Appointment",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/book",
+                "text": "Book Appointment"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/30",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 HealthCare Clinic. Your health, our priority.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-booking",
+      "title": "Book an Appointment",
+      "slug": "/",
+      "summary": "Schedule your medical appointment with our healthcare professionals.",
+      "shortSummary": "Schedule your medical appointment",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "lg",
+          "classes": "bg-gradient-to-br from-primary/10 to-accent/20",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "align": "center",
+                  "classes": "text-center",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "calendar-check",
+                      "size": 48,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Schedule Your Appointment"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Book your visit with our experienced healthcare professionals. We'll confirm your appointment within 24 hours.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "appointment-form",
+                  "componentType": "FormProps",
+                  "title": "Appointment Details",
+                  "description": "Please provide your information and preferred appointment time.",
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "classes": "max-w-3xl",
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Appointment request received! We'll call you within 24 hours to confirm your booking.",
+                    "errorMessage": "Unable to process your request. Please call us at (555) 123-4567.",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email",
+                    "onSuccessAction": {
+                      "type": "clearForm"
+                    }
+                  },
+                  "content": [
+                    {
+                      "uuid": "fieldset-personal",
+                      "componentType": "FieldSetProps",
+                      "legend": "Personal Information",
+                      "content": [
+                        {
+                          "uuid": "field-first-name",
+                          "componentType": "TextFieldProps",
+                          "name": "firstName",
+                          "label": "First Name",
+                          "placeholder": "John",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-last-name",
+                          "componentType": "TextFieldProps",
+                          "name": "lastName",
+                          "label": "Last Name",
+                          "placeholder": "Doe",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-date-of-birth",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "dateOfBirth",
+                          "label": "Date of Birth",
+                          "pickerType": "date",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "(555) 123-4567",
+                          "required": true,
+                          "helperText": "We'll use this to confirm your appointment"
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john.doe@email.com",
+                          "required": true
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-appointment",
+                      "componentType": "FieldSetProps",
+                      "legend": "Appointment Details",
+                      "content": [
+                        {
+                          "uuid": "field-appointment-type",
+                          "componentType": "SelectFieldProps",
+                          "name": "appointmentType",
+                          "label": "Type of Appointment",
+                          "placeholder": "Select appointment type",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "General Check-up",
+                              "value": "general-checkup"
+                            },
+                            {
+                              "label": "Follow-up Visit",
+                              "value": "followup"
+                            },
+                            {
+                              "label": "Vaccination",
+                              "value": "vaccination"
+                            },
+                            {
+                              "label": "Lab Work",
+                              "value": "lab-work"
+                            },
+                            {
+                              "label": "Specialist Consultation",
+                              "value": "specialist"
+                            },
+                            {
+                              "label": "Physical Exam",
+                              "value": "physical"
+                            },
+                            {
+                              "label": "Urgent Care",
+                              "value": "urgent"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-preferred-date",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "preferredDate",
+                          "label": "Preferred Date",
+                          "pickerType": "date",
+                          "required": true,
+                          "helperText": "Subject to availability"
+                        },
+                        {
+                          "uuid": "field-preferred-time",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "preferredTime",
+                          "label": "Preferred Time",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Morning (8:00 AM - 12:00 PM)",
+                              "value": "morning"
+                            },
+                            {
+                              "label": "Afternoon (12:00 PM - 4:00 PM)",
+                              "value": "afternoon"
+                            },
+                            {
+                              "label": "Evening (4:00 PM - 8:00 PM)",
+                              "value": "evening"
+                            },
+                            {
+                              "label": "No Preference",
+                              "value": "no-preference"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-reason",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "reasonForVisit",
+                          "label": "Reason for Visit",
+                          "placeholder": "Please describe the reason for your appointment...",
+                          "rows": 4,
+                          "required": true,
+                          "helperText": "This helps us prepare for your visit"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-medical",
+                      "componentType": "FieldSetProps",
+                      "legend": "Medical Information",
+                      "content": [
+                        {
+                          "uuid": "field-new-patient",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "patientType",
+                          "label": "Are you a new patient?",
+                          "required": true,
+                          "orientation": "horizontal",
+                          "options": [
+                            {
+                              "label": "Yes, first visit",
+                              "value": "new"
+                            },
+                            {
+                              "label": "No, existing patient",
+                              "value": "existing"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-insurance",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "hasInsurance",
+                          "label": "I have medical insurance"
+                        },
+                        {
+                          "uuid": "field-insurance-provider",
+                          "componentType": "TextFieldProps",
+                          "name": "insuranceProvider",
+                          "label": "Insurance Provider",
+                          "placeholder": "e.g., Blue Cross, Aetna, UnitedHealth",
+                          "helperText": "Leave blank if no insurance"
+                        },
+                        {
+                          "uuid": "field-allergies",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "allergies",
+                          "label": "Known Allergies",
+                          "placeholder": "List any known allergies to medications, foods, etc.",
+                          "rows": 3,
+                          "helperText": "Important for your safety"
+                        },
+                        {
+                          "uuid": "field-current-medications",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "currentMedications",
+                          "label": "Current Medications",
+                          "placeholder": "List any medications you're currently taking",
+                          "rows": 3
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-additional",
+                      "componentType": "FieldSetProps",
+                      "legend": "Additional Information",
+                      "content": [
+                        {
+                          "uuid": "field-special-needs",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "specialNeeds",
+                          "label": "Do you have any special requirements?",
+                          "helperText": "Select all that apply",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Wheelchair accessible entrance needed",
+                              "value": "wheelchair"
+                            },
+                            {
+                              "label": "Interpreter services required",
+                              "value": "interpreter"
+                            },
+                            {
+                              "label": "Prefer same-gender healthcare provider",
+                              "value": "gender-preference"
+                            },
+                            {
+                              "label": "Need assistance with forms",
+                              "value": "form-assistance"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-additional-notes",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "additionalNotes",
+                          "label": "Additional Notes or Questions",
+                          "placeholder": "Any other information we should know?",
+                          "rows": 3
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-hidden-source",
+                      "componentType": "HiddenFieldProps",
+                      "name": "bookingSource",
+                      "value": "online-form"
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "actionType": "reset",
+                      "text": "Clear Form",
+                      "variant": "ghost",
+                      "uuid": "form-action-reset",
+                      "componentType": "ButtonProps"
+                    },
+                    {
+                      "actionType": "submit",
+                      "text": "Request Appointment",
+                      "variant": "default",
+                      "icon": {
+                        "uuid": "submit-icon",
+                        "componentType": "IconProps",
+                        "name": "calendar-plus",
+                        "size": 16
+                      },
+                      "uuid": "form-action-submit",
+                      "componentType": "ButtonProps"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

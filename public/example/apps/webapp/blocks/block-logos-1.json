@@ -1,0 +1,218 @@
+{
+  "uuid": "app-customer-logos-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Customer Logos Page",
+  "alias": "customer-logos-page",
+  "summary": "Customer logo showcase with clean grid layout and brand display. Features company logos arranged in organized rows for social proof and credibility building.",
+  "shortSummary": "Customer logo showcase with clean grid layout and brand display",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-customer-logos-456",
+      "title": "Customer Logos",
+      "slug": "/customers",
+      "summary": "A page displaying logos of companies we work with.",
+      "content": [
+        {
+          "uuid": "section-logos-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-logos-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "heading-good-company",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "You'll be in good company",
+              "classes": "text-3xl font-bold text-center mb-8"
+            },
+            {
+              "uuid": "grid-company-logos",
+              "componentType": "GridProps",
+              "columns": 6,
+              "gapX": "8",
+              "gapY": "16",
+              "classes": "items-center justify-items-center",
+              "content": [
+                {
+                  "uuid": "logo-airbnb",
+                  "componentType": "LogoItemProps",
+                  "name": "Airbnb",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "img-airbnb",
+                    "componentType": "ImageProps",
+                    "src": "https://logo.clearbit.com/airbnb.com",
+                    "alt": "Airbnb logo",
+                    "asset": {
+                      "uuid": "asset-img-airbnb",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "airbnb, logo, company",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 50
+                    }
+                  }
+                },
+                {
+                  "uuid": "logo-google",
+                  "componentType": "LogoItemProps",
+                  "name": "Google",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "img-google",
+                    "componentType": "ImageProps",
+                    "src": "https://logo.clearbit.com/google.com",
+                    "alt": "Google logo",
+                    "asset": {
+                      "uuid": "asset-img-google",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "google, logo, company",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 50
+                    }
+                  }
+                },
+                {
+                  "uuid": "logo-microsoft",
+                  "componentType": "LogoItemProps",
+                  "name": "Microsoft",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "img-microsoft",
+                    "componentType": "ImageProps",
+                    "src": "https://logo.clearbit.com/microsoft.com",
+                    "alt": "Microsoft logo",
+                    "asset": {
+                      "uuid": "asset-img-microsoft",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "microsoft, logo, company",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 50
+                    }
+                  }
+                },
+                {
+                  "uuid": "logo-spotify",
+                  "componentType": "LogoItemProps",
+                  "name": "Spotify",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "img-spotify",
+                    "componentType": "ImageProps",
+                    "src": "https://logo.clearbit.com/spotify.com",
+                    "alt": "Spotify logo",
+                    "asset": {
+                      "uuid": "asset-img-spotify",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "spotify, logo, company",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 50
+                    }
+                  }
+                },
+                {
+                  "uuid": "logo-mailchimp",
+                  "componentType": "LogoItemProps",
+                  "name": "Mailchimp",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "img-mailchimp",
+                    "componentType": "ImageProps",
+                    "src": "https://logo.clearbit.com/mailchimp.com",
+                    "alt": "Mailchimp logo",
+                    "asset": {
+                      "uuid": "asset-img-mailchimp",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "mailchimp, logo, company",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 50
+                    }
+                  }
+                },
+                {
+                  "uuid": "logo-mashable",
+                  "componentType": "LogoItemProps",
+                  "name": "Mashable",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "img-mashable",
+                    "componentType": "ImageProps",
+                    "src": "https://logo.clearbit.com/mashable.com",
+                    "alt": "Mashable logo",
+                    "asset": {
+                      "uuid": "asset-img-mashable",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "mashable, logo, company",
+                      "isProcessed": true,
+                      "requestedWidth": 120,
+                      "requestedHeight": 50
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying logos of companies we work with",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

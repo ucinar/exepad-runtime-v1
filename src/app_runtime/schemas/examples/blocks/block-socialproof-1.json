@@ -1,0 +1,117 @@
+{
+  "uuid": "app-social-proof-789",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Social Proof Page",
+  "alias": "social-proof-page",
+  "summary": "Social proof section with customer metrics and credibility indicators. Features statistics, testimonial highlights, and trust-building elements for conversion optimization.",
+  "shortSummary": "Social proof section with customer metrics and credibility indicators",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-social-proof-101",
+      "title": "Social Proof",
+      "slug": "/social-proof",
+      "summary": "A page displaying a social proof section.",
+      "content": [
+        {
+          "uuid": "section-social-proof-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-social-proof-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 bg-gray-50",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "grid-stats-counter",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "text-center",
+              "content": [
+                {
+                  "uuid": "stats-developers",
+                  "componentType": "StatsCounterProps",
+                  "start": 0,
+                  "end": 73,
+                  "suffix": "M+",
+                  "label": "developers",
+                  "duration": 2000
+                },
+                {
+                  "uuid": "stats-contributors",
+                  "componentType": "StatsCounterProps",
+                  "start": 0,
+                  "end": 1,
+                  "suffix": "B+",
+                  "label": "contributors",
+                  "duration": 2000
+                },
+                {
+                  "uuid": "stats-organizations",
+                  "componentType": "StatsCounterProps",
+                  "start": 0,
+                  "end": 4,
+                  "suffix": "M+",
+                  "label": "organizations",
+                  "duration": 2000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying a social proof section",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

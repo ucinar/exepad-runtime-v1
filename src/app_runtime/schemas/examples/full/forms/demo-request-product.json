@@ -1,0 +1,410 @@
+{
+  "uuid": "app-form-demo-req-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Product Demo Request Form",
+  "alias": "product-demo-request-form",
+  "summary": "A product demo scheduling form with company details, team size, preferred time slots, and specific interests. Ideal for SaaS companies and B2B service providers to qualify and schedule product demonstrations with potential clients.",
+  "shortSummary": "A product demo scheduling form with company details and time slot selection",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#18181b",
+      "primary": "#7c3aed",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f4f4f5",
+      "secondary-foreground": "#18181b",
+      "muted": "#f4f4f5",
+      "muted-foreground": "#71717a",
+      "accent": "#ede9fe",
+      "accent-foreground": "#6d28d9",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#8b5cf6"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "primary": "#a78bfa",
+      "primary-foreground": "#1e1b4b",
+      "secondary": "#27272a",
+      "secondary-foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted-foreground": "#a1a1aa",
+      "accent": "#312e81",
+      "accent-foreground": "#ede9fe",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fef2f2",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#a78bfa"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-demo",
+      "title": "Request a Demo",
+      "slug": "/",
+      "summary": "Schedule a personalized product demo with our team.",
+      "shortSummary": "Schedule a personalized product demo",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-main",
+          "spacing": "xl",
+          "classes": "min-h-screen bg-gradient-to-br from-primary/5 via-background to-accent/20",
+          "content": [
+            {
+              "uuid": "main-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "content-wrapper",
+                  "componentType": "GridProps",
+                  "columns": 2,
+                  "gap": "12",
+                  "classes": "w-full max-w-6xl",
+                  "content": [
+                    {
+                      "uuid": "info-column",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "6",
+                      "justify": "center",
+                      "content": [
+                        {
+                          "uuid": "info-icon",
+                          "componentType": "IconProps",
+                          "name": "monitor-play",
+                          "size": 64,
+                          "classes": "text-primary mb-2"
+                        },
+                        {
+                          "uuid": "info-heading",
+                          "componentType": "HeadingProps",
+                          "level": 1,
+                          "text": "See Our Platform in Action"
+                        },
+                        {
+                          "uuid": "info-description",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "Get a personalized walkthrough tailored to your business needs. Our product experts will show you how our solution can transform your workflow.",
+                          "classes": "text-muted-foreground"
+                        },
+                        {
+                          "uuid": "benefits-list",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "mt-4",
+                          "content": [
+                            {
+                              "uuid": "benefit-1",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "benefit-1-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "benefit-1-text",
+                                  "componentType": "TextProps",
+                                  "content": "30-minute personalized demonstration"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "benefit-2",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "benefit-2-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "benefit-2-text",
+                                  "componentType": "TextProps",
+                                  "content": "Custom use case walkthrough"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "benefit-3",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "benefit-3-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "benefit-3-text",
+                                  "componentType": "TextProps",
+                                  "content": "Q&A with product experts"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "benefit-4",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "3",
+                              "align": "start",
+                              "content": [
+                                {
+                                  "uuid": "benefit-4-icon",
+                                  "componentType": "IconProps",
+                                  "name": "check",
+                                  "size": 20,
+                                  "classes": "text-primary mt-0.5"
+                                },
+                                {
+                                  "uuid": "benefit-4-text",
+                                  "componentType": "TextProps",
+                                  "content": "No credit card required"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "form-column",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "classes": "bg-background border rounded-xl shadow-2xl p-8",
+                      "content": [
+                        {
+                          "uuid": "demo-form",
+                          "componentType": "FormProps",
+                          "title": "Request Your Demo",
+                          "description": "Fill out the form and we'll be in touch within 24 hours to schedule your demo.",
+                          "layout": "singleColumn",
+                          "initialValues": {},
+                          "onSubmitAction": {
+                            "actionId": "submit_form",
+                            "successMessage": "Demo request received! Our team will contact you within 24 hours to schedule your personalized demonstration.",
+                            "errorMessage": "Unable to submit your request. Please try again or email us at demo@company.com",
+                            "notificationType": "toast",
+                            "notifyAdmin": "email",
+                            "onSuccessAction": {
+                              "type": "clearForm"
+                            }
+                          },
+                          "content": [
+                            {
+                              "uuid": "field-name",
+                              "componentType": "TextFieldProps",
+                              "name": "fullName",
+                              "label": "Full Name",
+                              "placeholder": "John Doe",
+                              "required": true
+                            },
+                            {
+                              "uuid": "field-email",
+                              "componentType": "TextFieldProps",
+                              "name": "workEmail",
+                              "label": "Work Email",
+                              "inputType": "email",
+                              "placeholder": "john@company.com",
+                              "required": true,
+                              "helperText": "Please use your work email"
+                            },
+                            {
+                              "uuid": "field-phone",
+                              "componentType": "TextFieldProps",
+                              "name": "phone",
+                              "label": "Phone Number",
+                              "inputType": "tel",
+                              "placeholder": "+1 (555) 123-4567"
+                            },
+                            {
+                              "uuid": "field-company",
+                              "componentType": "TextFieldProps",
+                              "name": "companyName",
+                              "label": "Company Name",
+                              "placeholder": "ABC Corporation",
+                              "required": true
+                            },
+                            {
+                              "uuid": "field-job-title",
+                              "componentType": "TextFieldProps",
+                              "name": "jobTitle",
+                              "label": "Job Title",
+                              "placeholder": "Product Manager"
+                            },
+                            {
+                              "uuid": "field-team-size",
+                              "componentType": "SelectFieldProps",
+                              "name": "teamSize",
+                              "label": "Team Size",
+                              "placeholder": "How many people will use this?",
+                              "required": true,
+                              "options": [
+                                {
+                                  "label": "Just me (1)",
+                                  "value": "1"
+                                },
+                                {
+                                  "label": "2-10 people",
+                                  "value": "2-10"
+                                },
+                                {
+                                  "label": "11-50 people",
+                                  "value": "11-50"
+                                },
+                                {
+                                  "label": "51-200 people",
+                                  "value": "51-200"
+                                },
+                                {
+                                  "label": "201-1000 people",
+                                  "value": "201-1000"
+                                },
+                                {
+                                  "label": "1000+ people",
+                                  "value": "1000+"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-interests",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "interestedIn",
+                              "label": "What are you most interested in?",
+                              "helperText": "Select all that apply",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Product Overview",
+                                  "value": "overview"
+                                },
+                                {
+                                  "label": "Integrations",
+                                  "value": "integrations"
+                                },
+                                {
+                                  "label": "Analytics & Reporting",
+                                  "value": "analytics"
+                                },
+                                {
+                                  "label": "Security & Compliance",
+                                  "value": "security"
+                                },
+                                {
+                                  "label": "Pricing & Plans",
+                                  "value": "pricing"
+                                },
+                                {
+                                  "label": "Migration Support",
+                                  "value": "migration"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-timeline",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "purchaseTimeline",
+                              "label": "When are you looking to purchase?",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Immediately (this month)",
+                                  "value": "immediate"
+                                },
+                                {
+                                  "label": "Within 1-3 months",
+                                  "value": "1-3-months"
+                                },
+                                {
+                                  "label": "Within 3-6 months",
+                                  "value": "3-6-months"
+                                },
+                                {
+                                  "label": "Just exploring options",
+                                  "value": "exploring"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-notes",
+                              "componentType": "TextAreaFieldProps",
+                              "name": "additionalNotes",
+                              "label": "Anything else we should know?",
+                              "placeholder": "Tell us about your specific needs or questions...",
+                              "rows": 3
+                            },
+                            {
+                              "uuid": "field-hidden-source",
+                              "componentType": "HiddenFieldProps",
+                              "name": "formSource",
+                              "value": "demo-request"
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "actionType": "submit",
+                              "text": "Request Demo",
+                              "variant": "default",
+                              "icon": {
+                                "uuid": "submit-icon",
+                                "componentType": "IconProps",
+                                "name": "calendar",
+                                "size": 16
+                              },
+                              "classes": "w-full",
+                              "uuid": "form-action-submit",
+                              "componentType": "ButtonProps"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+  
+  /* Apply custom heading font to all heading elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom styles for LeapLang UI Runtime */
+.leap-runtime {
+  @apply min-h-screen;
+}
+
+.leap-error {
+  @apply text-destructive;
+}
+
+.leap-loading {
+  @apply animate-pulse;
+}
+
+/* ===== AUTOMATIC CONTRAST FIXES ===== */
+
+/* Fix text contrast on light backgrounds */
+.bg-gray-50,
+.bg-gray-100,
+.bg-gray-200,
+.bg-slate-50,
+.bg-slate-100,
+.bg-slate-200,
+.bg-stone-50,
+.bg-stone-100,
+.bg-stone-200,
+.bg-neutral-50,
+.bg-neutral-100,
+.bg-neutral-200,
+.bg-zinc-50,
+.bg-zinc-100,
+.bg-zinc-200,
+.bg-yellow-50,
+.bg-yellow-100,
+.bg-amber-50,
+.bg-amber-100,
+.bg-blue-50,
+.bg-blue-100,
+.bg-sky-50,
+.bg-sky-100,
+.bg-cyan-50,
+.bg-cyan-100,
+.bg-teal-50,
+.bg-teal-100,
+.bg-green-50,
+.bg-green-100,
+.bg-emerald-50,
+.bg-emerald-100,
+.bg-lime-50,
+.bg-lime-100,
+.bg-red-50,
+.bg-red-100,
+.bg-rose-50,
+.bg-rose-100,
+.bg-pink-50,
+.bg-pink-100,
+.bg-purple-50,
+.bg-purple-100,
+.bg-violet-50,
+.bg-violet-100,
+.bg-indigo-50,
+.bg-indigo-100,
+.bg-orange-50,
+.bg-orange-100 {
+  color: rgb(17 24 39) !important; /* gray-900 for high contrast */
+}
+
+/* Fix specific text color classes on light backgrounds */
+.bg-gray-50 .text-gray-500,
+.bg-gray-50 .text-gray-600,
+.bg-gray-50 .text-gray-700,
+.bg-gray-100 .text-gray-500,
+.bg-gray-100 .text-gray-600,
+.bg-gray-100 .text-gray-700,
+.bg-gray-200 .text-gray-500,
+.bg-gray-200 .text-gray-600,
+.bg-gray-200 .text-gray-700 {
+  color: rgb(17 24 39) !important; /* gray-900 */
+}
+
+/* Ensure headings are always readable on light backgrounds */
+.bg-gray-50 h1,
+.bg-gray-50 h2,
+.bg-gray-50 h3,
+.bg-gray-50 h4,
+.bg-gray-50 h5,
+.bg-gray-50 h6,
+.bg-gray-100 h1,
+.bg-gray-100 h2,
+.bg-gray-100 h3,
+.bg-gray-100 h4,
+.bg-gray-100 h5,
+.bg-gray-100 h6,
+.bg-gray-200 h1,
+.bg-gray-200 h2,
+.bg-gray-200 h3,
+.bg-gray-200 h4,
+.bg-gray-200 h5,
+.bg-gray-200 h6 {
+  color: rgb(17 24 39) !important;
+}
+
+/* Fix nested components with light backgrounds */
+.bg-gray-50 [class*="text-gray-"],
+.bg-gray-100 [class*="text-gray-"],
+.bg-gray-200 [class*="text-gray-"] {
+  color: rgb(17 24 39) !important;
+}
+
+/* Ensure proper contrast on dark backgrounds */
+.bg-gray-800,
+.bg-gray-900,
+.bg-slate-800,
+.bg-slate-900,
+.bg-stone-800,
+.bg-stone-900,
+.bg-neutral-800,
+.bg-neutral-900,
+.bg-zinc-800,
+.bg-zinc-900,
+.bg-black {
+  color: rgb(249 250 251) !important; /* gray-50 for high contrast */
+}
+
+/* Fix text on dark backgrounds */
+.bg-gray-800 .text-gray-300,
+.bg-gray-800 .text-gray-400,
+.bg-gray-800 .text-gray-500,
+.bg-gray-900 .text-gray-300,
+.bg-gray-900 .text-gray-400,
+.bg-gray-900 .text-gray-500 {
+  color: rgb(249 250 251) !important; /* gray-50 */
+}
+
+/* Fix text colors inside sections with dark backgrounds */
+section[style*="background"] .text-gray-700,
+section[style*="background"] .text-gray-600,
+section[style*="background"] .text-gray-500 {
+  color: inherit; /* Let parent determine the color */
+}
+
+/* Ensure text is light when inside sections with background images */
+section:has(img.absolute) .text-gray-700,
+section:has(img.absolute) .text-gray-600,
+section:has(img.absolute) .text-gray-500,
+section:has(video.absolute) .text-gray-700,
+section:has(video.absolute) .text-gray-600,
+section:has(video.absolute) .text-gray-500 {
+  color: rgb(243 244 246) !important; /* gray-100 for better contrast on dark images */
+}
+
+/* Fix for nested sections inside dark backgrounds */
+.text-white .text-gray-700,
+.text-white .text-gray-600,
+.text-white .text-gray-500,
+.text-white .text-gray-400 {
+  color: rgb(243 244 246) !important; /* gray-100 */
+}
+
+/* Specific fix for hero sections with dark backgrounds containing nested content */
+section[style*="background-image"] .text-gray-700,
+section[style*="background-image"] .text-gray-600,
+section[style*="background-image"] .text-gray-500,
+.relative.z-10 .text-gray-700,
+.relative.z-10 .text-gray-600,
+.relative.z-10 .text-gray-500 {
+  color: currentColor; /* Inherit from parent which should be white */
+}
+
+/* Override for sections that are children of sections with backgrounds */
+section section .text-gray-700,
+section section .text-gray-600,
+section section .text-gray-500 {
+  color: inherit;
+}
+
+/* Step 1: Apply light text for gray colors inside dark backgrounds */
+.text-white .text-gray-700,
+.text-white .text-gray-600,
+.text-white .text-gray-500,
+.text-white .text-gray-400 {
+  color: rgb(229 231 235); /* gray-200 for dark backgrounds */
+}
+
+/* Step 2: Override with dark text for any element with explicit light background classes */
+/* This rule comes AFTER and will override the above due to higher specificity */
+[class*="bg-gray-50"] .text-gray-700,
+[class*="bg-gray-50"] .text-gray-600,
+[class*="bg-gray-50"] .text-gray-500,
+[class*="bg-gray-100"] .text-gray-700,
+[class*="bg-gray-100"] .text-gray-600,
+[class*="bg-gray-100"] .text-gray-500,
+[class*="bg-gray-200"] .text-gray-700,
+[class*="bg-gray-200"] .text-gray-600,
+[class*="bg-gray-200"] .text-gray-500,
+[class*="bg-white"] .text-gray-700,
+[class*="bg-white"] .text-gray-600,
+[class*="bg-white"] .text-gray-500,
+[class*="bg-yellow-50"] .text-gray-700,
+[class*="bg-yellow-50"] .text-gray-600,
+[class*="bg-yellow-50"] .text-gray-500,
+[class*="bg-blue-50"] .text-gray-700,
+[class*="bg-blue-50"] .text-gray-600,
+[class*="bg-blue-50"] .text-gray-500 {
+  color: rgb(17 24 39) !important; /* gray-900 - ensure dark text on light backgrounds */
+}
+
+/* ===== COMPONENT SELECTION STYLES ===== */
+
+/* Smooth selection animation */
+@keyframes selection-pulse {
+  0%, 100% { opacity: 0.05; }
+  50% { opacity: 0.1; }
+}
+
+/* Selection overlay animation */
+.component-selected-overlay {
+  animation: selection-pulse 2s ease-in-out infinite;
+}
+
+/* Component wrapper hover effect */
+[data-component-wrapper]:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Selected component style */
+[data-component-wrapper].selected {
+  position: relative;
+}
+
+/* Component selection indicator animation */
+[data-component-wrapper] .component-selection-indicator {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* ===== NAVIGATION GUARD STYLES ===== */
+
+/* Visual feedback for non-navigable elements in edit mode */
+.edit-mode-active main a,
+.edit-mode-active main button,
+.edit-mode-active [data-component-wrapper] a,
+.edit-mode-active [data-component-wrapper] button {
+  cursor: pointer !important; /* Selection cursor for body content */
+}
+
+/* Keep normal cursor for navigation areas */
+.edit-mode-active header a,
+.edit-mode-active nav a,
+.edit-mode-active [data-navigation-area="true"] a,
+.edit-mode-active header button,
+.edit-mode-active nav button,
+.edit-mode-active [data-navigation-area="true"] button {
+  cursor: pointer; /* Normal cursor for navigation elements */
+}
+
+/* Subtle visual hint for body links/buttons in edit mode */
+.edit-mode-active main a:hover,
+.edit-mode-active [data-component-wrapper] a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.edit-mode-active main button:hover,
+.edit-mode-active [data-component-wrapper] button:hover {
+  opacity: 0.8;
+}
+
+/* Keyboard shortcut hints */
+.keyboard-hint {
+  @apply text-xs text-gray-500 dark:text-gray-400;
+  font-family: monospace;
+}
+
+/* ===== TIPTAP / PROSEMIRROR EDITOR RESET ===== */
+
+/* Reset only the unwanted default TipTap/ProseMirror styles */
+.ProseMirror {
+  /* Remove default spacing */
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  /* Make background transparent */
+  background: transparent !important;
+  border: none !important;
+  
+  /* Remove focus outline (we handle it elsewhere) */
+  outline: none !important;
+  
+  /* Only inherit color - let Tailwind classes control other properties */
+  color: inherit !important;
+}
+
+/* Reset paragraph styles inside ProseMirror to have no margins */
+.ProseMirror p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove ProseMirror's default paragraph bottom margin */
+.ProseMirror p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Ensure placeholder text is visible but subtle */
+.ProseMirror .is-editor-empty:first-child::before {
+  color: rgb(156 163 175) !important; /* gray-400 */
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Remove ProseMirror focus outline */
+.ProseMirror:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Make sure ProseMirror paragraphs don't add spacing */
+.ProseMirror > p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Reset any default TipTap list styles when they're disabled */
+.ProseMirror ul,
+.ProseMirror ol {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* ===== AUTO-CONTRAST DEBUG INDICATORS (DEV MODE ONLY) ===== */
+
+/* Visual indicator for elements with auto-corrected contrast */
+[data-contrast-corrected="true"] {
+  outline: 2px dashed orange !important;
+  outline-offset: 2px;
+  position: relative;
+}
+
+/* Label showing that contrast was fixed */
+[data-contrast-corrected="true"]::before {
+  content: "⚠️ Contrast Fixed";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 10px;
+  background: orange;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  z-index: 9999;
+  pointer-events: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Alternative positioning for elements near the top */
+[data-contrast-corrected="true"][style*="position: absolute"]::before,
+[data-contrast-corrected="true"][style*="position: fixed"]::before {
+  top: auto;
+  bottom: -20px;
+}
+
+/* Hover state to highlight the corrected element */
+[data-contrast-corrected="true"]:hover {
+  outline-color: darkorange !important;
+  outline-width: 3px !important;
+}
+
+/* Animation for the indicator */
+@keyframes contrast-pulse {
+  0%, 100% {
+    outline-color: orange;
+  }
+  50% {
+    outline-color: darkorange;
+  }
+}
+
+[data-contrast-corrected="true"] {
+  animation: contrast-pulse 2s ease-in-out infinite;
+}

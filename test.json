@@ -1,0 +1,831 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ButtonProps": {
+      "additionalProperties": false,
+      "description": "Clickable button with type, handler, and disabled state",
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "disabled": {
+          "description": "Whether the button is disabled",
+          "type": "boolean"
+        },
+        "onClick": {
+          "description": "Handler identifier for click events",
+          "type": "string"
+        },
+        "text": {
+          "description": "Button label text",
+          "type": "string"
+        },
+        "type": {
+          "description": "Button type: \"button\" | \"submit\" | \"reset\"",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "disabled",
+        "onClick",
+        "text",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "ComponentProps": {
+      "additionalProperties": false,
+      "description": "Every UI component may accept common props like `classes`.",
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "uuid",
+        "componentType"
+      ],
+      "type": "object"
+    },
+    "DropdownLink": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "href",
+        "title",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "DropdownProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/definitions/DropdownLink"
+          },
+          "type": "array"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "items",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "ImageAssetProps": {
+      "additionalProperties": false,
+      "description": "Stores metadata for an image asset, like its origin and processing state. Set keywords field properly. Fill all required fields, leave the optional fields",
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "datetime_generated": {
+          "type": "string"
+        },
+        "is_processed": {
+          "default": false,
+          "description": "Defaults to `false` on creation.",
+          "type": "boolean"
+        },
+        "keywords": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "provider_img_id": {
+          "type": "string"
+        },
+        "provider_img_url": {
+          "type": "string"
+        },
+        "requested_height": {
+          "type": "number"
+        },
+        "requested_width": {
+          "type": "number"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "is_processed",
+        "keywords",
+        "requested_height",
+        "requested_width",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "ImageProps": {
+      "additionalProperties": false,
+      "description": "Defines an image component for display, including source and dimensions. For new ImageProps, set `src` to \"#\" if the final URL isn't ready. asset is required, so create a ImageAssetProps field",
+      "properties": {
+        "alt": {
+          "description": "Alt text for image accessibility.",
+          "type": "string"
+        },
+        "asset": {
+          "$ref": "#/definitions/ImageAssetProps",
+          "description": "Contains the detailed metadata of the image asset."
+        },
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "height": {
+          "description": "Optional display height in pixels.",
+          "type": "number"
+        },
+        "src": {
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        },
+        "width": {
+          "description": "Optional display width in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alt",
+        "asset",
+        "componentType",
+        "src",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "LinkProps": {
+      "additionalProperties": false,
+      "description": "Anchor element with href, text, and target",
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "href": {
+          "description": "URL or route for the link",
+          "type": "string"
+        },
+        "target": {
+          "description": "Target attribute, e.g. \"_blank\" | \"_self\"",
+          "type": "string"
+        },
+        "text": {
+          "description": "Link text content",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "href",
+        "target",
+        "text",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MegaMenuFeaturedItem": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "description",
+        "href",
+        "title",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MegaMenuLink": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "description",
+        "href",
+        "title",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MegaMenuProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "columns": {
+          "enum": [
+            2,
+            3
+          ],
+          "type": "number"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "featuredItem": {
+          "$ref": "#/definitions/MegaMenuFeaturedItem"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/definitions/MegaMenuLink"
+          },
+          "type": "array"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "items",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MenuButtonItemProps": {
+      "additionalProperties": false,
+      "properties": {
+        "button": {
+          "$ref": "#/definitions/ButtonProps"
+        },
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "type": {
+          "const": "button",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "button",
+        "componentType",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MenuCustomContentItemProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "content": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/React.ReactElement"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "additionalProperties": false,
+              "type": "object"
+            },
+            {
+              "$ref": "#/definitions/React.ReactPortal"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "type": {
+          "const": "custom",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MenuDropdownItemProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "dropdown": {
+          "$ref": "#/definitions/DropdownProps"
+        },
+        "label": {
+          "type": "string"
+        },
+        "type": {
+          "const": "dropdown",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "dropdown",
+        "label",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MenuLinkItemProps": {
+      "additionalProperties": false,
+      "properties": {
+        "active": {
+          "type": "boolean"
+        },
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "href": {
+          "$ref": "#/definitions/LinkProps"
+        },
+        "label": {
+          "type": "string"
+        },
+        "type": {
+          "const": "link",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "href",
+        "label",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "MenuMegaItemProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "megaMenu": {
+          "$ref": "#/definitions/MegaMenuProps"
+        },
+        "type": {
+          "const": "mega",
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "label",
+        "megaMenu",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "NavbarLogoProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "href": {
+          "$ref": "#/definitions/LinkProps"
+        },
+        "image": {
+          "$ref": "#/definitions/ImageProps"
+        },
+        "text": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "image",
+            "text"
+          ],
+          "type": "string"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "type",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "NavbarProps": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "description": "Optional styling hook (e.g. additional CSS classes)",
+          "type": "string"
+        },
+        "componentType": {
+          "description": "Type of the component",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/definitions/NavigationMenuItem"
+          },
+          "type": "array"
+        },
+        "logo": {
+          "$ref": "#/definitions/NavbarLogoProps"
+        },
+        "position": {
+          "enum": [
+            "top",
+            "bottom"
+          ],
+          "type": "string"
+        },
+        "sticky": {
+          "type": "boolean"
+        },
+        "uuid": {
+          "description": "Required unique identifier for the component instance, generate by calling tool, get_new_uuid()",
+          "type": "string"
+        },
+        "variant": {
+          "enum": [
+            "default",
+            "split",
+            "center-logo"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "componentType",
+        "items",
+        "logo",
+        "uuid"
+      ],
+      "type": "object"
+    },
+    "NavigationMenuItem": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/MenuLinkItemProps"
+        },
+        {
+          "$ref": "#/definitions/MenuButtonItemProps"
+        },
+        {
+          "$ref": "#/definitions/MenuDropdownItemProps"
+        },
+        {
+          "$ref": "#/definitions/MenuMegaItemProps"
+        },
+        {
+          "$ref": "#/definitions/MenuCustomContentItemProps"
+        }
+      ]
+    },
+    "React.JSXElementConstructor<any>": {
+      "anyOf": [
+        {
+          "$comment": "(\n            props: P,\n            /**\n             * @deprecated\n             *\n             * @see {@link https://legacy.reactjs.org/docs/legacy-context.html#referencing-context-in-stateless-function-components React Docs}\n             */\n            deprecatedLegacyContext?: any) => ReactNode",
+          "properties": {
+            "namedArgs": {
+              "additionalProperties": false,
+              "properties": {
+                "deprecatedLegacyContext": {
+                  "deprecated": true
+                },
+                "props": {}
+              },
+              "required": [
+                "props"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        {
+          "$comment": "new (\n            props: P,\n            /**\n             * @deprecated\n             *\n             * @see {@link https://legacy.reactjs.org/docs/legacy-context.html#referencing-context-in-lifecycle-methods React Docs}\n             */\n            deprecatedLegacyContext?: any) => Component<any, any>",
+          "properties": {
+            "namedArgs": {
+              "additionalProperties": false,
+              "properties": {
+                "deprecatedLegacyContext": {
+                  "deprecated": true
+                },
+                "props": {}
+              },
+              "required": [
+                "props"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      ],
+      "description": "Represents any user-defined component, either as a function or a class.\n\nSimilar to  {@link  ComponentType } , but without extra properties like  {@link  FunctionComponent.defaultProps defaultProps  }  and  {@link  ComponentClass.contextTypes contextTypes } ."
+    },
+    "React.ReactElement": {
+      "additionalProperties": false,
+      "description": "Represents a JSX element.\n\nWhere  {@link  ReactNode }  represents everything that can be rendered, `ReactElement` only represents JSX.",
+      "properties": {
+        "key": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "props": {},
+        "type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/definitions/React.JSXElementConstructor%3Cany%3E"
+            }
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "props",
+        "key"
+      ],
+      "type": "object"
+    },
+    "React.ReactNode": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/React.ReactElement"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "additionalProperties": false,
+          "type": "object"
+        },
+        {
+          "$ref": "#/definitions/React.ReactPortal"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "not": {}
+        }
+      ],
+      "description": "Represents all of the things React can render.\n\nWhere  {@link  ReactElement }  only represents JSX, `ReactNode` represents everything that can be rendered."
+    },
+    "React.ReactPortal": {
+      "additionalProperties": false,
+      "properties": {
+        "children": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/React.ReactElement"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "additionalProperties": false,
+              "type": "object"
+            },
+            {
+              "$ref": "#/definitions/React.ReactPortal"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "key": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "props": {},
+        "type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/definitions/React.JSXElementConstructor%3Cany%3E"
+            }
+          ]
+        }
+      },
+      "required": [
+        "key",
+        "props",
+        "type"
+      ],
+      "type": "object"
+    }
+  }
+}
+

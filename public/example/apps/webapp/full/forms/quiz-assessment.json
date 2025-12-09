@@ -1,0 +1,711 @@
+{
+  "uuid": "app-form-quiz-assess-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Interactive Skills Assessment Quiz",
+  "alias": "skills-assessment-quiz",
+  "summary": "An interactive skills assessment quiz with multiple-choice questions, self-evaluation ratings, and personalized recommendations. Perfect for educational platforms, HR departments, training programs, and career development to evaluate knowledge levels and provide tailored learning paths.",
+  "shortSummary": "An interactive assessment quiz with skill evaluation and recommendations",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#1e1b4b",
+      "primary": "#4f46e5",
+      "primary-foreground": "#ffffff",
+      "secondary": "#ede9fe",
+      "secondary-foreground": "#4c1d95",
+      "muted": "#f8fafc",
+      "muted-foreground": "#64748b",
+      "accent": "#ddd6fe",
+      "accent-foreground": "#5b21b6",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#818cf8"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#818cf8",
+      "primary-foreground": "#1e1b4b",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#312e81",
+      "accent-foreground": "#ddd6fe",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#334155",
+      "input": "#334155",
+      "ring": "#818cf8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 SkillPath Learning. Personalized learning for professional growth.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-quiz",
+      "title": "Web Development Skills Assessment",
+      "slug": "/",
+      "summary": "Take our comprehensive web development assessment to discover your skill level and get personalized learning recommendations.",
+      "shortSummary": "Assess your web development skills",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-main",
+          "spacing": "xl",
+          "classes": "min-h-screen bg-gradient-to-br from-primary/5 via-accent/5 to-background",
+          "content": [
+            {
+              "uuid": "main-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "content-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "header-section",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "align": "center",
+                      "classes": "text-center",
+                      "content": [
+                        {
+                          "uuid": "header-icon",
+                          "componentType": "IconProps",
+                          "name": "brain",
+                          "size": 56,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "header-heading",
+                          "componentType": "HeadingProps",
+                          "level": 1,
+                          "text": "Web Development Skills Assessment"
+                        },
+                        {
+                          "uuid": "header-description",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "Evaluate your web development knowledge across HTML, CSS, JavaScript, and modern frameworks. Receive instant personalized learning recommendations.",
+                          "classes": "text-muted-foreground max-w-2xl"
+                        },
+                        {
+                          "uuid": "quiz-info",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "4",
+                          "justify": "center",
+                          "wrap": "wrap",
+                          "classes": "mt-2",
+                          "content": [
+                            {
+                              "uuid": "info-time",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "1",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "time-icon",
+                                  "componentType": "IconProps",
+                                  "name": "clock",
+                                  "size": 16,
+                                  "classes": "text-muted-foreground"
+                                },
+                                {
+                                  "uuid": "time-text",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "10-15 minutes",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "info-questions",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "1",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "questions-icon",
+                                  "componentType": "IconProps",
+                                  "name": "file-question",
+                                  "size": 16,
+                                  "classes": "text-muted-foreground"
+                                },
+                                {
+                                  "uuid": "questions-text",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "20 questions",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "quiz-form",
+                      "componentType": "FormProps",
+                      "title": "Assessment Questions",
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "classes": "bg-background border rounded-xl shadow-lg p-8",
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Assessment complete! Check your email for your detailed results and personalized learning path.",
+                        "errorMessage": "Unable to submit assessment. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email",
+                        "onSuccessAction": {
+                          "type": "clearForm"
+                        }
+                      },
+                      "content": [
+                        {
+                          "uuid": "fieldset-intro",
+                          "componentType": "FieldSetProps",
+                          "legend": "Before We Start",
+                          "content": [
+                            {
+                              "uuid": "field-name",
+                              "componentType": "TextFieldProps",
+                              "name": "fullName",
+                              "label": "Full Name",
+                              "placeholder": "John Doe",
+                              "required": true
+                            },
+                            {
+                              "uuid": "field-email",
+                              "componentType": "TextFieldProps",
+                              "name": "email",
+                              "label": "Email Address",
+                              "inputType": "email",
+                              "placeholder": "john@example.com",
+                              "required": true,
+                              "helperText": "We'll send your results here"
+                            },
+                            {
+                              "uuid": "field-current-role",
+                              "componentType": "SelectFieldProps",
+                              "name": "currentRole",
+                              "label": "Current Role",
+                              "placeholder": "Select your role",
+                              "required": true,
+                              "options": [
+                                {
+                                  "label": "Student/Learning to Code",
+                                  "value": "student"
+                                },
+                                {
+                                  "label": "Junior Developer (0-2 years)",
+                                  "value": "junior"
+                                },
+                                {
+                                  "label": "Mid-Level Developer (2-5 years)",
+                                  "value": "mid"
+                                },
+                                {
+                                  "label": "Senior Developer (5+ years)",
+                                  "value": "senior"
+                                },
+                                {
+                                  "label": "Career Changer",
+                                  "value": "career-change"
+                                },
+                                {
+                                  "label": "Other",
+                                  "value": "other"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "fieldset-html-css",
+                          "componentType": "FieldSetProps",
+                          "legend": "HTML & CSS Knowledge",
+                          "content": [
+                            {
+                              "uuid": "field-html-level",
+                              "componentType": "RatingFieldProps",
+                              "name": "htmlSkillLevel",
+                              "label": "Rate your HTML knowledge",
+                              "count": 5,
+                              "required": true,
+                              "helperText": "1 = Beginner, 5 = Expert"
+                            },
+                            {
+                              "uuid": "field-semantic-html",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "semanticHtmlQuestion",
+                              "label": "Which HTML5 element is best for a webpage's main navigation?",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "<div id=\"nav\">",
+                                  "value": "div"
+                                },
+                                {
+                                  "label": "<nav>",
+                                  "value": "nav"
+                                },
+                                {
+                                  "label": "<header>",
+                                  "value": "header"
+                                },
+                                {
+                                  "label": "<menu>",
+                                  "value": "menu"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-css-level",
+                              "componentType": "RatingFieldProps",
+                              "name": "cssSkillLevel",
+                              "label": "Rate your CSS knowledge",
+                              "count": 5,
+                              "required": true,
+                              "helperText": "1 = Beginner, 5 = Expert"
+                            },
+                            {
+                              "uuid": "field-css-concepts",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "cssConceptsFamiliar",
+                              "label": "Which CSS concepts are you comfortable with?",
+                              "helperText": "Select all that apply",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Flexbox",
+                                  "value": "flexbox"
+                                },
+                                {
+                                  "label": "Grid",
+                                  "value": "grid"
+                                },
+                                {
+                                  "label": "Animations/Transitions",
+                                  "value": "animations"
+                                },
+                                {
+                                  "label": "Media Queries/Responsive Design",
+                                  "value": "responsive"
+                                },
+                                {
+                                  "label": "CSS Variables (Custom Properties)",
+                                  "value": "variables"
+                                },
+                                {
+                                  "label": "Preprocessors (Sass, Less)",
+                                  "value": "preprocessors"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-box-model",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "boxModelQuestion",
+                              "label": "In the CSS box model, what does 'padding' affect?",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Space outside the element's border",
+                                  "value": "outside-border"
+                                },
+                                {
+                                  "label": "Space inside the element, between content and border",
+                                  "value": "inside-border"
+                                },
+                                {
+                                  "label": "The element's border thickness",
+                                  "value": "border-thickness"
+                                },
+                                {
+                                  "label": "The element's background color",
+                                  "value": "background"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "fieldset-javascript",
+                          "componentType": "FieldSetProps",
+                          "legend": "JavaScript Knowledge",
+                          "content": [
+                            {
+                              "uuid": "field-js-level",
+                              "componentType": "RatingFieldProps",
+                              "name": "javascriptSkillLevel",
+                              "label": "Rate your JavaScript knowledge",
+                              "count": 5,
+                              "required": true,
+                              "helperText": "1 = Beginner, 5 = Expert"
+                            },
+                            {
+                              "uuid": "field-js-features",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "jsFeaturesUsed",
+                              "label": "Which ES6+ features have you used?",
+                              "helperText": "Select all that apply",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Arrow Functions",
+                                  "value": "arrow-functions"
+                                },
+                                {
+                                  "label": "Destructuring",
+                                  "value": "destructuring"
+                                },
+                                {
+                                  "label": "Template Literals",
+                                  "value": "template-literals"
+                                },
+                                {
+                                  "label": "Promises/Async-Await",
+                                  "value": "promises"
+                                },
+                                {
+                                  "label": "Classes",
+                                  "value": "classes"
+                                },
+                                {
+                                  "label": "Modules (import/export)",
+                                  "value": "modules"
+                                },
+                                {
+                                  "label": "Spread/Rest Operators",
+                                  "value": "spread-rest"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-async-question",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "asyncQuestion",
+                              "label": "What is the primary purpose of async/await in JavaScript?",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "To make code run faster",
+                                  "value": "faster"
+                                },
+                                {
+                                  "label": "To handle asynchronous operations more readably",
+                                  "value": "readable-async"
+                                },
+                                {
+                                  "label": "To create multiple threads",
+                                  "value": "threads"
+                                },
+                                {
+                                  "label": "To pause code execution permanently",
+                                  "value": "pause"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-dom-manipulation",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "domQuestion",
+                              "label": "Which method adds a new element to the end of a parent?",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "parent.addChild(element)",
+                                  "value": "add-child"
+                                },
+                                {
+                                  "label": "parent.appendChild(element)",
+                                  "value": "append-child"
+                                },
+                                {
+                                  "label": "parent.insertChild(element)",
+                                  "value": "insert-child"
+                                },
+                                {
+                                  "label": "parent.add(element)",
+                                  "value": "add"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "fieldset-frameworks",
+                          "componentType": "FieldSetProps",
+                          "legend": "Frameworks & Tools",
+                          "content": [
+                            {
+                              "uuid": "field-frameworks-used",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "frameworksUsed",
+                              "label": "Which frameworks/libraries have you worked with?",
+                              "helperText": "Select all that apply",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "React",
+                                  "value": "react"
+                                },
+                                {
+                                  "label": "Vue.js",
+                                  "value": "vue"
+                                },
+                                {
+                                  "label": "Angular",
+                                  "value": "angular"
+                                },
+                                {
+                                  "label": "Svelte",
+                                  "value": "svelte"
+                                },
+                                {
+                                  "label": "Next.js",
+                                  "value": "nextjs"
+                                },
+                                {
+                                  "label": "jQuery",
+                                  "value": "jquery"
+                                },
+                                {
+                                  "label": "None yet",
+                                  "value": "none"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-version-control",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "gitExperience",
+                              "label": "How familiar are you with Git/GitHub?",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Never used it",
+                                  "value": "never"
+                                },
+                                {
+                                  "label": "Basic commands only (clone, commit, push)",
+                                  "value": "basic"
+                                },
+                                {
+                                  "label": "Comfortable with branching and merging",
+                                  "value": "intermediate"
+                                },
+                                {
+                                  "label": "Advanced (rebasing, conflict resolution, etc.)",
+                                  "value": "advanced"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-testing",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "testingExperience",
+                              "label": "Testing experience",
+                              "helperText": "Select all that apply",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Unit Testing (Jest, Mocha, etc.)",
+                                  "value": "unit"
+                                },
+                                {
+                                  "label": "Integration Testing",
+                                  "value": "integration"
+                                },
+                                {
+                                  "label": "E2E Testing (Cypress, Playwright)",
+                                  "value": "e2e"
+                                },
+                                {
+                                  "label": "Test-Driven Development (TDD)",
+                                  "value": "tdd"
+                                },
+                                {
+                                  "label": "No testing experience",
+                                  "value": "none"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "fieldset-goals",
+                          "componentType": "FieldSetProps",
+                          "legend": "Your Learning Goals",
+                          "content": [
+                            {
+                              "uuid": "field-learning-goals",
+                              "componentType": "CheckboxGroupFieldProps",
+                              "name": "learningGoals",
+                              "label": "What would you like to improve?",
+                              "required": true,
+                              "helperText": "Select top 3",
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "HTML/CSS Fundamentals",
+                                  "value": "html-css"
+                                },
+                                {
+                                  "label": "JavaScript Core Concepts",
+                                  "value": "js-core"
+                                },
+                                {
+                                  "label": "Modern JavaScript (ES6+)",
+                                  "value": "modern-js"
+                                },
+                                {
+                                  "label": "React/Frontend Frameworks",
+                                  "value": "frameworks"
+                                },
+                                {
+                                  "label": "Backend Development (Node.js, APIs)",
+                                  "value": "backend"
+                                },
+                                {
+                                  "label": "Database Design & SQL",
+                                  "value": "databases"
+                                },
+                                {
+                                  "label": "Testing & Quality Assurance",
+                                  "value": "testing"
+                                },
+                                {
+                                  "label": "DevOps & Deployment",
+                                  "value": "devops"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "field-learning-style",
+                              "componentType": "RadioGroupFieldProps",
+                              "name": "learningStyle",
+                              "label": "Preferred learning style",
+                              "required": true,
+                              "orientation": "vertical",
+                              "options": [
+                                {
+                                  "label": "Video Tutorials",
+                                  "value": "video"
+                                },
+                                {
+                                  "label": "Written Documentation/Articles",
+                                  "value": "written"
+                                },
+                                {
+                                  "label": "Interactive Coding Exercises",
+                                  "value": "interactive"
+                                },
+                                {
+                                  "label": "Project-Based Learning",
+                                  "value": "projects"
+                                },
+                                {
+                                  "label": "Live Classes/Mentorship",
+                                  "value": "live"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-newsletter",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "subscribeNewsletter",
+                          "label": "Send me weekly learning tips and course recommendations"
+                        },
+                        {
+                          "uuid": "field-hidden-quiz-id",
+                          "componentType": "HiddenFieldProps",
+                          "name": "quizId",
+                          "value": "webdev-skills-2025"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "submit",
+                          "text": "Get My Results",
+                          "variant": "default",
+                          "icon": {
+                            "uuid": "submit-icon",
+                            "componentType": "IconProps",
+                            "name": "award",
+                            "size": 16
+                          },
+                          "classes": "w-full",
+                          "uuid": "form-action-submit",
+                          "componentType": "ButtonProps"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

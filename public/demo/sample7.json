@@ -1,0 +1,3637 @@
+{
+  "uuid": "happyDoods-webapp-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "HappyDoods",
+  "alias": "happy-doods",
+  "summary": "HappyDoods is a charming chicken farm website showcasing our heritage breeds, farm-fresh eggs, and sustainable farming practices. The site connects customers with our operation, provides product information, and enables direct farm visits through booking.",
+  "shortSummary": "A welcoming chicken farm website for HappyDoods",
+  "lastUpdatedEpoch": 1730851200,
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "theme": {
+    "light": {
+      "background": "0 0% 100%",
+      "foreground": "25 80% 25%",
+      "primary": "30 100% 50%",
+      "primary-foreground": "0 0% 100%",
+      "secondary": "30 100% 90%",
+      "secondary-foreground": "25 80% 25%",
+      "muted": "0 0% 90%",
+      "muted-foreground": "0 0% 40%",
+      "accent": "30 100% 50%",
+      "accent-foreground": "0 0% 100%",
+      "destructive": "0 84% 60%",
+      "destructive-foreground": "0 0% 100%",
+      "border": "0 0% 90%",
+      "input": "0 0% 95%",
+      "ring": "30 100% 50%"
+    },
+    "dark": {
+      "background": "25 80% 12%",
+      "foreground": "0 0% 98%",
+      "primary": "30 100% 55%",
+      "primary-foreground": "25 80% 12%",
+      "secondary": "25 80% 22%",
+      "secondary-foreground": "0 0% 98%",
+      "muted": "25 80% 22%",
+      "muted-foreground": "0 0% 70%",
+      "accent": "30 100% 55%",
+      "accent-foreground": "25 80% 12%",
+      "destructive": "0 62% 30%",
+      "destructive-foreground": "0 0% 98%",
+      "border": "25 80% 22%",
+      "input": "25 80% 22%",
+      "ring": "30 100% 55%"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Playfair Display",
+        "variant": "700",
+        "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      },
+      "body": {
+        "family": "Inter",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      }
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "header": [
+    {
+      "uuid": "happyDoods-navbar-001",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "underline",
+      "sticky": true,
+      "logo": {
+        "uuid": "happyDoods-logo-001",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "HappyDoods",
+        "href": {
+          "href": "/"
+        }
+      },
+      "content": [
+        {
+          "uuid": "nav-item-home",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "href": "/"
+          }
+        },
+        {
+          "uuid": "nav-item-about",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "href": "/about"
+          }
+        },
+        {
+          "uuid": "nav-item-features",
+          "type": "link",
+          "label": "Features",
+          "href": {
+            "href": "/features"
+          }
+        },
+        {
+          "uuid": "nav-item-products",
+          "type": "link",
+          "label": "Products",
+          "href": {
+            "href": "/products"
+          }
+        },
+        {
+          "uuid": "nav-item-farm-visits",
+          "type": "link",
+          "label": "Farm Visits",
+          "href": {
+            "href": "/farm-visits"
+          }
+        },
+        {
+          "uuid": "nav-item-blog",
+          "type": "link",
+          "label": "Blog",
+          "href": {
+            "href": "/blog"
+          }
+        },
+        {
+          "uuid": "nav-item-contact",
+          "type": "link",
+          "label": "Contact",
+          "href": {
+            "href": "/contact"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "happyDoods-footer-001",
+      "componentType": "SectionProps",
+      "layout": "singleColumnWide",
+      "spacing": "lg",
+      "classes": "bg-muted/50 border-t",
+      "content": [
+        {
+          "componentType": "GridProps",
+          "uuid": "footer-grid",
+          "columns": 4,
+          "gap": "8",
+          "classes": "py-12",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "footer-about",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "footer-about-heading",
+                  "level": 4,
+                  "text": "HappyDoods Farm"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "footer-about-text",
+                  "content": "Raising happy chickens with heritage breeds and sustainable farming practices since 2009.",
+                  "classes": "text-sm text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "footer-links-1",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "footer-links-1-heading",
+                  "level": 4,
+                  "text": "Quick Links"
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-link-about",
+                  "text": "About Us",
+                  "href": "/about",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-link-products",
+                  "text": "Products",
+                  "href": "/products",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-link-farm-visits",
+                  "text": "Farm Visits",
+                  "href": "/farm-visits",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "footer-links-2",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "footer-links-2-heading",
+                  "level": 4,
+                  "text": "Resources"
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-link-blog",
+                  "text": "Blog",
+                  "href": "/blog",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-link-contact",
+                  "text": "Contact",
+                  "href": "/contact",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "footer-contact",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "footer-contact-heading",
+                  "level": 4,
+                  "text": "Contact Us"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "footer-contact-email",
+                  "content": "hello@happydoods.farm",
+                  "classes": "text-sm text-muted-foreground"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "footer-contact-phone",
+                  "content": "(555) 123-4567",
+                  "classes": "text-sm text-muted-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "DividerProps",
+          "uuid": "footer-divider"
+        },
+        {
+          "componentType": "FlexProps",
+          "uuid": "footer-bottom",
+          "direction": "row",
+          "justify": "between",
+          "align": "center",
+          "classes": "py-6",
+          "content": [
+            {
+              "componentType": "TextProps",
+              "uuid": "footer-copyright",
+              "content": "© 2024 HappyDoods Farm. All rights reserved.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "footer-legal-links",
+              "direction": "row",
+              "gap": "4",
+              "content": [
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-privacy",
+                  "text": "Privacy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "footer-terms",
+                  "text": "Terms",
+                  "href": "/terms",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sidebar": [],
+  "pages": [
+    {
+      "uuid": "happydoods-home-page",
+      "pageType": "WebPageProps",
+      "slug": "/",
+      "title": "Home",
+      "summary": "Welcome page introducing HappyDoods farm and featuring farm highlights including featured products, farm story, customer testimonials, and calls to action.",
+      "shortSummary": "Welcome page for HappyDoods farm with hero, products, story, testimonials, and CTA",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "hero-section-happydoods",
+          "layout": "singleColumnCentered",
+          "spacing": "md",
+          "classes": "text-center",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-flex-main",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-heading",
+                  "level": 1,
+                  "text": "Welcome to HappyDoods Farm",
+                  "classes": "text-5xl md:text-6xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-description",
+                  "variant": "lead",
+                  "content": "Experience farm-fresh eggs from our heritage breed chickens raised with love on sustainable pastures. Visit our farm, meet our flock, and taste the difference quality makes.",
+                  "classes": "max-w-3xl mx-auto text-muted-foreground"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-buttons",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "hero-btn-shop",
+                      "text": "Shop Fresh Eggs",
+                      "variant": "default",
+                      "size": "lg",
+                      "link": {
+                        "href": "/products"
+                      }
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "hero-btn-learn",
+                      "text": "Learn More",
+                      "variant": "outline",
+                      "size": "lg",
+                      "link": {
+                        "href": "/about"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "hero-farm-image",
+                  "src": "https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg",
+                  "alt": "Happy chickens roaming on HappyDoods Farm",
+                  "classes": "mt-12 rounded-lg shadow-2xl max-w-4xl mx-auto",
+                  "asset": {
+                    "uuid": "asset-hero-farm-image",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "farm, chickens, pastoral, heritage breeds",
+                    "isProcessed": true,
+                    "requestedWidth": 1200,
+                    "requestedHeight": 600
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "products-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "products-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "text-center",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "products-heading",
+                  "level": 2,
+                  "text": "Featured Farm Products",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "products-description",
+                  "variant": "lead",
+                  "content": "Discover our premium farm-fresh products, delivered straight from our pastures to your table.",
+                  "classes": "max-w-2xl text-muted-foreground"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "products-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "w-full pt-8",
+                  "content": [
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "product-eggs",
+                      "variant": "default",
+                      "content": [
+                        {
+                          "componentType": "ImageProps",
+                          "uuid": "product-eggs-image",
+                          "src": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop",
+                          "alt": "Fresh farm eggs",
+                          "classes": "rounded-t-lg",
+                          "asset": {
+                            "uuid": "asset-eggs",
+                            "componentType": "ImageAssetProps",
+                            "keywords": "eggs, fresh, organic",
+                            "isProcessed": true,
+                            "requestedWidth": 400,
+                            "requestedHeight": 300
+                          }
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "product-eggs-info",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "product-eggs-title",
+                              "level": 3,
+                              "text": "Farm Fresh Eggs"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "product-eggs-desc",
+                              "content": "Pasture-raised eggs from our heritage breed chickens. Rich, flavorful, and nutritious.",
+                              "classes": "text-muted-foreground"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "product-eggs-price",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "product-eggs-price-text",
+                                  "content": "$8/dozen",
+                                  "classes": "text-lg font-bold text-primary"
+                                },
+                                {
+                                  "componentType": "ButtonProps",
+                                  "uuid": "product-eggs-btn",
+                                  "text": "Order Now",
+                                  "variant": "default",
+                                  "size": "sm",
+                                  "link": {
+                                    "href": "/products"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "product-honey",
+                      "variant": "default",
+                      "content": [
+                        {
+                          "componentType": "ImageProps",
+                          "uuid": "product-honey-image",
+                          "src": "https://images.unsplash.com/photo-1587049352846-4a222e784acc?w=400&h=300&fit=crop",
+                          "alt": "Farm honey",
+                          "classes": "rounded-t-lg",
+                          "asset": {
+                            "uuid": "asset-honey",
+                            "componentType": "ImageAssetProps",
+                            "keywords": "honey, local, natural",
+                            "isProcessed": true,
+                            "requestedWidth": 400,
+                            "requestedHeight": 300
+                          }
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "product-honey-info",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "product-honey-title",
+                              "level": 3,
+                              "text": "Local Honey"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "product-honey-desc",
+                              "content": "Pure, raw honey from our on-site beehives. Sweet, natural, and full of local pollen.",
+                              "classes": "text-muted-foreground"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "product-honey-price",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "product-honey-price-text",
+                                  "content": "$12/jar",
+                                  "classes": "text-lg font-bold text-primary"
+                                },
+                                {
+                                  "componentType": "ButtonProps",
+                                  "uuid": "product-honey-btn",
+                                  "text": "Order Now",
+                                  "variant": "default",
+                                  "size": "sm",
+                                  "link": {
+                                    "href": "/products"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "product-subscription",
+                      "variant": "default",
+                      "classes": "border-primary",
+                      "content": [
+                        {
+                          "componentType": "ImageProps",
+                          "uuid": "product-subscription-image",
+                          "src": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=300&fit=crop",
+                          "alt": "Subscription box",
+                          "classes": "rounded-t-lg",
+                          "asset": {
+                            "uuid": "asset-subscription",
+                            "componentType": "ImageAssetProps",
+                            "keywords": "subscription, box, delivery",
+                            "isProcessed": true,
+                            "requestedWidth": 400,
+                            "requestedHeight": 300
+                          }
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "product-subscription-info",
+                          "direction": "column",
+                          "gap": "3",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "BadgeProps",
+                              "uuid": "product-subscription-badge",
+                              "content": "Popular",
+                              "variant": "default",
+                              "classes": "w-fit"
+                            },
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "product-subscription-title",
+                              "level": 3,
+                              "text": "Weekly Subscription"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "product-subscription-desc",
+                              "content": "Get fresh eggs delivered weekly. Never run out of farm-fresh goodness!",
+                              "classes": "text-muted-foreground"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "product-subscription-price",
+                              "direction": "row",
+                              "justify": "between",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "product-subscription-price-text",
+                                  "content": "$32/month",
+                                  "classes": "text-lg font-bold text-primary"
+                                },
+                                {
+                                  "componentType": "ButtonProps",
+                                  "uuid": "product-subscription-btn",
+                                  "text": "Subscribe",
+                                  "variant": "default",
+                                  "size": "sm",
+                                  "link": {
+                                    "href": "/products"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "about-page-happydoods-001",
+      "pageType": "WebPageProps",
+      "slug": "/about",
+      "title": "About",
+      "summary": "Learn the story of HappyDoods farm, our mission to raise happy and healthy chickens, our heritage chicken breeds, and meet the dedicated team behind our operation.",
+      "shortSummary": "Discover HappyDoods farm's story, mission, chicken breeds, and team",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "hero-section-about",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-content-flex",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-heading-about",
+                  "level": 1,
+                  "text": "Raising happy chickens, one flock at a time",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-text-about",
+                  "variant": "lead",
+                  "content": "HappyDoods farm is dedicated to preserving heritage chicken breeds and promoting ethical, sustainable farming practices. Since our founding, we've been committed to raising chickens in a way that honors both the birds and the land they live on."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-buttons-about",
+                  "direction": "row",
+                  "align": "center",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-visit-farm",
+                      "text": "Visit the Farm",
+                      "variant": "default",
+                      "size": "lg"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-learn-breeds",
+                      "text": "Explore Breeds",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-arrow-right",
+                        "name": "arrow-right",
+                        "size": 16
+                      },
+                      "iconPosition": "right"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentType": "ImageProps",
+              "uuid": "hero-image-farm",
+              "src": "https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg",
+              "alt": "Happy chickens in the farm",
+              "asset": {
+                "uuid": "asset-hero-farm",
+                "componentType": "ImageAssetProps",
+                "keywords": "farm, chickens, pastoral, rural",
+                "isProcessed": true,
+                "requestedWidth": 600,
+                "requestedHeight": 400
+              }
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "mission-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "mission-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "mission-heading",
+                  "level": 2,
+                  "text": "Our Mission & Values",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "mission-intro",
+                  "variant": "lead",
+                  "content": "We believe in sustainable farming that respects both animals and environment."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "mission-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "mission-welfare",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-heart",
+                        "name": "heart",
+                        "size": 32,
+                        "classes": "text-yellow-500 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "mission-welfare-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Animal Welfare"
+                      },
+                      "text": {
+                        "uuid": "mission-welfare-text",
+                        "componentType": "TextProps",
+                        "content": "Every chicken at HappyDoods receives humane care, spacious outdoor access, and a natural diet. We prioritize their wellbeing above all else."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "mission-sustainable",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-leaf",
+                        "name": "leaf",
+                        "size": 32,
+                        "classes": "text-green-500 bg-green-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "mission-sustainable-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Sustainability"
+                      },
+                      "text": {
+                        "uuid": "mission-sustainable-text",
+                        "componentType": "TextProps",
+                        "content": "We practice rotational grazing, minimize waste, and maintain healthy soil. Our farm operates in harmony with natural ecosystems."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "mission-heritage",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-house",
+                        "name": "house",
+                        "size": 32,
+                        "classes": "text-orange-500 bg-orange-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "mission-heritage-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Heritage Preservation"
+                      },
+                      "text": {
+                        "uuid": "mission-heritage-text",
+                        "componentType": "TextProps",
+                        "content": "We preserve rare and heritage chicken breeds, safeguarding agricultural biodiversity for future generations."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "breeds-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "breeds-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "breeds-heading",
+                  "level": 2,
+                  "text": "Our Heritage Chicken Breeds",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "breeds-intro",
+                  "variant": "lead",
+                  "content": "We raise exceptional heritage breeds known for hardiness, personality, and exceptional egg quality."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "breeds-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "breed-wyandotte",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-chicken-1",
+                        "name": "activity",
+                        "size": 32,
+                        "classes": "text-red-600 bg-red-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "breed-wyandotte-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Wyandotte"
+                      },
+                      "text": {
+                        "uuid": "breed-wyandotte-text",
+                        "componentType": "TextProps",
+                        "content": "Beautiful feathered birds with cold-hardy genetics. Excellent layers of brown eggs and wonderful mothers to their chicks."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "breed-orpington",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-chicken-2",
+                        "name": "activity",
+                        "size": 32,
+                        "classes": "text-yellow-600 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "breed-orpington-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Buff Orpington"
+                      },
+                      "text": {
+                        "uuid": "breed-orpington-text",
+                        "componentType": "TextProps",
+                        "content": "Gentle giants with calm temperaments. Highly productive layers and exceptional broodies, perfect for family farms."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "breed-rhode",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-chicken-3",
+                        "name": "activity",
+                        "size": 32,
+                        "classes": "text-amber-600 bg-amber-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "breed-rhode-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Rhode Island Red"
+                      },
+                      "text": {
+                        "uuid": "breed-rhode-text",
+                        "componentType": "TextProps",
+                        "content": "Legendary layers known for reliability and independence. Hardy birds that thrive in various climates and produce abundantly."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "team-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "team-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-7xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "team-heading",
+                  "level": 2,
+                  "text": "Meet the HappyDoods Team",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "team-intro",
+                  "variant": "lead",
+                  "content": "Dedicated farmers and animal enthusiasts passionate about sustainable agriculture and chicken welfare."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "team-grid",
+                  "columns": 2,
+                  "gap": "8",
+                  "classes": "pt-12 w-full text-left",
+                  "content": [
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-sarah",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-sarah-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Sarah Chen"
+                      },
+                      "position": {
+                        "uuid": "team-member-sarah-position",
+                        "componentType": "TextProps",
+                        "content": "Founder & Farm Manager"
+                      },
+                      "bio": {
+                        "uuid": "team-member-sarah-bio",
+                        "componentType": "TextProps",
+                        "content": "Sarah established HappyDoods 15 years ago with a vision of ethical farming. Her expertise in heritage breeds is unmatched."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-sarah",
+                        "src": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
+                        "alt": "Sarah Chen",
+                        "asset": {
+                          "uuid": "asset-photo-sarah",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "sarah, chen, farmer, team",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-sarah-mail",
+                          "platform": "mail",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-marcus",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-marcus-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Marcus Williams"
+                      },
+                      "position": {
+                        "uuid": "team-member-marcus-position",
+                        "componentType": "TextProps",
+                        "content": "Veterinarian & Animal Care Specialist"
+                      },
+                      "bio": {
+                        "uuid": "team-member-marcus-bio",
+                        "componentType": "TextProps",
+                        "content": "Marcus ensures all our chickens receive the highest standard of health care and preventative medicine."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-marcus",
+                        "src": "https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg",
+                        "alt": "Marcus Williams",
+                        "asset": {
+                          "uuid": "asset-photo-marcus",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "marcus, williams, veterinarian, team",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-marcus-mail",
+                          "platform": "mail",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-emma",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-emma-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Emma Rodriguez"
+                      },
+                      "position": {
+                        "uuid": "team-member-emma-position",
+                        "componentType": "TextProps",
+                        "content": "Sustainable Farming Manager"
+                      },
+                      "bio": {
+                        "uuid": "team-member-emma-bio",
+                        "componentType": "TextProps",
+                        "content": "Emma oversees our sustainability initiatives, ensuring our farm remains a model of ecological responsibility."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-emma",
+                        "src": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
+                        "alt": "Emma Rodriguez",
+                        "asset": {
+                          "uuid": "asset-photo-emma",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "emma, rodriguez, farmer, sustainability",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-emma-mail",
+                          "platform": "mail",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    },
+                    {
+                      "componentType": "TeamMemberProps",
+                      "uuid": "team-member-james",
+                      "style": "cardHorizontal",
+                      "name": {
+                        "uuid": "team-member-james-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "James Park"
+                      },
+                      "position": {
+                        "uuid": "team-member-james-position",
+                        "componentType": "TextProps",
+                        "content": "Community Outreach Coordinator"
+                      },
+                      "bio": {
+                        "uuid": "team-member-james-bio",
+                        "componentType": "TextProps",
+                        "content": "James connects HappyDoods with our community, hosting farm visits and educational workshops year-round."
+                      },
+                      "photo": {
+                        "componentType": "ImageProps",
+                        "uuid": "photo-james",
+                        "src": "https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg",
+                        "alt": "James Park",
+                        "asset": {
+                          "uuid": "asset-photo-james",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "james, park, community, coordinator",
+                          "isProcessed": true,
+                          "requestedWidth": 200,
+                          "requestedHeight": 200
+                        }
+                      },
+                      "socialLinks": [
+                        {
+                          "componentType": "SocialLinkProps",
+                          "uuid": "social-james-mail",
+                          "platform": "mail",
+                          "url": "#"
+                        }
+                      ],
+                      "classes": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "cta-section-final",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "cta-flex-final",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-2xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "cta-heading-final",
+                  "level": 2,
+                  "text": "Join the HappyDoods Community",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "cta-text-final",
+                  "variant": "lead",
+                  "content": "Visit our farm, purchase our heritage eggs, or learn more about sustainable farming practices. We'd love to have you join our mission."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "cta-buttons-final",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "pt-4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-contact-us",
+                      "text": "Contact Us",
+                      "variant": "default",
+                      "size": "lg"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-learn-more",
+                      "text": "Shop Eggs",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-shopping",
+                        "name": "shopping-bag",
+                        "size": 20
+                      },
+                      "iconPosition": "left"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "products-page-uuid-001",
+      "pageType": "WebPageProps",
+      "slug": "/products",
+      "title": "Products",
+      "summary": "Showcase our farm-fresh eggs and other products. Browse our complete selection of premium farm products, learn about product features, view pricing options, and place your order today.",
+      "shortSummary": "Farm-fresh eggs and premium farm products",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "hero-section-001",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-flex-001",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "badge-flex-001",
+                  "justify": "center",
+                  "align": "center",
+                  "gap": "2",
+                  "classes": "mb-4 inline-flex items-center p-1 pr-3 bg-amber-50 rounded-full border border-amber-200",
+                  "content": [
+                    {
+                      "componentType": "BadgeProps",
+                      "uuid": "badge-fresh-001",
+                      "content": "Farm Fresh",
+                      "variant": "default",
+                      "classes": "rounded-full bg-yellow-400"
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "badge-text-001",
+                      "content": "Delivered weekly to your door",
+                      "variant": "small",
+                      "classes": "ml-2"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-heading-001",
+                  "level": 1,
+                  "text": "Premium Farm-Fresh Eggs & Products",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-text-001",
+                  "variant": "lead",
+                  "content": "Discover our selection of organic, pasture-raised eggs and farm products sourced from sustainable local farming practices. Quality you can taste in every bite.",
+                  "classes": "mt-4 max-w-3xl mx-auto"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-buttons-001",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-order-001",
+                      "text": "Order Now",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-arrow-001",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right",
+                      "disabled": false,
+                      "type": "button"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-browse-001",
+                      "text": "Browse Catalog",
+                      "variant": "outline",
+                      "size": "lg",
+                      "disabled": false,
+                      "type": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "features-section-001",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "features-flex-001",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-5xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "features-heading-001",
+                  "level": 2,
+                  "text": "Why Choose Our Products",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "features-grid-001",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-8 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-organic",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-leaf-001",
+                        "name": "leaf",
+                        "size": 32,
+                        "classes": "text-amber-600 bg-amber-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-organic-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "100% Organic"
+                      },
+                      "text": {
+                        "uuid": "feature-organic-text",
+                        "componentType": "TextProps",
+                        "content": "All our eggs are from pasture-raised hens fed with organic, pesticide-free feed for the healthiest, most nutritious eggs."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-fresh",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-activity-001",
+                        "name": "activity",
+                        "size": 32,
+                        "classes": "text-green-600 bg-green-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-fresh-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Farm Fresh Daily"
+                      },
+                      "text": {
+                        "uuid": "feature-fresh-text",
+                        "componentType": "TextProps",
+                        "content": "Collected and packaged daily for maximum freshness. Delivered to your door within 48 hours of collection."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-sustainable",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-globe-001",
+                        "name": "globe",
+                        "size": 32,
+                        "classes": "text-blue-600 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-sustainable-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Sustainable Farming"
+                      },
+                      "text": {
+                        "uuid": "feature-sustainable-text",
+                        "componentType": "TextProps",
+                        "content": "Supporting local, sustainable farming practices that care for our animals and environment."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-quality",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-star-001",
+                        "name": "star",
+                        "size": 32,
+                        "classes": "text-yellow-600 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-quality-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Premium Quality"
+                      },
+                      "text": {
+                        "uuid": "feature-quality-text",
+                        "componentType": "TextProps",
+                        "content": "Every egg is hand-selected and inspected for size, quality, and freshness before packaging."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-variety",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-menu-001",
+                        "name": "menu",
+                        "size": 32,
+                        "classes": "text-red-600 bg-red-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-variety-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Wide Variety"
+                      },
+                      "text": {
+                        "uuid": "feature-variety-text",
+                        "componentType": "TextProps",
+                        "content": "Choose from multiple sizes, organic options, and specialty products including honey, cheese, and farm-made jams."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-support",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-mail-001",
+                        "name": "mail",
+                        "size": 32,
+                        "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-support-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Expert Support"
+                      },
+                      "text": {
+                        "uuid": "feature-support-text",
+                        "componentType": "TextProps",
+                        "content": "Dedicated customer support team available via email, phone, or chat to answer all your questions."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "pricing-section-001",
+          "layout": "singleColumnWide",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "pricing-flex-001",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "pricing-heading-001",
+                  "level": 2,
+                  "text": "Simple, Transparent Pricing",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "pricing-text-001",
+                  "variant": "lead",
+                  "content": "Flexible subscription plans and one-time purchases to fit your needs. Free delivery on orders over $50."
+                },
+                {
+                  "componentType": "PricingTableProps",
+                  "uuid": "pricing-table-001",
+                  "currency": "$",
+                  "showToggle": false,
+                  "classes": "pt-12 w-full",
+                  "content": [
+                    {
+                      "componentType": "PricingPlanProps",
+                      "uuid": "plan-dozen",
+                      "name": {
+                        "uuid": "plan-dozen-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Dozen Box"
+                      },
+                      "description": {
+                        "uuid": "plan-dozen-description",
+                        "componentType": "TextProps",
+                        "content": "Perfect for trying our fresh eggs."
+                      },
+                      "price": "8",
+                      "period": "box",
+                      "highlight": false,
+                      "features": [
+                        "12 farm-fresh eggs",
+                        "Pasture-raised hens",
+                        "Organic feed",
+                        "Standard packaging",
+                        "Shelf life: 3 weeks"
+                      ],
+                      "button": {
+                        "componentType": "ButtonProps",
+                        "uuid": "btn-dozen",
+                        "text": "Add to Cart",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    },
+                    {
+                      "componentType": "PricingPlanProps",
+                      "uuid": "plan-weekly",
+                      "name": {
+                        "uuid": "plan-weekly-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Weekly Subscription"
+                      },
+                      "description": {
+                        "uuid": "plan-weekly-description",
+                        "componentType": "TextProps",
+                        "content": "Fresh eggs delivered every week."
+                      },
+                      "price": "32",
+                      "period": "month",
+                      "highlight": true,
+                      "features": [
+                        "4 dozen eggs per month",
+                        "Free delivery",
+                        "Pasture-raised hens",
+                        "Organic feed",
+                        "Priority support",
+                        "Cancel anytime"
+                      ],
+                      "button": {
+                        "componentType": "ButtonProps",
+                        "uuid": "btn-weekly",
+                        "text": "Subscribe Now",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    },
+                    {
+                      "componentType": "PricingPlanProps",
+                      "uuid": "plan-premium",
+                      "name": {
+                        "uuid": "plan-premium-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Premium Bundle"
+                      },
+                      "description": {
+                        "uuid": "plan-premium-description",
+                        "componentType": "TextProps",
+                        "content": "Everything plus specialty products."
+                      },
+                      "price": "59",
+                      "period": "month",
+                      "highlight": false,
+                      "features": [
+                        "6 dozen eggs per month",
+                        "Free delivery",
+                        "2 jars farm-made jam",
+                        "1 bottle local honey",
+                        "Priority support",
+                        "Exclusive recipes",
+                        "Cancel anytime"
+                      ],
+                      "button": {
+                        "componentType": "ButtonProps",
+                        "uuid": "btn-premium",
+                        "text": "Subscribe Now",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "cta-section-001",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "cta-flex-001",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-2xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "cta-heading-001",
+                  "level": 2,
+                  "text": "Ready for Fresh, Farm-to-Table Goodness?",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "cta-text-001",
+                  "variant": "lead",
+                  "content": "Join thousands of happy customers enjoying the finest farm-fresh products. Order your first box today and taste the difference quality makes. Questions? Contact us at (555) 123-4567 or hello@farmfresh.com"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "cta-buttons-001",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "pt-4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-btn-order-001",
+                      "text": "Place Your Order",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "cta-icon-cart-001",
+                        "name": "shopping-cart",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "disabled": false,
+                      "type": "button"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-btn-contact-001",
+                      "text": "Contact Us",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "cta-icon-phone-001",
+                        "name": "phone",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "disabled": false,
+                      "type": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "7f8e9d0c-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "pageType": "WebPageProps",
+      "slug": "/farm-visits",
+      "title": "Farm Visits",
+      "summary": "Discover authentic farm experiences and book guided tours. Learn about sustainable farming practices while enjoying hands-on activities for the whole family.",
+      "shortSummary": "Book farm visit experiences and guided tours",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "hero-section-uuid",
+          "layout": "twoColumnSidebarRight",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-flex-left",
+              "direction": "column",
+              "justify": "center",
+              "gap": "6",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "hero-heading",
+                  "level": 1,
+                  "text": "Experience farm life like never before",
+                  "classes": "text-5xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "hero-text",
+                  "variant": "lead",
+                  "content": "Join us for unforgettable farm tours, seasonal harvests, and hands-on agricultural experiences. Perfect for families, groups, and anyone who wants to connect with nature and sustainable farming."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "hero-buttons",
+                  "direction": "row",
+                  "align": "center",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-book-tour",
+                      "text": "Book a Tour",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-calendar",
+                        "name": "calendar",
+                        "size": 20
+                      },
+                      "iconPosition": "right"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "btn-learn-more",
+                      "text": "Learn More",
+                      "variant": "outline",
+                      "size": "lg"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "hero-image-flex",
+              "justify": "center",
+              "align": "center",
+              "classes": "h-full",
+              "content": [
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "hero-image",
+                  "src": "https://images.unsplash.com/photo-1625246333195-78d9c38ad576?w=600&h=600&fit=crop",
+                  "alt": "Family enjoying farm visit experience",
+                  "asset": {
+                    "componentType": "ImageAssetProps",
+                    "uuid": "hero-image-asset",
+                    "keywords": "farm, family, agriculture, countryside",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 600
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "features-section-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "features-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "features-heading",
+                  "level": 2,
+                  "text": "Farm Visit Experiences",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "features-subtext",
+                  "variant": "lead",
+                  "content": "Choose from our variety of farm experiences designed for all ages and interests. From seasonal harvests to educational workshops, there's something for everyone."
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "features-grid",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-harvest",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-harvest",
+                        "name": "activity",
+                        "size": 32,
+                        "classes": "text-yellow-600 bg-yellow-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-harvest-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Seasonal Harvests"
+                      },
+                      "text": {
+                        "uuid": "feature-harvest-text",
+                        "componentType": "TextProps",
+                        "content": "Pick fresh fruits and vegetables directly from our fields. Learn traditional harvesting techniques while enjoying the satisfaction of gathering your own produce."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-education",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-education",
+                        "name": "info",
+                        "size": 32,
+                        "classes": "text-green-600 bg-green-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-education-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Educational Tours"
+                      },
+                      "text": {
+                        "uuid": "feature-education-text",
+                        "componentType": "TextProps",
+                        "content": "Discover sustainable farming practices and animal husbandry. Our knowledgeable guides share insights about organic agriculture and environmental stewardship."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-family",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-family",
+                        "name": "house",
+                        "size": 32,
+                        "classes": "text-amber-600 bg-amber-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-family-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Family-Friendly"
+                      },
+                      "text": {
+                        "uuid": "feature-family-text",
+                        "componentType": "TextProps",
+                        "content": "Perfect for families with activities tailored for children. Interact with farm animals, explore nature trails, and create lasting memories together."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-cooking",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-cooking",
+                        "name": "menu",
+                        "size": 32,
+                        "classes": "text-orange-600 bg-orange-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-cooking-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Farm-to-Table Meals"
+                      },
+                      "text": {
+                        "uuid": "feature-cooking-text",
+                        "componentType": "TextProps",
+                        "content": "Enjoy delicious meals prepared with our fresh ingredients. Experience the farm-to-table philosophy with authentic country cooking and local flavors."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-workshops",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-workshops",
+                        "name": "search",
+                        "size": 32,
+                        "classes": "text-red-600 bg-red-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-workshops-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Workshops"
+                      },
+                      "text": {
+                        "uuid": "feature-workshops-text",
+                        "componentType": "TextProps",
+                        "content": "Learn new skills including gardening, beekeeping, and cheese-making. Our expert instructors guide you through hands-on demonstrations and practical applications."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-groups",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-groups",
+                        "name": "users",
+                        "size": 32,
+                        "classes": "text-blue-600 bg-blue-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "uuid": "feature-groups-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Group Events"
+                      },
+                      "text": {
+                        "uuid": "feature-groups-text",
+                        "componentType": "TextProps",
+                        "content": "Host corporate events, birthday parties, or school trips. We offer customizable packages tailored to your group's size and interests."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "pricing-section-uuid",
+          "layout": "singleColumnWide",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "pricing-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "pricing-heading",
+                  "level": 2,
+                  "text": "Tour Pricing",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "pricing-subtext",
+                  "variant": "lead",
+                  "content": "Flexible pricing options for individual visitors, families, and groups. All tours include guided experiences and farm-fresh refreshments."
+                },
+                {
+                  "componentType": "PricingTableProps",
+                  "uuid": "pricing-table",
+                  "currency": "$",
+                  "showToggle": false,
+                  "classes": "pt-12 w-full",
+                  "content": [
+                    {
+                      "componentType": "PricingPlanProps",
+                      "uuid": "plan-individual",
+                      "name": {
+                        "uuid": "plan-individual-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Individual Visit"
+                      },
+                      "description": {
+                        "uuid": "plan-individual-desc",
+                        "componentType": "TextProps",
+                        "content": "Perfect for solo explorers and nature enthusiasts."
+                      },
+                      "price": "25",
+                      "period": "person",
+                      "highlight": false,
+                      "features": [
+                        "2-hour guided farm tour",
+                        "Farm animal interactions",
+                        "Seasonal produce sampling",
+                        "Trail exploration",
+                        "Farm shop discount"
+                      ],
+                      "button": {
+                        "componentType": "ButtonProps",
+                        "uuid": "btn-individual",
+                        "text": "Book Now",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    },
+                    {
+                      "componentType": "PricingPlanProps",
+                      "uuid": "plan-family",
+                      "name": {
+                        "uuid": "plan-family-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Family Package"
+                      },
+                      "description": {
+                        "uuid": "plan-family-desc",
+                        "componentType": "TextProps",
+                        "content": "Most popular for families with children."
+                      },
+                      "price": "79",
+                      "period": "family",
+                      "highlight": true,
+                      "features": [
+                        "3-hour extended tour",
+                        "Harvest activity included",
+                        "Farm lunch for 4",
+                        "Kids' workshop activity",
+                        "Photo memories included"
+                      ],
+                      "button": {
+                        "componentType": "ButtonProps",
+                        "uuid": "btn-family",
+                        "text": "Book Now",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    },
+                    {
+                      "componentType": "PricingPlanProps",
+                      "uuid": "plan-group",
+                      "name": {
+                        "uuid": "plan-group-name",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Group Experience"
+                      },
+                      "description": {
+                        "uuid": "plan-group-desc",
+                        "componentType": "TextProps",
+                        "content": "Custom events for 15+ people with dedicated guide."
+                      },
+                      "price": "299",
+                      "period": "group",
+                      "highlight": false,
+                      "features": [
+                        "Half-day or full-day options",
+                        "Dedicated guide and activities",
+                        "Group meal included",
+                        "Team-building activities",
+                        "Custom package available"
+                      ],
+                      "button": {
+                        "componentType": "ButtonProps",
+                        "uuid": "btn-group",
+                        "text": "Contact Us",
+                        "variant": "default",
+                        "size": "lg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "cta-section-uuid",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-r from-yellow-50 to-green-50",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "cta-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-2xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "cta-heading",
+                  "level": 2,
+                  "text": "Ready for your farm adventure?",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "cta-text",
+                  "variant": "lead",
+                  "content": "Book your farm visit today and discover the joy of connecting with nature. Limited spots available for each tour, so reserve your experience now."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "cta-buttons",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "pt-4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-btn-book",
+                      "text": "Book a Tour",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "cta-icon-calendar",
+                        "name": "calendar",
+                        "size": 20
+                      },
+                      "iconPosition": "left"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-btn-contact",
+                      "text": "Contact Us",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "cta-icon-mail",
+                        "name": "mail",
+                        "size": 20
+                      },
+                      "iconPosition": "left"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "page-farm-blog-001",
+      "pageType": "WebPageProps",
+      "slug": "/blog",
+      "title": "Blog",
+      "summary": "A comprehensive farming blog featuring the latest farm updates, chicken care tips, and sustainable farming insights. Discover articles about poultry management, seasonal farming practices, and agricultural best practices.",
+      "shortSummary": "Farm updates, chicken care tips, and farming insights",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "section-blog-hero-001",
+          "layout": "twoColumnSidebarRight",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "flex-featured-article-001",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "image-featured-chickens",
+                  "src": "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&h=400&fit=crop",
+                  "alt": "Healthy flock of chickens on sustainable farm",
+                  "classes": "rounded-lg",
+                  "asset": {
+                    "uuid": "asset-featured-chickens",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "chickens, farm, poultry, flock",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 400
+                  }
+                },
+                {
+                  "componentType": "BadgeProps",
+                  "uuid": "badge-poultry-care",
+                  "content": "Poultry Care",
+                  "variant": "secondary"
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "heading-featured-article",
+                  "level": 2,
+                  "text": "Winter Preparation Guide: Keeping Your Chickens Healthy and Happy",
+                  "classes": "text-4xl font-bold tracking-tight"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "flex-author-info-001",
+                  "direction": "row",
+                  "align": "center",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "componentType": "AvatarProps",
+                      "uuid": "avatar-author-001",
+                      "name": "Sarah Johnson",
+                      "size": 40
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "flex-author-meta-001",
+                      "direction": "column",
+                      "content": [
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "text-author-name",
+                          "content": "Sarah Johnson",
+                          "classes": "font-semibold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "text-publish-date",
+                          "content": "Posted on Nov 5, 2024",
+                          "classes": "text-sm text-gray-500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "text-featured-excerpt",
+                  "content": "As winter approaches, preparing your chicken coop is essential. Learn the best practices for insulation, ventilation, and nutrition to ensure your flock thrives through the cold months."
+                },
+                {
+                  "componentType": "LinkProps",
+                  "uuid": "link-read-featured",
+                  "text": "Read full article →",
+                  "href": "/blog/winter-chicken-guide",
+                  "classes": "font-semibold text-amber-600"
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "flex-recent-articles-001",
+              "direction": "column",
+              "gap": "10",
+              "content": [
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "flex-article-card-001",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "flex-badge-heading-001",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "3",
+                      "content": [
+                        {
+                          "componentType": "BadgeProps",
+                          "uuid": "badge-sustainable",
+                          "content": "Sustainability",
+                          "variant": "default"
+                        },
+                        {
+                          "componentType": "HeadingProps",
+                          "uuid": "heading-article-001",
+                          "level": 3,
+                          "text": "Composting Strategies for Your Farm",
+                          "classes": "text-xl font-semibold"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "text-article-001",
+                      "content": "Maximize your farm's productivity with effective composting. Discover how to create nutrient-rich compost from kitchen scraps and farm waste."
+                    },
+                    {
+                      "componentType": "LinkProps",
+                      "uuid": "link-article-001",
+                      "text": "Read more →",
+                      "href": "/blog/farm-composting",
+                      "classes": "font-semibold text-amber-600"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "flex-article-card-002",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "flex-badge-heading-002",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "3",
+                      "content": [
+                        {
+                          "componentType": "BadgeProps",
+                          "uuid": "badge-health",
+                          "content": "Health & Disease",
+                          "variant": "secondary",
+                          "classes": "bg-orange-100 text-orange-800"
+                        },
+                        {
+                          "componentType": "HeadingProps",
+                          "uuid": "heading-article-002",
+                          "level": 3,
+                          "text": "Recognizing Common Chicken Diseases",
+                          "classes": "text-xl font-semibold"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "text-article-002",
+                      "content": "Learn how to identify early signs of illness in your flock and take preventative measures to keep your chickens healthy and productive."
+                    },
+                    {
+                      "componentType": "LinkProps",
+                      "uuid": "link-article-002",
+                      "text": "Read more →",
+                      "href": "/blog/chicken-diseases",
+                      "classes": "font-semibold text-amber-600"
+                    }
+                  ]
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "flex-article-card-003",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "flex-badge-heading-003",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "3",
+                      "content": [
+                        {
+                          "componentType": "BadgeProps",
+                          "uuid": "badge-breeding",
+                          "content": "Breeding & Genetics",
+                          "variant": "success"
+                        },
+                        {
+                          "componentType": "HeadingProps",
+                          "uuid": "heading-article-003",
+                          "level": 3,
+                          "text": "Selecting the Best Breeds for Beginners",
+                          "classes": "text-xl font-semibold"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "TextProps",
+                      "uuid": "text-article-003",
+                      "content": "Starting a chicken flock? Explore the best beginner-friendly breeds that are hardy, productive, and easy to manage."
+                    },
+                    {
+                      "componentType": "LinkProps",
+                      "uuid": "link-article-003",
+                      "text": "Read more →",
+                      "href": "/blog/best-chicken-breeds",
+                      "classes": "font-semibold text-amber-600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "section-categories-001",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "flex-categories-header-001",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "heading-categories",
+                  "level": 2,
+                  "text": "Browse by Category",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "text-categories-desc",
+                  "variant": "lead",
+                  "content": "Explore our comprehensive collection of farming expertise"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "grid-categories-001",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "pt-12 w-full",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-daily-care",
+                      "variant": "standard",
+                      "layout": "iconTopCenter",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-activity",
+                        "name": "activity",
+                        "size": 48,
+                        "classes": "text-amber-600"
+                      },
+                      "title": {
+                        "uuid": "feature-daily-care-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Daily Care"
+                      },
+                      "text": {
+                        "uuid": "feature-daily-care-text",
+                        "componentType": "TextProps",
+                        "content": "Feeding schedules, water management, and routine maintenance for healthy chickens."
+                      },
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-daily-care",
+                        "text": "Explore articles >",
+                        "href": "/blog/category/daily-care",
+                        "classes": "font-semibold text-amber-600"
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-housing",
+                      "variant": "standard",
+                      "layout": "iconTopCenter",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-house",
+                        "name": "house",
+                        "size": 48,
+                        "classes": "text-amber-600"
+                      },
+                      "title": {
+                        "uuid": "feature-housing-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Housing & Setup"
+                      },
+                      "text": {
+                        "uuid": "feature-housing-text",
+                        "componentType": "TextProps",
+                        "content": "Coop design, construction tips, and creating the perfect environment for your flock."
+                      },
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-housing",
+                        "text": "Explore articles >",
+                        "href": "/blog/category/housing",
+                        "classes": "font-semibold text-amber-600"
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "feature-nutrition",
+                      "variant": "standard",
+                      "layout": "iconTopCenter",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-info",
+                        "name": "info",
+                        "size": 48,
+                        "classes": "text-amber-600"
+                      },
+                      "title": {
+                        "uuid": "feature-nutrition-title",
+                        "componentType": "HeadingProps",
+                        "level": 3,
+                        "text": "Nutrition & Health"
+                      },
+                      "text": {
+                        "uuid": "feature-nutrition-text",
+                        "componentType": "TextProps",
+                        "content": "Balanced diets, supplements, and maintaining peak health for productive chickens."
+                      },
+                      "link": {
+                        "componentType": "LinkProps",
+                        "uuid": "link-nutrition",
+                        "text": "Explore articles >",
+                        "href": "/blog/category/nutrition",
+                        "classes": "font-semibold text-amber-600"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "section-cta-subscribe-001",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "flex-cta-content-001",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "h-full text-center max-w-2xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "heading-cta-subscribe",
+                  "level": 2,
+                  "text": "Never Miss a Farm Update",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "text-cta-subscribe",
+                  "variant": "lead",
+                  "content": "Subscribe to our newsletter for weekly farming tips, seasonal insights, and exclusive resources delivered right to your inbox."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "flex-cta-buttons-001",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "pt-4 flex-wrap",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "button-subscribe",
+                      "text": "Subscribe Now",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-mail",
+                        "name": "mail",
+                        "size": 20
+                      },
+                      "iconPosition": "left"
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "button-rss",
+                      "text": "RSS Feed",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-rss",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "left"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "page-features-2-001",
+      "pageType": "WebPageProps",
+      "slug": "/features",
+      "title": "Features",
+      "summary": "Comprehensive overview of HappyDoods Farm features including quality standards, certifications, infrastructure, animal welfare practices, and technology innovations that make our farm exceptional.",
+      "shortSummary": "Farm features, quality standards, and unique capabilities",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "componentType": "SectionProps",
+          "uuid": "features-hero-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "classes": "text-center bg-gradient-to-b from-amber-50 to-background",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "features-hero-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "6",
+              "classes": "max-w-4xl mx-auto",
+              "content": [
+                {
+                  "componentType": "BadgeProps",
+                  "uuid": "features-badge",
+                  "content": "Premium Quality",
+                  "variant": "default",
+                  "classes": "bg-amber-500 text-white"
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "features-hero-heading",
+                  "level": 1,
+                  "text": "What Makes HappyDoods Farm Special",
+                  "classes": "text-5xl md:text-6xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "features-hero-description",
+                  "variant": "lead",
+                  "content": "Discover the exceptional features, certifications, and innovations that set our heritage chicken farm apart from the rest.",
+                  "classes": "text-muted-foreground max-w-3xl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "quality-standards-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "quality-standards-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "text-center max-w-6xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "quality-heading",
+                  "level": 2,
+                  "text": "Industry-Leading Quality Standards",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "quality-description",
+                  "variant": "lead",
+                  "content": "We exceed industry standards with our commitment to excellence in every aspect of farm management.",
+                  "classes": "text-muted-foreground"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "quality-grid",
+                  "columns": 3,
+                  "gap": "6",
+                  "classes": "w-full pt-8",
+                  "content": [
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "quality-organic",
+                      "variant": "default",
+                      "classes": "text-center p-8",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "quality-organic-flex",
+                          "direction": "column",
+                          "align": "center",
+                          "gap": "4",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-organic",
+                              "name": "leaf",
+                              "size": 48,
+                              "classes": "text-green-600"
+                            },
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "quality-organic-title",
+                              "level": 3,
+                              "text": "USDA Organic Certified"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "quality-organic-desc",
+                              "content": "100% certified organic feed, no pesticides or synthetic chemicals. Our certification is renewed annually with strict third-party audits.",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "quality-welfare",
+                      "variant": "default",
+                      "classes": "text-center p-8",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "quality-welfare-flex",
+                          "direction": "column",
+                          "align": "center",
+                          "gap": "4",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-welfare",
+                              "name": "heart",
+                              "size": 48,
+                              "classes": "text-red-600"
+                            },
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "quality-welfare-title",
+                              "level": 3,
+                              "text": "Animal Welfare Approved"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "quality-welfare-desc",
+                              "content": "Highest animal welfare certification in North America. Our chickens enjoy free-range access, natural behaviors, and stress-free living.",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "quality-humane",
+                      "variant": "default",
+                      "classes": "text-center p-8",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "quality-humane-flex",
+                          "direction": "column",
+                          "align": "center",
+                          "gap": "4",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-humane",
+                              "name": "check-circle",
+                              "size": 48,
+                              "classes": "text-blue-600"
+                            },
+                            {
+                              "componentType": "HeadingProps",
+                              "uuid": "quality-humane-title",
+                              "level": 3,
+                              "text": "Humane Certified"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "quality-humane-desc",
+                              "content": "Verified by the American Humane Association. Independent inspectors ensure our practices meet the gold standard for ethical farming.",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "infrastructure-section",
+          "layout": "singleColumnWide",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "infrastructure-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "text-center",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "infrastructure-heading",
+                  "level": 2,
+                  "text": "State-of-the-Art Farm Infrastructure",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "infrastructure-description",
+                  "variant": "lead",
+                  "content": "Modern facilities designed with both chicken comfort and environmental sustainability in mind.",
+                  "classes": "text-muted-foreground max-w-3xl"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "infrastructure-grid",
+                  "columns": 2,
+                  "gap": "8",
+                  "classes": "w-full pt-8 text-left",
+                  "content": [
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "infra-housing",
+                      "variant": "default",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "infra-housing-flex",
+                          "direction": "row",
+                          "gap": "6",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-housing",
+                              "name": "house",
+                              "size": 64,
+                              "classes": "text-amber-600 flex-shrink-0"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "infra-housing-content",
+                              "direction": "column",
+                              "gap": "3",
+                              "content": [
+                                {
+                                  "componentType": "HeadingProps",
+                                  "uuid": "infra-housing-title",
+                                  "level": 3,
+                                  "text": "Climate-Controlled Coops"
+                                },
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "infra-housing-desc",
+                                  "content": "Advanced ventilation systems maintain optimal temperature and air quality year-round. Solar-powered automated doors provide safe overnight protection while maximizing daytime outdoor access.",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "infra-pasture",
+                      "variant": "default",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "infra-pasture-flex",
+                          "direction": "row",
+                          "gap": "6",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-pasture",
+                              "name": "globe",
+                              "size": 64,
+                              "classes": "text-green-600 flex-shrink-0"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "infra-pasture-content",
+                              "direction": "column",
+                              "gap": "3",
+                              "content": [
+                                {
+                                  "componentType": "HeadingProps",
+                                  "uuid": "infra-pasture-title",
+                                  "level": 3,
+                                  "text": "50+ Acres of Pasture"
+                                },
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "infra-pasture-desc",
+                                  "content": "Rotational grazing system across diverse terrain ensures fresh forage and prevents overgrazing. Native grasses, clover, and wildflowers provide natural nutrition and enrichment.",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "infra-water",
+                      "variant": "default",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "infra-water-flex",
+                          "direction": "row",
+                          "gap": "6",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-water",
+                              "name": "droplet",
+                              "size": 64,
+                              "classes": "text-blue-600 flex-shrink-0"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "infra-water-content",
+                              "direction": "column",
+                              "gap": "3",
+                              "content": [
+                                {
+                                  "componentType": "HeadingProps",
+                                  "uuid": "infra-water-title",
+                                  "level": 3,
+                                  "text": "Pure Spring Water System"
+                                },
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "infra-water-desc",
+                                  "content": "Natural spring-fed water supply filtered through mineral-rich aquifers. Automatic waterers maintain fresh, clean water 24/7 with UV sterilization for optimal health.",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "CardProps",
+                      "uuid": "infra-renewable",
+                      "variant": "default",
+                      "content": [
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "infra-renewable-flex",
+                          "direction": "row",
+                          "gap": "6",
+                          "classes": "p-6",
+                          "content": [
+                            {
+                              "componentType": "IconProps",
+                              "uuid": "icon-renewable",
+                              "name": "zap",
+                              "size": 64,
+                              "classes": "text-yellow-600 flex-shrink-0"
+                            },
+                            {
+                              "componentType": "FlexProps",
+                              "uuid": "infra-renewable-content",
+                              "direction": "column",
+                              "gap": "3",
+                              "content": [
+                                {
+                                  "componentType": "HeadingProps",
+                                  "uuid": "infra-renewable-title",
+                                  "level": 3,
+                                  "text": "100% Renewable Energy"
+                                },
+                                {
+                                  "componentType": "TextProps",
+                                  "uuid": "infra-renewable-desc",
+                                  "content": "Solar panels and wind turbines power all farm operations. Battery storage systems ensure uninterrupted operation even during grid outages, keeping chickens safe and comfortable.",
+                                  "classes": "text-muted-foreground"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "technology-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "technology-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "text-center max-w-5xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "technology-heading",
+                  "level": 2,
+                  "text": "Technology & Innovation",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "technology-description",
+                  "variant": "lead",
+                  "content": "We combine traditional farming wisdom with cutting-edge technology to optimize flock health and farm efficiency.",
+                  "classes": "text-muted-foreground"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "technology-grid",
+                  "columns": 3,
+                  "gap": "6",
+                  "classes": "w-full pt-8 text-left",
+                  "content": [
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "tech-monitoring",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-monitoring",
+                        "name": "activity",
+                        "size": 32,
+                        "classes": "text-purple-600 bg-purple-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "componentType": "HeadingProps",
+                        "uuid": "tech-monitoring-title",
+                        "level": 3,
+                        "text": "Smart Flock Monitoring"
+                      },
+                      "text": {
+                        "componentType": "TextProps",
+                        "uuid": "tech-monitoring-desc",
+                        "content": "IoT sensors track flock behavior, egg production, and environmental conditions in real-time. AI-powered analytics alert us to potential health issues before they become problems."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "tech-traceability",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-traceability",
+                        "name": "search",
+                        "size": 32,
+                        "classes": "text-indigo-600 bg-indigo-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "componentType": "HeadingProps",
+                        "uuid": "tech-traceability-title",
+                        "level": 3,
+                        "text": "Full Traceability"
+                      },
+                      "text": {
+                        "componentType": "TextProps",
+                        "uuid": "tech-traceability-desc",
+                        "content": "Every egg is tracked from hen to customer. Scan QR codes to see the exact coop, laying date, and even the hen's breed and age for complete transparency."
+                      }
+                    },
+                    {
+                      "componentType": "StandardFeatureProps",
+                      "uuid": "tech-automated",
+                      "variant": "standard",
+                      "layout": "iconTopLeft",
+                      "icon": {
+                        "componentType": "IconProps",
+                        "uuid": "icon-automated",
+                        "name": "settings",
+                        "size": 32,
+                        "classes": "text-pink-600 bg-pink-100 p-2 rounded-lg"
+                      },
+                      "title": {
+                        "componentType": "HeadingProps",
+                        "uuid": "tech-automated-title",
+                        "level": 3,
+                        "text": "Automated Systems"
+                      },
+                      "text": {
+                        "componentType": "TextProps",
+                        "uuid": "tech-automated-desc",
+                        "content": "Smart feeding systems ensure optimal nutrition at scheduled times. Automated egg collection maintains freshness while minimizing handling stress for our hens."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "welfare-practices-section",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "welfare-image-flex",
+              "justify": "center",
+              "align": "center",
+              "content": [
+                {
+                  "componentType": "ImageProps",
+                  "uuid": "welfare-image",
+                  "src": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
+                  "alt": "Happy chickens enjoying pasture",
+                  "classes": "rounded-lg shadow-lg",
+                  "asset": {
+                    "componentType": "ImageAssetProps",
+                    "uuid": "asset-welfare",
+                    "keywords": "chickens, welfare, pasture, happy",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 700
+                  }
+                }
+              ]
+            },
+            {
+              "componentType": "FlexProps",
+              "uuid": "welfare-content-flex",
+              "direction": "column",
+              "justify": "center",
+              "gap": "6",
+              "content": [
+                {
+                  "componentType": "BadgeProps",
+                  "uuid": "welfare-badge",
+                  "content": "Animal Welfare",
+                  "variant": "secondary",
+                  "classes": "w-fit"
+                },
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "welfare-heading",
+                  "level": 2,
+                  "text": "Exceptional Animal Welfare Practices",
+                  "classes": "text-4xl font-bold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "welfare-intro",
+                  "variant": "lead",
+                  "content": "Our chickens live their best lives with practices that go beyond certification requirements."
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "welfare-list",
+                  "direction": "column",
+                  "gap": "4",
+                  "classes": "mt-4",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "welfare-item-1",
+                      "direction": "row",
+                      "gap": "3",
+                      "align": "start",
+                      "content": [
+                        {
+                          "componentType": "IconProps",
+                          "uuid": "welfare-icon-1",
+                          "name": "check-circle",
+                          "size": 24,
+                          "classes": "text-green-600 flex-shrink-0"
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "welfare-item-1-content",
+                          "direction": "column",
+                          "gap": "1",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-1-title",
+                              "content": "Spacious Living Areas",
+                              "classes": "font-semibold"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-1-desc",
+                              "content": "10+ sq ft per bird indoors plus unlimited outdoor access during daylight hours",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "welfare-item-2",
+                      "direction": "row",
+                      "gap": "3",
+                      "align": "start",
+                      "content": [
+                        {
+                          "componentType": "IconProps",
+                          "uuid": "welfare-icon-2",
+                          "name": "check-circle",
+                          "size": 24,
+                          "classes": "text-green-600 flex-shrink-0"
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "welfare-item-2-content",
+                          "direction": "column",
+                          "gap": "1",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-2-title",
+                              "content": "Natural Behaviors Encouraged",
+                              "classes": "font-semibold"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-2-desc",
+                              "content": "Dust baths, foraging areas, roosting bars, and nesting boxes designed for comfort",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "welfare-item-3",
+                      "direction": "row",
+                      "gap": "3",
+                      "align": "start",
+                      "content": [
+                        {
+                          "componentType": "IconProps",
+                          "uuid": "welfare-icon-3",
+                          "name": "check-circle",
+                          "size": 24,
+                          "classes": "text-green-600 flex-shrink-0"
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "welfare-item-3-content",
+                          "direction": "column",
+                          "gap": "1",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-3-title",
+                              "content": "Stress-Free Environment",
+                              "classes": "font-semibold"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-3-desc",
+                              "content": "Low-noise operations, gentle handling, and natural light cycles for optimal wellbeing",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "welfare-item-4",
+                      "direction": "row",
+                      "gap": "3",
+                      "align": "start",
+                      "content": [
+                        {
+                          "componentType": "IconProps",
+                          "uuid": "welfare-icon-4",
+                          "name": "check-circle",
+                          "size": 24,
+                          "classes": "text-green-600 flex-shrink-0"
+                        },
+                        {
+                          "componentType": "FlexProps",
+                          "uuid": "welfare-item-4-content",
+                          "direction": "column",
+                          "gap": "1",
+                          "content": [
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-4-title",
+                              "content": "Veterinary Excellence",
+                              "classes": "font-semibold"
+                            },
+                            {
+                              "componentType": "TextProps",
+                              "uuid": "welfare-item-4-desc",
+                              "content": "On-call avian veterinarian, preventative care programs, and immediate response protocols",
+                              "classes": "text-sm text-muted-foreground"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "stats-section",
+          "layout": "singleColumnWide",
+          "spacing": "xl",
+          "classes": "bg-primary text-primary-foreground",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "stats-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "12",
+              "classes": "text-center",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "stats-heading",
+                  "level": 2,
+                  "text": "HappyDoods by the Numbers",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "GridProps",
+                  "uuid": "stats-grid",
+                  "columns": 4,
+                  "gap": "8",
+                  "classes": "w-full",
+                  "content": [
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "stat-1",
+                      "direction": "column",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-1-number",
+                          "content": "2,000+",
+                          "classes": "text-5xl font-extrabold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-1-label",
+                          "content": "Heritage Breed Chickens",
+                          "classes": "text-sm opacity-90"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "stat-2",
+                      "direction": "column",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-2-number",
+                          "content": "50+",
+                          "classes": "text-5xl font-extrabold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-2-label",
+                          "content": "Acres of Pasture",
+                          "classes": "text-sm opacity-90"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "stat-3",
+                      "direction": "column",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-3-number",
+                          "content": "15+",
+                          "classes": "text-5xl font-extrabold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-3-label",
+                          "content": "Years in Operation",
+                          "classes": "text-sm opacity-90"
+                        }
+                      ]
+                    },
+                    {
+                      "componentType": "FlexProps",
+                      "uuid": "stat-4",
+                      "direction": "column",
+                      "align": "center",
+                      "gap": "2",
+                      "content": [
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-4-number",
+                          "content": "100%",
+                          "classes": "text-5xl font-extrabold"
+                        },
+                        {
+                          "componentType": "TextProps",
+                          "uuid": "stat-4-label",
+                          "content": "Renewable Energy Powered",
+                          "classes": "text-sm opacity-90"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentType": "SectionProps",
+          "uuid": "cta-features-section",
+          "layout": "singleColumnCentered",
+          "spacing": "xl",
+          "content": [
+            {
+              "componentType": "FlexProps",
+              "uuid": "cta-features-flex",
+              "direction": "column",
+              "align": "center",
+              "gap": "8",
+              "classes": "text-center max-w-2xl mx-auto",
+              "content": [
+                {
+                  "componentType": "HeadingProps",
+                  "uuid": "cta-features-heading",
+                  "level": 2,
+                  "text": "Experience the HappyDoods Difference",
+                  "classes": "text-4xl font-extrabold tracking-tight"
+                },
+                {
+                  "componentType": "TextProps",
+                  "uuid": "cta-features-text",
+                  "variant": "lead",
+                  "content": "See our exceptional features in action. Visit our farm or order our premium products today.",
+                  "classes": "text-muted-foreground"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "uuid": "cta-features-buttons",
+                  "direction": "row",
+                  "justify": "center",
+                  "gap": "4",
+                  "classes": "pt-4",
+                  "content": [
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-features-btn-visit",
+                      "text": "Book Farm Tour",
+                      "variant": "default",
+                      "size": "lg",
+                      "link": {
+                        "href": "/farm-visits"
+                      }
+                    },
+                    {
+                      "componentType": "ButtonProps",
+                      "uuid": "cta-features-btn-shop",
+                      "text": "Shop Products",
+                      "variant": "outline",
+                      "size": "lg",
+                      "link": {
+                        "href": "/products"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "page-contact-001",
+      "pageType": "WebPageProps",
+      "slug": "/contact",
+      "title": "Contact",
+      "summary": "Professional contact page featuring a hero section, contact inquiry form, farm location details, and multiple communication channels for customer inquiries.",
+      "shortSummary": "Contact information and inquiry form for customer questions",
+      "lastUpdatedEpoch": 1730851200,
+      "content": [
+        {
+          "uuid": "section-hero-contact",
+          "componentType": "SectionProps",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-orange-50 to-background",
+          "content": [
+            {
+              "uuid": "hero-container-contact",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content-contact",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "hero-text-contact",
+                      "componentType": "TextProps",
+                      "variant": "large",
+                      "classes": "font-bold text-orange-600",
+                      "content": "Get in Touch"
+                    },
+                    {
+                      "uuid": "hero-subtitle-contact",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "classes": "text-muted-foreground",
+                      "content": "We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

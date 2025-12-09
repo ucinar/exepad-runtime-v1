@@ -1,0 +1,453 @@
+{
+  "uuid": "app-form-newsletter-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Newsletter Subscription Form",
+  "alias": "newsletter-subscription-form",
+  "summary": "A clean and simple newsletter subscription form with interest preferences, frequency selection, and GDPR-compliant consent. Perfect for blogs, content creators, and businesses building their email list.",
+  "shortSummary": "A clean newsletter subscription form with interest preferences and frequency options",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0c0a09",
+      "primary": "#c2410c",
+      "primary-foreground": "#ffffff",
+      "secondary": "#fef3c7",
+      "secondary-foreground": "#78350f",
+      "muted": "#fafaf9",
+      "muted-foreground": "#78716c",
+      "accent": "#fed7aa",
+      "accent-foreground": "#9a3412",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e7e5e4",
+      "input": "#e7e5e4",
+      "ring": "#f97316"
+    },
+    "dark": {
+      "background": "#0c0a09",
+      "foreground": "#fafaf9",
+      "primary": "#fb923c",
+      "primary-foreground": "#431407",
+      "secondary": "#292524",
+      "secondary-foreground": "#fafaf9",
+      "muted": "#292524",
+      "muted-foreground": "#a8a29e",
+      "accent": "#44403c",
+      "accent-foreground": "#fed7aa",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#292524",
+      "input": "#292524",
+      "ring": "#fb923c"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-newsletter",
+      "title": "Subscribe to Our Newsletter",
+      "slug": "/",
+      "summary": "Stay updated with our latest content, exclusive offers, and insider news.",
+      "shortSummary": "Subscribe to stay updated with our latest content",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "min-h-screen flex items-center bg-gradient-to-br from-primary/10 via-background to-secondary/20",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-card",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "max-w-2xl bg-background border rounded-xl shadow-2xl p-8 md:p-12",
+                  "content": [
+                    {
+                      "uuid": "hero-header",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "align": "center",
+                      "classes": "text-center",
+                      "content": [
+                        {
+                          "uuid": "hero-icon",
+                          "componentType": "IconProps",
+                          "name": "mail",
+                          "size": 56,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "hero-heading",
+                          "componentType": "HeadingProps",
+                          "level": 1,
+                          "text": "Join Our Community"
+                        },
+                        {
+                          "uuid": "hero-description",
+                          "componentType": "TextProps",
+                          "variant": "lead",
+                          "content": "Get exclusive content, industry insights, and special offers delivered straight to your inbox.",
+                          "classes": "text-muted-foreground"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "newsletter-form",
+                      "componentType": "FormProps",
+                      "title": "Subscribe",
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Welcome aboard! Check your email to confirm your subscription.",
+                        "errorMessage": "Oops! Something went wrong. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email",
+                        "onSuccessAction": {
+                          "type": "clearForm"
+                        }
+                      },
+                      "content": [
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "you@example.com",
+                          "required": true,
+                          "validationRules": [
+                            {
+                              "type": "required",
+                              "errorMessage": "Email is required"
+                            },
+                            {
+                              "type": "email",
+                              "errorMessage": "Please enter a valid email address"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-first-name",
+                          "componentType": "TextFieldProps",
+                          "name": "firstName",
+                          "label": "First Name",
+                          "placeholder": "John",
+                          "helperText": "So we can personalize your emails"
+                        },
+                        {
+                          "uuid": "field-interests",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "interests",
+                          "label": "What are you interested in?",
+                          "helperText": "Select all that apply",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Product Updates & Releases",
+                              "value": "products"
+                            },
+                            {
+                              "label": "Industry News & Trends",
+                              "value": "news"
+                            },
+                            {
+                              "label": "Tips & Tutorials",
+                              "value": "tutorials"
+                            },
+                            {
+                              "label": "Exclusive Offers & Discounts",
+                              "value": "offers"
+                            },
+                            {
+                              "label": "Events & Webinars",
+                              "value": "events"
+                            },
+                            {
+                              "label": "Company Updates",
+                              "value": "company"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-frequency",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "emailFrequency",
+                          "label": "How often would you like to hear from us?",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Daily - Never miss an update",
+                              "value": "daily"
+                            },
+                            {
+                              "label": "Weekly - Best of the week (Recommended)",
+                              "value": "weekly"
+                            },
+                            {
+                              "label": "Monthly - Monthly digest",
+                              "value": "monthly"
+                            },
+                            {
+                              "label": "Occasionally - Only important news",
+                              "value": "occasional"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-consent",
+                          "componentType": "CheckboxFieldProps",
+                          "name": "gdprConsent",
+                          "label": "I agree to receive marketing emails and understand I can unsubscribe at any time",
+                          "required": true,
+                          "helperText": "We respect your privacy and will never share your information"
+                        },
+                        {
+                          "uuid": "field-hidden-source",
+                          "componentType": "HiddenFieldProps",
+                          "name": "subscriptionSource",
+                          "value": "newsletter-page"
+                        },
+                        {
+                          "uuid": "field-hidden-timestamp",
+                          "componentType": "HiddenFieldProps",
+                          "name": "subscribedAt",
+                          "value": "2025-11-04T12:00:00Z"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "actionType": "submit",
+                          "text": "Subscribe Now",
+                          "variant": "default",
+                          "icon": {
+                            "uuid": "submit-icon",
+                            "componentType": "IconProps",
+                            "name": "mail-check",
+                            "size": 16
+                          },
+                          "classes": "w-full",
+                          "uuid": "form-action-submit",
+                          "componentType": "ButtonProps"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "benefits-section",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "3",
+                      "classes": "mt-6 p-4 bg-muted/50 rounded-lg",
+                      "content": [
+                        {
+                          "uuid": "benefits-heading",
+                          "componentType": "HeadingProps",
+                          "level": 4,
+                          "text": "Why Subscribe?",
+                          "classes": "text-center"
+                        },
+                        {
+                          "uuid": "benefits-list",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "2",
+                          "content": [
+                            {
+                              "uuid": "benefit-1",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "benefit-1-icon",
+                                  "componentType": "IconProps",
+                                  "name": "circle-check",
+                                  "size": 18,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "benefit-1-text",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Exclusive content not available anywhere else"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "benefit-2",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "benefit-2-icon",
+                                  "componentType": "IconProps",
+                                  "name": "circle-check",
+                                  "size": 18,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "benefit-2-text",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Early access to new features and products"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "benefit-3",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "benefit-3-icon",
+                                  "componentType": "IconProps",
+                                  "name": "circle-check",
+                                  "size": 18,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "benefit-3-text",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Special discounts and member-only offers"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "benefit-4",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "align": "center",
+                              "content": [
+                                {
+                                  "uuid": "benefit-4-icon",
+                                  "componentType": "IconProps",
+                                  "name": "circle-check",
+                                  "size": 18,
+                                  "classes": "text-primary"
+                                },
+                                {
+                                  "uuid": "benefit-4-text",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Unsubscribe anytime with one click"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "trust-indicators",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "4",
+                      "justify": "center",
+                      "wrap": "wrap",
+                      "classes": "mt-4 text-muted-foreground",
+                      "content": [
+                        {
+                          "uuid": "trust-1",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "1",
+                          "align": "center",
+                          "content": [
+                            {
+                              "uuid": "trust-1-icon",
+                              "componentType": "IconProps",
+                              "name": "shield-check",
+                              "size": 16
+                            },
+                            {
+                              "uuid": "trust-1-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Privacy Protected"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "trust-2",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "1",
+                          "align": "center",
+                          "content": [
+                            {
+                              "uuid": "trust-2-icon",
+                              "componentType": "IconProps",
+                              "name": "users",
+                              "size": 16
+                            },
+                            {
+                              "uuid": "trust-2-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "Join 50,000+ subscribers"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "trust-3",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "1",
+                          "align": "center",
+                          "content": [
+                            {
+                              "uuid": "trust-3-icon",
+                              "componentType": "IconProps",
+                              "name": "x",
+                              "size": 16
+                            },
+                            {
+                              "uuid": "trust-3-text",
+                              "componentType": "TextProps",
+                              "variant": "small",
+                              "content": "No Spam, Ever"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

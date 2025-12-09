@@ -1,0 +1,447 @@
+{
+  "uuid": "skeleton-003-ecommerce-store",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "E-Commerce Store Skeleton",
+  "alias": "ecommerce-store-skeleton",
+  "summary": "Header: Sticky default navbar with bold text logo (ShopHub, green primary), underline menu effects (250ms), dual category dropdowns (Men's and Women's with Clothing/Shoes/Accessories), regular links (Sale, New Arrivals), outline Cart button with shopping-cart icon. Footer: Three-section vertical layout - top newsletter section centered with heading/description/subscribe button bordered bottom (pb-16), middle 4-column grid (Shop, Customer Service, About Us, Legal) with generous spacing (gap-12, pt-16), bottom bar with copyright and social links (Facebook, Instagram, Pinterest, YouTube), slate background with enhanced vertical rhythm (my-12 divider, pt-4 bottom).",
+  "shortSummary": "E-commerce skeleton with category dropdowns and newsletter footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0f172a",
+      "primary": "#15803d",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f0fdf4",
+      "accent-foreground": "#166534",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#059669"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#10b981",
+      "primary-foreground": "#022c22",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#022c22",
+      "accent-foreground": "#d1fae5",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#334155",
+      "input": "#1e293b",
+      "ring": "#10b981"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-ecommerce-navbar-003",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "underline",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-ecommerce-003",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "ShopHub",
+        "classes": "text-2xl font-bold text-primary"
+      },
+      "content": [
+        {
+          "uuid": "menu-dropdown-mens-003",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Men's",
+          "dropdown": {
+            "uuid": "dropdown-mens-003",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-mens-clothing-003",
+                "componentType": "DropdownLink",
+                "title": "Clothing",
+                "href": "/mens/clothing"
+              },
+              {
+                "uuid": "dropdown-mens-shoes-003",
+                "componentType": "DropdownLink",
+                "title": "Shoes",
+                "href": "/mens/shoes"
+              },
+              {
+                "uuid": "dropdown-mens-accessories-003",
+                "componentType": "DropdownLink",
+                "title": "Accessories",
+                "href": "/mens/accessories"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-dropdown-womens-003",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Women's",
+          "dropdown": {
+            "uuid": "dropdown-womens-003",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-womens-clothing-003",
+                "componentType": "DropdownLink",
+                "title": "Clothing",
+                "href": "/womens/clothing"
+              },
+              {
+                "uuid": "dropdown-womens-shoes-003",
+                "componentType": "DropdownLink",
+                "title": "Shoes",
+                "href": "/womens/shoes"
+              },
+              {
+                "uuid": "dropdown-womens-accessories-003",
+                "componentType": "DropdownLink",
+                "title": "Accessories",
+                "href": "/womens/accessories"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-item-sale-003",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Sale",
+          "href": {
+            "uuid": "link-sale-003",
+            "componentType": "LinkProps",
+            "href": "/sale",
+            "text": "Sale"
+          }
+        },
+        {
+          "uuid": "menu-item-new-003",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "New Arrivals",
+          "href": {
+            "uuid": "link-new-003",
+            "componentType": "LinkProps",
+            "href": "/new",
+            "text": "New Arrivals"
+          }
+        },
+        {
+          "uuid": "menu-button-cart-003",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-cart-003",
+            "componentType": "ButtonProps",
+            "text": "Cart",
+            "variant": "outline",
+            "icon": {
+              "uuid": "icon-cart-003",
+              "componentType": "IconProps",
+              "name": "shopping-cart",
+              "size": 18
+            },
+            "iconPosition": "left",
+            "link": {
+              "uuid": "link-cart-003",
+              "componentType": "LinkProps",
+              "href": "/cart",
+              "text": "Cart"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-ecommerce-003",
+      "componentType": "SectionProps",
+      "classes": "py-16 px-8 bg-slate-50 dark:bg-slate-900",
+      "layout": "singleColumnCentered",
+      "spacing": "lg",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-newsletter-section-003",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "6",
+          "classes": "pb-16 border-b border-border w-full text-center",
+          "content": [
+            {
+              "uuid": "footer-newsletter-heading-003",
+              "componentType": "HeadingProps",
+              "level": 3,
+              "text": "Subscribe to our newsletter",
+              "classes": "text-2xl font-bold"
+            },
+            {
+              "uuid": "footer-newsletter-text-003",
+              "componentType": "TextProps",
+              "content": "Get the latest updates on new products and exclusive offers.",
+              "classes": "text-muted-foreground"
+            },
+            {
+              "uuid": "footer-newsletter-form-003",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "3",
+              "classes": "max-w-md w-full",
+              "content": [
+                {
+                  "uuid": "footer-newsletter-button-003",
+                  "componentType": "ButtonProps",
+                  "text": "Subscribe",
+                  "variant": "default",
+                  "size": "lg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-links-section-003",
+          "componentType": "GridProps",
+          "columns": 4,
+          "gap": "12",
+          "classes": "pt-16 pb-8 w-full",
+          "content": [
+            {
+              "uuid": "footer-col-shop-003",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-shop-003",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "SHOP",
+                  "classes": "text-sm font-bold tracking-wider mb-4"
+                },
+                {
+                  "uuid": "footer-link-mens-003",
+                  "componentType": "LinkProps",
+                  "text": "Men's Collection",
+                  "href": "/mens",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-womens-003",
+                  "componentType": "LinkProps",
+                  "text": "Women's Collection",
+                  "href": "/womens",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-new-arrivals-003",
+                  "componentType": "LinkProps",
+                  "text": "New Arrivals",
+                  "href": "/new",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-sale-003",
+                  "componentType": "LinkProps",
+                  "text": "Sale",
+                  "href": "/sale",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-customer-service-003",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-customer-003",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "CUSTOMER SERVICE",
+                  "classes": "text-sm font-bold tracking-wider mb-4"
+                },
+                {
+                  "uuid": "footer-link-contact-003",
+                  "componentType": "LinkProps",
+                  "text": "Contact Us",
+                  "href": "/contact",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-shipping-003",
+                  "componentType": "LinkProps",
+                  "text": "Shipping Info",
+                  "href": "/shipping",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-returns-003",
+                  "componentType": "LinkProps",
+                  "text": "Returns & Exchanges",
+                  "href": "/returns",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-faq-003",
+                  "componentType": "LinkProps",
+                  "text": "FAQ",
+                  "href": "/faq",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-about-003",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-about-003",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "ABOUT US",
+                  "classes": "text-sm font-bold tracking-wider mb-4"
+                },
+                {
+                  "uuid": "footer-link-our-story-003",
+                  "componentType": "LinkProps",
+                  "text": "Our Story",
+                  "href": "/about",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-sustainability-003",
+                  "componentType": "LinkProps",
+                  "text": "Sustainability",
+                  "href": "/sustainability",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-careers-003",
+                  "componentType": "LinkProps",
+                  "text": "Careers",
+                  "href": "/careers",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-legal-003",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-legal-003",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "LEGAL",
+                  "classes": "text-sm font-bold tracking-wider mb-4"
+                },
+                {
+                  "uuid": "footer-link-privacy-003",
+                  "componentType": "LinkProps",
+                  "text": "Privacy Policy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                },
+                {
+                  "uuid": "footer-link-terms-003",
+                  "componentType": "LinkProps",
+                  "text": "Terms & Conditions",
+                  "href": "/terms",
+                  "classes": "text-sm text-muted-foreground hover:text-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-003",
+          "componentType": "SpacerProps",
+          "classes": "my-12 border-t border-border",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-003",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full pt-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-003",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 ShopHub. All rights reserved.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "uuid": "footer-social-003",
+              "componentType": "FlexProps",
+              "gap": "5",
+              "content": [
+                {
+                  "uuid": "social-facebook-003",
+                  "componentType": "SocialLinkProps",
+                  "platform": "facebook",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-instagram-003",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-pinterest-003",
+                  "componentType": "SocialLinkProps",
+                  "platform": "pinterest",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-youtube-003",
+                  "componentType": "SocialLinkProps",
+                  "platform": "youtube",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

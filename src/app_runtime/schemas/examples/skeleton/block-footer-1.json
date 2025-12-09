@@ -1,0 +1,182 @@
+{
+  "uuid": "app-footer-only-456",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Flowbite Footer Page",
+  "alias": "flowbite-footer-page",
+  "summary": "Basic footer layout with essential links and company information. Features simple column structure with navigation links, contact details, and copyright information.",
+  "shortSummary": "Basic footer layout with essential links and company information",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [
+    {
+      "uuid": "section-footer-001",
+      "componentType": "SectionProps",
+      "sectionSlug": "section-footer-001",
+      "classes": "mx-auto max-w-screen-xl lg:py-6 lg:px-6  bg-gray-50 border-t border-gray-200",
+      "layout": "singleColumnWide",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "flex-footer-container-001",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "6",
+          "content": [
+            {
+              "uuid": "flex-footer-logo-container-001",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "logo-image-footer",
+                  "componentType": "ImageProps",
+                  "src": "https://www.google.com/s2/favicons?domain=flowbite.com&sz=256",
+                  "alt": "Flowbite Logo",
+                  "classes": "h-8 w-8",
+                  "asset": {
+                    "uuid": "asset-logo-image-footer",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "logo, flowbite",
+                    "isProcessed": true,
+                    "requestedWidth": 32,
+                    "requestedHeight": 32
+                  }
+                },
+                {
+                  "uuid": "footer-logo-text",
+                  "componentType": "TextProps",
+                  "content": "Flowbite",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-description-001",
+              "componentType": "TextProps",
+              "content": "Open-source library of over 400+ web components and interactive elements built for better web.",
+              "classes": "text-center text-gray-500"
+            },
+            {
+              "uuid": "footer-links-container-001",
+              "componentType": "FlexProps",
+              "gap": "6",
+              "classes": "flex-wrap justify-center",
+              "content": [
+                {
+                  "uuid": "footer-link-about",
+                  "componentType": "LinkProps",
+                  "text": "About",
+                  "href": "/about"
+                },
+                {
+                  "uuid": "footer-link-premium",
+                  "componentType": "LinkProps",
+                  "text": "Premium",
+                  "href": "/premium"
+                },
+                {
+                  "uuid": "footer-link-campaigns",
+                  "componentType": "LinkProps",
+                  "text": "Campaigns",
+                  "href": "/campaigns"
+                },
+                {
+                  "uuid": "footer-link-blog",
+                  "componentType": "LinkProps",
+                  "text": "Blog",
+                  "href": "/blog"
+                },
+                {
+                  "uuid": "footer-link-affiliate",
+                  "componentType": "LinkProps",
+                  "text": "Affiliate Program",
+                  "href": "/affiliate"
+                },
+                {
+                  "uuid": "footer-link-faqs",
+                  "componentType": "LinkProps",
+                  "text": "FAQs",
+                  "href": "/faqs"
+                },
+                {
+                  "uuid": "footer-link-contact",
+                  "componentType": "LinkProps",
+                  "text": "Contact",
+                  "href": "/contact"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-copyright-001",
+              "componentType": "TextProps",
+              "content": "© 2021-2022 Flowbite™. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-blank-789",
+      "title": "Blank Page",
+      "slug": "/",
+      "summary": "A blank page that only displays the site footer.",
+      "content": [],
+      "shortSummary": "A blank page that only displays the site footer",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

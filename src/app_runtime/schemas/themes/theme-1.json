@@ -1,0 +1,64 @@
+{
+    "theme":{
+        "light": {
+          "background": "#fefefe",
+          "foreground": "#1a1a1a",
+          "primary": "#ff6b35",
+          "primary-foreground": "#ffffff",
+          "secondary": "#fff7ed",
+          "secondary-foreground": "#9a3412",
+          "muted": "#fafaf9",
+          "muted-foreground": "#78716c",
+          "accent": "#f97316",
+          "accent-foreground": "#ffffff",
+          "destructive": "#dc2626",
+          "destructive-foreground": "#ffffff",
+          "border": "#e7e5e4",
+          "input": "#e7e5e4",
+          "ring": "#ff6b35"
+        },
+        "dark": {
+          "background": "#0c0a09",
+          "foreground": "#fafaf9",
+          "primary": "#fb923c",
+          "primary-foreground": "#0c0a09",
+          "secondary": "#292524",
+          "secondary-foreground": "#e7e5e4",
+          "muted": "#1c1917",
+          "muted-foreground": "#a8a29e",
+          "accent": "#fdba74",
+          "accent-foreground": "#0c0a09",
+          "destructive": "#f87171",
+          "destructive-foreground": "#0c0a09",
+          "border": "#44403c",
+          "input": "#44403c",
+          "ring": "#fb923c"
+        },
+        "fonts": {
+          "heading": {
+            "family": "'Playfair Display', serif",
+            "variant": "regular",
+            "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+          },
+          "body": {
+            "family": "'Libertinus Sans', sans-serif",
+            "variant": "regular",
+            "url": "https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+          }
+        }
+      },
+    
+    "appType": "website",
+    "name": "USA Steel Manufacturers",
+    "summary": "A professional, multi-page website for a steel manufacturer based in the USA to showcase their products, services, and company information, emphasizing product quality and manufacturing capabilities.",
+    "uuid": "web-app-usa-steel",
+    "languages": [
+      "en"
+    ],
+    "layout": "wide",
+    "menuPosition": "HeaderMenuTop",
+    "header": [],
+    "sidebar": [],
+    "footer": [],
+    "pages": []
+  }

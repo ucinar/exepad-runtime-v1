@@ -1,0 +1,388 @@
+{
+  "uuid": "app-feedback-kitchen-sink-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Feedback Component Kitchen Sink",
+  "alias": "feedback-component-kitchen-sink",
+  "summary": "User feedback and notification component collection including alerts, progress indicators, loading states, toast notifications, and status communication elements. Essential for user experience and interaction feedback patterns.",
+  "shortSummary": "User feedback and notification component collection including alerts, progress indicators, loading states, toast notifications, and status communicati",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "boxed",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-feedback-01",
+      "title": "Feedback Components",
+      "slug": "/feedback",
+      "summary": "This page showcases all available feedback components.",
+      "content": [
+        {
+          "uuid": "section-intro-feedback",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-intro-feedback",
+          "content": [
+            {
+              "uuid": "heading-feedback-title",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Feedback & Notification Components"
+            },
+            {
+              "uuid": "text-feedback-intro",
+              "componentType": "TextProps",
+              "variant": "lead",
+              "content": "This page demonstrates the full range of feedback, overlay, and loading components."
+            }
+          ]
+        },
+        {
+          "uuid": "section-toasts-banners",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-toasts-banners",
+          "content": [
+            {
+              "uuid": "heading-toasts-banners",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Toasts & Banners"
+            },
+            {
+              "uuid": "flex-toasts-container",
+              "componentType": "FlexProps",
+              "wrap": "wrap",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "toast-success",
+                  "componentType": "ToastProps",
+                  "message": "Success! Your profile has been updated.",
+                  "type": "success",
+                  "duration": 5000,
+                  "position": "topRight",
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-checkcircle-a8ca3296",
+                    "name": "circle-check",
+                    "size": 20
+                  }
+                },
+                {
+                  "uuid": "toast-error-action",
+                  "componentType": "ToastProps",
+                  "message": "Failed to upload file.",
+                  "type": "error",
+                  "duration": 8000,
+                  "position": "topCenter",
+                  "action": "Retry",
+                  "onAction": "handleRetryUpload"
+                },
+                {
+                  "uuid": "notification-banner-info",
+                  "componentType": "NotificationBannerProps",
+                  "message": "A new software update is available. Please refresh the page.",
+                  "type": "info",
+                  "dismissible": true,
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-info-3a5c7fc7",
+                    "name": "info",
+                    "size": 20
+                  }
+                },
+                {
+                  "uuid": "cookie-consent-banner",
+                  "componentType": "CookieConsentBannerProps",
+                  "position": "bottomCenter",
+                  "width": "80%",
+                  "message": "This website uses cookies to ensure you get the best experience.",
+                  "acceptText": "Accept",
+                  "declineText": "Decline",
+                  "onAccept": "handleAcceptCookies",
+                  "onDecline": "handleDeclineCookies",
+                  "showIcon": true,
+                  "storageKey": "user-cookie-consent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-callouts",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-callouts",
+          "content": [
+            {
+              "uuid": "heading-callouts",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Callouts"
+            },
+            {
+              "uuid": "flex-callouts-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "callout-info",
+                  "componentType": "CalloutProps",
+                  "variant": "info",
+                  "title": {
+                    "uuid": "callout-info-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Did you know?"
+                  },
+                  "message": {
+                    "uuid": "callout-info-message",
+                    "componentType": "TextProps",
+                    "content": "You can customize your dashboard layout by dragging and dropping widgets."
+                  },
+                  "icon": {
+                    "componentType": "IconProps",
+                    "uuid": "icon-info-b4c58637",
+                    "name": "info",
+                    "size": 20
+                  }
+                },
+                {
+                  "uuid": "callout-success-dismissible",
+                  "componentType": "CalloutProps",
+                  "variant": "success",
+                  "message": {
+                    "uuid": "callout-success-dismissible-message",
+                    "componentType": "TextProps",
+                    "content": "Your report has been successfully generated and is ready for download."
+                  },
+                  "dismissible": true,
+                  "onDismiss": "handleDismissSuccessCallout"
+                },
+                {
+                  "uuid": "callout-warning",
+                  "componentType": "CalloutProps",
+                  "variant": "warning",
+                  "title": {
+                    "uuid": "callout-warning-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "API Key Exposed"
+                  },
+                  "message": {
+                    "uuid": "callout-warning-message",
+                    "componentType": "TextProps",
+                    "content": "Please rotate your API key immediately. A potential security risk has been detected."
+                  }
+                },
+                {
+                  "uuid": "callout-error",
+                  "componentType": "CalloutProps",
+                  "variant": "error",
+                  "message": {
+                    "uuid": "callout-error-message",
+                    "componentType": "TextProps",
+                    "content": "This action could not be completed due to a server error."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-alerts",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-alerts",
+          "content": [
+            {
+              "uuid": "heading-alerts",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Alerts"
+            },
+            {
+              "uuid": "flex-alerts-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "alert-item-success",
+                  "componentType": "AlertItemProps",
+                  "type": "success",
+                  "title": "Success",
+                  "message": "Your profile has been successfully updated.",
+                  "timestamp": "2025-07-17T13:10:00Z",
+                  "dismissible": true
+                },
+                {
+                  "uuid": "alert-item-warning-action",
+                  "componentType": "AlertItemProps",
+                  "type": "warning",
+                  "title": "Billing Issue",
+                  "message": "Your subscription payment is due in 3 days.",
+                  "timestamp": "2025-07-17T13:00:00Z",
+                  "dismissible": true,
+                  "action": "View Billing",
+                  "onAction": "navigateToBilling"
+                },
+                {
+                  "uuid": "alert-item-error",
+                  "componentType": "AlertItemProps",
+                  "type": "error",
+                  "title": "Connection Error",
+                  "message": "Connection to the server was lost. Please try again later.",
+                  "timestamp": "2025-07-17T12:55:00Z",
+                  "dismissible": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-popovers-tooltips",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-popovers-tooltips",
+          "content": [
+            {
+              "uuid": "heading-popovers-tooltips",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Popovers & Tooltips"
+            },
+            {
+              "uuid": "flex-popover-trigger",
+              "componentType": "FlexProps",
+              "gap": "8",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "text-with-tooltip",
+                  "componentType": "TextProps",
+                  "content": "Hover for Tooltip",
+                  "classes": "underline decoration-dashed cursor-help"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-progress",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-progress",
+          "content": [
+            {
+              "uuid": "heading-progress",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Loading & Progress Indicators"
+            },
+            {
+              "uuid": "flex-progress-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "progress-bar-default",
+                  "componentType": "ProgressBarProps",
+                  "value": 60,
+                  "showValue": true
+                },
+                {
+                  "uuid": "progress-bar-success-animated",
+                  "componentType": "ProgressBarProps",
+                  "value": 85,
+                  "variant": "success",
+                  "striped": true,
+                  "animated": true
+                },
+                {
+                  "uuid": "circular-progress-warning",
+                  "componentType": "CircularProgressProps",
+                  "value": 75,
+                  "variant": "warning",
+                  "size": 100,
+                  "thickness": 8,
+                  "showValue": true
+                },
+                {
+                  "uuid": "loader-demo",
+                  "componentType": "LoaderProps",
+                  "message": "Loading data, please wait...",
+                  "size": 48,
+                  "color": "blue",
+                  "overlay": false
+                },
+                {
+                  "uuid": "loading-placeholder-text",
+                  "componentType": "LoadingPlaceholderProps",
+                  "type": "text",
+                  "lines": 3,
+                  "width": "w-full max-w-sm",
+                  "animation": "pulse"
+                },
+                {
+                  "uuid": "loading-placeholder-rect",
+                  "componentType": "LoadingPlaceholderProps",
+                  "type": "rect",
+                  "width": "w-48",
+                  "height": "h-24",
+                  "animation": "wave"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "This page showcases all available feedback components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

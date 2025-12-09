@@ -1,0 +1,716 @@
+{
+  "uuid": "app-form-reg-event-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Event Registration Form",
+  "alias": "event-registration-form",
+  "summary": "A comprehensive event registration form with attendee information, ticket selection, session preferences, dietary requirements, and networking options. Perfect for conferences, workshops, seminars, and corporate events to manage attendee registrations efficiently.",
+  "shortSummary": "An event registration form with ticket selection and attendee preferences",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#1e1b4b",
+      "primary": "#c026d3",
+      "primary-foreground": "#ffffff",
+      "secondary": "#faf5ff",
+      "secondary-foreground": "#581c87",
+      "muted": "#faf5ff",
+      "muted-foreground": "#71717a",
+      "accent": "#f3e8ff",
+      "accent-foreground": "#6b21a8",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e9d5ff",
+      "input": "#e9d5ff",
+      "ring": "#d946ef"
+    },
+    "dark": {
+      "background": "#0c0a09",
+      "foreground": "#fafaf9",
+      "primary": "#e879f9",
+      "primary-foreground": "#4a044e",
+      "secondary": "#292524",
+      "secondary-foreground": "#fafaf9",
+      "muted": "#292524",
+      "muted-foreground": "#a8a29e",
+      "accent": "#44403c",
+      "accent-foreground": "#f3e8ff",
+      "destructive": "#991b1b",
+      "destructive-foreground": "#fef2f2",
+      "border": "#292524",
+      "input": "#292524",
+      "ring": "#e879f9"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b bg-background/95 backdrop-blur-sm sticky top-0 z-50",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "TechSummit 2025",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "TechSummit 2025"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "Event Info",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/info",
+                "text": "Event Info"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Schedule",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/schedule",
+                "text": "Schedule"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Speakers",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/speakers",
+                "text": "Speakers"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Register",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "/register",
+                "text": "Register"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "md",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 TechSummit Conference. March 15-17, 2025 | San Francisco, CA",
+              "classes": "text-muted-foreground text-center"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-registration",
+      "title": "Register for TechSummit 2025",
+      "slug": "/",
+      "summary": "Register for the premier technology conference. Join industry leaders, innovators, and fellow tech enthusiasts.",
+      "shortSummary": "Register for the premier technology conference",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-br from-primary/15 via-accent/10 to-background",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "calendar-days",
+                      "size": 60,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Join TechSummit 2025"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Three days of cutting-edge technology insights, networking with 2000+ attendees, and hands-on workshops. Early bird pricing ends soon!",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "event-registration-form",
+                  "componentType": "FormProps",
+                  "title": "Event Registration",
+                  "description": "Secure your spot at TechSummit 2025. Fill out the form below to complete your registration.",
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "classes": "max-w-4xl",
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Registration confirmed! Check your email for your ticket, event details, and payment instructions.",
+                    "errorMessage": "Unable to complete registration. Please try again or contact events@techsummit.com",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email",
+                    "onSuccessAction": {
+                      "type": "clearForm"
+                    }
+                  },
+                  "content": [
+                    {
+                      "uuid": "fieldset-attendee",
+                      "componentType": "FieldSetProps",
+                      "legend": "Attendee Information",
+                      "content": [
+                        {
+                          "uuid": "field-first-name",
+                          "componentType": "TextFieldProps",
+                          "name": "firstName",
+                          "label": "First Name",
+                          "placeholder": "John",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-last-name",
+                          "componentType": "TextFieldProps",
+                          "name": "lastName",
+                          "label": "Last Name",
+                          "placeholder": "Doe",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john.doe@company.com",
+                          "required": true,
+                          "helperText": "Your ticket will be sent to this email"
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 123-4567",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-job-title",
+                          "componentType": "TextFieldProps",
+                          "name": "jobTitle",
+                          "label": "Job Title",
+                          "placeholder": "Senior Software Engineer",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-company",
+                          "componentType": "TextFieldProps",
+                          "name": "company",
+                          "label": "Company/Organization",
+                          "placeholder": "Tech Corp Inc.",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-company-size",
+                          "componentType": "SelectFieldProps",
+                          "name": "companySize",
+                          "label": "Company Size",
+                          "placeholder": "Select company size",
+                          "options": [
+                            {
+                              "label": "1-10 employees",
+                              "value": "1-10"
+                            },
+                            {
+                              "label": "11-50 employees",
+                              "value": "11-50"
+                            },
+                            {
+                              "label": "51-200 employees",
+                              "value": "51-200"
+                            },
+                            {
+                              "label": "201-1000 employees",
+                              "value": "201-1000"
+                            },
+                            {
+                              "label": "1000+ employees",
+                              "value": "1000+"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-ticket",
+                      "componentType": "FieldSetProps",
+                      "legend": "Ticket Selection",
+                      "content": [
+                        {
+                          "uuid": "field-ticket-type",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "ticketType",
+                          "label": "Select Your Ticket",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Early Bird Pass - $599 (Full 3-day access, all sessions)",
+                              "value": "early-bird"
+                            },
+                            {
+                              "label": "Standard Pass - $799 (Full 3-day access, all sessions)",
+                              "value": "standard"
+                            },
+                            {
+                              "label": "VIP Pass - $1299 (Full access + workshops + VIP lounge + dinner)",
+                              "value": "vip"
+                            },
+                            {
+                              "label": "Workshop Only - $299 (Workshop access only, no main sessions)",
+                              "value": "workshop-only"
+                            },
+                            {
+                              "label": "Student Pass - $199 (Proof of enrollment required)",
+                              "value": "student"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-attendance-days",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "attendanceDays",
+                          "label": "Which days will you attend?",
+                          "required": true,
+                          "helperText": "Select all that apply",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Day 1 - March 15 (Opening Keynote + AI/ML Track)",
+                              "value": "day-1"
+                            },
+                            {
+                              "label": "Day 2 - March 16 (Cloud & DevOps Track)",
+                              "value": "day-2"
+                            },
+                            {
+                              "label": "Day 3 - March 17 (Security & Future Tech + Closing)",
+                              "value": "day-3"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-sessions",
+                      "componentType": "FieldSetProps",
+                      "legend": "Session Preferences",
+                      "content": [
+                        {
+                          "uuid": "field-workshop-selection",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "workshopInterests",
+                          "label": "Workshop Interests (VIP/Workshop Pass holders)",
+                          "helperText": "Select up to 3 workshops",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Advanced React Patterns",
+                              "value": "react-patterns"
+                            },
+                            {
+                              "label": "Kubernetes Deep Dive",
+                              "value": "kubernetes"
+                            },
+                            {
+                              "label": "Building Microservices",
+                              "value": "microservices"
+                            },
+                            {
+                              "label": "Machine Learning in Production",
+                              "value": "ml-production"
+                            },
+                            {
+                              "label": "Cybersecurity Best Practices",
+                              "value": "cybersecurity"
+                            },
+                            {
+                              "label": "GraphQL API Design",
+                              "value": "graphql"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-track-interest",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "primaryTrack",
+                          "label": "Primary Track of Interest",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "AI & Machine Learning",
+                              "value": "ai-ml"
+                            },
+                            {
+                              "label": "Cloud Architecture & DevOps",
+                              "value": "cloud-devops"
+                            },
+                            {
+                              "label": "Full-Stack Development",
+                              "value": "fullstack"
+                            },
+                            {
+                              "label": "Cybersecurity",
+                              "value": "security"
+                            },
+                            {
+                              "label": "Product & Leadership",
+                              "value": "leadership"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-preferences",
+                      "componentType": "FieldSetProps",
+                      "legend": "Additional Preferences",
+                      "content": [
+                        {
+                          "uuid": "field-dietary",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "dietaryRequirements",
+                          "label": "Dietary Requirements",
+                          "helperText": "For catering purposes",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Vegetarian",
+                              "value": "vegetarian"
+                            },
+                            {
+                              "label": "Vegan",
+                              "value": "vegan"
+                            },
+                            {
+                              "label": "Gluten-Free",
+                              "value": "gluten-free"
+                            },
+                            {
+                              "label": "Dairy-Free",
+                              "value": "dairy-free"
+                            },
+                            {
+                              "label": "Nut Allergy",
+                              "value": "nut-allergy"
+                            },
+                            {
+                              "label": "Halal",
+                              "value": "halal"
+                            },
+                            {
+                              "label": "Kosher",
+                              "value": "kosher"
+                            },
+                            {
+                              "label": "No Restrictions",
+                              "value": "none"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-tshirt-size",
+                          "componentType": "SelectFieldProps",
+                          "name": "tshirtSize",
+                          "label": "T-Shirt Size",
+                          "placeholder": "Select your size",
+                          "helperText": "All attendees receive a conference t-shirt",
+                          "options": [
+                            {
+                              "label": "XS",
+                              "value": "xs"
+                            },
+                            {
+                              "label": "S",
+                              "value": "s"
+                            },
+                            {
+                              "label": "M",
+                              "value": "m"
+                            },
+                            {
+                              "label": "L",
+                              "value": "l"
+                            },
+                            {
+                              "label": "XL",
+                              "value": "xl"
+                            },
+                            {
+                              "label": "2XL",
+                              "value": "2xl"
+                            },
+                            {
+                              "label": "3XL",
+                              "value": "3xl"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-accessibility",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "accessibilityNeeds",
+                          "label": "Accessibility Requirements",
+                          "helperText": "Select all that apply - we'll ensure proper accommodations",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Wheelchair accessible seating",
+                              "value": "wheelchair"
+                            },
+                            {
+                              "label": "Sign language interpreter",
+                              "value": "sign-language"
+                            },
+                            {
+                              "label": "Closed captioning",
+                              "value": "captions"
+                            },
+                            {
+                              "label": "Quiet room access",
+                              "value": "quiet-room"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-networking",
+                      "componentType": "FieldSetProps",
+                      "legend": "Networking & Community",
+                      "content": [
+                        {
+                          "uuid": "field-networking-interests",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "networkingInterests",
+                          "label": "I'm interested in connecting with",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Potential Employers/Recruiters",
+                              "value": "employers"
+                            },
+                            {
+                              "label": "Potential Employees/Candidates",
+                              "value": "candidates"
+                            },
+                            {
+                              "label": "Co-founders/Business Partners",
+                              "value": "cofounders"
+                            },
+                            {
+                              "label": "Investors/VCs",
+                              "value": "investors"
+                            },
+                            {
+                              "label": "Fellow Developers/Engineers",
+                              "value": "developers"
+                            },
+                            {
+                              "label": "Mentors",
+                              "value": "mentors"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-first-time",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "firstTimeAttendee",
+                          "label": "Is this your first TechSummit?",
+                          "orientation": "horizontal",
+                          "options": [
+                            {
+                              "label": "Yes, first time!",
+                              "value": "yes"
+                            },
+                            {
+                              "label": "No, returning attendee",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-how-heard",
+                          "componentType": "SelectFieldProps",
+                          "name": "howHeard",
+                          "label": "How did you hear about TechSummit?",
+                          "placeholder": "Select an option",
+                          "options": [
+                            {
+                              "label": "Social Media",
+                              "value": "social"
+                            },
+                            {
+                              "label": "Google Search",
+                              "value": "search"
+                            },
+                            {
+                              "label": "Friend/Colleague Recommendation",
+                              "value": "referral"
+                            },
+                            {
+                              "label": "Tech Blog/Publication",
+                              "value": "blog"
+                            },
+                            {
+                              "label": "Previous Attendee",
+                              "value": "previous"
+                            },
+                            {
+                              "label": "Company Sponsor",
+                              "value": "sponsor"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-marketing-consent",
+                      "componentType": "CheckboxFieldProps",
+                      "name": "marketingConsent",
+                      "label": "Send me updates about future events, workshops, and exclusive tech content"
+                    },
+                    {
+                      "uuid": "field-terms",
+                      "componentType": "CheckboxFieldProps",
+                      "name": "agreeTerms",
+                      "label": "I agree to the event terms and conditions and the code of conduct",
+                      "required": true
+                    },
+                    {
+                      "uuid": "field-hidden-event",
+                      "componentType": "HiddenFieldProps",
+                      "name": "eventId",
+                      "value": "techsummit-2025"
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "actionType": "reset",
+                      "text": "Clear Form",
+                      "variant": "outline",
+                      "uuid": "form-action-reset",
+                      "componentType": "ButtonProps"
+                    },
+                    {
+                      "actionType": "submit",
+                      "text": "Complete Registration",
+                      "variant": "default",
+                      "icon": {
+                        "uuid": "submit-icon",
+                        "componentType": "IconProps",
+                        "name": "ticket",
+                        "size": 16
+                      },
+                      "classes": "min-w-[200px]",
+                      "uuid": "form-action-submit",
+                      "componentType": "ButtonProps"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

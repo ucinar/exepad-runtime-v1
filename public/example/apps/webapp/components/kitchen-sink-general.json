@@ -1,0 +1,733 @@
+{
+  "uuid": "app-root-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Kitchen Sink Web App",
+  "alias": "kitchen-sink-web-app",
+  "summary": "Ultimate component showcase featuring the complete library of available UI elements, layout patterns, and interactive components. Comprehensive reference for understanding the full capabilities and design system scope.",
+  "shortSummary": "Ultimate component showcase featuring the complete library of available UI elements, layout patterns, and interactive components",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "EN-US",
+      "nameNative": "EN-US",
+      "isDefault": true
+    },
+    {
+      "code": "es-ES",
+      "nameEnglish": "ES-ES",
+      "nameNative": "ES-ES",
+      "isDefault": false
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-main-002",
+      "componentType": "NavbarProps",
+      "logo": {
+        "uuid": "navlogo-003",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "KitchenSink",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "navlogo-003-href",
+          "href": "/",
+          "text": "KitchenSink"
+        }
+      },
+      "content": [
+        {
+          "uuid": "navlink-home-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "active": true,
+          "href": {
+            "uuid": "link-home-006",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "navlink-about-007",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "link-about-008",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "uuid": "navdropdown-features-009",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Features",
+          "dropdown": {
+            "uuid": "dropdown-features-010",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-link-1-011",
+                "componentType": "DropdownLink",
+                "title": "Layouts",
+                "href": "#layouts"
+              },
+              {
+                "uuid": "dropdown-link-2-012",
+                "componentType": "DropdownLink",
+                "title": "Media",
+                "href": "#media"
+              },
+              {
+                "uuid": "dropdown-link-3-013",
+                "componentType": "DropdownLink",
+                "title": "Forms",
+                "href": "#forms"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "navbutton-contact-014",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-contact-015",
+            "componentType": "ButtonProps",
+            "text": "Contact Us",
+            "type": "button",
+            "variant": "secondary",
+            "disabled": false,
+            "onClick": "handleContactClick"
+          }
+        }
+      ],
+      "sticky": true,
+      "variant": "default"
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home-016",
+      "title": "Home - Kitchen Sink",
+      "slug": "/",
+      "summary": "The main landing page demonstrating a wide variety of components.",
+      "metadata": {
+        "title": "Kitchen Sink App",
+        "description": "A demonstration of all available UI components.",
+        "openGraph": {
+          "title": "Kitchen Sink App",
+          "type": "website",
+          "url": "https://example.com",
+          "image": "https://via.placeholder.com/1200x630.png"
+        }
+      },
+      "content": [
+        {
+          "uuid": "seo-meta-017",
+          "componentType": "SeoMetaProps",
+          "title": "Kitchen Sink - The Ultimate Component Showcase",
+          "pageDescription": "Explore a comprehensive showcase of UI components, from basic buttons and text to complex data tables and interactive forms, all defined in a single JSON.",
+          "ogTitle": "Kitchen Sink - Component Showcase",
+          "ogDescription": "Explore a comprehensive showcase of UI components.",
+          "ogImageUrl": "https://via.placeholder.com/1200x630.png/111827/FFFFFF?text=Kitchen+Sink",
+          "keywords": [
+            "json",
+            "ui components",
+            "web development",
+            "schema"
+          ],
+          "canonicalUrl": "https://example.com/"
+        },
+        {
+          "uuid": "back-to-top-018",
+          "componentType": "BackToTopProps",
+          "threshold": 300,
+          "smooth": true,
+          "position": "bottomRight"
+        },
+        {
+          "uuid": "section-hero-019",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero-019",
+          "layout": "singleColumnCentered",
+          "fullHeight": false,
+          "spacing": "sm",
+          "classes": "pt-8 pb-12 md:pt-12 md:pb-16",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "hero-stack-020a",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "center",
+              "justify": "center",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "hero-heading-020",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Welcome to the Kitchen Sink"
+                },
+                {
+                  "uuid": "hero-text-021",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "This is a demonstration of all available components rendered from a single JSON configuration file. Explore the sections below to see everything in action."
+                },
+                {
+                  "uuid": "hero-flex-buttons-022",
+                  "componentType": "FlexProps",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "hero-button-primary-023",
+                      "componentType": "ButtonProps",
+                      "text": "Get Started",
+                      "type": "button",
+                      "variant": "default",
+                      "size": "lg",
+                      "disabled": false,
+                      "onClick": "handleGetStarted"
+                    },
+                    {
+                      "uuid": "hero-button-secondary-024",
+                      "componentType": "ButtonProps",
+                      "text": "View on GitHub",
+                      "type": "button",
+                      "variant": "outline",
+                      "size": "lg",
+                      "disabled": false,
+                      "icon": {
+                        "uuid": "github-icon-025",
+                        "componentType": "IconProps",
+                        "name": "github",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "onClick": "handleViewOnGitHub"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-features-026",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-features-026",
+          "layout": "threeColumnEven",
+          "title": "Core Features",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "feature-1-027",
+              "componentType": "StandardFeatureProps",
+              "variant": "standard",
+              "title": {
+                "uuid": "feature-1-027-title",
+                "componentType": "HeadingProps",
+                "level": 3,
+                "text": "Data-Driven UI"
+              },
+              "text": {
+                "uuid": "feature-1-027-text",
+                "componentType": "TextProps",
+                "content": "Every component, layout, and style is defined in a declarative JSON structure, making the entire UI easy to manage and update."
+              },
+              "icon": {
+                "uuid": "feature-icon-1-028",
+                "componentType": "IconProps",
+                "name": "database",
+                "size": 48
+              },
+              "layout": "iconTopCenter",
+              "style": "card"
+            },
+            {
+              "uuid": "feature-2-029",
+              "componentType": "StandardFeatureProps",
+              "variant": "standard",
+              "title": {
+                "uuid": "feature-2-029-title",
+                "componentType": "HeadingProps",
+                "level": 3,
+                "text": "Rich Component Library"
+              },
+              "text": {
+                "uuid": "feature-2-029-text",
+                "componentType": "TextProps",
+                "content": "From simple text and buttons to complex data tables and interactive charts, the library has you covered."
+              },
+              "icon": {
+                "uuid": "feature-icon-2-030",
+                "componentType": "IconProps",
+                "name": "layers",
+                "size": 48
+              },
+              "layout": "iconTopCenter",
+              "style": "card"
+            },
+            {
+              "uuid": "feature-3-031",
+              "componentType": "StandardFeatureProps",
+              "variant": "standard",
+              "title": {
+                "uuid": "feature-3-031-title",
+                "componentType": "HeadingProps",
+                "level": 3,
+                "text": "Themable & Customizable"
+              },
+              "text": {
+                "uuid": "feature-3-031-text",
+                "componentType": "TextProps",
+                "content": "Easily change the look and feel of your application by modifying theme properties like colors, fonts, and spacing."
+              },
+              "icon": {
+                "uuid": "feature-icon-3-032",
+                "componentType": "IconProps",
+                "name": "palette",
+                "size": 48
+              },
+              "layout": "iconTopCenter",
+              "style": "card"
+            }
+          ]
+        },
+        {
+          "uuid": "section-accordion-033",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-accordion-033",
+          "layout": "singleColumnWide",
+          "title": "Frequently Asked Questions",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "accordion-faq-034",
+              "componentType": "AccordionProps",
+              "type": "single",
+              "collapsible": true,
+              "style": "default",
+              "content": [
+                {
+                  "uuid": "accordion-item-1-035",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "trigger-text-1-036",
+                      "componentType": "TextProps",
+                      "content": "Is this entire page really generated from JSON?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "content-text-1-037",
+                      "componentType": "TextProps",
+                      "content": "Yes, absolutely. The entire structure, including this accordion, its content, styling, and behavior is defined in a single `app.json` file that adheres to the provided schemas."
+                    }
+                  ]
+                },
+                {
+                  "uuid": "accordion-item-2-038",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "trigger-text-2-039",
+                      "componentType": "TextProps",
+                      "content": "How are nested components handled?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "content-text-2-040",
+                      "componentType": "TextProps",
+                      "content": "Layout components like `SectionProps`, `FlexProps`, and even this `AccordionItemProps` have a `content` property which is an array of other components. This allows for infinite and recursive nesting to build complex layouts."
+                    }
+                  ]
+                },
+                {
+                  "uuid": "accordion-item-3-041",
+                  "componentType": "AccordionItemProps",
+                  "trigger": [
+                    {
+                      "uuid": "trigger-text-3-042",
+                      "componentType": "TextProps",
+                      "content": "Where can I learn more?"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "uuid": "content-link-3-043",
+                      "componentType": "LinkProps",
+                      "href": "#",
+                      "text": "Check out the documentation (which would also be a page in this app)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-media-044",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-media-044",
+          "layout": "twoColumnEven",
+          "title": "Media Elements",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "media-flex-left-045",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "video-youtube-046",
+                  "componentType": "VideoProps",
+                  "provider": "youtube",
+                  "source": "dQw4w9WgXcQ",
+                  "autoplay": false,
+                  "controls": true,
+                  "loop": false,
+                  "muted": true,
+                  "width": 560,
+                  "height": 315
+                },
+                {
+                  "uuid": "image-with-hover-047",
+                  "componentType": "ImageProps",
+                  "src": "https://via.placeholder.com/560x315.png/2d3748/FFFFFF?text=Hover+Effect",
+                  "alt": "A placeholder image with a hover effect.",
+                  "hoverEffect": "darken",
+                  "asset": {
+                    "uuid": "asset-1-048",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "placeholder, hover",
+                    "isProcessed": true,
+                    "requestedWidth": 560,
+                    "requestedHeight": 315
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "media-flex-right-049",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "lightbox-demo-050",
+                  "componentType": "LightboxProps",
+                  "trigger": "click",
+                  "thumbnail": {
+                    "uuid": "thumb-1-051",
+                    "componentType": "ImageProps",
+                    "src": "https://via.placeholder.com/560x315.png/4a5568/FFFFFF?text=Click+to+Open+Lightbox",
+                    "alt": "Thumbnail for lightbox",
+                    "asset": {
+                      "uuid": "asset-2-052",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "thumbnail, lightbox",
+                      "isProcessed": true,
+                      "requestedWidth": 560,
+                      "requestedHeight": 315
+                    }
+                  },
+                  "fullImage": {
+                    "uuid": "full-img-1-053",
+                    "componentType": "ImageProps",
+                    "src": "https://via.placeholder.com/1200x800.png/4a5568/FFFFFF?text=Full+Image",
+                    "alt": "Full size image in lightbox",
+                    "asset": {
+                      "uuid": "asset-3-054",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "full, lightbox",
+                      "isProcessed": true,
+                      "requestedWidth": 1200,
+                      "requestedHeight": 800
+                    }
+                  }
+                },
+                {
+                  "uuid": "doc-embed-pdf-055",
+                  "componentType": "DocumentEmbedProps",
+                  "type": "pdf",
+                  "src": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+                  "title": "Embedded PDF Document",
+                  "width": "100%",
+                  "height": 315
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-data-056",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-data-056",
+          "layout": "singleColumnWide",
+          "title": "Data Display",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "code-snippet-js-057",
+              "componentType": "CodeSnippetProps",
+              "language": "javascript",
+              "code": "function helloWorld() {\n  console.log(\"Hello, World!\");\n}\n\n// This is a comment\nhelloWorld();",
+              "copyable": true,
+              "showLineNumbers": true,
+              "highlightLines": [
+                2
+              ]
+            },
+            {
+              "uuid": "comparison-table-058",
+              "componentType": "ComparisonTableProps",
+              "title": "Plan Comparison",
+              "subtitle": "Choose the plan that's right for you.",
+              "featuredColumnKey": "pro",
+              "columns": [
+                {
+                  "uuid": "col-feature-059",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "feature",
+                  "header": "Feature"
+                },
+                {
+                  "uuid": "col-free-060",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "free",
+                  "header": "Free",
+                  "align": "center"
+                },
+                {
+                  "uuid": "col-pro-061",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "pro",
+                  "header": "Pro",
+                  "align": "center"
+                },
+                {
+                  "uuid": "col-enterprise-062",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "enterprise",
+                  "header": "Enterprise",
+                  "align": "center"
+                }
+              ],
+              "rows": [
+                {
+                  "id": "row-1",
+                  "values": {
+                    "feature": "User Limit",
+                    "free": 1,
+                    "pro": 10,
+                    "enterprise": "Unlimited"
+                  }
+                },
+                {
+                  "id": "row-2",
+                  "values": {
+                    "feature": "API Access",
+                    "free": false,
+                    "pro": true,
+                    "enterprise": true
+                  }
+                },
+                {
+                  "id": "row-3",
+                  "values": {
+                    "feature": "Support",
+                    "free": {
+                      "uuid": "support-badge-1-063",
+                      "componentType": "BadgeProps",
+                      "content": "Community",
+                      "variant": "outline"
+                    },
+                    "pro": {
+                      "uuid": "support-badge-2-064",
+                      "componentType": "BadgeProps",
+                      "content": "Email",
+                      "variant": "secondary"
+                    },
+                    "enterprise": {
+                      "uuid": "support-badge-3-065",
+                      "componentType": "BadgeProps",
+                      "content": "Dedicated",
+                      "variant": "default"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-forms-066",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-forms-066",
+          "layout": "twoColumnSidebarLeft",
+          "title": "Get In Touch",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "newsletter-signup-067",
+              "componentType": "ContactInfoBlockProps",
+              "title": "Join Our Newsletter"
+            },
+            {
+              "uuid": "contact-form-068",
+              "componentType": "FormProps",
+              "title": "Contact Us Directly",
+              "onSubmitAction": {
+                "actionId": "submit_contact_form",
+                "successMessage": "Message sent! We'll get back to you soon.",
+                "errorMessage": "Failed to send message. Please try again later.",
+                "notificationType": "toast",
+                "notifyAdmin": "email"
+              },
+              "content": [
+                {
+                  "uuid": "contact-form-068-field-name",
+                  "componentType": "TextFieldProps",
+                  "name": "name",
+                  "label": "Your Name",
+                  "required": true,
+                  "placeholder": "Your name"
+                },
+                {
+                  "uuid": "contact-form-068-field-email",
+                  "componentType": "TextFieldProps",
+                  "name": "email",
+                  "label": "Your Email",
+                  "inputType": "email",
+                  "required": true,
+                  "placeholder": "your@email.com"
+                },
+                {
+                  "uuid": "contact-form-068-field-message",
+                  "componentType": "TextAreaFieldProps",
+                  "name": "message",
+                  "label": "Your Message",
+                  "required": true,
+                  "rows": 5
+                }
+              ],
+              "layout": "singleColumn",
+              "initialValues": {},
+              "actions": [
+                {
+                  "uuid": "contact-form-068-action-submit",
+                  "componentType": "ButtonProps",
+                  "actionType": "submit",
+                  "text": "Send Message",
+                  "variant": "default"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "The main landing page demonstrating a wide variety of components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-069",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-069",
+      "speed": 0.5,
+      "background": {
+        "color": "hsl(222.2, 47.4%, 11.2%)"
+      },
+      "content": [
+        {
+          "uuid": "footer-flex-070",
+          "componentType": "FlexProps",
+          "justify": "between",
+          "align": "center",
+          "content": [
+            {
+              "uuid": "footer-text-071",
+              "componentType": "TextProps",
+              "content": "© 2025 Kitchen Sink App. All Rights Reserved.",
+              "classes": "text-white"
+            },
+            {
+              "uuid": "footer-social-flex-072",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "social-twitter-073",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "https://twitter.com",
+                  "label": "Twitter"
+                },
+                {
+                  "uuid": "social-linkedin-074",
+                  "componentType": "SocialLinkProps",
+                  "platform": "linkedin",
+                  "url": "https://linkedin.com",
+                  "label": "LinkedIn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

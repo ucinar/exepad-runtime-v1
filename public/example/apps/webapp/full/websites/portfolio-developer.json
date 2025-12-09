@@ -1,0 +1,1004 @@
+{
+  "uuid": "app-website-portfolio-dev-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Alex Morgan - Full-Stack Developer Portfolio",
+  "alias": "alex-morgan-portfolio",
+  "summary": "A modern developer portfolio website showcasing projects, skills, experience, and contact information. Features a clean minimalist design, project gallery with case studies, tech stack highlights, and professional about section. Perfect for software engineers, web developers, and technical professionals seeking to showcase their work.",
+  "shortSummary": "A modern developer portfolio with projects and experience",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "fonts": {
+      "heading": {
+        "family": "Space Grotesk",
+        "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap",
+        "variant": "600"
+      },
+      "body": {
+        "family": "Inter",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+        "variant": "regular"
+      }
+    },
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#09090b",
+      "primary": "#2563eb",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f8fafc",
+      "muted-foreground": "#64748b",
+      "accent": "#dbeafe",
+      "accent-foreground": "#1e40af",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#60a5fa"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "primary": "#60a5fa",
+      "primary-foreground": "#0c4a6e",
+      "secondary": "#18181b",
+      "secondary-foreground": "#fafafa",
+      "muted": "#18181b",
+      "muted-foreground": "#a1a1aa",
+      "accent": "#1e3a8a",
+      "accent-foreground": "#dbeafe",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fef2f2",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#60a5fa"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b sticky top-0 bg-background/95 backdrop-blur-sm z-50",
+      "spacing": "sm",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "AM",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "AM"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "#about",
+                "text": "About"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Projects",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "#projects",
+                "text": "Projects"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Skills",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "#skills",
+                "text": "Skills"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            },
+            {
+              "type": "link",
+              "label": "Contact",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-3-href",
+                "href": "#contact",
+                "text": "Contact"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/30 mt-20",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-wrapper",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "footer-social",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "5",
+                  "justify": "center",
+                  "content": [
+                    {
+                      "uuid": "footer-social-github",
+                      "componentType": "SocialLinkProps",
+                      "platform": "github",
+                      "url": "https://github.com/alexmorgan"
+                    },
+                    {
+                      "uuid": "footer-social-linkedin",
+                      "componentType": "SocialLinkProps",
+                      "platform": "linkedin",
+                      "url": "https://linkedin.com/in/alexmorgan"
+                    },
+                    {
+                      "uuid": "footer-social-twitter",
+                      "componentType": "SocialLinkProps",
+                      "platform": "twitter",
+                      "url": "https://twitter.com/alexmorgan"
+                    },
+                    {
+                      "uuid": "footer-social-email",
+                      "componentType": "SocialLinkProps",
+                      "platform": "email",
+                      "url": "mailto:alex@example.com"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-text",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "© 2025 Alex Morgan. Built with passion and code.",
+                  "classes": "text-muted-foreground text-center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home",
+      "title": "Alex Morgan - Full-Stack Developer",
+      "slug": "/",
+      "summary": "Full-stack developer specializing in React, Node.js, and cloud architecture. Building scalable web applications with modern technologies.",
+      "shortSummary": "Full-stack developer portfolio",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "layout": "twoColumnEven",
+          "spacing": "xl",
+          "classes": "min-h-[80vh]",
+          "content": [
+            {
+              "uuid": "hero-content-left",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "justify": "center",
+              "gap": "8",
+              "classes": "h-full",
+              "content": [
+                {
+                  "uuid": "hero-greeting",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "Hi, I'm",
+                  "classes": "text-primary font-semibold text-xl"
+                },
+                {
+                  "uuid": "hero-name",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Alex Morgan",
+                  "classes": "text-6xl font-extrabold tracking-tight"
+                },
+                {
+                  "uuid": "hero-title",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Full-Stack Developer",
+                  "classes": "text-4xl font-bold text-muted-foreground"
+                },
+                {
+                  "uuid": "hero-description",
+                  "componentType": "TextProps",
+                  "variant": "lead",
+                  "content": "I build exceptional digital experiences using modern web technologies. Specializing in React, Node.js, TypeScript, and cloud architecture.",
+                  "classes": "text-muted-foreground max-w-xl mt-4"
+                },
+                {
+                  "uuid": "hero-cta",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "4",
+                  "classes": "mt-8",
+                  "content": [
+                    {
+                      "uuid": "hero-cta-projects",
+                      "componentType": "ButtonProps",
+                      "text": "View My Work",
+                      "variant": "default",
+                      "size": "lg",
+                      "icon": {
+                        "uuid": "hero-button-projects-icon",
+                        "componentType": "IconProps",
+                        "name": "arrow-right",
+                        "size": 20
+                      },
+                      "iconPosition": "right",
+                      "type": "button",
+                      "onClick": "handleViewWork"
+                    },
+                    {
+                      "uuid": "hero-cta-contact",
+                      "componentType": "ButtonProps",
+                      "text": "Get In Touch",
+                      "variant": "outline",
+                      "size": "lg",
+                      "icon": {
+                        "uuid": "hero-button-contact-icon",
+                        "componentType": "IconProps",
+                        "name": "mail",
+                        "size": 20
+                      },
+                      "iconPosition": "left",
+                      "type": "button",
+                      "onClick": "handleContact"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "hero-social",
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "6",
+                  "classes": "mt-10",
+                  "content": [
+                    {
+                      "uuid": "hero-social-github",
+                      "componentType": "SocialLinkProps",
+                      "platform": "github",
+                      "url": "https://github.com/alexmorgan"
+                    },
+                    {
+                      "uuid": "hero-social-linkedin",
+                      "componentType": "SocialLinkProps",
+                      "platform": "linkedin",
+                      "url": "https://linkedin.com/in/alexmorgan"
+                    },
+                    {
+                      "uuid": "hero-social-twitter",
+                      "componentType": "SocialLinkProps",
+                      "platform": "twitter",
+                      "url": "https://twitter.com/alexmorgan"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "hero-image-right",
+              "componentType": "FlexProps",
+              "justify": "center",
+              "align": "center",
+              "classes": "h-full",
+              "content": [
+                {
+                  "uuid": "hero-profile-image",
+                  "componentType": "ImageProps",
+                  "src": "https://i.pravatar.cc/600?u=alexmorgan",
+                  "alt": "Alex Morgan - Full-Stack Developer",
+                  "classes": "rounded-2xl shadow-2xl",
+                  "asset": {
+                    "uuid": "hero-profile-image-asset",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "developer, profile, alex morgan",
+                    "isProcessed": true,
+                    "requestedWidth": 600,
+                    "requestedHeight": 600
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-about",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-about",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "about-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "about-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "about-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "About Me"
+                    },
+                    {
+                      "uuid": "about-content",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "about-paragraph-1",
+                          "componentType": "TextProps",
+                          "content": "I'm a passionate full-stack developer with 7+ years of experience building web applications that solve real-world problems. I love creating elegant solutions that are both functional and beautiful."
+                        },
+                        {
+                          "uuid": "about-paragraph-2",
+                          "componentType": "TextProps",
+                          "content": "Currently working as a Senior Software Engineer at TechCorp, where I lead the development of a cloud-based analytics platform serving over 100,000 users. I'm particularly interested in performance optimization, scalable architecture, and developer experience."
+                        },
+                        {
+                          "uuid": "about-paragraph-3",
+                          "componentType": "TextProps",
+                          "content": "When I'm not coding, you can find me contributing to open source projects, writing technical blog posts, or mentoring junior developers."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-projects",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-projects",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "projects-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "projects-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "12",
+                  "classes": "w-full max-w-6xl",
+                  "content": [
+                    {
+                      "uuid": "projects-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Featured Projects"
+                    },
+                    {
+                      "uuid": "projects-grid",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "8",
+                      "content": [
+                        {
+                          "uuid": "project-1",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "8",
+                          "classes": "border rounded-lg p-8",
+                          "content": [
+                            {
+                              "uuid": "project-1-content",
+                              "componentType": "FlexProps",
+                              "direction": "column",
+                              "gap": "4",
+                              "classes": "flex-1",
+                              "content": [
+                                {
+                                  "uuid": "project-1-title",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "DataViz Pro"
+                                },
+                                {
+                                  "uuid": "project-1-description",
+                                  "componentType": "TextProps",
+                                  "content": "A real-time data visualization platform built with React, D3.js, and WebSockets. Handles millions of data points with smooth animations and interactive filtering.",
+                                  "classes": "text-muted-foreground"
+                                },
+                                {
+                                  "uuid": "project-1-tech",
+                                  "componentType": "FlexProps",
+                                  "direction": "row",
+                                  "gap": "2",
+                                  "wrap": "wrap",
+                                  "content": [
+                                    {
+                                      "uuid": "project-1-tech-1",
+                                      "componentType": "BadgeProps",
+                                      "content": "React",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-1-tech-2",
+                                      "componentType": "BadgeProps",
+                                      "content": "TypeScript",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-1-tech-3",
+                                      "componentType": "BadgeProps",
+                                      "content": "D3.js",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-1-tech-4",
+                                      "componentType": "BadgeProps",
+                                      "content": "WebSockets",
+                                      "variant": "secondary"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "project-1-links",
+                                  "componentType": "FlexProps",
+                                  "direction": "row",
+                                  "gap": "4",
+                                  "content": [
+                                    {
+                                      "uuid": "project-1-link-live",
+                                      "componentType": "LinkProps",
+                                      "href": "https://dataviz-pro.com",
+                                      "text": "View Live →",
+                                      "classes": "text-primary font-medium"
+                                    },
+                                    {
+                                      "uuid": "project-1-link-code",
+                                      "componentType": "LinkProps",
+                                      "href": "https://github.com/alexmorgan/dataviz-pro",
+                                      "text": "View Code →",
+                                      "classes": "text-muted-foreground hover:text-foreground"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "project-2",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "8",
+                          "classes": "border rounded-lg p-8",
+                          "content": [
+                            {
+                              "uuid": "project-2-content",
+                              "componentType": "FlexProps",
+                              "direction": "column",
+                              "gap": "4",
+                              "classes": "flex-1",
+                              "content": [
+                                {
+                                  "uuid": "project-2-title",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "TaskFlow API"
+                                },
+                                {
+                                  "uuid": "project-2-description",
+                                  "componentType": "TextProps",
+                                  "content": "RESTful API for project management with advanced features like role-based access control, real-time notifications, and comprehensive analytics. Deployed on AWS with auto-scaling capabilities.",
+                                  "classes": "text-muted-foreground"
+                                },
+                                {
+                                  "uuid": "project-2-tech",
+                                  "componentType": "FlexProps",
+                                  "direction": "row",
+                                  "gap": "2",
+                                  "wrap": "wrap",
+                                  "content": [
+                                    {
+                                      "uuid": "project-2-tech-1",
+                                      "componentType": "BadgeProps",
+                                      "content": "Node.js",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-2-tech-2",
+                                      "componentType": "BadgeProps",
+                                      "content": "Express",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-2-tech-3",
+                                      "componentType": "BadgeProps",
+                                      "content": "PostgreSQL",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-2-tech-4",
+                                      "componentType": "BadgeProps",
+                                      "content": "AWS",
+                                      "variant": "secondary"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "project-2-links",
+                                  "componentType": "FlexProps",
+                                  "direction": "row",
+                                  "gap": "4",
+                                  "content": [
+                                    {
+                                      "uuid": "project-2-link-docs",
+                                      "componentType": "LinkProps",
+                                      "href": "https://taskflow-api.com/docs",
+                                      "text": "API Docs →",
+                                      "classes": "text-primary font-medium"
+                                    },
+                                    {
+                                      "uuid": "project-2-link-code",
+                                      "componentType": "LinkProps",
+                                      "href": "https://github.com/alexmorgan/taskflow-api",
+                                      "text": "View Code →",
+                                      "classes": "text-muted-foreground hover:text-foreground"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "project-3",
+                          "componentType": "FlexProps",
+                          "direction": "row",
+                          "gap": "8",
+                          "classes": "border rounded-lg p-8",
+                          "content": [
+                            {
+                              "uuid": "project-3-content",
+                              "componentType": "FlexProps",
+                              "direction": "column",
+                              "gap": "4",
+                              "classes": "flex-1",
+                              "content": [
+                                {
+                                  "uuid": "project-3-title",
+                                  "componentType": "HeadingProps",
+                                  "level": 3,
+                                  "text": "DevTools CLI"
+                                },
+                                {
+                                  "uuid": "project-3-description",
+                                  "componentType": "TextProps",
+                                  "content": "Open-source command-line tool to streamline developer workflows. Features include project scaffolding, code generation, automated testing, and deployment pipelines. Over 10,000 downloads on npm.",
+                                  "classes": "text-muted-foreground"
+                                },
+                                {
+                                  "uuid": "project-3-tech",
+                                  "componentType": "FlexProps",
+                                  "direction": "row",
+                                  "gap": "2",
+                                  "wrap": "wrap",
+                                  "content": [
+                                    {
+                                      "uuid": "project-3-tech-1",
+                                      "componentType": "BadgeProps",
+                                      "content": "Node.js",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-3-tech-2",
+                                      "componentType": "BadgeProps",
+                                      "content": "TypeScript",
+                                      "variant": "secondary"
+                                    },
+                                    {
+                                      "uuid": "project-3-tech-3",
+                                      "componentType": "BadgeProps",
+                                      "content": "Commander.js",
+                                      "variant": "secondary"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "project-3-links",
+                                  "componentType": "FlexProps",
+                                  "direction": "row",
+                                  "gap": "4",
+                                  "content": [
+                                    {
+                                      "uuid": "project-3-link-npm",
+                                      "componentType": "LinkProps",
+                                      "href": "https://npmjs.com/package/devtools-cli",
+                                      "text": "npm Package →",
+                                      "classes": "text-primary font-medium"
+                                    },
+                                    {
+                                      "uuid": "project-3-link-code",
+                                      "componentType": "LinkProps",
+                                      "href": "https://github.com/alexmorgan/devtools-cli",
+                                      "text": "View Code →",
+                                      "classes": "text-muted-foreground hover:text-foreground"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-skills",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-skills",
+          "spacing": "xl",
+          "classes": "bg-muted/30",
+          "content": [
+            {
+              "uuid": "skills-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "skills-wrapper",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "8",
+                  "classes": "w-full max-w-4xl",
+                  "content": [
+                    {
+                      "uuid": "skills-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Skills & Technologies"
+                    },
+                    {
+                      "uuid": "skills-grid",
+                      "componentType": "GridProps",
+                      "columns": 2,
+                      "gap": "6",
+                      "content": [
+                        {
+                          "uuid": "skill-category-1",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "content": [
+                            {
+                              "uuid": "skill-category-1-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Frontend"
+                            },
+                            {
+                              "uuid": "skill-category-1-list",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "wrap": "wrap",
+                              "content": [
+                                {
+                                  "uuid": "skill-frontend-1",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "React",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-frontend-2",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Next.js",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-frontend-3",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "TypeScript",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-frontend-4",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Tailwind CSS",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-frontend-5",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Redux",
+                                  "classes": "px-3 py-1 border rounded"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "skill-category-2",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "content": [
+                            {
+                              "uuid": "skill-category-2-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Backend"
+                            },
+                            {
+                              "uuid": "skill-category-2-list",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "wrap": "wrap",
+                              "content": [
+                                {
+                                  "uuid": "skill-backend-1",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Node.js",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-backend-2",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Express",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-backend-3",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "PostgreSQL",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-backend-4",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "MongoDB",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-backend-5",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "GraphQL",
+                                  "classes": "px-3 py-1 border rounded"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "skill-category-3",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "content": [
+                            {
+                              "uuid": "skill-category-3-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Cloud & DevOps"
+                            },
+                            {
+                              "uuid": "skill-category-3-list",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "wrap": "wrap",
+                              "content": [
+                                {
+                                  "uuid": "skill-cloud-1",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "AWS",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-cloud-2",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Docker",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-cloud-3",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Kubernetes",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-cloud-4",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "CI/CD",
+                                  "classes": "px-3 py-1 border rounded"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "skill-category-4",
+                          "componentType": "FlexProps",
+                          "direction": "column",
+                          "gap": "3",
+                          "content": [
+                            {
+                              "uuid": "skill-category-4-title",
+                              "componentType": "HeadingProps",
+                              "level": 3,
+                              "text": "Tools"
+                            },
+                            {
+                              "uuid": "skill-category-4-list",
+                              "componentType": "FlexProps",
+                              "direction": "row",
+                              "gap": "2",
+                              "wrap": "wrap",
+                              "content": [
+                                {
+                                  "uuid": "skill-tools-1",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Git",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-tools-2",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "VS Code",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-tools-3",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Jest",
+                                  "classes": "px-3 py-1 border rounded"
+                                },
+                                {
+                                  "uuid": "skill-tools-4",
+                                  "componentType": "TextProps",
+                                  "variant": "small",
+                                  "content": "Figma",
+                                  "classes": "px-3 py-1 border rounded"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-contact",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-contact",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "contact-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "contact-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "text-center max-w-2xl",
+                  "content": [
+                    {
+                      "uuid": "contact-heading",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Let's Work Together"
+                    },
+                    {
+                      "uuid": "contact-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
+                      "classes": "text-muted-foreground"
+                    },
+                    {
+                      "uuid": "contact-email-button",
+                      "componentType": "ButtonProps",
+                      "text": "alex@example.com",
+                      "variant": "default",
+                      "classes": "text-lg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

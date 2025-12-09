@@ -1,0 +1,1214 @@
+{
+  "uuid": "app-content-kitchen-sink-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Content Components Kitchen Sink",
+  "alias": "content-components-kitchen-sink",
+  "summary": "Extensive content component collection including markdown blocks, testimonials, team members, feature items, process steps, and rich content elements. Ideal for understanding content presentation patterns and editorial layouts.",
+  "shortSummary": "Extensive content component collection including markdown blocks, testimonials, team members, feature items, process steps, and rich content elements",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "EN-US",
+      "nameNative": "EN-US",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-main-002",
+      "componentType": "NavbarProps",
+      "logo": {
+        "uuid": "navlogo-003",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "ContentSink",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "navlogo-003-href",
+          "href": "/",
+          "text": "ContentSink"
+        }
+      },
+      "content": [
+        {
+          "uuid": "navlink-home-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "active": true,
+          "href": {
+            "uuid": "link-home-006",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        }
+      ],
+      "sticky": true,
+      "variant": "default"
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home-016",
+      "title": "Content Components Demo",
+      "slug": "/",
+      "summary": "Demonstration of content-focused components.",
+      "content": [
+        {
+          "uuid": "section-stats-process-017",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-stats-process-017",
+          "layout": "singleColumnWide",
+          "title": "Stats, Processes, and Timelines",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "flex-stats-counters-018",
+              "componentType": "FlexProps",
+              "justify": "around",
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "stats-counter-1-019",
+                  "componentType": "StatsCounterProps",
+                  "start": 0,
+                  "end": 42,
+                  "duration": 2,
+                  "label": "Projects Completed",
+                  "prefix": "",
+                  "suffix": ""
+                },
+                {
+                  "uuid": "stats-counter-2-020",
+                  "componentType": "StatsCounterProps",
+                  "start": 1000,
+                  "end": 2500,
+                  "duration": 3,
+                  "label": "Happy Clients",
+                  "prefix": "",
+                  "suffix": "+"
+                },
+                {
+                  "uuid": "stats-counter-3-021",
+                  "componentType": "StatsCounterProps",
+                  "start": 0,
+                  "end": 99.9,
+                  "duration": 2.5,
+                  "label": "Uptime",
+                  "prefix": "",
+                  "suffix": "%"
+                }
+              ]
+            },
+            {
+              "uuid": "spacer-1",
+              "componentType": "SpacerProps",
+              "size": "12"
+            },
+            {
+              "uuid": "process-steps-horizontal-023",
+              "componentType": "ProcessStepsBlockProps",
+              "orientation": "horizontal",
+              "showConnectors": true,
+              "content": [
+                {
+                  "uuid": "h-step-1-024",
+                  "componentType": "ProcessStepItemProps",
+                  "number": 1,
+                  "icon": {
+                    "uuid": "h-icon-1-025",
+                    "componentType": "IconProps",
+                    "name": "search",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "h-step-1-024-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Discovery"
+                  },
+                  "text": {
+                    "uuid": "h-step-1-024-text",
+                    "componentType": "TextProps",
+                    "content": "We start by understanding your vision and goals."
+                  }
+                },
+                {
+                  "uuid": "h-step-2-026",
+                  "componentType": "ProcessStepItemProps",
+                  "number": 2,
+                  "icon": {
+                    "uuid": "h-icon-2-027",
+                    "componentType": "IconProps",
+                    "name": "drafting-compass",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "h-step-2-026-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Design"
+                  },
+                  "text": {
+                    "uuid": "h-step-2-026-text",
+                    "componentType": "TextProps",
+                    "content": "We create a stunning and user-friendly design."
+                  }
+                },
+                {
+                  "uuid": "h-step-3-028",
+                  "componentType": "ProcessStepItemProps",
+                  "number": 3,
+                  "icon": {
+                    "uuid": "h-icon-3-029",
+                    "componentType": "IconProps",
+                    "name": "code",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "h-step-3-028-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Development"
+                  },
+                  "text": {
+                    "uuid": "h-step-3-028-text",
+                    "componentType": "TextProps",
+                    "content": "Our team builds and implements the solution."
+                  }
+                },
+                {
+                  "uuid": "h-step-4-030",
+                  "componentType": "ProcessStepItemProps",
+                  "number": 4,
+                  "icon": {
+                    "uuid": "h-icon-4-031",
+                    "componentType": "IconProps",
+                    "name": "rocket",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "h-step-4-030-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Launch"
+                  },
+                  "text": {
+                    "uuid": "h-step-4-030-text",
+                    "componentType": "TextProps",
+                    "content": "We deploy your project for the world to see."
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "spacer-2",
+              "componentType": "SpacerProps",
+              "size": "12"
+            },
+            {
+              "uuid": "timeline-alternating-033",
+              "componentType": "TimelineBlockProps",
+              "orientation": "vertical",
+              "alternating": true,
+              "content": [
+                {
+                  "uuid": "event-1-034",
+                  "componentType": "TimelineEventProps",
+                  "date": "2023-01-15",
+                  "title": {
+                    "uuid": "event-1-034-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Company Founded"
+                  },
+                  "text": {
+                    "uuid": "event-1-034-text",
+                    "componentType": "TextProps",
+                    "content": "Our journey began with a small team and a big idea."
+                  },
+                  "icon": {
+                    "uuid": "t-icon-1-035",
+                    "componentType": "IconProps",
+                    "name": "flag",
+                    "size": 20
+                  },
+                  "media": {
+                    "uuid": "t-img-1-036",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "alt": "Company founding day",
+                    "asset": {
+                      "uuid": "t-asset-1-037",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "founding",
+                      "isProcessed": true,
+                      "requestedWidth": 400,
+                      "requestedHeight": 200
+                    }
+                  }
+                },
+                {
+                  "uuid": "event-2-038",
+                  "componentType": "TimelineEventProps",
+                  "date": "2024-06-20",
+                  "title": {
+                    "uuid": "event-2-038-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "First Major Product Launch"
+                  },
+                  "text": {
+                    "uuid": "event-2-038-text",
+                    "componentType": "TextProps",
+                    "content": "We launched our flagship product to critical acclaim."
+                  },
+                  "icon": {
+                    "uuid": "t-icon-2-039",
+                    "componentType": "IconProps",
+                    "name": "package-check",
+                    "size": 20
+                  },
+                  "media": {
+                    "uuid": "t-img-2-040",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
+                    "alt": "Product launch event",
+                    "asset": {
+                      "uuid": "t-asset-2-041",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "product",
+                      "isProcessed": true,
+                      "requestedWidth": 400,
+                      "requestedHeight": 200
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-pricing-tables-042",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-pricing-tables-042",
+          "layout": "singleColumnWide",
+          "title": "Pricing & Comparison",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "pricing-table-main-043",
+              "componentType": "PricingTableProps",
+              "currency": "$",
+              "showToggle": true,
+              "content": [
+                {
+                  "uuid": "plan-basic-044",
+                  "componentType": "PricingPlanProps",
+                  "name": {
+                    "uuid": "plan-basic-044-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Basic"
+                  },
+                  "price": "0",
+                  "period": "/ month",
+                  "description": {
+                    "uuid": "plan-basic-044-description",
+                    "componentType": "TextProps",
+                    "content": "For individuals and small projects."
+                  },
+                  "features": [
+                    "1 User",
+                    "1 Project",
+                    "Community Support"
+                  ],
+                  "highlight": false,
+                  "button": {
+                    "uuid": "btn-basic-045",
+                    "componentType": "ButtonProps",
+                    "text": "Get Started",
+                    "type": "button",
+                    "variant": "outline",
+                    "disabled": false,
+                    "onClick": "handleBasicSignup"
+                  }
+                },
+                {
+                  "uuid": "plan-pro-046",
+                  "componentType": "PricingPlanProps",
+                  "name": {
+                    "uuid": "plan-pro-046-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Pro"
+                  },
+                  "price": "49",
+                  "period": "/ month",
+                  "description": {
+                    "uuid": "plan-pro-046-description",
+                    "componentType": "TextProps",
+                    "content": "For growing teams and businesses."
+                  },
+                  "features": [
+                    "10 Users",
+                    "Unlimited Projects",
+                    "Email Support",
+                    "API Access"
+                  ],
+                  "highlight": true,
+                  "button": {
+                    "uuid": "btn-pro-047",
+                    "componentType": "ButtonProps",
+                    "text": "Choose Pro",
+                    "type": "button",
+                    "variant": "default",
+                    "disabled": false,
+                    "onClick": "handleProSignup"
+                  }
+                },
+                {
+                  "uuid": "plan-enterprise-048",
+                  "componentType": "PricingPlanProps",
+                  "name": {
+                    "uuid": "plan-enterprise-048-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Enterprise"
+                  },
+                  "price": "Contact Us",
+                  "period": "",
+                  "description": {
+                    "uuid": "plan-enterprise-048-description",
+                    "componentType": "TextProps",
+                    "content": "For large organizations with custom needs."
+                  },
+                  "features": [
+                    "Unlimited Users",
+                    "Dedicated Support",
+                    "Custom Integrations"
+                  ],
+                  "highlight": false,
+                  "button": {
+                    "uuid": "btn-enterprise-049",
+                    "componentType": "ButtonProps",
+                    "text": "Contact Sales",
+                    "type": "button",
+                    "variant": "outline",
+                    "disabled": false,
+                    "onClick": "handleEnterpriseContact"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-comparison-table-131",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-comparison-table-131",
+          "layout": "singleColumnWide",
+          "title": "Software Feature Comparison",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "comparison-table-software-132",
+              "componentType": "ComparisonTableProps",
+              "subtitle": "Comparing the leading products in the market.",
+              "featuredColumnKey": "product-b",
+              "zebraStriping": true,
+              "columns": [
+                {
+                  "uuid": "col-feature-133",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "feature",
+                  "header": "Feature",
+                  "width": "30%"
+                },
+                {
+                  "uuid": "col-product-a-134",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "product-a",
+                  "header": "Product A",
+                  "align": "center"
+                },
+                {
+                  "uuid": "col-product-b-135",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "product-b",
+                  "header": "Product B (Recommended)",
+                  "align": "center"
+                },
+                {
+                  "uuid": "col-product-c-136",
+                  "componentType": "TableColumnDef",
+                  "accessorKey": "product-c",
+                  "header": "Product C",
+                  "align": "center"
+                }
+              ],
+              "rows": [
+                {
+                  "id": "row-storage",
+                  "values": {
+                    "feature": "Cloud Storage",
+                    "product-a": "10 GB",
+                    "product-b": "100 GB",
+                    "product-c": "50 GB"
+                  }
+                },
+                {
+                  "id": "row-users",
+                  "values": {
+                    "feature": "User Accounts",
+                    "product-a": 5,
+                    "product-b": 25,
+                    "product-c": 10
+                  }
+                },
+                {
+                  "id": "row-support",
+                  "values": {
+                    "feature": "Customer Support",
+                    "product-a": {
+                      "uuid": "badge-email-137",
+                      "componentType": "BadgeProps",
+                      "content": "Email",
+                      "variant": "outline"
+                    },
+                    "product-b": {
+                      "uuid": "badge-priority-138",
+                      "componentType": "BadgeProps",
+                      "content": "Priority",
+                      "variant": "default"
+                    },
+                    "product-c": {
+                      "uuid": "badge-forum-139",
+                      "componentType": "BadgeProps",
+                      "content": "Forum",
+                      "variant": "secondary"
+                    }
+                  }
+                },
+                {
+                  "id": "row-mobile",
+                  "values": {
+                    "feature": "Mobile App",
+                    "product-a": true,
+                    "product-b": true,
+                    "product-c": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-component-variations-140",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-component-variations-140",
+          "layout": "singleColumnWide",
+          "title": "Component Variations",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "heading-process-steps-141",
+              "componentType": "HeadingProps",
+              "level": 3,
+              "text": "Process Steps: Vertical"
+            },
+            {
+              "uuid": "process-steps-vertical-142",
+              "componentType": "ProcessStepsBlockProps",
+              "orientation": "vertical",
+              "showConnectors": true,
+              "content": [
+                {
+                  "uuid": "v-step-1-143",
+                  "componentType": "ProcessStepItemProps",
+                  "number": 1,
+                  "icon": {
+                    "uuid": "v-icon-1-144",
+                    "componentType": "IconProps",
+                    "name": "clipboard-list",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "v-step-1-143-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Planning"
+                  },
+                  "text": {
+                    "uuid": "v-step-1-143-text",
+                    "componentType": "TextProps",
+                    "content": "Defining the project scope and requirements."
+                  }
+                },
+                {
+                  "uuid": "v-step-2-145",
+                  "componentType": "ProcessStepItemProps",
+                  "number": 2,
+                  "icon": {
+                    "uuid": "v-icon-2-146",
+                    "componentType": "IconProps",
+                    "name": "file-check",
+                    "size": 24
+                  },
+                  "title": {
+                    "uuid": "v-step-2-145-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Review"
+                  },
+                  "text": {
+                    "uuid": "v-step-2-145-text",
+                    "componentType": "TextProps",
+                    "content": "Internal and client review cycles."
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "spacer-5",
+              "componentType": "SpacerProps",
+              "size": "12"
+            },
+            {
+              "uuid": "heading-quotes-147",
+              "componentType": "HeadingProps",
+              "level": 3,
+              "text": "Quote Block Alignments"
+            },
+            {
+              "uuid": "grid-quotes-148",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gapX": "8",
+              "content": [
+                {
+                  "uuid": "quote-center-149",
+                  "componentType": "QuoteBlockProps",
+                  "quote": {
+                    "uuid": "quote-center-149-quote",
+                    "componentType": "TextProps",
+                    "content": "A centered quote for emphasis."
+                  },
+                  "author": {
+                    "uuid": "quote-center-149-author",
+                    "componentType": "TextProps",
+                    "content": "Author One"
+                  },
+                  "alignment": "center"
+                },
+                {
+                  "uuid": "quote-right-150",
+                  "componentType": "QuoteBlockProps",
+                  "quote": {
+                    "uuid": "quote-right-150-quote",
+                    "componentType": "TextProps",
+                    "content": "A right-aligned quote for stylistic variation."
+                  },
+                  "author": {
+                    "uuid": "quote-right-150-author",
+                    "componentType": "TextProps",
+                    "content": "Author Two"
+                  },
+                  "alignment": "right"
+                },
+                {
+                  "uuid": "quote-no-author-151",
+                  "componentType": "QuoteBlockProps",
+                  "quote": {
+                    "uuid": "quote-no-author-151-quote",
+                    "componentType": "TextProps",
+                    "content": "A simple quote without an author or source."
+                  },
+                  "alignment": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-content-blocks-059",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-content-blocks-059",
+          "layout": "twoColumnEven",
+          "title": "Rich Content Blocks",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "quote-block-left-060",
+              "componentType": "QuoteBlockProps",
+              "quote": {
+                "uuid": "quote-block-left-060-quote",
+                "componentType": "TextProps",
+                "content": "This is a fantastic demonstration of how flexible a JSON-driven UI can be. The possibilities are endless."
+              },
+              "author": {
+                "uuid": "quote-block-left-060-author",
+                "componentType": "TextProps",
+                "content": "Jane Doe"
+              },
+              "source": {
+                "text": "TechCrunch",
+                "sourceUrl": "#"
+              },
+              "alignment": "left"
+            },
+            {
+              "uuid": "markdown-block-061",
+              "componentType": "MarkdownBlockProps",
+              "sanitize": true,
+              "content": "### Markdown Demo\n\nThis content is rendered from a raw markdown string.\n\n* Unordered List Item 1\n* Unordered List Item 2\n\n1.  Ordered List Item 1\n2.  Ordered List Item 2\n\nCheck out [this link](https://example.com)."
+            },
+            {
+              "uuid": "code-snippet-python-062",
+              "componentType": "CodeSnippetProps",
+              "code": "def greet(name):\n    \"\"\"This function greets the person passed in as a parameter\"\"\"\n    print(f\"Hello, {name}. Good morning!\")\n\ngreet('World')",
+              "language": "python",
+              "showLineNumbers": true,
+              "copyable": true,
+              "theme": "dark",
+              "maxHeight": "200px"
+            },
+            {
+              "uuid": "download-buttons-flex-063",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "download-pdf-064",
+                  "componentType": "DownloadButtonProps",
+                  "text": "Download Annual Report",
+                  "url": "/path/to/report.pdf",
+                  "fileName": "annual-report-2024.pdf",
+                  "variant": "default",
+                  "icon": {
+                    "uuid": "icon-pdf-065",
+                    "componentType": "IconProps",
+                    "name": "file-down",
+                    "size": 16
+                  },
+                  "fileType": "PDF",
+                  "fileSize": "2.5 MB"
+                },
+                {
+                  "uuid": "download-zip-066",
+                  "componentType": "DownloadButtonProps",
+                  "text": "Download Asset Pack",
+                  "url": "/path/to/assets.zip",
+                  "variant": "secondary",
+                  "fileType": "ZIP",
+                  "fileSize": "15.1 MB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-features-demo-067",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-features-demo-067",
+          "layout": "threeColumnEven",
+          "title": "Feature Variants",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "feature-standard-068",
+              "componentType": "StandardFeatureProps",
+              "variant": "standard",
+              "layout": "iconLeft",
+              "style": "bordered",
+              "title": {
+                "uuid": "feature-standard-068-title",
+                "componentType": "HeadingProps",
+                "level": 3,
+                "text": "Standard Feature"
+              },
+              "text": {
+                "uuid": "feature-standard-068-text",
+                "componentType": "TextProps",
+                "content": "Icon on the left, bordered style for emphasis."
+              },
+              "icon": {
+                "uuid": "icon-std-069",
+                "componentType": "IconProps",
+                "name": "star",
+                "size": 32
+              }
+            },
+            {
+              "uuid": "feature-checklist-070",
+              "componentType": "ChecklistFeatureProps",
+              "variant": "checklist",
+              "title": {
+                "uuid": "feature-checklist-070-title",
+                "componentType": "HeadingProps",
+                "level": 3,
+                "text": "Onboarding Checklist"
+              },
+              "icon": {
+                "uuid": "icon-checklist-071",
+                "componentType": "IconProps",
+                "name": "square-check",
+                "size": 32
+              },
+              "defaultItemIcon": {
+                "uuid": "icon-check-item-072",
+                "componentType": "IconProps",
+                "name": "check",
+                "size": 16
+              },
+              "content": [
+                {
+                  "uuid": "check-1-073",
+                  "componentType": "ChecklistItemProps",
+                  "text": {
+                    "uuid": "check-1-073-text",
+                    "componentType": "TextProps",
+                    "content": "Create your account"
+                  },
+                  "checked": true
+                },
+                {
+                  "uuid": "check-2-074",
+                  "componentType": "ChecklistItemProps",
+                  "text": {
+                    "uuid": "check-2-074-text",
+                    "componentType": "TextProps",
+                    "content": "Complete your profile"
+                  }
+                },
+                {
+                  "uuid": "check-3-075",
+                  "componentType": "ChecklistItemProps",
+                  "text": {
+                    "uuid": "check-3-075-text",
+                    "componentType": "TextProps",
+                    "content": "Invite team members"
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "feature-metric-076",
+              "componentType": "MetricFeatureProps",
+              "variant": "metric",
+              "label": {
+                "uuid": "feature-metric-076-label",
+                "componentType": "TextProps",
+                "content": "Monthly Recurring Revenue"
+              },
+              "value": "12,500",
+              "unit": "USD",
+              "trend": {
+                "direction": "up",
+                "value": "+5.2%"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "section-team-077",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-team-077",
+          "layout": "singleColumnWide",
+          "title": "Meet the Team",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "team-grid-078",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gapX": "8",
+              "gapY": "8",
+              "content": [
+                {
+                  "uuid": "team-member-1-079",
+                  "componentType": "TeamMemberProps",
+                  "name": {
+                    "uuid": "team-member-1-079-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Alex Johnson"
+                  },
+                  "position": {
+                    "uuid": "team-member-1-079-position",
+                    "componentType": "TextProps",
+                    "content": "CEO & Founder"
+                  },
+                  "style": "cardVertical",
+                  "photo": {
+                    "uuid": "tm1-photo-080",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "alt": "Photo of Alex Johnson",
+                    "asset": {
+                      "uuid": "tm1-asset-081",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "team, ceo",
+                      "isProcessed": true,
+                      "requestedWidth": 300,
+                      "requestedHeight": 300
+                    }
+                  }
+                },
+                {
+                  "uuid": "team-member-2-082",
+                  "componentType": "TeamMemberProps",
+                  "name": {
+                    "uuid": "team-member-2-082-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Maria Garcia"
+                  },
+                  "position": {
+                    "uuid": "team-member-2-082-position",
+                    "componentType": "TextProps",
+                    "content": "Head of Design"
+                  },
+                  "style": "avatarVertical",
+                  "photo": {
+                    "uuid": "tm2-photo-083",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80",
+                    "alt": "Photo of Maria Garcia",
+                    "asset": {
+                      "uuid": "tm2-asset-084",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "team, design",
+                      "isProcessed": true,
+                      "requestedWidth": 300,
+                      "requestedHeight": 300
+                    }
+                  }
+                },
+                {
+                  "uuid": "team-member-3-085",
+                  "componentType": "TeamMemberProps",
+                  "name": {
+                    "uuid": "team-member-3-085-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "David Chen"
+                  },
+                  "position": {
+                    "uuid": "team-member-3-085-position",
+                    "componentType": "TextProps",
+                    "content": "Lead Engineer"
+                  },
+                  "style": "imageOverlay",
+                  "photo": {
+                    "uuid": "tm3-photo-086",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+                    "alt": "Photo of David Chen",
+                    "asset": {
+                      "uuid": "tm3-asset-087",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "team, engineer",
+                      "isProcessed": true,
+                      "requestedWidth": 300,
+                      "requestedHeight": 300
+                    }
+                  }
+                },
+                {
+                  "uuid": "team-member-4-088",
+                  "componentType": "TeamMemberProps",
+                  "name": {
+                    "uuid": "team-member-4-088-name",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Sarah Lee"
+                  },
+                  "position": {
+                    "uuid": "team-member-4-088-position",
+                    "componentType": "TextProps",
+                    "content": "Marketing Director"
+                  },
+                  "style": "cardHorizontal",
+                  "bio": {
+                    "uuid": "team-member-4-088-bio",
+                    "componentType": "TextProps",
+                    "content": "Driving growth and telling our story."
+                  },
+                  "photo": {
+                    "uuid": "tm4-photo-089",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "alt": "Photo of Sarah Lee",
+                    "asset": {
+                      "uuid": "tm4-asset-090",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "team, marketing",
+                      "isProcessed": true,
+                      "requestedWidth": 300,
+                      "requestedHeight": 300
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-testimonials-091",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-testimonials-091",
+          "layout": "singleColumnWide",
+          "title": "What Our Clients Say",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "testimonial-carousel-092",
+              "componentType": "CarouselProps",
+              "slidesPerView": 2,
+              "gap": "16",
+              "content": [
+                {
+                  "uuid": "testimonial-1-093",
+                  "componentType": "TestimonialItemProps",
+                  "style": "card",
+                  "text": {
+                    "uuid": "testimonial-1-093-text",
+                    "componentType": "TextProps",
+                    "content": "Working with this team was a game-changer. Their attention to detail and commitment to quality is unparalleled."
+                  },
+                  "author": {
+                    "uuid": "testimonial-1-093-author",
+                    "componentType": "TextProps",
+                    "content": "John Smith"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-1-093-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "CEO, Innovate Inc."
+                  },
+                  "rating": 5
+                },
+                {
+                  "uuid": "testimonial-2-094",
+                  "componentType": "TestimonialItemProps",
+                  "style": "quote",
+                  "text": {
+                    "uuid": "testimonial-2-094-text",
+                    "componentType": "TextProps",
+                    "content": "An incredible product that saved us countless hours."
+                  },
+                  "author": {
+                    "uuid": "testimonial-2-094-author",
+                    "componentType": "TextProps",
+                    "content": "Emily White"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-2-094-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Product Manager, Tech Solutions"
+                  }
+                },
+                {
+                  "uuid": "testimonial-3-095",
+                  "componentType": "TestimonialItemProps",
+                  "style": "inline",
+                  "text": {
+                    "uuid": "testimonial-3-095-text",
+                    "componentType": "TextProps",
+                    "content": "Highly recommended for any business looking to scale."
+                  },
+                  "author": {
+                    "uuid": "testimonial-3-095-author",
+                    "componentType": "TextProps",
+                    "content": "Michael Brown"
+                  },
+                  "avatar": {
+                    "uuid": "test-avatar-3-096",
+                    "componentType": "ImageProps",
+                    "src": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "alt": "Avatar of Michael Brown",
+                    "asset": {
+                      "uuid": "test-asset-3-097",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 100,
+                      "requestedHeight": 100
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-contact-logos-098",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-contact-logos-098",
+          "layout": "singleColumnCentered",
+          "title": "Get In Touch & Our Partners",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "contact-info-block-099",
+              "componentType": "ContactInfoBlockProps",
+              "title": "Contact Information",
+              "address": "123 Innovation Drive, Tech City, 12345",
+              "phone": "+1 (555) 123-4567",
+              "email": "hello@example.com",
+              "mapEmbed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817799282884!2d36.82194631475837!3d-1.28638999906423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d5752f90f5%3A0x48615038c3e5f247!2sNairobi%2C%2C%20Kenya!5e0!3m2!1sen!2sus!4v1626882463423!5m2!1sen!2sus\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+              "socialLinks": [
+                {
+                  "uuid": "social-1-100",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-2-101",
+                  "componentType": "SocialLinkProps",
+                  "platform": "linkedin",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-3-102",
+                  "componentType": "SocialLinkProps",
+                  "platform": "github",
+                  "url": "#"
+                }
+              ]
+            },
+            {
+              "uuid": "spacer-4",
+              "componentType": "SpacerProps",
+              "size": "12"
+            },
+            {
+              "uuid": "logo-flex-103",
+              "componentType": "FlexProps",
+              "justify": "center",
+              "gap": "16",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "logo-1-104",
+                  "componentType": "LogoItemProps",
+                  "name": "TechCorp",
+                  "grayscale": true,
+                  "logo": {
+                    "uuid": "logo-img-1-105",
+                    "componentType": "ImageProps",
+                    "src": "https://placehold.co/150x60/cccccc/FFFFFF?text=TechCorp",
+                    "alt": "TechCorp Logo",
+                    "asset": {
+                      "uuid": "logo-asset-1-106",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "logo",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 60
+                    }
+                  }
+                },
+                {
+                  "uuid": "logo-2-107",
+                  "componentType": "LogoItemProps",
+                  "name": "Innovate LLC",
+                  "url": "#",
+                  "logo": {
+                    "uuid": "logo-img-2-108",
+                    "componentType": "ImageProps",
+                    "src": "https://placehold.co/150x60/cccccc/FFFFFF?text=Innovate",
+                    "alt": "Innovate LLC Logo",
+                    "asset": {
+                      "uuid": "logo-asset-2-109",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "logo",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 60
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Demonstration of content-focused components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-110",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-110",
+      "speed": 0.5,
+      "background": {
+        "color": "hsl(222.2, 47.4%, 11.2%)"
+      },
+      "content": [
+        {
+          "uuid": "footer-flex-111",
+          "componentType": "FlexProps",
+          "justify": "between",
+          "align": "center",
+          "content": [
+            {
+              "uuid": "footer-text-112",
+              "componentType": "TextProps",
+              "content": "© 2025 Content Sink. All Rights Reserved.",
+              "classes": "text-white"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

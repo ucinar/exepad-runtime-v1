@@ -1,0 +1,733 @@
+{
+  "uuid": "app-form-app-member-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "form",
+  "name": "Membership Application Form",
+  "alias": "membership-application-form",
+  "summary": "A professional membership application form with applicant details, membership tier selection, professional background, references, and payment information. Ideal for professional associations, clubs, organizations, and exclusive communities to process new member applications.",
+  "shortSummary": "A membership application form with tier selection and professional background",
+  "lastUpdatedEpoch": 1730714400,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0f172a",
+      "primary": "#b91c1c",
+      "primary-foreground": "#ffffff",
+      "secondary": "#fef2f2",
+      "secondary-foreground": "#7f1d1d",
+      "muted": "#f8fafc",
+      "muted-foreground": "#64748b",
+      "accent": "#fee2e2",
+      "accent-foreground": "#991b1b",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#fef2f2",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#dc2626"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f87171",
+      "primary-foreground": "#450a0a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#450a0a",
+      "accent-foreground": "#fecaca",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fef2f2",
+      "border": "#334155",
+      "input": "#334155",
+      "ring": "#f87171"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "header-section",
+      "classes": "border-b bg-background",
+      "content": [
+        {
+          "uuid": "navbar",
+          "componentType": "NavbarProps",
+          "logo": {
+            "type": "text",
+            "text": "Professional Engineers Association",
+            "href": {
+              "componentType": "LinkProps",
+              "uuid": "navbar-logo-href",
+              "href": "/",
+              "text": "Professional Engineers Association"
+            },
+            "componentType": "NavbarLogoProps",
+            "uuid": "navbar-logo"
+          },
+          "content": [
+            {
+              "type": "link",
+              "label": "About",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-0-href",
+                "href": "/about",
+                "text": "About"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-0"
+            },
+            {
+              "type": "link",
+              "label": "Benefits",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-1-href",
+                "href": "/benefits",
+                "text": "Benefits"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-1"
+            },
+            {
+              "type": "link",
+              "label": "Apply",
+              "href": {
+                "componentType": "LinkProps",
+                "uuid": "menu-item-2-href",
+                "href": "/apply",
+                "text": "Apply"
+              },
+              "componentType": "MenuLinkItemProps",
+              "uuid": "menu-item-2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section",
+      "classes": "border-t bg-muted/50",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-content",
+          "componentType": "CenterProps",
+          "content": [
+            {
+              "uuid": "footer-text",
+              "componentType": "TextProps",
+              "variant": "small",
+              "content": "© 2025 Professional Engineers Association. Advancing the engineering profession since 1952.",
+              "classes": "text-muted-foreground text-center"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-application",
+      "title": "Membership Application",
+      "slug": "/",
+      "summary": "Apply for membership in the Professional Engineers Association and join a community of excellence.",
+      "shortSummary": "Apply for professional membership",
+      "lastUpdatedEpoch": 1730714400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-hero",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-hero",
+          "spacing": "lg",
+          "classes": "bg-gradient-to-b from-primary/10 to-background",
+          "content": [
+            {
+              "uuid": "hero-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "align": "center",
+                  "classes": "text-center max-w-3xl",
+                  "content": [
+                    {
+                      "uuid": "hero-icon",
+                      "componentType": "IconProps",
+                      "name": "shield-check",
+                      "size": 56,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "hero-heading",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Join Our Professional Community"
+                    },
+                    {
+                      "uuid": "hero-description",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Become part of a prestigious network of over 50,000 professional engineers. Access exclusive resources, networking opportunities, and professional development programs.",
+                      "classes": "text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-form",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-form",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "form-container",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "membership-form",
+                  "componentType": "FormProps",
+                  "title": "Membership Application",
+                  "description": "Please complete all sections of this application. Applications are reviewed within 5-7 business days.",
+                  "layout": "singleColumn",
+                  "initialValues": {},
+                  "classes": "max-w-4xl",
+                  "onSubmitAction": {
+                    "actionId": "submit_form",
+                    "successMessage": "Application submitted successfully! You'll receive a confirmation email with next steps. Our membership committee will review your application within 5-7 business days.",
+                    "errorMessage": "Unable to submit application. Please try again or contact membership@pea.org",
+                    "notificationType": "toast",
+                    "notifyAdmin": "email",
+                    "onSuccessAction": {
+                      "type": "clearForm"
+                    }
+                  },
+                  "content": [
+                    {
+                      "uuid": "fieldset-personal",
+                      "componentType": "FieldSetProps",
+                      "legend": "Personal Information",
+                      "content": [
+                        {
+                          "uuid": "field-first-name",
+                          "componentType": "TextFieldProps",
+                          "name": "firstName",
+                          "label": "First Name",
+                          "placeholder": "John",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-middle-name",
+                          "componentType": "TextFieldProps",
+                          "name": "middleName",
+                          "label": "Middle Name",
+                          "placeholder": "Robert"
+                        },
+                        {
+                          "uuid": "field-last-name",
+                          "componentType": "TextFieldProps",
+                          "name": "lastName",
+                          "label": "Last Name",
+                          "placeholder": "Doe",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email Address",
+                          "inputType": "email",
+                          "placeholder": "john.doe@example.com",
+                          "required": true,
+                          "helperText": "This will be your primary contact email"
+                        },
+                        {
+                          "uuid": "field-phone",
+                          "componentType": "TextFieldProps",
+                          "name": "phone",
+                          "label": "Phone Number",
+                          "inputType": "tel",
+                          "placeholder": "+1 (555) 123-4567",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-date-of-birth",
+                          "componentType": "DateTimeFieldProps",
+                          "name": "dateOfBirth",
+                          "label": "Date of Birth",
+                          "pickerType": "date",
+                          "required": true
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-address",
+                      "componentType": "FieldSetProps",
+                      "legend": "Contact Address",
+                      "content": [
+                        {
+                          "uuid": "field-street-address",
+                          "componentType": "TextFieldProps",
+                          "name": "streetAddress",
+                          "label": "Street Address",
+                          "placeholder": "123 Main Street, Apt 4B",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-city",
+                          "componentType": "TextFieldProps",
+                          "name": "city",
+                          "label": "City",
+                          "placeholder": "New York",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-state",
+                          "componentType": "TextFieldProps",
+                          "name": "state",
+                          "label": "State/Province",
+                          "placeholder": "NY",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-postal-code",
+                          "componentType": "TextFieldProps",
+                          "name": "postalCode",
+                          "label": "Postal Code",
+                          "placeholder": "10001",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-country",
+                          "componentType": "SelectFieldProps",
+                          "name": "country",
+                          "label": "Country",
+                          "placeholder": "Select country",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "United States",
+                              "value": "US"
+                            },
+                            {
+                              "label": "Canada",
+                              "value": "CA"
+                            },
+                            {
+                              "label": "United Kingdom",
+                              "value": "GB"
+                            },
+                            {
+                              "label": "Australia",
+                              "value": "AU"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-professional",
+                      "componentType": "FieldSetProps",
+                      "legend": "Professional Background",
+                      "content": [
+                        {
+                          "uuid": "field-license-number",
+                          "componentType": "TextFieldProps",
+                          "name": "licenseNumber",
+                          "label": "Professional Engineering License Number",
+                          "placeholder": "PE-12345",
+                          "required": true,
+                          "helperText": "Your PE license must be current and in good standing"
+                        },
+                        {
+                          "uuid": "field-license-state",
+                          "componentType": "TextFieldProps",
+                          "name": "licenseState",
+                          "label": "Licensing State/Jurisdiction",
+                          "placeholder": "California",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-specialization",
+                          "componentType": "SelectFieldProps",
+                          "name": "engineeringSpecialization",
+                          "label": "Primary Engineering Specialization",
+                          "placeholder": "Select your specialization",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Civil Engineering",
+                              "value": "civil"
+                            },
+                            {
+                              "label": "Mechanical Engineering",
+                              "value": "mechanical"
+                            },
+                            {
+                              "label": "Electrical Engineering",
+                              "value": "electrical"
+                            },
+                            {
+                              "label": "Chemical Engineering",
+                              "value": "chemical"
+                            },
+                            {
+                              "label": "Software Engineering",
+                              "value": "software"
+                            },
+                            {
+                              "label": "Aerospace Engineering",
+                              "value": "aerospace"
+                            },
+                            {
+                              "label": "Biomedical Engineering",
+                              "value": "biomedical"
+                            },
+                            {
+                              "label": "Environmental Engineering",
+                              "value": "environmental"
+                            },
+                            {
+                              "label": "Other",
+                              "value": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-years-experience",
+                          "componentType": "SelectFieldProps",
+                          "name": "yearsOfExperience",
+                          "label": "Years of Professional Experience",
+                          "placeholder": "Select range",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "0-2 years",
+                              "value": "0-2"
+                            },
+                            {
+                              "label": "3-5 years",
+                              "value": "3-5"
+                            },
+                            {
+                              "label": "6-10 years",
+                              "value": "6-10"
+                            },
+                            {
+                              "label": "11-15 years",
+                              "value": "11-15"
+                            },
+                            {
+                              "label": "16-20 years",
+                              "value": "16-20"
+                            },
+                            {
+                              "label": "20+ years",
+                              "value": "20+"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-current-employer",
+                          "componentType": "TextFieldProps",
+                          "name": "currentEmployer",
+                          "label": "Current Employer",
+                          "placeholder": "Engineering Solutions Inc.",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-job-title",
+                          "componentType": "TextFieldProps",
+                          "name": "jobTitle",
+                          "label": "Job Title",
+                          "placeholder": "Senior Structural Engineer",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-employment-type",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "employmentType",
+                          "label": "Employment Type",
+                          "required": true,
+                          "orientation": "horizontal",
+                          "options": [
+                            {
+                              "label": "Full-Time Employee",
+                              "value": "full-time"
+                            },
+                            {
+                              "label": "Self-Employed/Consultant",
+                              "value": "self-employed"
+                            },
+                            {
+                              "label": "Part-Time",
+                              "value": "part-time"
+                            },
+                            {
+                              "label": "Retired",
+                              "value": "retired"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-education",
+                      "componentType": "FieldSetProps",
+                      "legend": "Educational Background",
+                      "content": [
+                        {
+                          "uuid": "field-highest-degree",
+                          "componentType": "SelectFieldProps",
+                          "name": "highestDegree",
+                          "label": "Highest Degree Earned",
+                          "placeholder": "Select degree",
+                          "required": true,
+                          "options": [
+                            {
+                              "label": "Bachelor's Degree",
+                              "value": "bachelor"
+                            },
+                            {
+                              "label": "Master's Degree",
+                              "value": "master"
+                            },
+                            {
+                              "label": "Doctorate (PhD)",
+                              "value": "doctorate"
+                            },
+                            {
+                              "label": "Professional Degree",
+                              "value": "professional"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-institution",
+                          "componentType": "TextFieldProps",
+                          "name": "institution",
+                          "label": "Institution Name",
+                          "placeholder": "Massachusetts Institute of Technology",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-graduation-year",
+                          "componentType": "TextFieldProps",
+                          "name": "graduationYear",
+                          "label": "Graduation Year",
+                          "placeholder": "2015",
+                          "required": true
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-membership",
+                      "componentType": "FieldSetProps",
+                      "legend": "Membership Selection",
+                      "content": [
+                        {
+                          "uuid": "field-membership-tier",
+                          "componentType": "RadioGroupFieldProps",
+                          "name": "membershipTier",
+                          "label": "Select Membership Tier",
+                          "required": true,
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Associate Member - $95/year (0-3 years experience)",
+                              "value": "associate"
+                            },
+                            {
+                              "label": "Full Member - $195/year (Licensed PE, 3+ years)",
+                              "value": "full"
+                            },
+                            {
+                              "label": "Senior Member - $245/year (15+ years, leadership roles)",
+                              "value": "senior"
+                            },
+                            {
+                              "label": "Fellow - $295/year (20+ years, significant contributions)",
+                              "value": "fellow"
+                            },
+                            {
+                              "label": "Student Member - $25/year (Enrolled in accredited program)",
+                              "value": "student"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "field-interests",
+                          "componentType": "CheckboxGroupFieldProps",
+                          "name": "interests",
+                          "label": "Areas of Interest",
+                          "helperText": "Select all that apply - we'll connect you with relevant groups",
+                          "orientation": "vertical",
+                          "options": [
+                            {
+                              "label": "Professional Development",
+                              "value": "professional-dev"
+                            },
+                            {
+                              "label": "Networking Events",
+                              "value": "networking"
+                            },
+                            {
+                              "label": "Technical Seminars",
+                              "value": "seminars"
+                            },
+                            {
+                              "label": "Mentorship Program",
+                              "value": "mentorship"
+                            },
+                            {
+                              "label": "Industry Advocacy",
+                              "value": "advocacy"
+                            },
+                            {
+                              "label": "Research & Publications",
+                              "value": "research"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-references",
+                      "componentType": "FieldSetProps",
+                      "legend": "Professional References",
+                      "content": [
+                        {
+                          "uuid": "field-reference-1-name",
+                          "componentType": "TextFieldProps",
+                          "name": "reference1Name",
+                          "label": "Reference 1 - Full Name",
+                          "placeholder": "Dr. Jane Smith, PE",
+                          "required": true,
+                          "helperText": "Must be a current PEA member or licensed PE"
+                        },
+                        {
+                          "uuid": "field-reference-1-email",
+                          "componentType": "TextFieldProps",
+                          "name": "reference1Email",
+                          "label": "Reference 1 - Email",
+                          "inputType": "email",
+                          "placeholder": "jane.smith@example.com",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-reference-2-name",
+                          "componentType": "TextFieldProps",
+                          "name": "reference2Name",
+                          "label": "Reference 2 - Full Name",
+                          "placeholder": "Prof. Robert Johnson, PE",
+                          "required": true
+                        },
+                        {
+                          "uuid": "field-reference-2-email",
+                          "componentType": "TextFieldProps",
+                          "name": "reference2Email",
+                          "label": "Reference 2 - Email",
+                          "inputType": "email",
+                          "placeholder": "robert.johnson@example.com",
+                          "required": true
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fieldset-statement",
+                      "componentType": "FieldSetProps",
+                      "legend": "Personal Statement",
+                      "content": [
+                        {
+                          "uuid": "field-motivation",
+                          "componentType": "TextAreaFieldProps",
+                          "name": "motivation",
+                          "label": "Why do you want to join the Professional Engineers Association?",
+                          "placeholder": "Share your motivations and what you hope to contribute to the association...",
+                          "rows": 5,
+                          "maxLength": 1000,
+                          "required": true,
+                          "helperText": "Maximum 1000 characters"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "field-code-of-ethics",
+                      "componentType": "CheckboxFieldProps",
+                      "name": "agreeCodeOfEthics",
+                      "label": "I agree to abide by the PEA Code of Ethics and Professional Conduct",
+                      "required": true
+                    },
+                    {
+                      "uuid": "field-accurate-info",
+                      "componentType": "CheckboxFieldProps",
+                      "name": "certifyAccurate",
+                      "label": "I certify that all information provided in this application is accurate and complete",
+                      "required": true
+                    },
+                    {
+                      "uuid": "field-hidden-app-date",
+                      "componentType": "HiddenFieldProps",
+                      "name": "applicationDate",
+                      "value": "2025-11-04"
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "actionType": "reset",
+                      "text": "Clear Form",
+                      "variant": "outline",
+                      "uuid": "form-action-reset",
+                      "componentType": "ButtonProps"
+                    },
+                    {
+                      "actionType": "submit",
+                      "text": "Submit Application",
+                      "variant": "default",
+                      "icon": {
+                        "uuid": "submit-icon",
+                        "componentType": "IconProps",
+                        "name": "send",
+                        "size": 16
+                      },
+                      "classes": "min-w-[200px]",
+                      "uuid": "form-action-submit",
+                      "componentType": "ButtonProps"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+src/__tests__/setup.ts(10,9): error TS2708: Cannot use namespace 'jest' as a value.
+src/__tests__/setup.ts(11,12): error TS2708: Cannot use namespace 'jest' as a value.
+src/__tests__/setup.ts(12,13): error TS2708: Cannot use namespace 'jest' as a value.
+src/__tests__/setup.ts(13,9): error TS2708: Cannot use namespace 'jest' as a value.
+src/__tests__/setup.ts(19,1): error TS2708: Cannot use namespace 'jest' as a value.
+src/__tests__/setup.ts(61,10): error TS2708: Cannot use namespace 'jest' as a value.
+src/__tests__/setup.ts(62,9): error TS2708: Cannot use namespace 'jest' as a value.
+src/app_runtime/runtime/components/custom/common/form/TextAreaField.tsx(73,19): error TS2345: Argument of type 'string | number | true | string[] | number[]' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+src/app_runtime/runtime/components/custom/common/form/TextAreaField.tsx(87,9): error TS2322: Type 'string | number | true | string[] | number[]' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/app_runtime/runtime/components/custom/common/form/TextAreaField.tsx(104,24): error TS2339: Property 'length' does not exist on type 'string | number | true | string[] | number[]'.
+  Property 'length' does not exist on type 'number'.
+src/app_runtime/runtime/components/custom/common/form/TextField.tsx(87,19): error TS2345: Argument of type 'string | number | true | string[] | number[]' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+src/app_runtime/runtime/components/custom/common/form/TextField.tsx(102,9): error TS2322: Type 'string | number | true | string[] | number[]' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/app_runtime/runtime/components/custom/common/layout/Grid.tsx(96,32): error TS7006: Parameter 'component' implicitly has an 'any' type.
+src/app_runtime/runtime/components/custom/common/layout/VirtualList.tsx(5,56): error TS7016: Could not find a declaration file for module 'react-window'. '/home/umut/Desktop/Exepad_Devel/exepad-mono/app/runtime/v1.0/node_modules/react-window/dist/index.cjs.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-window` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-window';`
+src/app_runtime/runtime/components/custom/common/media/PDFViewer.tsx(42,7): error TS2349: This expression is not callable.
+  Type 'String' has no call signatures.
+src/app_runtime/runtime/components/custom/common/media/PanoramaViewer.tsx(2,27): error TS7016: Could not find a declaration file for module 'pannellum-react'. '/home/umut/Desktop/Exepad_Devel/exepad-mono/app/runtime/v1.0/node_modules/pannellum-react/lib/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/pannellum-react` if it exists or add a new declaration (.d.ts) file containing `declare module 'pannellum-react';`
+src/app_runtime/runtime/components/custom/common/navigation/SidebarWithShadCN.tsx(25,8): error TS2307: Cannot find module 'src/runtime/components/ui/sidebar' or its corresponding type declarations.
+src/app_runtime/runtime/components/custom/common/navigation/SidebarWithShadCN.tsx(31,8): error TS2307: Cannot find module 'src/runtime/components/ui/collapsible' or its corresponding type declarations.
+src/app_runtime/runtime/components/custom/common/navigation/SidebarWithShadCN.tsx(33,53): error TS2307: Cannot find module 'src/runtime/components/ui/avatar' or its corresponding type declarations.
+src/app_runtime/runtime/components/custom/common/navigation/SidebarWithShadCN.tsx(43,3): error TS2339: Property 'items' does not exist on type 'SidebarProps'.
+src/app_runtime/runtime/components/custom/common/navigation/SidebarWithShadCN.tsx(54,20): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/app_runtime/runtime/components/custom/common/navigation/index.ts(6,10): error TS2614: Module '"./Sidebar"' has no exported member 'Sidebar'. Did you mean to use 'import Sidebar from "./Sidebar"' instead?
+src/app_runtime/runtime/components/custom/common/navigation/index.ts(7,10): error TS2614: Module '"./SidebarWithShadCN"' has no exported member 'SidebarWithShadCN'. Did you mean to use 'import SidebarWithShadCN from "./SidebarWithShadCN"' instead?
+src/app_runtime/runtime/components/custom/website/blog/BlogMain.tsx(265,12): error TS2678: Type '"two-column"' is not comparable to type 'BlogLayout'.
+src/app_runtime/runtime/components/custom/website/blog/BlogMain.tsx(272,12): error TS2678: Type '"featured-list"' is not comparable to type 'BlogLayout'.
+src/app_runtime/runtime/components/custom/website/blog/BlogMain.tsx(339,12): error TS2678: Type '"load-more"' is not comparable to type 'PaginationType'.
+src/app_runtime/runtime/components/custom/website/blog/BlogMain.tsx(359,12): error TS2678: Type '"infinite-scroll"' is not comparable to type 'PaginationType'.
+src/app_runtime/runtime/components/custom/website/content/ChecklistItem.tsx(53,21): error TS2322: Type 'TextProps' is not assignable to type 'string'.
+src/app_runtime/runtime/components/custom/website/content/ChecklistItem.tsx(55,11): error TS2322: Type 'TextProps' is not assignable to type 'ReactNode'.
+src/app_runtime/runtime/components/custom/website/content/PricingTable.tsx(74,54): error TS2322: Type 'HeadingProps' is not assignable to type 'ReactNode'.
+src/app_runtime/runtime/components/custom/website/content/PricingTable.tsx(75,59): error TS2322: Type 'TextProps' is not assignable to type 'ReactNode'.
+src/app_runtime/runtime/components/custom/website/content/PricingTable.tsx(108,3): error TS2339: Property 'plans' does not exist on type 'PricingTableProps'.
+src/app_runtime/runtime/components/custom/website/content/TimelineBlock.tsx(21,3): error TS2339: Property 'events' does not exist on type 'TimelineBlockProps'.
+src/app_runtime/runtime/components/custom/website/content/TimelineBlock.tsx(33,26): error TS7006: Parameter 'event' implicitly has an 'any' type.
+src/app_runtime/runtime/components/custom/website/content/TimelineBlock.tsx(52,22): error TS7006: Parameter 'event' implicitly has an 'any' type.
+src/app_runtime/runtime/components/custom/website/content/TimelineBlock.tsx(52,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/app_runtime/runtime/components/custom/website/utils/BackToTop.tsx(70,9): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ 'bottom-right': string; 'bottom-left': string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ 'bottom-right': string; 'bottom-left': string; }'.
+src/app_runtime/runtime/components/custom/website/utils/LanguageSelector.tsx(18,33): error TS2305: Module '"@/interfaces/components/website/utils"' has no exported member 'LanguageOption'.
+src/app_runtime/runtime/components/custom/website/utils/Overlay.tsx(25,50): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/app_runtime/runtime/components/ui/form.tsx(5,3): error TS2305: Module '"react-hook-form"' has no exported member 'Controller'.
+src/app_runtime/runtime/components/ui/form.tsx(6,3): error TS2305: Module '"react-hook-form"' has no exported member 'ControllerProps'.
+src/app_runtime/runtime/components/ui/form.tsx(7,3): error TS2305: Module '"react-hook-form"' has no exported member 'FieldPath'.
+src/app_runtime/runtime/components/ui/form.tsx(8,3): error TS2305: Module '"react-hook-form"' has no exported member 'FieldValues'.
+src/app_runtime/runtime/components/ui/form.tsx(9,3): error TS2305: Module '"react-hook-form"' has no exported member 'FormProvider'.
+src/app_runtime/runtime/components/ui/form.tsx(10,3): error TS2305: Module '"react-hook-form"' has no exported member 'useFormContext'.
+src/app_runtime/runtime/hooks/use-toast.ts(9,8): error TS2307: Cannot find module 'src/runtime/components/ui/toast' or its corresponding type declarations.
+src/app_runtime/runtime/hooks/use-toast.ts(161,22): error TS7006: Parameter 'open' implicitly has an 'any' type.
+src/components/AppRenderer.tsx(5,29): error TS2307: Cannot find module '../interfaces/apps/webapp' or its corresponding type declarations.
+src/components/AppRenderer.tsx(36,29): error TS7006: Parameter 'page' implicitly has an 'any' type.
+src/components/AppRenderer.tsx(37,29): error TS7006: Parameter 'page' implicitly has an 'any' type.
+src/components/ClientWrapper.tsx(8,29): error TS2307: Cannot find module '../interfaces/apps/webapp' or its corresponding type declarations.
+src/components/DynamicTheme.tsx(3,72): error TS2307: Cannot find module '../interfaces/apps/core' or its corresponding type declarations.
+src/components/DynamicTheme.tsx(17,51): error TS2345: Argument of type '{}' is not assignable to parameter of type 'string'.
+src/components/DynamicTheme.tsx(30,51): error TS2345: Argument of type '{}' is not assignable to parameter of type 'string'.
+src/components/PersistentFooter.tsx(4,32): error TS2307: Cannot find module '../interfaces/components/common/core' or its corresponding type declarations.
+src/components/editable/EditableHeading.tsx(9,11): error TS2430: Interface 'EditableHeadingProps' incorrectly extends interface 'HeadingProps'.
+  Types of property 'uuid' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/components/editable/EditableMarkdown.tsx(11,11): error TS2430: Interface 'EditableMarkdownProps' incorrectly extends interface 'MarkdownBlockProps'.
+  Types of property 'uuid' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/components/editable/EditableMarkdown.tsx(26,13): error TS2741: Property 'uuid' is missing in type '{ content: string; sanitize: boolean; componentType: string; lastUpdatedEpoch?: number | undefined; classes?: string | undefined; signature?: string | undefined; }' but required in type 'MarkdownBlockProps'.
+src/components/editable/EditableMarkdown.tsx(34,26): error TS2741: Property 'uuid' is missing in type '{ content: string; sanitize: boolean; componentType: string; lastUpdatedEpoch?: number | undefined; classes?: string | undefined; signature?: string | undefined; }' but required in type 'MarkdownBlockProps'.
+src/components/editable/EditableText.tsx(9,11): error TS2430: Interface 'EditableTextProps' incorrectly extends interface 'TextProps'.
+  Types of property 'uuid' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/components/editable/EditableText.tsx(51,30): error TS2339: Property 'placeholder' does not exist on type '{ variant?: "default" | "lead" | "large" | "small" | "muted" | undefined; as?: "p" | "span" | "div" | undefined; componentType: string; lastUpdatedEpoch?: number | undefined; classes?: string | undefined; signature?: string | undefined; }'.
+src/context/ConfigUpdateContext.tsx(14,29): error TS2307: Cannot find module '../interfaces/apps/webapp' or its corresponding type declarations.
+src/core/providers/PreviewProviders.tsx(14,29): error TS2307: Cannot find module '../../interfaces/apps/webapp' or its corresponding type declarations.
+src/core/providers/RuntimeProviders.tsx(16,29): error TS2307: Cannot find module '../../interfaces/apps/webapp' or its corresponding type declarations.
+src/index.ts(9,15): error TS2307: Cannot find module './interfaces' or its corresponding type declarations.
+src/lib/__tests__/color-contrast.test.ts(14,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(15,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(16,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(17,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(18,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(19,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(22,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(23,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(24,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(25,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(28,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(29,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(30,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(33,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(34,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(35,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(38,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(39,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(40,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(44,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(45,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(47,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(48,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(51,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(53,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(54,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(57,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(59,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(60,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(63,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(64,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(67,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(69,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(70,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(73,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(74,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(79,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(80,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(81,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(82,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(83,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(84,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(87,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(88,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(89,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(90,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(94,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(95,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(98,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(102,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(106,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(110,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(111,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(112,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(113,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(114,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(117,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(118,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(119,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(123,3): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(124,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(125,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(126,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(127,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(130,5): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(131,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(132,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(133,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(138,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(139,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(144,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(148,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(152,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(155,5): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(158,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/lib/__tests__/color-contrast.test.ts(166,7): error TS2304: Cannot find name 'expect'.
+src/lib/__tests__/color-contrast.test.ts(176,7): error TS2304: Cannot find name 'expect'.
+src/registry/auto-register.ts(22,38): error TS2339: Property 'context' does not exist on type 'Require'.
+src/registry/auto-register.ts(31,38): error TS7006: Parameter 'key' implicitly has an 'any' type.
+src/services/CacheService.ts(264,23): error TS2802: Type 'MapIterator<string>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+src/services/CacheService.ts(290,32): error TS2802: Type 'MapIterator<[string, CacheEntry<T>]>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+src/services/CacheService.ts(337,32): error TS2802: Type 'MapIterator<[string, CacheEntry<T>]>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+src/services/PersistenceService.ts(104,21): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(timeout: string | number | Timeout | undefined): void', gave the following error.
+    Argument of type 'Timer' is not assignable to parameter of type 'string | number | Timeout | undefined'.
+      Type 'Timer' is missing the following properties from type 'Timeout': close, _onTimeout, [Symbol.dispose]
+  Overload 2 of 2, '(id: number | undefined): void', gave the following error.
+    Argument of type 'Timer' is not assignable to parameter of type 'number'.
+src/services/WebSocketManager.ts(122,38): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/services/WebSocketManager.ts(354,21): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(timeout: string | number | Timeout | undefined): void', gave the following error.
+    Argument of type 'Timer' is not assignable to parameter of type 'string | number | Timeout | undefined'.
+      Type 'Timer' is missing the following properties from type 'Timeout': close, _onTimeout, [Symbol.dispose]
+  Overload 2 of 2, '(id: number | undefined): void', gave the following error.
+    Argument of type 'Timer' is not assignable to parameter of type 'number'.
+src/services/__tests__/ConfigService.test.ts(90,21): error TS2339: Property 'invalidate' does not exist on type 'typeof ConfigService'.
+src/stores/appStore.ts(11,29): error TS2307: Cannot find module '../interfaces/apps/webapp' or its corresponding type declarations.
+src/stores/selectors.ts(6,29): error TS2307: Cannot find module '../interfaces/apps/webapp' or its corresponding type declarations.
+src/utils/layoutPatterns.ts(1,35): error TS2307: Cannot find module '../interfaces/apps/core' or its corresponding type declarations.

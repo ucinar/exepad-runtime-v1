@@ -1,0 +1,267 @@
+{
+  "uuid": "app-footer-only-456",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Flowbite Footer Page",
+  "alias": "flowbite-footer-page",
+  "summary": "Comprehensive footer with multiple content sections and social links. Features multi-column layout with detailed navigation, social media integration, and extended company information.",
+  "shortSummary": "Comprehensive footer with multiple content sections and social links",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [
+    {
+      "uuid": "section-footer-001",
+      "componentType": "SectionProps",
+      "sectionSlug": "section-footer-001",
+      "classes": "py-8 px-8",
+      "layout": "singleColumnCentered",
+      "spacing": "sm",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "flex-footer-top-section",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start pb-4 w-full",
+          "content": [
+            {
+              "uuid": "flex-footer-logo-container-001",
+              "componentType": "FlexProps",
+              "align": "center",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "logo-image-footer",
+                  "componentType": "ImageProps",
+                  "src": "https://www.google.com/s2/favicons?domain=flowbite.com&sz=256",
+                  "alt": "Flowbite Logo",
+                  "classes": "h-8 w-8",
+                  "asset": {
+                    "uuid": "asset-logo-image-footer",
+                    "componentType": "ImageAssetProps",
+                    "keywords": "logo, flowbite",
+                    "isProcessed": true,
+                    "requestedWidth": 32,
+                    "requestedHeight": 32
+                  }
+                },
+                {
+                  "uuid": "footer-logo-text",
+                  "componentType": "TextProps",
+                  "content": "Flowbite",
+                  "classes": "text-2xl font-semibold"
+                }
+              ]
+            },
+            {
+              "uuid": "grid-footer-links",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "sm:grid-cols-3 sm:gap-6 flex-1 max-w-lg",
+              "content": [
+                {
+                  "uuid": "flex-col-resources",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-resources",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "RESOURCES",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "link-flowbite",
+                      "componentType": "LinkProps",
+                      "text": "Flowbite",
+                      "href": "#"
+                    },
+                    {
+                      "uuid": "link-tailwind",
+                      "componentType": "LinkProps",
+                      "text": "Tailwind CSS",
+                      "href": "#"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-col-follow",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-follow",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "FOLLOW US",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "link-github",
+                      "componentType": "LinkProps",
+                      "text": "Github",
+                      "href": "#"
+                    },
+                    {
+                      "uuid": "link-discord",
+                      "componentType": "LinkProps",
+                      "text": "Discord",
+                      "href": "#"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "flex-col-legal",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-legal",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "LEGAL",
+                      "classes": "text-sm font-semibold text-gray-500 uppercase"
+                    },
+                    {
+                      "uuid": "link-privacy",
+                      "componentType": "LinkProps",
+                      "text": "Privacy Policy",
+                      "href": "#"
+                    },
+                    {
+                      "uuid": "link-terms",
+                      "componentType": "LinkProps",
+                      "text": "Terms & Conditions",
+                      "href": "#"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "divider-footer",
+          "componentType": "SpacerProps",
+          "classes": "my-6 border-gray-200 lg:my-8",
+          "size": "md"
+        },
+        {
+          "uuid": "flex-footer-bottom-section",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center pt-4 pb-2 w-full",
+          "content": [
+            {
+              "uuid": "footer-copyright-001",
+              "componentType": "TextProps",
+              "content": "© 2022 Flowbite™. All Rights Reserved.",
+              "classes": "text-sm text-gray-500"
+            },
+            {
+              "uuid": "footer-social-links",
+              "componentType": "FlexProps",
+              "gap": "5",
+              "content": [
+                {
+                  "uuid": "social-facebook",
+                  "componentType": "SocialLinkProps",
+                  "platform": "facebook",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-instagram",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-twitter",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-github",
+                  "componentType": "SocialLinkProps",
+                  "platform": "github",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-dribbble",
+                  "componentType": "SocialLinkProps",
+                  "platform": "dribbble",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-blank-789",
+      "title": "Blank Page",
+      "slug": "/",
+      "summary": "A blank page that only displays the site footer.",
+      "content": [],
+      "shortSummary": "A blank page that only displays the site footer",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

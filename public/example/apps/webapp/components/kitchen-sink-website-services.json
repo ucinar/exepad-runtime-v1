@@ -1,0 +1,414 @@
+{
+  "uuid": "app-forms-kitchen-sink-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Form Components Kitchen Sink",
+  "alias": "form-components-kitchen-sink",
+  "summary": "Service and form component library featuring contact forms, newsletter signups, waitlist components, and interactive service elements. Showcases user engagement patterns and data collection interfaces for websites.",
+  "shortSummary": "Service and form component library featuring contact forms, newsletter signups, waitlist components, and interactive service elements",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "EN-US",
+      "nameNative": "EN-US",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-main-002",
+      "componentType": "NavbarProps",
+      "logo": {
+        "uuid": "navlogo-003",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "FormsSink",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "navlogo-003-href",
+          "href": "/",
+          "text": "FormsSink"
+        }
+      },
+      "content": [
+        {
+          "uuid": "navlink-home-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "active": true,
+          "href": {
+            "uuid": "link-home-006",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        }
+      ],
+      "sticky": true,
+      "variant": "default"
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home-016",
+      "title": "Form Components Demo",
+      "slug": "/",
+      "summary": "Demonstration of form-focused components.",
+      "content": [
+        {
+          "uuid": "section-forms-showcase-017",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-forms-showcase-017",
+          "layout": "singleColumnWide",
+          "title": "Forms Showcase",
+          "speed": 0.5,
+          "content": [
+            {
+              "uuid": "forms-grid-018",
+              "componentType": "GridProps",
+              "columns": 1,
+              "gapY": "24",
+              "content": [
+                {
+                  "uuid": "section-card-forms-031",
+                  "componentType": "SectionProps",
+                  "sectionSlug": "section-card-forms-031",
+                  "layout": "singleColumnWide",
+                  "title": "Card Forms",
+                  "speed": 0.5,
+                  "content": [
+                    {
+                      "uuid": "card-forms-grid-032",
+                      "componentType": "GridProps",
+                      "columns": 2,
+                      "gapX": "12",
+                      "gapY": "12",
+                      "content": [
+                        {
+                          "uuid": "waitlist-form-card-019",
+                          "componentType": "FormProps",
+                          "title": "Join the Beta Waitlist",
+                          "content": [
+                            {
+                              "uuid": "waitlist-form-card-019-field-email",
+                              "componentType": "TextFieldProps",
+                              "name": "email",
+                              "label": "Email",
+                              "inputType": "email",
+                              "required": true
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "uuid": "waitlist-form-card-019-action-submit",
+                              "componentType": "ButtonProps",
+                              "actionType": "submit",
+                              "text": "Subscribe",
+                              "variant": "default"
+                            }
+                          ],
+                          "layout": "singleColumn",
+                          "initialValues": {},
+                          "onSubmitAction": {
+                            "actionId": "submit_form",
+                            "successMessage": "Thank you! Your submission has been received.",
+                            "errorMessage": "Something went wrong. Please try again.",
+                            "notificationType": "toast",
+                            "notifyAdmin": "email"
+                          }
+                        },
+                        {
+                          "uuid": "newsletter-form-card-020",
+                          "componentType": "ContactInfoBlockProps",
+                          "title": "Subscribe to Our Newsletter"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "section-waitlist-image-form-033",
+                  "componentType": "SectionProps",
+                  "sectionSlug": "section-waitlist-image-form-033",
+                  "layout": "singleColumnCentered",
+                  "title": "Waitlist Form with Image",
+                  "speed": 0.5,
+                  "content": [
+                    {
+                      "uuid": "waitlist-form-image-025",
+                      "componentType": "FormProps",
+                      "title": "Waitlist With Image",
+                      "content": [
+                        {
+                          "uuid": "waitlist-form-image-025-field-email",
+                          "componentType": "TextFieldProps",
+                          "name": "email",
+                          "label": "Email",
+                          "inputType": "email",
+                          "required": true
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "uuid": "waitlist-form-image-025-action-submit",
+                          "componentType": "ButtonProps",
+                          "actionType": "submit",
+                          "text": "Subscribe",
+                          "variant": "default"
+                        }
+                      ],
+                      "layout": "singleColumn",
+                      "initialValues": {},
+                      "onSubmitAction": {
+                        "actionId": "submit_form",
+                        "successMessage": "Thank you! Your submission has been received.",
+                        "errorMessage": "Something went wrong. Please try again.",
+                        "notificationType": "toast",
+                        "notifyAdmin": "email"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "uuid": "section-newsletter-image-form-041",
+                  "componentType": "SectionProps",
+                  "sectionSlug": "section-newsletter-image-form-041",
+                  "layout": "singleColumnCentered",
+                  "title": "Newsletter Form with Image",
+                  "speed": 0.5,
+                  "content": [
+                    {
+                      "uuid": "newsletter-form-image-028",
+                      "componentType": "ContactInfoBlockProps",
+                      "title": "Newsletter With Image"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "section-inline-forms-035",
+                  "componentType": "SectionProps",
+                  "sectionSlug": "section-inline-forms-035",
+                  "layout": "singleColumnCentered",
+                  "title": "Inline Forms",
+                  "speed": 0.5,
+                  "content": [
+                    {
+                      "uuid": "inline-forms-flex-036",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "8",
+                      "classes": "w-full max-w-xl",
+                      "content": [
+                        {
+                          "uuid": "waitlist-form-inline-023",
+                          "componentType": "FormProps",
+                          "content": [
+                            {
+                              "uuid": "waitlist-form-inline-023-field-email",
+                              "componentType": "TextFieldProps",
+                              "name": "email",
+                              "label": "Email",
+                              "inputType": "email",
+                              "required": true
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "uuid": "waitlist-form-inline-023-action-submit",
+                              "componentType": "ButtonProps",
+                              "actionType": "submit",
+                              "text": "Subscribe",
+                              "variant": "default"
+                            }
+                          ],
+                          "layout": "singleColumn",
+                          "initialValues": {},
+                          "onSubmitAction": {
+                            "actionId": "submit_form",
+                            "successMessage": "Thank you! Your submission has been received.",
+                            "errorMessage": "Something went wrong. Please try again.",
+                            "notificationType": "toast",
+                            "notifyAdmin": "email"
+                          },
+                          "title": "Form"
+                        },
+                        {
+                          "uuid": "newsletter-form-inline-024",
+                          "componentType": "ContactInfoBlockProps"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "section-contact-forms-037",
+                  "componentType": "SectionProps",
+                  "sectionSlug": "section-contact-forms-037",
+                  "layout": "singleColumnWide",
+                  "title": "Contact Forms",
+                  "speed": 0.5,
+                  "content": [
+                    {
+                      "uuid": "contact-forms-grid-038",
+                      "componentType": "GridProps",
+                      "columns": 2,
+                      "gapX": "12",
+                      "gapY": "12",
+                      "content": [
+                        {
+                          "uuid": "contact-form-default-021",
+                          "componentType": "FormProps",
+                          "title": "Contact Us (Default Labels)",
+                          "onSubmitAction": {
+                            "actionId": "submit_contact_form",
+                            "successMessage": "Message sent successfully!",
+                            "errorMessage": "Failed to send message. Please try again later.",
+                            "notificationType": "toast",
+                            "notifyAdmin": "email"
+                          },
+                          "content": [],
+                          "layout": "singleColumn",
+                          "initialValues": {},
+                          "actions": [
+                            {
+                              "uuid": "contact-form-default-021-action-submit",
+                              "componentType": "ButtonProps",
+                              "actionType": "submit",
+                              "text": "Send Message",
+                              "variant": "default"
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "contact-form-custom-022",
+                          "componentType": "FormProps",
+                          "title": "Get in Touch (Custom Labels)",
+                          "onSubmitAction": {
+                            "actionId": "submit_contact_form",
+                            "successMessage": "Thank you for your inquiry! We will get back to you shortly.",
+                            "errorMessage": "There was a problem submitting your inquiry.",
+                            "notificationType": "toast",
+                            "notifyAdmin": "email"
+                          },
+                          "content": [
+                            {
+                              "uuid": "contact-form-custom-022-field-name",
+                              "componentType": "TextFieldProps",
+                              "name": "name",
+                              "label": "Full Name",
+                              "required": true,
+                              "placeholder": "Your name"
+                            },
+                            {
+                              "uuid": "contact-form-custom-022-field-email",
+                              "componentType": "TextFieldProps",
+                              "name": "email",
+                              "label": "Email Address",
+                              "inputType": "email",
+                              "required": true,
+                              "placeholder": "your@email.com"
+                            },
+                            {
+                              "uuid": "contact-form-custom-022-field-message",
+                              "componentType": "TextAreaFieldProps",
+                              "name": "message",
+                              "label": "Your Inquiry",
+                              "required": true,
+                              "rows": 5
+                            }
+                          ],
+                          "layout": "singleColumn",
+                          "initialValues": {},
+                          "actions": [
+                            {
+                              "uuid": "contact-form-custom-022-action-submit",
+                              "componentType": "ButtonProps",
+                              "actionType": "submit",
+                              "text": "Submit Inquiry",
+                              "variant": "default"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "Demonstration of form-focused components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-110",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-110",
+      "speed": 0.5,
+      "background": {
+        "color": "hsl(210, 40%, 98%)"
+      },
+      "content": [
+        {
+          "uuid": "footer-flex-111",
+          "componentType": "FlexProps",
+          "justify": "center",
+          "align": "center",
+          "content": [
+            {
+              "uuid": "footer-text-112",
+              "componentType": "TextProps",
+              "content": "© 2025 Forms Sink. All Rights Reserved.",
+              "classes": "text-muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

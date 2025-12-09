@@ -1,0 +1,951 @@
+{
+  "uuid": "blog-app-001",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Tech Insights Blog",
+  "alias": "tech-insights-blog",
+  "summary": "A modern tech blog featuring articles about web development, AI, and software engineering best practices with a clean, professional design.",
+  "shortSummary": "A modern tech blog featuring articles about web development, AI, and software engineering best practices with a clean, professional design",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#1e3a8a",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f3f4f6",
+      "secondary-foreground": "#1f2937",
+      "muted": "#f9fafb",
+      "muted-foreground": "#6b7280",
+      "accent": "#8b5cf6",
+      "accent-foreground": "#ffffff",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#ffffff",
+      "border": "#e5e7eb",
+      "input": "#e5e7eb",
+      "ring": "#6366f1"
+    },
+    "dark": {
+      "background": "#0a0a0a",
+      "foreground": "#f9fafb",
+      "primary": "#818cf8",
+      "primary-foreground": "#1e1b4b",
+      "secondary": "#1f2937",
+      "secondary-foreground": "#f9fafb",
+      "muted": "#111827",
+      "muted-foreground": "#9ca3af",
+      "accent": "#a78bfa",
+      "accent-foreground": "#f9fafb",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#f9fafb",
+      "border": "#374151",
+      "input": "#374151",
+      "ring": "#818cf8"
+    },
+    "fonts": {
+      "body": {
+        "family": "Inter",
+        "variant": "regular",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      },
+      "heading": {
+        "family": "Inter",
+        "variant": "700",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      }
+    },
+    "radius": "0.5rem",
+    "metadata": {
+      "title": "Tech Insights Blog - Latest Articles on Web Development & AI",
+      "description": "Explore cutting-edge articles about web development, artificial intelligence, and software engineering. Stay updated with the latest tech trends and best practices.",
+      "keywords": "blog, web development, AI, software engineering, programming, technology"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "navbar-blog-001",
+      "componentType": "NavbarProps",
+      "sticky": true,
+      "variant": "default",
+      "menuVariant": "default",
+      "classes": "border-b",
+      "logo": {
+        "uuid": "logo-001",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Tech Insights",
+        "href": {
+          "componentType": "LinkProps",
+          "uuid": "logo-001-href",
+          "href": "/",
+          "text": "Tech Insights"
+        }
+      },
+      "content": [
+        {
+          "uuid": "nav-home-001",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "nav-home-link-001",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "nav-blog-001",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Blog",
+          "href": {
+            "uuid": "nav-blog-link-001",
+            "componentType": "LinkProps",
+            "href": "/blog",
+            "text": "Blog"
+          }
+        },
+        {
+          "uuid": "nav-about-001",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "nav-about-link-001",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "uuid": "footer-section-001",
+      "componentType": "SectionProps",
+      "sectionSlug": "footer-section-001",
+      "classes": "border-t bg-muted/30",
+      "spacing": "lg",
+      "content": [
+        {
+          "uuid": "footer-container-001",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "gap": "8",
+          "content": [
+            {
+              "uuid": "footer-grid-001",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "footer-brand-col-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-brand-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Tech Insights"
+                    },
+                    {
+                      "uuid": "footer-desc-001",
+                      "componentType": "TextProps",
+                      "content": "Your source for the latest insights in web development, AI, and software engineering.",
+                      "classes": "text-muted-foreground text-sm"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-categories-col-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-categories-heading-001",
+                      "componentType": "HeadingProps",
+                      "level": 5,
+                      "text": "Categories",
+                      "classes": "text-sm font-semibold"
+                    },
+                    {
+                      "uuid": "footer-cat-web-001",
+                      "componentType": "LinkProps",
+                      "href": "/blog?category=web-development",
+                      "text": "Web Development",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-cat-ai-001",
+                      "componentType": "LinkProps",
+                      "href": "/blog?category=artificial-intelligence",
+                      "text": "Artificial Intelligence",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-cat-devops-001",
+                      "componentType": "LinkProps",
+                      "href": "/blog?category=devops",
+                      "text": "DevOps",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-links-col-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-links-heading-001",
+                      "componentType": "HeadingProps",
+                      "level": 5,
+                      "text": "Quick Links",
+                      "classes": "text-sm font-semibold"
+                    },
+                    {
+                      "uuid": "footer-link-about-001",
+                      "componentType": "LinkProps",
+                      "href": "/about",
+                      "text": "About Us",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-contact-001",
+                      "componentType": "LinkProps",
+                      "href": "/contact",
+                      "text": "Contact",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    },
+                    {
+                      "uuid": "footer-link-privacy-001",
+                      "componentType": "LinkProps",
+                      "href": "/privacy",
+                      "text": "Privacy Policy",
+                      "classes": "text-sm text-muted-foreground hover:text-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-social-col-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-social-heading-001",
+                      "componentType": "HeadingProps",
+                      "level": 5,
+                      "text": "Follow Us",
+                      "classes": "text-sm font-semibold"
+                    },
+                    {
+                      "uuid": "footer-social-links-001",
+                      "componentType": "FlexProps",
+                      "direction": "row",
+                      "gap": "4",
+                      "content": [
+                        {
+                          "uuid": "footer-social-twitter-001",
+                          "componentType": "SocialLinkProps",
+                          "platform": "twitter",
+                          "url": "https://twitter.com/techinsights"
+                        },
+                        {
+                          "uuid": "footer-social-github-001",
+                          "componentType": "SocialLinkProps",
+                          "platform": "github",
+                          "url": "https://github.com/techinsights"
+                        },
+                        {
+                          "uuid": "footer-social-linkedin-001",
+                          "componentType": "SocialLinkProps",
+                          "platform": "linkedin",
+                          "url": "https://linkedin.com/company/techinsights"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "footer-divider-001",
+              "componentType": "SpacerProps",
+              "size": "md"
+            },
+            {
+              "uuid": "footer-copyright-001",
+              "componentType": "TextProps",
+              "content": "© 2025 Tech Insights. All rights reserved.",
+              "classes": "text-center text-muted-foreground text-sm"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "uuid": "page-home-001",
+      "title": "Home - Tech Insights Blog",
+      "slug": "/",
+      "summary": "The main landing page featuring an introduction to the blog and featured articles.",
+      "content": [
+        {
+          "uuid": "hero-section-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "hero-section-001",
+          "spacing": "xl",
+          "classes": "bg-gradient-to-b from-primary/10 to-background",
+          "content": [
+            {
+              "uuid": "hero-center-001",
+              "componentType": "CenterProps",
+              "content": [
+                {
+                  "uuid": "hero-flex-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "6",
+                  "align": "center",
+                  "classes": "max-w-4xl text-center py-20",
+                  "content": [
+                    {
+                      "uuid": "hero-heading-001",
+                      "componentType": "HeadingProps",
+                      "level": 1,
+                      "text": "Welcome to Tech Insights",
+                      "classes": "text-5xl md:text-6xl font-bold tracking-tight"
+                    },
+                    {
+                      "uuid": "hero-subtitle-001",
+                      "componentType": "TextProps",
+                      "variant": "lead",
+                      "content": "Discover in-depth articles about web development, artificial intelligence, and the latest trends in software engineering.",
+                      "classes": "text-xl text-muted-foreground max-w-2xl"
+                    },
+                    {
+                      "uuid": "hero-cta-001",
+                      "componentType": "ButtonProps",
+                      "text": "Explore Articles",
+                      "variant": "default",
+                      "size": "lg",
+                      "link": {
+                        "uuid": "hero-cta-link-001",
+                        "componentType": "LinkProps",
+                        "href": "/blog",
+                        "text": "Explore Articles"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "featured-section-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "featured-section-001",
+          "spacing": "xl",
+          "content": [
+            {
+              "uuid": "featured-container-001",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "10",
+              "content": [
+                {
+                  "uuid": "featured-header-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "align": "center",
+                  "classes": "text-center",
+                  "content": [
+                    {
+                      "uuid": "featured-heading-001",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Featured Articles"
+                    },
+                    {
+                      "uuid": "featured-description-001",
+                      "componentType": "TextProps",
+                      "content": "Handpicked articles covering the most important topics in modern software development.",
+                      "classes": "text-muted-foreground text-lg"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "featured-grid-001",
+                  "componentType": "GridProps",
+                  "columns": 3,
+                  "gap": "6",
+                  "content": [
+                    {
+                      "uuid": "feature-card-1-001",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "classes": "border rounded-lg p-6 hover:shadow-lg transition-shadow",
+                      "content": [
+                        {
+                          "uuid": "feature-card-1-icon-001",
+                          "componentType": "IconProps",
+                          "name": "code",
+                          "size": 32,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "feature-card-1-title-001",
+                          "componentType": "HeadingProps",
+                          "level": 3,
+                          "text": "Web Development"
+                        },
+                        {
+                          "uuid": "feature-card-1-desc-001",
+                          "componentType": "TextProps",
+                          "content": "Learn modern frameworks, best practices, and cutting-edge techniques.",
+                          "classes": "text-muted-foreground"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "feature-card-2-001",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "classes": "border rounded-lg p-6 hover:shadow-lg transition-shadow",
+                      "content": [
+                        {
+                          "uuid": "feature-card-2-icon-001",
+                          "componentType": "IconProps",
+                          "name": "brain",
+                          "size": 32,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "feature-card-2-title-001",
+                          "componentType": "HeadingProps",
+                          "level": 3,
+                          "text": "Artificial Intelligence"
+                        },
+                        {
+                          "uuid": "feature-card-2-desc-001",
+                          "componentType": "TextProps",
+                          "content": "Explore AI concepts, machine learning algorithms, and practical applications.",
+                          "classes": "text-muted-foreground"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "feature-card-3-001",
+                      "componentType": "FlexProps",
+                      "direction": "column",
+                      "gap": "4",
+                      "classes": "border rounded-lg p-6 hover:shadow-lg transition-shadow",
+                      "content": [
+                        {
+                          "uuid": "feature-card-3-icon-001",
+                          "componentType": "IconProps",
+                          "name": "rocket",
+                          "size": 32,
+                          "classes": "text-primary"
+                        },
+                        {
+                          "uuid": "feature-card-3-title-001",
+                          "componentType": "HeadingProps",
+                          "level": 3,
+                          "text": "DevOps & Cloud"
+                        },
+                        {
+                          "uuid": "feature-card-3-desc-001",
+                          "componentType": "TextProps",
+                          "content": "Master deployment strategies, infrastructure as code, and cloud architecture.",
+                          "classes": "text-muted-foreground"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "title": "Home - Tech Insights Blog",
+        "description": "Welcome to Tech Insights - your source for quality content on web development, AI, and software engineering."
+      },
+      "shortSummary": "The main landing page featuring an introduction to the blog and featured articles",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    },
+    {
+      "uuid": "page-blog-main-001",
+      "pageType": "BlogMainPageProps",
+      "title": "Blog - All Articles",
+      "slug": "/blog",
+      "summary": "Blog listing page displaying all published articles with grid layout, categories, and pagination.",
+      "content": [],
+      "metadata": {
+        "title": "Blog - Tech Insights",
+        "description": "Read our latest articles on web development, artificial intelligence, and software engineering. Stay informed with expert content and industry insights.",
+        "keywords": "blog, web development, AI, software engineering, programming, tutorials"
+      },
+      "shortSummary": "Blog listing page displaying all published articles with grid layout, categories, and pagination",
+      "lastUpdatedEpoch": 1701192800
+    },
+    {
+      "uuid": "post-react-server-001",
+      "pageType": "BlogPostPageProps",
+      "title": "Understanding React Server Components",
+      "slug": "/blog/understanding-react-server-components",
+      "summary": "A comprehensive guide to React Server Components and how they revolutionize the way we build modern web applications.",
+      "content": [
+        {
+          "uuid": "post-intro-section-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-intro-section-001",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "post-intro-001",
+              "componentType": "TextProps",
+              "content": "React Server Components represent a paradigm shift in how we think about building React applications. They allow us to build components that render on the server, reducing the amount of JavaScript sent to the client and improving performance.",
+              "variant": "lead",
+              "classes": "text-lg mb-6"
+            }
+          ]
+        },
+        {
+          "uuid": "post-content-section-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-content-section-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-heading-1-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "What Are Server Components?"
+            },
+            {
+              "uuid": "post-para-1-001",
+              "componentType": "TextProps",
+              "content": "Server Components are a new type of React component that runs only on the server. Unlike traditional React components that render on the client, Server Components can directly access server-side resources like databases, file systems, or internal services without exposing them to the client."
+            },
+            {
+              "uuid": "post-para-2-001",
+              "componentType": "TextProps",
+              "content": "This fundamental difference allows for several key benefits:",
+              "classes": "mt-4"
+            },
+            {
+              "uuid": "post-list-1-001",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "content": []
+            }
+          ]
+        },
+        {
+          "uuid": "post-content-section-002",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-content-section-002",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-heading-2-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Key Benefits and Use Cases"
+            },
+            {
+              "uuid": "post-para-3-001",
+              "componentType": "TextProps",
+              "content": "The architecture of Server Components opens up new possibilities for optimization and developer experience. Let's explore some practical applications."
+            },
+            {
+              "uuid": "post-feature-grid-001",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "6",
+              "classes": "mt-6",
+              "content": [
+                {
+                  "uuid": "benefit-1-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "border rounded-lg p-4",
+                  "content": [
+                    {
+                      "uuid": "benefit-1-icon-001",
+                      "componentType": "IconProps",
+                      "name": "zap",
+                      "size": 24,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "benefit-1-title-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Performance"
+                    },
+                    {
+                      "uuid": "benefit-1-desc-001",
+                      "componentType": "TextProps",
+                      "content": "Reduce JavaScript bundle size and improve initial load times significantly.",
+                      "classes": "text-sm text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "benefit-2-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "border rounded-lg p-4",
+                  "content": [
+                    {
+                      "uuid": "benefit-2-icon-001",
+                      "componentType": "IconProps",
+                      "name": "database",
+                      "size": 24,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "benefit-2-title-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Data Fetching"
+                    },
+                    {
+                      "uuid": "benefit-2-desc-001",
+                      "componentType": "TextProps",
+                      "content": "Access backend resources directly without exposing APIs or credentials to the client.",
+                      "classes": "text-sm text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "post-conclusion-section-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-conclusion-section-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-heading-3-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Conclusion"
+            },
+            {
+              "uuid": "post-conclusion-001",
+              "componentType": "TextProps",
+              "content": "React Server Components are changing how we build modern web applications. By leveraging server-side rendering while maintaining the interactivity of client components, we can create faster, more efficient applications that provide better user experiences."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "title": "Understanding React Server Components - Tech Insights",
+        "description": "Learn how React Server Components work and how they can improve your application's performance and developer experience.",
+        "keywords": "react, server components, nextjs, web development, performance"
+      },
+      "shortSummary": "A comprehensive guide to React Server Components and how they revolutionize the way we build modern ",
+      "lastUpdatedEpoch": 1701192800
+    },
+    {
+      "uuid": "post-ai-ethics-001",
+      "pageType": "BlogPostPageProps",
+      "title": "The Ethics of AI: Navigating the Future Responsibly",
+      "slug": "/blog/ethics-of-ai-navigating-future",
+      "summary": "Exploring the ethical considerations and challenges we face as artificial intelligence becomes more integrated into our daily lives.",
+      "content": [
+        {
+          "uuid": "post-ai-intro-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-ai-intro-001",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "post-ai-intro-text-001",
+              "componentType": "TextProps",
+              "content": "As artificial intelligence continues to advance at an unprecedented pace, we must confront critical ethical questions about its development and deployment. This article explores the key ethical considerations that will shape the future of AI.",
+              "variant": "lead",
+              "classes": "text-lg mb-6"
+            }
+          ]
+        },
+        {
+          "uuid": "post-ai-section-1-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-ai-section-1-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-ai-heading-1-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "The Importance of AI Ethics"
+            },
+            {
+              "uuid": "post-ai-para-1-001",
+              "componentType": "TextProps",
+              "content": "AI systems are increasingly making decisions that affect people's lives - from credit approvals to medical diagnoses, from hiring decisions to criminal sentencing recommendations. These systems must be developed with careful consideration of their ethical implications."
+            },
+            {
+              "uuid": "post-ai-callout-001",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "classes": "border-l-4 border-primary bg-primary/5 p-6 my-6",
+              "content": [
+                {
+                  "uuid": "post-ai-callout-text-001",
+                  "componentType": "TextProps",
+                  "content": "\"The question is not whether AI will be ethical, but whether we will design it to be ethical.\"",
+                  "classes": "italic text-lg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "post-ai-section-2-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-ai-section-2-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-ai-heading-2-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Key Ethical Principles"
+            },
+            {
+              "uuid": "post-ai-principles-001",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "content": []
+            }
+          ]
+        },
+        {
+          "uuid": "post-ai-conclusion-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-ai-conclusion-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-ai-heading-3-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Moving Forward"
+            },
+            {
+              "uuid": "post-ai-conclusion-text-001",
+              "componentType": "TextProps",
+              "content": "The ethical development of AI requires collaboration between technologists, ethicists, policymakers, and society at large. By prioritizing these ethical considerations now, we can ensure that AI benefits humanity while minimizing potential harms."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "title": "The Ethics of AI: Navigating the Future Responsibly - Tech Insights",
+        "description": "Explore the ethical considerations and challenges of artificial intelligence development and deployment.",
+        "keywords": "AI, ethics, artificial intelligence, machine learning, responsible AI"
+      },
+      "shortSummary": "Exploring the ethical considerations and challenges we face as artificial intelligence becomes more ",
+      "lastUpdatedEpoch": 1701192800
+    },
+    {
+      "uuid": "post-kubernetes-001",
+      "pageType": "BlogPostPageProps",
+      "title": "Kubernetes Best Practices for Production Deployments",
+      "slug": "/blog/kubernetes-best-practices-production",
+      "summary": "Essential best practices and strategies for deploying and managing Kubernetes clusters in production environments.",
+      "content": [
+        {
+          "uuid": "post-k8s-intro-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-k8s-intro-001",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "post-k8s-intro-text-001",
+              "componentType": "TextProps",
+              "content": "Kubernetes has become the de facto standard for container orchestration, but running it effectively in production requires careful planning and adherence to best practices. This guide covers the essential strategies for production-ready Kubernetes deployments.",
+              "variant": "lead",
+              "classes": "text-lg mb-6"
+            }
+          ]
+        },
+        {
+          "uuid": "post-k8s-section-1-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-k8s-section-1-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-k8s-heading-1-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Resource Management"
+            },
+            {
+              "uuid": "post-k8s-para-1-001",
+              "componentType": "TextProps",
+              "content": "Proper resource management is crucial for maintaining stable and efficient Kubernetes clusters. Always set resource requests and limits for your containers to ensure predictable behavior and prevent resource contention."
+            },
+            {
+              "uuid": "post-k8s-list-1-001",
+              "componentType": "FlexProps",
+              "classes": "mt-4",
+              "direction": "column",
+              "content": []
+            }
+          ]
+        },
+        {
+          "uuid": "post-k8s-section-2-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-k8s-section-2-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-k8s-heading-2-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Security Hardening"
+            },
+            {
+              "uuid": "post-k8s-para-2-001",
+              "componentType": "TextProps",
+              "content": "Security should be a top priority in production environments. Kubernetes provides multiple layers of security controls that should be properly configured."
+            },
+            {
+              "uuid": "post-k8s-security-grid-001",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "4",
+              "classes": "mt-6",
+              "content": [
+                {
+                  "uuid": "security-item-1-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "border rounded p-4 bg-muted/30",
+                  "content": [
+                    {
+                      "uuid": "security-icon-1-001",
+                      "componentType": "IconProps",
+                      "name": "shield",
+                      "size": 20,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "security-title-1-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "RBAC",
+                      "classes": "text-sm font-semibold"
+                    },
+                    {
+                      "uuid": "security-desc-1-001",
+                      "componentType": "TextProps",
+                      "content": "Implement role-based access control with least privilege principles",
+                      "classes": "text-sm text-muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "security-item-2-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "2",
+                  "classes": "border rounded p-4 bg-muted/30",
+                  "content": [
+                    {
+                      "uuid": "security-icon-2-001",
+                      "componentType": "IconProps",
+                      "name": "lock",
+                      "size": 20,
+                      "classes": "text-primary"
+                    },
+                    {
+                      "uuid": "security-title-2-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Network Policies",
+                      "classes": "text-sm font-semibold"
+                    },
+                    {
+                      "uuid": "security-desc-2-001",
+                      "componentType": "TextProps",
+                      "content": "Define network policies to control pod-to-pod communication",
+                      "classes": "text-sm text-muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "post-k8s-conclusion-001",
+          "componentType": "SectionProps",
+          "sectionSlug": "post-k8s-conclusion-001",
+          "spacing": "md",
+          "content": [
+            {
+              "uuid": "post-k8s-heading-3-001",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Final Thoughts"
+            },
+            {
+              "uuid": "post-k8s-conclusion-text-001",
+              "componentType": "TextProps",
+              "content": "Running Kubernetes in production requires continuous learning and adaptation. By following these best practices and staying updated with the latest developments in the ecosystem, you can build robust, scalable, and secure applications."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "title": "Kubernetes Best Practices for Production Deployments - Tech Insights",
+        "description": "Learn essential best practices for deploying and managing Kubernetes clusters in production environments.",
+        "keywords": "kubernetes, k8s, devops, container orchestration, production deployment"
+      },
+      "shortSummary": "Essential best practices and strategies for deploying and managing Kubernetes clusters in production",
+      "lastUpdatedEpoch": 1701192800
+    }
+  ]
+}

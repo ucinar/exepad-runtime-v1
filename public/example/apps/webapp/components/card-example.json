@@ -1,0 +1,155 @@
+{
+  "uuid": "app-card-example",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Card Component Example",
+  "alias": "card-example",
+  "summary": "A simple example demonstrating the Card component with header, content, and footer sections.",
+  "shortSummary": "Card component basic example",
+  "lastUpdatedEpoch": 1731326400,
+  "languages": [
+    {
+      "code": "en-US",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-card-example",
+      "title": "Card Example",
+      "slug": "/",
+      "summary": "Demonstration of a basic Card component with all sections",
+      "shortSummary": "Basic card example",
+      "lastUpdatedEpoch": 1731326400,
+      "pageType": "WebPageProps",
+      "content": [
+        {
+          "uuid": "section-card-demo",
+          "componentType": "SectionProps",
+          "sectionSlug": "card-demo",
+          "spacing": "lg",
+          "content": [
+            {
+              "uuid": "card-example-1",
+              "componentType": "CardProps",
+              "variant": "default",
+              "size": "md",
+              "elevation": 2,
+              "radius": "md",
+              "classes": "max-w-2xl mx-auto",
+              "header": {
+                "componentType": "CardHeaderProps",
+                "uuid": "card-header-1",
+                "title": {
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Welcome to Card Component",
+                  "uuid": "card-title-1"
+                },
+                "description": {
+                  "componentType": "TextProps",
+                  "content": "This is a flexible card component inspired by shadcn/ui",
+                  "uuid": "card-desc-1"
+                },
+                "actions": [
+                  {
+                    "componentType": "ButtonProps",
+                    "text": "Action",
+                    "variant": "ghost",
+                    "size": "sm",
+                    "uuid": "card-action-1"
+                  }
+                ]
+              },
+              "content": [
+                {
+                  "componentType": "TextProps",
+                  "content": "This is the main content area of the card. You can add any components here - text, images, forms, or even nested cards!",
+                  "uuid": "card-content-1"
+                },
+                {
+                  "componentType": "FlexProps",
+                  "direction": "row",
+                  "gap": "4",
+                  "classes": "mt-4",
+                  "uuid": "card-content-flex",
+                  "content": [
+                    {
+                      "componentType": "BadgeProps",
+                      "content": "Badge 1",
+                      "variant": "default",
+                      "uuid": "badge-1"
+                    },
+                    {
+                      "componentType": "BadgeProps",
+                      "content": "Badge 2",
+                      "variant": "secondary",
+                      "uuid": "badge-2"
+                    }
+                  ]
+                }
+              ],
+              "footer": [
+                {
+                  "componentType": "ButtonProps",
+                  "text": "Cancel",
+                  "variant": "outline",
+                  "uuid": "card-footer-cancel"
+                },
+                {
+                  "componentType": "ButtonProps",
+                  "text": "Submit",
+                  "variant": "default",
+                  "uuid": "card-footer-submit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

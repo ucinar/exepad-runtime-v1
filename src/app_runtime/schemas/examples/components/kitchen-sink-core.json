@@ -1,0 +1,554 @@
+{
+  "uuid": "app-kitchen-sink-01",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Component Kitchen Sink",
+  "alias": "component-kitchen-sink",
+  "summary": "Complete showcase of fundamental UI components including buttons, badges, headings, text, icons, and interactive elements. Demonstrates component variations, states, and styling options for comprehensive design system exploration.",
+  "shortSummary": "Complete showcase of fundamental UI components including buttons, badges, headings, text, icons, and interactive elements",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-main-01",
+      "title": "Kitchen Sink",
+      "slug": "/",
+      "summary": "This page showcases all available components.",
+      "content": [
+        {
+          "uuid": "section-typography-01",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-typography-01",
+          "spacing": "lg",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-main-title",
+              "componentType": "HeadingProps",
+              "level": 1,
+              "text": "Component Kitchen Sink"
+            },
+            {
+              "uuid": "text-intro",
+              "componentType": "TextProps",
+              "variant": "lead",
+              "content": "This page displays a comprehensive collection of all available UI components and their variants."
+            },
+            {
+              "uuid": "divider-intro",
+              "componentType": "SpacerProps",
+              "size": "md"
+            }
+          ]
+        },
+        {
+          "uuid": "section-text-02",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-text-02",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-text-variants",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Text Variants"
+            },
+            {
+              "uuid": "flex-text-variants-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "text-default",
+                  "componentType": "TextProps",
+                  "content": "This is default text, rendered as a 'p' tag.",
+                  "as": "p"
+                },
+                {
+                  "uuid": "text-large",
+                  "componentType": "TextProps",
+                  "variant": "large",
+                  "content": "This is large text, rendered as a 'div' tag.",
+                  "as": "div"
+                },
+                {
+                  "uuid": "text-small",
+                  "componentType": "TextProps",
+                  "variant": "small",
+                  "content": "This is small text, rendered as a 'span' tag.",
+                  "as": "span"
+                },
+                {
+                  "uuid": "text-muted",
+                  "componentType": "TextProps",
+                  "variant": "muted",
+                  "content": "This is muted text, perfect for secondary information."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-headings-03",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-headings-03",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-section-title",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Headings & Links"
+            },
+            {
+              "uuid": "flex-headings-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "heading-level-1",
+                  "componentType": "HeadingProps",
+                  "level": 1,
+                  "text": "Heading Level 1"
+                },
+                {
+                  "uuid": "heading-level-2",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Heading Level 2"
+                },
+                {
+                  "uuid": "heading-level-3",
+                  "componentType": "HeadingProps",
+                  "level": 3,
+                  "text": "Heading Level 3"
+                },
+                {
+                  "uuid": "heading-level-4",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "Heading Level 4"
+                },
+                {
+                  "uuid": "heading-level-5",
+                  "componentType": "HeadingProps",
+                  "level": 5,
+                  "text": "Heading Level 5"
+                },
+                {
+                  "uuid": "heading-level-6",
+                  "componentType": "HeadingProps",
+                  "level": 6,
+                  "text": "Heading Level 6"
+                },
+                {
+                  "uuid": "link-internal",
+                  "componentType": "LinkProps",
+                  "href": "/internal-page",
+                  "text": "This is an internal link."
+                },
+                {
+                  "uuid": "link-external",
+                  "componentType": "LinkProps",
+                  "href": "https://google.com",
+                  "text": "This is an external link that opens in a new tab.",
+                  "target": "_blank"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-buttons-04",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-buttons-04",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-buttons",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Buttons & Icons"
+            },
+            {
+              "uuid": "flex-button-container",
+              "componentType": "FlexProps",
+              "wrap": "wrap",
+              "gap": "4",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "button-default",
+                  "componentType": "ButtonProps",
+                  "text": "Default Button",
+                  "onClick": "handleDefaultClick",
+                  "type": "button",
+                  "variant": "default",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-destructive",
+                  "componentType": "ButtonProps",
+                  "text": "Destructive Button",
+                  "onClick": "handleDestructiveClick",
+                  "type": "button",
+                  "variant": "destructive",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-secondary",
+                  "componentType": "ButtonProps",
+                  "text": "Secondary Button",
+                  "onClick": "handleSecondaryClick",
+                  "type": "button",
+                  "variant": "secondary",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-ghost",
+                  "componentType": "ButtonProps",
+                  "text": "Ghost Button",
+                  "onClick": "handleGhostClick",
+                  "type": "button",
+                  "variant": "ghost",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-link",
+                  "componentType": "ButtonProps",
+                  "text": "Link Button",
+                  "onClick": "handleLinkClick",
+                  "type": "button",
+                  "variant": "link",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-outline",
+                  "componentType": "ButtonProps",
+                  "text": "Outline Button",
+                  "onClick": "handleOutlineClick",
+                  "type": "button",
+                  "variant": "outline",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-disabled",
+                  "componentType": "ButtonProps",
+                  "text": "Disabled Button",
+                  "onClick": "handleDisabledClick",
+                  "type": "button",
+                  "variant": "default",
+                  "disabled": true
+                },
+                {
+                  "uuid": "button-large",
+                  "componentType": "ButtonProps",
+                  "text": "Large Button",
+                  "onClick": "handleLargeClick",
+                  "type": "button",
+                  "size": "lg",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-small",
+                  "componentType": "ButtonProps",
+                  "text": "Small Button",
+                  "onClick": "handleSmallClick",
+                  "type": "button",
+                  "size": "sm",
+                  "disabled": false
+                },
+                {
+                  "uuid": "button-icon-left",
+                  "componentType": "ButtonProps",
+                  "text": "Icon Left",
+                  "onClick": "handleIconLeftClick",
+                  "type": "button",
+                  "disabled": false,
+                  "icon": {
+                    "uuid": "icon-star-01",
+                    "componentType": "IconProps",
+                    "name": "star",
+                    "size": 16
+                  },
+                  "iconPosition": "left"
+                },
+                {
+                  "uuid": "button-icon-right",
+                  "componentType": "ButtonProps",
+                  "text": "Icon Right",
+                  "onClick": "handleIconRightClick",
+                  "type": "button",
+                  "disabled": false,
+                  "icon": {
+                    "uuid": "icon-arrow-right-01",
+                    "componentType": "IconProps",
+                    "name": "arrow-right",
+                    "size": 16
+                  },
+                  "iconPosition": "right"
+                },
+                {
+                  "uuid": "button-icon-only",
+                  "componentType": "ButtonProps",
+                  "text": "",
+                  "onClick": "handleIconOnlyClick",
+                  "type": "button",
+                  "size": "icon",
+                  "disabled": false,
+                  "icon": {
+                    "uuid": "icon-heart-01",
+                    "componentType": "IconProps",
+                    "name": "heart",
+                    "size": 24
+                  }
+                },
+                {
+                  "uuid": "icon-standalone",
+                  "componentType": "IconProps",
+                  "name": "settings",
+                  "size": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-media-05",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-media-05",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-media",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Media Elements (Image, Video, Audio)"
+            },
+            {
+              "uuid": "flex-media-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "8",
+              "content": [
+                {
+                  "uuid": "image-zoom",
+                  "componentType": "ImageProps",
+                  "src": "https://fastly.picsum.photos/id/866/600/600.jpg?hmac=dKQ662qAsYvwCo90SUl-0iG9K0Yp3ySEK0wJVIYh5uo",
+                  "alt": "A dramatic mountain landscape with a zoom hover effect.",
+                  "width": 500,
+                  "hoverEffect": "zoom",
+                  "asset": {
+                    "uuid": "image-asset-01",
+                    "componentType": "ImageAssetProps",
+                    "isProcessed": true,
+                    "keywords": "mountain, landscape, dramatic, sky, nature",
+                    "requestedWidth": 500,
+                    "requestedHeight": 300
+                  }
+                },
+                {
+                  "uuid": "video-youtube",
+                  "componentType": "VideoProps",
+                  "source": "TSi0iJYSQ24",
+                  "provider": "youtube",
+                  "controls": true,
+                  "autoplay": false,
+                  "loop": false,
+                  "muted": true,
+                  "width": 560,
+                  "height": 400
+                },
+                {
+                  "uuid": "audio-player",
+                  "componentType": "AudioProps",
+                  "source": "/assets/audio/sample-audio.mp3",
+                  "controls": true,
+                  "autoplay": false,
+                  "loop": true,
+                  "muted": false,
+                  "volume": 0.8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-display-06",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-display-06",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "heading-display",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Display & Feedback"
+            },
+            {
+              "uuid": "flex-display-container",
+              "componentType": "FlexProps",
+              "wrap": "wrap",
+              "gap": "4",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "badge-success",
+                  "componentType": "BadgeProps",
+                  "content": "Success",
+                  "variant": "success"
+                },
+                {
+                  "uuid": "badge-warning",
+                  "componentType": "BadgeProps",
+                  "content": "Warning",
+                  "variant": "warning"
+                },
+                {
+                  "uuid": "badge-destructive",
+                  "componentType": "BadgeProps",
+                  "content": "Destructive",
+                  "variant": "destructive"
+                },
+                {
+                  "uuid": "tag-blue-removable",
+                  "componentType": "TagProps",
+                  "label": "Blue Tag (Removable)",
+                  "color": "blue",
+                  "removable": true,
+                  "onRemove": "handleTagRemove"
+                },
+                {
+                  "uuid": "tag-green",
+                  "componentType": "TagProps",
+                  "label": "Green Tag",
+                  "color": "green",
+                  "removable": false
+                },
+                {
+                  "uuid": "avatar-01",
+                  "componentType": "AvatarProps",
+                  "name": "Shad CN",
+                  "size": 80
+                },
+                {
+                  "uuid": "spinner-01",
+                  "componentType": "SpinnerProps",
+                  "size": 48,
+                  "color": "blue"
+                },
+                {
+                  "uuid": "skeleton-01",
+                  "componentType": "SkeletonProps",
+                  "width": "200px",
+                  "height": "200px",
+                  "classes": "bg-gray-200 rounded animate-pulse"
+                },
+                {
+                  "uuid": "skeleton-02",
+                  "componentType": "SkeletonProps",
+                  "width": "150px",
+                  "height": "200px",
+                  "classes": "bg-gray-200 rounded animate-pulse"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "section-layout-07",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-layout-07",
+          "speed": 0,
+          "content": [
+            {
+              "uuid": "flex-layout-container",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "align": "center",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "heading-layout",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "Layout Utilities"
+                },
+                {
+                  "uuid": "divider-vertical-example",
+                  "componentType": "SpacerProps",
+                  "classes": "w-full max-w-md",
+                  "size": "md"
+                },
+                {
+                  "uuid": "spacer-example",
+                  "componentType": "SpacerProps",
+                  "size": "8"
+                },
+                {
+                  "uuid": "heading-after-spacer",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "This appears after a 2rem spacer."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "This page showcases all available components",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

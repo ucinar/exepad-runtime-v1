@@ -1,0 +1,403 @@
+{
+  "uuid": "skeleton-005-creative-agency",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Creative Agency Skeleton",
+  "alias": "creative-agency-skeleton",
+  "summary": "Header: Non-sticky default navbar with bold gradient logo (STUDIO SPARK, purple-to-pink gradient), scale hover animations (300ms), service dropdown (Branding, Web Design, Digital Marketing), regular links (Portfolio, Process), large default Let's Talk CTA button. Footer: Gradient dark background (indigo-900 to purple-900) with centered CTA section (large heading + description + dual CTAs: outline Start Project + ghost View Portfolio), 4-column grid (Services, Company with About/Team/Careers, Contact with Address/Phone/Email, Follow Us with socials), enhanced divider spacing (my-12), bottom bar with copyright and creative-focused social links (Dribbble, Behance, Instagram, Twitter), artistic purple-pink accent colors.",
+  "shortSummary": "Creative agency skeleton with bold navbar and artistic footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#fafafa",
+      "foreground": "#0a0a0a",
+      "primary": "#7c3aed",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f5f3ff",
+      "secondary-foreground": "#5b21b6",
+      "muted": "#f3f4f6",
+      "muted-foreground": "#6b7280",
+      "accent": "#fbbf24",
+      "accent-foreground": "#78350f",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#ffffff",
+      "border": "#e5e7eb",
+      "input": "#e5e7eb",
+      "ring": "#8b5cf6"
+    },
+    "dark": {
+      "background": "#0a0a0a",
+      "foreground": "#fafafa",
+      "primary": "#a78bfa",
+      "primary-foreground": "#1f2937",
+      "secondary": "#1f2937",
+      "secondary-foreground": "#e0e7ff",
+      "muted": "#1f2937",
+      "muted-foreground": "#9ca3af",
+      "accent": "#fbbf24",
+      "accent-foreground": "#1f2937",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fafafa",
+      "border": "#374151",
+      "input": "#1f2937",
+      "ring": "#a78bfa"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-creative-navbar-005",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": false,
+      "logo": {
+        "uuid": "logo-creative-005",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "VIVID",
+        "classes": "text-3xl font-black bg-gradient-to-r from-purple-600 via-pink-500 to-amber-400 bg-clip-text text-transparent"
+      },
+      "content": [
+        {
+          "uuid": "menu-item-work-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Work",
+          "href": {
+            "uuid": "link-work-005",
+            "componentType": "LinkProps",
+            "href": "/work",
+            "text": "Work"
+          }
+        },
+        {
+          "uuid": "menu-item-services-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Services",
+          "href": {
+            "uuid": "link-services-005",
+            "componentType": "LinkProps",
+            "href": "/services",
+            "text": "Services"
+          }
+        },
+        {
+          "uuid": "menu-item-studio-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Studio",
+          "href": {
+            "uuid": "link-studio-005",
+            "componentType": "LinkProps",
+            "href": "/studio",
+            "text": "Studio"
+          }
+        },
+        {
+          "uuid": "menu-item-journal-005",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Journal",
+          "href": {
+            "uuid": "link-journal-005",
+            "componentType": "LinkProps",
+            "href": "/journal",
+            "text": "Journal"
+          }
+        },
+        {
+          "uuid": "menu-button-contact-005",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-contact-005",
+            "componentType": "ButtonProps",
+            "text": "Let's Talk",
+            "variant": "default",
+            "size": "lg",
+            "link": {
+              "uuid": "link-contact-005",
+              "componentType": "LinkProps",
+              "href": "/contact",
+              "text": "Let's Talk"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 200
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-creative-005",
+      "componentType": "SectionProps",
+      "classes": "py-20 px-8 bg-gradient-to-br from-purple-50 via-pink-50 to-amber-50 dark:from-purple-950 dark:via-pink-950 dark:to-amber-950",
+      "layout": "singleColumnCentered",
+      "spacing": "xl",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-cta-section-005",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "8",
+          "classes": "pb-16 text-center",
+          "content": [
+            {
+              "uuid": "footer-cta-heading-005",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Ready to create something amazing?",
+              "classes": "text-5xl font-black bg-gradient-to-r from-purple-600 via-pink-500 to-amber-400 bg-clip-text text-transparent"
+            },
+            {
+              "uuid": "footer-cta-text-005",
+              "componentType": "TextProps",
+              "content": "Let's collaborate and bring your vision to life.",
+              "classes": "text-xl text-muted-foreground max-w-2xl"
+            },
+            {
+              "uuid": "footer-cta-button-005",
+              "componentType": "ButtonProps",
+              "text": "Start a Project",
+              "variant": "default",
+              "size": "lg",
+              "classes": "mt-4",
+              "link": {
+                "uuid": "link-start-project-005",
+                "componentType": "LinkProps",
+                "href": "/contact",
+                "text": "Start a Project"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "footer-main-section-005",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start w-full flex-wrap gap-12 pb-12",
+          "content": [
+            {
+              "uuid": "footer-brand-005",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "6",
+              "classes": "max-w-md",
+              "content": [
+                {
+                  "uuid": "footer-logo-005",
+                  "componentType": "TextProps",
+                  "content": "VIVID",
+                  "classes": "text-4xl font-black bg-gradient-to-r from-purple-600 via-pink-500 to-amber-400 bg-clip-text text-transparent"
+                },
+                {
+                  "uuid": "footer-description-005",
+                  "componentType": "TextProps",
+                  "content": "A creative studio crafting bold brands and memorable experiences that resonate with audiences worldwide.",
+                  "classes": "text-muted-foreground leading-relaxed"
+                },
+                {
+                  "uuid": "footer-social-005",
+                  "componentType": "FlexProps",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "social-instagram-005",
+                      "componentType": "SocialLinkProps",
+                      "platform": "instagram",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-behance-005",
+                      "componentType": "SocialLinkProps",
+                      "platform": "behance",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-dribbble-005",
+                      "componentType": "SocialLinkProps",
+                      "platform": "dribbble",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-linkedin-005",
+                      "componentType": "SocialLinkProps",
+                      "platform": "linkedin",
+                      "url": "#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "footer-links-grid-005",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "12",
+              "classes": "flex-1",
+              "content": [
+                {
+                  "uuid": "footer-col-explore-005",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-explore-005",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Explore",
+                      "classes": "text-lg font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-work-005",
+                      "componentType": "LinkProps",
+                      "text": "Our Work",
+                      "href": "/work",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-services-005",
+                      "componentType": "LinkProps",
+                      "text": "Services",
+                      "href": "/services",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-process-005",
+                      "componentType": "LinkProps",
+                      "text": "Our Process",
+                      "href": "/process",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-studio-005",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-studio-005",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Studio",
+                      "classes": "text-lg font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-about-005",
+                      "componentType": "LinkProps",
+                      "text": "About Us",
+                      "href": "/studio",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-team-005",
+                      "componentType": "LinkProps",
+                      "text": "Team",
+                      "href": "/team",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-careers-005",
+                      "componentType": "LinkProps",
+                      "text": "Careers",
+                      "href": "/careers",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-connect-005",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-connect-005",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Connect",
+                      "classes": "text-lg font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-contact-005",
+                      "componentType": "LinkProps",
+                      "text": "Contact",
+                      "href": "/contact",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-journal-005",
+                      "componentType": "LinkProps",
+                      "text": "Journal",
+                      "href": "/journal",
+                      "classes": "text-muted-foreground hover:text-primary transition-colors"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-005",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-purple-200 dark:border-purple-800",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-005",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-005",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 VIVID Studio. Crafted with passion.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "uuid": "footer-legal-links-005",
+              "componentType": "FlexProps",
+              "gap": "6",
+              "content": [
+                {
+                  "uuid": "footer-link-privacy-005",
+                  "componentType": "LinkProps",
+                  "text": "Privacy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-terms-005",
+                  "componentType": "LinkProps",
+                  "text": "Terms",
+                  "href": "/terms",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

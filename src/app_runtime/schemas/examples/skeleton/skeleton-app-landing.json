@@ -1,0 +1,435 @@
+{
+  "uuid": "skeleton-007-app-landing",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "App Landing Page Skeleton",
+  "alias": "app-landing-skeleton",
+  "summary": "Header: Sticky split navbar with icon+text logo (smartphone icon + AppFlow, gradient cyan-to-blue), left-aligned links (Features, Pricing, About), right-aligned dual CTAs (ghost Login + default Download App with download icon), underline animations (300ms). Footer: Three-section app-focused layout - top CTA with large heading + description + dual download buttons (outline Download for iOS with apple icon + outline Download for Android with android icon), middle 4-column grid (Product, Company, Support, Legal), enhanced spacing (pb-16, pt-16, my-12), bottom bar with copyright and social links (Twitter, Facebook, LinkedIn, Instagram), modern gradient accents.",
+  "shortSummary": "App landing skeleton with gradient navbar and app download footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#0c0a09",
+      "primary": "#0e7490",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f0fdfa",
+      "secondary-foreground": "#115e59",
+      "muted": "#f5f5f4",
+      "muted-foreground": "#78716c",
+      "accent": "#14b8a6",
+      "accent-foreground": "#ffffff",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e7e5e4",
+      "input": "#e7e5e4",
+      "ring": "#06b6d4"
+    },
+    "dark": {
+      "background": "#0c0a09",
+      "foreground": "#fafaf9",
+      "primary": "#22d3ee",
+      "primary-foreground": "#083344",
+      "secondary": "#134e4a",
+      "secondary-foreground": "#ccfbf1",
+      "muted": "#292524",
+      "muted-foreground": "#a8a29e",
+      "accent": "#2dd4bf",
+      "accent-foreground": "#134e4a",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fafaf9",
+      "border": "#44403c",
+      "input": "#292524",
+      "ring": "#22d3ee"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-app-navbar-007",
+      "componentType": "NavbarProps",
+      "variant": "split",
+      "menuVariant": "underline",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-app-007",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Streamly",
+        "classes": "text-2xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent"
+      },
+      "content": [
+        {
+          "uuid": "menu-item-features-007",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Features",
+          "href": {
+            "uuid": "link-features-007",
+            "componentType": "LinkProps",
+            "href": "#features",
+            "text": "Features"
+          }
+        },
+        {
+          "uuid": "menu-item-pricing-007",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Pricing",
+          "href": {
+            "uuid": "link-pricing-007",
+            "componentType": "LinkProps",
+            "href": "#pricing",
+            "text": "Pricing"
+          }
+        },
+        {
+          "uuid": "menu-item-testimonials-007",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Testimonials",
+          "href": {
+            "uuid": "link-testimonials-007",
+            "componentType": "LinkProps",
+            "href": "#testimonials",
+            "text": "Testimonials"
+          }
+        },
+        {
+          "uuid": "menu-button-download-007",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-download-007",
+            "componentType": "ButtonProps",
+            "text": "Download App",
+            "variant": "default",
+            "icon": {
+              "uuid": "icon-download-007",
+              "componentType": "IconProps",
+              "name": "download",
+              "size": 18
+            },
+            "iconPosition": "left",
+            "link": {
+              "uuid": "link-download-007",
+              "componentType": "LinkProps",
+              "href": "#download",
+              "text": "Download App"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-app-007",
+      "componentType": "SectionProps",
+      "classes": "py-16 px-8 bg-gradient-to-br from-cyan-50 to-teal-50 dark:from-cyan-950 dark:to-teal-950",
+      "layout": "singleColumnCentered",
+      "spacing": "lg",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-download-cta-007",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "8",
+          "classes": "pb-16 text-center",
+          "content": [
+            {
+              "uuid": "footer-cta-heading-007",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Download Streamly Today",
+              "classes": "text-4xl font-bold bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent"
+            },
+            {
+              "uuid": "footer-cta-text-007",
+              "componentType": "TextProps",
+              "content": "Available on iOS and Android. Start streaming your favorite content anywhere, anytime.",
+              "classes": "text-lg text-muted-foreground max-w-2xl"
+            },
+            {
+              "uuid": "footer-store-buttons-007",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "4",
+              "classes": "mt-6",
+              "content": [
+                {
+                  "uuid": "footer-app-store-button-007",
+                  "componentType": "ButtonProps",
+                  "text": "App Store",
+                  "variant": "default",
+                  "size": "lg",
+                  "icon": {
+                    "uuid": "icon-apple-007",
+                    "componentType": "IconProps",
+                    "name": "apple",
+                    "size": 20
+                  },
+                  "iconPosition": "left"
+                },
+                {
+                  "uuid": "footer-play-store-button-007",
+                  "componentType": "ButtonProps",
+                  "text": "Google Play",
+                  "variant": "outline",
+                  "size": "lg",
+                  "icon": {
+                    "uuid": "icon-play-007",
+                    "componentType": "IconProps",
+                    "name": "smartphone",
+                    "size": 20
+                  },
+                  "iconPosition": "left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-main-content-007",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start w-full flex-wrap gap-12 pb-12",
+          "content": [
+            {
+              "uuid": "footer-brand-section-007",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "max-w-sm",
+              "content": [
+                {
+                  "uuid": "footer-logo-007",
+                  "componentType": "TextProps",
+                  "content": "Streamly",
+                  "classes": "text-3xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent"
+                },
+                {
+                  "uuid": "footer-description-007",
+                  "componentType": "TextProps",
+                  "content": "The ultimate streaming platform for all your entertainment needs. Movies, shows, music, and more.",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-links-grid-007",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "classes": "flex-1",
+              "content": [
+                {
+                  "uuid": "footer-col-product-007",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-product-007",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Product",
+                      "classes": "text-sm font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-features-007",
+                      "componentType": "LinkProps",
+                      "text": "Features",
+                      "href": "#features",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-pricing-007",
+                      "componentType": "LinkProps",
+                      "text": "Pricing",
+                      "href": "#pricing",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-download-007",
+                      "componentType": "LinkProps",
+                      "text": "Download",
+                      "href": "#download",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-support-007",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-support-007",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Support",
+                      "classes": "text-sm font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-help-007",
+                      "componentType": "LinkProps",
+                      "text": "Help Center",
+                      "href": "/help",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-faq-007",
+                      "componentType": "LinkProps",
+                      "text": "FAQ",
+                      "href": "/faq",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-contact-007",
+                      "componentType": "LinkProps",
+                      "text": "Contact Us",
+                      "href": "/contact",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-company-007",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-company-007",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Company",
+                      "classes": "text-sm font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-about-007",
+                      "componentType": "LinkProps",
+                      "text": "About",
+                      "href": "/about",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-blog-007",
+                      "componentType": "LinkProps",
+                      "text": "Blog",
+                      "href": "/blog",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-careers-007",
+                      "componentType": "LinkProps",
+                      "text": "Careers",
+                      "href": "/careers",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-legal-007",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-legal-007",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "Legal",
+                      "classes": "text-sm font-bold mb-2"
+                    },
+                    {
+                      "uuid": "footer-link-privacy-007",
+                      "componentType": "LinkProps",
+                      "text": "Privacy",
+                      "href": "/privacy",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    },
+                    {
+                      "uuid": "footer-link-terms-007",
+                      "componentType": "LinkProps",
+                      "text": "Terms",
+                      "href": "/terms",
+                      "classes": "text-sm text-muted-foreground hover:text-primary"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-007",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-cyan-200 dark:border-cyan-900",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-007",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-007",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 Streamly Inc. All rights reserved.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "uuid": "footer-social-007",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "social-facebook-007",
+                  "componentType": "SocialLinkProps",
+                  "platform": "facebook",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-twitter-007",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-instagram-007",
+                  "componentType": "SocialLinkProps",
+                  "platform": "instagram",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-youtube-007",
+                  "componentType": "SocialLinkProps",
+                  "platform": "youtube",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

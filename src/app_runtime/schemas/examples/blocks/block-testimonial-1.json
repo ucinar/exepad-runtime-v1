@@ -1,0 +1,115 @@
+{
+  "uuid": "app-testimonial-section-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Testimonial Page",
+  "alias": "testimonial-page",
+  "summary": "Simple testimonial layout with customer quote, attribution, and clean typography. Features single testimonial with author information and minimalist design approach.",
+  "shortSummary": "Simple testimonial layout with customer quote, attribution, and clean typography",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-testimonial-456",
+      "title": "Testimonial",
+      "slug": "/testimonial",
+      "summary": "A page displaying a customer testimonial.",
+      "content": [
+        {
+          "uuid": "section-testimonial-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-testimonial-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnCentered",
+          "content": [
+            {
+              "uuid": "testimonial-item-001",
+              "componentType": "TestimonialItemProps",
+              "style": "quote",
+              "text": {
+                "uuid": "testimonial-item-001-text",
+                "componentType": "TextProps",
+                "content": "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+              },
+              "author": {
+                "uuid": "testimonial-item-001-author",
+                "componentType": "TextProps",
+                "content": "Micheal Gough"
+              },
+              "authorTitle": {
+                "uuid": "testimonial-item-001-authorTitle",
+                "componentType": "TextProps",
+                "content": "CEO at Google"
+              },
+              "avatar": {
+                "uuid": "avatar-micheal-gough",
+                "componentType": "ImageProps",
+                "src": "https://i.pravatar.cc/150?u=micheal_gough",
+                "alt": "Photo of Micheal Gough",
+                "asset": {
+                  "uuid": "asset-avatar-micheal-gough",
+                  "componentType": "ImageAssetProps",
+                  "keywords": "micheal, gough, avatar, testimonial",
+                  "isProcessed": true,
+                  "requestedWidth": 150,
+                  "requestedHeight": 150
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying a customer testimonial",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

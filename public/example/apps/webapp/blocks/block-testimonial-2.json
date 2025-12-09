@@ -1,0 +1,263 @@
+{
+  "uuid": "app-testimonial-section-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Testimonial Page",
+  "alias": "testimonial-page",
+  "summary": "Multi-testimonial grid layout with customer photos, quotes, and detailed attribution. Features multiple testimonials in organized grid format with enhanced visual presentation and credibility elements.",
+  "shortSummary": "Multi-testimonial grid layout with customer photos, quotes, and detailed attribution",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-testimonial-456",
+      "title": "Testimonial",
+      "slug": "/testimonial",
+      "summary": "A page displaying customer testimonials.",
+      "content": [
+        {
+          "uuid": "section-testimonial-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-testimonial-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "heading-testimonials",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Testimonials",
+              "classes": "text-4xl font-extrabold text-center mb-4"
+            },
+            {
+              "uuid": "text-testimonial-subtitle",
+              "componentType": "TextProps",
+              "content": "Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind",
+              "classes": "text-center text-gray-500 mb-12"
+            },
+            {
+              "uuid": "grid-testimonials",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "8",
+              "classes": "md:grid-cols-2",
+              "content": [
+                {
+                  "uuid": "testimonial-bonnie",
+                  "componentType": "TestimonialItemProps",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-bonnie-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Speechless with how easy this was to integrate"
+                  },
+                  "text": {
+                    "uuid": "testimonial-bonnie-text",
+                    "componentType": "TextProps",
+                    "content": "I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with how easy this was to integrate within my application. Most templates are a pain, code is scattered, and near impossible to theme. Flowbite has code in one place and I'm not joking when I say it took me a matter of minutes to copy the code, customise it and integrate within a Laravel + Vue application. If you care for your time, I hands down would go with this."
+                  },
+                  "author": {
+                    "uuid": "testimonial-bonnie-author",
+                    "componentType": "TextProps",
+                    "content": "Bonnie Green"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-bonnie-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Developer at Open AI"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-bonnie-green",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=bonnie_green",
+                    "alt": "Photo of Bonnie Green",
+                    "asset": {
+                      "uuid": "asset-avatar-bonnie-green",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "bonnie, green, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-roberta",
+                  "componentType": "TestimonialItemProps",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-roberta-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Solid foundation for any project"
+                  },
+                  "text": {
+                    "uuid": "testimonial-roberta-text",
+                    "componentType": "TextProps",
+                    "content": "FlowBite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI kit provides a solid foundation for any project. Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"
+                  },
+                  "author": {
+                    "uuid": "testimonial-roberta-author",
+                    "componentType": "TextProps",
+                    "content": "Roberta Casas"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-roberta-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Lead designer at Dropbox"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-roberta-casas",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=roberta_casas",
+                    "alt": "Photo of Roberta Casas",
+                    "asset": {
+                      "uuid": "asset-avatar-roberta-casas",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "roberta, casas, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-jese",
+                  "componentType": "TestimonialItemProps",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-jese-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Mindblowing workflow and variants"
+                  },
+                  "text": {
+                    "uuid": "testimonial-jese-text",
+                    "componentType": "TextProps",
+                    "content": "As someone who mainly designs in the browser, I've been a casual user of Figma, but as soon as I saw and started playing with FlowBite my mind was 🤯. Everything is so well structured and simple to use (I've learnt so much about Figma by just using the toolkit). Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."
+                  },
+                  "author": {
+                    "uuid": "testimonial-jese-author",
+                    "componentType": "TextProps",
+                    "content": "Jese Leos"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-jese-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "Software Engineer at Facebook"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-jese-leos",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=jese_leos",
+                    "alt": "Photo of Jese Leos",
+                    "asset": {
+                      "uuid": "asset-avatar-jese-leos",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "jese, leos, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                },
+                {
+                  "uuid": "testimonial-joseph",
+                  "componentType": "TestimonialItemProps",
+                  "style": "card",
+                  "title": {
+                    "uuid": "testimonial-joseph-title",
+                    "componentType": "HeadingProps",
+                    "level": 3,
+                    "text": "Efficient Collaborating"
+                  },
+                  "text": {
+                    "uuid": "testimonial-joseph-text",
+                    "componentType": "TextProps",
+                    "content": "This is a very complex and beautiful set of elements. Under the hood it comes with the best things from 2 different worlds: Figma and Tailwind. You have many examples that can be used to create a fast prototype for your team."
+                  },
+                  "author": {
+                    "uuid": "testimonial-joseph-author",
+                    "componentType": "TextProps",
+                    "content": "Joseph McFall"
+                  },
+                  "authorTitle": {
+                    "uuid": "testimonial-joseph-authorTitle",
+                    "componentType": "TextProps",
+                    "content": "CTO at Google"
+                  },
+                  "avatar": {
+                    "uuid": "avatar-joseph-mcfall",
+                    "componentType": "ImageProps",
+                    "src": "https://i.pravatar.cc/150?u=joseph_mcfall",
+                    "alt": "Photo of Joseph McFall",
+                    "asset": {
+                      "uuid": "asset-avatar-joseph-mcfall",
+                      "componentType": "ImageAssetProps",
+                      "keywords": "joseph, mcfall, avatar, testimonial",
+                      "isProcessed": true,
+                      "requestedWidth": 150,
+                      "requestedHeight": 150
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying customer testimonials",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

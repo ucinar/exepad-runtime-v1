@@ -1,0 +1,397 @@
+{
+  "uuid": "skeleton-001-modern-saas",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Modern SaaS Platform Skeleton",
+  "alias": "modern-saas-skeleton",
+  "summary": "Header: Split-style navbar with gradient brand logo (blue-to-cyan), left-aligned navigation links (Features, Pricing, Resources dropdown with Documentation/Blog/Changelog), right-aligned CTA buttons (ghost Sign In + default Start Free Trial), underline hover animations (300ms), sticky positioning. Footer: Two-tier layout with brand section + 4-column link grid (Product, Company, Resources, Legal), horizontal divider with my-12 spacing, bottom bar with copyright and social icons (Twitter, GitHub, LinkedIn), slate background, muted text hierarchy, enhanced vertical rhythm (pb-12, pt-4).",
+  "shortSummary": "Modern SaaS skeleton with split navbar and comprehensive footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#18181b",
+      "primary": "#0369a1",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f4f4f5",
+      "secondary-foreground": "#18181b",
+      "muted": "#f4f4f5",
+      "muted-foreground": "#71717a",
+      "accent": "#f4f4f5",
+      "accent-foreground": "#18181b",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#ffffff",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#3b82f6"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "primary": "#3b82f6",
+      "primary-foreground": "#ffffff",
+      "secondary": "#27272a",
+      "secondary-foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted-foreground": "#a1a1aa",
+      "accent": "#27272a",
+      "accent-foreground": "#fafafa",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fafafa",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#3b82f6"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-saas-navbar-001",
+      "componentType": "NavbarProps",
+      "variant": "split",
+      "menuVariant": "underline",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-saas-001",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "CloudFlow",
+        "classes": "text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
+      },
+      "content": [
+        {
+          "uuid": "menu-item-features-001",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Features",
+          "href": {
+            "uuid": "link-features-001",
+            "componentType": "LinkProps",
+            "href": "/features",
+            "text": "Features"
+          }
+        },
+        {
+          "uuid": "menu-item-pricing-001",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Pricing",
+          "href": {
+            "uuid": "link-pricing-001",
+            "componentType": "LinkProps",
+            "href": "/pricing",
+            "text": "Pricing"
+          }
+        },
+        {
+          "uuid": "menu-item-resources-dropdown-001",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Resources",
+          "dropdown": {
+            "uuid": "dropdown-resources-001",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-docs-001",
+                "componentType": "DropdownLink",
+                "title": "Documentation",
+                "href": "/docs"
+              },
+              {
+                "uuid": "dropdown-blog-001",
+                "componentType": "DropdownLink",
+                "title": "Blog",
+                "href": "/blog"
+              },
+              {
+                "uuid": "dropdown-changelog-001",
+                "componentType": "DropdownLink",
+                "title": "Changelog",
+                "href": "/changelog"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-button-login-001",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-login-001",
+            "componentType": "ButtonProps",
+            "text": "Sign In",
+            "variant": "ghost",
+            "link": {
+              "uuid": "link-login-001",
+              "componentType": "LinkProps",
+              "href": "/login",
+              "text": "Sign In"
+            }
+          }
+        },
+        {
+          "uuid": "menu-button-signup-001",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-signup-001",
+            "componentType": "ButtonProps",
+            "text": "Start Free Trial",
+            "variant": "default",
+            "link": {
+              "uuid": "link-signup-001",
+              "componentType": "LinkProps",
+              "href": "/signup",
+              "text": "Start Free Trial"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-saas-001",
+      "componentType": "SectionProps",
+      "classes": "py-12 px-8 bg-slate-50 dark:bg-slate-900",
+      "layout": "singleColumnCentered",
+      "spacing": "md",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-top-section-001",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-start pb-12 w-full flex-wrap gap-8",
+          "content": [
+            {
+              "uuid": "footer-brand-section-001",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "max-w-sm",
+              "content": [
+                {
+                  "uuid": "footer-logo-text-001",
+                  "componentType": "TextProps",
+                  "content": "CloudFlow",
+                  "classes": "text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
+                },
+                {
+                  "uuid": "footer-tagline-001",
+                  "componentType": "TextProps",
+                  "content": "Streamline your workflow with powerful cloud-based tools designed for modern teams.",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-links-grid-001",
+              "componentType": "GridProps",
+              "columns": 4,
+              "gap": "8",
+              "classes": "flex-1 min-w-[500px]",
+              "content": [
+                {
+                  "uuid": "footer-col-product-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-product-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "PRODUCT",
+                      "classes": "text-xs font-semibold text-muted-foreground tracking-wider"
+                    },
+                    {
+                      "uuid": "footer-link-features-001",
+                      "componentType": "LinkProps",
+                      "text": "Features",
+                      "href": "/features",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-integrations-001",
+                      "componentType": "LinkProps",
+                      "text": "Integrations",
+                      "href": "/integrations",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-pricing-001",
+                      "componentType": "LinkProps",
+                      "text": "Pricing",
+                      "href": "/pricing",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-company-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-company-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "COMPANY",
+                      "classes": "text-xs font-semibold text-muted-foreground tracking-wider"
+                    },
+                    {
+                      "uuid": "footer-link-about-001",
+                      "componentType": "LinkProps",
+                      "text": "About Us",
+                      "href": "/about",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-careers-001",
+                      "componentType": "LinkProps",
+                      "text": "Careers",
+                      "href": "/careers",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-contact-001",
+                      "componentType": "LinkProps",
+                      "text": "Contact",
+                      "href": "/contact",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-resources-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-resources-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "RESOURCES",
+                      "classes": "text-xs font-semibold text-muted-foreground tracking-wider"
+                    },
+                    {
+                      "uuid": "footer-link-docs-001",
+                      "componentType": "LinkProps",
+                      "text": "Documentation",
+                      "href": "/docs",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-blog-001",
+                      "componentType": "LinkProps",
+                      "text": "Blog",
+                      "href": "/blog",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-support-001",
+                      "componentType": "LinkProps",
+                      "text": "Support",
+                      "href": "/support",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-col-legal-001",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "footer-heading-legal-001",
+                      "componentType": "HeadingProps",
+                      "level": 4,
+                      "text": "LEGAL",
+                      "classes": "text-xs font-semibold text-muted-foreground tracking-wider"
+                    },
+                    {
+                      "uuid": "footer-link-privacy-001",
+                      "componentType": "LinkProps",
+                      "text": "Privacy Policy",
+                      "href": "/privacy",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    },
+                    {
+                      "uuid": "footer-link-terms-001",
+                      "componentType": "LinkProps",
+                      "text": "Terms of Service",
+                      "href": "/terms",
+                      "classes": "text-sm hover:text-primary transition-colors"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-001",
+          "componentType": "SpacerProps",
+          "classes": "my-12 border-t border-border",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-section-001",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4 pt-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-001",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 CloudFlow. All rights reserved.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "uuid": "footer-social-links-001",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "social-twitter-001",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "https://twitter.com/cloudflow"
+                },
+                {
+                  "uuid": "social-github-001",
+                  "componentType": "SocialLinkProps",
+                  "platform": "github",
+                  "url": "https://github.com/cloudflow"
+                },
+                {
+                  "uuid": "social-linkedin-001",
+                  "componentType": "SocialLinkProps",
+                  "platform": "linkedin",
+                  "url": "https://linkedin.com/company/cloudflow"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

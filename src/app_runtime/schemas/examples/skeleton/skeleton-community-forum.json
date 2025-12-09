@@ -1,0 +1,510 @@
+{
+  "uuid": "skeleton-008-community-forum",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Community Forum Skeleton",
+  "alias": "community-forum-skeleton",
+  "summary": "Header: Non-sticky default navbar with text+icon logo (users icon + DevCommunity, amber accent), scale animations (250ms), category dropdown (Discussions, Questions, Showcase, Events), regular links (Members, Guidelines), dual CTAs (ghost Login + default Sign Up). Footer: Community-focused layout with centered stats section (member count + daily posts metrics), 4-column grid (Forum sections with category links, Resources including Guidelines/Help/API, Community with About/Blog/Careers, Connect with social links), enhanced spacing (pb-16, my-12, pt-4), bottom bar with copyright and community social links (GitHub, Discord, Twitter, LinkedIn), welcoming amber-orange color scheme.",
+  "shortSummary": "Community forum skeleton with simple navbar and community footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#18181b",
+      "primary": "#7c3aed",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f4f4f5",
+      "secondary-foreground": "#18181b",
+      "muted": "#f4f4f5",
+      "muted-foreground": "#71717a",
+      "accent": "#e4e4e7",
+      "accent-foreground": "#18181b",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#7c3aed"
+    },
+    "dark": {
+      "background": "#18181b",
+      "foreground": "#fafafa",
+      "primary": "#a78bfa",
+      "primary-foreground": "#18181b",
+      "secondary": "#27272a",
+      "secondary-foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted-foreground": "#a1a1aa",
+      "accent": "#3f3f46",
+      "accent-foreground": "#fafafa",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#fafafa",
+      "border": "#3f3f46",
+      "input": "#27272a",
+      "ring": "#a78bfa"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-forum-navbar-008",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": false,
+      "logo": {
+        "uuid": "logo-forum-008",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "DevCommunity",
+        "classes": "text-2xl font-bold text-primary"
+      },
+      "content": [
+        {
+          "uuid": "menu-item-discussions-008",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Discussions",
+          "href": {
+            "uuid": "link-discussions-008",
+            "componentType": "LinkProps",
+            "href": "/discussions",
+            "text": "Discussions"
+          }
+        },
+        {
+          "uuid": "menu-dropdown-topics-008",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Topics",
+          "dropdown": {
+            "uuid": "dropdown-topics-008",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-general-008",
+                "componentType": "DropdownLink",
+                "title": "General",
+                "href": "/topics/general"
+              },
+              {
+                "uuid": "dropdown-help-008",
+                "componentType": "DropdownLink",
+                "title": "Help & Support",
+                "href": "/topics/help"
+              },
+              {
+                "uuid": "dropdown-showcase-008",
+                "componentType": "DropdownLink",
+                "title": "Showcase",
+                "href": "/topics/showcase"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-item-members-008",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Members",
+          "href": {
+            "uuid": "link-members-008",
+            "componentType": "LinkProps",
+            "href": "/members",
+            "text": "Members"
+          }
+        },
+        {
+          "uuid": "menu-button-login-008",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-login-008",
+            "componentType": "ButtonProps",
+            "text": "Sign In",
+            "variant": "ghost",
+            "link": {
+              "uuid": "link-login-008",
+              "componentType": "LinkProps",
+              "href": "/login",
+              "text": "Sign In"
+            }
+          }
+        },
+        {
+          "uuid": "menu-button-join-008",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-join-008",
+            "componentType": "ButtonProps",
+            "text": "Join Community",
+            "variant": "default",
+            "link": {
+              "uuid": "link-join-008",
+              "componentType": "LinkProps",
+              "href": "/join",
+              "text": "Join Community"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 200
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-forum-008",
+      "componentType": "SectionProps",
+      "classes": "py-16 px-8 bg-zinc-50 dark:bg-zinc-900",
+      "layout": "singleColumnCentered",
+      "spacing": "lg",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-community-stats-008",
+          "componentType": "GridProps",
+          "columns": 4,
+          "gap": "8",
+          "classes": "pb-12 text-center",
+          "content": [
+            {
+              "uuid": "stat-members-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "stat-members-value-008",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "50K+",
+                  "classes": "text-4xl font-bold text-primary"
+                },
+                {
+                  "uuid": "stat-members-label-008",
+                  "componentType": "TextProps",
+                  "content": "Members",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "stat-discussions-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "stat-discussions-value-008",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "1.2M",
+                  "classes": "text-4xl font-bold text-primary"
+                },
+                {
+                  "uuid": "stat-discussions-label-008",
+                  "componentType": "TextProps",
+                  "content": "Discussions",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "stat-posts-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "stat-posts-value-008",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "8.5M",
+                  "classes": "text-4xl font-bold text-primary"
+                },
+                {
+                  "uuid": "stat-posts-label-008",
+                  "componentType": "TextProps",
+                  "content": "Posts",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            },
+            {
+              "uuid": "stat-online-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "2",
+              "content": [
+                {
+                  "uuid": "stat-online-value-008",
+                  "componentType": "HeadingProps",
+                  "level": 2,
+                  "text": "2.3K",
+                  "classes": "text-4xl font-bold text-primary"
+                },
+                {
+                  "uuid": "stat-online-label-008",
+                  "componentType": "TextProps",
+                  "content": "Online Now",
+                  "classes": "text-muted-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-top-008",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-border",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-links-section-008",
+          "componentType": "GridProps",
+          "columns": 5,
+          "gap": "8",
+          "classes": "w-full pb-12",
+          "content": [
+            {
+              "uuid": "footer-col-community-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-community-008",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "COMMUNITY",
+                  "classes": "text-xs font-bold tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-discussions-008",
+                  "componentType": "LinkProps",
+                  "text": "All Discussions",
+                  "href": "/discussions",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-popular-008",
+                  "componentType": "LinkProps",
+                  "text": "Popular",
+                  "href": "/popular",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-trending-008",
+                  "componentType": "LinkProps",
+                  "text": "Trending",
+                  "href": "/trending",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-topics-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-topics-008",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "TOPICS",
+                  "classes": "text-xs font-bold tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-general-008",
+                  "componentType": "LinkProps",
+                  "text": "General",
+                  "href": "/topics/general",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-help-008",
+                  "componentType": "LinkProps",
+                  "text": "Help & Support",
+                  "href": "/topics/help",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-showcase-008",
+                  "componentType": "LinkProps",
+                  "text": "Showcase",
+                  "href": "/topics/showcase",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-resources-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-resources-008",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "RESOURCES",
+                  "classes": "text-xs font-bold tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-guidelines-008",
+                  "componentType": "LinkProps",
+                  "text": "Community Guidelines",
+                  "href": "/guidelines",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-faq-008",
+                  "componentType": "LinkProps",
+                  "text": "FAQ",
+                  "href": "/faq",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-badges-008",
+                  "componentType": "LinkProps",
+                  "text": "Badges & Awards",
+                  "href": "/badges",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-moderation-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-moderation-008",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "MODERATION",
+                  "classes": "text-xs font-bold tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-report-008",
+                  "componentType": "LinkProps",
+                  "text": "Report Content",
+                  "href": "/report",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-moderators-008",
+                  "componentType": "LinkProps",
+                  "text": "Moderators",
+                  "href": "/moderators",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-safety-008",
+                  "componentType": "LinkProps",
+                  "text": "Safety Center",
+                  "href": "/safety",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-legal-008",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-legal-008",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "LEGAL",
+                  "classes": "text-xs font-bold tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-about-008",
+                  "componentType": "LinkProps",
+                  "text": "About",
+                  "href": "/about",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-privacy-008",
+                  "componentType": "LinkProps",
+                  "text": "Privacy",
+                  "href": "/privacy",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                },
+                {
+                  "uuid": "footer-link-terms-008",
+                  "componentType": "LinkProps",
+                  "text": "Terms",
+                  "href": "/terms",
+                  "classes": "text-sm text-muted-foreground hover:text-primary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-bottom-008",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-border",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-008",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full",
+          "content": [
+            {
+              "uuid": "footer-copyright-008",
+              "componentType": "TextProps",
+              "content": "© 2024 DevCommunity. Built with ❤️ by developers, for developers.",
+              "classes": "text-sm text-muted-foreground"
+            },
+            {
+              "uuid": "footer-social-008",
+              "componentType": "FlexProps",
+              "gap": "4",
+              "content": [
+                {
+                  "uuid": "social-twitter-008",
+                  "componentType": "SocialLinkProps",
+                  "platform": "twitter",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-github-008",
+                  "componentType": "SocialLinkProps",
+                  "platform": "github",
+                  "url": "#"
+                },
+                {
+                  "uuid": "social-discord-008",
+                  "componentType": "SocialLinkProps",
+                  "platform": "discord",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

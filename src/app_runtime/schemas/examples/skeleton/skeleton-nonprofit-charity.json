@@ -1,0 +1,529 @@
+{
+  "uuid": "skeleton-011-nonprofit-charity",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Nonprofit Charity Skeleton",
+  "alias": "nonprofit-charity-skeleton",
+  "summary": "Header: Sticky default navbar with icon+text logo (heart icon + Hope Foundation, teal accent), underline animations (250ms), programs dropdown (Education, Healthcare, Community Development, Emergency Relief), regular links (Impact, Get Involved), default Donate Now CTA button with heart icon. Footer: Three-section impact-driven layout - top donation CTA with large heading + description + dual CTAs (default Donate Now + outline Become a Volunteer), middle 4-column grid (Programs, About/Organization with Mission/Team/Annual Reports/Financials for transparency, Get Involved, Contact with address/phone/email/socials), enhanced spacing (pb-16, pt-16, my-12), bottom bar with copyright and tax-exempt status, compassionate teal-cyan color scheme.",
+  "shortSummary": "Nonprofit skeleton with mission-focused navbar and donation footer",
+  "lastUpdatedEpoch": 1730764800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#14532d",
+      "primary": "#0f766e",
+      "primary-foreground": "#ffffff",
+      "secondary": "#f0fdf4",
+      "secondary-foreground": "#166534",
+      "muted": "#f7fee7",
+      "muted-foreground": "#4d7c0f",
+      "accent": "#84cc16",
+      "accent-foreground": "#1a2e05",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "border": "#bbf7d0",
+      "input": "#dcfce7",
+      "ring": "#16a34a"
+    },
+    "dark": {
+      "background": "#052e16",
+      "foreground": "#f0fdf4",
+      "primary": "#22c55e",
+      "primary-foreground": "#052e16",
+      "secondary": "#14532d",
+      "secondary-foreground": "#dcfce7",
+      "muted": "#166534",
+      "muted-foreground": "#bbf7d0",
+      "accent": "#84cc16",
+      "accent-foreground": "#1a2e05",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f0fdf4",
+      "border": "#15803d",
+      "input": "#166534",
+      "ring": "#22c55e"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "header-nonprofit-navbar-011",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "underline",
+      "sticky": true,
+      "logo": {
+        "uuid": "logo-nonprofit-011",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Hope Foundation",
+        "classes": "text-2xl font-bold text-primary flex items-center gap-2"
+      },
+      "content": [
+        {
+          "uuid": "menu-dropdown-programs-011",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Our Programs",
+          "dropdown": {
+            "uuid": "dropdown-programs-011",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-education-011",
+                "componentType": "DropdownLink",
+                "title": "Education Initiative",
+                "href": "/programs/education"
+              },
+              {
+                "uuid": "dropdown-health-011",
+                "componentType": "DropdownLink",
+                "title": "Healthcare Access",
+                "href": "/programs/health"
+              },
+              {
+                "uuid": "dropdown-environment-011",
+                "componentType": "DropdownLink",
+                "title": "Environmental Conservation",
+                "href": "/programs/environment"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-item-impact-011",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Our Impact",
+          "href": {
+            "uuid": "link-impact-011",
+            "componentType": "LinkProps",
+            "href": "/impact",
+            "text": "Our Impact"
+          }
+        },
+        {
+          "uuid": "menu-item-about-011",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About Us",
+          "href": {
+            "uuid": "link-about-011",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About Us"
+          }
+        },
+        {
+          "uuid": "menu-dropdown-involved-011",
+          "componentType": "MenuDropdownItemProps",
+          "type": "dropdown",
+          "label": "Get Involved",
+          "dropdown": {
+            "uuid": "dropdown-involved-011",
+            "componentType": "DropdownProps",
+            "content": [
+              {
+                "uuid": "dropdown-volunteer-011",
+                "componentType": "DropdownLink",
+                "title": "Volunteer",
+                "href": "/volunteer"
+              },
+              {
+                "uuid": "dropdown-fundraise-011",
+                "componentType": "DropdownLink",
+                "title": "Fundraise",
+                "href": "/fundraise"
+              },
+              {
+                "uuid": "dropdown-partner-011",
+                "componentType": "DropdownLink",
+                "title": "Partner With Us",
+                "href": "/partner"
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "menu-button-donate-011",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "button-donate-011",
+            "componentType": "ButtonProps",
+            "text": "Donate",
+            "variant": "default",
+            "icon": {
+              "uuid": "icon-heart-011",
+              "componentType": "IconProps",
+              "name": "heart",
+              "size": 18
+            },
+            "iconPosition": "left",
+            "link": {
+              "uuid": "link-donate-011",
+              "componentType": "LinkProps",
+              "href": "/donate",
+              "text": "Donate"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 300
+    }
+  ],
+  "pages": [],
+  "footer": [
+    {
+      "uuid": "footer-section-nonprofit-011",
+      "componentType": "SectionProps",
+      "classes": "py-20 px-8 bg-gradient-to-br from-green-50 to-lime-50 dark:from-green-950 dark:to-lime-950",
+      "layout": "singleColumnCentered",
+      "spacing": "xl",
+      "contentBleed": true,
+      "content": [
+        {
+          "uuid": "footer-donation-cta-011",
+          "componentType": "FlexProps",
+          "direction": "column",
+          "align": "center",
+          "gap": "8",
+          "classes": "pb-16 text-center",
+          "content": [
+            {
+              "uuid": "footer-cta-icon-011",
+              "componentType": "IconProps",
+              "name": "heart",
+              "size": 64,
+              "classes": "text-green-600 dark:text-green-400"
+            },
+            {
+              "uuid": "footer-cta-heading-011",
+              "componentType": "HeadingProps",
+              "level": 2,
+              "text": "Together, We Can Make a Difference",
+              "classes": "text-4xl font-bold text-green-900 dark:text-green-100"
+            },
+            {
+              "uuid": "footer-cta-text-011",
+              "componentType": "TextProps",
+              "content": "Your contribution directly impacts the lives of thousands of people in need. Every donation, no matter the size, brings hope and creates lasting change.",
+              "classes": "text-lg text-green-700 dark:text-green-300 max-w-3xl"
+            },
+            {
+              "uuid": "footer-impact-stats-011",
+              "componentType": "GridProps",
+              "columns": 3,
+              "gap": "8",
+              "classes": "mt-8 max-w-4xl w-full",
+              "content": [
+                {
+                  "uuid": "stat-people-011",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "stat-people-value-011",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "500K+",
+                      "classes": "text-3xl font-bold text-green-600 dark:text-green-400"
+                    },
+                    {
+                      "uuid": "stat-people-label-011",
+                      "componentType": "TextProps",
+                      "content": "Lives Impacted",
+                      "classes": "text-green-700 dark:text-green-300"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "stat-countries-011",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "stat-countries-value-011",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "45",
+                      "classes": "text-3xl font-bold text-green-600 dark:text-green-400"
+                    },
+                    {
+                      "uuid": "stat-countries-label-011",
+                      "componentType": "TextProps",
+                      "content": "Countries Reached",
+                      "classes": "text-green-700 dark:text-green-300"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "stat-projects-011",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "align": "center",
+                  "gap": "2",
+                  "content": [
+                    {
+                      "uuid": "stat-projects-value-011",
+                      "componentType": "HeadingProps",
+                      "level": 3,
+                      "text": "1,200+",
+                      "classes": "text-3xl font-bold text-green-600 dark:text-green-400"
+                    },
+                    {
+                      "uuid": "stat-projects-label-011",
+                      "componentType": "TextProps",
+                      "content": "Active Projects",
+                      "classes": "text-green-700 dark:text-green-300"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "footer-donate-buttons-011",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "4",
+              "classes": "mt-8",
+              "content": [
+                {
+                  "uuid": "footer-button-donate-monthly-011",
+                  "componentType": "ButtonProps",
+                  "text": "Donate Monthly",
+                  "variant": "default",
+                  "size": "lg",
+                  "classes": "bg-green-600 hover:bg-green-700"
+                },
+                {
+                  "uuid": "footer-button-donate-once-011",
+                  "componentType": "ButtonProps",
+                  "text": "One-Time Donation",
+                  "variant": "outline",
+                  "size": "lg",
+                  "classes": "border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-top-011",
+          "componentType": "SpacerProps",
+          "classes": "my-12 border-t border-green-200 dark:border-green-800",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-main-content-011",
+          "componentType": "GridProps",
+          "columns": 4,
+          "gap": "8",
+          "classes": "w-full pb-12",
+          "content": [
+            {
+              "uuid": "footer-col-about-011",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "4",
+              "classes": "col-span-2",
+              "content": [
+                {
+                  "uuid": "footer-logo-011",
+                  "componentType": "TextProps",
+                  "content": "Hope Foundation",
+                  "classes": "text-2xl font-bold text-green-700 dark:text-green-300"
+                },
+                {
+                  "uuid": "footer-mission-011",
+                  "componentType": "TextProps",
+                  "content": "Since 2005, we've been dedicated to creating sustainable change through education, healthcare, and environmental conservation. Our transparent approach ensures every dollar goes directly to those who need it most.",
+                  "classes": "text-green-600 dark:text-green-400"
+                },
+                {
+                  "uuid": "footer-tax-deductible-011",
+                  "componentType": "TextProps",
+                  "content": "Hope Foundation is a registered 501(c)(3) nonprofit. Tax ID: 12-3456789. All donations are tax-deductible.",
+                  "classes": "text-sm text-green-600 dark:text-green-400 italic"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-programs-011",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-programs-011",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "PROGRAMS",
+                  "classes": "text-sm font-bold text-green-700 dark:text-green-300 tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-education-011",
+                  "componentType": "LinkProps",
+                  "text": "Education",
+                  "href": "/programs/education",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                },
+                {
+                  "uuid": "footer-link-health-011",
+                  "componentType": "LinkProps",
+                  "text": "Healthcare",
+                  "href": "/programs/health",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                },
+                {
+                  "uuid": "footer-link-environment-011",
+                  "componentType": "LinkProps",
+                  "text": "Environment",
+                  "href": "/programs/environment",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                }
+              ]
+            },
+            {
+              "uuid": "footer-col-transparency-011",
+              "componentType": "FlexProps",
+              "direction": "column",
+              "gap": "3",
+              "content": [
+                {
+                  "uuid": "footer-heading-transparency-011",
+                  "componentType": "HeadingProps",
+                  "level": 4,
+                  "text": "TRANSPARENCY",
+                  "classes": "text-sm font-bold text-green-700 dark:text-green-300 tracking-wider mb-2"
+                },
+                {
+                  "uuid": "footer-link-impact-011",
+                  "componentType": "LinkProps",
+                  "text": "Impact Reports",
+                  "href": "/impact",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                },
+                {
+                  "uuid": "footer-link-financials-011",
+                  "componentType": "LinkProps",
+                  "text": "Financial Reports",
+                  "href": "/financials",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                },
+                {
+                  "uuid": "footer-link-board-011",
+                  "componentType": "LinkProps",
+                  "text": "Board of Directors",
+                  "href": "/board",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                },
+                {
+                  "uuid": "footer-link-charity-navigator-011",
+                  "componentType": "LinkProps",
+                  "text": "4-Star Rating on Charity Navigator",
+                  "href": "#",
+                  "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "footer-divider-bottom-011",
+          "componentType": "SpacerProps",
+          "classes": "my-8 border-t border-green-200 dark:border-green-800",
+          "size": "sm"
+        },
+        {
+          "uuid": "footer-bottom-011",
+          "componentType": "FlexProps",
+          "direction": "row",
+          "classes": "justify-between items-center w-full flex-wrap gap-4",
+          "content": [
+            {
+              "uuid": "footer-copyright-011",
+              "componentType": "TextProps",
+              "content": "\u00a9 2024 Hope Foundation. Together, we build a better tomorrow.",
+              "classes": "text-sm text-green-600 dark:text-green-400"
+            },
+            {
+              "uuid": "footer-social-legal-011",
+              "componentType": "FlexProps",
+              "direction": "row",
+              "gap": "6",
+              "align": "center",
+              "content": [
+                {
+                  "uuid": "footer-social-011",
+                  "componentType": "FlexProps",
+                  "gap": "3",
+                  "content": [
+                    {
+                      "uuid": "social-facebook-011",
+                      "componentType": "SocialLinkProps",
+                      "platform": "facebook",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-twitter-011",
+                      "componentType": "SocialLinkProps",
+                      "platform": "twitter",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-linkedin-011",
+                      "componentType": "SocialLinkProps",
+                      "platform": "linkedin",
+                      "url": "#"
+                    },
+                    {
+                      "uuid": "social-youtube-011",
+                      "componentType": "SocialLinkProps",
+                      "platform": "youtube",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "footer-legal-links-011",
+                  "componentType": "FlexProps",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "footer-link-privacy-011",
+                      "componentType": "LinkProps",
+                      "text": "Privacy",
+                      "href": "/privacy",
+                      "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                    },
+                    {
+                      "uuid": "footer-link-terms-011",
+                      "componentType": "LinkProps",
+                      "text": "Terms",
+                      "href": "/terms",
+                      "classes": "text-sm text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

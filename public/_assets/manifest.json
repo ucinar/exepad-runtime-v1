@@ -1,0 +1,18 @@
+[
+  {
+    "src": "images/farm-hero.jpg",
+    "placeholderType": "banner"
+  },
+  {
+    "src": "images/testimonial1.jpg",
+    "placeholderType": "avatar"
+  },
+  {
+    "src": "images/testimonial2.jpg",
+    "placeholderType": "avatar"
+  },
+  {
+    "src": "images/testimonial3.jpg",
+    "placeholderType": "avatar"
+  }
+]

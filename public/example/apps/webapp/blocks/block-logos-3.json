@@ -1,0 +1,309 @@
+{
+  "uuid": "app-customer-logos-123",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Customer Logos Page",
+  "alias": "customer-logos-page",
+  "summary": "Compact logo display with streamlined brand showcase format. Features simplified logo grid layout ideal for highlighting key partnerships and customer relationships.",
+  "shortSummary": "Compact logo display with streamlined brand showcase format",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [],
+  "footer": [],
+  "pages": [
+    {
+      "uuid": "page-customer-logos-456",
+      "title": "Customer Logos",
+      "slug": "/customers",
+      "summary": "A page displaying logos of companies we work with.",
+      "content": [
+        {
+          "uuid": "section-logos-main",
+          "componentType": "SectionProps",
+          "sectionSlug": "section-logos-main",
+          "classes": "py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6",
+          "layout": "singleColumnWide",
+          "content": [
+            {
+              "uuid": "grid-main-container",
+              "componentType": "GridProps",
+              "columns": 2,
+              "gap": "8",
+              "classes": "md:grid-cols-2 gap-8 items-center",
+              "content": [
+                {
+                  "uuid": "flex-left-text-content",
+                  "componentType": "FlexProps",
+                  "direction": "column",
+                  "gap": "4",
+                  "content": [
+                    {
+                      "uuid": "heading-customers-great",
+                      "componentType": "HeadingProps",
+                      "level": 2,
+                      "text": "Our customers make us great",
+                      "classes": "text-4xl font-extrabold"
+                    },
+                    {
+                      "uuid": "text-customers-description",
+                      "componentType": "TextProps",
+                      "content": "Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value.",
+                      "classes": "text-gray-500"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "grid-company-logos",
+                  "componentType": "GridProps",
+                  "columns": 3,
+                  "gap": "8",
+                  "classes": "grid-cols-3 text-gray-500 items-center justify-items-center",
+                  "content": [
+                    {
+                      "uuid": "logo-airbnb",
+                      "componentType": "LogoItemProps",
+                      "name": "Airbnb",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-airbnb",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png",
+                        "alt": "Airbnb logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-airbnb",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "airbnb, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-google",
+                      "componentType": "LogoItemProps",
+                      "name": "Google",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-google",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
+                        "alt": "Google logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-google",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "google, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-microsoft",
+                      "componentType": "LogoItemProps",
+                      "name": "Microsoft",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-microsoft",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+                        "alt": "Microsoft logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-microsoft",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "microsoft, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-spotify",
+                      "componentType": "LogoItemProps",
+                      "name": "Spotify",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-spotify",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2560px-Spotify_logo_with_text.svg.png",
+                        "alt": "Spotify logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-spotify",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "spotify, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-apple",
+                      "componentType": "LogoItemProps",
+                      "name": "Apple",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-apple",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/2560px-Apple_logo_black.svg.png",
+                        "alt": "Apple logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-apple",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "apple, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-mashable",
+                      "componentType": "LogoItemProps",
+                      "name": "Mashable",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-mashable",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mashable_logo.svg/2560px-Mashable_logo.svg.png",
+                        "alt": "Mashable logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-mashable",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "mashable, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-mailchimp",
+                      "componentType": "LogoItemProps",
+                      "name": "Mailchimp",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-mailchimp",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mailchimp-Logo.svg/2560px-Mailchimp-Logo.svg.png",
+                        "alt": "Mailchimp logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-mailchimp",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "mailchimp, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-slack",
+                      "componentType": "LogoItemProps",
+                      "name": "Slack",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-slack",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/2560px-Slack_Technologies_Logo.svg.png",
+                        "alt": "Slack logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-slack",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "slack, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    },
+                    {
+                      "uuid": "logo-ted",
+                      "componentType": "LogoItemProps",
+                      "name": "TED",
+                      "grayscale": true,
+                      "logo": {
+                        "uuid": "img-ted",
+                        "componentType": "ImageProps",
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/TED_logo.svg/2560px-TED_logo.svg.png",
+                        "alt": "TED logo",
+                        "classes": "h-12",
+                        "asset": {
+                          "uuid": "asset-img-ted",
+                          "componentType": "ImageAssetProps",
+                          "keywords": "ted, logo",
+                          "isProcessed": true,
+                          "requestedWidth": 120,
+                          "requestedHeight": 48
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "shortSummary": "A page displaying logos of companies we work with",
+      "lastUpdatedEpoch": 1701192800,
+      "pageType": "WebPageProps"
+    }
+  ]
+}

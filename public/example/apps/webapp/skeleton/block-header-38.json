@@ -1,0 +1,120 @@
+{
+  "uuid": "6bf1ae44-3dc1-4a31-a19c-d6b32d2490a4",
+  "appType": "WebAppProps",
+  "appSecondaryType": "website",
+  "name": "Header Block 38",
+  "alias": "header-block-38",
+  "summary": "Minimalist left-aligned logo navigation with ONLY 2 simple links (Home, About) and 1 primary CTA button (Contact). Menu items SCALE UP with DRAMATIC SLOW animation (700ms duration, 200ms delay) for theatrical effect. Navbar scrolls normally. Ideal for: artistic portfolios, theatrical presentations, dramatic brand experiences needing slow, emphasized interactions.",
+  "shortSummary": "Minimal left-logo nav: 2 links + 1 CTA button. Dramatic slow scale (700ms). Scrolls normally.",
+  "lastUpdatedEpoch": 1701192800,
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "primary": "#0f172a",
+      "primary-foreground": "#f8fafc",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#f8fafc",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#0f172a"
+    },
+    "dark": {
+      "background": "#0f172a",
+      "foreground": "#f8fafc",
+      "primary": "#f8fafc",
+      "primary-foreground": "#0f172a",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#7f1d1d",
+      "destructive-foreground": "#f8fafc",
+      "border": "#1e293b",
+      "input": "#1e293b",
+      "ring": "#94a3b8"
+    }
+  },
+  "languages": [
+    {
+      "code": "en",
+      "nameEnglish": "English",
+      "nameNative": "English",
+      "isDefault": true
+    }
+  ],
+  "layout": "wide",
+  "menuPosition": "HeaderMenuTop",
+  "sidebar": [],
+  "header": [
+    {
+      "uuid": "b1936cf8-baf6-465e-9bc7-d62960deeb3e",
+      "componentType": "NavbarProps",
+      "variant": "default",
+      "menuVariant": "scale",
+      "sticky": false,
+      "logo": {
+        "uuid": "081a87be-e8b6-4dd5-b0c6-9408fef9a61f",
+        "componentType": "NavbarLogoProps",
+        "type": "text",
+        "text": "Creative Co",
+        "classes": "text-2xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+      },
+      "content": [
+        {
+          "uuid": "b5b00606-59d4-41b5-a4a8-e930d58b516d",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "Home",
+          "href": {
+            "uuid": "34b9e494-6a48-4a66-81ce-84c6214e0a52",
+            "componentType": "LinkProps",
+            "href": "/",
+            "text": "Home"
+          }
+        },
+        {
+          "uuid": "7b39fa93-f34d-4dd2-8de6-08cf7e61d3ae",
+          "componentType": "MenuLinkItemProps",
+          "type": "link",
+          "label": "About",
+          "href": {
+            "uuid": "3f29580a-e752-416e-8a99-e0a9ff1bcbce",
+            "componentType": "LinkProps",
+            "href": "/about",
+            "text": "About"
+          }
+        },
+        {
+          "uuid": "22fe23ea-b203-4e81-9133-d25447f1aeed",
+          "componentType": "MenuButtonItemProps",
+          "type": "button",
+          "button": {
+            "uuid": "02197355-f4ea-40a0-9276-e09b4f8a94a1",
+            "componentType": "ButtonProps",
+            "text": "Contact",
+            "variant": "default",
+            "link": {
+              "uuid": "d7f43bd6-4512-440a-86ed-31f07a660065",
+              "componentType": "LinkProps",
+              "href": "/contact",
+              "text": "Contact"
+            }
+          }
+        }
+      ],
+      "menuAnimationDuration": 700,
+      "menuAnimationDelay": 200
+    }
+  ],
+  "pages": [],
+  "footer": []
+}
