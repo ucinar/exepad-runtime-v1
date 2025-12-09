@@ -13,6 +13,9 @@ import BaseAppPageRenderer from '@/app/_shared/components/BaseAppPageRenderer';
 // This is a proper Next.js approach instead of the headers() hack
 export const dynamic = 'force-dynamic';
 
+// Configure to run with Edge Runtime for Cloudflare Pages
+export const runtime = 'edge';
+
 interface PageProps {
   params: Promise<{
     app_id: string;

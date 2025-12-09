@@ -13,6 +13,9 @@ import { generateAppMetadata } from '@/app/_shared/utils/metadataGenerator';
 import { UnifiedErrorDisplay } from '@/app/_shared/components/AppErrorDisplay';
 import BaseAppPageRenderer from '@/app/_shared/components/BaseAppPageRenderer';
 
+// Configure to run with Edge Runtime for Cloudflare Pages
+export const runtime = 'edge';
+
 interface PageProps {
   params: Promise<{
     app_id: string;

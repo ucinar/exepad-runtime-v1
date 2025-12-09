@@ -189,6 +189,26 @@ export class ConfigService {
     }
 
     try {
+      // Edge Runtime: Use fetch to access public files
+      // Check if we're in Edge Runtime by checking if process.cwd is unavailable
+      const isEdgeRuntime = process.env.NEXT_RUNTIME === 'edge';
+      
+      if (isEdgeRuntime) {
+        // In Edge Runtime, we need an absolute URL for fetch
+        // Use the request URL's origin or fallback to localhost for dev
+        const origin = process.env.VERCEL_URL 
+          ? `https://${process.env.VERCEL_URL}`
+          : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001';
+        
+        const url = `${origin}/demo/${appId}.json`;
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Demo config not found: ${appId}`);
+        }
+        return await response.json();
+      }
+
+      // Node.js Runtime: Use filesystem
       // Use dynamic module names to prevent webpack from statically analyzing these imports
       // These modules are only available server-side and will never execute in the browser
       // @ts-ignore - dynamic import for server-side only
@@ -223,6 +243,41 @@ export class ConfigService {
     }
 
     try {
+      // Edge Runtime: Use fetch to access public files
+      // Check if we're in Edge Runtime by checking the runtime environment
+      const isEdgeRuntime = process.env.NEXT_RUNTIME === 'edge';
+      
+      if (isEdgeRuntime) {
+        // In Edge Runtime, we need an absolute URL for fetch
+        // Use the request URL's origin or fallback to localhost for dev
+        const origin = process.env.VERCEL_URL 
+          ? `https://${process.env.VERCEL_URL}`
+          : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001';
+        
+        const fullPath = [appId, ...(slugSegments || [])];
+        
+        // Try progressively shorter paths until we find a JSON file
+        for (let i = fullPath.length; i >= 1; i--) {
+          const pathSegments = fullPath.slice(0, i);
+          const url = `${origin}/example/${pathSegments.join('/')}.json`;
+          
+          try {
+            const response = await fetch(url);
+            if (response.ok) {
+              const config = await response.json();
+              console.log(`[ConfigService] Found example config at: ${url}`);
+              return config;
+            }
+          } catch {
+            // File doesn't exist, try next shorter path
+            continue;
+          }
+        }
+        
+        throw new Error(`Example config not found: ${appId}`);
+      }
+
+      // Node.js Runtime: Use filesystem
       // Use dynamic module names to prevent webpack from statically analyzing these imports
       // These modules are only available server-side and will never execute in the browser
       // @ts-ignore - dynamic import for server-side only
