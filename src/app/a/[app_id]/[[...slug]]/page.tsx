@@ -38,7 +38,7 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
   const result = await getConfig({
     source: 'backend',
     appId: cleanAppId,
-    mode: isPreview ? 'preview' : 'deployed',
+    mode: isPreview ? 'preview' : 'published',
     slugSegments: slug,
     cache: isPreview ? 'no-store' : 'default'
   });
@@ -76,7 +76,7 @@ export default async function AppPage({ params, searchParams }: PageProps) {
   const result = await getConfig({
     source: 'backend',
     appId: cleanAppId,
-    mode: isPreview ? 'preview' : 'deployed',
+    mode: isPreview ? 'preview' : 'published',
     slugSegments: slug,
     cache: isPreview ? 'no-store' : 'default'
   });

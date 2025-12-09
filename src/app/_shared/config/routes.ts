@@ -15,7 +15,7 @@ export interface RouteConfig {
   /** Cache strategy for data fetching */
   cache: 'no-store' | 'force-cache' | 'default';
   /** Mode for config fetching */
-  mode: 'deployed' | 'preview';
+  mode: 'published' | 'preview';
   /** Whether this route type requires authentication */
   requiresAuth?: boolean;
   /** Whether this is a client-rendered route */
@@ -27,7 +27,7 @@ export const ROUTE_CONFIG: Record<RouteType, RouteConfig> = {
     prefix: '/a',
     source: 'backend',
     cache: 'default',
-    mode: 'deployed',
+    mode: 'published',
     requiresAuth: false,
     isClientRendered: false,
   },
@@ -43,7 +43,7 @@ export const ROUTE_CONFIG: Record<RouteType, RouteConfig> = {
     prefix: '/demo',
     source: 'demo',
     cache: 'default',
-    mode: 'deployed',
+    mode: 'published',
     requiresAuth: false,
     isClientRendered: false,
   },
@@ -51,7 +51,7 @@ export const ROUTE_CONFIG: Record<RouteType, RouteConfig> = {
     prefix: '/example',
     source: 'example',
     cache: 'no-store', // Force fresh data for examples
-    mode: 'deployed',
+    mode: 'published',
     requiresAuth: false,
     isClientRendered: false,
   },

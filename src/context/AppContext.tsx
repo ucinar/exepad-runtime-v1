@@ -8,7 +8,7 @@ interface AppContextProps {
   basePath: string;
   currentPageSlug?: string;
   currentPageUuid?: string;
-  mode?: 'preview' | 'deployed';
+  mode?: 'preview' | 'published';
 }
 
 // Create the context with an undefined default value
@@ -29,7 +29,7 @@ export const AppContextProvider = ({
   basePath: string; 
   currentPageSlug?: string;
   currentPageUuid?: string;
-  mode?: 'preview' | 'deployed';
+  mode?: 'preview' | 'published';
 }) => {
   return (
     <AppContext.Provider value={{ basePath, currentPageSlug, currentPageUuid, mode }}>

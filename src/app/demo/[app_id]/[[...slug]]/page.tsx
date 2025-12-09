@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const result = await getConfig({
     source: 'demo',
     appId: app_id,
-    mode: 'deployed',
+    mode: 'published',
     slugSegments: slug,
     cache: 'default'
   });
@@ -62,7 +62,7 @@ export default async function DemoPage({ params }: PageProps) {
   const result = await getConfig({
     source: 'demo',
     appId: app_id,
-    mode: 'deployed',
+    mode: 'published',
     slugSegments: slug,
     cache: 'default'
   });

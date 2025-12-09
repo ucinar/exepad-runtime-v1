@@ -28,7 +28,7 @@ describe('ConfigService', () => {
           text: async () => JSON.stringify({ uuid: 'test-app', name: 'Test App' }),
         });
 
-      const config = await ConfigService.fetch('test-app', 'deployed');
+      const config = await ConfigService.fetch('test-app', 'published');
 
       expect(config).toBeDefined();
       expect(config?.uuid).toBe('test-app');

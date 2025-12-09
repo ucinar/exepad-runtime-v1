@@ -37,7 +37,7 @@ export class ConfigService {
    */
   static async fetch(
     appId: string,
-    mode: 'deployed' | 'preview',
+    mode: 'published' | 'preview',
     options: FetchOptions = {}
   ): Promise<WebAppProps | null> {
     const { source = 'backend', cache = 'no-store', retries = 3, slugSegments } = options;
@@ -55,7 +55,7 @@ export class ConfigService {
    */
   private static async fetchWithRetries(
     appId: string,
-    mode: 'deployed' | 'preview',
+    mode: 'published' | 'preview',
     source: ConfigSource,
     retries: number,
     slugSegments?: string[],
@@ -108,7 +108,7 @@ export class ConfigService {
    */
   private static async fetchFromBackend(
     appId: string,
-    mode: 'deployed' | 'preview',
+    mode: 'published' | 'preview',
     cache?: RequestCache
   ): Promise<WebAppProps | null> {
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
@@ -117,7 +117,7 @@ export class ConfigService {
     }
 
     // For preview mode, always use no-store to bypass cache
-    // For deployed mode, use the provided cache option (defaults to 'default')
+    // For published mode, use the provided cache option (defaults to 'default')
     const cacheOption = mode === 'preview' ? 'no-store' : (cache || 'default');
 
     // Add cache-busting query parameter for preview mode to ensure fresh data
@@ -164,7 +164,7 @@ export class ConfigService {
    */
   private static async fetchFromPublicDir(
     appId: string,
-    mode: 'deployed' | 'preview'
+    mode: 'published' | 'preview'
   ): Promise<WebAppProps | null> {
     const fileName = mode === 'preview' ? `${appId}-preview.json` : `${appId}.json`;
     const publicPath = `/configs/${fileName}`;

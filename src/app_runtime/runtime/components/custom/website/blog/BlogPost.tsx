@@ -130,7 +130,7 @@ export const BlogPost: React.FC<BlogPostPageProps & {
       const params = new URLSearchParams({
         app_uuid: app_uuid,
         slug: normalizedSlug,
-        mode: mode || 'deployed', // Pass mode to backend to handle preview/deployed
+        mode: mode || 'published', // Pass mode to backend to handle preview/published
       });
 
       // Step 1: Fetch the config URL from the backend

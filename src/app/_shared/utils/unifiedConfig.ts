@@ -16,7 +16,7 @@ import { PageProps as AppPageProps } from '@/interfaces/apps/page';
 import { ConfigService } from '@/services/ConfigService';
 
 export type ConfigSource = 'backend' | 'demo' | 'example';
-export type ConfigMode = 'deployed' | 'preview';
+export type ConfigMode = 'published' | 'preview';
 
 export interface UnifiedConfigParams {
   source: ConfigSource;
