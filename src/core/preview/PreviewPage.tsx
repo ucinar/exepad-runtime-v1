@@ -66,9 +66,16 @@ export default function PreviewPage({
   basePath,
   currentPath,
 }: PreviewPageProps) {
+  // =========================================================================
+  // ALL HOOKS MUST BE AT THE TOP - React Rules of Hooks
+  // =========================================================================
   const [appConfig, setAppConfig] = useState<WebAppProps | null>(initialConfig);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [authChecking, setAuthChecking] = useState(true);
+  const router = useRouter();  // MOVED: Must be before any conditional returns
+
+  // Compute currentPage early (needed for useEffect dependency)
+  const currentPage = appConfig ? (initialPage || findPageBySlug(appConfig, currentPath)) : null;
 
   // Client-side authentication check (defense-in-depth)
   // This runs in addition to middleware protection
@@ -94,7 +101,16 @@ export default function PreviewPage({
     })();
   }, []);
 
-  //console.log('[PreviewPage] AppConfig:', appConfig);
+  // MOVED: Handle missing page navigation - must be before conditional returns
+  useEffect(() => {
+    if (appConfig && !currentPage && !authChecking) {
+      router.replace(basePath);
+    }
+  }, [currentPage, basePath, router, appConfig, authChecking]);
+
+  // =========================================================================
+  // CONDITIONAL RETURNS - Safe to return early after all hooks
+  // =========================================================================
 
   // Show loading while checking authentication
   if (authChecking) {
@@ -147,16 +163,7 @@ export default function PreviewPage({
     );
   }
 
-  // Handle missing page (use initialPage or fallback)
-  const currentPage = initialPage || findPageBySlug(appConfig, currentPath);
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!currentPage) {
-      router.replace(basePath);
-    }
-  }, [currentPage, basePath, router]);
-
+  // Handle missing page
   if (!currentPage) {
     return null;
   }
