@@ -154,6 +154,82 @@ export async function getJWTTokenFromCookieAPI(): Promise<string | undefined> {
 }
 
 /**
+ * Exchange a preview token (from URL) for a JWT
+ * This is used when preview is opened in a new browser tab
+ * 
+ * The preview token is a short-lived, signed token that can be
+ * exchanged for a full JWT for WebSocket authentication.
+ */
+export async function exchangePreviewToken(): Promise<string | undefined> {
+  if (typeof window === 'undefined') return undefined;
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const previewToken = urlParams.get('pt');
+  
+  if (!previewToken) return undefined;
+  
+  try {
+    console.log('[JWT Helper] Found preview token in URL, exchanging...');
+    
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://backend.exepad.com';
+    const response = await fetch(`${backendUrl}/api/auth/exchange-preview-token/`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: previewToken }),
+    });
+    
+    if (!response.ok) {
+      console.warn('[JWT Helper] Preview token exchange failed:', response.status);
+      // Clean URL even on failure to prevent retry loops
+      cleanPreviewTokenFromURL();
+      return undefined;
+    }
+    
+    const data = await response.json();
+    
+    if (data.jwt) {
+      console.log('[JWT Helper] ✅ Got JWT from preview token');
+      console.log('[JWT Helper] User:', data.user?.email || 'unknown');
+      
+      // Store for future use
+      setJWTTokenInStorage(data.jwt);
+      
+      // Clean URL - remove the preview token parameter
+      cleanPreviewTokenFromURL();
+      
+      return data.jwt;
+    }
+    
+    console.warn('[JWT Helper] Preview token response missing jwt field');
+    cleanPreviewTokenFromURL();
+    return undefined;
+    
+  } catch (error) {
+    console.warn('[JWT Helper] Preview token exchange error:', error);
+    cleanPreviewTokenFromURL();
+    return undefined;
+  }
+}
+
+/**
+ * Remove the preview token from the URL without reloading the page
+ */
+function cleanPreviewTokenFromURL(): void {
+  if (typeof window === 'undefined') return;
+  
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.delete('pt');
+    const newSearch = urlParams.toString();
+    const newUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '') + window.location.hash;
+    window.history.replaceState({}, '', newUrl);
+    console.log('[JWT Helper] Cleaned preview token from URL');
+  } catch (e) {
+    console.warn('[JWT Helper] Could not clean URL:', e);
+  }
+}
+
+/**
  * Request JWT token from parent window via postMessage
  * Returns a promise that resolves when the token is received
  */
@@ -204,9 +280,9 @@ export function requestJWTTokenFromParent(timeout: number = 5000): Promise<strin
  * 
  * Fallback chain (in order):
  * 1. Memory/session storage (instant)
- * 2. Cookie-authenticated API (works in separate tabs)
+ * 2. Preview token in URL (new tab with ?pt= parameter)
  * 3. postMessage from parent (works in iframe)
- * 4. Environment variable (development only)
+ * 4. Cookie-authenticated API (fallback)
  */
 export async function getJWTTokenAsync(): Promise<string | undefined> {
   // 1. Try immediate sources first (fastest - no network call)
@@ -215,24 +291,31 @@ export async function getJWTTokenAsync(): Promise<string | undefined> {
     return immediateToken;
   }
 
-  // 2. Try cookie-authenticated API (works in separate tabs AND iframe)
-  console.log('[JWT Helper] No cached token, trying cookie-authenticated API...');
-  const cookieToken = await getJWTTokenFromCookieAPI();
-  if (cookieToken) {
-    return cookieToken;
+  // 2. Try preview token exchange (new tab opened with ?pt= parameter)
+  console.log('[JWT Helper] No cached token, checking for preview token in URL...');
+  const previewTokenJWT = await exchangePreviewToken();
+  if (previewTokenJWT) {
+    return previewTokenJWT;
   }
 
-  // 3. If in iframe, try postMessage from parent (fallback for cross-domain issues)
+  // 3. If in iframe, try postMessage from parent
   if (typeof window !== 'undefined' && window.parent !== window) {
-    console.log('[JWT Helper] Cookie API failed, trying postMessage from parent iframe...');
+    console.log('[JWT Helper] No preview token, trying postMessage from parent iframe...');
     const parentToken = await requestJWTTokenFromParent();
     if (parentToken) {
       return parentToken;
     }
   }
 
+  // 4. Try cookie-authenticated API (fallback for direct navigation)
+  console.log('[JWT Helper] Trying cookie-authenticated API...');
+  const cookieToken = await getJWTTokenFromCookieAPI();
+  if (cookieToken) {
+    return cookieToken;
+  }
+
   console.error('[JWT Helper] ❌ Could not obtain JWT token from any source');
-  console.error('[JWT Helper] Tried: cached storage → cookie API → postMessage');
+  console.error('[JWT Helper] Tried: cached storage → preview token → postMessage → cookie API');
   return undefined;
 }
 
