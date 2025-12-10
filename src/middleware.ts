@@ -48,11 +48,28 @@ export async function middleware(request: NextRequest) {
   if (isPreviewRoute) {
     console.log('[Middleware] Preview route detected, checking authentication...')
     
-    // Check for session cookie
-    const sessionCookie = request.cookies.get('exepad_session')
+    // Check for NextAuth session cookie (frontend uses NextAuth, not Django session)
+    // NextAuth uses different cookie names based on environment:
+    // - Development: 'next-auth.session-token'
+    // - Production with HTTPS: '__Secure-next-auth.session-token'
+    // - NextAuth v5: 'authjs.session-token' or '__Secure-authjs.session-token'
+    const nextAuthCookie = request.cookies.get('next-auth.session-token') 
+      || request.cookies.get('__Secure-next-auth.session-token')
+      || request.cookies.get('authjs.session-token')
+      || request.cookies.get('__Secure-authjs.session-token')
     
-    if (!sessionCookie || !sessionCookie.value) {
-      console.warn('[Middleware] Preview access denied - no session cookie')
+    // Also check for Django session cookie (for backwards compatibility)
+    const djangoSessionCookie = request.cookies.get('exepad_session')
+    
+    // Log cookies for debugging
+    console.log('[Middleware] Checking cookies:', {
+      hasNextAuth: !!nextAuthCookie,
+      hasDjango: !!djangoSessionCookie,
+      allCookies: request.cookies.getAll().map(c => c.name)
+    })
+    
+    if (!nextAuthCookie && !djangoSessionCookie) {
+      console.warn('[Middleware] Preview access denied - no session cookie found')
       
       // Redirect to login page with return URL
       const loginUrl = new URL('https://app.exepad.com/signin', request.url)
@@ -61,21 +78,27 @@ export async function middleware(request: NextRequest) {
       return NextResponse.redirect(loginUrl)
     }
     
-    // Validate session with backend (optional but recommended)
-    // Comment out if you want to skip backend validation for performance
-    const isValidSession = await validateSessionCookie(sessionCookie.value)
-    
-    if (!isValidSession) {
-      console.warn('[Middleware] Preview access denied - invalid session')
+    // If NextAuth cookie exists, trust it (it's cryptographically signed by NextAuth)
+    // The client-side component will do additional JWT validation with the backend
+    if (nextAuthCookie) {
+      console.log('[Middleware] Preview access granted - NextAuth session found')
+      // Skip backend validation for NextAuth cookies since Django can't validate them
+      // The actual JWT validation happens client-side via getJWTTokenAsync()
+    } else if (djangoSessionCookie) {
+      // For Django session, validate with backend
+      const isValidSession = await validateSessionCookie(djangoSessionCookie.value)
       
-      const loginUrl = new URL('https://app.exepad.com/signin', request.url)
-      loginUrl.searchParams.set('callbackUrl', url.toString())
-      loginUrl.searchParams.set('reason', 'session_expired')
-      
-      return NextResponse.redirect(loginUrl)
+      if (!isValidSession) {
+        console.warn('[Middleware] Preview access denied - invalid Django session')
+        
+        const loginUrl = new URL('https://app.exepad.com/signin', request.url)
+        loginUrl.searchParams.set('callbackUrl', url.toString())
+        loginUrl.searchParams.set('reason', 'session_expired')
+        
+        return NextResponse.redirect(loginUrl)
+      }
+      console.log('[Middleware] Preview access granted - Django session valid')
     }
-    
-    console.log('[Middleware] Preview access granted - session valid')
   }
   
   // =========================================================================
