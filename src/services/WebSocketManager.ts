@@ -5,7 +5,6 @@
  * IMPORTANT: This should only be imported in preview mode
  */
 
-import { signMessage, getMessageSecret } from '../lib/ws-auth';
 import { toast } from 'sonner';
 
 export type ConnectionStatus = 'disconnected' | 'connecting' | 'connected' | 'error';
@@ -65,8 +64,10 @@ export class WebSocketManager {
 
   /**
    * Connect to WebSocket server
+   * @param appId - Application ID
+   * @param jwtToken - Optional JWT token for authentication (preview mode)
    */
-  async connect(appId: string): Promise<void> {
+  async connect(appId: string, jwtToken?: string): Promise<void> {
     this.appId = appId;
 
     const wsUrl =
@@ -79,8 +80,19 @@ export class WebSocketManager {
     }
 
     // Use the correct runtime-bridge URL with query parameters
-    const fullUrl = `${wsUrl}/ws/runtime-bridge/?type=runtime&app_uuid=${appId}`;
-    console.log(`[WS] Attempting connection to: ${fullUrl}`);
+    let fullUrl = `${wsUrl}/ws/runtime-bridge/?type=runtime&app_uuid=${appId}`;
+    
+    // Add JWT token if provided (for authenticated preview mode)
+    if (jwtToken) {
+      fullUrl += `&token=${encodeURIComponent(jwtToken)}`;
+      console.log('[WS] Connecting with JWT authentication');
+    } else {
+      console.log('[WS] Connecting without JWT (published mode or missing token)');
+    }
+    
+    // Log URL without exposing the token
+    const sanitizedUrl = fullUrl.replace(/token=[^&]+/, 'token=***');
+    console.log(`[WS] Attempting connection to: ${sanitizedUrl}`);
 
     try {
       this.ws = new WebSocket(fullUrl);
@@ -224,7 +236,7 @@ export class WebSocketManager {
 
   /**
    * Send message to server
-   * Messages are signed with HMAC for authentication and validated for size
+   * Authentication is handled by JWT at connection level
    */
   async send(message: Message, options?: SendOptions): Promise<void> {
     const { deduplicate = false } = options || {};
@@ -236,23 +248,9 @@ export class WebSocketManager {
       message.id = messageId;
     }
 
-    // Sign message before sending (except for system messages)
-    const systemMessages = ['ping', 'pong', 'get_connection_info'];
-    let signedMessage = message;
-
-    if (!systemMessages.includes(message.type)) {
-      try {
-        const secret = getMessageSecret();
-        signedMessage = await signMessage(message, secret);
-      } catch (error) {
-        console.error('[WS] Failed to sign message:', error);
-        throw new Error('Message signing failed');
-      }
-    }
-
     // Check message size (1MB limit)
     const MAX_MESSAGE_SIZE = 1 * 1024 * 1024; // 1MB
-    const messageStr = JSON.stringify(signedMessage);
+    const messageStr = JSON.stringify(message);
     const messageSize = new Blob([messageStr]).size;
 
     if (messageSize > MAX_MESSAGE_SIZE) {
@@ -270,10 +268,10 @@ export class WebSocketManager {
       this.ws.send(messageStr);
       console.log(`[WS] Sent message: ${message.type}${messageId ? ` (id: ${messageId})` : ''}`);
     } else {
-      // Queue message if disconnected (queue the unsigned message, sign on send)
+      // Queue message if disconnected
       if (this.messageQueue.length < 100) {
         this.messageQueue.push({
-          message,  // Store unsigned message, will sign when sending from queue
+          message,
           options,
           timestamp: Date.now(),
           id: messageId || `queued-${Date.now()}`

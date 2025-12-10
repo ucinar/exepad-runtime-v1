@@ -20,6 +20,8 @@ import { PersistenceService, ContentUpdate } from '../services/PersistenceServic
 import { ConfigService } from '../services/ConfigService';
 import { useAppStore } from '../stores/appStore';
 import { useLifecycle } from '../hooks/useLifecycle';
+import { getJWTTokenAsync } from '../lib/jwt-helper';
+import { toast } from 'sonner';
 
 /**
  * Check if we're running inside an iframe (the editor embeds preview in iframe)
@@ -118,24 +120,49 @@ export function EditModeProvider({ children, isPreview, appId }: EditModeProvide
   const [isSaving, setIsSaving] = React.useState(false);
   const [wsEditMode, setWsEditMode] = React.useState(false);
 
-  // Initialize services - only connect WebSocket if in editor iframe
+  // Initialize services - connect WebSocket in preview mode (works in iframe OR separate tab)
   useEffect(() => {
     if (!isPreview) return;
     
-    // Skip WebSocket connection if not in editor iframe
-    // This saves resources when preview is opened in a new tab
-    if (!isInEditorIframe) {
-      console.log('[EditModeProvider] Skipping WebSocket connection (not in editor iframe)');
-      return;
-    }
-
+    // Note: We now support WebSocket in both iframe AND separate tabs!
+    // Cookie-based authentication allows this to work anywhere.
+    
     wsManagerRef.current = WebSocketManager.getInstance();
     persistenceServiceRef.current = new PersistenceService();
 
-    // Connect WebSocket
-    wsManagerRef.current.connect(appId).catch((error) => {
-      console.error('[EditModeProvider] WebSocket connection failed:', error);
-    });
+    // Connect WebSocket with JWT authentication
+    (async () => {
+      try {
+        console.log('[EditModeProvider] Fetching JWT token for WebSocket authentication...');
+        
+        // This now tries multiple sources:
+        // 1. Cached token (session storage)
+        // 2. Cookie-authenticated API (works in separate tabs!)
+        // 3. postMessage from parent (works in iframe)
+        const jwtToken = await getJWTTokenAsync();
+        
+        if (jwtToken) {
+          console.log('[EditModeProvider] ✅ JWT token obtained, connecting to WebSocket...');
+          await wsManagerRef.current!.connect(appId, jwtToken);
+        } else {
+          console.warn('[EditModeProvider] ❌ No JWT token available - WebSocket disabled');
+          console.warn('[EditModeProvider] Preview will be read-only without authentication');
+          
+          // Show friendly message to user
+          toast.info('Limited Preview Mode', {
+            description: 'Please log in to enable edit mode and live updates.',
+            duration: 5000,
+          });
+        }
+      } catch (error) {
+        console.error('[EditModeProvider] WebSocket connection failed:', error);
+        
+        toast.error('Connection Failed', {
+          description: 'Could not connect to server. Some features may be limited.',
+          duration: 5000,
+        });
+      }
+    })();
 
     // Subscribe to connection status changes
     const unsubscribe = wsManagerRef.current.subscribe('connection', (message) => {
@@ -156,7 +183,7 @@ export function EditModeProvider({ children, isPreview, appId }: EditModeProvide
     });
 
     // Note: lifecycle.cleanup() is automatically called on unmount by useLifecycle hook
-  }, [isPreview, appId, isInEditorIframe]);
+  }, [isPreview, appId]);  // Removed isInEditorIframe dependency - works anywhere now!
 
   // Handle WebSocket messages
   const handleWebSocketMessage = useCallback((message: any) => {

@@ -36,6 +36,7 @@ import { BlogMain } from '@/app_runtime/runtime/components/custom/website/blog/B
 import { BlogPost } from '@/app_runtime/runtime/components/custom/website/blog/BlogPost';
 import type { BlogMainPageProps, BlogPostPageProps } from '@/app_runtime/interfaces/components/website/blog/blog';
 import { HashScrollHandler } from '@/components/HashScrollHandler';
+import { getJWTTokenAsync } from '@/lib/jwt-helper';
 
 // Lazy load preview-only components to optimize bundle
 const EditModeToolbar = dynamic(() => import('@/components/editable/EditModeToolbar'), {
@@ -66,8 +67,71 @@ export default function PreviewPage({
   currentPath,
 }: PreviewPageProps) {
   const [appConfig, setAppConfig] = useState<WebAppProps | null>(initialConfig);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+  const [authChecking, setAuthChecking] = useState(true);
+
+  // Client-side authentication check (defense-in-depth)
+  // This runs in addition to middleware protection
+  useEffect(() => {
+    (async () => {
+      try {
+        console.log('[PreviewPage] Verifying authentication...');
+        const token = await getJWTTokenAsync();
+        
+        if (token) {
+          console.log('[PreviewPage] ✅ Authentication verified');
+          setIsAuthenticated(true);
+        } else {
+          console.warn('[PreviewPage] ❌ No authentication token available');
+          setIsAuthenticated(false);
+        }
+      } catch (error) {
+        console.error('[PreviewPage] Authentication check failed:', error);
+        setIsAuthenticated(false);
+      } finally {
+        setAuthChecking(false);
+      }
+    })();
+  }, []);
 
   //console.log('[PreviewPage] AppConfig:', appConfig);
+
+  // Show loading while checking authentication
+  if (authChecking) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+          <p className="text-gray-600">Verifying authentication...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show auth required message if not authenticated
+  if (isAuthenticated === false) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center max-w-md p-8">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <svg className="w-16 h-16 text-blue-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <h1 className="text-2xl font-bold mb-4 text-gray-900">Authentication Required</h1>
+            <p className="text-gray-600 mb-6">
+              Preview mode requires authentication. Please log in to continue.
+            </p>
+            <a 
+              href={`https://app.exepad.com/signin?callbackUrl=${encodeURIComponent(window.location.href)}`}
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg transition-colors"
+            >
+              Go to Login
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Handle missing config (error state is handled by parent route)
   if (!appConfig) {
