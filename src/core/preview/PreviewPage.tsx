@@ -104,26 +104,9 @@ export default function PreviewPage({
   // MOVED: Handle missing page navigation - must be before conditional returns
   useEffect(() => {
     if (appConfig && !currentPage && !authChecking) {
-      console.warn('[PreviewPage] Missing currentPage:', {
-        currentPathProp: currentPath,
-        basePath,
-        hasConfig: !!appConfig,
-        hasInitialPage: !!initialPage
-      });
-
-      // Prevent infinite loop if we're already at the base path
-      // Normalize paths by removing trailing slashes for comparison
-      const browserPath = window.location.pathname.replace(/\/$/, '');
-      const targetPath = basePath.replace(/\/$/, '');
-      
-      if (browserPath === targetPath) {
-        console.error('[PreviewPage] Infinite loop prevented: currentPage is null at basePath');
-        return;
-      }
-
       router.replace(basePath);
     }
-  }, [currentPage, basePath, router, appConfig, authChecking, currentPath, initialPage]);
+  }, [currentPage, basePath, router, appConfig, authChecking]);
 
   // =========================================================================
   // CONDITIONAL RETURNS - Safe to return early after all hooks

@@ -31,36 +31,45 @@ interface PageProps {
  * Uses React cache() to prevent redundant fetches
  */
 export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
-  const { app_id, slug } = await params;
-  const searchParamsObj = await searchParams;
+  try {
+    const { app_id, slug } = await params;
+    const searchParamsObj = await searchParams;
 
-  // Parse preview mode with query param support
-  const { isPreview, cleanAppId } = parsePreviewMode(app_id, searchParamsObj);
+    // Parse preview mode with query param support
+    const { isPreview, cleanAppId } = parsePreviewMode(app_id, searchParamsObj);
 
-  // Fetch config using unified config - this will be reused by the page component
-  const result = await getConfig({
-    source: 'backend',
-    appId: cleanAppId,
-    mode: isPreview ? 'preview' : 'published',
-    slugSegments: slug,
-    cache: isPreview ? 'no-store' : 'default'
-  });
+    // Fetch config using unified config - this will be reused by the page component
+    const result = await getConfig({
+      source: 'backend',
+      appId: cleanAppId,
+      mode: isPreview ? 'preview' : 'published',
+      slugSegments: slug,
+      cache: isPreview ? 'no-store' : 'default'
+    });
 
-  if (!result) {
+    if (!result) {
+      return generateAppMetadata({
+        appConfig: null,
+        routeType: isPreview ? 'preview' : 'production',
+        appId: cleanAppId
+      });
+    }
+
     return generateAppMetadata({
-      appConfig: null,
+      appConfig: result.config,
+      currentPage: result.currentPage,
+      pageSlug: result.pageSlug,
       routeType: isPreview ? 'preview' : 'production',
       appId: cleanAppId
     });
+  } catch (error) {
+    console.error('[AppPage] Error generating metadata:', error);
+    // Return basic metadata on error
+    return {
+      title: 'Error',
+      description: 'An error occurred while loading the page'
+    };
   }
-
-  return generateAppMetadata({
-    appConfig: result.config,
-    currentPage: result.currentPage,
-    pageSlug: result.pageSlug,
-    routeType: isPreview ? 'preview' : 'production',
-    appId: cleanAppId
-  });
 }
 
 /**
@@ -69,58 +78,71 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
  * Uses React cache() to deduplicate with generateMetadata
  */
 export default async function AppPage({ params, searchParams }: PageProps) {
-  const { app_id, slug } = await params;
-  const searchParamsObj = await searchParams;
+  try {
+    const { app_id, slug } = await params;
+    const searchParamsObj = await searchParams;
 
-  // Determine if this is preview or published mode using shared utility
-  const { isPreview, cleanAppId } = parsePreviewMode(app_id, searchParamsObj);
+    // Determine if this is preview or published mode using shared utility
+    const { isPreview, cleanAppId } = parsePreviewMode(app_id, searchParamsObj);
 
-  // Fetch config using unified config - this reuses the fetch from generateMetadata
-  const result = await getConfig({
-    source: 'backend',
-    appId: cleanAppId,
-    mode: isPreview ? 'preview' : 'published',
-    slugSegments: slug,
-    cache: isPreview ? 'no-store' : 'default'
-  });
+    // Fetch config using unified config - this reuses the fetch from generateMetadata
+    const result = await getConfig({
+      source: 'backend',
+      appId: cleanAppId,
+      mode: isPreview ? 'preview' : 'published',
+      slugSegments: slug,
+      cache: isPreview ? 'no-store' : 'default'
+    });
 
-  //console.log('[AppPage] Result:', result);
+    //console.log('[AppPage] Result:', result);
 
-  console.log('[AppPage] Rendering:', {
-    app_id,
-    cleanAppId,
-    isPreview,
-    mode: isPreview ? 'preview' : 'published',
-    hasConfig: !!result,
-    hasPage: !!result?.currentPage,
-    currentPath: result?.pageSlug,
-    basePath: result?.basePath,
-  });
+    console.log('[AppPage] Rendering:', {
+      app_id,
+      cleanAppId,
+      isPreview,
+      mode: isPreview ? 'preview' : 'published',
+      hasConfig: !!result,
+      hasPage: !!result?.currentPage,
+      currentPath: result?.pageSlug,
+      basePath: result?.basePath,
+    });
 
-  if (isPreview) {
-    // Preview mode: Load full-featured preview page with initial data
-    // This prevents redundant fetching while maintaining reactivity
+    if (isPreview) {
+      // Preview mode: Load full-featured preview page with initial data
+      // This prevents redundant fetching while maintaining reactivity
+      return (
+        <PreviewPage
+          appId={cleanAppId}
+          slug={slug}
+          initialConfig={result?.config || null}
+          initialPage={result?.currentPage || null}
+          basePath={result?.basePath || `/a/preview-${cleanAppId}`}
+          currentPath={result?.pageSlug || slugArrayToPath(slug)}
+        />
+      );
+    } else {
+      // Published mode: Load minimal published page with data
+      // This is server-side rendered and optimized for production
+      return (
+        <PublishedPage
+          appId={cleanAppId}
+          appConfig={result?.config || null}
+          currentPage={result?.currentPage || null}
+          basePath={result?.basePath || `/a/${cleanAppId}`}
+          currentPath={result?.pageSlug || slugArrayToPath(slug)}
+        />
+      );
+    }
+  } catch (error) {
+    console.error('[AppPage] Error rendering page:', error);
+    // Return error component instead of throwing
     return (
-      <PreviewPage
-        appId={cleanAppId}
-        slug={slug}
-        initialConfig={result?.config || null}
-        initialPage={result?.currentPage || null}
-        basePath={result?.basePath || `/a/preview-${cleanAppId}`}
-        currentPath={result?.pageSlug || slugArrayToPath(slug)}
-      />
-    );
-  } else {
-    // Published mode: Load minimal published page with data
-    // This is server-side rendered and optimized for production
-    return (
-      <PublishedPage
-        appId={cleanAppId}
-        appConfig={result?.config || null}
-        currentPage={result?.currentPage || null}
-        basePath={result?.basePath || `/a/${cleanAppId}`}
-        currentPath={result?.pageSlug || slugArrayToPath(slug)}
-      />
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-4">Error Loading Page</h1>
+          <p className="text-gray-600">An error occurred while loading this page.</p>
+        </div>
+      </div>
     );
   }
 }
