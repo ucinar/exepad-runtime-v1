@@ -1,5 +1,12 @@
 import './globals.css'
 
+export const metadata = {
+  title: 'Exepad',
+  description: 'Runtime Renderer',
+  icons: {
+    icon: '/favicon.svg',
+  },
+}
 
 export default function RootLayout({
   children,

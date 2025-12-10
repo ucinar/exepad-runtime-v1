@@ -1,7 +1,7 @@
 // src/interfaces/apps/index.ts
 
 /**
- * Comprehensive export of all app interfaces for LeapLang UI Runtime
+ * Comprehensive export of all app interfaces for Exepad Runtime
  * This file provides a single entry point for importing all app interfaces
  */
 

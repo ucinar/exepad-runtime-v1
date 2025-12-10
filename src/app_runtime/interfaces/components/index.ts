@@ -1,7 +1,7 @@
 // src/interfaces/components/index.ts
 
 /**
- * Comprehensive export of all component interfaces for LeapLang UI Runtime
+ * Comprehensive export of all component interfaces for Exepad Runtime
  * This file provides a single entry point for importing all component interfaces
  */
 

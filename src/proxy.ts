@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const url = request.nextUrl
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
@@ -39,12 +39,12 @@ export function middleware(request: NextRequest) {
     if (edgeAppId && isTrustedRequest) {
       targetAppId = edgeAppId
     } else if (edgeAppId && !isTrustedRequest) {
-      console.warn(`[Middleware] Blocked spoof attempt for ${edgeAppId}. Invalid secret.`)
+      console.warn(`[Proxy] Blocked spoof attempt for ${edgeAppId}. Invalid secret.`)
       // We fall back to subdomain, effectively ignoring the spoofed header
       // or you could return a 403 here to be stricter
     }
 
-    console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
+    console.log(`[Proxy] Rewriting ${hostname} -> /a/${targetAppId}`)
     url.pathname = `/a/${targetAppId}${url.pathname}`
     return NextResponse.rewrite(url)
   }
@@ -66,3 +66,4 @@ export const config = {
     '/((?!api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
   ],
 }
+

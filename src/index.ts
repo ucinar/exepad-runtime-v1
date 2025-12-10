@@ -1,7 +1,7 @@
 // src/index.ts
 
 /**
- * Main entry point for LeapLang UI Runtime
+ * Main entry point for Exepad Runtime
  * Exports all interfaces, components, and utilities
  */
 

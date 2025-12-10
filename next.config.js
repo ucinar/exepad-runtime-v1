@@ -1,7 +1,11 @@
-// Set up Cloudflare Pages development platform
-if (process.env.NODE_ENV === 'development') {
-  const { setupDevPlatform } = require('@cloudflare/next-on-pages/next-dev');
-  setupDevPlatform();
+// Set up Cloudflare Pages development platform (optional)
+if (process.env.NODE_ENV === 'development' && process.env.USE_CLOUDFLARE_DEV) {
+  try {
+    const { setupDevPlatform } = require('@cloudflare/next-on-pages/next-dev');
+    setupDevPlatform();
+  } catch (e) {
+    console.warn('Cloudflare dev platform not available:', e.message);
+  }
 }
 
 /** @type {import('next').NextConfig} */
