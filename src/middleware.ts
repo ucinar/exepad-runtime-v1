@@ -84,6 +84,7 @@ export async function middleware(request: NextRequest) {
       console.log('[Middleware] Preview access granted - NextAuth session found')
       // Skip backend validation for NextAuth cookies since Django can't validate them
       // The actual JWT validation happens client-side via getJWTTokenAsync()
+      return NextResponse.next()
     } else if (djangoSessionCookie) {
       // For Django session, validate with backend
       const isValidSession = await validateSessionCookie(djangoSessionCookie.value)
@@ -98,6 +99,7 @@ export async function middleware(request: NextRequest) {
         return NextResponse.redirect(loginUrl)
       }
       console.log('[Middleware] Preview access granted - Django session valid')
+      return NextResponse.next()
     }
   }
   
