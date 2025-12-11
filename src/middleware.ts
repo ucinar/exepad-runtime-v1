@@ -72,7 +72,11 @@ export async function middleware(request: NextRequest) {
     
     if (edgeAppId && !pathname.startsWith('/a/')) {
       const newUrl = request.nextUrl.clone()
-      newUrl.pathname = `/a/${edgeAppId}${pathname}`
+      
+      // FIX: Handle root path correctly to avoid double slashes or trailing slash issues
+      // If pathname is '/', use empty string so we get '/a/id' instead of '/a/id/'
+      const cleanPath = pathname === '/' ? '' : pathname
+      newUrl.pathname = `/a/${edgeAppId}${cleanPath}`
       
       // FIX: Set a custom header on the rewritten request to signal completion
       const requestHeaders = new Headers(request.headers)
@@ -200,14 +204,12 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all request paths except:
-     * - /a/ routes (internal rewrite paths)
+     * Match all request paths except for the ones starting with:
      * - api (API routes)
      * - _next/static (static files)
      * - _next/image (image optimization files)
-     * - favicon.ico, robots.txt, sitemap.xml (common root files)
-     * - Files with common extensions (js, css, png, jpg, etc.)
+     * - favicon.ico, etc.
      */
-    '/((?!a/|api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
+    '/((?!api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
   ],
 }
