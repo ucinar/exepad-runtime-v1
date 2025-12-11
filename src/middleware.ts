@@ -126,6 +126,11 @@ export async function middleware(request: NextRequest) {
     (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost');
 
   if (isSubdomain) {
+    // Avoid rewrite loops: if already under /a/, skip rewriting again
+    if (pathname.startsWith('/a/')) {
+      return NextResponse.next()
+    }
+
     const subdomain = currentHost.split('.')[0]
     
     // =========================================================================
