@@ -40,17 +40,21 @@ export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
   // =========================================================================
-  // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
+  // 0. PREVENT INFINITE LOOPS - Multiple layers of protection
   // =========================================================================
-  // If the path already starts with /a/, it's been rewritten - skip all processing
+  
+  // Layer 1: If path already starts with /a/, skip all processing
+  // This catches rewritten requests and RSC flight requests to /a/* paths
   if (pathname.startsWith('/a/')) {
     return NextResponse.next()
   }
   
-  // Skip RSC (React Server Components) flight requests to prevent hydration loops
-  // These are internal Next.js requests that should pass through without rewriting
-  const isRscRequest = url.searchParams.has('_rsc')
-  if (isRscRequest) {
+  // Layer 2: Skip static assets and Next.js internals (backup for matcher)
+  if (
+    pathname.startsWith('/_next/') ||
+    pathname.startsWith('/api/') ||
+    pathname.includes('.') // Files with extensions (favicon.ico, etc.)
+  ) {
     return NextResponse.next()
   }
   
@@ -60,7 +64,7 @@ export async function middleware(request: NextRequest) {
     // Request came from router and has already been processed
     // Rewrite to the app path if needed
     const edgeAppId = request.headers.get('x-exepad-app-id')
-    if (edgeAppId && !pathname.startsWith('/a/')) {
+    if (edgeAppId) {
       url.pathname = `/a/${edgeAppId}${pathname}`
       return NextResponse.rewrite(url)
     }
