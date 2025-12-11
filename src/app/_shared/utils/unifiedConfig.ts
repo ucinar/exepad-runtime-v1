@@ -183,6 +183,10 @@ function findPageBySlug(
   pageSlug: string
 ): AppPageProps | null {
   const normalizedSlug = normalizeSlug(pageSlug);
+  
+  // #region agent log
+  console.log('[DEBUG:UC:findPage]',JSON.stringify({pageSlug,normalizedSlug,availableSlugs:appConfig.pages?.map((p:AppPageProps)=>p.slug)||[]}));
+  // #endregion
 
   // Try to find exact match
   let page = appConfig.pages?.find(
@@ -241,6 +245,10 @@ function findPageBySlug(
       content: []
     } as AppPageProps;
   }
+
+  // #region agent log
+  console.log('[DEBUG:UC:pageResult]',JSON.stringify({normalizedSlug,foundPage:!!page,pageTitle:page?.title,pageSlug:page?.slug}));
+  // #endregion
 
   return page || null;
 }

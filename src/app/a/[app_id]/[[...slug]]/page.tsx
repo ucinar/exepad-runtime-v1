@@ -82,6 +82,10 @@ export default async function AppPage({ params, searchParams }: PageProps) {
     const { app_id, slug } = await params;
     const searchParamsObj = await searchParams;
 
+    // #region agent log
+    console.log('[DEBUG:AP:entry]',JSON.stringify({app_id,slug,searchParamKeys:Object.keys(searchParamsObj || {})}));
+    // #endregion
+
     // Determine if this is preview or published mode using shared utility
     const { isPreview, cleanAppId } = parsePreviewMode(app_id, searchParamsObj);
 
@@ -93,6 +97,10 @@ export default async function AppPage({ params, searchParams }: PageProps) {
       slugSegments: slug,
       cache: isPreview ? 'no-store' : 'default'
     });
+
+    // #region agent log
+    console.log('[DEBUG:AP:config]',JSON.stringify({app_id,cleanAppId,hasResult:!!result,hasPage:!!result?.currentPage,pageSlug:result?.pageSlug,basePath:result?.basePath}));
+    // #endregion
 
     //console.log('[AppPage] Result:', result);
 

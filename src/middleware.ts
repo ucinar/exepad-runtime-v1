@@ -39,11 +39,18 @@ export async function middleware(request: NextRequest) {
   const pathname = url.pathname
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
+  // #region agent log
+  console.log('[DEBUG:MW:entry]',JSON.stringify({pathname,hostname,hasRsc:url.searchParams.has('_rsc'),rscVal:url.searchParams.get('_rsc')}));
+  // #endregion
+  
   // =========================================================================
   // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
   // =========================================================================
   // If the path already starts with /a/, it's been rewritten - skip all processing
   if (pathname.startsWith('/a/')) {
+    // #region agent log
+    console.log('[DEBUG:MW:skip-a]',JSON.stringify({pathname,reason:'starts-with-/a/'}));
+    // #endregion
     return NextResponse.next()
   }
   
@@ -158,6 +165,9 @@ export async function middleware(request: NextRequest) {
     }
 
     console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
+    // #region agent log
+    console.log('[DEBUG:MW:rewrite]',JSON.stringify({hostname,targetAppId,originalPath:pathname,newPath:`/a/${targetAppId}${pathname}`,hasRsc:url.searchParams.has('_rsc')}));
+    // #endregion
     url.pathname = `/a/${targetAppId}${url.pathname}`
     return NextResponse.rewrite(url)
   }

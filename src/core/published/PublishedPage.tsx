@@ -39,8 +39,15 @@ export default function PublishedPage({
   basePath,
   currentPath,
 }: PublishedPageProps) {
+  // #region agent log
+  console.log('[DEBUG:PP:entry]',JSON.stringify({appId,hasConfig:!!appConfig,hasPage:!!currentPage,basePath,currentPath}));
+  // #endregion
+  
   // Handle missing config
   if (!appConfig) {
+    // #region agent log
+    console.log('[DEBUG:PP:no-config]',JSON.stringify({appId}));
+    // #endregion
     return (
       <UnifiedErrorDisplay
         type="config-missing"
@@ -53,6 +60,9 @@ export default function PublishedPage({
 
   // Handle missing page
   if (!currentPage) {
+    // #region agent log
+    console.log('[DEBUG:PP:redirect]',JSON.stringify({appId,basePath,currentPath,reason:'no-currentPage'}));
+    // #endregion
     redirect(basePath);
   }
 
