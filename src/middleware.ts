@@ -47,20 +47,17 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next()
   }
   
-  // =========================================================================
-  // 0.1. SKIP RSC REQUESTS - They should bypass all middleware processing
-  // =========================================================================
-  // React Server Component requests (indicated by _rsc query param) must pass through unchanged
-  // These are internal Next.js requests for client-side navigation and should not be rewritten
-  const isRscRequest = url.searchParams.has('_rsc')
-  if (isRscRequest) {
-    console.log('[Middleware] RSC request detected, bypassing middleware')
-    return NextResponse.next()
-  }
-  
   // Check if request was already rewritten by Cloudflare router
   const alreadyRewritten = request.headers.get('x-exepad-rewritten')
   if (alreadyRewritten === 'true') {
+    // RSC (React Server Components) requests use the 'next-url' header for routing,
+    // not the actual URL path. Don't rewrite these - let Next.js handle them directly.
+    // This prevents infinite loops when Next.js prefetches RSC data.
+    const isRscRequest = request.headers.get('rsc') === '1' || url.searchParams.has('_rsc')
+    if (isRscRequest) {
+      return NextResponse.next()
+    }
+    
     // Request came from router and has already been processed
     // Rewrite to the app path if needed
     const edgeAppId = request.headers.get('x-exepad-app-id')
@@ -200,8 +197,7 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico, robots.txt, sitemap.xml (common root files)
      * - Files with common extensions (js, css, png, jpg, etc.)
-     * - RSC requests (indicated by _rsc query parameter)
      */
-    '/((?!a/|api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$|.*\\?.*_rsc=).*)',
+    '/((?!a/|api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
   ],
 }
