@@ -104,7 +104,11 @@ export default function PreviewPage({
   // MOVED: Handle missing page navigation - must be before conditional returns
   useEffect(() => {
     if (appConfig && !currentPage && !authChecking) {
-      router.replace(basePath);
+      // Only redirect if we're not already on the basePath to prevent infinite loops
+      const currentPath = window.location.pathname;
+      if (currentPath !== basePath) {
+        router.replace(basePath);
+      }
     }
   }, [currentPage, basePath, router, appConfig, authChecking]);
 
