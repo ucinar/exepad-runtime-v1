@@ -53,9 +53,7 @@ export default function PublishedPage({
 
   // Handle missing page
   if (!currentPage) {
-    // In "pretty subdomain URLs" mode, basePath can be empty (""),
-    // so fall back to "/" to avoid redirecting to an invalid URL.
-    redirect(basePath || '/');
+    redirect(basePath);
   }
 
   // Use StaticHeaderLayout to render header, footer, and main content
