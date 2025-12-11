@@ -40,51 +40,56 @@ export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
   // =========================================================================
-  // 0. PREVENT INFINITE LOOPS - Multiple checks for safety
+  // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
   // =========================================================================
-  
-  // Check 1: If the path already starts with /a/, skip all processing
-  // This is the primary guard against loops after internal rewrites
+  // If the path already starts with /a/, it's been rewritten - skip all processing
   if (pathname.startsWith('/a/')) {
     return NextResponse.next()
   }
   
-  // Check 2: If path contains /a/ anywhere (edge case protection)
-  if (pathname.includes('/a/')) {
-    return NextResponse.next()
-  }
-  
-  // Check 3: Check for internal rewrite marker cookie
-  // This catches cases where the matcher doesn't properly exclude rewritten paths
-  const internalRewriteMarker = request.cookies.get('x-exepad-internal-rewrite')
-  if (internalRewriteMarker) {
-    const response = NextResponse.next()
-    response.cookies.delete('x-exepad-internal-rewrite')
-    return response
-  }
-  
   // Check if request was already rewritten by Cloudflare router
   const alreadyRewritten = request.headers.get('x-exepad-rewritten')
+  const edgeAppId = request.headers.get('x-exepad-app-id')
+  const edgeSecret = request.headers.get('x-exepad-secret')
+  const internalSecret = process.env.EXEPAD_ROUTER_SECRET
+  const isTrustedRequest = process.env.NODE_ENV === 'development' || (internalSecret && edgeSecret === internalSecret)
+  
   if (alreadyRewritten === 'true') {
     // Request came from router and has already been processed
     // Rewrite to the app path if needed
-    const edgeAppId = request.headers.get('x-exepad-app-id')
     if (edgeAppId && !pathname.startsWith('/a/')) {
-      // Normalize the path to avoid double slashes
-      const normalizedPath = pathname === '/' ? '' : pathname
-      const newPathname = `/a/${edgeAppId}${normalizedPath}`
-      url.pathname = newPathname
-      
-      // Set a marker cookie to detect if middleware runs again
+      // Handle root path - don't add extra slash
+      const newPath = pathname === '/' ? `/a/${edgeAppId}` : `/a/${edgeAppId}${pathname}`
+      url.pathname = newPath
       const response = NextResponse.rewrite(url)
-      response.cookies.set('x-exepad-internal-rewrite', '1', {
-        httpOnly: true,
-        maxAge: 5, // Very short-lived
-        path: '/',
-      })
+      // Mark as rewritten to prevent further processing
+      response.headers.set('x-exepad-rewritten', 'true')
       return response
     }
     return NextResponse.next()
+  }
+  
+  // =========================================================================
+  // 0.5. HANDLE INTERNAL NEXT.JS REQUESTS (RSC, etc.)
+  // =========================================================================
+  // Next.js internal requests (like RSC) may not have x-exepad-rewritten header
+  // but they might have x-exepad-app-id if they're from a subdomain request
+  // We need to rewrite these to prevent loops
+  const appDomain = 'exepad.app' 
+  const currentHost = hostname.split(':')[0]
+  const isSubdomain = 
+    (currentHost.endsWith(`.${appDomain}`) && currentHost !== `www.${appDomain}`) ||
+    (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost')
+  
+  // If this is a subdomain request with a trusted app ID header but path is not /a/,
+  // it's likely an internal Next.js request that needs rewriting
+  if (isSubdomain && edgeAppId && isTrustedRequest && !pathname.startsWith('/a/')) {
+    const newPath = pathname === '/' ? `/a/${edgeAppId}` : `/a/${edgeAppId}${pathname}`
+    url.pathname = newPath
+    const response = NextResponse.rewrite(url)
+    response.headers.set('x-exepad-rewritten', 'true')
+    console.log(`[Middleware] Rewriting internal request ${hostname}${pathname} -> ${newPath}`)
+    return response
   }
   
   // =========================================================================
@@ -154,24 +159,12 @@ export async function middleware(request: NextRequest) {
   // =========================================================================
   // 2. SECURITY & IDENTITY CHECK
   // =========================================================================
-  const edgeAppId = request.headers.get('x-exepad-app-id')
-  const edgeSecret = request.headers.get('x-exepad-secret')
-  const internalSecret = process.env.EXEPAD_ROUTER_SECRET
-  
-  // Determine if the request is trusted
-  // In dev (no secret set in env), we trust localhost.
-  // In prod, we require the secret to match.
-  const isTrustedRequest = process.env.NODE_ENV === 'development' || (internalSecret && edgeSecret === internalSecret)
+  // (edgeAppId, edgeSecret, internalSecret, isTrustedRequest already defined above)
 
   // =========================================================================
   // 3. SUBDOMAIN DETECTION
   // =========================================================================
-  const appDomain = 'exepad.app' 
-  const currentHost = hostname.split(':')[0]
-  
-  const isSubdomain = 
-    (currentHost.endsWith(`.${appDomain}`) && currentHost !== `www.${appDomain}`) ||
-    (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost');
+  // (isSubdomain already calculated above)
 
   if (isSubdomain) {
     // Avoid rewrite loops: if already under /a/, skip rewriting again
@@ -197,20 +190,12 @@ export async function middleware(request: NextRequest) {
       // or you could return a 403 here to be stricter
     }
 
-    // Normalize the path to avoid double slashes
-    const normalizedPath = url.pathname === '/' ? '' : url.pathname
-    const newPathname = `/a/${targetAppId}${normalizedPath}`
-    
-    console.log(`[Middleware] Rewriting ${hostname} -> ${newPathname}`)
-    url.pathname = newPathname
-    
-    // Set a marker cookie to detect if middleware runs again
+    console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
+    // Handle root path - don't add extra slash
+    const newPath = pathname === '/' ? `/a/${targetAppId}` : `/a/${targetAppId}${pathname}`
+    url.pathname = newPath
     const response = NextResponse.rewrite(url)
-    response.cookies.set('x-exepad-internal-rewrite', '1', {
-      httpOnly: true,
-      maxAge: 5, // Very short-lived
-      path: '/',
-    })
+    response.headers.set('x-exepad-rewritten', 'true')
     return response
   }
 

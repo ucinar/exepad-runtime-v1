@@ -12,7 +12,7 @@
  */
 
 import React from 'react';
-import { notFound } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import { DynamicRendererList } from '@/components/DynamicRenderer';
 import { WebAppProps } from '@/interfaces/apps/webapp';
 import { PageProps as AppPageProps } from '@/interfaces/apps/page';
@@ -51,10 +51,9 @@ export default function PublishedPage({
     );
   }
 
-  // Handle missing page - use notFound() instead of redirect to avoid infinite loops
-  // redirect(basePath) would cause loops when we're already at basePath
+  // Handle missing page
   if (!currentPage) {
-    notFound();
+    redirect(basePath);
   }
 
   // Use StaticHeaderLayout to render header, footer, and main content
