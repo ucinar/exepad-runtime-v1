@@ -40,11 +40,27 @@ export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
   // =========================================================================
-  // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
+  // 0. PREVENT INFINITE LOOPS - Multiple checks for safety
   // =========================================================================
-  // If the path already starts with /a/, it's been rewritten - skip all processing
+  
+  // Check 1: If the path already starts with /a/, skip all processing
+  // This is the primary guard against loops after internal rewrites
   if (pathname.startsWith('/a/')) {
     return NextResponse.next()
+  }
+  
+  // Check 2: If path contains /a/ anywhere (edge case protection)
+  if (pathname.includes('/a/')) {
+    return NextResponse.next()
+  }
+  
+  // Check 3: Check for internal rewrite marker cookie
+  // This catches cases where the matcher doesn't properly exclude rewritten paths
+  const internalRewriteMarker = request.cookies.get('x-exepad-internal-rewrite')
+  if (internalRewriteMarker) {
+    const response = NextResponse.next()
+    response.cookies.delete('x-exepad-internal-rewrite')
+    return response
   }
   
   // Check if request was already rewritten by Cloudflare router
@@ -54,8 +70,19 @@ export async function middleware(request: NextRequest) {
     // Rewrite to the app path if needed
     const edgeAppId = request.headers.get('x-exepad-app-id')
     if (edgeAppId && !pathname.startsWith('/a/')) {
-      url.pathname = `/a/${edgeAppId}${pathname}`
-      return NextResponse.rewrite(url)
+      // Normalize the path to avoid double slashes
+      const normalizedPath = pathname === '/' ? '' : pathname
+      const newPathname = `/a/${edgeAppId}${normalizedPath}`
+      url.pathname = newPathname
+      
+      // Set a marker cookie to detect if middleware runs again
+      const response = NextResponse.rewrite(url)
+      response.cookies.set('x-exepad-internal-rewrite', '1', {
+        httpOnly: true,
+        maxAge: 5, // Very short-lived
+        path: '/',
+      })
+      return response
     }
     return NextResponse.next()
   }
@@ -170,9 +197,21 @@ export async function middleware(request: NextRequest) {
       // or you could return a 403 here to be stricter
     }
 
-    console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
-    url.pathname = `/a/${targetAppId}${url.pathname}`
-    return NextResponse.rewrite(url)
+    // Normalize the path to avoid double slashes
+    const normalizedPath = url.pathname === '/' ? '' : url.pathname
+    const newPathname = `/a/${targetAppId}${normalizedPath}`
+    
+    console.log(`[Middleware] Rewriting ${hostname} -> ${newPathname}`)
+    url.pathname = newPathname
+    
+    // Set a marker cookie to detect if middleware runs again
+    const response = NextResponse.rewrite(url)
+    response.cookies.set('x-exepad-internal-rewrite', '1', {
+      httpOnly: true,
+      maxAge: 5, // Very short-lived
+      path: '/',
+    })
+    return response
   }
 
   // Handle Main Domain -> Previews & Landing Page
