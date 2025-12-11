@@ -38,30 +38,23 @@ export async function middleware(request: NextRequest) {
   const url = request.nextUrl
   const pathname = url.pathname
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
-
+  
   // =========================================================================
   // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
   // =========================================================================
-
-  // Early check for subdomain requests to prevent _rsc hydration loops
-  const earlyHost = hostname.split(':')[0]
-  const isEarlySubdomain =
-    (earlyHost.endsWith('.exepad.app') && earlyHost !== 'www.exepad.app') ||
-    (earlyHost.endsWith('.localhost') && earlyHost !== 'www.localhost');
-
-  if (isEarlySubdomain) {
-    const subdomain = earlyHost.split('.')[0]
-
-    // CRITICAL FIX: If the URL already starts with the expected rewritten path,
-    // stop right here. Do not rewrite again.
-    // This prevents the _rsc hydration loop
-    if (pathname.startsWith(`/a/${subdomain}`)) {
-      return NextResponse.next()
-    }
-  }
-
   // If the path already starts with /a/, it's been rewritten - skip all processing
   if (pathname.startsWith('/a/')) {
+    return NextResponse.next()
+  }
+  
+  // =========================================================================
+  // 0.1. SKIP RSC REQUESTS - They should bypass all middleware processing
+  // =========================================================================
+  // React Server Component requests (indicated by _rsc query param) must pass through unchanged
+  // These are internal Next.js requests for client-side navigation and should not be rewritten
+  const isRscRequest = url.searchParams.has('_rsc')
+  if (isRscRequest) {
+    console.log('[Middleware] RSC request detected, bypassing middleware')
     return NextResponse.next()
   }
   
@@ -207,7 +200,8 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico, robots.txt, sitemap.xml (common root files)
      * - Files with common extensions (js, css, png, jpg, etc.)
+     * - RSC requests (indicated by _rsc query parameter)
      */
-    '/((?!a/|api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
+    '/((?!a/|api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$|.*\\?.*_rsc=).*)',
   ],
 }
