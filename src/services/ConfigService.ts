@@ -40,7 +40,8 @@ export class ConfigService {
     mode: 'published' | 'preview',
     options: FetchOptions = {}
   ): Promise<WebAppProps | null> {
-    const { source = 'backend', cache = 'force-cache', retries = 3, slugSegments } = options;
+    // NOTE: Don't default cache to 'force-cache' - Cloudflare Workers doesn't support it
+    const { source = 'backend', cache, retries = 3, slugSegments } = options;
 
     try {
       return await this.fetchWithRetries(appId, mode, source, retries, slugSegments, cache);
@@ -117,13 +118,10 @@ export class ConfigService {
     }
 
     // For preview mode, always use no-store to bypass cache
-    // For published mode, use the provided cache option
-    // IMPORTANT: Cloudflare Edge Runtime only supports 'no-store' and 'force-cache'
-    // Convert 'default' to 'force-cache' for Edge Runtime compatibility
-    let cacheOption: RequestCache = mode === 'preview' ? 'no-store' : (cache || 'force-cache');
-    if (cacheOption === 'default') {
-      cacheOption = 'force-cache';
-    }
+    // For published mode, omit cache option to let runtime decide
+    // IMPORTANT: Cloudflare Workers only supports 'no-store', 'no-cache', or omitting the option
+    // 'force-cache' is NOT supported and will throw an error
+    const cacheOption: RequestCache | undefined = mode === 'preview' ? 'no-store' : undefined;
 
     // Add cache-busting query parameter for preview mode to ensure fresh data
     // Note: Django requires trailing slash before query parameters
@@ -135,15 +133,21 @@ export class ConfigService {
       console.warn('[ConfigService] RUNTIME_SERVICE_API_KEY not configured');
     }
     
-    const response = await fetch(`${backendUrl}/api/runtime/app-config/${cacheBuster}`, {
+    const fetchOptions: RequestInit = {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
         ...(runtimeApiKey && { 'X-Runtime-API-Key': runtimeApiKey }),
       },
       body: JSON.stringify({ app_id: appId, mode }),
-      cache: cacheOption,
-    });
+    };
+    
+    // Only add cache option if defined (Cloudflare doesn't support 'force-cache')
+    if (cacheOption) {
+      fetchOptions.cache = cacheOption;
+    }
+    
+    const response = await fetch(`${backendUrl}/api/runtime/app-config/${cacheBuster}`, fetchOptions);
 
     if (!response.ok) {
       throw new Error(`Backend API returned ${response.status}`);
@@ -156,9 +160,12 @@ export class ConfigService {
     // 2. Adding params would invalidate the signature
     // 3. We rely on cache: 'no-store' and cache-control headers instead
     
-    const configResponse = await fetch(config_url, { 
-      cache: cacheOption,
-    });
+    const configFetchOptions: RequestInit = {};
+    if (cacheOption) {
+      configFetchOptions.cache = cacheOption;
+    }
+    
+    const configResponse = await fetch(config_url, configFetchOptions);
 
     if (!configResponse.ok) {
       throw new Error(`Failed to fetch config from ${config_url}`);
