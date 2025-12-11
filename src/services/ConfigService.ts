@@ -228,21 +228,26 @@ export class ConfigService {
       }
 
       // Node.js Runtime: Use filesystem
-      // Use dynamic module names to prevent webpack from statically analyzing these imports
-      // These modules are only available server-side and will never execute in the browser
-      // @ts-ignore - dynamic import for server-side only
-      const fsModule = 'fs';
-      // @ts-ignore - dynamic import for server-side only
-      const pathModule = 'path';
-      // @ts-ignore - dynamic import for server-side only
-      // webpackIgnore tells webpack to ignore this dynamic import (server-only)
-      const { promises: fs } = await import(/* webpackIgnore: true */ fsModule);
-      // @ts-ignore - dynamic import for server-side only
-      const path = await import(/* webpackIgnore: true */ pathModule);
+      // Guard this entire section to prevent static analysis issues
+      if (typeof process !== 'undefined' && typeof process.cwd === 'function') {
+        // Use dynamic module names to prevent webpack from statically analyzing these imports
+        // These modules are only available server-side and will never execute in the browser
+        // @ts-ignore - dynamic import for server-side only
+        const fsModule = 'fs';
+        // @ts-ignore - dynamic import for server-side only
+        const pathModule = 'path';
+        // @ts-ignore - dynamic import for server-side only
+        // webpackIgnore tells webpack to ignore this dynamic import (server-only)
+        const { promises: fs } = await import(/* webpackIgnore: true */ fsModule);
+        // @ts-ignore - dynamic import for server-side only
+        const path = await import(/* webpackIgnore: true */ pathModule);
 
-      const filePath = path.join(process.cwd(), 'public', 'demo', `${appId}.json`);
-      const fileContents = await fs.readFile(filePath, 'utf8');
-      return JSON.parse(fileContents);
+        const filePath = path.join(process.cwd(), 'public', 'demo', `${appId}.json`);
+        const fileContents = await fs.readFile(filePath, 'utf8');
+        return JSON.parse(fileContents);
+      }
+      
+      throw new Error(`Demo config not found: ${appId}`);
     } catch (error) {
       throw new Error(`Demo config not found: ${appId}`);
     }
@@ -297,34 +302,37 @@ export class ConfigService {
       }
 
       // Node.js Runtime: Use filesystem
-      // Use dynamic module names to prevent webpack from statically analyzing these imports
-      // These modules are only available server-side and will never execute in the browser
-      // @ts-ignore - dynamic import for server-side only
-      const fsModule = 'fs';
-      // @ts-ignore - dynamic import for server-side only
-      const pathModule = 'path';
-      // @ts-ignore - dynamic import for server-side only
-      // webpackIgnore tells webpack to ignore this dynamic import (server-only)
-      const { promises: fs } = await import(/* webpackIgnore: true */ fsModule);
-      // @ts-ignore - dynamic import for server-side only
-      const path = await import(/* webpackIgnore: true */ pathModule);
+      // Guard this entire section to prevent static analysis issues
+      if (typeof process !== 'undefined' && typeof process.cwd === 'function') {
+        // Use dynamic module names to prevent webpack from statically analyzing these imports
+        // These modules are only available server-side and will never execute in the browser
+        // @ts-ignore - dynamic import for server-side only
+        const fsModule = 'fs';
+        // @ts-ignore - dynamic import for server-side only
+        const pathModule = 'path';
+        // @ts-ignore - dynamic import for server-side only
+        // webpackIgnore tells webpack to ignore this dynamic import (server-only)
+        const { promises: fs } = await import(/* webpackIgnore: true */ fsModule);
+        // @ts-ignore - dynamic import for server-side only
+        const path = await import(/* webpackIgnore: true */ pathModule);
 
-      const baseDir = path.join(process.cwd(), 'public', 'example');
-      const fullPath = [appId, ...(slugSegments || [])];
+        const baseDir = path.join(process.cwd(), 'public', 'example');
+        const fullPath = [appId, ...(slugSegments || [])];
 
-      // Try progressively shorter paths until we find a JSON file
-      for (let i = fullPath.length; i >= 1; i--) {
-        const pathSegments = fullPath.slice(0, i);
-        const filePath = path.join(baseDir, ...pathSegments) + '.json';
+        // Try progressively shorter paths until we find a JSON file
+        for (let i = fullPath.length; i >= 1; i--) {
+          const pathSegments = fullPath.slice(0, i);
+          const filePath = path.join(baseDir, ...pathSegments) + '.json';
 
-        try {
-          const fileContents = await fs.readFile(filePath, 'utf8');
-          const config = JSON.parse(fileContents);
-          console.log(`[ConfigService] Found example config at: ${filePath}`);
-          return config;
-        } catch {
-          // File doesn't exist, try next shorter path
-          continue;
+          try {
+            const fileContents = await fs.readFile(filePath, 'utf8');
+            const config = JSON.parse(fileContents);
+            console.log(`[ConfigService] Found example config at: ${filePath}`);
+            return config;
+          } catch {
+            // File doesn't exist, try next shorter path
+            continue;
+          }
         }
       }
 

@@ -1123,7 +1123,7 @@ export function extractColorsFromClasses(classes?: string, element?: HTMLElement
 
 /**
  * List of props that should not be passed to DOM elements
- * These are component metadata props used by the LeapDo runtime
+ * These are component metadata props used by the runtime
  */
 const NON_DOM_PROPS = [
   'componentType',
