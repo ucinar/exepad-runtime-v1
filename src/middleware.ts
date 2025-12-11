@@ -38,10 +38,28 @@ export async function middleware(request: NextRequest) {
   const url = request.nextUrl
   const pathname = url.pathname
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
-  
+
   // =========================================================================
   // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
   // =========================================================================
+
+  // Early check for subdomain requests to prevent _rsc hydration loops
+  const earlyHost = hostname.split(':')[0]
+  const isEarlySubdomain =
+    (earlyHost.endsWith('.exepad.app') && earlyHost !== 'www.exepad.app') ||
+    (earlyHost.endsWith('.localhost') && earlyHost !== 'www.localhost');
+
+  if (isEarlySubdomain) {
+    const subdomain = earlyHost.split('.')[0]
+
+    // CRITICAL FIX: If the URL already starts with the expected rewritten path,
+    // stop right here. Do not rewrite again.
+    // This prevents the _rsc hydration loop
+    if (pathname.startsWith(`/a/${subdomain}`)) {
+      return NextResponse.next()
+    }
+  }
+
   // If the path already starts with /a/, it's been rewritten - skip all processing
   if (pathname.startsWith('/a/')) {
     return NextResponse.next()
@@ -50,10 +68,13 @@ export async function middleware(request: NextRequest) {
   // Check if request was already rewritten by Cloudflare router
   const alreadyRewritten = request.headers.get('x-exepad-rewritten')
   if (alreadyRewritten === 'true') {
-    // Pretty subdomain URLs mode:
-    // The router (Cloudflare Worker) already injected x-exepad-app-id and x-forwarded-host.
-    // We intentionally DO NOT rewrite to /a/:appId anymore; the root catch-all route
-    // (src/app/[[...slug]]/page.tsx) will render the correct app at "/".
+    // Request came from router and has already been processed
+    // Rewrite to the app path if needed
+    const edgeAppId = request.headers.get('x-exepad-app-id')
+    if (edgeAppId && !pathname.startsWith('/a/')) {
+      url.pathname = `/a/${edgeAppId}${pathname}`
+      return NextResponse.rewrite(url)
+    }
     return NextResponse.next()
   }
   
@@ -61,9 +82,7 @@ export async function middleware(request: NextRequest) {
   // 1. PREVIEW MODE AUTHENTICATION CHECK
   // =========================================================================
   // Protect preview routes - require authentication
-  // Support both legacy URL prefix (/a/preview-...) and query-param based preview (?preview=true)
-  // so "pretty subdomain URLs" can still be protected.
-  const isPreviewRoute = pathname.includes('/preview-') || url.searchParams.get('preview') === 'true'
+  const isPreviewRoute = pathname.includes('/preview-')
   
   if (isPreviewRoute) {
     console.log('[Middleware] Preview route detected, checking authentication...')
@@ -146,11 +165,32 @@ export async function middleware(request: NextRequest) {
     (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost');
 
   if (isSubdomain) {
-    // Pretty subdomain URLs mode:
-    // Do NOT rewrite subdomain requests to /a/:appId. The app is served at "/"
-    // based on the injected x-exepad-app-id header (from the Cloudflare router).
-    // We still keep the preview-auth logic above, but routing stays unchanged here.
-    return NextResponse.next()
+    // Avoid rewrite loops: if already under /a/, skip rewriting again
+    // This check should never be reached due to the check at the top of the function
+    // but we keep it for safety
+    if (pathname.startsWith('/a/')) {
+      return NextResponse.next()
+    }
+
+    const subdomain = currentHost.split('.')[0]
+    
+    // =========================================================================
+    // 4. RESOLVE APP ID
+    // =========================================================================
+    let targetAppId = subdomain
+
+    // Only accept the header-injected ID if the secret is valid
+    if (edgeAppId && isTrustedRequest) {
+      targetAppId = edgeAppId
+    } else if (edgeAppId && !isTrustedRequest) {
+      console.warn(`[Middleware] Blocked spoof attempt for ${edgeAppId}. Invalid secret.`)
+      // We fall back to subdomain, effectively ignoring the spoofed header
+      // or you could return a 403 here to be stricter
+    }
+
+    console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
+    url.pathname = `/a/${targetAppId}${url.pathname}`
+    return NextResponse.rewrite(url)
   }
 
   // Handle Main Domain -> Previews & Landing Page
