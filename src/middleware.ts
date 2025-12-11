@@ -39,6 +39,9 @@ export async function middleware(request: NextRequest) {
   const pathname = url.pathname
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
+  //log url
+  console.log('[DEBUG:MIDDLEWARE:url]',url.toString());
+  
   // =========================================================================
   // 0. PREVENT INFINITE LOOPS - CRITICAL FIX
   // =========================================================================
@@ -72,11 +75,7 @@ export async function middleware(request: NextRequest) {
     
     if (edgeAppId && !pathname.startsWith('/a/')) {
       const newUrl = request.nextUrl.clone()
-      
-      // FIX: Handle root path correctly to avoid double slashes or trailing slash issues
-      // If pathname is '/', use empty string so we get '/a/id' instead of '/a/id/'
-      const cleanPath = pathname === '/' ? '' : pathname
-      newUrl.pathname = `/a/${edgeAppId}${cleanPath}`
+      newUrl.pathname = `/a/${edgeAppId}${pathname}`
       
       // FIX: Set a custom header on the rewritten request to signal completion
       const requestHeaders = new Headers(request.headers)
@@ -204,12 +203,14 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all request paths except for the ones starting with:
+     * Match all request paths except:
+     * - /a/ routes (internal rewrite paths)
      * - api (API routes)
      * - _next/static (static files)
      * - _next/image (image optimization files)
-     * - favicon.ico, etc.
+     * - favicon.ico, robots.txt, sitemap.xml (common root files)
+     * - Files with common extensions (js, css, png, jpg, etc.)
      */
-    '/((?!api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
+    '/((?!a/|api/|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|json|xml|txt|pdf|mp4|webm|ogg|mp3|wav)$).*)',
   ],
 }
