@@ -106,8 +106,11 @@ export default function PreviewPage({
     if (appConfig && !currentPage && !authChecking) {
       // Only redirect if we're not already on the basePath to prevent infinite loops
       const currentPath = window.location.pathname;
-      if (currentPath !== basePath) {
-        router.replace(basePath);
+      // In "pretty subdomain URLs" mode, basePath can be empty (""),
+      // so use "/" as the effective base for navigation.
+      const effectiveBasePath = basePath || '/';
+      if (currentPath !== effectiveBasePath) {
+        router.replace(effectiveBasePath);
       }
     }
   }, [currentPage, basePath, router, appConfig, authChecking]);

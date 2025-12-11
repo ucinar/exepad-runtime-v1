@@ -40,34 +40,20 @@ export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
   // =========================================================================
-  // 0. PREVENT INFINITE LOOPS - Multiple layers of protection
+  // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
   // =========================================================================
-  
-  // Layer 1: If path already starts with /a/, skip all processing
-  // This catches rewritten requests and RSC flight requests to /a/* paths
+  // If the path already starts with /a/, it's been rewritten - skip all processing
   if (pathname.startsWith('/a/')) {
-    return NextResponse.next()
-  }
-  
-  // Layer 2: Skip static assets and Next.js internals (backup for matcher)
-  if (
-    pathname.startsWith('/_next/') ||
-    pathname.startsWith('/api/') ||
-    pathname.includes('.') // Files with extensions (favicon.ico, etc.)
-  ) {
     return NextResponse.next()
   }
   
   // Check if request was already rewritten by Cloudflare router
   const alreadyRewritten = request.headers.get('x-exepad-rewritten')
   if (alreadyRewritten === 'true') {
-    // Request came from router and has already been processed
-    // Rewrite to the app path if needed
-    const edgeAppId = request.headers.get('x-exepad-app-id')
-    if (edgeAppId) {
-      url.pathname = `/a/${edgeAppId}${pathname}`
-      return NextResponse.rewrite(url)
-    }
+    // Pretty subdomain URLs mode:
+    // The router (Cloudflare Worker) already injected x-exepad-app-id and x-forwarded-host.
+    // We intentionally DO NOT rewrite to /a/:appId anymore; the root catch-all route
+    // (src/app/[[...slug]]/page.tsx) will render the correct app at "/".
     return NextResponse.next()
   }
   
@@ -75,7 +61,9 @@ export async function middleware(request: NextRequest) {
   // 1. PREVIEW MODE AUTHENTICATION CHECK
   // =========================================================================
   // Protect preview routes - require authentication
-  const isPreviewRoute = pathname.includes('/preview-')
+  // Support both legacy URL prefix (/a/preview-...) and query-param based preview (?preview=true)
+  // so "pretty subdomain URLs" can still be protected.
+  const isPreviewRoute = pathname.includes('/preview-') || url.searchParams.get('preview') === 'true'
   
   if (isPreviewRoute) {
     console.log('[Middleware] Preview route detected, checking authentication...')
@@ -158,32 +146,11 @@ export async function middleware(request: NextRequest) {
     (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost');
 
   if (isSubdomain) {
-    // Avoid rewrite loops: if already under /a/, skip rewriting again
-    // This check should never be reached due to the check at the top of the function
-    // but we keep it for safety
-    if (pathname.startsWith('/a/')) {
-      return NextResponse.next()
-    }
-
-    const subdomain = currentHost.split('.')[0]
-    
-    // =========================================================================
-    // 4. RESOLVE APP ID
-    // =========================================================================
-    let targetAppId = subdomain
-
-    // Only accept the header-injected ID if the secret is valid
-    if (edgeAppId && isTrustedRequest) {
-      targetAppId = edgeAppId
-    } else if (edgeAppId && !isTrustedRequest) {
-      console.warn(`[Middleware] Blocked spoof attempt for ${edgeAppId}. Invalid secret.`)
-      // We fall back to subdomain, effectively ignoring the spoofed header
-      // or you could return a 403 here to be stricter
-    }
-
-    console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
-    url.pathname = `/a/${targetAppId}${url.pathname}`
-    return NextResponse.rewrite(url)
+    // Pretty subdomain URLs mode:
+    // Do NOT rewrite subdomain requests to /a/:appId. The app is served at "/"
+    // based on the injected x-exepad-app-id header (from the Cloudflare router).
+    // We still keep the preview-auth logic above, but routing stays unchanged here.
+    return NextResponse.next()
   }
 
   // Handle Main Domain -> Previews & Landing Page

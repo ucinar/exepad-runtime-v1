@@ -12,6 +12,7 @@
  */
 
 import React from 'react';
+import { redirect } from 'next/navigation';
 import { DynamicRendererList } from '@/components/DynamicRenderer';
 import { WebAppProps } from '@/interfaces/apps/webapp';
 import { PageProps as AppPageProps } from '@/interfaces/apps/page';
@@ -50,16 +51,11 @@ export default function PublishedPage({
     );
   }
 
-  // Handle missing page - show error instead of redirect to prevent loops
+  // Handle missing page
   if (!currentPage) {
-    return (
-      <UnifiedErrorDisplay
-        type="page-404"
-        appId={appId}
-        appType="production"
-        homeUrl={basePath}
-      />
-    );
+    // In "pretty subdomain URLs" mode, basePath can be empty (""),
+    // so fall back to "/" to avoid redirecting to an invalid URL.
+    redirect(basePath || '/');
   }
 
   // Use StaticHeaderLayout to render header, footer, and main content
