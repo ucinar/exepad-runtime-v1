@@ -40,7 +40,7 @@ export class ConfigService {
     mode: 'published' | 'preview',
     options: FetchOptions = {}
   ): Promise<WebAppProps | null> {
-    const { source = 'backend', cache = 'no-store', retries = 3, slugSegments } = options;
+    const { source = 'backend', cache = 'force-cache', retries = 3, slugSegments } = options;
 
     try {
       return await this.fetchWithRetries(appId, mode, source, retries, slugSegments, cache);
@@ -117,8 +117,13 @@ export class ConfigService {
     }
 
     // For preview mode, always use no-store to bypass cache
-    // For published mode, use the provided cache option (defaults to 'default')
-    const cacheOption = mode === 'preview' ? 'no-store' : (cache || 'default');
+    // For published mode, use the provided cache option
+    // IMPORTANT: Cloudflare Edge Runtime only supports 'no-store' and 'force-cache'
+    // Convert 'default' to 'force-cache' for Edge Runtime compatibility
+    let cacheOption: RequestCache = mode === 'preview' ? 'no-store' : (cache || 'force-cache');
+    if (cacheOption === 'default') {
+      cacheOption = 'force-cache';
+    }
 
     // Add cache-busting query parameter for preview mode to ensure fresh data
     // Note: Django requires trailing slash before query parameters

@@ -40,6 +40,14 @@ export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
   // =========================================================================
+  // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
+  // =========================================================================
+  // If the path already starts with /a/, it's been rewritten - skip all processing
+  if (pathname.startsWith('/a/')) {
+    return NextResponse.next()
+  }
+  
+  // =========================================================================
   // 1. PREVIEW MODE AUTHENTICATION CHECK
   // =========================================================================
   // Protect preview routes - require authentication
@@ -127,6 +135,8 @@ export async function middleware(request: NextRequest) {
 
   if (isSubdomain) {
     // Avoid rewrite loops: if already under /a/, skip rewriting again
+    // This check should never be reached due to the check at the top of the function
+    // but we keep it for safety
     if (pathname.startsWith('/a/')) {
       return NextResponse.next()
     }
