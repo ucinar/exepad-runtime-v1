@@ -40,30 +40,49 @@ export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('x-forwarded-host') || request.headers.get('host') || ''
   
   // =========================================================================
-  // 0. PREVENT INFINITE LOOPS - Check rewritten paths FIRST
+  // 0. PREVENT INFINITE LOOPS - CRITICAL FIX
   // =========================================================================
-  // If the path already starts with /a/, it's been rewritten - skip all processing
+  
+  // 1. Check for our custom internal flag. If this is present, we have already 
+  // processed this request in a previous iteration of the middleware.
+  if (request.headers.get('x-next-rewrite-done') === 'true') {
+    return NextResponse.next()
+  }
+
+  // 2. If the path already starts with /a/, it's likely been rewritten or is an internal access.
+  // We skip processing to avoid double-rewriting.
   if (pathname.startsWith('/a/')) {
     return NextResponse.next()
   }
   
-  // Check if request was already rewritten by Cloudflare router
+  // Check if request was already rewritten by Cloudflare router (Upstream)
   const alreadyRewritten = request.headers.get('x-exepad-rewritten')
+  
   if (alreadyRewritten === 'true') {
-    // RSC (React Server Components) requests use the 'next-url' header for routing,
-    // not the actual URL path. Don't rewrite these - let Next.js handle them directly.
-    // This prevents infinite loops when Next.js prefetches RSC data.
+    // RSC (React Server Components) requests use the 'next-url' header for routing.
+    // Don't rewrite these - let Next.js handle them directly.
     const isRscRequest = request.headers.get('rsc') === '1' || url.searchParams.has('_rsc')
     if (isRscRequest) {
       return NextResponse.next()
     }
     
-    // Request came from router and has already been processed
-    // Rewrite to the app path if needed
+    // Request came from router and has already been processed.
+    // We need to map it to the internal /a/[appId] structure.
     const edgeAppId = request.headers.get('x-exepad-app-id')
+    
     if (edgeAppId && !pathname.startsWith('/a/')) {
-      url.pathname = `/a/${edgeAppId}${pathname}`
-      return NextResponse.rewrite(url)
+      const newUrl = request.nextUrl.clone()
+      newUrl.pathname = `/a/${edgeAppId}${pathname}`
+      
+      // FIX: Set a custom header on the rewritten request to signal completion
+      const requestHeaders = new Headers(request.headers)
+      requestHeaders.set('x-next-rewrite-done', 'true')
+      
+      return NextResponse.rewrite(newUrl, {
+        request: {
+          headers: requestHeaders,
+        },
+      })
     }
     return NextResponse.next()
   }
@@ -71,26 +90,19 @@ export async function middleware(request: NextRequest) {
   // =========================================================================
   // 1. PREVIEW MODE AUTHENTICATION CHECK
   // =========================================================================
-  // Protect preview routes - require authentication
   const isPreviewRoute = pathname.includes('/preview-')
   
   if (isPreviewRoute) {
     console.log('[Middleware] Preview route detected, checking authentication...')
     
-    // Check for NextAuth session cookie (frontend uses NextAuth, not Django session)
-    // NextAuth uses different cookie names based on environment:
-    // - Development: 'next-auth.session-token'
-    // - Production with HTTPS: '__Secure-next-auth.session-token'
-    // - NextAuth v5: 'authjs.session-token' or '__Secure-authjs.session-token'
+    // Check for NextAuth session cookie
     const nextAuthCookie = request.cookies.get('next-auth.session-token') 
       || request.cookies.get('__Secure-next-auth.session-token')
       || request.cookies.get('authjs.session-token')
       || request.cookies.get('__Secure-authjs.session-token')
     
-    // Also check for Django session cookie (for backwards compatibility)
     const djangoSessionCookie = request.cookies.get('exepad_session')
     
-    // Log cookies for debugging
     console.log('[Middleware] Checking cookies:', {
       hasNextAuth: !!nextAuthCookie,
       hasDjango: !!djangoSessionCookie,
@@ -100,21 +112,16 @@ export async function middleware(request: NextRequest) {
     if (!nextAuthCookie && !djangoSessionCookie) {
       console.warn('[Middleware] Preview access denied - no session cookie found')
       
-      // Redirect to login page with return URL
       const loginUrl = new URL('https://app.exepad.com/signin', request.url)
       loginUrl.searchParams.set('callbackUrl', url.toString())
       
       return NextResponse.redirect(loginUrl)
     }
     
-    // If NextAuth cookie exists, trust it (it's cryptographically signed by NextAuth)
-    // The client-side component will do additional JWT validation with the backend
     if (nextAuthCookie) {
       console.log('[Middleware] Preview access granted - NextAuth session found')
-      // IMPORTANT: Return early to prevent further processing and potential loops
       return NextResponse.next()
     } else if (djangoSessionCookie) {
-      // For Django session, validate with backend
       const isValidSession = await validateSessionCookie(djangoSessionCookie.value)
       
       if (!isValidSession) {
@@ -127,7 +134,6 @@ export async function middleware(request: NextRequest) {
         return NextResponse.redirect(loginUrl)
       }
       console.log('[Middleware] Preview access granted - Django session valid')
-      // IMPORTANT: Return early to prevent further processing and potential loops
       return NextResponse.next()
     }
   }
@@ -140,8 +146,6 @@ export async function middleware(request: NextRequest) {
   const internalSecret = process.env.EXEPAD_ROUTER_SECRET
   
   // Determine if the request is trusted
-  // In dev (no secret set in env), we trust localhost.
-  // In prod, we require the secret to match.
   const isTrustedRequest = process.env.NODE_ENV === 'development' || (internalSecret && edgeSecret === internalSecret)
 
   // =========================================================================
@@ -156,8 +160,6 @@ export async function middleware(request: NextRequest) {
 
   if (isSubdomain) {
     // Avoid rewrite loops: if already under /a/, skip rewriting again
-    // This check should never be reached due to the check at the top of the function
-    // but we keep it for safety
     if (pathname.startsWith('/a/')) {
       return NextResponse.next()
     }
@@ -174,13 +176,21 @@ export async function middleware(request: NextRequest) {
       targetAppId = edgeAppId
     } else if (edgeAppId && !isTrustedRequest) {
       console.warn(`[Middleware] Blocked spoof attempt for ${edgeAppId}. Invalid secret.`)
-      // We fall back to subdomain, effectively ignoring the spoofed header
-      // or you could return a 403 here to be stricter
     }
 
     console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
-    url.pathname = `/a/${targetAppId}${url.pathname}`
-    return NextResponse.rewrite(url)
+    const newUrl = request.nextUrl.clone()
+    newUrl.pathname = `/a/${targetAppId}${url.pathname}`
+    
+    // FIX: Set header to prevent loop on rewrite
+    const requestHeaders = new Headers(request.headers)
+    requestHeaders.set('x-next-rewrite-done', 'true')
+
+    return NextResponse.rewrite(newUrl, {
+      request: {
+        headers: requestHeaders,
+      }
+    })
   }
 
   // Handle Main Domain -> Previews & Landing Page
