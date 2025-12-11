@@ -47,49 +47,24 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next()
   }
   
-  // Check if request was already rewritten by Cloudflare router
-  const alreadyRewritten = request.headers.get('x-exepad-rewritten')
-  const edgeAppId = request.headers.get('x-exepad-app-id')
-  const edgeSecret = request.headers.get('x-exepad-secret')
-  const internalSecret = process.env.EXEPAD_ROUTER_SECRET
-  const isTrustedRequest = process.env.NODE_ENV === 'development' || (internalSecret && edgeSecret === internalSecret)
-  
-  if (alreadyRewritten === 'true') {
-    // Request came from router and has already been processed
-    // Rewrite to the app path if needed
-    if (edgeAppId && !pathname.startsWith('/a/')) {
-      // Handle root path - don't add extra slash
-      const newPath = pathname === '/' ? `/a/${edgeAppId}` : `/a/${edgeAppId}${pathname}`
-      url.pathname = newPath
-      const response = NextResponse.rewrite(url)
-      // Mark as rewritten to prevent further processing
-      response.headers.set('x-exepad-rewritten', 'true')
-      return response
-    }
+  // Skip RSC (React Server Components) flight requests to prevent hydration loops
+  // These are internal Next.js requests that should pass through without rewriting
+  const isRscRequest = url.searchParams.has('_rsc')
+  if (isRscRequest) {
     return NextResponse.next()
   }
   
-  // =========================================================================
-  // 0.5. HANDLE INTERNAL NEXT.JS REQUESTS (RSC, etc.)
-  // =========================================================================
-  // Next.js internal requests (like RSC) may not have x-exepad-rewritten header
-  // but they might have x-exepad-app-id if they're from a subdomain request
-  // We need to rewrite these to prevent loops
-  const appDomain = 'exepad.app' 
-  const currentHost = hostname.split(':')[0]
-  const isSubdomain = 
-    (currentHost.endsWith(`.${appDomain}`) && currentHost !== `www.${appDomain}`) ||
-    (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost')
-  
-  // If this is a subdomain request with a trusted app ID header but path is not /a/,
-  // it's likely an internal Next.js request that needs rewriting
-  if (isSubdomain && edgeAppId && isTrustedRequest && !pathname.startsWith('/a/')) {
-    const newPath = pathname === '/' ? `/a/${edgeAppId}` : `/a/${edgeAppId}${pathname}`
-    url.pathname = newPath
-    const response = NextResponse.rewrite(url)
-    response.headers.set('x-exepad-rewritten', 'true')
-    console.log(`[Middleware] Rewriting internal request ${hostname}${pathname} -> ${newPath}`)
-    return response
+  // Check if request was already rewritten by Cloudflare router
+  const alreadyRewritten = request.headers.get('x-exepad-rewritten')
+  if (alreadyRewritten === 'true') {
+    // Request came from router and has already been processed
+    // Rewrite to the app path if needed
+    const edgeAppId = request.headers.get('x-exepad-app-id')
+    if (edgeAppId && !pathname.startsWith('/a/')) {
+      url.pathname = `/a/${edgeAppId}${pathname}`
+      return NextResponse.rewrite(url)
+    }
+    return NextResponse.next()
   }
   
   // =========================================================================
@@ -159,12 +134,24 @@ export async function middleware(request: NextRequest) {
   // =========================================================================
   // 2. SECURITY & IDENTITY CHECK
   // =========================================================================
-  // (edgeAppId, edgeSecret, internalSecret, isTrustedRequest already defined above)
+  const edgeAppId = request.headers.get('x-exepad-app-id')
+  const edgeSecret = request.headers.get('x-exepad-secret')
+  const internalSecret = process.env.EXEPAD_ROUTER_SECRET
+  
+  // Determine if the request is trusted
+  // In dev (no secret set in env), we trust localhost.
+  // In prod, we require the secret to match.
+  const isTrustedRequest = process.env.NODE_ENV === 'development' || (internalSecret && edgeSecret === internalSecret)
 
   // =========================================================================
   // 3. SUBDOMAIN DETECTION
   // =========================================================================
-  // (isSubdomain already calculated above)
+  const appDomain = 'exepad.app' 
+  const currentHost = hostname.split(':')[0]
+  
+  const isSubdomain = 
+    (currentHost.endsWith(`.${appDomain}`) && currentHost !== `www.${appDomain}`) ||
+    (currentHost.endsWith('.localhost') && currentHost !== 'www.localhost');
 
   if (isSubdomain) {
     // Avoid rewrite loops: if already under /a/, skip rewriting again
@@ -191,12 +178,8 @@ export async function middleware(request: NextRequest) {
     }
 
     console.log(`[Middleware] Rewriting ${hostname} -> /a/${targetAppId}`)
-    // Handle root path - don't add extra slash
-    const newPath = pathname === '/' ? `/a/${targetAppId}` : `/a/${targetAppId}${pathname}`
-    url.pathname = newPath
-    const response = NextResponse.rewrite(url)
-    response.headers.set('x-exepad-rewritten', 'true')
-    return response
+    url.pathname = `/a/${targetAppId}${url.pathname}`
+    return NextResponse.rewrite(url)
   }
 
   // Handle Main Domain -> Previews & Landing Page
