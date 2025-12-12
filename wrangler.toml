@@ -1,0 +1,16 @@
+name = "exepad-runtime-v1"
+compatibility_date = "2025-11-17"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".open-next"
+
+# Environment variables
+[vars]
+NEXT_PUBLIC_BACKEND_URL = "https://backend.exepad.com"
+NEXT_PUBLIC_API_URL = "https://backend.exepad.com"
+RUNTIME_SERVICE_API_KEY = "13ff45abca7de8ba1318bdd7e95ebb72f82cfe6dbe484d0c1755e154aa0be0c6"
+
+# Uncomment to enable R2 incremental cache (requires creating R2 buckets first)
+#[[r2_buckets]]
+#binding = "NEXT_INC_CACHE_R2_BUCKET"
+#bucket_name = "exepad-runtime-cache"
+#preview_bucket_name = "exepad-runtime-cache-preview"
