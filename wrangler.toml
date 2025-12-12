@@ -1,7 +1,30 @@
 name = "exepad-runtime-v1"
+main = ".open-next/worker.js"
 compatibility_date = "2025-11-17"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".open-next"
+
+# Static assets configuration (replaces pages_build_output_dir)
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# Durable Objects for caching (required by OpenNext)
+[[durable_objects.bindings]]
+name = "DO_QUEUE"
+class_name = "DOQueueHandler"
+
+[[durable_objects.bindings]]
+name = "DO_SHARDED_TAG_CACHE"
+class_name = "DOShardedTagCache"
+
+[[durable_objects.bindings]]
+name = "BUCKET_CACHE_PURGE"
+class_name = "BucketCachePurge"
+
+# Durable Objects migrations
+[[migrations]]
+tag = "v1"
+new_classes = ["DOQueueHandler", "DOShardedTagCache", "BucketCachePurge"]
 
 # Environment variables
 [vars]
