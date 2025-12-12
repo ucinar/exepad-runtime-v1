@@ -10,6 +10,7 @@
 **Key Changes:**
 - ✅ Removed `pages_build_output_dir = ".open-next"`
 - ✅ Added `main = ".open-next/worker.js"`
+- ✅ Added `[build]` block with correct build command
 - ✅ Added `[assets]` configuration for static files
 - ✅ Added Durable Objects bindings for caching
 - ✅ Added Durable Objects migrations

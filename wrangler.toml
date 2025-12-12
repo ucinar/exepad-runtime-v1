@@ -3,6 +3,10 @@ main = ".open-next/worker.js"
 compatibility_date = "2025-11-17"
 compatibility_flags = ["nodejs_compat"]
 
+# Build configuration
+[build]
+command = "npm run build:cloudflare"
+
 # Static assets configuration (replaces pages_build_output_dir)
 [assets]
 directory = ".open-next/assets"
