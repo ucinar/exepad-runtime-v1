@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 import NextLink from 'next/link';
-import { cn, filterDOMProps } from '@/lib/utils';
+import { cn, filterDOMProps, getHref } from '@/lib/utils';
 import { useComponentStyles } from '@/hooks/useComponentStyles';
 
 // Import the base Button component and its variant props from shadcn/ui
@@ -50,16 +50,6 @@ export const Button: React.FC<ButtonProps> = ({
 
   const hasStyle = Object.keys(style).length > 0;
 
-  // Helper function to determine if a link is absolute
-  const isAbsoluteLink = (url: string): boolean => {
-    return url.startsWith('http://') || 
-           url.startsWith('https://') || 
-           url.startsWith('//') ||
-           url.startsWith('mailto:') ||
-           url.startsWith('tel:') ||
-           url.startsWith('#');
-  };
-
   const IconComponent = icon ? <DynamicRenderer component={icon} /> : null;
 
   const buttonContent = (
@@ -72,8 +62,8 @@ export const Button: React.FC<ButtonProps> = ({
 
   // If a link is provided, wrap the button in a Next.js Link component
   if (link?.href) {
-    // Automatically prefix relative links with basePath
-    const finalHref = isAbsoluteLink(link.href) ? link.href : `${basePath}${link.href}`;
+    // Automatically prefix relative links with basePath (hash links stay unchanged)
+    const finalHref = getHref(link.href, basePath);
     
     const composedClasses = cn(
       // Use the buttonVariants utility from shadcn/ui to get the correct styles

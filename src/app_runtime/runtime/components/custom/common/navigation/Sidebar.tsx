@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { ChevronRight, Dot, Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, getHref } from "@/lib/utils";
 import { SidebarProps, SidebarItem } from "@/interfaces/components/common/navigation/sidebar";
 import { DynamicRenderer } from "@/components/DynamicRenderer";
 import { useAppContext } from "@/context/AppContext";
@@ -71,7 +71,7 @@ const SidebarUI: React.FC<
             {item.content.map((sub: any) => (
               <Link
                 key={sub.uuid}
-                href={`${basePath}${sub.href}`}
+                href={getHref(sub.href, basePath)}
                 className={cn(
                   "flex items-center p-2 rounded-md text-sm",
                   sub.active
@@ -112,7 +112,7 @@ const SidebarUI: React.FC<
 
       {/* logo/header */}
       <div className="flex items-center h-16 px-4 border-b dark:border-gray-700 shrink-0">
-        <Link href={logo.href ? `${basePath}${logo.href}` : "#"} className="flex items-center gap-3 overflow-hidden">
+        <Link href={logo.href ? getHref(logo.href, basePath) : "#"} className="flex items-center gap-3 overflow-hidden">
           <DynamicRenderer component={logo.icon} />
           <span
             className={cn(
@@ -159,7 +159,7 @@ const SidebarUI: React.FC<
               return (
                 <Link
                   key={item.uuid}
-                  href={`${basePath}${item.href}`}
+                  href={getHref(item.href, basePath)}
                   className={cn(
                     "flex items-center p-2 rounded-md",
                     item.active
@@ -193,7 +193,7 @@ const SidebarUI: React.FC<
       <div className="p-2 ">
         {/* {profile && (
           <Link
-            href={profile.href ? `${basePath}${profile.href}` : "#"}
+            href={profile.href ? getHref(profile.href, basePath) : "#"}
             className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <img
@@ -293,7 +293,7 @@ export const SidebarComponent: React.FC<SidebarProps & { children: React.ReactNo
       >
         {/* mobile header */}
         <header className="md:hidden flex items-center justify-between h-16 px-4 bg-white dark:bg-gray-800 border-b dark:border-gray-700 sticky top-0 z-10">
-          <Link href={sidebarProps.logo.href ? `${basePath}${sidebarProps.logo.href}` : "#"} className="flex items-center gap-2">
+          <Link href={sidebarProps.logo.href ? getHref(sidebarProps.logo.href, basePath) : "#"} className="flex items-center gap-2">
             <DynamicRenderer component={sidebarProps.logo.icon} />
             <span className="font-bold">{sidebarProps.logo.text}</span>
           </Link>

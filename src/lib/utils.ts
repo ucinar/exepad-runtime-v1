@@ -1156,3 +1156,41 @@ export function filterDOMProps<T extends Record<string, any>>(props: T): Partial
   
   return filtered;
 }
+
+/**
+ * Check if a URL is absolute (external link, hash anchor, or special protocol)
+ * These URLs should not be prefixed with basePath
+ * 
+ * @param url - The URL to check
+ * @returns true if the URL is absolute and should not be prefixed
+ * 
+ * @example
+ * isAbsoluteLink('https://example.com') // true
+ * isAbsoluteLink('#section') // true
+ * isAbsoluteLink('/about') // false
+ */
+export const isAbsoluteLink = (url: string): boolean => {
+  return url.startsWith('http://') || 
+         url.startsWith('https://') || 
+         url.startsWith('//') ||
+         url.startsWith('mailto:') ||
+         url.startsWith('tel:') ||
+         url.startsWith('#');
+};
+
+/**
+ * Get the final href with basePath prefix for relative links only
+ * Absolute links (external URLs, hash anchors, etc.) are returned unchanged
+ * 
+ * @param href - The original href value
+ * @param basePath - The base path to prefix for relative links
+ * @returns The final href with basePath applied if needed
+ * 
+ * @example
+ * getHref('/about', '/a/app123') // '/a/app123/about'
+ * getHref('#services', '/a/app123') // '#services'
+ * getHref('https://example.com', '/a/app123') // 'https://example.com'
+ */
+export const getHref = (href: string, basePath: string): string => {
+  return isAbsoluteLink(href) ? href : `${basePath}${href}`;
+};
