@@ -150,7 +150,7 @@ export class ConfigService {
     const response = await fetch(`${backendUrl}/api/runtime/app-config/${cacheBuster}`, fetchOptions);
 
     if (!response.ok) {
-      throw new Error(`Backend API returned ${response.status}`);
+      throw new Error(`Backend API returned ${response.status} backend URL: ${backendUrl}`);
     }
 
     const { config_url } = await response.json();
