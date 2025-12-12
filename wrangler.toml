@@ -12,17 +12,28 @@ command = "npm run build:cloudflare"
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+# Worker self-reference (required for caching)
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "exepad-runtime-v1"
+
+# R2 incremental cache
+[[r2_buckets]]
+binding = "NEXT_INC_CACHE_R2_BUCKET"
+bucket_name = "exepad-runtime-v1-cache"
+preview_bucket_name = "exepad-runtime-v1-cache-preview"
+
 # Durable Objects for caching (required by OpenNext)
 [[durable_objects.bindings]]
-name = "DO_QUEUE"
+name = "NEXT_CACHE_DO_QUEUE"
 class_name = "DOQueueHandler"
 
 [[durable_objects.bindings]]
-name = "DO_SHARDED_TAG_CACHE"
+name = "NEXT_TAG_CACHE_DO_SHARDED"
 class_name = "DOShardedTagCache"
 
 [[durable_objects.bindings]]
-name = "BUCKET_CACHE_PURGE"
+name = "NEXT_CACHE_DO_PURGE"
 class_name = "BucketCachePurge"
 
 # Durable Objects migrations
@@ -55,10 +66,3 @@ invocation_logs = true
 enabled = false
 persist = true
 head_sampling_rate = 1
-
-# Uncomment to enable R2 incremental cache (requires creating R2 buckets first)
-#[[r2_buckets]]
-#binding = "NEXT_INC_CACHE_R2_BUCKET"
-#bucket_name = "exepad-runtime-cache"
-#preview_bucket_name = "exepad-runtime-cache-preview"
-
