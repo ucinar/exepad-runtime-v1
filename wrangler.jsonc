@@ -6,13 +6,6 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "r2_buckets": [
-    {
-      "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "exepad-runtime-v1-cache",
-      "preview_bucket_name": "exepad-runtime-v1-cache-preview"
-    }
-  ],
   "vars": {
     "NEXT_PUBLIC_BACKEND_URL": "https://backend.exepad.com",
     "NEXT_PUBLIC_API_URL": "https://backend.exepad.com",
