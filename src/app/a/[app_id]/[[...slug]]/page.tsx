@@ -15,9 +15,6 @@ import PreviewPage from '@/core/preview/PreviewPage';
 import { getConfig, parsePreviewMode, slugArrayToPath } from '@/app/_shared/utils/unifiedConfig';
 import { generateAppMetadata } from '@/app/_shared/utils/metadataGenerator';
 
-// Configure to run with Edge Runtime for Cloudflare Pages
-export const runtime = 'edge';
-
 interface PageProps {
   params: Promise<{
     app_id: string;
