@@ -18,7 +18,7 @@ Your project has been successfully migrated from `@cloudflare/next-on-pages` to 
 6. Update the following settings:
 
    ```
-   Build command: npm run build
+   Build command: npm run build:cloudflare
    Build output directory: .open-next
    Root directory: /
    ```
